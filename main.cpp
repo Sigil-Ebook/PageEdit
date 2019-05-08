@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2018-2019  Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019  Kevin B. Hendricks, Stratford, Ontario, Canada
 **
 **  This file is part of Sigil.
 **
@@ -34,12 +34,6 @@
 #include "MainApplication.h"
 #include "MainWindow.h"
 #include "Utility.h"
-
-#ifdef Q_OS_MAC
-# include <QFileDialog>
-# include <QKeySequence>
-# include <QAction>
-#endif
 
 // Creates a MainWindow instance depending
 // on command line arguments
