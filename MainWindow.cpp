@@ -40,6 +40,7 @@
 #include <QToolButton>
 #include <QSlider>
 #include <QTimer>
+#include <QFileInfo>
 #include <QDebug>
 
 #include "MainWindow.h"
@@ -72,7 +73,6 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_GoToRequestPending(false),
     m_headingMapper(new QSignalMapper(this)),
     m_preserveHeadingAttributes(false),
-    m_CurrentFilePath(filepath),
     m_SelectCharacter(new SelectCharacter(this)),
     m_slZoomSlider(NULL),
     m_lbZoomLabel(NULL)
@@ -81,6 +81,8 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     SetupView();
     LoadSettings();
     ConnectSignalsToSlots();
+    QFileInfo fi(filepath);
+    m_CurrentFilePath=fi.absolutePath();
     QTimer::singleShot(200, this, SLOT(DoUpdatePage()));
 }
 
@@ -366,22 +368,15 @@ void MainWindow::SetupView()
 void MainWindow::DoUpdatePage()
 {
   if (!m_CurrentFilePath.isEmpty()) {
-      UpdatePage(m_CurrentFilePath);
+      QFileInfo fi(m_CurrentFilePath);
+      if (fi.exists() && fi.isReadable()) {
+          UpdatePage(m_CurrentFilePath);
+      }
   }
 }
 
 void MainWindow::UpdatePage(const QString &filename_url)
 {
-
-#if 0
-    if (!m_WebView->isVisible()) {
-        return;
-    }
-#endif
-
-    // qDebug() << "PV UpdatePage " << filename_url;
-    // foreach(ElementIndex ei, location) qDebug()<< "PV name: " << ei.name << " index: " << ei.index;
-
     QString text = Utility::ReadUnicodeTextFile(filename_url);
 
 #if 0
@@ -659,9 +654,16 @@ void MainWindow::SetPreserveHeadingAttributes(bool new_state)
 // fix me Save and Open
 bool MainWindow::Save()
 {
-	QString text = m_WebView->GetHtml();
-        qDebug() << text;
+    QString text = m_WebView->GetHtml();
+    qDebug() << "Saving: " << text;
+    QFileInfo fi(m_CurrentFilePath);
+    if (fi.exists() && fi.isWritable()) {
+ 	Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);
+        ShowMessageOnStatusBar(tr("File Saved"));
 	return true;
+    }
+    ShowMessageOnStatusBar(tr("File Save Failed!"));
+    return false;
 }
 
 void MainWindow::Open()
@@ -679,13 +681,19 @@ void MainWindow::Open()
                        "Open File",
                        "~",
                        filter_string,
-                       &default_filter
-                                                   );
+                       &default_filter);
 
     if (!filename.isEmpty()) {
-    	m_CurrentFilePath = filename;
-    	UpdatePage(m_CurrentFilePath);
+        QFileInfo fi(filename);
+        if (fi.exists() && fi.isReadable()) {
+    	    m_CurrentFilePath = filename;
+    	    UpdatePage(m_CurrentFilePath);
+            ShowMessageOnStatusBar(tr("File Opened"));
+	    return;
+	}
+        ShowMessageOnStatusBar(tr("File Open Failed!"));
     }
+   
 }
 
 void MainWindow::Exit()
@@ -739,6 +747,7 @@ void MainWindow::PasteText(const QString& text)
 void MainWindow::Preferences()
 {
     // fix me
+    ShowMessageOnStatusBar(tr("Preferences Dialog not Implemented Yet"));
 }
 
 void MainWindow::InsertSpecialCharacter()
@@ -788,8 +797,6 @@ void MainWindow::DecreaseIndent() { m_WebView->triggerPageAction(QWebEnginePage:
 void MainWindow::IncreaseIndent() { m_WebView->triggerPageAction(QWebEnginePage::Indent);              }
 
 
-
-
 void MainWindow::ShowMessageOnStatusBar(const QString &message,
                                         int millisecond_duration)
 {
@@ -804,7 +811,6 @@ void MainWindow::ShowMessageOnStatusBar(const QString &message,
         statusBar()->showMessage(message, millisecond_duration);
     }
 }
-
 
 void MainWindow::ConnectSignalsToSlots()
 {
