@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ 
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PageEditor</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>48</width>
+    <height>48</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  
+  <widget class="QWidget" name="centralwidget">
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>22</height>
+    </rect>
+   </property>
+
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionExit"/>
+    <addaction name="actionPreferences"/>
+   </widget>
+   
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionSelectAll" />
+   </widget>
+   
+   <widget class="QMenu" name="menuInsert">
+    <property name="title">
+     <string>&amp;Insert</string>
+    </property>
+    <addaction name="actionInsertSGFSectionMarker"/>
+    <addaction name="actionInsertSpecialCharacter"/>
+    <addaction name="separator"/>
+    <addaction name="actionInsertBulletedList"/>
+    <addaction name="actionInsertNumberedList"/>
+   </widget>
+   
+   <widget class="QMenu" name="menuFormat">
+    <property name="title">
+     <string>For&amp;mat</string>
+    </property>
+    
+    <widget class="QMenu" name="menuHeadings">
+     <property name="title">
+      <string>&amp;Heading</string>
+     </property>
+     <addaction name="actionHeading1"/>
+     <addaction name="actionHeading2"/>
+     <addaction name="actionHeading3"/>
+     <addaction name="actionHeading4"/>
+     <addaction name="actionHeading5"/>
+     <addaction name="actionHeading6"/>
+     <addaction name="actionHeadingNormal"/>
+     <addaction name="separator"/>
+     <addaction name="actionHeadingPreserveAttributes"/>
+    </widget>
+    
+    <addaction name="menuHeadings"/>
+    <addaction name="separator"/>
+    <addaction name="actionBold"/>
+    <addaction name="actionItalic"/>
+    <addaction name="actionUnderline"/>
+    <addaction name="actionStrikethrough"/>
+    <addaction name="actionSubscript"/>
+    <addaction name="actionSuperscript"/>
+    <addaction name="separator"/>
+    <addaction name="actionAlignLeft"/>
+    <addaction name="actionAlignCenter"/>
+    <addaction name="actionAlignRight"/>
+    <addaction name="actionAlignJustify"/>
+    <addaction name="separator"/>
+    <addaction name="actionDecreaseIndent"/>
+    <addaction name="actionIncreaseIndent"/>
+   </widget>
+   
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionZoomIn"/>
+    <addaction name="actionZoomOut"/>
+    <addaction name="actionZoomReset"/>
+   </widget>
+   
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuInsert"/>
+   <addaction name="menuFormat"/>
+   <addaction name="menuView"/>
+  </widget>
+
+  <widget class="QStatusBar" name="statusbar"/>
+
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/document-save_48px.png</normaloff>:/icons/document-save_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save the current book.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/edit-cut_48px.png</normaloff>:/icons/edit-cut_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cu&amp;t</string>
+   </property>
+   <property name="toolTip">
+    <string>Cuts the selected text from the document and puts it on the clipboard.</string>
+   </property>
+  </action>
+  
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/edit-paste_48px.png</normaloff>:/icons/edit-paste_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+   <property name="toolTip">
+    <string>Pastes the content from the clipboard into the book.</string>
+   </property>
+  </action>  
+  
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/edit-undo_48px.png</normaloff>:/icons/edit-undo_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Undo</string>
+   </property>
+   <property name="toolTip">
+    <string>Reverts the changes of the previous operation.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/edit-redo_48px.png</normaloff>:/icons/edit-redo_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Redo</string>
+   </property>
+   <property name="toolTip">
+    <string>Restores the changes reverted by the previous Undo action.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/edit-copy_48px.png</normaloff>:/icons/edit-copy_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copy</string>
+   </property>
+   <property name="toolTip">
+    <string>Copies the selected text and puts it on the clipboard.</string>
+   </property>
+  </action>
+
+  <action name="actionAlignLeft">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-justify-left_48px.png</normaloff>:/icons/format-justify-left_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Align &amp;Left</string>
+   </property>
+   <property name="toolTip">
+    <string>Align the paragraph to the left.</string>
+   </property>
+  </action>
+  
+  
+  <action name="actionAlignRight">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-justify-right_48px.png</normaloff>:/icons/format-justify-right_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Align &amp;Right</string>
+   </property>
+   <property name="toolTip">
+    <string>Align the paragraph to the right.</string>
+   </property>
+  </action>
+  
+  <action name="actionAlignCenter">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-justify-center_48px.png</normaloff>:/icons/format-justify-center_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Center</string>
+   </property>
+   <property name="toolTip">
+    <string>Center the paragraph.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  
+  <action name="actionAlignJustify">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-justify-fill_48px.png</normaloff>:/icons/format-justify-fill_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Justify</string>
+   </property>
+   <property name="toolTip">
+    <string>Align the paragraph to both the left and right margins.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  
+  <action name="actionBold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-text-bold_48px.png</normaloff>:/icons/format-text-bold_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Bold</string>
+   </property>
+   <property name="toolTip">
+    <string>Make the selected text bold.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  
+  <action name="actionItalic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-text-italic_48px.png</normaloff>:/icons/format-text-italic_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Italic</string>
+   </property>
+   <property name="toolTip">
+    <string>Make the selected text italic.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/document-open_48px.png</normaloff>:/icons/document-open_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open...</string>
+   </property>
+   <property name="toolTip">
+    <string>Open a book from disk.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  
+  
+  <action name="actionUnderline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-text-underline_48px.png</normaloff>:/icons/format-text-underline_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Underline</string>
+   </property>
+   <property name="toolTip">
+    <string>Underline the selected text.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/process-stop_48px.png</normaloff>:/icons/process-stop_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+
+  <action name="actionInsertSpecialCharacter">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/insert-special-character_48px.png</normaloff>:/icons/insert-special-character_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Special Character...</string>
+   </property>
+   <property name="toolTip">
+    <string>Select a character to insert into your text.</string>
+   </property>
+  </action>
+
+  <action name="actionInsertNumberedList">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/insert-numbered-list_48px.png</normaloff>:/icons/insert-numbered-list_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Numbered List</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a numbered list from selection.</string>
+   </property>
+  </action>
+
+  <action name="actionInsertBulletedList">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/insert-bullet-list_48px.png</normaloff>:/icons/insert-bullet-list_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bulle&amp;ted List</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a bulleted list from selection.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+
+  <action name="actionStrikethrough">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-text-strikethrough_48px.png</normaloff>:/icons/format-text-strikethrough_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stri&amp;kethrough</string>
+   </property>
+   <property name="toolTip">
+    <string>Draw a line through the selected text.</string>
+   </property>
+  </action>
+
+  <action name="actionSubscript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-text-subscript_48px.png</normaloff>:/icons/format-text-subscript_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Subscript</string>
+   </property>
+   <property name="toolTip">
+    <string>Set the selected text slightly smaller and below the normal line.</string>
+   </property>
+  </action>
+
+  <action name="actionSuperscript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-text-superscript_48px.png</normaloff>:/icons/format-text-superscript_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Su&amp;perscript</string>
+   </property>
+   <property name="toolTip">
+    <string>Set the selected text slightly smaller and above the normal line.</string>
+   </property>
+  </action>
+
+
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/list-add_48px.png</normaloff>:/icons/list-add_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom &amp;In</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom In</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+=</string>
+   </property>
+  </action>
+  
+  
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/list-remove_48px.png</normaloff>:/icons/list-remove_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom &amp;Out</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom Out</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+
+
+  <action name="actionIncreaseIndent">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-indent-more_48px.png</normaloff>:/icons/format-indent-more_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Incre&amp;ase Indent</string>
+   </property>
+   <property name="toolTip">
+    <string>Increase the indent level of the paragraph.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+M</string>
+   </property>
+  </action>
+
+  <action name="actionDecreaseIndent">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/format-indent-less_48px.png</normaloff>:/icons/format-indent-less_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Decrease Indent</string>
+   </property>
+   <property name="toolTip">
+    <string>Decrease the indent level of the paragraph.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+M</string>
+   </property>
+  </action>
+
+  <action name="actionInsertSGFSectionMarker">
+   <property name="text">
+    <string>Split &amp;Marker</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert Sigil split file marker</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Return</string>
+   </property>
+  </action>
+
+  <action name="actionPreferences">
+   <property name="text">
+    <string>&amp;Preferences...</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  
+  <action name="actionZoomReset">
+   <property name="text">
+    <string>&amp;Zoom Reset</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom Reset</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+0</string>
+   </property>
+  </action>
+    
+  <action name="actionHeading1">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/heading-1_48px.png</normaloff>:/icons/heading-1_43px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Heading &amp;1</string>
+   </property>
+   <property name="toolTip">
+    <string>Format paragraph as a level 1 heading.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+
+  <action name="actionHeading2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/heading-2_48px.png</normaloff>:/icons/heading-2_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Heading &amp;2</string>
+   </property>
+   <property name="toolTip">
+    <string>Format paragraph as a level 2 heading.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+
+  <action name="actionHeading3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/heading-3_48px.png</normaloff>:/icons/heading-3_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Heading &amp;3</string>
+   </property>
+   <property name="toolTip">
+    <string>Format paragraph as a level 3 heading.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  
+  
+  <action name="actionHeading4">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/heading-4_48px.png</normaloff>:/icons/heading-4_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Heading &amp;4</string>
+   </property>
+   <property name="toolTip">
+    <string>Format paragraph as a level 4 heading.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+
+  <action name="actionHeading5">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/heading-5_48px.png</normaloff>:/icons/heading-5_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Heading &amp;5</string>
+   </property>
+   <property name="toolTip">
+    <string>Format paragraph as a level 5 heading.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+5</string>
+   </property>
+  </action>
+  
+  <action name="actionHeading6">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/heading-6_48px.png</normaloff>:/icons/heading-6_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Heading &amp;6</string>
+   </property>
+   <property name="toolTip">
+    <string>Format paragraph as a level 6 heading.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+6</string>
+   </property>
+  </action>
+
+
+  <action name="actionHeadingNormal">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/heading-normal_48px.png</normaloff>:/icons/heading-normal_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Normal</string>
+   </property>
+   <property name="toolTip">
+    <string>ormat paragraph as a normal paragraph.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+7</string>
+   </property>
+  </action>
+
+
+  <action name="actionHeadingPreserveAttributes">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Preserve Existing Attributes</string>
+   </property>
+   <property name="toolTip">
+    <string>When applying this style, preserve any existing attributes on the tag</string>
+   </property>
+  </action>
+
+  <action name="actionSelectAll">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/edit-select-all_48px.png</normaloff>:/icons/edit-select-all_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;SelectAll</string>
+   </property>
+   <property name="toolTip">
+    <string>Select all text in the document.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+
+
+ </widget>
+ <resources>
+  <include location="./icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
