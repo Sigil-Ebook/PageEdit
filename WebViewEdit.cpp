@@ -307,11 +307,17 @@ QString WebViewEdit::EscapeJSString(const QString &string)
     return new_string.replace("\\", "\\\\").replace("\"", "\\\"").replace("'", "\\'");
 }
 
-bool WebViewEdit::ExecCommand(const QString &command, QString parameter)
+bool WebViewEdit::ExecCommand(const QString &command)
+{
+    QString javascript = QString("document.execCommand( '%1', false, null)").arg(EscapeJSString(command));
+    return EvaluateJavascript(javascript).toBool();
+}
+
+bool WebViewEdit::ExecCommand(const QString &command, const QString &parameter)
 {
     QString javascript = QString("document.execCommand( '%1', false, '%2' )")
-                         .arg(EscapeJSString(command))
-                         .arg(EscapeJSString(parameter));
+                           .arg(EscapeJSString(command))
+                           .arg(EscapeJSString(parameter));
     return EvaluateJavascript(javascript).toBool();
 }
 

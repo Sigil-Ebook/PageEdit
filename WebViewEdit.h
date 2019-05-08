@@ -109,6 +109,10 @@ public slots:
      QString GetHtml() const;
      QString GetSelectedText();
      bool InsertHtml(const QString &html);
+     bool ExecCommand(const QString &command);
+     bool ExecCommand(const QString &command, const QString &parameter);
+     bool QueryCommandState(const QString &command);
+
 
 signals:
     /**
@@ -129,10 +133,6 @@ signals:
 protected:
 
     QString EscapeJSString(const QString &string);
-
-    bool ExecCommand(const QString &command, QString parameter="null");
-
-    bool QueryCommandState(const QString &command);
 
     /**
      * Evaluates the provided javascript source code

@@ -91,6 +91,8 @@ public slots:
     void Italic();
     void Underline();
     void Strikethrough();
+    void Subscript();
+    void Superscript();
     void AlignLeft();
     void AlignCenter();
     void AlignRight();

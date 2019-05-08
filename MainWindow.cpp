@@ -613,6 +613,16 @@ void MainWindow::InsertNumberedList()
     // m_WebView->ExecCommand("insertOrderedList");
 }
 
+void MainWindow::Subscript()
+{
+    m_WebView->ExecCommand("subscript");
+}
+
+void MainWindow::Superscript()
+{
+    m_WebView->ExecCommand("superscript");
+}
+
 void MainWindow::Bold()           { m_WebView->triggerPageAction(QWebEnginePage::ToggleBold);          }
 void MainWindow::Italic()         { m_WebView->triggerPageAction(QWebEnginePage::ToggleItalic);        }
 void MainWindow::Underline()      { m_WebView->triggerPageAction(QWebEnginePage::ToggleUnderline);     }
@@ -623,6 +633,8 @@ void MainWindow::AlignRight()     { m_WebView->triggerPageAction(QWebEnginePage:
 void MainWindow::AlignJustify()   { m_WebView->triggerPageAction(QWebEnginePage::AlignJustified);      }
 void MainWindow::DecreaseIndent() { m_WebView->triggerPageAction(QWebEnginePage::Outdent);             }
 void MainWindow::IncreaseIndent() { m_WebView->triggerPageAction(QWebEnginePage::Indent);              }
+
+
 
 void MainWindow::ZoomIn()
 {
@@ -694,6 +706,8 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionItalic,                   SIGNAL(triggered()),  this,   SLOT(Italic()));
     connect(ui.actionUnderline,                SIGNAL(triggered()),  this,   SLOT(Underline()));
     connect(ui.actionStrikethrough,            SIGNAL(triggered()),  this,   SLOT(Strikethrough()));
+    connect(ui.actionSubscript,                SIGNAL(triggered()),  this,   SLOT(Subscript()));
+    connect(ui.actionSuperscript,              SIGNAL(triggered()),  this,   SLOT(Superscript()));
     connect(ui.actionAlignLeft,                SIGNAL(triggered()),  this,   SLOT(AlignLeft()));
     connect(ui.actionAlignCenter,              SIGNAL(triggered()),  this,   SLOT(AlignCenter()));
     connect(ui.actionAlignRight,               SIGNAL(triggered()),  this,   SLOT(AlignRight()));
