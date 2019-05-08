@@ -57,7 +57,8 @@ public:
     void setUserCSSURL(QString usercssurl) { m_usercssurl = usercssurl; }
 
 public slots:
-    void UpdatePage(QString filename);
+    void DoUpdatePage();
+    void UpdatePage(const QString &filename);
     void ScrollTo(QList<ElementIndex> location);
     void SetZoomFactor(float factor);
     void LinkClicked(const QUrl &url);
@@ -66,7 +67,6 @@ public slots:
     void SelectAllPreview();
     void CopyPreview();
     void ReloadPreview();
-    void InspectorClosed(int);
 
     // GUI slots
     void SelectEntryOnHeadingToolbar(const QString &element_name);

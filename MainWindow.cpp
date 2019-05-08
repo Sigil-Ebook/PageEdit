@@ -64,7 +64,7 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     SetupView();
     LoadSettings();
     ConnectSignalsToSlots();
-    QTimer::singleShot(200, this, SLOT(UpdatePage(m_CurrentFilePath)));
+    QTimer::singleShot(200, this, SLOT(DoUpdatePage()));
 }
 
 MainWindow::~MainWindow()
@@ -212,7 +212,14 @@ void MainWindow::SetupView()
     QApplication::restoreOverrideCursor();
 }
 
-void MainWindow::UpdatePage(QString filename_url)
+void MainWindow::DoUpdatePage()
+{
+  if (!m_CurrentFilePath.isEmpty()) {
+      UpdatePage(m_CurrentFilePath);
+  }
+}
+
+void MainWindow::UpdatePage(const QString &filename_url)
 {
 
 #if 0
@@ -385,11 +392,6 @@ void MainWindow::LinkClicked(const QUrl &url)
         }
     }
     emit OpenUrlRequest(QUrl(url_string));
-}
-
-void MainWindow::InspectorClosed(int i)
-{
-    qDebug() << "received finished with argument: " << i;
 }
 
 void MainWindow::InspectPreviewPage()
@@ -659,8 +661,6 @@ void MainWindow::ConnectSignalsToSlots()
     connect(m_WebView,   SIGNAL(LinkClicked(const QUrl &)), this, SLOT(LinkClicked(const QUrl &)));
 
     connect(ui.actionInspect, SIGNAL(triggered()),     this, SLOT(InspectPreviewPage()));
-    connect(m_Inspector,      SIGNAL(finished(int)),   this, SLOT(InspectorClosed(int)));
-
     connect(m_SelectCharacter, SIGNAL(SelectedCharacter(const QString &)), this, SLOT(PasteText(const QString &)));
 
     // Headings Related
@@ -721,4 +721,3 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionZoomReset,     SIGNAL(triggered()), this, SLOT(ZoomReset()));
 
 }
-
