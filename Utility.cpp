@@ -470,14 +470,14 @@ void Utility::DisplayExceptionErrorDialog(const QString &error_info)
     message_box.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
     message_box.setModal(true);
     message_box.setIcon(QMessageBox::Critical);
-    message_box.setWindowTitle("PageEditor");
+    message_box.setWindowTitle("PageEdit");
     // Spaces are added to the end because otherwise the dialog is too small.
-    message_box.setText(QObject::tr("PageEditor has encountered a problem."));
-    message_box.setInformativeText(QObject::tr("PageEditor may need to close."));
+    message_box.setText(QObject::tr("PageEdit has encountered a problem."));
+    message_box.setInformativeText(QObject::tr("PageEdit may need to close."));
     message_box.setStandardButtons(QMessageBox::Close);
     QStringList detailed_text;
     detailed_text << "Error info: "    + error_info
-                  << "PageEditor version: 0.0.1"
+                  << "PageEdit version: 0.0.1"
                   << "Runtime Qt: "    + QString(qVersion())
                   << "Compiled Qt: "   + QString(QT_VERSION_STR);
 #if defined Q_OS_WIN32
@@ -516,7 +516,7 @@ void Utility::DisplayStdWarningDialog(const QString &warning_message, const QStr
     message_box.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
     message_box.setModal(true);
     message_box.setIcon(QMessageBox::Warning);
-    message_box.setWindowTitle("PageEditor");
+    message_box.setWindowTitle("PageEdit");
     message_box.setText(warning_message);
     message_box.setTextFormat(Qt::RichText);
 

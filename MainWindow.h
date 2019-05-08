@@ -136,11 +136,6 @@ private:
     QString m_mathjaxurl;
     QString m_usercssurl;
 
-    QAction * m_inspectAction;
-    QAction * m_selectAction;
-    QAction * m_copyAction;
-    QAction * m_reloadAction;
-
     QSignalMapper *m_headingMapper;
     bool m_preserveHeadingAttributes;
     QString m_CurrentFilePath;

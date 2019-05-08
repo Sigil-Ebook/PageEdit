@@ -50,7 +50,6 @@ public slots:
     void StopInspection();
 
 private:
-    QVBoxLayout* m_Layout;
     QWebEngineView* m_inspectView;
     QWebEnginePage* m_page;
 };

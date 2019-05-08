@@ -205,9 +205,7 @@ void MainWindow::SetupView()
     ui.actionZoomOut->setEnabled(true);
     ui.actionZoomReset->setEnabled(true);
 
-    m_inspectAction = new QAction(QIcon(":icons/inspect_48px.png"),"", this);
-    m_inspectAction->setToolTip(tr("Inspect Page: Ctrl-F5"));
-    m_inspectAction->setShortcut(QKeySequence(Qt::CTRL+Qt::Key_F5));
+    ui.actionInspect->setEnabled(true);
 
     m_WebView->Zoom();
 
@@ -644,8 +642,8 @@ void MainWindow::ConnectSignalsToSlots()
     connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)), this, SIGNAL(ZoomFactorChanged(float)));
     connect(m_WebView,   SIGNAL(LinkClicked(const QUrl &)), this, SLOT(LinkClicked(const QUrl &)));
 
-    connect(m_inspectAction, SIGNAL(triggered()),     this, SLOT(InspectPreviewPage()));
-    connect(m_Inspector,     SIGNAL(finished(int)),   this, SLOT(InspectorClosed(int)));
+    connect(ui.actionInspect, SIGNAL(triggered()),     this, SLOT(InspectPreviewPage()));
+    connect(m_Inspector,      SIGNAL(finished(int)),   this, SLOT(InspectorClosed(int)));
 
     // Headings Related
     connect(ui.actionHeading1, SIGNAL(triggered()), m_headingMapper, SLOT(map()));

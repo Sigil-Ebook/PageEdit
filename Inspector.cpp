@@ -33,11 +33,16 @@ static const QString SETTINGS_GROUP = "inspect_dialog";
 
 Inspector::Inspector(QWidget *parent) :
     QDockWidget(parent),
-    m_Layout(new QVBoxLayout(this)),
     m_inspectView(new QWebEngineView(this)),
     m_page(nullptr)
 {
-    m_Layout->addWidget(m_inspectView);
+    QWidget *basewidget = new QWidget(this);
+    QLayout *layout = new QVBoxLayout(basewidget);
+    basewidget->setLayout(layout);
+    layout->addWidget(m_inspectView);
+    layout->setContentsMargins(0, 0, 0, 0);
+    basewidget->setObjectName("PrimaryFrame");
+    setWidget(basewidget);
     LoadSettings();
     setWindowTitle(tr("Inspect Page or Element"));
 }

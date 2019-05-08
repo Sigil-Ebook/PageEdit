@@ -12,7 +12,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>PageEditor</string>
+   <string>PageEdit</string>
   </property>
   <property name="iconSize">
    <size>
@@ -138,12 +138,21 @@
     <addaction name="actionZoomReset"/>
    </widget>
    
+   <widget class="QMenu" name="menuInspect">
+    <property name="title">
+     <string>Inspector</string>
+    </property>
+    <addaction name="actionInspect" />
+   </widget>
+
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuInsert"/>
    <addaction name="menuFormat"/>
    <addaction name="menuView"/>
+   <addaction name="menuInspect"/>
   </widget>
+
 
   <widget class="QStatusBar" name="statusbar"/>
 
@@ -752,6 +761,22 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+A</string>
+   </property>
+  </action>
+
+  <action name="actionInspect">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/inspect_48px.png</normaloff>:/icons/inspect_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Inspector</string>
+   </property>
+   <property name="toolTip">
+    <string>Inspect the page.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F5</string>
    </property>
   </action>
 
