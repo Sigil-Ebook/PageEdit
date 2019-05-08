@@ -23,7 +23,7 @@
 #include <QMouseEvent>
 #include <QApplication>
 #include <QClipboard>
-#include <QMimedata>
+#include <QMimeData>
 #include <QFrame>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
