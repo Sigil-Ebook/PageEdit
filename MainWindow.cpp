@@ -27,6 +27,7 @@
 #include <QFrame>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QLabel>
 #include <QToolBar>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QDir>
@@ -34,6 +35,10 @@
 #include <QMessageBox>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
+#include <QStatusBar>
+#include <QThread>
+#include <QToolButton>
+#include <QSlider>
 #include <QTimer>
 #include <QDebug>
 
@@ -48,6 +53,16 @@ static const QString SETTINGS_GROUP = "mainwindow";
 
 static const QString BREAK_TAG_INSERT    = "<hr class=\"sigil_split_marker\" />";
 
+const float ZOOM_STEP               = 0.1f;
+const float ZOOM_MIN                = 0.09f;
+const float ZOOM_MAX                = 5.0f;
+const float ZOOM_NORMAL             = 1.0f;
+static const int ZOOM_SLIDER_MIN    = 0;
+static const int ZOOM_SLIDER_MAX    = 1000;
+static const int ZOOM_SLIDER_MIDDLE = 500;
+static const int ZOOM_SLIDER_WIDTH  = 140;
+
+
 MainWindow::MainWindow(QString filepath, QWidget *parent)
     :
     QMainWindow(parent),
@@ -58,7 +73,9 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_headingMapper(new QSignalMapper(this)),
     m_preserveHeadingAttributes(false),
     m_CurrentFilePath(filepath),
-    m_SelectCharacter(new SelectCharacter(this))
+    m_SelectCharacter(new SelectCharacter(this)),
+    m_slZoomSlider(NULL),
+    m_lbZoomLabel(NULL)
 {
     ui.setupUi(this);
     SetupView();
@@ -93,13 +110,134 @@ MainWindow::~MainWindow()
 }
 
 
+// Zoom Support Related Routines
+
+void MainWindow::ZoomIn()
+{
+    ZoomByStep(true);
+}
+
+void MainWindow::ZoomOut()
+{
+    ZoomByStep(false);
+}
+
+void MainWindow::ZoomReset()
+{
+    ZoomByFactor(ZOOM_NORMAL);
+}
+
+float MainWindow::GetZoomFactor()
+{
+    return m_WebView->GetZoomFactor();
+}
+
+void MainWindow::ZoomByStep(bool zoom_in)
+{
+    // We use a negative zoom stepping if we are zooming *out*                                                     
+    float zoom_stepping       = zoom_in ? ZOOM_STEP : - ZOOM_STEP;
+    // If we are zooming in, we round UP;                                                                          
+    // on zoom out, we round DOWN.                                                                                 
+    float rounding_helper     = zoom_in ? 0.05f : - 0.05f;
+    float current_zoom_factor = GetZoomFactor();
+    float rounded_zoom_factor = Utility::RoundToOneDecimal(current_zoom_factor + rounding_helper);
+
+    // If the rounded value is nearly the same as the original value,                                              
+    // then the original was rounded to begin with and so we                                                       
+    // add the zoom increment                                                                                      
+    if (qAbs(current_zoom_factor - rounded_zoom_factor) < 0.01f) {
+       ZoomByFactor(Utility::RoundToOneDecimal(current_zoom_factor + zoom_stepping));
+    }
+    // ...otherwise we first zoom to the rounded value                                                             
+    else {
+        ZoomByFactor(rounded_zoom_factor);
+    }
+}
+
+void MainWindow::ZoomByFactor(float new_zoom_factor)
+{
+    if (new_zoom_factor > ZOOM_MAX || new_zoom_factor < ZOOM_MIN) {
+        return;
+    }
+
+    m_WebView->SetZoomFactor(new_zoom_factor);
+}
+
+void MainWindow::SliderZoom(int slider_value)
+{
+    float new_zoom_factor     = SliderRangeToZoomFactor(slider_value);
+    float current_zoom_factor = GetZoomFactor();
+
+    // We try to prevent infinite loops...                                                                          
+    if (!qFuzzyCompare(new_zoom_factor, current_zoom_factor)) {
+        ZoomByFactor(new_zoom_factor);
+    }
+}
+
+void MainWindow::UpdateZoomSlider(float new_zoom_factor)
+{
+    m_slZoomSlider->setValue(ZoomFactorToSliderRange(new_zoom_factor));
+}
+
+void MainWindow::UpdateZoomLabel(int slider_value)
+{
+    float zoom_factor = SliderRangeToZoomFactor(slider_value);
+    UpdateZoomLabel(zoom_factor);
+}
+
+int MainWindow::ZoomFactorToSliderRange(float zoom_factor)
+{
+    // We want a precise value for the 100% zoom,                                                                   
+    // so we pick up all float values near it.                                                                      
+    if (qFuzzyCompare(zoom_factor, ZOOM_NORMAL)) {
+        return ZOOM_SLIDER_MIDDLE;
+    }
+
+    // We actually use two ranges: one for the below 100% zoom,                                                     
+    // and one for the above 100%. This is so that the 100% mark                                                    
+    // rests in the middle of the slider.                                                                           
+    if (zoom_factor < ZOOM_NORMAL) {
+        double range            = ZOOM_NORMAL - ZOOM_MIN;
+        double normalized_value = zoom_factor - ZOOM_MIN;
+        double range_proportion = normalized_value / range;
+        return ZOOM_SLIDER_MIN + qRound(range_proportion * (ZOOM_SLIDER_MIDDLE - ZOOM_SLIDER_MIN));
+    } 
+    double range            = ZOOM_MAX - ZOOM_NORMAL;
+    double normalized_value = zoom_factor - ZOOM_NORMAL;
+    double range_proportion = normalized_value / range;
+    return ZOOM_SLIDER_MIDDLE + qRound(range_proportion * ZOOM_SLIDER_MIDDLE);
+}
+
+float MainWindow::SliderRangeToZoomFactor(int slider_range_value)
+{
+    // We want a precise value for the 100% zoom                                                                   
+    if (slider_range_value == ZOOM_SLIDER_MIDDLE) {
+        return ZOOM_NORMAL;
+    }
+
+    // We actually use two ranges: one for the below 100% zoom,                                                    
+    // and one for the above 100%. This is so that the 100% mark                                                   
+    // rests in the middle of the slider.                                                                          
+    if (slider_range_value < ZOOM_SLIDER_MIDDLE) {
+        double range            = ZOOM_SLIDER_MIDDLE - ZOOM_SLIDER_MIN;
+        double normalized_value = slider_range_value - ZOOM_SLIDER_MIN;
+        double range_proportion = normalized_value / range;
+        return ZOOM_MIN + range_proportion * (ZOOM_NORMAL - ZOOM_MIN);
+    }
+    double range            = ZOOM_SLIDER_MAX - ZOOM_SLIDER_MIDDLE;
+    double normalized_value = slider_range_value - ZOOM_SLIDER_MIDDLE;
+    double range_proportion = normalized_value / range;
+    return ZOOM_NORMAL + range_proportion * (ZOOM_MAX - ZOOM_NORMAL);
+}
+
+// End of Zoom related routines
+
 void MainWindow::resizeEvent(QResizeEvent *event)
 {
     // Update self normally
     QMainWindow::resizeEvent(event);
     UpdateWindowTitle();
 }
-
 
 void MainWindow::hideEvent(QHideEvent * event)
 {
@@ -138,19 +276,13 @@ bool MainWindow::HasFocus()
     return m_WebView->hasFocus();
 }
 
-float MainWindow::GetZoomFactor()
-{
-    return m_WebView->GetZoomFactor();
-}
-
 void MainWindow::SetupView()
 {
-    QApplication::setOverrideCursor(Qt::WaitCursor);
-
-    setAttribute(Qt::WA_DeleteOnClose);
-    
     // QWebEngineView events are routed to their parent
     m_WebView->installEventFilter(this);
+
+    QApplication::setOverrideCursor(Qt::WaitCursor);
+    setAttribute(Qt::WA_DeleteOnClose);
     
     QFrame *frame = new QFrame(this);
     QLayout *layout = new QVBoxLayout(frame);
@@ -162,6 +294,25 @@ void MainWindow::SetupView()
     // m_Inspector->SetObjectName("Inspector");
     addDockWidget(Qt::RightDockWidgetArea, m_Inspector);
     m_Inspector->hide();
+
+    // Creating the zoom controls in the status bar                                                                 
+    m_slZoomSlider = new QSlider(Qt::Horizontal, statusBar());
+    m_slZoomSlider->setTracking(false);
+    m_slZoomSlider->setTickInterval(ZOOM_SLIDER_MIDDLE);
+    m_slZoomSlider->setTickPosition(QSlider::TicksBelow);
+    m_slZoomSlider->setFixedWidth(ZOOM_SLIDER_WIDTH);
+    m_slZoomSlider->setMinimum(ZOOM_SLIDER_MIN);
+    m_slZoomSlider->setMaximum(ZOOM_SLIDER_MAX);
+    m_slZoomSlider->setValue(ZOOM_SLIDER_MIDDLE);
+    QToolButton *zoom_out = new QToolButton(statusBar());
+    zoom_out->setDefaultAction(ui.actionZoomOut);
+    QToolButton *zoom_in = new QToolButton(statusBar());
+    zoom_in->setDefaultAction(ui.actionZoomIn);
+    m_lbZoomLabel = new QLabel(QString("100% "), statusBar());
+    statusBar()->addPermanentWidget(m_lbZoomLabel);
+    statusBar()->addPermanentWidget(zoom_out);
+    statusBar()->addPermanentWidget(m_slZoomSlider);
+    statusBar()->addPermanentWidget(zoom_in);
 
     ui.actionOpen->setEnabled(true);
     ui.actionSave->setEnabled(true);
@@ -638,22 +789,22 @@ void MainWindow::IncreaseIndent() { m_WebView->triggerPageAction(QWebEnginePage:
 
 
 
-void MainWindow::ZoomIn()
+
+void MainWindow::ShowMessageOnStatusBar(const QString &message,
+                                        int millisecond_duration)
 {
-    // fix me
+    // It is only safe to add messages to the status bar on the GUI thread.                                         
+    Q_ASSERT(QThread::currentThread() == QCoreApplication::instance()->thread());
+    // The MainWindow has to have a status bar initialised                                                          
+    Q_ASSERT(statusBar());
+
+    if (message.isEmpty()) {
+        statusBar()->clearMessage();
+    } else {
+        statusBar()->showMessage(message, millisecond_duration);
+    }
 }
 
-
-void MainWindow::ZoomOut()
-{
-    // fix me
-}
-
-
-void MainWindow::ZoomReset()
-{
-    // fix me
-}
 
 void MainWindow::ConnectSignalsToSlots()
 {
@@ -719,5 +870,6 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionZoomIn,        SIGNAL(triggered()), this, SLOT(ZoomIn()));
     connect(ui.actionZoomOut,       SIGNAL(triggered()), this, SLOT(ZoomOut()));
     connect(ui.actionZoomReset,     SIGNAL(triggered()), this, SLOT(ZoomReset()));
-
+    connect(m_slZoomSlider,         SIGNAL(valueChanged(int)), this, SLOT(SliderZoom(int)));
+    connect(m_slZoomSlider,         SIGNAL(sliderMoved(int)),  this, SLOT(UpdateZoomLabel(int)));
 }

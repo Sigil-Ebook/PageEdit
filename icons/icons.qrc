@@ -36,6 +36,8 @@
         <file>insert-numbered-list_48px.png</file>
         <file>insert-special-character_48px.png</file>
         <file>inspect_48px.png</file>
+	<file>list-add_48px.png</file>
+	<file>list-remove_48px.png</file>
         <file>reload-page_48px.png</file>
     </qresource>
 </RCC>

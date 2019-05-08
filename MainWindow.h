@@ -26,8 +26,6 @@
 #include "ui_main.h"
 
 #include <QtCore/QSignalMapper>
-#include <QPushButton>
-#include <QAction>
 #include <QMap>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QMainWindow>
@@ -39,7 +37,11 @@ class Inspector;
 class QWebEngineView;
 class QVBoxLayout;
 class QHBoxLayout;
+class QSlider;
+class QLabel;
 class SelectCharacter;
+
+const int STATUSBAR_MSG_DISPLAY_TIME = 7000;
 
 class MainWindow : public QMainWindow
 {
@@ -51,12 +53,28 @@ public:
     QList<ElementIndex> GetCaretLocation();
     bool IsVisible();
     bool HasFocus();
-    float GetZoomFactor();
     bool eventFilter(QObject *object, QEvent *event);
     void setMathJaxURL(QString mathjaxurl) { m_mathjaxurl = mathjaxurl; };
     void setUserCSSURL(QString usercssurl) { m_usercssurl = usercssurl; }
 
+    // Zoom Related
+    float GetZoomFactor();
+    int   ZoomFactorToSliderRange(float zoom_factor);
+    float SliderRangeToZoomFactor(int slider_range_value);
+    void  ZoomByStep(bool zoom_in);
+    void  ZoomByFactor(float new_zoom_factor);
+
 public slots:
+
+    // Zoom Related
+    void ZoomIn();
+    void ZoomOut();
+    void ZoomReset();
+    void SliderZoom(int slider_value);
+    void UpdateZoomSlider(float new_zoom_factor);
+    void UpdateZoomLabel(int slider_value);
+
+    // General Slots
     void DoUpdatePage();
     void UpdatePage(const QString &filename);
     void ScrollTo(QList<ElementIndex> location);
@@ -67,6 +85,7 @@ public slots:
     void SelectAllPreview();
     void CopyPreview();
     void ReloadPreview();
+    void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
 
     // GUI slots
     void SelectEntryOnHeadingToolbar(const QString &element_name);
@@ -99,9 +118,6 @@ public slots:
     void AlignJustify();
     void DecreaseIndent();
     void IncreaseIndent();
-    void ZoomIn();
-    void ZoomOut();
-    void ZoomReset();
 
 signals:
     void Shown();
@@ -143,6 +159,8 @@ private:
     bool m_preserveHeadingAttributes;
     QString m_CurrentFilePath;
     SelectCharacter* m_SelectCharacter;
+    QSlider *m_slZoomSlider;
+    QLabel *m_lbZoomLabel;
     Ui::MainWindow ui;
 };
 
