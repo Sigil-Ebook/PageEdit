@@ -9,19 +9,19 @@ It requires Qt 5.12.3 or later.
 To build after cloning the repo
 
 Make sure qmake from Qt 5.12.3 in your path
-export PATH=~/QT512/bin:${PATH}
+`export PATH=~/QT512/bin:${PATH}`
 
-cd PageEdit
-qmake
-make
+`cd PageEdit`<br>
+`qmake`<br>
+`make`
 
 
 To test:
 
 On macOS:
 
-open ./PageEdit.app --args /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml
+`open ./PageEdit.app --args /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`
 
-On Linux (untested yet)
+On Linux
 
-./PageEdit.exe /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml
+`./PageEdit /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`
