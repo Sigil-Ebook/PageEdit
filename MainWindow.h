@@ -81,6 +81,7 @@ public slots:
     void Copy();
     void SelectAll();
     void Paste();
+    void PasteText(const QString& text);
     void Preferences();
     void InsertSpecialCharacter();
     void InsertSGFSectionMarker();

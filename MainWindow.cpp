@@ -578,6 +578,10 @@ void MainWindow::Paste()
     }
 }
 
+void MainWindow::PasteText(const QString& text)
+{
+    m_WebView->PasteText(text);
+}
 
 void MainWindow::Preferences()
 {
@@ -644,6 +648,8 @@ void MainWindow::ConnectSignalsToSlots()
 
     connect(ui.actionInspect, SIGNAL(triggered()),     this, SLOT(InspectPreviewPage()));
     connect(m_Inspector,      SIGNAL(finished(int)),   this, SLOT(InspectorClosed(int)));
+
+    connect(m_SelectCharacter, SIGNAL(SelectedCharacter(const QString &)), this, SLOT(PasteText(const QString &)));
 
     // Headings Related
     connect(ui.actionHeading1, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
