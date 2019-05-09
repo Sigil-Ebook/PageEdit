@@ -73,6 +73,7 @@ public slots:
     void SliderZoom(int slider_value);
     void UpdateZoomSlider(float new_zoom_factor);
     void UpdateZoomLabel(int slider_value);
+    void UpdateZoomLabel(float new_zoom_factor);
 
     // General Slots
     void DoUpdatePage();

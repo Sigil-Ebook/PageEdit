@@ -187,6 +187,11 @@ void MainWindow::UpdateZoomLabel(int slider_value)
     UpdateZoomLabel(zoom_factor);
 }
 
+void MainWindow::UpdateZoomLabel(float new_zoom_factor)
+{
+    m_lbZoomLabel->setText(QString("%1% ").arg(qRound(new_zoom_factor * 100)));
+}
+
 int MainWindow::ZoomFactorToSliderRange(float zoom_factor)
 {
     // We want a precise value for the 100% zoom,                                                                   
