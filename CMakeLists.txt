@@ -44,7 +44,7 @@ if( UNIX AND NOT APPLE )
    include(GNUInstallDirs)
 endif()
 
-#add_subdirectory( gumbo )
+add_subdirectory( gumbo_subtree/src )
 
 # Qt5 packages minimum version 5.12
 find_package(Qt5 5.12 COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
@@ -109,8 +109,8 @@ set( ALL_SOURCES ${SOURCE_FILES} ${HEADER_FILES} ${UI_FILES_H} ${QRC_FILES_CPP} 
 # and the headers for the linked-to libraries.
 # The directories are in reverse order because we're using before to
 # put our include dirs before any system ones.
-#${GUMBO_INCLUDE_DIRS}
 include_directories( BEFORE
+                     ${GUMBO_INCLUDE_DIRS}
                      ${CMAKE_CURRENT_SOURCE_DIR}
                      ${CMAKE_CURRENT_BINARY_DIR} )
 
@@ -127,8 +127,7 @@ include_directories( BEFORE
 #endif()
 
 # No need to explicity link Qt5::WinMain or to use the qt5_use_modules macro since CMAKE 2.8.11. We require CMAKE 3.0.0
-#${GUMBO_LIBRARIES}
-target_link_libraries( ${PROJECT_NAME} Qt5::Widgets  Qt5::Xml  Qt5::XmlPatterns  Qt5::PrintSupport
+target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt5::Widgets  Qt5::Xml  Qt5::XmlPatterns  Qt5::PrintSupport
                                      Qt5::Svg  Qt5::WebEngine  Qt5::WebEngineWidgets  Qt5::Network  Qt5::Concurrent )
 
 #############################################################################
