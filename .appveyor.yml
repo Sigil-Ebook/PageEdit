@@ -1,0 +1,67 @@
+version: '0.1.0-{build}'
+
+branches:
+  only:
+  - master
+  - /\d+\.\d+\.\d+(-\d+)?/
+  
+clone_folder: c:\project\pageedit
+
+image:
+- Visual Studio 2017
+
+configuration: Release
+
+platform:
+- x64
+
+init:
+  - set /p RedistVersion=<"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\Microsoft.VCRedistVersion.default.txt"
+
+clone_script:
+- ps: >-
+    if(-not $env:appveyor_pull_request_number) {
+      git clone -q --depth=1 --branch=$env:appveyor_repo_branch https://github.com/$env:appveyor_repo_name.git $env:appveyor_build_folder
+      git checkout -qf $env:appveyor_repo_commit
+    } else {
+      git clone -q --depth=1 https://github.com/$env:appveyor_repo_name.git $env:appveyor_build_folder 
+      git fetch -q origin +refs/pull/$env:appveyor_pull_request_number/merge:
+      git checkout -qf FETCH_HEAD
+    }
+    
+    Set-Location $env:appveyor_build_folder
+
+install:
+  - choco install ninja
+
+environment:
+  global:
+      INNO: C:\Program Files (x86)\Inno Setup 5
+      REDIST: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\%RedistVersion%\vcredist_%PLATFORM%.exe
+      DOWNLOAD: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/MyQt%PLATFORM%-5.12.3_WE-WK_VS2017.7z
+      QT: C:\MyQtx64_WE\Qt5.12.3
+
+
+before_build:
+- cmd: |-
+    mkdir build
+    cd ..\..
+    curl.exe -L -o webkit.7z %DOWNLOAD%
+    7z x webkit.7z -y
+    set PATH=%QT%\bin;%INNO%;%PATH%
+    echo 'PATH = %PATH%'
+    cd project\sigil\build
+    call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" %PLATFORM%
+    echo 'LIB = %LIB%'
+    echo 'LIBPATH = %LIBPATH%'
+    echo 'INCLUDE = %INCLUDE%'
+    echo 'CL = %CL%'
+    cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5 %CMAKE64BIT%
+
+    
+build_script:
+- cmd: |-
+    ninja -j4
+ 
+artifacts:
+    path: build\bin\*.exe
