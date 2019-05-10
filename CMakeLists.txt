@@ -44,6 +44,16 @@ if( UNIX AND NOT APPLE )
    include(GNUInstallDirs)
 endif()
 
+# Make sure gumbo builds as static
+if(NOT DEFINED GUMBO_STATIC_LIB)
+  set(GUMBO_STATIC_LIB 1)
+endif()
+
+# Prevent some testing/copying that we don't want or use
+if(NOT DEFINED GUMBO_IS_SUBTREE)
+  set(GUMBO_IS_SUBTREE 1)
+endif()
+
 add_subdirectory( gumbo_subtree/src )
 
 # Qt5 packages minimum version 5.12
