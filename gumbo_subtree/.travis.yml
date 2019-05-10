@@ -1,0 +1,27 @@
+language: c++
+
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      compiler: gcc
+    - os: osx
+      osx_image: xcode7.3
+      compiler: clang
+
+install:
+  - sudo pip install bs4
+
+script:
+  - mkdir build && cd build
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+        cmake -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/ -DCMAKE_BUILD_TYPE=Release ../;
+    else cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../;
+    fi
+  - make -j4
+
+after_success:
+  - python python/gumbo/gumboc_test.py
+  - python python/gumbo/bs4_adapter_test.py
+  - sudo python setup.py sdist install
+  - python -c 'import gumbo; gumbo.parse("Foo")'
