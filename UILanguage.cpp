@@ -40,12 +40,7 @@ QStringList UILanguage::GetPossibleTranslationPaths()
     // on the platform and where they were installed.
     QStringList possible_qm_locations;
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
-    // The user can specify an env variable that points to the translation.
-    if (!pageedit_extra_root.isEmpty()) {
-        possible_qm_locations.append(pageedit_extra_root + "/translations/");
-    } else {
-        possible_qm_locations.append(pageedit_share_root + "/translations/");
-    }
+    possible_qm_locations.append(pageedit_share_root + "/translations/");
 #endif
 
     possible_qm_locations.append(QLibraryInfo::location(QLibraryInfo::TranslationsPath));

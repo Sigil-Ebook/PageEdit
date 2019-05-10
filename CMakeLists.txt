@@ -180,6 +180,18 @@ elseif( CMAKE_COMPILER_IS_GNUCXX )
 endif()
 
 if( UNIX AND NOT APPLE )
+    if ( NOT SHARE_INSTALL_PREFIX )
+        set ( SHARE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX} )
+    endif()
+
+    set ( SIGIL_SHARE_ROOT "${SHARE_INSTALL_PREFIX}/share/${PROJECT_NAME}" )
+    
+    # Set some defines that sigil_constants.cpp can then access
+    set_property (
+        SOURCE pageedit_constants.cpp
+        PROPERTY COMPILE_DEFINITIONS
+        PAGEEDIT_SHARE_ROOT="${PAGEEDIT_SHARE_ROOT}"
+    )
     # Standard Linux 'make install'
     install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR}/${PROJECT_NAME} )
 endif()

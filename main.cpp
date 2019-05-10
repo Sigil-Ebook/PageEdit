@@ -34,7 +34,7 @@
 #include "MainWindow.h"
 #include "Utility.h"
 #include "SettingsStore.h"
-#include "Prefs/UILanguage.h"
+#include "UILanguage.h"
 #include "pageedit_constants.h"
 #include "pageedit_exception.h"
 
