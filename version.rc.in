@@ -1,0 +1,30 @@
+#include <windows.h>
+
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     ${PAGEEDIT_MAJOR_VERSION},${PAGEEDIT_MINOR_VERSION},${PAGEEDIT_REVISION_VERSION},0
+PRODUCTVERSION  ${PAGEEDIT_MAJOR_VERSION},${PAGEEDIT_MINOR_VERSION},${PAGEEDIT_REVISION_VERSION},0
+
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",        "Sigil Project"
+            VALUE "FileDescription",    "PageEdit is a multi-platform xhtml editor"
+            VALUE "FileVersion",        "${PAGEEDIT_FULL_VERSION}.0"
+            VALUE "InternalName",       "PageEdit"
+            VALUE "LegalCopyright",     "Copyright (c) 2010-${SIGIL_BUILD_YEAR} Sigil Authors"
+            VALUE "LegalTrademarks1",   "All Rights Reserved"
+            VALUE "LegalTrademarks2",   "All Rights Reserved"
+            VALUE "OriginalFilename",   "PageEdit.exe"
+            VALUE "ProductName",        "PageEdit"
+            VALUE "ProductVersion",     "${PAGEEDIT_FULL_VERSION}.0"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
