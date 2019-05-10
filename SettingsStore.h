@@ -4,20 +4,20 @@
 **  Copyright (C) 2011, 2012, 2013  John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012, 2013  Dave Heiland
 **
-**  This file is part of Sigil.
+**  This file is part of PageEdit.
 **
-**  Sigil is free software: you can redistribute it and/or modify
+**  PageEdit is free software: you can redistribute it and/or modify
 **  it under the terms of the GNU General Public License as published by
 **  the Free Software Foundation, either version 3 of the License, or
 **  (at your option) any later version.
 **
-**  Sigil is distributed in the hope that it will be useful,
+**  PageEdit is distributed in the hope that it will be useful,
 **  but WITHOUT ANY WARRANTY; without even the implied warranty of
 **  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License
-**  along with Sigil.  If not, see <http://www.gnu.org/licenses/>.
+**  along with PageEdit.  If not, see <http://www.gnu.org/licenses/>.
 **
 *************************************************************************/
 
@@ -25,12 +25,9 @@
 #ifndef SETTINGSSTORE_H
 #define SETTINGSSTORE_H
 
-#include <QColor>
 #include <QtCore/QSettings>
 #include <QtCore/QString>
 #include <utility>
-
-class QColor;
 
 /**
  * Provides access for reading and writing user configurable
@@ -65,6 +62,16 @@ public:
     float zoomPreview();
 
     /**
+     * All appearance settings related to PageEdit.
+     */
+    struct WebViewAppearance {
+      QString font_family_standard;
+      QString font_family_serif;
+      QString font_family_sans_serif;
+      int font_size;
+    };
+
+    /**
      * All appearance settings related to Special Characters.
      */
     struct SpecialCharacterAppearance {
@@ -72,8 +79,16 @@ public:
         int font_size;
     };
 
+
+    int appearancePrefsTabIndex();
+
     /**
-     * The appearance settings to use for editing in Code View.
+     * The appearance settings to use for the WebView.
+     */
+    WebViewAppearance webViewAppearance();
+
+    /**
+     * The appearance settings to use for Special Characters.
      */
     SpecialCharacterAppearance specialCharacterAppearance();
 
@@ -103,6 +118,13 @@ public slots:
     void setZoomWeb(float zoom);
     void setZoomPreview(float zoom);
 
+    void setAppearancePrefsTabIndex(int index);
+
+    /**
+     * Set the default font settings to use for rendering Book View/Preview
+     */
+    void setWebViewAppearance(const WebViewAppearance &webview_appearance);
+
     /**
     * Set the default font settings to use for Special Characters popup window
     */
@@ -112,6 +134,8 @@ public slots:
      * Set the icon size to use for the main menu.
      */
     void setMainMenuIconSize(double icon_size);
+
+
 
 private:
     /**

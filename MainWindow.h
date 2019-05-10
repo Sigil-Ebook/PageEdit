@@ -105,7 +105,7 @@ public slots:
     void SelectAll();
     void Paste();
     void PasteText(const QString& text);
-    void Preferences();
+    void PreferencesDialog();
     void InsertSpecialCharacter();
     void InsertSGFSectionMarker();
     void InsertBulletedList();

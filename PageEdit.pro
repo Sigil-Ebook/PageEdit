@@ -9,37 +9,48 @@ TEMPLATE = app
 
 SOURCES += \
     main.cpp\
+    pageedit_constants.cpp\
     MainApplication.cpp\
     MainWindow.cpp\
-    Inspector.cpp\
     SelectCharacter.cpp\
-    SettingsStore.cpp\
-    Utility.cpp\
     WebPageEdit.cpp\
-    WebViewEdit.cpp
+    WebViewEdit.cpp\
+    Inspector.cpp\
+    Preferences.cpp\
+    AppearanceWidget.cpp\
+    LanguageWidget.cpp\
+    UILanguage.cpp\
+    SettingsStore.cpp\
+    Utility.cpp
 
 HEADERS += \
+    pageedit_constants.h\
+    pageedit_exception.h\
     MainApplication.h\
     MainWindow.h\
+    Zoomable.h\
+    Viewer.h\
     ElementIndex.h\
-    Inspector.h\
-    pageedit_exception.h\
     SelectCharacter.h\
-    SettingsStore.h\
-    Utility.h\
     WebPageEdit.h\
     WebViewEdit.h\
-    Zoomable.h\
-    Viewer.h
+    Inspector.h\
+    Preferences.h\
+    PreferencesWidget.h\
+    AppearanceWidget.h\
+    LanguageWidget.h\
+    UILanguage.h\
+    SettingsStore.h\
+    Utility.h
 
 FORMS += \
     main.ui\
-    SelectCharacter.ui
+    SelectCharacter.ui\
+    Preferences.ui\
+    PAppearanceWidget.ui\
+    PLanguageWidget.ui
 
 RESOURCES += \
     icons/icons.qrc\
     javascript/javascript.qrc
-	
-	
-
 

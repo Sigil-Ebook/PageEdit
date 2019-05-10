@@ -49,6 +49,7 @@
 #include "Utility.h"
 #include "WebViewEdit.h"
 #include "SelectCharacter.h"
+#include "Preferences.h"
 
 static const QString SETTINGS_GROUP = "mainwindow";
 
@@ -328,10 +329,13 @@ void MainWindow::SetupView()
     // Headings QToolButton
     ui.tbHeadings->setPopupMode(QToolButton::InstantPopup);
 
+    // Preferences
+    ui.actionPreferences->setMenuRole(QAction::PreferencesRole);
+    ui.actionPreferences->setEnabled(true);
+
     ui.actionOpen->setEnabled(true);
     ui.actionSave->setEnabled(true);
     ui.actionExit->setEnabled(true);
-    ui.actionPreferences->setEnabled(true);
     
     ui.actionUndo->setEnabled(true);
     ui.actionRedo->setEnabled(true);
@@ -813,10 +817,14 @@ void MainWindow::PasteText(const QString& text)
     m_WebView->PasteText(text);
 }
 
-void MainWindow::Preferences()
+void MainWindow::PreferencesDialog()
 {
-    // fix me
-    ShowMessageOnStatusBar(tr("Preferences Dialog not Implemented Yet"));
+    Preferences preferences(this);
+    preferences.exec();
+    if (m_SelectCharacter->isVisible()) {
+        // To ensure any font size changes are immediately applied.                                 
+        m_SelectCharacter->show();
+    }
 }
 
 void MainWindow::InsertSpecialCharacter()
@@ -1077,7 +1085,7 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionOpen,      SIGNAL(triggered()), this, SLOT(Open()));
     connect(ui.actionSave,      SIGNAL(triggered()), this, SLOT(Save()));
     connect(ui.actionExit,      SIGNAL(triggered()), this, SLOT(Exit()));
-    connect(ui.actionPreferences, SIGNAL(triggered()), this, SLOT(Preferences()));
+    connect(ui.actionPreferences, SIGNAL(triggered()), this, SLOT(PreferencesDialog()));
       
     // Edit Related
     connect(ui.actionUndo,      SIGNAL(triggered()),  this,   SLOT(Undo()));
