@@ -21,19 +21,38 @@
 
 #include <iostream>
 
-#include <QtCore/QCoreApplication>
-#include <QtCore/QDir>
-#include <QtCore/QLibraryInfo>
-#include <QtCore/QTextCodec>
-#include <QtCore/QTranslator>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QMessageBox>
+#include <QCoreApplication>
+#include <QApplication>
+#include <QDir>
+#include <QLibraryInfo>
+#include <QTextCodec>
+#include <QTranslator>
+#include <QMessageBox>
 #include <QFileInfo>
 #include <QDebug>
 
-#include "MainApplication.h"
 #include "MainWindow.h"
 #include "Utility.h"
+#include "SettingsStore.h"
+#include "Prefs/UILanguage.h"
+#include "pageedit_constants.h"
+#include "pageedit_exception.h"
+
+
+#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+// Returns a QIcon with the Sigil "S" logo in various sizes
+static QIcon GetApplicationIcon()
+{
+  QIcon app_icon;
+  app_icon.addFile(":/icons/app_icon_32px.png",  QSize(32, 32));
+  app_icon.addFile(":/icons/app_icon_48px.png",  QSize(48, 48));
+  app_icon.addFile(":/icons/app_icon_128px.png", QSize(128, 128));
+  app_icon.addFile(":/icons/app_icon_256px.png", QSize(256, 256));
+  app_icon.addFile(":/icons/app_icon_512px.png", QSize(512, 512));
+  return app_icon;
+}
+#endif
+
 
 // Creates a MainWindow instance depending
 // on command line arguments
@@ -62,13 +81,50 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion("0.0.1");
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
-    MainApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("utf8"));
 
-// fix me translations
+    // set up for translations
+    SettingsStore settings;
 
-// fix me icons
+    // Setup the qtbase_ translator and load the translation for the selected language
+    QTranslator qtbaseTranslator;
+    const QString qm_name_qtbase = QString("qtbase_%1").arg(settings.uiLanguage());
+    // Run though all locations and stop once we find and are able to load
+    // an appropriate Qt base translation.
+    foreach(QString path, UILanguage::GetPossibleTranslationPaths()) {
+        if (QDir(path).exists()) {
+	    if (qtbaseTranslator.load(qm_name_qtbase, path)) {
+	        break;
+	    }
+        }
+    }
+    app.installTranslator(&qtbaseTranslator);
+
+    // Setup the PageEdit translator and load the translation for the selected language
+    QTranslator pageeditTranslator;
+    const QString qm_name = QString("pageedit_%1").arg(settings.uiLanguage());
+    // Run though all locations and stop once we find and are able to load
+    // an appropriate translation.
+    foreach(QString path, UILanguage::GetPossibleTranslationPaths()) {
+        if (QDir(path).exists()) {
+	    if (pageeditTranslator.load(qm_name, path)) {
+	        break;
+	    }
+        }
+    }
+    app.installTranslator(&pageeditTranslator);
+
+
+// application icons linuxicons
+#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+    app.setWindowIcon(GetApplicationIcon());
+#if QT_VERSION >= 0x050700
+    // Wayland needs this clarified in order to propery assign the icon 
+    app.setDesktopFileName(QStringLiteral("pageedit.desktop"));
+#endif
+#endif
 
     const QStringList &arguments = QCoreApplication::arguments();
     MainWindow *widget = GetMainWindow(arguments);
