@@ -128,6 +128,14 @@ WebViewEdit::~WebViewEdit()
     }
 }
 
+QString WebViewEdit::GetCaretElementName()
+{
+    QString javascript =  "var node = document.getSelection().anchorNode;"
+                          "var startNode = get_block( node );"
+      "if (startNode != null) { startNode.nodeName; }";
+    return EvaluateJavascript(c_GetBlock + javascript).toString();
+}
+
 QString WebViewEdit::GetCaretLocationUpdate()
 {
     StoreCaretLocationUpdate(GetCaretLocation());

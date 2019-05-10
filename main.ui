@@ -245,7 +245,7 @@
 
   <action name="actionAlignLeft">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
@@ -262,7 +262,7 @@
   
   <action name="actionAlignRight">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
@@ -278,7 +278,7 @@
   
   <action name="actionAlignCenter">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
@@ -297,7 +297,7 @@
   
   <action name="actionAlignJustify">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
@@ -419,7 +419,7 @@
 
   <action name="actionInsertNumberedList">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
@@ -435,7 +435,7 @@
 
   <action name="actionInsertBulletedList">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">

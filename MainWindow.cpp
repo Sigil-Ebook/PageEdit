@@ -75,7 +75,8 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_preserveHeadingAttributes(false),
     m_SelectCharacter(new SelectCharacter(this)),
     m_slZoomSlider(NULL),
-    m_lbZoomLabel(NULL)
+    m_lbZoomLabel(NULL),
+    m_updateActionStatePending(false)
 {
     ui.setupUi(this);
     SetupView();
@@ -370,6 +371,74 @@ void MainWindow::SetupView()
     QApplication::restoreOverrideCursor();
 }
 
+void MainWindow::SelectionChanged()
+{
+    if (!m_updateActionStatePending) {
+        m_updateActionStatePending = true;
+        QTimer::singleShot(200, this, SLOT(UpdateActionState()));
+    }
+}
+
+void MainWindow::UpdateActionState() {
+    if (!m_WebView->hasSelection()) {
+        ui.actionBold->setChecked(false);
+        ui.actionItalic->setChecked(false);
+        ui.actionStrikethrough->setChecked(false);
+        ui.actionUnderline->setChecked(false);
+        ui.actionSubscript->setChecked(false);
+        ui.actionSuperscript->setChecked(false);
+        ui.actionHeading1->setChecked(false);
+        ui.actionHeading2->setChecked(false);
+        ui.actionHeading3->setChecked(false);
+        ui.actionHeading4->setChecked(false);
+        ui.actionHeading5->setChecked(false);
+        ui.actionHeading6->setChecked(false);
+        ui.actionHeadingNormal->setChecked(false);
+    } else {
+        ui.actionBold->setChecked(m_WebView->QueryCommandState("bold"));
+        ui.actionItalic->setChecked(m_WebView->QueryCommandState("italic"));
+        ui.actionStrikethrough->setChecked(m_WebView->QueryCommandState("strikeThrough"));
+        ui.actionUnderline->setChecked(m_WebView->QueryCommandState("underline"));
+        ui.actionSubscript->setChecked(m_WebView->QueryCommandState("subscript"));
+        ui.actionSuperscript->setChecked(m_WebView->QueryCommandState("superscript"));
+        CheckHeadingLevel(m_WebView->GetCaretElementName());
+    }
+    m_updateActionStatePending = false;
+}
+
+void MainWindow::CheckHeadingLevel(const QString &element_name)
+{
+    ui.actionHeading1->setChecked(false);
+    ui.actionHeading2->setChecked(false);
+    ui.actionHeading3->setChecked(false);
+    ui.actionHeading4->setChecked(false);
+    ui.actionHeading5->setChecked(false);
+    ui.actionHeading6->setChecked(false);
+    ui.actionHeadingNormal->setChecked(false);
+
+    if (!element_name.isEmpty()) {
+        if ((element_name[ 0 ].toLower() == QChar('h')) && (element_name[ 1 ].isDigit())) {
+            QString heading_name = QString(element_name[ 1 ]);
+
+            if (heading_name == "1") {
+	        ui.actionHeading1->setChecked(true);
+            } else if (heading_name == "2") {
+	        ui.actionHeading2->setChecked(true);
+            } else if (heading_name == "3") {
+	        ui.actionHeading3->setChecked(true);
+            } else if (heading_name == "4") {
+	        ui.actionHeading4->setChecked(true);
+            } else if (heading_name == "5") {
+	        ui.actionHeading5->setChecked(true);
+            } else if (heading_name == "6") {
+	        ui.actionHeading6->setChecked(true);
+            }
+        } else {
+            ui.actionHeadingNormal->setChecked(true);
+        }
+    }
+}
+
 void MainWindow::DoUpdatePage()
 {
   if (!m_CurrentFilePath.isEmpty()) {
@@ -606,8 +675,7 @@ const QMap<QString, QString> MainWindow::GetSaveFiltersMap()
     return file_filters;
 }
 
-
-void MainWindow::SelectEntryOnHeadingToolbar(const QString &element_name)
+void MainWindow::ApplyHeadingToSelection(const QString &heading_type)
 {
     ui.actionHeading1->setChecked(false);
     ui.actionHeading2->setChecked(false);
@@ -616,37 +684,25 @@ void MainWindow::SelectEntryOnHeadingToolbar(const QString &element_name)
     ui.actionHeading5->setChecked(false);
     ui.actionHeading6->setChecked(false);
     ui.actionHeadingNormal->setChecked(false);
-
-    if (!element_name.isEmpty()) {
-        if ((element_name[ 0 ].toLower() == QChar('h')) && (element_name[ 1 ].isDigit())) {
-            QString heading_name = QString(element_name[ 1 ]);
-
-            if (heading_name == "1") {
-	        ui.actionHeading1->setChecked(true);
-            } else if (heading_name == "2") {
-	        ui.actionHeading2->setChecked(true);
-            } else if (heading_name == "3") {
-	        ui.actionHeading3->setChecked(true);
-            } else if (heading_name == "4") {
-	        ui.actionHeading4->setChecked(true);
-            } else if (heading_name == "5") {
-	        ui.actionHeading5->setChecked(true);
-            } else if (heading_name == "6") {
-	        ui.actionHeading6->setChecked(true);
-            }
-        } else {
-            ui.actionHeadingNormal->setChecked(true);
-        }
-    }
-}
-
-void MainWindow::ApplyHeadingStyleToTab(const QString &heading_type)
-{
     if (heading_type == "Normal") {
         m_WebView->FormatBlock("p", m_preserveHeadingAttributes);
+        ui.actionHeadingNormal->setChecked(true);
     } else if (heading_type[0].isDigit()) {
         QString heading = "h" + heading_type;
         m_WebView->FormatBlock(heading, m_preserveHeadingAttributes);
+	if (heading_type == "1") {
+	    ui.actionHeading1->setChecked(true);
+        } else if (heading_type == "2") {
+	    ui.actionHeading2->setChecked(true);
+	} else if (heading_type == "3") {
+	    ui.actionHeading3->setChecked(true);
+	} else if (heading_type == "4") {
+	    ui.actionHeading4->setChecked(true);
+	} else if (heading_type == "5") {
+	    ui.actionHeading5->setChecked(true);
+        } else if (heading_type == "6") {
+	    ui.actionHeading6->setChecked(true);
+	}
     }
 }
 
@@ -821,6 +877,7 @@ void MainWindow::ConnectSignalsToSlots()
 {
     connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)), this, SIGNAL(ZoomFactorChanged(float)));
     connect(m_WebView,   SIGNAL(LinkClicked(const QUrl &)), this, SLOT(LinkClicked(const QUrl &)));
+    connect(m_WebView,   SIGNAL(selectionChanged()), this, SLOT(SelectionChanged()));
 
     connect(ui.actionInspect, SIGNAL(triggered()),     this, SLOT(InspectPreviewPage()));
     connect(m_SelectCharacter, SIGNAL(SelectedCharacter(const QString &)), this, SLOT(PasteText(const QString &)));
@@ -840,7 +897,7 @@ void MainWindow::ConnectSignalsToSlots()
     m_headingMapper->setMapping(ui.actionHeading6, "6");
     connect(ui.actionHeadingNormal, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeadingNormal, "Normal");
-    connect(m_headingMapper, SIGNAL(mapped(const QString &)), this, SLOT(ApplyHeadingStyleToTab(const QString &)));
+    connect(m_headingMapper, SIGNAL(mapped(const QString &)), this, SLOT(ApplyHeadingToSelection(const QString &)));
     connect(ui.actionHeadingPreserveAttributes, SIGNAL(triggered(bool)), this, SLOT(SetPreserveHeadingAttributes(bool)));
 
     // File Related

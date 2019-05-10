@@ -89,8 +89,9 @@ public slots:
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
 
     // GUI slots
-    void SelectEntryOnHeadingToolbar(const QString &element_name);
-    void ApplyHeadingStyleToTab(const QString &heading_type);
+    void SelectionChanged();
+    void CheckHeadingLevel(const QString &element_name);
+    void ApplyHeadingToSelection(const QString &heading_type);
     void SetPreserveHeadingAttributes(bool new_state);
     bool Save();
     void Open();
@@ -119,6 +120,7 @@ public slots:
     void AlignJustify();
     void DecreaseIndent();
     void IncreaseIndent();
+    void UpdateActionState();
 
 signals:
     void Shown();
@@ -162,6 +164,7 @@ private:
     SelectCharacter* m_SelectCharacter;
     QSlider *m_slZoomSlider;
     QLabel *m_lbZoomLabel;
+    bool m_updateActionStatePending;
     Ui::MainWindow ui;
 };
 

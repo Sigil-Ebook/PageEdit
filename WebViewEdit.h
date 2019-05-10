@@ -103,6 +103,7 @@ public:
 
     void FormatBlock(const QString &element_name, bool preserve_attributes);
 
+    QString GetCaretElementName();
 
 public slots:
      void PasteText(const QString &text);
