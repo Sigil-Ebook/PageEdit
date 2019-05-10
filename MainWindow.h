@@ -56,6 +56,7 @@ public:
     bool eventFilter(QObject *object, QEvent *event);
     void setMathJaxURL(QString mathjaxurl) { m_mathjaxurl = mathjaxurl; };
     void setUserCSSURL(QString usercssurl) { m_usercssurl = usercssurl; }
+    void ExtendIconSizes();
 
     // Zoom Related
     float GetZoomFactor();
@@ -89,6 +90,7 @@ public slots:
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
 
     // GUI slots
+    void sizeMenuIcons();
     void SelectionChanged();
     void CheckHeadingLevel(const QString &element_name);
     void ApplyHeadingToSelection(const QString &heading_type);

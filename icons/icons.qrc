@@ -1,43 +1,74 @@
 <RCC>
     <qresource prefix="/icons">
+        <file>document-open_22px.png</file>
         <file>document-open_48px.png</file>
+        <file>document-save_22px.png</file>
         <file>document-save_48px.png</file>
+        <file>edit-copy_22px.png</file>
         <file>edit-copy_48px.png</file>
+        <file>edit-cut_22px.png</file>
         <file>edit-cut_48px.png</file>
+        <file>edit-paste_22px.png</file>
         <file>edit-paste_48px.png</file>
+        <file>edit-redo_22px.png</file>
         <file>edit-redo_48px.png</file>
+        <file>edit-select-all_22px.png</file>
         <file>edit-select-all_48px.png</file>
+        <file>edit-undo_22px.png</file>
         <file>edit-undo_48px.png</file>
-        <file>format-case-capitalize_48px.png</file>
-        <file>format-case-lowercase_48px.png</file>
-        <file>format-case-titlecase_48px.png</file>
-        <file>format-case-uppercase_48px.png</file>
+        <file>format-indent-less_22px.png</file>
         <file>format-indent-less_48px.png</file>
+        <file>format-indent-more_22px.png</file>
         <file>format-indent-more_48px.png</file>
+        <file>format-justify-center_22px.png</file>
         <file>format-justify-center_48px.png</file>
+        <file>format-justify-fill_22px.png</file>
         <file>format-justify-fill_48px.png</file>
+        <file>format-justify-left_22px.png</file>
         <file>format-justify-left_48px.png</file>
+        <file>format-justify-right_22px.png</file>
         <file>format-justify-right_48px.png</file>
+        <file>format-text-bold_22px.png</file>
         <file>format-text-bold_48px.png</file>
+        <file>format-text-italic_22px.png</file>
         <file>format-text-italic_48px.png</file>
+        <file>format-text-strikethrough_22px.png</file>
         <file>format-text-strikethrough_48px.png</file>
+        <file>format-text-subscript_22px.png</file>
         <file>format-text-subscript_48px.png</file>
+        <file>format-text-superscript_22px.png</file>
         <file>format-text-superscript_48px.png</file>
+        <file>format-text-underline_22px.png</file>
         <file>format-text-underline_48px.png</file>
+        <file>heading-1_22px.png</file>
         <file>heading-1_48px.png</file>
+        <file>heading-2_22px.png</file>
         <file>heading-2_48px.png</file>
+        <file>heading-3_22px.png</file>
         <file>heading-3_48px.png</file>
+        <file>heading-4_22px.png</file>
         <file>heading-4_48px.png</file>
+        <file>heading-5_22px.png</file>
         <file>heading-5_48px.png</file>
+        <file>heading-6_22px.png</file>
         <file>heading-6_48px.png</file>
+        <file>heading-all_22px.png</file>
         <file>heading-all_48px.png</file>
+        <file>heading-normal_22px.png</file>
         <file>heading-normal_48px.png</file>
+        <file>insert-bullet-list_22px.png</file>
         <file>insert-bullet-list_48px.png</file>
+        <file>insert-numbered-list_22px.png</file>
         <file>insert-numbered-list_48px.png</file>
+        <file>insert-special-character_22px.png</file>
         <file>insert-special-character_48px.png</file>
+        <file>inspect_22px.png</file>
         <file>inspect_48px.png</file>
+	<file>list-add_22px.png</file>
 	<file>list-add_48px.png</file>
+	<file>list-remove_22px.png</file>
 	<file>list-remove_48px.png</file>
-        <file>reload-page_48px.png</file>
+	<file>split-section_22px.png</file>
+	<file>split-section_48px.png</file>
     </qresource>
 </RCC>

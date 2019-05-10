@@ -303,7 +303,7 @@ void MainWindow::SetupView()
     addDockWidget(Qt::RightDockWidgetArea, m_Inspector);
     m_Inspector->hide();
 
-    // Creating the zoom controls in the status bar                                                                 
+    // Creating the zoom controls in the status bar
     m_slZoomSlider = new QSlider(Qt::Horizontal, statusBar());
     m_slZoomSlider->setTracking(false);
     m_slZoomSlider->setTickInterval(ZOOM_SLIDER_MIDDLE);
@@ -321,6 +321,12 @@ void MainWindow::SetupView()
     statusBar()->addPermanentWidget(zoom_out);
     statusBar()->addPermanentWidget(m_slZoomSlider);
     statusBar()->addPermanentWidget(zoom_in);
+
+    // Add alternate icon sizes for actions
+    ExtendIconSizes();
+
+    // Headings QToolButton
+    ui.tbHeadings->setPopupMode(QToolButton::InstantPopup);
 
     ui.actionOpen->setEnabled(true);
     ui.actionSave->setEnabled(true);
@@ -365,6 +371,8 @@ void MainWindow::SetupView()
     ui.actionZoomReset->setEnabled(true);
 
     ui.actionInspect->setEnabled(true);
+
+    sizeMenuIcons();
 
     m_WebView->Zoom();
 
@@ -871,6 +879,171 @@ void MainWindow::ShowMessageOnStatusBar(const QString &message,
     } else {
         statusBar()->showMessage(message, millisecond_duration);
     }
+}
+
+void MainWindow::sizeMenuIcons() {
+  // Size icons based on Qfont line-spacing and a                                                                                    
+  // user-preference tweakable scale-factor.                                                                                         
+  SettingsStore settings;
+  double iconscalefactor = settings.mainMenuIconSize();
+  int iconsize = QFontMetrics(QFont()).lineSpacing() * iconscalefactor;
+  if (iconsize < 12) iconsize = 12;
+  if (iconsize > 48) iconsize = 48;
+
+  QList<QToolBar *> all_toolbars = findChildren<QToolBar *>();
+  foreach(QToolBar * toolbar, all_toolbars) {
+    toolbar->setIconSize(QSize(iconsize,iconsize));
+  }
+}
+
+void MainWindow::ExtendIconSizes()
+{
+    QIcon icon;
+
+    icon = ui.actionSave->icon();
+    icon.addFile(QString::fromUtf8(":/icons/document-save_22px.png"));
+    ui.actionSave->setIcon(icon);
+
+    icon = ui.actionCut->icon();
+    icon.addFile(QString::fromUtf8(":/icons/edit-cut_22px.png"));
+    ui.actionCut->setIcon(icon);
+
+    icon = ui.actionPaste->icon();
+    icon.addFile(QString::fromUtf8(":/icons/edit-paste_22px.png"));
+    ui.actionPaste->setIcon(icon);
+
+    icon = ui.actionUndo->icon();
+    icon.addFile(QString::fromUtf8(":/icons/edit-undo_22px.png"));
+    ui.actionUndo->setIcon(icon);
+
+    icon = ui.actionRedo->icon();
+    icon.addFile(QString::fromUtf8(":/icons/edit-redo_22px.png"));
+    ui.actionRedo->setIcon(icon);
+
+    icon = ui.actionCopy->icon();
+    icon.addFile(QString::fromUtf8(":/icons/edit-copy_22px.png"));
+    ui.actionCopy->setIcon(icon);
+
+    icon = ui.actionSelectAll->icon();
+    icon.addFile(QString::fromUtf8(":/icons/edit-select-all_22px.png"));
+    ui.actionSelectAll->setIcon(icon);
+
+    icon = ui.actionAlignLeft->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-justify-left_22px.png"));
+    ui.actionAlignLeft->setIcon(icon);
+
+    icon = ui.actionAlignRight->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-justify-right_22px.png"));
+    ui.actionAlignRight->setIcon(icon);
+
+    icon = ui.actionAlignCenter->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-justify-center_22px.png"));
+    ui.actionAlignCenter->setIcon(icon);
+
+    icon = ui.actionAlignJustify->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-justify-fill_22px.png"));
+    ui.actionAlignJustify->setIcon(icon);
+
+    icon = ui.actionBold->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-text-bold_22px.png"));
+    ui.actionBold->setIcon(icon);
+
+    icon = ui.actionItalic->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-text-italic_22px.png"));
+    ui.actionItalic->setIcon(icon);
+
+    icon = ui.actionUnderline->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-text-underline_22px.png"));
+    ui.actionUnderline->setIcon(icon);
+
+    icon = ui.actionStrikethrough->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-text-strikethrough_22px.png"));
+    ui.actionStrikethrough->setIcon(icon);
+
+    icon = ui.actionSubscript->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-text-subscript_22px.png"));
+    ui.actionSubscript->setIcon(icon);
+
+    icon = ui.actionSuperscript->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-text-superscript_22px.png"));
+    ui.actionSuperscript->setIcon(icon);
+
+    icon = ui.actionInsertNumberedList->icon();
+    icon.addFile(QString::fromUtf8(":/icons/insert-numbered-list_22px.png"));
+    ui.actionInsertNumberedList->setIcon(icon);
+
+    icon = ui.actionInsertBulletedList->icon();
+    icon.addFile(QString::fromUtf8(":/icons/insert-bullet-list_22px.png"));
+    ui.actionInsertBulletedList->setIcon(icon);
+
+    icon = ui.actionIncreaseIndent->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-indent-more_22px.png"));
+    ui.actionIncreaseIndent->setIcon(icon);
+
+    icon = ui.actionDecreaseIndent->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-indent-less_22px.png"));
+    ui.actionDecreaseIndent->setIcon(icon);
+
+    icon = ui.actionHeading1->icon();
+    icon.addFile(QString::fromUtf8(":/icons/heading-1_22px.png"));
+    ui.actionHeading1->setIcon(icon);
+
+    icon = ui.actionHeading2->icon();
+    icon.addFile(QString::fromUtf8(":/icons/heading-2_22px.png"));
+    ui.actionHeading2->setIcon(icon);
+
+    icon = ui.actionHeading3->icon();
+    icon.addFile(QString::fromUtf8(":/icons/heading-3_22px.png"));
+    ui.actionHeading3->setIcon(icon);
+
+    icon = ui.actionHeading4->icon();
+    icon.addFile(QString::fromUtf8(":/icons/heading-4_22px.png"));
+    ui.actionHeading4->setIcon(icon);
+
+    icon = ui.actionHeading5->icon();
+    icon.addFile(QString::fromUtf8(":/icons/heading-5_22px.png"));
+    ui.actionHeading5->setIcon(icon);
+
+    icon = ui.actionHeading6->icon();
+    icon.addFile(QString::fromUtf8(":/icons/heading-6_22px.png"));
+    ui.actionHeading6->setIcon(icon);
+
+    icon = ui.tbHeadings->icon();
+    icon.addFile(QString::fromUtf8(":/icons/heading-all_22px.png"));
+    ui.tbHeadings->setIcon(icon);
+
+    icon = ui.actionHeadingNormal->icon();
+    icon.addFile(QString::fromUtf8(":/icons/heading-normal_22px.png"));
+    ui.actionHeadingNormal->setIcon(icon);
+
+    icon = ui.actionOpen->icon();
+    icon.addFile(QString::fromUtf8(":/icons/document-open_22px.png"));
+    ui.actionOpen->setIcon(icon);
+
+    icon = ui.actionExit->icon();
+    icon.addFile(QString::fromUtf8(":/icons/process-stop_22px.png"));
+    ui.actionExit->setIcon(icon);
+
+    icon = ui.actionInsertSGFSectionMarker->icon();
+    icon.addFile(QString::fromUtf8(":/icons/split-section_22px.png"));
+    ui.actionInsertSGFSectionMarker->setIcon(icon);
+
+    icon = ui.actionInsertSpecialCharacter->icon();
+    icon.addFile(QString::fromUtf8(":/icons/insert-special-character_22px.png"));
+    ui.actionInsertSpecialCharacter->setIcon(icon);
+
+    icon = ui.actionZoomIn->icon();
+    icon.addFile(QString::fromUtf8(":/icons/list-add_22px.png"));
+    ui.actionZoomIn->setIcon(icon);
+
+    icon = ui.actionZoomOut->icon();
+    icon.addFile(QString::fromUtf8(":/icons/list-remove_22px.png"));
+    ui.actionZoomOut->setIcon(icon);
+    
+    icon = ui.actionInspect->icon();
+    icon.addFile(QString::fromUtf8(":/icons/inspect_22px.png"));
+    ui.actionInspect->setIcon(icon);
+
 }
 
 void MainWindow::ConnectSignalsToSlots()

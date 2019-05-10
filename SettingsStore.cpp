@@ -42,7 +42,7 @@ static QString KEY_SPECIAL_CHARACTER_FONT_SIZE = SETTINGS_GROUP + "/" + "special
 static QString KEY_MAIN_MENU_ICON_SIZE = SETTINGS_GROUP + "/" + "main_menu_icon_size";
 
 SettingsStore::SettingsStore()
-    : QSettings(Utility::DefinePrefsDir() + "/sigil.ini", QSettings::IniFormat)
+    : QSettings(Utility::DefinePrefsDir() + "/pageedit.ini", QSettings::IniFormat)
 {  
     // See QTBUG-40796 and QTBUG-54510 as using UTF-8 as a codec for ini files is very broken
     // setIniCodec("UTF-8");
