@@ -103,6 +103,17 @@ set_property( SOURCE ${QRC_FILES_CPP} PROPERTY SKIP_AUTOMOC ON )
 
 set( ALL_SOURCES ${SOURCE_FILES} ${HEADER_FILES} ${UI_FILES_H} ${QRC_FILES_CPP} ${QM_FILES} )
 
+# Adding resource (RC) files for Windows
+# Grab the current year so copyright notice is updated on Windows file properties
+string( TIMESTAMP BUILD_YEAR "%Y" )
+if ( WIN32 )
+    configure_file( version.rc.in ${PROJECT_BINARY_DIR}/version.rc )
+    set( WINDOWS_RC_FILES
+         ${PROJECT_BINARY_DIR}/version.rc
+         )
+    list( APPEND ALL_SOURCES ${WINDOWS_RC_FILES} )
+endif()
+
 #############################################################################
 
 # We need to pick up the ui*.h files,
