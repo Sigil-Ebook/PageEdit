@@ -1,0 +1,47 @@
+image:
+- Visual Studio 2015
+
+branches:
+  only:
+  - master
+  
+clone_folder: c:\project\gumbo
+
+configuration: Release
+
+platform:
+- x64
+
+
+only_commits:
+  files:
+    - CMakeLists.txt
+    - .appveyor.yml
+    - src/
+    - python/gumbo/
+
+
+before_build:
+- cmd: |-
+    mkdir build
+    cd build
+    call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" %PLATFORM%
+    cmake ..\ -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=%configuration%
+
+    
+build_script:
+- cmd: |-
+    call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" %PLATFORM%
+    nmake
+ 
+
+test_script:
+- cmd: |-
+    set PATH=C:\Python37-x64;C:\Python37-x64\Scripts;%PATH%
+    python --version
+    pip --version
+    pip install bs4
+    cd python\gumbo
+    python gumboc_test.py
+    python bs4_adapter_test.py
+ 
