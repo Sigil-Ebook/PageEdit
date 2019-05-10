@@ -62,34 +62,48 @@ set(CMAKE_AUTOMOC ON)
 
 set( SOURCE_FILES
     main.cpp
+    pageedit_constants.cpp
     MainApplication.cpp
     MainWindow.cpp
-    Inspector.cpp
     SelectCharacter.cpp
-    SettingsStore.cpp
-    Utility.cpp
     WebPageEdit.cpp
     WebViewEdit.cpp
+    Inspector.cpp
+    Preferences.cpp
+    AppearanceWidget.cpp
+    LanguageWidget.cpp
+    UILanguage.cpp
+    SettingsStore.cpp
+    Utility.cpp
     )
 
 set( HEADER_FILES
+    pageedit_constants.h
+    pageedit_exception.h
     MainApplication.h
     MainWindow.h
-    ElementIndex.h
-    Inspector.h
-    pageedit_exception.h
-    SelectCharacter.h
-    SettingsStore.h
-    Utility.h
-    WebPageEdit.h
-    WebViewEdit.h
     Zoomable.h
     Viewer.h
+    ElementIndex.h
+    SelectCharacter.h
+    WebPageEdit.h
+    WebViewEdit.h
+    Inspector.h
+    Preferences.h
+    PreferencesWidget.h
+    AppearanceWidget.h
+    LanguageWidget.h
+    UILanguage.h
+    SettingsStore.h
+    Utility.h
     )
 
 set( FORM_FILES
     main.ui
     SelectCharacter.ui
+    Preferences.ui
+    PAppearanceWidget.ui
+    PLanguageWidget.ui
     )
 
 set( RESOURCE_FILES
