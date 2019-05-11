@@ -38,9 +38,33 @@ Building on macOS:
 
 
 On Linux
+--------
 
-`./PageEdit /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`
+Make sure Qt5.12.3 (installed with the WebEngine package) and cmake are installed
+
+`mkdir build`<br>
+`cd build`<br>
+`cmake -DCMAKE_BUILD_TYPE=Release ../PageEdit`<br>
+`make`<br>
+`cd bin`<br>
+`./pageedit /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`
+
+You can also install PageEdit with `make install` (defaults to the /usr/local prefix, so use sudo if required).
 
 On Windows:
+-----------
 
-Although the PageEdit can be built by issuing similar command-line options used in the macOS and on Linux instructions above, it's probably much easier to configure QtCreator with the Qt5.12.3 kit (and VS2017) and open the the PageEdit.pro file. From there, you'l be able to configure/build/debug PageEdit without having to manually configure the Qt environment for the command prompt.
+Make sure Qt5.12.3 (with the WebEngine component) and Visual Studio 2017 are installed. Install the x64 version of Qt5.12.3 for VS2017. Install cmake 3.0+ and make sure its bin directory is added to your path.
+
+Make sure that Qt's bin directory is also added to your PATH. Take note of the path for your Qt's prefix (the directory right above the bin directory). Open an "x64 Native Tools Command Prompt for VS2017" from the Start menu and cd to wherever you want to build.
+
+`mkdir build`<br>
+`cd build`<br>
+`cmake -G "NMake Makefiles" -DQt5_DIR="C:\path\to\your\Qt5\prefix\lib\cmake\Qt5 -DCMAKE_BUILD_TYPE=Release "C:\path\to\PageEdit's\cloned\repository"`<br>
+`nmake`<br>
+`cd bin`<br>
+`PageEdit.exe \FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB\FILENAME.xhtml`
+
+
+
+
