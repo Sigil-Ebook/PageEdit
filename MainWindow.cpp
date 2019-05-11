@@ -30,6 +30,7 @@
 #include <QLabel>
 #include <QToolBar>
 #include <QtWebEngineWidgets/QWebEngineView>
+#include <QtWebEngineWidgets/QWebEngineSettings>
 #include <QDir>
 #include <QFileDialog>
 #include <QMessageBox>
@@ -52,6 +53,8 @@
 #include "Preferences.h"
 
 static const QString SETTINGS_GROUP = "mainwindow";
+
+static const QString CUSTOM_WEBVIEW_STYLE_FILENAME = "custom_webview_style.css";
 
 static const QString BREAK_TAG_INSERT    = "<hr class=\"sigil_split_marker\" />";
 
@@ -465,7 +468,6 @@ void MainWindow::UpdatePage(const QString &filename_url)
 {
     QString text = Utility::ReadUnicodeTextFile(filename_url);
 
-#if 0
     // If the user has set a default stylesheet inject it
     if (!m_usercssurl.isEmpty()) {
         int endheadpos = text.indexOf("</head>");
@@ -473,11 +475,12 @@ void MainWindow::UpdatePage(const QString &filename_url)
             QString inject_userstyles = 
               "<link rel=\"stylesheet\" type=\"text/css\" "
 	      "href=\"" + m_usercssurl + "\" />\n";
-	    // qDebug() << "Preview injecting stylesheet: " << inject_userstyles;
+	    // qDebug() << "WebView injecting stylesheet: " << inject_userstyles;
             text.insert(endheadpos, inject_userstyles);
 	    }
     }
 
+#if 0
     // If this page uses mathml tags, inject a polyfill
     // MathJax.js so that the mathml appears in the Preview Window
     QRegularExpression mathused("<\\s*math [^>]*>");
@@ -507,8 +510,8 @@ void MainWindow::UpdatePage(const QString &filename_url)
     
     if (!m_WebView->WasLoadOkay()) qDebug() << "PV loadFinished with okay set to false!";
  
-    // qDebug() << "PreviewWindow UpdatePage load is Finished";
-    // qDebug() << "PreviewWindow UpdatePage final step scroll to location";
+    // qDebug() << "WebViewWindow UpdatePage load is Finished";
+    // qDebug() << "WebViewWindow UpdatePage final step scroll to location";
 
 #if 0
     m_WebView->StoreCaretLocationUpdate(location);
@@ -665,6 +668,22 @@ void MainWindow::LoadSettings()
     settings.beginGroup(SETTINGS_GROUP);
     // m_Layout->restoreState(settings.value("layout").toByteArray());
     settings.endGroup();
+
+    // Our default fonts for WebView
+    SettingsStore::WebViewAppearance WVAppearance = settings.webViewAppearance();
+    QWebEngineSettings *web_settings = QWebEngineSettings::defaultSettings();
+    web_settings->setFontSize(QWebEngineSettings::DefaultFontSize, WVAppearance.font_size);
+    web_settings->setFontFamily(QWebEngineSettings::StandardFont, WVAppearance.font_family_standard);
+    web_settings->setFontFamily(QWebEngineSettings::SerifFont, WVAppearance.font_family_serif);
+    web_settings->setFontFamily(QWebEngineSettings::SansSerifFont, WVAppearance.font_family_sans_serif);
+
+    // Check for existing custom WebView stylesheet in Prefs dir
+    QFileInfo CustomWebViewStylesheetInfo(QDir(Utility::DefinePrefsDir()).filePath(CUSTOM_WEBVIEW_STYLE_FILENAME));
+    if (CustomWebViewStylesheetInfo.exists() &&
+        CustomWebViewStylesheetInfo.isFile() &&
+        CustomWebViewStylesheetInfo.isReadable()) {
+        QString m_usercssurl = QUrl::fromLocalFile(CustomWebViewStylesheetInfo.absoluteFilePath()).toString();
+    }
 }
 
 const QMap<QString, QString> MainWindow::GetLoadFiltersMap()
