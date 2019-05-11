@@ -15,8 +15,8 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="30"/>
-        <source>Preview:</source>
-        <translation>Preview:</translation>
+        <source>WebView:</source>
+        <translation>WebView:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="39"/>
@@ -735,8 +735,8 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="535"/>
-        <source>Preview</source>
-        <translation>Preview</translation>
+        <source>WebView</source>
+        <translation>WebView</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="673"/>
