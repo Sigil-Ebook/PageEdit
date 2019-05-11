@@ -34,7 +34,7 @@ Building on macOS:
 `make`<br>
 `make addframeworks`<br>
 `cd bin`<br>
-`open ./PageEdit.app --args /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml``<br>
+`open ./PageEdit.app --args /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`<br>
 
 
 On Linux
