@@ -226,7 +226,7 @@
    </attribute>
    <widget class="QToolButton" name="tbHeadings">
     <property name="icon">
-    <iconset resource="../Resource_Files/main/main.qrc">
+    <iconset resource="./icons/icons.qrc">
      <normaloff>:/icons/heading-all_48px.png</normaloff>:/icons/heading-all_48px.png</iconset>
    </property>
     <property name="toolTip">
@@ -239,7 +239,7 @@
     <addaction name="actionHeading5"/>
     <addaction name="actionHeading6"/>
     <addaction name="actionHeadingNormal"/>
-  </widget>
+   </widget>
   </widget>
   
   <widget class="QToolBar" name="toolBarTextFormats">
@@ -260,7 +260,7 @@
    <addaction name="actionSuperscript"/>
   </widget>
   
- <widget class="QToolBar" name="toolBarTextAlign">
+  <widget class="QToolBar" name="toolBarTextAlign">
    <property name="windowTitle">
     <string>Align</string>
    </property>
