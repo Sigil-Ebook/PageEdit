@@ -130,7 +130,7 @@ set_property( SOURCE ${UI_FILES_H} PROPERTY SKIP_AUTOMOC ON )
 qt5_add_resources( QRC_FILES_CPP ${RESOURCE_FILES} )
 set_property( SOURCE ${QRC_FILES_CPP} PROPERTY SKIP_AUTOMOC ON )
 # Runs lrelease on the specified files
-#qt5_add_translation( QM_FILES ${TS_FILES} )
+qt5_add_translation( QM_FILES ${TS_FILES} )
 
 # Define the PageEdit version string for use in source files
 #set_source_files_properties( About.cpp PROPERTIES COMPILE_DEFINITIONS PAGEEDIT_FULL_VERSION="${PAGEEDIT_FULL_VERSION}" )
@@ -225,7 +225,7 @@ if( UNIX AND NOT APPLE )
     install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR} )
     install( FILES ${LINUX_DESKTOP_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/applications/ )
     #install( FILES ${LINUX_DESKTOP_ICON_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/pixmaps RENAME pageedit.png )
-    #install( FILES ${QM_FILES} DESTINATION ${PAGEEDIT_SHARE_ROOT}/translations/ )
+    install( FILES ${QM_FILES} DESTINATION ${PAGEEDIT_SHARE_ROOT}/translations/ )
 endif()
 
 # For Mac, add frameworks and make a DMG
@@ -249,7 +249,7 @@ if( APPLE )
                         COMMAND macdeployqt PageEdit.app -dmg
                         WORKING_DIRECTORY ${WORK_DIR})
 
-    # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${PROJECT_BINARY_DIR}/*.qm ${WORK_DIR}/PageEdit.app/Contents/translations/ )
+    add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${PROJECT_BINARY_DIR}/*.qm ${WORK_DIR}/PageEdit.app/Contents/translations/ )
     # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/../lib/*.dylib ${WORK_DIR}/PageEdit.app/Contents/lib/ )
     # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND install_name_tool -rpath ${CMAKE_BINARY_DIR}/lib "@executable_path/../lib" ${WORK_DIR}/PageEdit.app/Contents/MacOS/PageEdit )
 endif()
