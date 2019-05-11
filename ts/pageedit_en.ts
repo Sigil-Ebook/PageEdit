@@ -1,6 +1,6 @@
 <?xml  version="1.0" encoding="utf-8"?>
 <!DOCTYPE  TS>
-<ts version="2.1" language="en" language="en">
+<TS version="2.1" language="en">
 <context>
     <name>AppearanceWidget</name>
     <message>
@@ -857,5 +857,4 @@ Continue using the requested filename?</source>
 Continue using the requested filename?</translation>
     </message>
 </context>
-</ts>
-
+</TS>
