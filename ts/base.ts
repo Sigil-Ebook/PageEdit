@@ -841,7 +841,7 @@ If a translation for specific word or phrase is not available it will be display
     <name>Utility</name>
     <message>
         <location filename="../Utility.cpp" line="577"/>
-        <source>Sigil</source>
+        <source>PageEdit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
