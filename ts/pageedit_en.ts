@@ -1,6 +1,6 @@
 <?xml  version="1.0" encoding="utf-8"?>
 <!DOCTYPE  TS>
-<TS version="2.1" language="en">
+<TS language="en" version="2.1">
 <context>
     <name>AppearanceWidget</name>
     <message>
@@ -15,8 +15,8 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="30"/>
-        <source>WebView:</source>
-        <translation>WebView:</translation>
+        <source>Preview:</source>
+        <translation>Preview:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="39"/>
@@ -739,52 +739,57 @@ If a translation for specific word or phrase is not available it will be display
         <translation>WebView</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="673"/>
-        <location filename="../MainWindow.cpp" line="674"/>
-        <location filename="../MainWindow.cpp" line="675"/>
-        <location filename="../MainWindow.cpp" line="684"/>
-        <location filename="../MainWindow.cpp" line="685"/>
-        <location filename="../MainWindow.cpp" line="686"/>
+        <location filename="../MainWindow.cpp" line="664"/>
+        <source>PageEdit is closing...</source>
+        <translation>PageEdit is closing...</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="744"/>
+        <location filename="../MainWindow.cpp" line="745"/>
+        <location filename="../MainWindow.cpp" line="746"/>
+        <location filename="../MainWindow.cpp" line="755"/>
+        <location filename="../MainWindow.cpp" line="756"/>
+        <location filename="../MainWindow.cpp" line="757"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML files (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="676"/>
+        <location filename="../MainWindow.cpp" line="747"/>
         <source>Text files (*.txt)</source>
         <translation>Text files (*.txt)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="677"/>
+        <location filename="../MainWindow.cpp" line="748"/>
         <source>All files (*.*)</source>
         <translation>All files (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="735"/>
+        <location filename="../MainWindow.cpp" line="806"/>
         <source>File Saved</source>
         <translation>File Saved</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="738"/>
+        <location filename="../MainWindow.cpp" line="809"/>
         <source>File Save Failed!</source>
         <translation>File Save Failed!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="764"/>
+        <location filename="../MainWindow.cpp" line="835"/>
         <source>File Opened</source>
         <translation>File Opened</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="767"/>
+        <location filename="../MainWindow.cpp" line="838"/>
         <source>File Open Failed!</source>
         <translation>File Open Failed!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="790"/>
+        <location filename="../MainWindow.cpp" line="861"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Clipboard contains HTML formatting</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="791"/>
+        <location filename="../MainWindow.cpp" line="862"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Do you want to paste clipboard data as plain text?</translation>
     </message>
@@ -858,3 +863,4 @@ Continue using the requested filename?</translation>
     </message>
 </context>
 </TS>
+

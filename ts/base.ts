@@ -15,7 +15,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="30"/>
-        <source>WebView:</source>
+        <source>Preview:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -737,52 +737,57 @@ If a translation for specific word or phrase is not available it will be display
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="673"/>
-        <location filename="../MainWindow.cpp" line="674"/>
-        <location filename="../MainWindow.cpp" line="675"/>
-        <location filename="../MainWindow.cpp" line="684"/>
-        <location filename="../MainWindow.cpp" line="685"/>
-        <location filename="../MainWindow.cpp" line="686"/>
+        <location filename="../MainWindow.cpp" line="664"/>
+        <source>PageEdit is closing...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="744"/>
+        <location filename="../MainWindow.cpp" line="745"/>
+        <location filename="../MainWindow.cpp" line="746"/>
+        <location filename="../MainWindow.cpp" line="755"/>
+        <location filename="../MainWindow.cpp" line="756"/>
+        <location filename="../MainWindow.cpp" line="757"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="676"/>
+        <location filename="../MainWindow.cpp" line="747"/>
         <source>Text files (*.txt)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="677"/>
+        <location filename="../MainWindow.cpp" line="748"/>
         <source>All files (*.*)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="735"/>
+        <location filename="../MainWindow.cpp" line="806"/>
         <source>File Saved</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="738"/>
+        <location filename="../MainWindow.cpp" line="809"/>
         <source>File Save Failed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="764"/>
+        <location filename="../MainWindow.cpp" line="835"/>
         <source>File Opened</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="767"/>
+        <location filename="../MainWindow.cpp" line="838"/>
         <source>File Open Failed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="790"/>
+        <location filename="../MainWindow.cpp" line="861"/>
         <source>Clipboard contains HTML formatting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="791"/>
+        <location filename="../MainWindow.cpp" line="862"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation type="unfinished"></translation>
     </message>
