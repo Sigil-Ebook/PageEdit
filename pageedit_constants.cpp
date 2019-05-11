@@ -17,7 +17,7 @@ const QString PATH_LIST_DELIM = ":";
 
 #if !defined(_WIN32) && !defined(__APPLE__)
 const QString PATH_LIST_DELIM = ":";
-// Standard build-time location of Sigil's 'share/pageedit' directory. Set in src/CMakeLists.txt with the line:
+// Standard build-time location of PageEdit's 'share/pageedit' directory. Set in src/CMakeLists.txt with the line:
 // set_source_files_properties( pageedit_constants.cpp PROPERTIES COMPILE_DEFINITIONS PAGEEDIT_SHARE_ROOT="${PAGEEDIT_SHARE_ROOT}" )
 const QString pageedit_share_root = QString(PAGEEDIT_SHARE_ROOT);
 //const QString mathjax_dir = QString(MATHJAX_DIR);

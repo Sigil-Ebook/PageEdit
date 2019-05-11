@@ -2,20 +2,20 @@
 **
 **  Copyright (C) 2019  Kevin B. Hendricks, Stratford, Ontario, Canada
 **
-**  This file is part of Sigil.
+**  This file is part of PageEdit.
 **
-**  Sigil is free software: you can redistribute it and/or modify
+**  PageEdit is free software: you can redistribute it and/or modify
 **  it under the terms of the GNU General Public License as published by
 **  the Free Software Foundation, either version 3 of the License, or
 **  (at your option) any later version.
 **
-**  Sigil is distributed in the hope that it will be useful,
+**  PageEdit is distributed in the hope that it will be useful,
 **  but WITHOUT ANY WARRANTY; without even the implied warranty of
 **  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License
-**  along with Sigil.  If not, see <http://www.gnu.org/licenses/>.
+**  along with PageEdit.  If not, see <http://www.gnu.org/licenses/>.
 **
 *************************************************************************/
 
@@ -40,7 +40,7 @@
 
 
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
-// Returns a QIcon with the Sigil "S" logo in various sizes
+// Returns a QIcon with the PageEdit "PE" logo in various sizes
 static QIcon GetApplicationIcon()
 {
   QIcon app_icon;
@@ -120,8 +120,8 @@ int main(int argc, char *argv[])
     QString qt_stylesheet_path = Utility::DefinePrefsDir() + "/qt_styles.qss";
     QFileInfo QtStylesheetInfo(qt_stylesheet_path);
     if (QtStylesheetInfo.exists() && QtStylesheetInfo.isFile() && QtStylesheetInfo.isReadable()) {
-      QString qtstyles = Utility::ReadUnicodeTextFile(qt_stylesheet_path);
-      app.setStyleSheet(qtstyles);
+        QString qtstyles = Utility::ReadUnicodeTextFile(qt_stylesheet_path);
+        app.setStyleSheet(qtstyles);
     }
 
     // Qt's setCursorFlashTime(msecs) (or the docs) are broken

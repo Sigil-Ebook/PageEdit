@@ -2,20 +2,20 @@
 **
 **  Copyright (C) 2019  Kevin B. Hendricks Stratford, Ontario, Canada
 **
-**  This file is part of Sigil.
+**  This file is part of PageEdit.
 **
-**  Sigil is free software: you can redistribute it and/or modify
+**  PageEdit is free software: you can redistribute it and/or modify
 **  it under the terms of the GNU General Public License as published by
 **  the Free Software Foundation, either version 3 of the License, or
 **  (at your option) any later version.
 **
-**  Sigil is distributed in the hope that it will be useful,
+**  PageEdit is distributed in the hope that it will be useful,
 **  but WITHOUT ANY WARRANTY; without even the implied warranty of
 **  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License
-**  along with Sigil.  If not, see <http://www.gnu.org/licenses/>.
+**  along with PageEdit.  If not, see <http://www.gnu.org/licenses/>.
 **
 *************************************************************************/
 
@@ -169,10 +169,10 @@ void WebViewEdit::CustomSetDocument(const QString &path, const QString &html)
 
     m_isLoadFinished = false;
 
-    // If Tidy is turned off, then Sigil will explode if there is no xmlns
+    // If Tidy is turned off, then PageEdit will explode if there is no xmlns
     // on the <html> element. So we will silently add it if needed to ensure
     // no errors occur, to allow loading of documents created outside of
-    // Sigil as well as catering for section splits etc.
+    // PageEdit as well as catering for section splits etc.
     QString replaced_html = html;
     replaced_html = replaced_html.replace("<html>", "<html xmlns=\"http://www.w3.org/1999/xhtml\">");
     setContent(replaced_html.toUtf8(), "application/xhtml+xml;charset=UTF-8", QUrl::fromLocalFile(path));
@@ -515,7 +515,7 @@ QString WebViewEdit::GetElementSelectingJS_WithTextNode(const QList<ElementIndex
 
 bool WebViewEdit::ExecuteCaretUpdate()
 {
-    // Currently certain actions in Sigil result in a document being loaded multiple times
+    // Currently certain actions in PageEdit result in a document being loaded multiple times
     // in response to the signals. Only proceed with moving the caret if all loads are finished.
     if (m_pendingLoadCount > 0) {
         return false;

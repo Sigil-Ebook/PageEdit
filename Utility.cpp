@@ -3,20 +3,20 @@
 **  Copyright (C) 2019 Kevin B. Hendricks, Stratford, Ontario, Canada
 **  Copyright (C) 2009, 2010, 2011  Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
-**  This file is part of Sigil.
+**  This file is part of PageEdit.
 **
-**  Sigil is free software: you can redistribute it and/or modify
+**  PageEdit is free software: you can redistribute it and/or modify
 **  it under the terms of the GNU General Public License as published by
 **  the Free Software Foundation, either version 3 of the License, or
 **  (at your option) any later version.
 **
-**  Sigil is distributed in the hope that it will be useful,
+**  PageEdit is distributed in the hope that it will be useful,
 **  but WITHOUT ANY WARRANTY; without even the implied warranty of
 **  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License
-**  along with Sigil.  If not, see <http://www.gnu.org/licenses/>.
+**  along with PageEdit.  If not, see <http://www.gnu.org/licenses/>.
 **
 *************************************************************************/
 
@@ -498,7 +498,7 @@ void Utility::DisplayStdErrorDialog(const QString &error_message, const QString 
     message_box.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
     message_box.setModal(true);
     message_box.setIcon(QMessageBox::Critical);
-    message_box.setWindowTitle("Sigil");
+    message_box.setWindowTitle("PageEdit");
     message_box.setText(error_message);
 
     if (!detailed_text.isEmpty()) {
@@ -574,7 +574,7 @@ bool Utility::use_filename_warning(const QString &filename)
 {
     if (has_non_ascii_chars(filename)) {
         return QMessageBox::Apply == QMessageBox::warning(QApplication::activeWindow(),
-                tr("Sigil"),
+                tr("PageEdit"),
                 tr("The requested file name contains non-ASCII characters. "
                    "You should only use ASCII characters in filenames. "
                    "Using non-ASCII characters can prevent the EPUB from working "
