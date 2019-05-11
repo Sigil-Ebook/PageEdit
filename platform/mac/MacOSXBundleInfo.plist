@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleVersion</key>
+	<string>PEVERSION</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © PageEdit Authors 2010-2019, GNU GPL v3</string>
+	<key>CFBundleShortVersionString</key>
+	<string>PEVERSION</string>
+	<key>CFBundleGetInfoString</key>
+	<string>PEVERSION PageEdit Open Source WebPagevEditor. See http://github.com/Sigil-Ebook/PageEdit/</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.sigil-ebook.PageEdit.app</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>xhtml</string>
+				<string>html</string>
+				<string>htm</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>epub.icns</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>application/xhtml+xml</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>ebook pages</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>xhtml</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+	</array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>PageEdit</string>
+	<key>CFBundleIconFile</key>
+	<string>PageEdit.icns</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>PageEdit</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>PETR</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.productivity</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>10.12.0</string>
+</dict>
+</plist>

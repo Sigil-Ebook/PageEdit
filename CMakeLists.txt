@@ -63,7 +63,6 @@ set(CMAKE_AUTOMOC ON)
 set( SOURCE_FILES
     main.cpp
     pageedit_constants.cpp
-    MainApplication.cpp
     MainWindow.cpp
     SelectCharacter.cpp
     WebPageEdit.cpp
@@ -75,12 +74,12 @@ set( SOURCE_FILES
     UILanguage.cpp
     SettingsStore.cpp
     Utility.cpp
+    GumboInterface.cpp
     )
 
 set( HEADER_FILES
     pageedit_constants.h
     pageedit_exception.h
-    MainApplication.h
     MainWindow.h
     Zoomable.h
     Viewer.h
@@ -96,6 +95,7 @@ set( HEADER_FILES
     UILanguage.h
     SettingsStore.h
     Utility.h
+    GumboInterface.h
     )
 
 set( FORM_FILES
@@ -110,6 +110,8 @@ set( RESOURCE_FILES
     icons/icons.qrc
     javascript/javascript.qrc
     )
+
+file( GLOB TS_FILES ts/pageedit_*.ts )
 
 #############################################################################
 
@@ -138,6 +140,25 @@ if ( WIN32 )
     list( APPEND ALL_SOURCES ${WINDOWS_RC_FILES} )
 endif()
 
+# Apple bundle configuration
+if( APPLE )
+    exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources")
+    # exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/polyfills")
+    # exec_program("unzip ${MATHJAX_ZIP} -d ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/polyfills")
+    exec_program("cp ${PROJECT_SOURCE_DIR}/icons/PageEdit.icns ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources")
+    exec_program("cp ${PROJECT_SOURCE_DIR}/icons/sgf.icns ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources")
+    exec_program("cp ${PROJECT_SOURCE_DIR}/icon/epub.icns ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources")
+    # Create translation directory.
+    exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/translations")
+    exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/lib")
+
+    # Copy the PLIST file...
+    exec_program("cp ${PROJECT_SOURCE_DIR}/platform/mac/MacOSXBundleInfo.plist ${PROJECT_BINARY_DIR}")
+
+    # ...and set the PageEdit version string
+    exec_program("sed -i -e 's/PEVERSION/${PAGEDIT_FULL_VERSION}/g' ${PROJECT_BINARY_DIR}/MacOSXBundleInfo.plist")
+endif()
+
 #############################################################################
 
 # We need to pick up the ui*.h files,
@@ -152,14 +173,14 @@ include_directories( BEFORE
 #############################################################################
 
 # We make bundles for Mac OS X
-#if ( APPLE )
-#    add_executable( ${PROJECT_NAME} MACOSX_BUNDLE ${ALL_SOURCES} )
-#    set_target_properties( ${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_INFO_PLIST ${PROJECT_BINARY_DIR}/MacOSXBundleInfo.plist )
-#    set_target_properties(${PROJECT_NAME} PROPERTIES CMAKE_SKIP_BUILD_RPATH  TRUE)
+if ( APPLE )
+    add_executable( ${PROJECT_NAME} MACOSX_BUNDLE ${ALL_SOURCES} )
+    set_target_properties( ${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_INFO_PLIST ${PROJECT_BINARY_DIR}/MacOSXBundleInfo.plist )
+    set_target_properties(${PROJECT_NAME} PROPERTIES CMAKE_SKIP_BUILD_RPATH  TRUE)
 # ...and a normal executable for everything else.
-#else()
+else()
     add_executable( ${PROJECT_NAME} WIN32 ${ALL_SOURCES} )
-#endif()
+endif()
 
 # No need to explicity link Qt5::WinMain or to use the qt5_use_modules macro since CMAKE 2.8.11. We require CMAKE 3.0.0
 target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt5::Widgets  Qt5::Xml  Qt5::XmlPatterns  Qt5::PrintSupport
@@ -186,7 +207,7 @@ if( UNIX AND NOT APPLE )
 
     set ( SIGIL_SHARE_ROOT "${SHARE_INSTALL_PREFIX}/share/${PROJECT_NAME}" )
     
-    # Set some defines that sigil_constants.cpp can then access
+    # Set some defines that pageedit_constants.cpp can then access
     set_property (
         SOURCE pageedit_constants.cpp
         PROPERTY COMPILE_DEFINITIONS
@@ -194,4 +215,30 @@ if( UNIX AND NOT APPLE )
     )
     # Standard Linux 'make install'
     install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR}/${PROJECT_NAME} )
+endif()
+
+# For Mac, add frameworks and make a DMG
+if( APPLE )
+    set( WORK_DIR "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}" )
+    set( MAIN_PACKAGE_DIR ${WORK_DIR}/PageEdit.app )
+
+    if ("${CODE_SIGN_ID}" STREQUAL "")
+        add_custom_target(  addframeworks
+                            COMMAND macdeployqt PageEdit.app
+                            WORKING_DIRECTORY ${WORK_DIR}
+                            DEPENDS ${PROJECT_NAME} )
+    ELSE ()
+        add_custom_target(  addframeworks
+                            COMMAND macdeployqt  PageEdit.app -codesign="${CODE_SIGN_ID}"
+                            WORKING_DIRECTORY ${WORK_DIR}
+                            DEPENDS ${PROJECT_NAME} )
+    ENDIF ()
+
+    add_custom_target(  makedmg
+                        COMMAND macdeployqt PageEdit.app -dmg
+                        WORKING_DIRECTORY ${WORK_DIR})
+
+    # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${PROJECT_BINARY_DIR}/*.qm ${WORK_DIR}/PageEdit.app/Contents/translations/ )
+    # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/../lib/*.dylib ${WORK_DIR}/PageEdit.app/Contents/lib/ )
+    # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND install_name_tool -rpath ${CMAKE_BINARY_DIR}/lib "@executable_path/../lib" ${WORK_DIR}/PageEdit.app/Contents/MacOS/PageEdit )
 endif()

@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# Entry point for PageEdit on Unix systems.
+# Adds linked Qt's lib directory to the LD_LIBRARY_PATH
+
+QTLIB_DIR="${QT_LIBRARY_DIR}"
+PAGEEDIT_BIN_DIR="${CMAKE_INSTALL_FULL_LIBDIR}/pageedit"
+
+if [ -z "$LD_LIBRARY_PATH" ]; then
+  LD_LIBRARY_PATH="$PAGEEDIT_BIN_DIR:$QTLIB_DIR"
+else
+  LD_LIBRARY_PATH="$PAGEEDIT_BIN_DIR:$QTLIB_DIR:$LD_LIBRARY_PATH"
+fi
+
+# Create an environment var for the Sigil share directory location.
+if [ -z "$PAGEEDIT_SHARE_PREFIX" ]; then
+  PAGEEDIT_SHARE_PREFIX="${SHARE_INSTALL_PREFIX}"
+  export PAGEEDIT_SHARE_PREFIX
+fi
+
+# Not really needed anymore but left in for fringe cases
+#if [ -z "$PAGEEDIT_EXTRA_ROOT" ]; then
+#  PAGEEDIT_EXTRA_ROOT="${PAGEEDIT_SHARE_ROOT}"
+#  export PAGEEDIT_EXTRA_ROOT
+#fi
+
+export LD_LIBRARY_PATH
+
+exec ${CMAKE_INSTALL_FULL_LIBDIR}/pageedit/pageedit "$@"
+

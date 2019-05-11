@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PageEdit
+Comment=xhtml visual page editor
+TryExec=pageedit
+Exec=pageedit %F
+Icon=pageedit
+Categories=Office;
+MimeType=application/xhtml+xml;
