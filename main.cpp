@@ -116,6 +116,24 @@ int main(int argc, char *argv[])
     }
     app.installTranslator(&pageeditTranslator);
 
+    // Check for existing qt_styles.qss in Prefs dir and load it if present
+    QString qt_stylesheet_path = Utility::DefinePrefsDir() + "/qt_styles.qss";
+    QFileInfo QtStylesheetInfo(qt_stylesheet_path);
+    if (QtStylesheetInfo.exists() && QtStylesheetInfo.isFile() && QtStylesheetInfo.isReadable()) {
+      QString qtstyles = Utility::ReadUnicodeTextFile(qt_stylesheet_path);
+      app.setStyleSheet(qtstyles);
+    }
+
+    // Qt's setCursorFlashTime(msecs) (or the docs) are broken
+    // According to the docs, setting a negative value should disable cursor blinking 
+    // but instead just forces it to look for PlatformSpecific Themeable Hints to get 
+    // a value which for Mac OS X is hardcoded to 1000 ms
+    // This was the only way I could get Qt to disable cursor blinking on a Mac if desired
+    if (qEnvironmentVariableIsSet("PAGEEDIT_DISABLE_CURSOR_BLINK")) {
+      // qDebug() << "trying to disable text cursor blinking";
+      app.setCursorFlashTime(0);
+      // qDebug() << "cursorFlashTime: " << app.cursorFlashTime();
+    }
 
 // application icons linuxicons
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
