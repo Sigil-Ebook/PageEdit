@@ -113,6 +113,14 @@ set( RESOURCE_FILES
 
 file( GLOB TS_FILES ts/pageedit_*.ts )
 
+set( LINUX_DESKTOP_FILE
+    platform/linux/freedesktop/pageedit.desktop
+    )
+
+#set( LINUX_DESKTOP_ICON_FILE
+#    Resource_Files/icon/app_icon_48.png
+#    )
+
 #############################################################################
 
 # Runs UIC on specified files
@@ -205,7 +213,7 @@ if( UNIX AND NOT APPLE )
         set ( SHARE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX} )
     endif()
 
-    set ( SIGIL_SHARE_ROOT "${SHARE_INSTALL_PREFIX}/share/${PROJECT_NAME}" )
+    set ( PAGEDIT_SHARE_ROOT "${SHARE_INSTALL_PREFIX}/share/${PROJECT_NAME}" )
     
     # Set some defines that pageedit_constants.cpp can then access
     set_property (
@@ -214,7 +222,10 @@ if( UNIX AND NOT APPLE )
         PAGEEDIT_SHARE_ROOT="${PAGEEDIT_SHARE_ROOT}"
     )
     # Standard Linux 'make install'
-    install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR}/${PROJECT_NAME} )
+    install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR} )
+    install( FILES ${LINUX_DESKTOP_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/applications/ )
+    #install( FILES ${LINUX_DESKTOP_ICON_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/pixmaps RENAME pageedit.png )
+    #install( FILES ${QM_FILES} DESTINATION ${PAGEEDIT_SHARE_ROOT}/translations/ )
 endif()
 
 # For Mac, add frameworks and make a DMG
