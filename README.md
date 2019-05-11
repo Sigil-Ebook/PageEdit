@@ -1,26 +1,41 @@
 PageEdit
+========
 A simple single page visual XHTML editor based on Sigil's Deprecated BookView.
 It uses WebEngine instead of WebKit.
 
-This app is undergoing rapid development and is incomplete and barely does anything yet.
+This app is undergoing rapid development. It is working but incomplete.
 
 It requires Qt 5.12.3 or later.
 
 To build after cloning the repo
 
-Make sure qmake from Qt 5.12.3 in your path<br>
+You will need cmake version 3.0 to build:
+
+Make sure the qt tools and libraries from Qt 5.12.3 are in your path<br>
 `export PATH=~/QT512/bin:${PATH}`
 
-`cd PageEdit`<br>
-`qmake`<br>
-`make`
+You build in a separate directory and not in the source directory.
 
+After checking out the PageEdit github repo into a PageEdit directory
 
-To test:
+Building on macOS:
+------------------
 
-On macOS:
+`export MACOSX_DEPLOYMENT_TARGET=10.12`<br>
+`export MYQTHOME=~/Qt512`<br>
+`export PATH=${PATH}:${MYQTHOME}/bin`<br>
+`mkdir build`<br>
+`cd build`<br>
+`cmake -DCMAKE_OSX_DEPLOYMENT_TARGET=10.12 -DCMAKE_BUILD_TYPE=Release \`<br>
+`      -DCMAKE_CXX_FLAGS=-Wno-inconsistent-missing-override \`<br>
+`      -DCMAKE_PREFIX_PATH=${MYQTHOME}/lib/cmake \ `<br>
+`      -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/\`<br>
+`                   MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/ ../PageEdit`<br>
+`make`<br>
+`make addframeworks`<br>
+`cd bin`<br>
+`open ./PageEdit.app --args /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml``<br>
 
-`open ./PageEdit.app --args /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`
 
 On Linux
 
