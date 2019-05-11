@@ -29,6 +29,9 @@
 #include <QMap>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QMainWindow>
+#include <QMoveEvent>
+#include <QCloseEvent>
+#include <QResizeEvent>
 #include <Viewer.h>
 #include <Inspector.h>
 
@@ -141,10 +144,13 @@ protected:
     virtual void hideEvent(QHideEvent* event);
     virtual void showEvent(QShowEvent* event);
     void resizeEvent(QResizeEvent * event);
+    void moveEvent(QMoveEvent *event);
+    void closeEvent(QCloseEvent * event);
 
 private:
     void SetupView();
     void LoadSettings();
+    void SaveSettings();
     void ConnectSignalsToSlots();
     void UpdateWindowTitle();
 
@@ -167,6 +173,7 @@ private:
     QSlider *m_slZoomSlider;
     QLabel *m_lbZoomLabel;
     bool m_updateActionStatePending;
+    QByteArray m_LastWindowSize;
     Ui::MainWindow ui;
 };
 

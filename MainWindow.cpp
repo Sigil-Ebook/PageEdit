@@ -80,7 +80,8 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_SelectCharacter(new SelectCharacter(this)),
     m_slZoomSlider(NULL),
     m_lbZoomLabel(NULL),
-    m_updateActionStatePending(false)
+    m_updateActionStatePending(false),
+    m_LastWindowSize(QByteArray())
 {
     ui.setupUi(this);
     SetupView();
@@ -93,14 +94,6 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    // BookViewPreview must be deleted before QWebInspector.
-    // BookViewPreview's QWebPage is linked to the QWebInspector
-    // and when deleted it will send a message to the linked QWebInspector
-    // to remove the association. If QWebInspector is deleted before
-    // BookViewPreview, BookViewPreview will try to access the deleted
-    // QWebInspector and the application will SegFault. This is an issue
-    // with how QWebPages interface with QWebInspector.
-
     if (m_WebView) {
         delete m_WebView;
         m_WebView = nullptr;
@@ -246,6 +239,10 @@ float MainWindow::SliderRangeToZoomFactor(int slider_range_value)
 
 void MainWindow::resizeEvent(QResizeEvent *event)
 {
+    // Workaround for Qt 4.8 bug - see WriteSettings() for details.                                             
+    if (!isMaximized()) {
+        m_LastWindowSize = saveGeometry();
+    }
     // Update self normally
     QMainWindow::resizeEvent(event);
     UpdateWindowTitle();
@@ -482,7 +479,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
 
 #if 0
     // If this page uses mathml tags, inject a polyfill
-    // MathJax.js so that the mathml appears in the Preview Window
+    // MathJax.js so that the mathml appears in the WebView Window
     QRegularExpression mathused("<\\s*math [^>]*>");
     QRegularExpressionMatch mo = mathused.match(text);
     if (mo.hasMatch()) {
@@ -508,7 +505,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
         qApp->processEvents();
     }
     
-    if (!m_WebView->WasLoadOkay()) qDebug() << "PV loadFinished with okay set to false!";
+    if (!m_WebView->WasLoadOkay()) qDebug() << "WV loadFinished with okay set to false!";
  
     // qDebug() << "WebViewWindow UpdatePage load is Finished";
     // qDebug() << "WebViewWindow UpdatePage final step scroll to location";
@@ -522,7 +519,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
 
 void MainWindow::ScrollTo(QList<ElementIndex> location)
 {
-    // qDebug() << "received a PreviewWindow ScrollTo event";
+    // qDebug() << "received a WebViewWindow ScrollTo event";
     if (!m_WebView->isVisible()) {
         return;
     }
@@ -535,13 +532,13 @@ void MainWindow::UpdateWindowTitle()
     if ((m_WebView) && m_WebView->isVisible()) {
         int height = m_WebView->height();
         int width = m_WebView->width();
-        setWindowTitle(tr("Preview") + " (" + QString::number(width) + "x" + QString::number(height) + ")");
+        setWindowTitle(tr("WebView") + " (" + QString::number(width) + "x" + QString::number(height) + ")");
     }
 }
 
 QList<ElementIndex> MainWindow::GetCaretLocation()
 {
-    // qDebug() << "PreviewWindow in GetCaretLocation";
+    // qDebug() << "WebView in GetCaretLocation";
     QList<ElementIndex> hierarchy = m_WebView->GetCaretLocation();
     // foreach(ElementIndex ei, hierarchy) qDebug() << "name: " << ei.name << " index: " << ei.index;
     return hierarchy;
@@ -662,11 +659,49 @@ void MainWindow::ReloadPreview()
     emit RequestPreviewReload();
 }
 
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    ShowMessageOnStatusBar(tr("PageEdit is closing..."));
+    SaveSettings();
+    event->accept();
+}
+
+void MainWindow::moveEvent(QMoveEvent *event)
+{
+    // Workaround for Qt 4.8 bug - see WriteSettings() for details.                                             
+    if (!isMaximized()) {
+        m_LastWindowSize = saveGeometry();
+    }
+    QMainWindow::moveEvent(event);
+}
+
 void MainWindow::LoadSettings()
 {
     SettingsStore settings;
     settings.beginGroup(SETTINGS_GROUP);
-    // m_Layout->restoreState(settings.value("layout").toByteArray());
+    // The size of the window and its full screen status                                                        
+    // Due to the 4.8 bug, we restore its "normal" window size and then maximize                                
+    // it afterwards (if last state was maximized) to ensure on correct screen.                                 
+    bool isMaximized = settings.value("maximized", false).toBool();
+    m_LastWindowSize = settings.value("geometry").toByteArray();
+
+    if (!m_LastWindowSize.isNull()) {
+        restoreGeometry(m_LastWindowSize);
+
+        if (isMaximized) {
+            setWindowState(windowState() | Qt::WindowMaximized);
+        }
+    }
+
+    // The positions of all the toolbars and dock widgets                                                       
+    QByteArray toolbars = settings.value("toolbars").toByteArray();
+
+    if (!toolbars.isNull()) {
+        restoreState(toolbars);
+    }
+
+    m_preserveHeadingAttributes = settings.value("preserveheadingattributes", true).toBool();
+    SetPreserveHeadingAttributes(m_preserveHeadingAttributes);
     settings.endGroup();
 
     // Our default fonts for WebView
@@ -684,6 +719,23 @@ void MainWindow::LoadSettings()
         CustomWebViewStylesheetInfo.isReadable()) {
         QString m_usercssurl = QUrl::fromLocalFile(CustomWebViewStylesheetInfo.absoluteFilePath()).toString();
     }
+}
+
+void MainWindow::SaveSettings()
+{
+    SettingsStore settings;
+    settings.beginGroup(SETTINGS_GROUP);
+    // The size of the window and it's full screen status                                                       
+    // This is a workaround for this bug:                                                                       
+    // Maximizing PageEdit and then closing will forget the previous window size                                   
+    // and open it maximized on the wrong screen.                                                               
+    // https://bugreports.qt-project.org/browse/QTBUG-21371                                                     
+    settings.setValue("maximized", isMaximized());
+    settings.setValue("geometry", m_LastWindowSize);
+    // The positions of all the toolbars and dock widgets                                                       
+    settings.setValue("toolbars", saveState());
+    settings.setValue("preserveheadingattributes", m_preserveHeadingAttributes);
+    settings.endGroup();
 }
 
 const QMap<QString, QString> MainWindow::GetLoadFiltersMap()
