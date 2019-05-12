@@ -22,7 +22,7 @@
 				<string>htm</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string>epub.icns</string>
+			<string>xhtml.icns</string>
 			<key>CFBundleTypeMIMETypes</key>
 			<array>
 				<string>application/xhtml+xml</string>
