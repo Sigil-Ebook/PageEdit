@@ -175,6 +175,7 @@ private:
     QLabel *m_lbZoomLabel;
     bool m_updateActionStatePending;
     QByteArray m_LastWindowSize;
+    QString m_LastFolderOpen;
     Ui::MainWindow ui;
 };
 

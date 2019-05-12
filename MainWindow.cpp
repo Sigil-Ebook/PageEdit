@@ -82,7 +82,8 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_slZoomSlider(NULL),
     m_lbZoomLabel(NULL),
     m_updateActionStatePending(false),
-    m_LastWindowSize(QByteArray())
+    m_LastWindowSize(QByteArray()),
+    m_LastFolderOpen(QString())
 {
     ui.setupUi(this);
     SetupView();
@@ -680,9 +681,9 @@ void MainWindow::LoadSettings()
 {
     SettingsStore settings;
     settings.beginGroup(SETTINGS_GROUP);
-    // The size of the window and its full screen status                                                        
-    // Due to the 4.8 bug, we restore its "normal" window size and then maximize                                
-    // it afterwards (if last state was maximized) to ensure on correct screen.                                 
+    // The size of the window and its full screen status
+    // Due to the 4.8 bug, we restore its "normal" window size and then maximize
+    // it afterwards (if last state was maximized) to ensure on correct screen.
     bool isMaximized = settings.value("maximized", false).toBool();
     m_LastWindowSize = settings.value("geometry").toByteArray();
 
@@ -694,7 +695,7 @@ void MainWindow::LoadSettings()
         }
     }
 
-    // The positions of all the toolbars and dock widgets                                                       
+    // The positions of all the toolbars and dock widgets
     QByteArray toolbars = settings.value("toolbars").toByteArray();
 
     if (!toolbars.isNull()) {
@@ -703,6 +704,7 @@ void MainWindow::LoadSettings()
 
     m_preserveHeadingAttributes = settings.value("preserveheadingattributes", true).toBool();
     SetPreserveHeadingAttributes(m_preserveHeadingAttributes);
+    m_LastFolderOpen  = settings.value("lastfolderopen", QDir::homePath()).toString();
     settings.endGroup();
 
     // Our default fonts for WebView
@@ -736,6 +738,7 @@ void MainWindow::SaveSettings()
     // The positions of all the toolbars and dock widgets                                                       
     settings.setValue("toolbars", saveState());
     settings.setValue("preserveheadingattributes", m_preserveHeadingAttributes);
+    settings.setValue("lastfolderopen",  m_LastFolderOpen);
     settings.endGroup();
 }
 
@@ -805,6 +808,7 @@ bool MainWindow::Save()
     if (fi.exists() && fi.isWritable()) {
  	Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);
         ShowMessageOnStatusBar(tr("File Saved"));
+        m_LastFolderOpen = fi.absolutePath();
 	return true;
     }
     ShowMessageOnStatusBar(tr("File Save Failed!"));
@@ -813,6 +817,11 @@ bool MainWindow::Save()
 
 void MainWindow::Open()
 {
+
+    if (m_LastFolderOpen.isEmpty()) {
+        m_LastFolderOpen = QDir::homePath();
+    }
+
     const QMap<QString, QString> load_filters = MainWindow::GetLoadFiltersMap();
     QStringList filters(load_filters.values());
     filters.removeDuplicates();
@@ -824,7 +833,7 @@ void MainWindow::Open()
     QString default_filter = load_filters.value("xhtml");
     QString filename = QFileDialog::getOpenFileName(0,
                        "Open File",
-                       "~",
+		       m_LastFolderOpen,
                        filter_string,
                        &default_filter);
 
