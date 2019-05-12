@@ -302,7 +302,7 @@ void MainWindow::SetupView()
     layout->setContentsMargins(0, 0, 0, 0);
     frame->setObjectName("PrimaryFrame");
     setCentralWidget(frame);
-    // m_Inspector->SetObjectName("Inspector");
+    m_Inspector->setObjectName("Inspector");
     addDockWidget(Qt::RightDockWidgetArea, m_Inspector);
     m_Inspector->hide();
 
@@ -701,6 +701,7 @@ void MainWindow::LoadSettings()
     if (!toolbars.isNull()) {
         restoreState(toolbars);
     }
+    m_Inspector->hide();
 
     m_preserveHeadingAttributes = settings.value("preserveheadingattributes", true).toBool();
     SetPreserveHeadingAttributes(m_preserveHeadingAttributes);
