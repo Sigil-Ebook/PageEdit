@@ -44,11 +44,11 @@
 static QIcon GetApplicationIcon()
 {
   QIcon app_icon;
-  app_icon.addFile(":/icons/app_icon_32px.png",  QSize(32, 32));
-  app_icon.addFile(":/icons/app_icon_48px.png",  QSize(48, 48));
-  app_icon.addFile(":/icons/app_icon_128px.png", QSize(128, 128));
-  app_icon.addFile(":/icons/app_icon_256px.png", QSize(256, 256));
-  app_icon.addFile(":/icons/app_icon_512px.png", QSize(512, 512));
+  app_icon.addFile(":/icons/app_icon_32.png",  QSize(32, 32));
+  app_icon.addFile(":/icons/app_icon_48.png",  QSize(48, 48));
+  app_icon.addFile(":/icons/app_icon_128.png", QSize(128, 128));
+  app_icon.addFile(":/icons/app_icon_256.png", QSize(256, 256));
+  app_icon.addFile(":/icons/app_icon_512.png", QSize(512, 512));
   return app_icon;
 }
 #endif

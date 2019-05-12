@@ -117,9 +117,9 @@ set( LINUX_DESKTOP_FILE
     platform/linux/freedesktop/pageedit.desktop
     )
 
-#set( LINUX_DESKTOP_ICON_FILE
-#    Resource_Files/icon/app_icon_48.png
-#    )
+set( LINUX_DESKTOP_ICON_FILE
+    icons/app_icon_48.png
+   )
 
 #############################################################################
 

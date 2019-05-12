@@ -30,8 +30,8 @@ WebPageEdit::WebPageEdit(QObject *parent)
 {
 }
 
-// Because you can not delegate all links in QtWebEngine we must override here and generate
-// our own link requests
+// Because you can not delegate all links in QtWebEngine we must override 
+// here and generate our own link requests
 
 // BUT a loadStarted signal is emitted by this page **before** this is called
 // Even **before** it knows how we want to handle it!
@@ -45,7 +45,7 @@ WebPageEdit::WebPageEdit(QObject *parent)
 bool WebPageEdit::acceptNavigationRequest(const QUrl & url, QWebEnginePage::NavigationType type, bool isMainFrame)
 {
     if (type == QWebEnginePage::NavigationTypeLinkClicked) {
-        DBG qDebug() << "acceptNavigationRequest " << url.toString() << " , " << type << " , " << isMainFrame;
+        qDebug() << "acceptNavigationRequest " << url.toString() << " , " << type << " , " << isMainFrame;
         m_url = url;
 	QTimer::singleShot(20,this,SLOT(EmitLinkClicked()));
         return false;

@@ -24,6 +24,7 @@
 #include <QApplication>
 #include <QClipboard>
 #include <QMimeData>
+#include <QDesktopServices>
 #include <QFrame>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -576,11 +577,11 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
-		  //  qDebug() << "Detected Left Mouse Button Press Event";
+		  qDebug() << "Detected Left Mouse Button Press Event";
  		  // qDebug() << "emitting GoToPreviewLocationRequest";
-	          m_GoToRequestPending = true;
+	          // m_GoToRequestPending = true;
 		  // we must delay long enough to separate out LinksClicked from scroll sync clicks
-	          QTimer::singleShot(100, this, SLOT(EmitGoToPreviewLocationRequest()));
+	          // QTimer::singleShot(100, this, SLOT(EmitGoToPreviewLocationRequest()));
 	      }
 	  }
       }
@@ -591,7 +592,7 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
-		  // qDebug() << "Detected Left Mouse Button Release Event";
+		  qDebug() << "Detected Left Mouse Button Release Event";
 	      }
 	  }
       }
@@ -606,7 +607,7 @@ void MainWindow::LinkClicked(const QUrl &url)
 {
     if (m_GoToRequestPending) m_GoToRequestPending = false;
 
-    // qDebug() << "in PreviewWindow LinkClicked with url :" << url.toString();
+    qDebug() << "in WebView LinkClicked with url :" << url.toString();
 
     if (url.toString().isEmpty()) {
         return;
@@ -623,7 +624,7 @@ void MainWindow::LinkClicked(const QUrl &url)
             url_string.insert(url_string.indexOf("/#") + 1, finfo.fileName());
         }
     }
-    emit OpenUrlRequest(QUrl(url_string));
+    OpenUrl(QUrl(url_string));
 }
 
 void MainWindow::InspectPreviewPage()
@@ -973,6 +974,22 @@ void MainWindow::sizeMenuIcons() {
   foreach(QToolBar * toolbar, all_toolbars) {
     toolbar->setIconSize(QSize(iconsize,iconsize));
   }
+}
+
+void MainWindow::OpenUrl(const QUrl &url)
+{
+  if (url.isEmpty()) {
+    return;
+  }
+
+#if 0
+  if (url.scheme().isEmpty() || url.scheme() == "file") {
+    if (url.fragment().isEmpty()) {
+    }
+  }
+#endif 
+
+  QDesktopServices::openUrl(url);
 }
 
 void MainWindow::ExtendIconSizes()

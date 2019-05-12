@@ -91,6 +91,7 @@ public slots:
     void CopyPreview();
     void ReloadPreview();
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
+    void OpenUrl(const QUrl &url);
 
     // GUI slots
     void sizeMenuIcons();
