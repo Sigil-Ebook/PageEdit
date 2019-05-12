@@ -577,7 +577,7 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
-		  qDebug() << "Detected Left Mouse Button Press Event";
+		  // qDebug() << "Detected Left Mouse Button Press Event";
  		  // qDebug() << "emitting GoToPreviewLocationRequest";
 	          // m_GoToRequestPending = true;
 		  // we must delay long enough to separate out LinksClicked from scroll sync clicks
@@ -592,7 +592,7 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
-		  qDebug() << "Detected Left Mouse Button Release Event";
+		  // qDebug() << "Detected Left Mouse Button Release Event";
 	      }
 	  }
       }
@@ -607,7 +607,7 @@ void MainWindow::LinkClicked(const QUrl &url)
 {
     if (m_GoToRequestPending) m_GoToRequestPending = false;
 
-    qDebug() << "in WebView LinkClicked with url :" << url.toString();
+    // qDebug() << "in WebView LinkClicked with url :" << url.toString();
 
     if (url.toString().isEmpty()) {
         return;
@@ -629,17 +629,17 @@ void MainWindow::LinkClicked(const QUrl &url)
 
 void MainWindow::InspectPreviewPage()
 {
-    qDebug() << "InspectPreviewPage()";
+    //qDebug() << "InspectPreviewPage()";
     // non-modal dialog
     if (!m_Inspector->isVisible()) {
-        qDebug() << "inspecting";
+        // qDebug() << "inspecting";
         m_Inspector->InspectPage(m_WebView->page());
         m_Inspector->show();
         m_Inspector->raise();
         m_Inspector->activateWindow();
 	return;
     }
-    qDebug() << "stopping inspection()";
+    // qDebug() << "stopping inspection()";
     m_Inspector->close();
 }
 
@@ -800,7 +800,7 @@ void MainWindow::SetPreserveHeadingAttributes(bool new_state)
 bool MainWindow::Save()
 {
     QString text = m_WebView->GetHtml();
-    qDebug() << "Saving: " << text;
+    // qDebug() << "Saving: " << text;
     QFileInfo fi(m_CurrentFilePath);
     if (fi.exists() && fi.isWritable()) {
  	Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);

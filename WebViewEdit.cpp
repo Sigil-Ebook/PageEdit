@@ -350,7 +350,7 @@ QVariant WebViewEdit::EvaluateJavascript(const QString &javascript)
         res = pres->res;
         delete pres;
     } else {
-        qDebug() << "Error: VP EvaluateJavascript timed out";
+        qDebug() << "Error: WebView EvaluateJavascript timed out";
 	qDebug() << "   ... intentionally leaking the JSResult structure";
     }
     return res;
