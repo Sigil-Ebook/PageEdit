@@ -223,7 +223,7 @@ if( UNIX AND NOT APPLE )
     # Standard Linux 'make install'
     install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR} )
     install( FILES ${LINUX_DESKTOP_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/applications/ )
-    #install( FILES ${LINUX_DESKTOP_ICON_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/pixmaps RENAME pageedit.png )
+    install( FILES ${LINUX_DESKTOP_ICON_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/pixmaps RENAME pageedit.png )
     install( FILES ${QM_FILES} DESTINATION ${PAGEEDIT_SHARE_ROOT}/translations/ )
 endif()
 
