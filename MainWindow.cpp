@@ -88,7 +88,7 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     LoadSettings();
     ConnectSignalsToSlots();
     QFileInfo fi(filepath);
-    m_CurrentFilePath=fi.absolutePath();
+    m_CurrentFilePath=fi.absoluteFilePath();
     QTimer::singleShot(200, this, SLOT(DoUpdatePage()));
 }
 

@@ -213,7 +213,7 @@ if( UNIX AND NOT APPLE )
         set ( SHARE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX} )
     endif()
 
-    set ( PAGEDIT_SHARE_ROOT "${SHARE_INSTALL_PREFIX}/share/${PROJECT_NAME}" )
+    set ( PAGEEDIT_SHARE_ROOT "${SHARE_INSTALL_PREFIX}/share/${PROJECT_NAME}" )
     
     # Set some defines that pageedit_constants.cpp can then access
     set_property (
