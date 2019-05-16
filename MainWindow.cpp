@@ -52,6 +52,7 @@
 #include "WebViewEdit.h"
 #include "SelectCharacter.h"
 #include "Preferences.h"
+#include "GumboInterface.h"
 
 static const QString SETTINGS_GROUP = "mainwindow";
 
@@ -706,6 +707,10 @@ void MainWindow::LoadSettings()
     m_preserveHeadingAttributes = settings.value("preserveheadingattributes", true).toBool();
     SetPreserveHeadingAttributes(m_preserveHeadingAttributes);
     m_LastFolderOpen  = settings.value("lastfolderopen", QDir::homePath()).toString();
+    QFileInfo fi(m_LastFolderOpen);
+    if (!fi.exists() || !fi.isDir()) {
+        m_LastFolderOpen  = QDir::homePath();
+    }
     settings.endGroup();
 
     // Our default fonts for WebView
@@ -804,6 +809,21 @@ void MainWindow::SetPreserveHeadingAttributes(bool new_state)
 bool MainWindow::Save()
 {
     QString text = m_WebView->GetHtml();
+    // now remove any leftovers and make sure it is well formed
+    GumboInterface gi = GumboInterface(text, "any_version");
+
+    // remove any contenteditable attributes 
+    QList<GumboNode*> nodes = gi.get_all_nodes_with_attribute(QString("contenteditable"));
+    foreach(GumboNode * node, nodes) {
+      GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "contenteditable");
+      if (attr) {
+	GumboElement* element = &node->v.element;
+	gumbo_element_remove_attribute(element, attr);
+      }
+    }
+
+    text = gi.getxhtml();
+
     // qDebug() << "Saving: " << text;
     QFileInfo fi(m_CurrentFilePath);
     if (fi.exists() && fi.isWritable()) {
