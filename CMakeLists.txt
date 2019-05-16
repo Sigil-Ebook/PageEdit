@@ -143,6 +143,7 @@ string( TIMESTAMP BUILD_YEAR "%Y" )
 if ( WIN32 )
     configure_file( version.rc.in ${PROJECT_BINARY_DIR}/version.rc )
     set( WINDOWS_RC_FILES
+         icons/icon.rc
          ${PROJECT_BINARY_DIR}/version.rc
          )
     list( APPEND ALL_SOURCES ${WINDOWS_RC_FILES} )
