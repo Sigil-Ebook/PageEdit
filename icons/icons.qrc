@@ -69,11 +69,13 @@
         <file>insert-special-character_48px.png</file>
         <file>inspect_22px.png</file>
         <file>inspect_48px.png</file>
-	<file>list-add_22px.png</file>
-	<file>list-add_48px.png</file>
-	<file>list-remove_22px.png</file>
-	<file>list-remove_48px.png</file>
-	<file>split-section_22px.png</file>
-	<file>split-section_48px.png</file>
+        <file>list-add_22px.png</file>
+        <file>list-add_48px.png</file>
+        <file>list-remove_22px.png</file>
+        <file>list-remove_48px.png</file>
+        <file>split-section_22px.png</file>
+        <file>split-section_48px.png</file>
+        <file>process-stop_22px.png</file>
+        <file>process-stop_48px.png</file>
     </qresource>
 </RCC>
