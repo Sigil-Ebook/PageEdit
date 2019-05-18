@@ -52,16 +52,16 @@ before_build:
     echo 'PATH = %PATH%'
     cd project\pageedit\build
     call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" %PLATFORM%
-    echo 'LIB = %LIB%'
-    echo 'LIBPATH = %LIBPATH%'
-    echo 'INCLUDE = %INCLUDE%'
-    echo 'CL = %CL%'
-    cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5 %CMAKE64BIT%
+    cmake .. -G "Ninja" -DDEPLOY_SFX=1 -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5
 
     
 build_script:
 - cmd: |-
     ninja -j4
+
+after_build:
+- cmd: |-
+    ninja -j4 deploy
  
 artifacts:
-    path: build\bin\*.exe
+    path: build\deploy\*.exe
