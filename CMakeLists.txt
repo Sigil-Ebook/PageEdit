@@ -208,6 +208,17 @@ elseif( CMAKE_COMPILER_IS_GNUCXX )
     add_definitions( -Wall )
 endif()
 
+get_target_property(QMAKE_EXECUTABLE Qt5::qmake LOCATION)
+function(QUERY_QMAKE VAR RESULT)
+    exec_program(${QMAKE_EXECUTABLE} ARGS "-query ${VAR}" RETURN_VALUE return_code OUTPUT_VARIABLE output )
+    if(NOT return_code)
+        file(TO_CMAKE_PATH "${output}" output)
+        set(${RESULT} ${output} PARENT_SCOPE)
+    endif(NOT return_code)
+endfunction(QUERY_QMAKE)
+
+###############################################################################
+
 if( UNIX AND NOT APPLE )
     if ( NOT SHARE_INSTALL_PREFIX )
         set ( SHARE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX} )
@@ -253,3 +264,71 @@ if( APPLE )
     # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/../lib/*.dylib ${WORK_DIR}/PageEdit.app/Contents/lib/ )
     # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND install_name_tool -rpath ${CMAKE_BINARY_DIR}/lib "@executable_path/../lib" ${WORK_DIR}/PageEdit.app/Contents/MacOS/PageEdit )
 endif()
+
+if ( MSVC )
+    query_qmake( QT_INSTALL_LIBS QT_LIBRARY_DIR )
+    query_qmake (QT_INSTALL_BINS QT_INSTALL_BINS )
+    query_qmake( QT_INSTALL_PLUGINS QT_PLUGINS_DIR )
+    query_qmake( QT_INSTALL_TRANSLATIONS QT_TRANSLATIONS_DIR )
+
+    set( TEMP_PACKAGE_DIR ${CMAKE_BINARY_DIR}/temp_folder )
+    set( MAIN_PACKAGE_DIR ${TEMP_PACKAGE_DIR}/PageEdit )
+    set( OUTPUT_PACKAGE_DIR ${CMAKE_BINARY_DIR}/deploy )
+
+    if( EXISTS ${OUTPUT_PACKAGE_DIR}/${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.zip )
+        file(REMOVE "${OUTPUT_PACKAGE_DIR}/${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.zip" )
+    endif()
+
+    add_custom_target( deploy
+                       COMMAND cmake -E echo "For this to work, 7zip needs to be installed and on the system path."
+                       COMMAND 7z.exe a -tzip "${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.zip" ${MAIN_PACKAGE_DIR} -mx7 -xr!bearer
+                       WORKING_DIRECTORY ${OUTPUT_PACKAGE_DIR} )
+
+
+    # Intermediate step to create folders and copy files
+    set( TARGET_FOR_COPY copyfiles )
+    add_custom_target( ${TARGET_FOR_COPY}
+                       COMMENT "Copying files to temporary location..."
+                       DEPENDS ${PROJECT_NAME} )
+
+    add_dependencies( deploy ${TARGET_FOR_COPY} )
+
+    add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
+                        COMMAND cmake -E make_directory ${MAIN_PACKAGE_DIR}
+                        COMMAND cmake -E make_directory ${OUTPUT_PACKAGE_DIR} )
+
+    # Set the path of the application executable
+    set( EXE_PATH ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME}${CMAKE_EXECUTABLE_SUFFIX} )
+
+    # Copy the application executable
+    add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
+                        COMMAND cmake -E copy ${EXE_PATH} ${MAIN_PACKAGE_DIR} )
+
+    add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD
+                        COMMAND windeployqt.exe --release --no-translations --no-compiler-runtime --dir ${MAIN_PACKAGE_DIR}
+                        --libdir ${MAIN_PACKAGE_DIR} ${MAIN_PACKAGE_DIR}/${PROJECT_NAME}${CMAKE_EXECUTABLE_SUFFIX} )
+
+    # Copy the translation qm files
+    if( NOT EXISTS ${MAIN_PACKAGE_DIR}/translations )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND cmake -E make_directory ${MAIN_PACKAGE_DIR}/translations/ )
+    endif()
+    foreach( QM ${QM_FILES} )
+        # Copy PageEdit's qm files
+        add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND cmake -E copy ${QM} ${MAIN_PACKAGE_DIR}/translations/ )
+        # Copy Qt's qm files that coincide with the above
+        # message( "QM = ${QM}")
+        string( REGEX REPLACE "(.*)(pageedit_)(.*)(\\.qm)" "\\1;\\2;\\3;\\4" PATH_ELEMENTS "${QM}" )
+        list( GET PATH_ELEMENTS 2 LANG_ID )
+        # message( "LANG_ID = ${LANG_ID}")
+        set( QTBASE_QM ${QT_TRANSLATIONS_DIR}/qtbase_${LANG_ID}.qm )
+        # message( "QTBASE_QM = ${QTBASE_QM}" )
+        if ( EXISTS ${QTBASE_QM} )
+            add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND cmake -E copy ${QTBASE_QM} ${MAIN_PACKAGE_DIR}/translations/ )
+        endif()
+    endforeach( QM )
+
+    # Remove the temp directory used for building the installer
+    add_custom_command( TARGET deploy POST_BUILD
+                        COMMAND cmake -E remove_directory ${TEMP_PACKAGE_DIR}
+                        COMMENT "Removing temporary directory..." )
+endif( MSVC )
