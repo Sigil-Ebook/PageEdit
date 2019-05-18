@@ -56,9 +56,11 @@ endif()
 
 # Special compiler and linker flags for MSVC
 if(MSVC)
-    FILE(WRITE ${CMAKE_BINARY_DIR}/inc/strings.h
-      "/*Dummy file to satisfy source file dependencies on Windows platform*/\n"
-    )
+    if(NOT EXISTS ${CMAKE_BINARY_DIR}/inc/strings.h)
+        FILE(WRITE ${CMAKE_BINARY_DIR}/inc/strings.h
+          "/*Dummy file to satisfy source file dependencies on Windows platform*/\n"
+        )
+    endif()
     set (EXTRA_INC ${CMAKE_BINARY_DIR}/inc/)
     include_directories(SYSTEM ${EXTRA_INC})
 
