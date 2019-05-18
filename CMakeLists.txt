@@ -266,24 +266,36 @@ if( APPLE )
 endif()
 
 if ( MSVC )
-    query_qmake( QT_INSTALL_LIBS QT_LIBRARY_DIR )
-    query_qmake (QT_INSTALL_BINS QT_INSTALL_BINS )
-    query_qmake( QT_INSTALL_PLUGINS QT_PLUGINS_DIR )
+    query_qmake( QT_INSTALL_BINS QT_INSTALL_BINS )
     query_qmake( QT_INSTALL_TRANSLATIONS QT_TRANSLATIONS_DIR )
 
     set( TEMP_PACKAGE_DIR ${CMAKE_BINARY_DIR}/temp_folder )
     set( MAIN_PACKAGE_DIR ${TEMP_PACKAGE_DIR}/PageEdit )
     set( OUTPUT_PACKAGE_DIR ${CMAKE_BINARY_DIR}/deploy )
+    set( WINDEPLOYQT ${QT_INSTALL_BINS}/windeployqt.exe )
 
-    if( EXISTS ${OUTPUT_PACKAGE_DIR}/${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.zip )
-        file(REMOVE "${OUTPUT_PACKAGE_DIR}/${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.zip" )
+    set( pf_x86 "ProgramFiles(x86)" )
+    find_program(SEVENZIP_BIN
+	    NAMES 7z 7za
+	    HINTS "$ENV{${pf_x86}}/7-zip" "$ENV{ProgramFiles}/7-zip" "$ENV{ProgramW6432}/7-zip"
+	    PATH_SUFFIXES bin
+	    DOC "7zip executable"
+	)
+    message( "\n7zip location:  ${SEVENZIP_BIN}\n" )
+
+    if( DEPLOY_SFX )
+        set( SEVENZIP_ARGS a -t7z -sfx -mx9 -xr!bearer )
+        set( SEVENZIP_OUTPUT "${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.exe" )
+    else()
+        set( SEVENZIP_ARGS a -tzip -xr!bearer )
+        set( SEVENZIP_OUTPUT "${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.zip" )
     endif()
 
     add_custom_target( deploy
-                       COMMAND cmake -E echo "For this to work, 7zip needs to be installed and on the system path."
-                       COMMAND 7z.exe a -tzip "${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.zip" ${MAIN_PACKAGE_DIR} -mx7 -xr!bearer
+                       COMMAND ${CMAKE_COMMAND} -E echo "For this to work, 7zip needs to be installed (and possibly on the system path)."
+                       COMMAND del ${SEVENZIP_OUTPUT}
+                       COMMAND ${SEVENZIP_BIN} ${SEVENZIP_ARGS} ${SEVENZIP_OUTPUT} ${MAIN_PACKAGE_DIR}
                        WORKING_DIRECTORY ${OUTPUT_PACKAGE_DIR} )
-
 
     # Intermediate step to create folders and copy files
     set( TARGET_FOR_COPY copyfiles )
@@ -294,27 +306,27 @@ if ( MSVC )
     add_dependencies( deploy ${TARGET_FOR_COPY} )
 
     add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
-                        COMMAND cmake -E make_directory ${MAIN_PACKAGE_DIR}
-                        COMMAND cmake -E make_directory ${OUTPUT_PACKAGE_DIR} )
+                        COMMAND ${CMAKE_COMMAND} -E make_directory ${MAIN_PACKAGE_DIR}
+                        COMMAND ${CMAKE_COMMAND} -E make_directory ${OUTPUT_PACKAGE_DIR} )
 
     # Set the path of the application executable
     set( EXE_PATH ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME}${CMAKE_EXECUTABLE_SUFFIX} )
 
     # Copy the application executable
     add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
-                        COMMAND cmake -E copy ${EXE_PATH} ${MAIN_PACKAGE_DIR} )
+                        COMMAND ${CMAKE_COMMAND} -E copy ${EXE_PATH} ${MAIN_PACKAGE_DIR} )
 
     add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD
-                        COMMAND windeployqt.exe --release --no-translations --no-compiler-runtime --dir ${MAIN_PACKAGE_DIR}
+                        COMMAND ${WINDEPLOYQT} --release --no-translations --no-compiler-runtime --dir ${MAIN_PACKAGE_DIR}
                         --libdir ${MAIN_PACKAGE_DIR} ${MAIN_PACKAGE_DIR}/${PROJECT_NAME}${CMAKE_EXECUTABLE_SUFFIX} )
 
     # Copy the translation qm files
     if( NOT EXISTS ${MAIN_PACKAGE_DIR}/translations )
-        add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND cmake -E make_directory ${MAIN_PACKAGE_DIR}/translations/ )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory ${MAIN_PACKAGE_DIR}/translations/ )
     endif()
     foreach( QM ${QM_FILES} )
         # Copy PageEdit's qm files
-        add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND cmake -E copy ${QM} ${MAIN_PACKAGE_DIR}/translations/ )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${QM} ${MAIN_PACKAGE_DIR}/translations/ )
         # Copy Qt's qm files that coincide with the above
         # message( "QM = ${QM}")
         string( REGEX REPLACE "(.*)(pageedit_)(.*)(\\.qm)" "\\1;\\2;\\3;\\4" PATH_ELEMENTS "${QM}" )
@@ -323,12 +335,12 @@ if ( MSVC )
         set( QTBASE_QM ${QT_TRANSLATIONS_DIR}/qtbase_${LANG_ID}.qm )
         # message( "QTBASE_QM = ${QTBASE_QM}" )
         if ( EXISTS ${QTBASE_QM} )
-            add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND cmake -E copy ${QTBASE_QM} ${MAIN_PACKAGE_DIR}/translations/ )
+            add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${QTBASE_QM} ${MAIN_PACKAGE_DIR}/translations/ )
         endif()
     endforeach( QM )
 
     # Remove the temp directory used for building the installer
     add_custom_command( TARGET deploy POST_BUILD
-                        COMMAND cmake -E remove_directory ${TEMP_PACKAGE_DIR}
+                        COMMAND ${CMAKE_COMMAND} -E remove_directory ${TEMP_PACKAGE_DIR}
                         COMMENT "Removing temporary directory..." )
 endif( MSVC )
