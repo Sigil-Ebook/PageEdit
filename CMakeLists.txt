@@ -232,10 +232,18 @@ if( UNIX AND NOT APPLE )
         PROPERTY COMPILE_DEFINITIONS
         PAGEEDIT_SHARE_ROOT="${PAGEEDIT_SHARE_ROOT}"
     )
+
     # Standard Linux 'make install'
     install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR} )
     install( FILES ${LINUX_DESKTOP_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/applications/ )
     install( FILES ${LINUX_DESKTOP_ICON_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/pixmaps RENAME pageedit.png )
+    set( ICON_SIZE 32 48 128 256)
+    foreach( SIZE ${ICON_SIZE} )
+        install( FILES ${PROJECT_SOURCE_DIR}/icons/app_icon_${SIZE}.png DESTINATION
+                               ${SHARE_INSTALL_PREFIX}/share/icons/hicolor/${SIZE}x${SIZE}/apps RENAME pageedit.png )
+    endforeach( SIZE )
+    install( FILES ${PROJECT_SOURCE_DIR}/icons/app_icon_scalable.svg DESTINATION
+                               ${SHARE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps RENAME pageedit.svg )
     install( FILES ${QM_FILES} DESTINATION ${PAGEEDIT_SHARE_ROOT}/translations/ )
 endif()
 
