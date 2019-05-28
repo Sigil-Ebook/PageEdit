@@ -81,6 +81,7 @@ public slots:
 
     // General Slots
     void DoUpdatePage();
+    void InitialLoad(const QString &filepath);
     void UpdatePage(const QString &filename);
     void ScrollTo(QList<ElementIndex> location);
     void SetZoomFactor(float factor);

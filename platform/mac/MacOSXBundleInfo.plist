@@ -9,7 +9,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>PEVERSION</string>
 	<key>CFBundleGetInfoString</key>
-	<string>PEVERSION PageEdit Open Source WebPagevEditor. See http://github.com/Sigil-Ebook/PageEdit/</string>
+	<string>PEVERSION PageEdit Open Source WebPageEditor. See http://github.com/Sigil-Ebook/PageEdit/</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.sigil-ebook.PageEdit.app</string>
 	<key>CFBundleDocumentTypes</key>
@@ -21,6 +21,8 @@
 				<string>html</string>
 				<string>htm</string>
 			</array>
+                        <key>CFBundleTypeRole</key>
+                        <string>Editor</string>
 			<key>CFBundleTypeIconFile</key>
 			<string>xhtml.icns</string>
 			<key>CFBundleTypeMIMETypes</key>
@@ -33,8 +35,6 @@
 			<array>
 				<string>xhtml</string>
 			</array>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
 		</dict>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>

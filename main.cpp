@@ -31,6 +31,7 @@
 #include <QFileInfo>
 #include <QDebug>
 
+#include "MainApplication.h"
 #include "MainWindow.h"
 #include "Utility.h"
 #include "SettingsStore.h"
@@ -66,8 +67,6 @@ static MainWindow *GetMainWindow(const QStringList &arguments)
     return new MainWindow(filepath);
 }
 
-// fix me program icons
-
 
 // Application entry point
 int main(int argc, char *argv[])
@@ -81,7 +80,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion("0.0.1");
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
-    QApplication app(argc, argv);
+    MainApplication app(argc, argv);
 
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("utf8"));
 
@@ -144,9 +143,12 @@ int main(int argc, char *argv[])
 #endif
 #endif
 
-    const QStringList &arguments = QCoreApplication::arguments();
+    QStringList arguments = QCoreApplication::arguments();
+
     MainWindow *widget = GetMainWindow(arguments);
+#ifdef Q_OS_MAC
+    QObject::connect(app.instance(), SIGNAL(LoadInitialFile(const QString &)), widget, SLOT(InitialLoad(const QString &)));
+#endif
     widget->show();
     return app.exec();
-    
 }
