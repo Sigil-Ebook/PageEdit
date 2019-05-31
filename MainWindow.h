@@ -83,6 +83,7 @@ public slots:
     void DoUpdatePage();
     void InitialLoad(const QString &filepath);
     void UpdatePage(const QString &filename);
+    void UpdateWindowTitle();
     void ScrollTo(QList<ElementIndex> location);
     void SetZoomFactor(float factor);
     void LinkClicked(const QUrl &url);
@@ -154,7 +155,6 @@ private:
     void LoadSettings();
     void SaveSettings();
     void ConnectSignalsToSlots();
-    void UpdateWindowTitle();
 
     const QMap<QString, QString> GetLoadFiltersMap();
     const QMap<QString, QString> GetSaveFiltersMap();

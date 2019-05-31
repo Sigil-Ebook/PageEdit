@@ -544,7 +544,8 @@ void MainWindow::UpdateWindowTitle()
     if ((m_WebView) && m_WebView->isVisible()) {
         int height = m_WebView->height();
         int width = m_WebView->width();
-        setWindowTitle(tr("WebView") + " (" + QString::number(width) + "x" + QString::number(height) + ")");
+        QString filename = QFileInfo(m_CurrentFilePath).fileName();
+        setWindowTitle("PageEdit: " + filename + " (" + QString::number(width) + "x" + QString::number(height) + ")");
     }
 }
 
@@ -608,6 +609,19 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 	  }
       }
       break;
+    case QEvent::Resize:
+      {
+          if (object == m_WebView) {
+              const QResizeEvent *resizeEvent(static_cast<QResizeEvent*>(event));
+	      if (resizeEvent) {
+		  // QSize oldsize = resizeEvent->oldSize();
+	          // QSize newsize = resizeEvent->size();
+	          // qDebug() << "Detected ResizeEvent: " << oldsize << newsize;
+	          QTimer::singleShot(100, this, SLOT(UpdateWindowTitle()));
+	      }
+	  }
+      }
+      break;
     default:
       break;
   }
@@ -648,10 +662,13 @@ void MainWindow::InspectPreviewPage()
         m_Inspector->show();
         m_Inspector->raise();
         m_Inspector->activateWindow();
-	return;
+        // if needed resulting m_WebView resize event will UpdateWindowTitle();
+    } else {
+        // qDebug() << "stopping inspection()";
+        m_Inspector->StopInspection();
+        m_Inspector->close();
+        // if needed resulting m_WebView resize event will UpdateWindowTitle();
     }
-    // qDebug() << "stopping inspection()";
-    m_Inspector->close();
 }
 
 void MainWindow::SelectAllPreview()
