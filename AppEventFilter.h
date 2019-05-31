@@ -1,9 +1,7 @@
 /************************************************************************
 **
 **  Copyright (C) 2019 Kevin B. Hendricks, Stratford, Ontario Canada
-**  Copyright (C) 2012 John Schember <john@nachtimwald.com>
-**  Copyright (C) 2012 Grant Drake
-**  Copyright (C) 2012 Dave Heiland
+**  Copyright (C) 2009, 2010, 2011  Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
 **  This file is part of PageEdit.
 **
@@ -23,29 +21,39 @@
 *************************************************************************/
 
 #pragma once
-#ifndef MAINAPPLICATION_H
-#define MAINAPPLICATION_H
+#ifndef APPEVENTFILTER_H
+#define APPEVENTFILTER_H
 
-#include <QEvent>
-#include <QApplication>
+#include <QtCore/QObject>
 #include <QString>
 
-class MainApplication : public QApplication
+class QEvent;
+
+class AppEventFilter : public QObject
 {
     Q_OBJECT
 
 public:
-    MainApplication(int &argc, char **argv);
 
-signals:
-    void applicationActivated();
-    void applicationDeactivated();
+    // Constructor;
+    // The argument is the object's parent.
+    AppEventFilter(QObject *parent);
+
+    QString getInitialFilePath();
 
 protected:
-    bool event(QEvent *pEvent);
+
+    // The event filter used to catch OS X's
+    // QFileOpenEvents. These signal the user used the OS's
+    // services to start PageEdit with an existing document
+    bool eventFilter(QObject *watched_object, QEvent *event);
+
+private:
+    // any initial file passed in from OS when PageEdit first launched
+    QString m_initialFilePath;
 
 };
 
-#endif // MAINAPPLICATION_H
+#endif // APPEVENTFILTER_H
 
 

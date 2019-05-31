@@ -454,15 +454,6 @@ void MainWindow::CheckHeadingLevel(const QString &element_name)
     }
 }
 
-void MainWindow::InitialLoad(const QString &filepath)
-{
-    if (m_CurrentFilePath.isEmpty()) {
-        QFileInfo fi(filepath);
-        m_CurrentFilePath=fi.absoluteFilePath();
-        QTimer::singleShot(100, this, SLOT(DoUpdatePage()));
-    }
-}
-
 void MainWindow::DoUpdatePage()
 {
   if (!m_CurrentFilePath.isEmpty()) {

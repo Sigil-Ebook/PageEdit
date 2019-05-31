@@ -64,6 +64,7 @@ set( SOURCE_FILES
     main.cpp
     pageedit_constants.cpp
     MainApplication.cpp
+    AppEventFilter.cpp
     MainWindow.cpp
     SelectCharacter.cpp
     WebPageEdit.cpp
@@ -82,6 +83,7 @@ set( HEADER_FILES
     pageedit_constants.h
     pageedit_exception.h
     MainApplication.h
+    AppEventFilter.h
     MainWindow.h
     Zoomable.h
     Viewer.h

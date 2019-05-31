@@ -31,14 +31,60 @@
 #include <QFileInfo>
 #include <QDebug>
 
+#ifdef Q_OS_MAC
+# include <QFileDialog>
+# include <QKeySequence>
+# include <QAction>
+#endif
+
 #include "MainApplication.h"
 #include "MainWindow.h"
 #include "Utility.h"
+#include "AppEventFilter.h"
 #include "SettingsStore.h"
 #include "UILanguage.h"
 #include "pageedit_constants.h"
 #include "pageedit_exception.h"
 
+
+// Creates a MainWindow instance depending
+// on command line arguments
+static MainWindow *GetMainWindow(const QStringList &arguments)
+{
+    // We use the first argument as the file to load after starting
+    QString filepath;
+    if (arguments.size() > 1 && Utility::IsFileReadable(arguments.at(1))) {
+        filepath = arguments.at(1);
+    }
+    return new MainWindow(filepath);
+}
+
+
+#ifdef Q_OS_MAC
+// implement file open for use when no mainwindows open
+static void file_open()
+{
+    const QMap<QString, QString> load_filters = MainWindow::GetLoadFiltersMap();
+    QStringList filters(load_filters.values());
+    filters.removeDuplicates();
+    QString filter_string = "";
+    foreach(QString filter, filters) {
+        filter_string += filter + ";;";
+    }
+    // "All Files (*.*)" is the default
+    QString default_filter = load_filters.value("xhtml");
+    QString filename = QFileDialog::getOpenFileName(0,
+						  "Open File",
+						  "~",
+						  filter_string,
+						  &default_filter
+						  );
+    if (!filename.isEmpty()) {
+        MainWindow *w = GetMainWindow(QStringList() << "" << filename);
+        w->show();
+    }
+}
+#endif
 
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
 // Returns a QIcon with the PageEdit "PE" logo in various sizes
@@ -53,19 +99,6 @@ static QIcon GetApplicationIcon()
   return app_icon;
 }
 #endif
-
-
-// Creates a MainWindow instance depending
-// on command line arguments
-static MainWindow *GetMainWindow(const QStringList &arguments)
-{
-    // We use the first argument as the file to load after starting
-    QString filepath;
-    if (arguments.size() > 1 && Utility::IsFileReadable(arguments.at(1))) {
-        filepath = arguments.at(1);
-    }
-    return new MainWindow(filepath);
-}
 
 
 // Application entry point
@@ -143,12 +176,67 @@ int main(int argc, char *argv[])
 #endif
 #endif
 
+    // Install an event filter for the application
+    // so we can catch OS X's file open events
+    AppEventFilter *filter = new AppEventFilter(&app);
+    app.installEventFilter(filter);
+
     QStringList arguments = QCoreApplication::arguments();
 
-    MainWindow *widget = GetMainWindow(arguments);
 #ifdef Q_OS_MAC
-    QObject::connect(app.instance(), SIGNAL(LoadInitialFile(const QString &)), widget, SLOT(InitialLoad(const QString &)));
+    // now process main app events so that any startup 
+    // FileOpen event will be processed for macOS
+    QCoreApplication::processEvents();
+
+    QString filepath = filter->getInitialFilePath();
+
+    // if one found append it to argv for processing as normal
+    if ((arguments.size() == 1) && !filepath.isEmpty()) {
+      arguments << QFileInfo(filepath).absoluteFilePath();
+    }
+
+    // Work around QTBUG-62193 and QTBUG-65245 and others where menubar
+    // menu items are lost under File and PageEdit menus and where
+    // Quit menu gets lost when deleting other windows first
+
+    // We Create and show a frameless translucent QMainWindow to hold
+    // the menubar.  Note: macOS has a single menubar attached at 
+    // the top of the screen that all mainwindows share.
+
+    app.setQuitOnLastWindowClosed(false);
+
+    Qt::WindowFlags flags = Qt::Window | Qt::FramelessWindowHint;
+    QMainWindow * basemw = new QMainWindow(NULL, flags);
+    basemw->setAttribute(Qt::WA_TranslucentBackground, true);
+
+    QMenuBar *mac_menu = new QMenuBar(0);
+    QMenu *file_menu = new QMenu("File");
+
+    // Open
+    QAction* open_action = new QAction("Open");
+    open_action->setShortcut(QKeySequence("Ctrl+O"));
+    QObject::connect(open_action, &QAction::triggered, file_open);
+    file_menu ->addAction(open_action);
+
+    // Quit - force add of a secondary quit menu to the file menu
+    QAction* quit_action = new QAction("Quit");
+    quit_action->setMenuRole(QAction::NoRole);
+    quit_action->setShortcut(QKeySequence("Ctrl+Q"));
+    QObject::connect(quit_action, &QAction::triggered, qApp->quit);
+    file_menu ->addAction(quit_action);
+
+    mac_menu->addMenu(file_menu);
+
+    // Application specific quit menu
+    // according to Qt docs this is the right way to add an application
+    // quit menu - but it does not work and will still sometimes get lost
+    mac_menu->addAction("quit");
+
+    basemw->setMenuBar(mac_menu);
+    basemw->show();
 #endif
+
+    MainWindow *widget = GetMainWindow(arguments);
     widget->show();
     return app.exec();
 }

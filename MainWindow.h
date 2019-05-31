@@ -81,7 +81,6 @@ public slots:
 
     // General Slots
     void DoUpdatePage();
-    void InitialLoad(const QString &filepath);
     void UpdatePage(const QString &filename);
     void UpdateWindowTitle();
     void ScrollTo(QList<ElementIndex> location);
@@ -94,6 +93,10 @@ public slots:
     void ReloadPreview();
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
     void OpenUrl(const QUrl &url);
+
+    static const QMap<QString, QString> GetLoadFiltersMap();
+    static const QMap<QString, QString> GetSaveFiltersMap();
+
 
     // GUI slots
     void sizeMenuIcons();
@@ -155,9 +158,6 @@ private:
     void LoadSettings();
     void SaveSettings();
     void ConnectSignalsToSlots();
-
-    const QMap<QString, QString> GetLoadFiltersMap();
-    const QMap<QString, QString> GetSaveFiltersMap();
 
     WebViewEdit *m_WebView;
     Inspector *m_Inspector;

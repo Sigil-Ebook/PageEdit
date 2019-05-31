@@ -25,10 +25,6 @@
 #include <QApplication>
 #include "MainApplication.h"
 
-#ifdef Q_OS_MAC
-#include <QFileOpenEvent>
-#endif
-
 MainApplication::MainApplication(int &argc, char **argv)
     : QApplication(argc, argv)
 {
@@ -41,12 +37,5 @@ bool MainApplication::event(QEvent *pEvent)
     } else if (pEvent->type() == QEvent::ApplicationDeactivate) {
         emit applicationDeactivated();
     }
-#ifdef Q_OS_MAC
-    if (pEvent->type() == QEvent::FileOpen) {
-        QFileOpenEvent * openEvent = static_cast<QFileOpenEvent *>(pEvent);
-	QString file_to_open = openEvent->file();
-	emit LoadInitialFile(file_to_open);
-    }
-#endif
     return QApplication::event(pEvent);
 }
