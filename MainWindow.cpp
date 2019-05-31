@@ -861,7 +861,7 @@ void MainWindow::Open()
     }
 
 #ifndef Q_OS_MAC
-    if (MayBeSaveDialogSaysProceed())
+    if (MaybeSaveDialogSaysProceed())
 #endif 
     {
         const QMap<QString, QString> load_filters = MainWindow::GetLoadFiltersMap();
