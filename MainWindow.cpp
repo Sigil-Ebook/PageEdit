@@ -860,32 +860,43 @@ void MainWindow::Open()
         m_LastFolderOpen = QDir::homePath();
     }
 
-    const QMap<QString, QString> load_filters = MainWindow::GetLoadFiltersMap();
-    QStringList filters(load_filters.values());
-    filters.removeDuplicates();
-    QString filter_string = "";
-    foreach(QString filter, filters) {
-        filter_string += filter + ";;";
-    }
-    // "All Files (*.*)" is the default
-    QString default_filter = load_filters.value("xhtml");
-    QString filename = QFileDialog::getOpenFileName(0,
-                       "Open File",
-		       m_LastFolderOpen,
-                       filter_string,
-                       &default_filter);
+#ifndef Q_OS_MAC
+    if (MayBeSaveDialogSaysProceed())
+#endif 
+    {
+        const QMap<QString, QString> load_filters = MainWindow::GetLoadFiltersMap();
+        QStringList filters(load_filters.values());
+        filters.removeDuplicates();
+        QString filter_string = "";
+        foreach(QString filter, filters) {
+            filter_string += filter + ";;";
+        }
+        // "All Files (*.*)" is the default
+        QString default_filter = load_filters.value("xhtml");
+        QString filename = QFileDialog::getOpenFileName(0,
+                           "Open File",
+		           m_LastFolderOpen,
+                           filter_string,
+                           &default_filter);
 
-    if (!filename.isEmpty()) {
-        QFileInfo fi(filename);
-        if (fi.exists() && fi.isReadable()) {
-    	    m_CurrentFilePath = filename;
-    	    UpdatePage(m_CurrentFilePath);
-            ShowMessageOnStatusBar(tr("File Opened"));
-	    return;
+        if (!filename.isEmpty()) {
+            QFileInfo fi(filename);
+            if (fi.exists() && fi.isReadable()) {
+
+#ifdef Q_OS_MAC
+	        MainWindow * new_window = new MainWindow(filename);
+	        new_window->show();
+		return;
+#else
+    	        m_CurrentFilePath = filename;
+    	        UpdatePage(m_CurrentFilePath);
+                ShowMessageOnStatusBar(tr("File Opened"));
+	        return;
+#endif
+	    }
+            ShowMessageOnStatusBar(tr("File Open Failed!"));
 	}
-        ShowMessageOnStatusBar(tr("File Open Failed!"));
     }
-   
 }
 
 void MainWindow::Exit()
@@ -1009,34 +1020,53 @@ void MainWindow::ShowMessageOnStatusBar(const QString &message,
 }
 
 void MainWindow::sizeMenuIcons() {
-  // Size icons based on Qfont line-spacing and a                                                                                    
-  // user-preference tweakable scale-factor.                                                                                         
-  SettingsStore settings;
-  double iconscalefactor = settings.mainMenuIconSize();
-  int iconsize = QFontMetrics(QFont()).lineSpacing() * iconscalefactor;
-  if (iconsize < 12) iconsize = 12;
-  if (iconsize > 48) iconsize = 48;
+    // Size icons based on Qfont line-spacing and a
+    // user-preference tweakable scale-factor.
+    SettingsStore settings;
+    double iconscalefactor = settings.mainMenuIconSize();
+    int iconsize = QFontMetrics(QFont()).lineSpacing() * iconscalefactor;
+    if (iconsize < 12) iconsize = 12;
+    if (iconsize > 48) iconsize = 48;
 
-  QList<QToolBar *> all_toolbars = findChildren<QToolBar *>();
-  foreach(QToolBar * toolbar, all_toolbars) {
-    toolbar->setIconSize(QSize(iconsize,iconsize));
-  }
+    QList<QToolBar *> all_toolbars = findChildren<QToolBar *>();
+    foreach(QToolBar * toolbar, all_toolbars) {
+        toolbar->setIconSize(QSize(iconsize,iconsize));
+    }
 }
 
 void MainWindow::OpenUrl(const QUrl &url)
 {
-  if (url.isEmpty()) {
-    return;
-  }
+    if (url.isEmpty()) {
+      return;
+    }
 
 #if 0
-  if (url.scheme().isEmpty() || url.scheme() == "file") {
-    if (url.fragment().isEmpty()) {
+    if (url.scheme().isEmpty() || url.scheme() == "file") {
+        if (url.fragment().isEmpty()) {
+        }
     }
-  }
 #endif 
 
   QDesktopServices::openUrl(url);
+}
+
+bool MainWindow::MaybeSaveDialogSaysProceed()
+{
+    // allow processing of any outstanding events
+    qApp->processEvents();
+
+    QMessageBox::StandardButton button_pressed;
+    button_pressed = QMessageBox::warning(this,
+					tr("PageEdit"),
+					tr("Do you want to save any changes before overwriting this file?"),
+					QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel
+					);
+    if (button_pressed == QMessageBox::Save) {
+        return Save();
+    } else if (button_pressed == QMessageBox::Cancel) {
+        return false;
+    }
+    return true;
 }
 
 void MainWindow::ExtendIconSizes()

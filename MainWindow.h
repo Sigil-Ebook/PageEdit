@@ -152,6 +152,7 @@ protected:
     void resizeEvent(QResizeEvent * event);
     void moveEvent(QMoveEvent *event);
     void closeEvent(QCloseEvent * event);
+    bool MaybeSaveDialogSaysProceed();
 
 private:
     void SetupView();
