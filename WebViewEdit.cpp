@@ -30,6 +30,7 @@
 #include <QtWebEngineWidgets/QWebEngineProfile>
 #include <QtWebEngineWidgets/QWebEnginePage>
 #include <QtWebEngineWidgets/QWebEngineView>
+#include <QtWebEngineWidgets/QWebEngineScript>
 #include <QDebug>
 
 #include "Utility.h"
@@ -341,7 +342,7 @@ QVariant WebViewEdit::EvaluateJavascript(const QString &javascript)
 
     DBG qDebug() << "evaluate javascript" << javascript;
 
-    page()->runJavaScript(javascript,SetJavascriptResultFunctor(pres));
+    page()->runJavaScript(javascript, QWebEngineScript::ApplicationWorld, SetJavascriptResultFunctor(pres));
     while(!pres->isFinished() && (!deadline.hasExpired())) {
         qApp->processEvents(QEventLoop::ExcludeUserInputEvents, 100);
     }
@@ -363,7 +364,7 @@ void WebViewEdit::DoJavascript(const QString &javascript)
      // do not try to evaluate javascripts with the page not loaded yet
     if (!m_isLoadFinished) return;
 
-    page()->runJavaScript(javascript);
+    page()->runJavaScript(javascript, QWebEngineScript::ApplicationWorld);
 }
 
 bool WebViewEdit::QueryCommandState(const QString &command)
@@ -403,9 +404,9 @@ void WebViewEdit::GrabFocus()
 
 void WebViewEdit::WebPageJavascriptOnLoad()
 {
-    page()->runJavaScript(c_jQuery);
-    page()->runJavaScript(c_jQueryScrollTo);
-    page()->runJavaScript("document.documentElement.contentEditable = true");
+    page()->runJavaScript(c_jQuery, QWebEngineScript::ApplicationWorld);
+    page()->runJavaScript(c_jQueryScrollTo, QWebEngineScript::ApplicationWorld);
+    page()->runJavaScript("document.documentElement.contentEditable = true", QWebEngineScript::ApplicationWorld);
     m_pendingLoadCount -= 1;
 
     if (m_pendingLoadCount == 0) {
