@@ -730,9 +730,32 @@ void MainWindow::LoadSettings()
     }
     settings.endGroup();
 
-    // Our default fonts for WebView
     SettingsStore::WebViewAppearance WVAppearance = settings.webViewAppearance();
     QWebEngineSettings *web_settings = QWebEngineSettings::defaultSettings();
+
+    // QWebEngine security settings to help prevent rogue epub3 javascripts
+    // enable javascript in mainworld for epub3 but then lock it down to the extent we can
+    web_settings->setUnknownUrlSchemePolicy(QWebEngineSettings::DisallowUnknownUrlSchemes);
+    web_settings->setAttribute(QWebEngineSettings::JavascriptEnabled, true);
+    web_settings->setAttribute(QWebEngineSettings::JavascriptCanOpenWindows, false);
+    web_settings->setAttribute(QWebEngineSettings::JavascriptCanAccessClipboard, false);
+    web_settings->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, false);
+    web_settings->setAttribute(QWebEngineSettings::LocalContentCanAccessFileUrls, false);
+    web_settings->setAttribute(QWebEngineSettings::PluginsEnabled, false);
+    web_settings->setAttribute(QWebEngineSettings::AutoLoadIconsForPage, false);
+    web_settings->setAttribute(QWebEngineSettings::FocusOnNavigationEnabled, true);
+    web_settings->setAttribute(QWebEngineSettings::AllowRunningInsecureContent, false);
+    web_settings->setAttribute(QWebEngineSettings::AllowWindowActivationFromJavaScript, false);
+    web_settings->setAttribute(QWebEngineSettings::PlaybackRequiresUserGesture, true);
+    web_settings->setAttribute(QWebEngineSettings::JavascriptCanPaste, false);
+    web_settings->setAttribute(QWebEngineSettings::XSSAuditingEnabled, true);
+    web_settings->setAttribute(QWebEngineSettings::AllowGeolocationOnInsecureOrigins, false);
+    web_settings->setAttribute(QWebEngineSettings::DnsPrefetchEnabled, false);
+    web_settings->setAttribute(QWebEngineSettings::ScreenCaptureEnabled, false);
+    web_settings->setAttribute(QWebEngineSettings::LocalStorageEnabled, false);
+    web_settings->setAttribute(QWebEngineSettings::AutoLoadImages, true);
+
+    // Our default fonts for WebView
     web_settings->setFontSize(QWebEngineSettings::DefaultFontSize, WVAppearance.font_size);
     web_settings->setFontFamily(QWebEngineSettings::StandardFont, WVAppearance.font_family_standard);
     web_settings->setFontFamily(QWebEngineSettings::SerifFont, WVAppearance.font_family_serif);
