@@ -20,14 +20,14 @@
 **
 *************************************************************************/
 
-#include "LanguageWidget.h"
+#include "GeneralSettings.h"
 #include "SettingsStore.h"
 #include "UILanguage.h"
 
 #include <QString>
 #include <QStringList>
 
-LanguageWidget::LanguageWidget()
+GeneralSettings::GeneralSettings()
 {
     ui.setupUi(this);
     QStringList ui_language_names;
@@ -50,9 +50,22 @@ LanguageWidget::LanguageWidget()
     readSettings();
 }
 
-PreferencesWidget::ResultAction LanguageWidget::saveSettings()
+PreferencesWidget::ResultAction GeneralSettings::saveSettings()
 {
     SettingsStore settings;
+
+    int new_remote_on_level = 0;
+    if (ui.AllowRemote->isChecked()) {
+        new_remote_on_level = 1;
+    }
+    settings.setRemoteOn(new_remote_on_level);
+
+    int new_javascript_on_level = 0;
+    if (ui.AllowJavascript->isChecked()) {
+        new_javascript_on_level = 1;
+    }
+    settings.setJavascriptOn(new_javascript_on_level);
+
     settings.setUILanguage(ui.cbUILanguage->currentText().replace("-", "_"));
 
     if (ui.cbUILanguage->currentText() != m_UILanguage) {
@@ -62,7 +75,7 @@ PreferencesWidget::ResultAction LanguageWidget::saveSettings()
     return PreferencesWidget::ResultAction_None;
 }
 
-void LanguageWidget::readSettings()
+void GeneralSettings::readSettings()
 {
     SettingsStore settings;
     QString language_code = settings.uiLanguage();
@@ -80,4 +93,10 @@ void LanguageWidget::readSettings()
 
     ui.cbUILanguage->setCurrentIndex(index);
     m_UILanguage = ui.cbUILanguage->currentText();
+
+    int remoteOn = settings.remoteOn();
+    ui.AllowRemote->setChecked(remoteOn);
+
+    int javascriptOn = settings.javascriptOn();
+    ui.AllowJavascript->setChecked(javascriptOn);
 }

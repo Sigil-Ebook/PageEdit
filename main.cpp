@@ -37,7 +37,6 @@
 # include <QAction>
 #endif
 
-#include "MainApplication.h"
 #include "MainWindow.h"
 #include "Utility.h"
 #include "AppEventFilter.h"
@@ -113,7 +112,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion("0.0.1");
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
-    MainApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("utf8"));
 

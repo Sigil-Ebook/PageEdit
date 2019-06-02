@@ -32,7 +32,7 @@
 #include "Utility.h"
 #include "PreferencesWidget.h"
 #include "AppearanceWidget.h"
-#include "LanguageWidget.h"
+#include "GeneralSettings.h"
 
 static const QString SETTINGS_GROUP = "preferences_dialog";
 
@@ -44,7 +44,7 @@ Preferences::Preferences(QWidget *parent) :
     extendUI();
     // Create and load all of our preference widgets.;
     appendPreferenceWidget(new AppearanceWidget);
-    appendPreferenceWidget(new LanguageWidget);
+    appendPreferenceWidget(new GeneralSettings);
     connectSignalsSlots();
     QApplication::setOverrideCursor(Qt::WaitCursor);
     readSettings();

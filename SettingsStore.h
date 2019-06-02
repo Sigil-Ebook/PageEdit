@@ -99,6 +99,10 @@ public:
     
     void clearAppearanceSettings();
 
+    int javascriptOn();
+
+    int remoteOn();
+
 public slots:
 
     /**
@@ -135,6 +139,9 @@ public slots:
      */
     void setMainMenuIconSize(double icon_size);
 
+    void setJavascriptOn(int on);
+
+    void setRemoteOn(int on);
 
 
 private:

@@ -106,6 +106,8 @@ WebViewEdit::WebViewEdit(QWidget *parent)
     SetCurrentZoomFactor(settings.zoomPreview());
     page()->settings()->setAttribute(QWebEngineSettings::ErrorPageEnabled, false);
     page()->settings()->setDefaultTextEncoding("UTF-8");
+    page()->settings()->setAttribute(QWebEngineSettings::JavascriptEnabled, (settings.javascriptOn() == 1));
+    page()->settings()->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, (settings.remoteOn() == 1));
     // Enable local-storage for epub3
     page()->settings()->setAttribute(QWebEngineSettings::LocalStorageEnabled, true);
     QString localStorePath = Utility::DefinePrefsDir() + "/local-storage";

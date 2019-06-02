@@ -44,6 +44,8 @@ static QString KEY_WEBVIEW_FONT_SIZE = SETTINGS_GROUP + "/" + "webview_font_size
 static QString KEY_SPECIAL_CHARACTER_FONT_FAMILY = SETTINGS_GROUP + "/" + "special_character_font_family";
 static QString KEY_SPECIAL_CHARACTER_FONT_SIZE = SETTINGS_GROUP + "/" + "special_character_font_size";
 static QString KEY_MAIN_MENU_ICON_SIZE = SETTINGS_GROUP + "/" + "main_menu_icon_size";
+static QString KEY_JAVASCRIPT_ON = SETTINGS_GROUP + "/" + "javascript_on";
+static QString KEY_REMOTE_ON = SETTINGS_GROUP + "/" + "remote_on";
 
 SettingsStore::SettingsStore()
     : QSettings(Utility::DefinePrefsDir() + "/pageedit.ini", QSettings::IniFormat)
@@ -120,6 +122,18 @@ double SettingsStore::mainMenuIconSize()
     return value(KEY_MAIN_MENU_ICON_SIZE, 1.8).toDouble();
 }
 
+int SettingsStore::javascriptOn()
+{
+  clearSettingsGroup();
+  return value(KEY_JAVASCRIPT_ON, 0).toInt();
+}
+
+int SettingsStore::remoteOn()
+{
+  clearSettingsGroup();
+  return value(KEY_REMOTE_ON, 0).toInt();
+}
+
 void SettingsStore::setUILanguage(const QString &language_code)
 {
     clearSettingsGroup();
@@ -175,6 +189,18 @@ void SettingsStore::setMainMenuIconSize(double icon_size)
 {
     clearSettingsGroup();
     setValue(KEY_MAIN_MENU_ICON_SIZE, icon_size);
+}
+
+void SettingsStore::setJavascriptOn(int on)
+{
+  clearSettingsGroup();
+  setValue(KEY_JAVASCRIPT_ON, on);
+}
+
+void SettingsStore::setRemoteOn(int on)
+{
+  clearSettingsGroup();
+  setValue(KEY_REMOTE_ON, on);
 }
 
 void SettingsStore::clearAppearanceSettings()

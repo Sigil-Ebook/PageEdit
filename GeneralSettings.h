@@ -1,9 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin B. Hendricks, Stratford, Ontario Canada
-**  Copyright (C) 2012 John Schember <john@nachtimwald.com>
-**  Copyright (C) 2012 Grant Drake
-**  Copyright (C) 2012 Dave Heiland
+**  Copyright (C) 2019  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2011  John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
 **
@@ -23,29 +21,28 @@
 *************************************************************************/
 
 #pragma once
-#ifndef MAINAPPLICATION_H
-#define MAINAPPLICATION_H
+#ifndef GENERALSETTINGS_H
+#define GENERALSETTINGS_H
 
-#include <QEvent>
-#include <QApplication>
-#include <QString>
+#include "PreferencesWidget.h"
+#include "ui_PGeneralSettings.h"
 
-class MainApplication : public QApplication
+
+/**
+ * Preferences widget for general preferences.
+ */
+class GeneralSettings : public PreferencesWidget
 {
-    Q_OBJECT
-
 public:
-    MainApplication(int &argc, char **argv);
+    GeneralSettings();
+    PreferencesWidget::ResultAction saveSettings();
 
-signals:
-    void applicationActivated();
-    void applicationDeactivated();
+private:
+    void readSettings();
 
-protected:
-    bool event(QEvent *pEvent);
+    QString m_UILanguage;
 
+    Ui::GeneralSettings ui;
 };
 
-#endif // MAINAPPLICATION_H
-
-
+#endif // GENERALSETTINGS_H

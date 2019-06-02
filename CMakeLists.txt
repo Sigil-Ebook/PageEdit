@@ -63,7 +63,6 @@ set(CMAKE_AUTOMOC ON)
 set( SOURCE_FILES
     main.cpp
     pageedit_constants.cpp
-    MainApplication.cpp
     AppEventFilter.cpp
     MainWindow.cpp
     SelectCharacter.cpp
@@ -72,7 +71,7 @@ set( SOURCE_FILES
     Inspector.cpp
     Preferences.cpp
     AppearanceWidget.cpp
-    LanguageWidget.cpp
+    GeneralSettings.cpp
     UILanguage.cpp
     SettingsStore.cpp
     Utility.cpp
@@ -82,7 +81,6 @@ set( SOURCE_FILES
 set( HEADER_FILES
     pageedit_constants.h
     pageedit_exception.h
-    MainApplication.h
     AppEventFilter.h
     MainWindow.h
     Zoomable.h
@@ -95,7 +93,7 @@ set( HEADER_FILES
     Preferences.h
     PreferencesWidget.h
     AppearanceWidget.h
-    LanguageWidget.h
+    GeneralSettings.h
     UILanguage.h
     SettingsStore.h
     Utility.h
@@ -107,7 +105,7 @@ set( FORM_FILES
     SelectCharacter.ui
     Preferences.ui
     PAppearanceWidget.ui
-    PLanguageWidget.ui
+    PGeneralSettings.ui
     )
 
 set( RESOURCE_FILES

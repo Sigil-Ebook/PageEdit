@@ -45,7 +45,7 @@ public:
 
     enum AvailablePreferences {
         AppearancePrefs        = 0,
-        LanguagePrefs          = 1
+	GeneralPrefs           = 1
     };
 
 

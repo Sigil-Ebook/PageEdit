@@ -736,10 +736,10 @@ void MainWindow::LoadSettings()
     // QWebEngine security settings to help prevent rogue epub3 javascripts
     // enable javascript in mainworld for epub3 but then lock it down to the extent we can
     web_settings->setUnknownUrlSchemePolicy(QWebEngineSettings::DisallowUnknownUrlSchemes);
-    web_settings->setAttribute(QWebEngineSettings::JavascriptEnabled, true);
+    web_settings->setAttribute(QWebEngineSettings::JavascriptEnabled, (settings.javascriptOn() == 1));
     web_settings->setAttribute(QWebEngineSettings::JavascriptCanOpenWindows, false);
     web_settings->setAttribute(QWebEngineSettings::JavascriptCanAccessClipboard, false);
-    web_settings->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, false);
+    web_settings->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, (settings.remoteOn() == 1));
     web_settings->setAttribute(QWebEngineSettings::LocalContentCanAccessFileUrls, false);
     web_settings->setAttribute(QWebEngineSettings::PluginsEnabled, false);
     web_settings->setAttribute(QWebEngineSettings::AutoLoadIconsForPage, false);
