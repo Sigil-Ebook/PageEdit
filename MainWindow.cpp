@@ -60,6 +60,8 @@ static const QString CUSTOM_WEBVIEW_STYLE_FILENAME = "custom_webview_style.css";
 
 static const QString BREAK_TAG_INSERT    = "<hr class=\"sigil_split_marker\" />";
 
+static const QString DEFAULT_FILENAME = "untitled.xhtml";
+
 const float ZOOM_STEP               = 0.1f;
 const float ZOOM_MIN                = 0.09f;
 const float ZOOM_MAX                = 5.0f;
@@ -845,9 +847,7 @@ void MainWindow::SetPreserveHeadingAttributes(bool new_state)
     ui.actionHeadingPreserveAttributes->setChecked(m_preserveHeadingAttributes);
 }
 
-// fix me Save and Open
-bool MainWindow::Save()
-{
+QString MainWindow::GetCleanHtml() {
     QString text = m_WebView->GetHtml();
     // now remove any leftovers and make sure it is well formed
     GumboInterface gi = GumboInterface(text, "any_version");
@@ -863,17 +863,123 @@ bool MainWindow::Save()
     }
 
     text = gi.getxhtml();
+    return text;
+}
 
-    // qDebug() << "Saving: " << text;
+bool MainWindow::SaveAs()
+{
+    const QMap<QString,QString> c_SaveFiltersMap(GetSaveFiltersMap());
+    QStringList filters(c_SaveFiltersMap.values());
+    filters.removeDuplicates();
+    QString filter_string = "";
+    foreach(QString filter, filters) {
+        filter_string += filter + ";;";
+    }
+    QString save_path       = "";
+    QString default_filter  = "";
+
+    if (m_LastFolderOpen.isEmpty()) {
+        m_LastFolderOpen = QDir::homePath();
+    }
+
+    if (m_CurrentFilePath.isEmpty()) {
+        m_CurrentFilePath = m_LastFolderOpen + "/" + DEFAULT_FILENAME;
+    }
+
+    // if we can save this file type, then we use the current filename
+    if (c_SaveFiltersMap.contains(QFileInfo(m_CurrentFilePath).suffix().toLower())) {
+        save_path       = m_CurrentFilePath;
+        default_filter  = c_SaveFiltersMap.value(QFileInfo(m_CurrentFilePath).suffix().toLower());
+    }
+    // if not, we change the extension to xhtml
+    else {
+        save_path       = m_LastFolderOpen + "/" + QFileInfo(m_CurrentFilePath).completeBaseName() + ".xhtml";
+        default_filter  = c_SaveFiltersMap.value("xhtml");
+    }
+
+    QString filename = QFileDialog::getSaveFileName(this,
+						    tr("Save File"),
+						    save_path,
+						    filter_string,
+#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+						    & default_filter,
+						    QFileDialog::DontUseNativeDialog
+#else
+                                                    & default_filter
+#endif
+						    );
+
+    // QFileDialog cancelled
+    if (filename.isEmpty()) {
+        // The only time m_CurrentFilePath should be cleared after the SaveAs dialog is
+        // cancelled, is when it's populated with the "untitled.xhtml" default filename.
+        if (m_CurrentFilePath.endsWith(DEFAULT_FILENAME)) {
+            m_CurrentFilePath.clear();
+        }
+        return false;
+    }
+
+    QString extension = QFileInfo(filename).suffix().toLower();
+    if (extension.isEmpty()) {
+        filename += ".xhtml";
+    }
+
+    // Store the full path to the destination file and its folder
+    m_CurrentFilePath = QFileInfo(filename).absoluteFilePath();
+    m_LastFolderOpen = QFileInfo(filename).absolutePath();
+
+    QString text = GetCleanHtml();
+
+    // qDebug() << "Save As: " << text;
     QFileInfo fi(m_CurrentFilePath);
-    if (fi.exists() && fi.isWritable()) {
+    if (fi.exists() && !fi.isWritable()) {
+        Utility::DisplayStdErrorDialog(tr("File Save-As Failed!"), m_CurrentFilePath + " " + tr("is not writeable"));
+        ShowMessageOnStatusBar(tr("File Save-As Failed!"));
+	m_CurrentFilePath.clear();
+	return false;
+    }
+
+    bool save_result = false;
+    try {
  	Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);
         ShowMessageOnStatusBar(tr("File Saved"));
         m_LastFolderOpen = fi.absolutePath();
-	return true;
+	save_result = true;
+    } catch (std::exception e) {
+	Utility::DisplayStdErrorDialog(tr("File Save-As Failed!"), e.what());
+        ShowMessageOnStatusBar(tr("File Save-As Failed!"));
+	m_CurrentFilePath.clear();
+	save_result = false;
     }
-    ShowMessageOnStatusBar(tr("File Save Failed!"));
-    return false;
+    return save_result;
+}
+
+bool MainWindow::Save()
+{
+    QString text = GetCleanHtml();
+
+    // qDebug() << "Saving: " << text;
+    QFileInfo fi(m_CurrentFilePath);
+
+    if (!fi.exists() || !fi.isWritable()) {
+        Utility::DisplayStdErrorDialog(tr("File Save Failed!"), 
+				       m_CurrentFilePath + " " + tr("does not exist or is not writeable"));
+        ShowMessageOnStatusBar(tr("File Save Failed!"));
+        return false;
+    }
+
+    bool save_result = false;
+    try {
+ 	Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);
+        ShowMessageOnStatusBar(tr("File Saved"));
+        m_LastFolderOpen = fi.absolutePath();
+	save_result = true;
+    } catch (std::exception e) {
+	Utility::DisplayStdErrorDialog(tr("File Save Failed!"),e.what());
+        ShowMessageOnStatusBar(tr("File Save Failed!"));
+	save_result = false;;
+    }
+    return save_result;
 }
 
 void MainWindow::Open()
@@ -1272,6 +1378,7 @@ void MainWindow::ConnectSignalsToSlots()
     // File Related
     connect(ui.actionOpen,      SIGNAL(triggered()), this, SLOT(Open()));
     connect(ui.actionSave,      SIGNAL(triggered()), this, SLOT(Save()));
+    connect(ui.actionSaveAs,    SIGNAL(triggered()), this, SLOT(SaveAs()));
     connect(ui.actionExit,      SIGNAL(triggered()), this, SLOT(Exit()));
     connect(ui.actionPreferences, SIGNAL(triggered()), this, SLOT(PreferencesDialog()));
       

@@ -105,6 +105,7 @@ public slots:
     void ApplyHeadingToSelection(const QString &heading_type);
     void SetPreserveHeadingAttributes(bool new_state);
     bool Save();
+    bool SaveAs();
     void Open();
     void Exit();
     void Undo();
@@ -153,6 +154,8 @@ protected:
     void moveEvent(QMoveEvent *event);
     void closeEvent(QCloseEvent * event);
     bool MaybeSaveDialogSaysProceed();
+    QString GetCleanHtml();
+
 
 private:
     void SetupView();

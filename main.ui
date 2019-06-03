@@ -63,6 +63,7 @@
     </property>
     <addaction name="actionOpen"/>
     <addaction name="actionSave"/>
+    <addaction name="actionSaveAs"/>
     <addaction name="actionExit"/>
     <addaction name="actionPreferences"/>
    </widget>
@@ -301,10 +302,22 @@
     <string>&amp;Save</string>
    </property>
    <property name="toolTip">
-    <string>Save the current book.</string>
+    <string>Save the current file.</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
+   </property>
+  </action>
+
+  <action name="actionSaveAs">
+   <property name="text">
+    <string>Save &amp;As...</string>
+   </property>
+   <property name="toolTip">
+    <string>Save the current file with a different filename.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
    </property>
   </action>
   
@@ -330,7 +343,7 @@
     <string>&amp;Paste</string>
    </property>
    <property name="toolTip">
-    <string>Pastes the content from the clipboard into the book.</string>
+    <string>Pastes the content from the clipboard into the file.</string>
    </property>
   </action>  
   
@@ -497,7 +510,7 @@
     <string>&amp;Open...</string>
    </property>
    <property name="toolTip">
-    <string>Open a book from disk.</string>
+    <string>Open a file from disk.</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
