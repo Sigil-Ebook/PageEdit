@@ -34,7 +34,7 @@ Building on macOS:
 `make`<br>
 `make addframeworks`<br>
 `cd bin`<br>
-`open -a \`pwd\`/PageEdit.app /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`<br>
+`open -a `pwd`/PageEdit.app /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`<br>
 `or simply drag and drop an xhtml file from an unzipped epub onto the PageEdit.app`<br>
 
 
