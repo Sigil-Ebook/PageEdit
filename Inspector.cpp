@@ -22,6 +22,7 @@
 #include <QByteArray>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QtWebEngineWidgets/QWebEnginePage>
+#include <QtWebEngineWidgets/QWebEngineSettings>
 #include <QApplication>
 #include <QDebug>
 
@@ -44,6 +45,9 @@ Inspector::Inspector(QWidget *parent) :
     basewidget->setObjectName("PrimaryFrame");
     setWidget(basewidget);
     LoadSettings();
+    // QtWebEngine WebInspector needs to run javascript in MainWorld
+    // so override the app default but just for the inspector
+    m_inspectView->page()->settings()->setAttribute(QWebEngineSettings::JavascriptEnabled, true);
     setWindowTitle(tr("Inspect Page or Element"));
 }
 
