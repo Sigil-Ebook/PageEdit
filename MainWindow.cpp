@@ -737,9 +737,7 @@ void MainWindow::LoadSettings()
 
     // QWebEngine security settings to help prevent rogue epub3 javascripts
     // enable javascript in mainworld for epub3 but then lock it down to the extent we can
-#if QT_VERSION >= QT_VERSION_CHECK(5, 11, 0)
-    web_settings->setUnknownUrlSchemePolicy(QWebEngineSettings::DisallowUnknownUrlSchemes);
-#endif
+    web_settings->setAttribute(QWebEngineSettings::AutoLoadImages, true);
     web_settings->setAttribute(QWebEngineSettings::JavascriptEnabled, (settings.javascriptOn() == 1));
     web_settings->setAttribute(QWebEngineSettings::JavascriptCanOpenWindows, false);
     web_settings->setAttribute(QWebEngineSettings::JavascriptCanAccessClipboard, false);
@@ -749,15 +747,24 @@ void MainWindow::LoadSettings()
     web_settings->setAttribute(QWebEngineSettings::AutoLoadIconsForPage, false);
     web_settings->setAttribute(QWebEngineSettings::FocusOnNavigationEnabled, true);
     web_settings->setAttribute(QWebEngineSettings::AllowRunningInsecureContent, false);
-    web_settings->setAttribute(QWebEngineSettings::AllowWindowActivationFromJavaScript, false);
-    web_settings->setAttribute(QWebEngineSettings::PlaybackRequiresUserGesture, true);
-    web_settings->setAttribute(QWebEngineSettings::JavascriptCanPaste, false);
     web_settings->setAttribute(QWebEngineSettings::XSSAuditingEnabled, true);
     web_settings->setAttribute(QWebEngineSettings::AllowGeolocationOnInsecureOrigins, false);
-    web_settings->setAttribute(QWebEngineSettings::DnsPrefetchEnabled, false);
     web_settings->setAttribute(QWebEngineSettings::ScreenCaptureEnabled, false);
     web_settings->setAttribute(QWebEngineSettings::LocalStorageEnabled, false);
-    web_settings->setAttribute(QWebEngineSettings::AutoLoadImages, true);
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
+    web_settings->setAttribute(QWebEngineSettings::AllowWindowActivationFromJavaScript, false);
+#endif
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 11, 0)
+    web_settings->setUnknownUrlSchemePolicy(QWebEngineSettings::DisallowUnknownUrlSchemes);
+    web_settings->setAttribute(QWebEngineSettings::PlaybackRequiresUserGesture, true);
+    web_settings->setAttribute(QWebEngineSettings::JavascriptCanPaste, false);
+#endif
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+    web_settings->setAttribute(QWebEngineSettings::DnsPrefetchEnabled, false);
+#endif
 
     // Our default fonts for WebView
     web_settings->setFontSize(QWebEngineSettings::DefaultFontSize, WVAppearance.font_size);
@@ -1101,18 +1108,6 @@ void MainWindow::InsertSGFSectionMarker()
     m_WebView->InsertHtml(BREAK_TAG_INSERT);
 }
 
-void MainWindow::InsertBulletedList()
-{
-    m_WebView->triggerPageAction(QWebEnginePage::InsertUnorderedList);
-    // m_WebView->ExecCommand("insertUnorderedList");
-}
-
-void MainWindow::InsertNumberedList()
-{
-    m_WebView->triggerPageAction(QWebEnginePage::InsertOrderedList);
-    // m_WebView->ExecCommand("insertOrderedList");
-}
-
 void MainWindow::Subscript()
 {
     m_WebView->ExecCommand("subscript");
@@ -1123,16 +1118,34 @@ void MainWindow::Superscript()
     m_WebView->ExecCommand("superscript");
 }
 
-void MainWindow::Bold()           { m_WebView->triggerPageAction(QWebEnginePage::ToggleBold);          }
-void MainWindow::Italic()         { m_WebView->triggerPageAction(QWebEnginePage::ToggleItalic);        }
-void MainWindow::Underline()      { m_WebView->triggerPageAction(QWebEnginePage::ToggleUnderline);     }
-void MainWindow::Strikethrough()  { m_WebView->triggerPageAction(QWebEnginePage::ToggleStrikethrough); }
-void MainWindow::AlignLeft()      { m_WebView->triggerPageAction(QWebEnginePage::AlignLeft);           }
-void MainWindow::AlignCenter()    { m_WebView->triggerPageAction(QWebEnginePage::AlignCenter);         }
-void MainWindow::AlignRight()     { m_WebView->triggerPageAction(QWebEnginePage::AlignRight);          }
-void MainWindow::AlignJustify()   { m_WebView->triggerPageAction(QWebEnginePage::AlignJustified);      }
-void MainWindow::DecreaseIndent() { m_WebView->triggerPageAction(QWebEnginePage::Outdent);             }
-void MainWindow::IncreaseIndent() { m_WebView->triggerPageAction(QWebEnginePage::Indent);              }
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
+void MainWindow::Bold()               { m_WebView->triggerPageAction(QWebEnginePage::ToggleBold);          }
+void MainWindow::Italic()             { m_WebView->triggerPageAction(QWebEnginePage::ToggleItalic);        }
+void MainWindow::Underline()          { m_WebView->triggerPageAction(QWebEnginePage::ToggleUnderline);     }
+void MainWindow::Strikethrough()      { m_WebView->triggerPageAction(QWebEnginePage::ToggleStrikethrough); }
+void MainWindow::AlignLeft()          { m_WebView->triggerPageAction(QWebEnginePage::AlignLeft);           }
+void MainWindow::AlignCenter()        { m_WebView->triggerPageAction(QWebEnginePage::AlignCenter);         }
+void MainWindow::AlignRight()         { m_WebView->triggerPageAction(QWebEnginePage::AlignRight);          }
+void MainWindow::AlignJustify()       { m_WebView->triggerPageAction(QWebEnginePage::AlignJustified);      }
+void MainWindow::DecreaseIndent()     { m_WebView->triggerPageAction(QWebEnginePage::Outdent);             }
+void MainWindow::IncreaseIndent()     { m_WebView->triggerPageAction(QWebEnginePage::Indent);              }
+void MainWindow::InsertBulletedList() { m_WebView->triggerPageAction(QWebEnginePage::InsertUnorderedList); }
+void MainWindow::InsertNumberedList() { m_WebView->triggerPageAction(QWebEnginePage::InsertOrderedList);   }
+#else
+void MainWindow::Bold()               { m_WebView->ExecCommand("bold");                }
+void MainWindow::Italic()             { m_WebView->ExecCommand("italic");              }
+void MainWindow::Underline()          { m_WebView->ExecCommand("underline");           }
+void MainWindow::Strikethrough()      { m_WebView->ExecCommand("strikeThrough");       }
+void MainWindow::AlignLeft()          { m_WebView->ExecCommand("justifyLeft");         }
+void MainWindow::AlignCenter()        { m_WebView->ExecCommand("justifyCenter");       }
+void MainWindow::AlignRight()         { m_WebView->ExecCommand("justifyRight");        }
+void MainWindow::AlignJustify()       { m_WebView->ExecCommand("justifyFull");         }
+void MainWindow::DecreaseIndent()     { m_WebView->ExecCommand("outdent");             }
+void MainWindow::IncreaseIndent()     { m_WebView->ExecCommand("indent");              }
+void MainWindow::InsertBulletedList() { m_WebView->ExecCommand("insertUnorderedList"); }
+void MainWindow::InsertNumberedList() { m_WebView->ExecCommand("insertOrderedList");   }
+#endif
 
 
 void MainWindow::ShowMessageOnStatusBar(const QString &message,
