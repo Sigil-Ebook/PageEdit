@@ -73,7 +73,9 @@ Inspector::~Inspector()
     if (m_inspectView) {
         m_inspectView->close();
         m_view = nullptr;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 11, 0)
         m_inspectView->page()->setInspectedPage(nullptr);
+#endif
         delete m_inspectView;
         m_inspectView = nullptr;
     }
