@@ -87,7 +87,6 @@ struct SetToHTMLResultFunctor {
 
 WebViewEdit::WebViewEdit(QWidget *parent)
     : QWebEngineView(parent),
-      m_isLoadFinished(false),
       m_ViewWebPage(new WebPageEdit(this)),
       c_jQuery(Utility::ReadUnicodeTextFile(":/javascript/jquery-2.2.4.min.js")),
       c_jQueryScrollTo(Utility::ReadUnicodeTextFile(":/javascript/jquery.scrollTo-2.1.2-min.js")),
@@ -97,6 +96,7 @@ WebViewEdit::WebViewEdit(QWidget *parent)
       m_CaretLocationUpdate(QString()),
       m_pendingLoadCount(0),
       m_pendingScrollToFragment(QString()),
+      m_isLoadFinished(false),
       m_LoadOkay(false)
 {
     setPage(m_ViewWebPage);
@@ -252,6 +252,7 @@ void WebViewEdit::ScrollToFragmentInternal(const QString &fragment)
     QString script = caret_location + scroll + SET_CURSOR_JS2 + "}";
     DoJavascript(script);
 }
+
 void WebViewEdit::LoadingStarted()
 {
     DBG qDebug() << "Loading a page started";
@@ -283,11 +284,6 @@ QString WebViewEdit::GetHtml() const
     delete pres;
     return res;
 }
-
-
-
-
-
 
 QString WebViewEdit::GetSelectedText()
 {

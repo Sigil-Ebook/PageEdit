@@ -47,13 +47,22 @@ public:
 
     bool isEnabled();
 
+    bool IsLoadingFinished() { return m_LoadingFinished; }
+    bool WasLoadOkay() { return m_LoadOkay; }
+
 public slots:
     void InspectPageofView(QWebEngineView * view);
     void StopInspection();
 
+protected slots:
+    void UpdateFinishedState(bool okay);
+    void LoadingStarted();
+
 private:
     QWebEngineView* m_inspectView;
     QWebEngineView* m_view;
+    bool m_LoadingFinished;
+    bool m_LoadOkay;
 };
 
 #endif // INSPECTOR_H

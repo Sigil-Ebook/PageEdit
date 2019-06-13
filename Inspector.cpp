@@ -52,7 +52,9 @@ static const QString SETTINGS_GROUP = "inspect_dialog";
 Inspector::Inspector(QWidget *parent) :
     QDockWidget(parent),
     m_inspectView(new QWebEngineView(this)),
-    m_view(nullptr)
+    m_view(nullptr),
+    m_LoadingFinished(false),
+    m_LoadOkay(false)
 {
     QWidget *basewidget = new QWidget(this);
     QLayout *layout = new QVBoxLayout(basewidget);
@@ -66,6 +68,8 @@ Inspector::Inspector(QWidget *parent) :
     // so override the app default but just for the inspector
     m_inspectView->page()->settings()->setAttribute(QWebEngineSettings::JavascriptEnabled, true);
     setWindowTitle(tr("Inspect Page or Element"));
+    connect(m_inspectView->page(), SIGNAL(loadFinished(bool)), this, SLOT(UpdateFinishedState(bool)));
+    connect(m_inspectView->page(), SIGNAL(loadStarted()), this, SLOT(LoadingStarted()));
 }
 
 Inspector::~Inspector()
@@ -89,6 +93,18 @@ bool Inspector::isEnabled()
     }
 #endif
     return true;
+}
+
+void Inspector::LoadingStarted()
+{
+    m_LoadingFinished = false;
+    m_LoadOkay = false;
+}
+
+void Inspector::UpdateFinishedState(bool okay)
+{
+    m_LoadingFinished = true;
+    m_LoadOkay = okay;
 }
 
 void Inspector::InspectPageofView(QWebEngineView* view)
@@ -122,6 +138,9 @@ void Inspector::InspectPageofView(QWebEngineView* view)
             }
 	}
         m_inspectView->load(pageUrl);
+	while(!IsLoadingFinished()) {
+	    qApp->processEvents(QEventLoop::ExcludeUserInputEvents, 100);
+	}
 	show();
     }
 #endif

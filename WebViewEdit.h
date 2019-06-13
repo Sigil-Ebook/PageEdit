@@ -149,8 +149,6 @@ protected:
      */
     void DoJavascript(const QString &javascript);
 
-    bool m_isLoadFinished;
-
 protected slots:
 
     void UpdateFinishedState(bool okay);
@@ -242,6 +240,7 @@ private:
     int m_pendingLoadCount;
     QString m_pendingScrollToFragment;
 
+    bool m_isLoadFinished;
     bool m_LoadOkay;
 
 };
