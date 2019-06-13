@@ -651,7 +651,7 @@ void MainWindow::InspectPreviewPage()
     // non-modal dialog
     if (!m_Inspector->isVisible()) {
         // qDebug() << "inspecting";
-        m_Inspector->InspectPage(m_WebView->page());
+        m_Inspector->InspectPageofView(m_WebView);
         m_Inspector->show();
         m_Inspector->raise();
         m_Inspector->activateWindow();
@@ -737,7 +737,9 @@ void MainWindow::LoadSettings()
 
     // QWebEngine security settings to help prevent rogue epub3 javascripts
     // enable javascript in mainworld for epub3 but then lock it down to the extent we can
+#if QT_VERSION >= QT_VERSION_CHECK(5, 11, 0)
     web_settings->setUnknownUrlSchemePolicy(QWebEngineSettings::DisallowUnknownUrlSchemes);
+#endif
     web_settings->setAttribute(QWebEngineSettings::JavascriptEnabled, (settings.javascriptOn() == 1));
     web_settings->setAttribute(QWebEngineSettings::JavascriptCanOpenWindows, false);
     web_settings->setAttribute(QWebEngineSettings::JavascriptCanAccessClipboard, false);

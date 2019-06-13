@@ -45,13 +45,15 @@ public:
     void  SaveSettings();
     void  LoadSettings();
 
+    bool isEnabled();
+
 public slots:
-    void InspectPage(QWebEnginePage * page);
+    void InspectPageofView(QWebEngineView * view);
     void StopInspection();
 
 private:
     QWebEngineView* m_inspectView;
-    QWebEnginePage* m_page;
+    QWebEngineView* m_view;
 };
 
 #endif // INSPECTOR_H

@@ -26,8 +26,25 @@
 #include <QApplication>
 #include <QDebug>
 
+
+#if QT_VERSION < QT_VERSION_CHECK(5, 11, 0)
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QStringLiteral>
+
+#ifndef QSL
+#define QSL(x) QStringLiteral(x)
+#endif
+
+#endif //QT_VERSION < QT_VERSION_CHECK(5, 11, 0)
+
+
 #include "SettingsStore.h"
 #include "Inspector.h"
+
 
 static const QString SETTINGS_GROUP = "inspect_dialog";
 
@@ -35,7 +52,7 @@ static const QString SETTINGS_GROUP = "inspect_dialog";
 Inspector::Inspector(QWidget *parent) :
     QDockWidget(parent),
     m_inspectView(new QWebEngineView(this)),
-    m_page(nullptr)
+    m_view(nullptr)
 {
     QWidget *basewidget = new QWidget(this);
     QLayout *layout = new QVBoxLayout(basewidget);
@@ -53,26 +70,70 @@ Inspector::Inspector(QWidget *parent) :
 
 Inspector::~Inspector()
 {
-  if (m_inspectView) {
-      m_inspectView->close();
-      m_inspectView->page()->setInspectedPage(nullptr);
-      m_page = nullptr;
-      delete m_inspectView;
-      m_inspectView = nullptr;
-  }
+    if (m_inspectView) {
+        m_inspectView->close();
+        m_view = nullptr;
+        m_inspectView->page()->setInspectedPage(nullptr);
+        delete m_inspectView;
+        m_inspectView = nullptr;
+    }
 }
 
-void Inspector::InspectPage(QWebEnginePage* page)
+bool Inspector::isEnabled()
 {
-    m_page = page;
-    m_inspectView->page()->setInspectedPage(m_page);
+#if QT_VERSION < QT_VERSION_CHECK(5, 11, 0)
+    if (!qEnvironmentVariableIsSet("QTWEBENGINE_REMOTE_DEBUGGING")) {
+        return false;
+    }
+#endif
+    return true;
+}
+
+void Inspector::InspectPageofView(QWebEngineView* view)
+{
+    m_view = view;
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 11, 0)
+    if (m_view) {
+        m_inspectView->page()->setInspectedPage(m_view->page());
+    } else {
+        m_inspectView->page()->setInspectedPage(nullptr);
+    } 
+#else
+    if (m_view && isEnabled()) {
+        QString viewUrl = m_view->url().toString();
+        int port = qEnvironmentVariableIntValue("QTWEBENGINE_REMOTE_DEBUGGING");
+        QUrl inspectorUrl = QUrl(QSL("http://localhost:%1").arg(port));
+	QNetworkAccessManager netmgr;
+        QNetworkReply *reply = netmgr.get(QNetworkRequest(inspectorUrl.resolved(QUrl("json/list"))));
+	while(!reply->isFinished()) {
+	    qApp->processEvents(QEventLoop::ExcludeUserInputEvents, 100);
+	}
+        QJsonArray clients = QJsonDocument::fromJson(reply->readAll()).array();
+        QUrl pageUrl;
+	for (int i = 0; i < clients.size(); i++) {
+	    QJsonObject object = clients.at(i).toObject();
+	    QString objectUrl = object.value(QSL("url")).toString();
+	    if (objectUrl == viewUrl) {
+	        pageUrl = inspectorUrl.resolved(QUrl(object.value(QSL("devtoolsFrontendUrl")).toString()));
+		break;
+            }
+	}
+        m_inspectView->load(pageUrl);
+	show();
+    }
+#endif
 }
 
 void Inspector::StopInspection()
 {
     SaveSettings();
-    m_page = nullptr;
-    m_inspectView->page()->setInspectedPage(m_page);
+    m_view = nullptr;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 11, 0)
+    m_inspectView->page()->setInspectedPage(nullptr);
+#else
+    m_inspectView->setHtml("<html><head><title></title></head><body></body></html>");
+#endif
 }
 
 
@@ -83,7 +144,7 @@ QSize Inspector::sizeHint()
 
 void Inspector::closeEvent(QCloseEvent* event)
 {
-    qDebug() << "Inspector Close Event";
+    // qDebug() << "Inspector Close Event";
     StopInspection();
     QDockWidget::closeEvent(event);
 }
