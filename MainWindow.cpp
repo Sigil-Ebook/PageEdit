@@ -1352,7 +1352,8 @@ void MainWindow::ExtendIconSizes()
 
 void MainWindow::ConnectSignalsToSlots()
 {
-    connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)), this, SIGNAL(ZoomFactorChanged(float)));
+    connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)), this, SLOT(UpdateZoomLabel(float)));
+    connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)), this, SLOT(UpdateZoomSlider(float)));
     connect(m_WebView,   SIGNAL(LinkClicked(const QUrl &)), this, SLOT(LinkClicked(const QUrl &)));
     connect(m_WebView,   SIGNAL(selectionChanged()), this, SLOT(SelectionChanged()));
 
