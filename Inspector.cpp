@@ -63,10 +63,10 @@ Inspector::Inspector(QWidget *parent) :
     layout->setContentsMargins(0, 0, 0, 0);
     basewidget->setObjectName("PrimaryFrame");
     setWidget(basewidget);
-    LoadSettings();
     // QtWebEngine WebInspector needs to run javascript in MainWorld
     // so override the app default but just for the inspector
     m_inspectView->page()->settings()->setAttribute(QWebEngineSettings::JavascriptEnabled, true);
+    LoadSettings();
     setWindowTitle(tr("Inspect Page or Element"));
     connect(m_inspectView->page(), SIGNAL(loadFinished(bool)), this, SLOT(UpdateFinishedState(bool)));
     connect(m_inspectView->page(), SIGNAL(loadStarted()), this, SLOT(LoadingStarted()));
