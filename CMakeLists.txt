@@ -141,7 +141,7 @@ set_property( SOURCE ${QRC_FILES_CPP} PROPERTY SKIP_AUTOMOC ON )
 qt5_add_translation( QM_FILES ${TS_FILES} )
 
 # Define the PageEdit version string for use in source files
-set_source_files_properties( pageedit_constants.cpp PROPERTIES COMPILE_DEFINITIONS PAGEEDIT_FULL_VERSION="${PAGEEDIT_FULL_VERSION}" )
+#set_source_files_properties( pageedit_constants.cpp PROPERTIES COMPILE_DEFINITIONS PAGEEDIT_FULL_VERSION="${PAGEEDIT_FULL_VERSION}" )
 
 set( ALL_SOURCES ${SOURCE_FILES} ${HEADER_FILES} ${UI_FILES_H} ${QRC_FILES_CPP} ${QM_FILES} )
 
