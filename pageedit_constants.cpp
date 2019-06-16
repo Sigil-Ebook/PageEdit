@@ -3,7 +3,7 @@
 #include "pageedit_constants.h"
 
 // Use compile-time define from CMake file to limit version to one location in the source.
-const QString PAGEEDIT_VERSION = QString(PAGEEDIT_FULL_VERSION);
+const QString PAGEEDIT_FULL_VERSION = QString(PAGEEDIT_FULL_VERSION);
 
 #if _WIN32
 #include <QProcessEnvironment>
