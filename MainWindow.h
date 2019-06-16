@@ -93,6 +93,7 @@ public slots:
     void ReloadPreview();
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
     void OpenUrl(const QUrl &url);
+    void SetModified();
 
     static const QMap<QString, QString> GetLoadFiltersMap();
     static const QMap<QString, QString> GetSaveFiltersMap();
@@ -181,6 +182,7 @@ private:
     bool m_updateActionStatePending;
     QByteArray m_LastWindowSize;
     QString m_LastFolderOpen;
+    bool m_modified;
     Ui::MainWindow ui;
 };
 

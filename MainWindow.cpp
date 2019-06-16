@@ -86,7 +86,8 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_lbZoomLabel(NULL),
     m_updateActionStatePending(false),
     m_LastWindowSize(QByteArray()),
-    m_LastFolderOpen(QString())
+    m_LastFolderOpen(QString()),
+    m_modified(false)
 {
     ui.setupUi(this);
     SetupView();
@@ -520,6 +521,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
     m_WebView->ExecuteCaretUpdate();
 #endif
     UpdateWindowTitle();
+    m_modified = false;
 }
 
 void MainWindow::ScrollTo(QList<ElementIndex> location)
@@ -615,6 +617,12 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 	  }
       }
       break;
+    case QEvent::KeyPress:
+      {
+	  // Assume any key presses are directed at WebEngineView via the delegate
+          m_modified = true;
+      }
+      break;
     default:
       break;
   }
@@ -655,6 +663,7 @@ void MainWindow::InspectPreviewPage()
         m_Inspector->show();
         m_Inspector->raise();
         m_Inspector->activateWindow();
+	m_modified = true;
         // if needed resulting m_WebView resize event will UpdateWindowTitle();
     } else {
         // qDebug() << "stopping inspection()";
@@ -685,6 +694,22 @@ void MainWindow::closeEvent(QCloseEvent *event)
 {
     ShowMessageOnStatusBar(tr("PageEdit is closing..."));
     SaveSettings();
+    if (m_modified) {
+        QMessageBox::StandardButton button_pressed;
+        button_pressed = QMessageBox::warning(this,
+					      tr("PageEdit"),
+					      tr("Do you want to save your changes before closing?"),
+					      QMessageBox::Save | QMessageBox::Discard
+					     );
+        if (button_pressed == QMessageBox::Save) {
+            bool save_result = Save();
+            int cnt = 0;
+	    while(!save_result && (cnt < 3)) {
+	        cnt++;
+	        save_result = SaveAs();
+	    }
+        }
+    }
     event->accept();
 }
 
@@ -848,6 +873,7 @@ void MainWindow::ApplyHeadingToSelection(const QString &heading_type)
 	    ui.actionHeading6->setChecked(true);
 	}
     }
+    m_modified = true;
 }
 
 void MainWindow::SetPreserveHeadingAttributes(bool new_state)
@@ -960,6 +986,7 @@ bool MainWindow::SaveAs()
 	m_CurrentFilePath.clear();
 	save_result = false;
     }
+    if (save_result) m_modified = false;
     return save_result;
 }
 
@@ -988,6 +1015,7 @@ bool MainWindow::Save()
         ShowMessageOnStatusBar(tr("File Save Failed!"));
 	save_result = false;;
     }
+    if (save_result) m_modified = false;
     return save_result;
 }
 
@@ -1029,6 +1057,7 @@ void MainWindow::Open()
     	        m_CurrentFilePath = filename;
     	        UpdatePage(m_CurrentFilePath);
                 ShowMessageOnStatusBar(tr("File Opened"));
+                m_modified = false;
 	        return;
 #endif
 	    }
@@ -1083,6 +1112,7 @@ void MainWindow::Paste()
 void MainWindow::PasteText(const QString& text)
 {
     m_WebView->PasteText(text);
+    m_modified = true;
 }
 
 void MainWindow::PreferencesDialog()
@@ -1147,6 +1177,10 @@ void MainWindow::InsertBulletedList() { m_WebView->ExecCommand("insertUnorderedL
 void MainWindow::InsertNumberedList() { m_WebView->ExecCommand("insertOrderedList");   }
 #endif
 
+void MainWindow::SetModified()
+{
+    m_modified = true;
+}
 
 void MainWindow::ShowMessageOnStatusBar(const QString &message,
                                         int millisecond_duration)
@@ -1425,6 +1459,29 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionAlignJustify,             SIGNAL(triggered()),  this,   SLOT(AlignJustify()));
     connect(ui.actionDecreaseIndent,           SIGNAL(triggered()),  this,   SLOT(DecreaseIndent()));
     connect(ui.actionIncreaseIndent,           SIGNAL(triggered()),  this,   SLOT(IncreaseIndent()));
+
+    // Actions that indicate file has been modified 
+    // (Heading changes, PasteText, KeyPress events, Inspection, etc are handled directly)
+    connect(ui.actionUndo,                   SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionRedo,                   SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionCut,                    SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionPaste,                  SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionInsertSGFSectionMarker, SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionInsertSpecialCharacter, SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionInsertBulletedList,     SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionInsertNumberedList,     SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionBold,                   SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionItalic,                 SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionUnderline,              SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionStrikethrough,          SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionSubscript,              SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionSuperscript,            SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionAlignLeft,              SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionAlignCenter,            SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionAlignRight,             SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionAlignJustify,           SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionDecreaseIndent,         SIGNAL(triggered()),  this,   SLOT(SetModified()));
+    connect(ui.actionIncreaseIndent,         SIGNAL(triggered()),  this,   SLOT(SetModified()));
 
     // View/Zoom Related
     connect(ui.actionZoomIn,        SIGNAL(triggered()), this, SLOT(ZoomIn()));
