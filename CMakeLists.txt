@@ -36,7 +36,7 @@ set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib )
 set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib )
 
 set( PAGEEDIT_MAJOR_VERSION 0 )
-set( PAGEEDIT_MINOR_VERSION 1 )
+set( PAGEEDIT_MINOR_VERSION 7 )
 set( PAGEEDIT_REVISION_VERSION 0 )
 set( PAGEEDIT_FULL_VERSION ${PAGEEDIT_MAJOR_VERSION}.${PAGEEDIT_MINOR_VERSION}.${PAGEEDIT_REVISION_VERSION} )
 
@@ -56,8 +56,14 @@ endif()
 
 add_subdirectory( gumbo_subtree/src )
 
-# Qt5 packages minimum version 5.12
-find_package(Qt5 5.12 COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
+
+if( UNIX AND NOT APPLE )
+    # Qt5 packages minimum version 5.9 for Linux
+    find_package(Qt5 5.9 COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
+else()
+    # Qt5 packages minimum version 5.12 for Windows/Mac
+    find_package(Qt5 5.12 COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
+endif()
 set(CMAKE_AUTOMOC ON)
 
 set( SOURCE_FILES
@@ -135,7 +141,7 @@ set_property( SOURCE ${QRC_FILES_CPP} PROPERTY SKIP_AUTOMOC ON )
 qt5_add_translation( QM_FILES ${TS_FILES} )
 
 # Define the PageEdit version string for use in source files
-#set_source_files_properties( About.cpp PROPERTIES COMPILE_DEFINITIONS PAGEEDIT_FULL_VERSION="${PAGEEDIT_FULL_VERSION}" )
+set_source_files_properties( pageedit_constants.cpp PROPERTIES COMPILE_DEFINITIONS PAGEEDIT_FULL_VERSION="${PAGEEDIT_FULL_VERSION}" )
 
 set( ALL_SOURCES ${SOURCE_FILES} ${HEADER_FILES} ${UI_FILES_H} ${QRC_FILES_CPP} ${QM_FILES} )
 

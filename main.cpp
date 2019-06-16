@@ -103,7 +103,11 @@ static QIcon GetApplicationIcon()
 // Application entry point
 int main(int argc, char *argv[])
 {
+#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+    QT_REQUIRE_VERSION(argc, argv, "5.9.0");
+#else
     QT_REQUIRE_VERSION(argc, argv, "5.12.3");
+#endif
 
     // Set application information for easier use of QSettings classes
     QCoreApplication::setOrganizationName("sigil-ebook");
