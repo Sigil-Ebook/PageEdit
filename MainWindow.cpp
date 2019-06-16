@@ -980,7 +980,7 @@ bool MainWindow::SaveAs()
         ShowMessageOnStatusBar(tr("File Saved"));
         m_LastFolderOpen = fi.absolutePath();
 	save_result = true;
-    } catch (std::exception e) {
+    } catch (std::exception &e) {
 	Utility::DisplayStdErrorDialog(tr("File Save-As Failed!"), e.what());
         ShowMessageOnStatusBar(tr("File Save-As Failed!"));
 	m_CurrentFilePath.clear();
@@ -1010,7 +1010,7 @@ bool MainWindow::Save()
         ShowMessageOnStatusBar(tr("File Saved"));
         m_LastFolderOpen = fi.absolutePath();
 	save_result = true;
-    } catch (std::exception e) {
+    } catch (std::exception &e) {
 	Utility::DisplayStdErrorDialog(tr("File Save Failed!"),e.what());
         ShowMessageOnStatusBar(tr("File Save Failed!"));
 	save_result = false;;

@@ -407,7 +407,7 @@ GumboNode* GumboInterface::get_node_from_qwebpath(QString webpath)
                 // It also requires document.normalize() to be done to merge adjacent text pieces
                 // but doing so will remove the cursor/highlight if it is on a text node merged away
                 // so restrict this to something same in that same parent element
-                if (index >= children->length) index = children->length - 1;
+	        if (index >= (int)(children->length)) index = children->length - 1;
                 if (index < 0) index = 0;
                 next_node = static_cast<GumboNode*>(children->data[index]);
             } else {
@@ -550,7 +550,6 @@ QList<GumboWellFormedError> GumboInterface::error_check()
 QList<GumboWellFormedError> GumboInterface::fragment_error_check()
 {
     QList<GumboWellFormedError> errlist;
-    int line_offset = 0;
 
     // In case we ever have to revert to earlier versions, please note the following
     // additional initialization is needed because Microsoft Visual Studio 2013 (and earlier?)
