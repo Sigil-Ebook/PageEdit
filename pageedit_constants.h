@@ -24,7 +24,8 @@
 #define PE_CONSTANTS_H
 
 class QString;
-class QStringList;
+
+extern const QString PAGEEDIT_VERSION;
 
 extern const float ZOOM_STEP;
 extern const float ZOOM_MIN;
@@ -33,6 +34,7 @@ extern const float ZOOM_NORMAL;
 
 extern const QString PAGEEDIT_PREFS_DIR;
 extern const QString PATH_LIST_DELIM;
+
 
 #if !defined(_WIN32) && !defined(__APPLE__)
 extern const QString pageedit_extra_root;

@@ -109,7 +109,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationName("sigil-ebook");
     QCoreApplication::setOrganizationDomain("sigil-ebook.com");
     QCoreApplication::setApplicationName("pageedit");
-    QCoreApplication::setApplicationVersion("0.0.1");
+    QCoreApplication::setApplicationVersion(PAGEEDIT_VERSION);
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
     QApplication app(argc, argv);

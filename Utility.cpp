@@ -44,6 +44,7 @@
 #include <QFile>
 #include <QFileInfo>
 
+#include "pageedit_constants.h"
 #include "pageedit_exception.h"
 
 #ifndef MAX_PATH
@@ -477,7 +478,7 @@ void Utility::DisplayExceptionErrorDialog(const QString &error_info)
     message_box.setStandardButtons(QMessageBox::Close);
     QStringList detailed_text;
     detailed_text << "Error info: "    + error_info
-                  << "PageEdit version: 0.0.1"
+                  << "PageEdit version: " + PAGEEDIT_VERSION
                   << "Runtime Qt: "    + QString(qVersion())
                   << "Compiled Qt: "   + QString(QT_VERSION_STR);
 #if defined Q_OS_WIN32
