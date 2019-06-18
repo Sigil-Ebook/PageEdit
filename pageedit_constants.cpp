@@ -2,9 +2,6 @@
 #include <QStringList>
 #include "pageedit_constants.h"
 
-// Use compile-time define from CMake file to limit version to one location in the source.
-const QString PAGEEDIT_VERSION = QString(PAGEEDIT_FULL_VERSION);
-
 #if _WIN32
 #include <QProcessEnvironment>
 // Windows barks about getenv or _wgetenv. This elicits no warnings and works with unicode paths

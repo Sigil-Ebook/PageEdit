@@ -25,8 +25,6 @@
 
 class QString;
 
-extern const QString PAGEEDIT_VERSION;
-
 extern const float ZOOM_STEP;
 extern const float ZOOM_MIN;
 extern const float ZOOM_MAX;
