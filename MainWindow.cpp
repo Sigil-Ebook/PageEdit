@@ -480,7 +480,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
 	      "href=\"" + m_usercssurl + "\" />\n";
 	    // qDebug() << "WebView injecting stylesheet: " << inject_userstyles;
             text.insert(endheadpos, inject_userstyles);
-	    }
+        }
     }
 
 #if 0
@@ -802,7 +802,8 @@ void MainWindow::LoadSettings()
     if (CustomWebViewStylesheetInfo.exists() &&
         CustomWebViewStylesheetInfo.isFile() &&
         CustomWebViewStylesheetInfo.isReadable()) {
-        QString m_usercssurl = QUrl::fromLocalFile(CustomWebViewStylesheetInfo.absoluteFilePath()).toString();
+        QString usercssurl = QUrl::fromLocalFile(CustomWebViewStylesheetInfo.absoluteFilePath()).toString();
+	setUserCSSURL(usercssurl);
     }
 }
 
@@ -887,14 +888,47 @@ QString MainWindow::GetCleanHtml() {
     // now remove any leftovers and make sure it is well formed
     GumboInterface gi = GumboInterface(text, "any_version");
 
-    // remove any contenteditable attributes 
-    QList<GumboNode*> nodes = gi.get_all_nodes_with_attribute(QString("contenteditable"));
+    QList<GumboNode*> nodes;
+    QList<GumboTag> tags;
+
+    // remove any added contenteditable attributes 
+    nodes = gi.get_all_nodes_with_attribute(QString("contenteditable"));
     foreach(GumboNode * node, nodes) {
-      GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "contenteditable");
-      if (attr) {
-	GumboElement* element = &node->v.element;
-	gumbo_element_remove_attribute(element, attr);
-      }
+        GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "contenteditable");
+        if (attr) {
+	    GumboElement* element = &node->v.element;
+	    gumbo_element_remove_attribute(element, attr);
+        }
+    }
+
+    // remove any added is="http://www.w3.org/1999/xhtml"
+    // attributes on heading tags
+    tags = QList<GumboTag>() << GUMBO_TAG_H1 << GUMBO_TAG_H2 << GUMBO_TAG_H3 <<
+                                GUMBO_TAG_H4 << GUMBO_TAG_H5 << GUMBO_TAG_H6;
+    nodes = gi.get_all_nodes_with_tags(tags);
+    foreach(GumboNode * node, nodes) {
+        GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "is");
+        if (attr && QString::fromUtf8(attr->value) == "http://www.w3.org/1999/xhtml") {
+	    GumboElement* element = &node->v.element;
+	    gumbo_element_remove_attribute(element, attr);
+        }
+    }
+
+    // remove any injected user css stylesheet link in head
+    if (!m_usercssurl.isEmpty()) {
+        tags = QList<GumboTag>() << GUMBO_TAG_LINK;
+        nodes = gi.get_all_nodes_with_tags(tags);
+        foreach(GumboNode * node, nodes) {
+            GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "href");
+            if (attr) {
+	        QString attrval = QString::fromUtf8(attr->value);
+		if (attrval.contains(m_usercssurl)) {
+		    gumbo_remove_from_parent(node);
+		    gumbo_destroy_node(node);
+		    break;
+		}
+            }
+        }
     }
 
     text = gi.getxhtml();

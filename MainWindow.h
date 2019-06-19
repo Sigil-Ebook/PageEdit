@@ -57,7 +57,7 @@ public:
     bool IsVisible();
     bool HasFocus();
     bool eventFilter(QObject *object, QEvent *event);
-    void setMathJaxURL(QString mathjaxurl) { m_mathjaxurl = mathjaxurl; };
+    // void setMathJaxURL(QString mathjaxurl) { m_mathjaxurl = mathjaxurl; };
     void setUserCSSURL(QString usercssurl) { m_usercssurl = usercssurl; }
     void ExtendIconSizes();
 
@@ -170,7 +170,7 @@ private:
     bool m_GoToRequestPending;
     bool m_MouseReleaseEventHappened;
 
-    QString m_mathjaxurl;
+    // QString m_mathjaxurl;
     QString m_usercssurl;
 
     QSignalMapper *m_headingMapper;
