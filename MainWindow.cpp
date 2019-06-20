@@ -58,6 +58,8 @@ static const QString SETTINGS_GROUP = "mainwindow";
 
 static const QString CUSTOM_WEBVIEW_STYLE_FILENAME = "custom_webview_style.css";
 
+static const QString EDIT_WITH_PRE_WRAP  = ":not(html):not(body) { white-space: pre-wrap; }";
+
 static const QString BREAK_TAG_INSERT    = "<hr class=\"sigil_split_marker\" />";
 
 static const QString DEFAULT_FILENAME = "untitled.xhtml";
@@ -470,6 +472,18 @@ void MainWindow::DoUpdatePage()
 void MainWindow::UpdatePage(const QString &filename_url)
 {
     QString text = Utility::ReadUnicodeTextFile(filename_url);
+
+    // to prevent the WebEngine from inserting extraneous non-breaking space characters
+    //  during editing, the official editing api says we should set white-space:pre-wrap
+    // on the elements we want to edit.  In our case this is just about everything
+    // FIXME: do we want to make this a user configurable option
+    if (true) {
+        int endheadpos = text.indexOf("</head>");
+        if (endheadpos > 1) {
+	    QString inject_editstyle = "<style type=\"text/css\">" + EDIT_WITH_PRE_WRAP + "</style>\n"; 
+	    text.insert(endheadpos, inject_editstyle);
+        }
+    }
 
     // If the user has set a default stylesheet inject it
     if (!m_usercssurl.isEmpty()) {
@@ -914,7 +928,23 @@ QString MainWindow::GetCleanHtml() {
         }
     }
 
+    // remove injected pre-wrap editing style in head
+    // FIXME: should this be a user configurable option?
+    if (true) {
+        tags = QList<GumboTag>() << GUMBO_TAG_STYLE;
+        nodes = gi.get_all_nodes_with_tags(tags);
+        foreach(GumboNode * node, nodes) {
+	    QString styleinfo = gi.get_local_text_of_node(node);
+	    if (styleinfo == EDIT_WITH_PRE_WRAP) {
+		gumbo_remove_from_parent(node);
+		gumbo_destroy_node(node);
+		break;
+            }
+        }
+    }
+
     // remove any injected user css stylesheet link in head
+    // make sure this comes last so that it can override any earlier styles
     if (!m_usercssurl.isEmpty()) {
         tags = QList<GumboTag>() << GUMBO_TAG_LINK;
         nodes = gi.get_all_nodes_with_tags(tags);
@@ -930,8 +960,13 @@ QString MainWindow::GetCleanHtml() {
             }
         }
     }
-
-    text = gi.getxhtml();
+    // FIXME: should using prettyprint be a user configurable option?
+    if (true) {
+        QString indent = "   ";
+        text = gi.prettyprint(indent);
+    } else {
+        text = gi.getxhtml();
+    }
     return text;
 }
 
