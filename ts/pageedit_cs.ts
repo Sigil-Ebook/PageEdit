@@ -112,7 +112,7 @@ pokud je ve vašem CSS stanovena rodina bezpatkového písma</translation>
     <name>GeneralSettings</name>
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
-        <source>GeneralSettings</source>
+        <source>General Settings</source>
         <translation>Obecná nastavení</translation>
     </message>
     <message>

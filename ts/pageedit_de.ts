@@ -108,8 +108,8 @@
     <name>GeneralSettings</name>
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
-        <source>GeneralSettings</source>
-        <translation>GeneralSettings</translation>
+        <source>General Settings</source>
+        <translation>General Settings</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>

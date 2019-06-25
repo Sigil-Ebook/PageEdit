@@ -108,7 +108,7 @@
     <name>GeneralSettings</name>
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
-        <source>GeneralSettings</source>
+        <source>General Settings</source>
         <translation>Paramètres général</translation>
     </message>
     <message>
