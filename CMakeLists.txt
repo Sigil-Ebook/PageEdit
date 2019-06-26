@@ -59,11 +59,12 @@ add_subdirectory( gumbo_subtree/src )
 
 if( UNIX AND NOT APPLE )
     # Qt5 packages minimum version 5.9 for Linux
-    find_package(Qt5 5.9 COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
+    set(QT5_NEEDED 5.9)
 else()
     # Qt5 packages minimum version 5.12 for Windows/Mac
-    find_package(Qt5 5.12 COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
+    set(QT5_NEEDED 5.12)
 endif()
+find_package(Qt5 ${QT5_NEEDED} COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
 set(CMAKE_AUTOMOC ON)
 
 set( SOURCE_FILES
