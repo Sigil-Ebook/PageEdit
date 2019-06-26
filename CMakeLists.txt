@@ -1,8 +1,8 @@
 ########################################################
-#  
+#
 #  This is a CMake configuration file.
-#  To use it you need CMake which can be 
-#  downloaded from here: 
+#  To use it you need CMake which can be
+#  downloaded from here:
 #    http://www.cmake.org/cmake/resources/software.html
 #
 #########################################################
@@ -209,7 +209,7 @@ target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt5::Widgets  Qt5::Xml
 if( MSVC )
     add_definitions( /DUNICODE /D_UNICODE /DHAVE_ROUND )
     set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
-    set( CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /Oi /GL" ) 
+    set( CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /Oi /GL" )
     set( CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} /LTCG" )
 
 # "Print all warnings" flag for GCC
@@ -234,7 +234,7 @@ if( UNIX AND NOT APPLE )
     endif()
 
     set ( PAGEEDIT_SHARE_ROOT "${SHARE_INSTALL_PREFIX}/share/${PROJECT_NAME}" )
-    
+
     # Set some defines that pageedit_constants.cpp can then access
     set_property (
         SOURCE pageedit_constants.cpp
