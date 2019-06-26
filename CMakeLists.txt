@@ -64,7 +64,7 @@ else()
     # Qt5 packages minimum version 5.12 for Windows/Mac
     set(QT5_NEEDED 5.12)
 endif()
-find_package(Qt5 ${QT5_NEEDED} COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
+find_package(Qt5 ${QT5_NEEDED} COMPONENTS Core Network WebEngine WebEngineWidgets Widgets Xml Concurrent PrintSupport LinguistTools)
 set(CMAKE_AUTOMOC ON)
 
 set( SOURCE_FILES
@@ -201,8 +201,8 @@ else()
 endif()
 
 # No need to explicity link Qt5::WinMain or to use the qt5_use_modules macro since CMAKE 2.8.11. We require CMAKE 3.0.0
-target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt5::Widgets  Qt5::Xml  Qt5::XmlPatterns  Qt5::PrintSupport
-                                     Qt5::Svg  Qt5::WebEngine  Qt5::WebEngineWidgets  Qt5::Network  Qt5::Concurrent )
+target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt5::Widgets  Qt5::Xml  Qt5::PrintSupport
+                                     Qt5::WebEngine  Qt5::WebEngineWidgets  Qt5::Network  Qt5::Concurrent )
 
 #############################################################################
 
