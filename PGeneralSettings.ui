@@ -67,10 +67,10 @@ If a translation for specific word or phrase is not available it will be display
    <item>
     <widget class="QGroupBox" name="groupBox_1">
      <property name="toolTip">
-      <string>Determine if Epubs are allowed to access non-multimedia remote resources.</string>
+      <string>Determine if html files are allowed to access non-multimedia remote resources.</string>
      </property>
      <property name="title">
-      <string> Control Access by Epubs to non-multimedia remote resources.</string>
+      <string> Control access by html files to non-multimedia remote resources.</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -79,10 +79,10 @@ If a translation for specific word or phrase is not available it will be display
       <item row="0" column="0">
        <widget class="QCheckBox" name="AllowRemote">
         <property name="toolTip">
-         <string>Check to allow Epubs to access non-multimedia remote resources.</string>
+         <string>Check to allow html files to access non-multimedia remote resources.</string>
         </property>
         <property name="text">
-         <string>Epubs may access all remote resources types.</string>
+         <string>Html files may access all remote resources types.</string>
         </property>
         <property name="checked">
          <bool>false</bool>
@@ -96,10 +96,10 @@ If a translation for specific word or phrase is not available it will be display
    <item>
     <widget class="QGroupBox" name="groupBox_2">
      <property name="toolTip">
-      <string>Determine if javascript is allowed to be used by Epubs</string>
+      <string>Determine if javascript is allowed to be used by html files</string>
      </property>
      <property name="title">
-      <string> Control Use of Javascript by Epubs.</string>
+      <string> Control use of javascript by html files.</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -108,10 +108,10 @@ If a translation for specific word or phrase is not available it will be display
       <item row="0" column="0">
        <widget class="QCheckBox" name="AllowJavascript">
         <property name="toolTip">
-         <string>Check to allow Epubs to use javascript.</string>
+         <string>Check to allow html files to use javascript.</string>
         </property>
         <property name="text">
-         <string>Epubs may use javascript.</string>
+         <string>Html files may use javascript.</string>
         </property>
         <property name="checked">
          <bool>false</bool>

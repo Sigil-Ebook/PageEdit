@@ -907,7 +907,7 @@
      <normaloff>:/icons/edit-select-all_48px.png</normaloff>:/icons/edit-select-all_48px.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;SelectAll</string>
+    <string>&amp;Select All</string>
    </property>
    <property name="toolTip">
     <string>Select all text in the document.</string>
