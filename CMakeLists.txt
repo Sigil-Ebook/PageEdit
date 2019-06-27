@@ -1,8 +1,8 @@
 ########################################################
-#  
+#
 #  This is a CMake configuration file.
-#  To use it you need CMake which can be 
-#  downloaded from here: 
+#  To use it you need CMake which can be
+#  downloaded from here:
 #    http://www.cmake.org/cmake/resources/software.html
 #
 #########################################################
@@ -59,11 +59,12 @@ add_subdirectory( gumbo_subtree/src )
 
 if( UNIX AND NOT APPLE )
     # Qt5 packages minimum version 5.9 for Linux
-    find_package(Qt5 5.9 COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
+    set(QT5_NEEDED 5.9)
 else()
     # Qt5 packages minimum version 5.12 for Windows/Mac
-    find_package(Qt5 5.12 COMPONENTS Core Network Svg WebEngine WebEngineWidgets Widgets Xml XmlPatterns Concurrent PrintSupport LinguistTools)
+    set(QT5_NEEDED 5.12)
 endif()
+find_package(Qt5 ${QT5_NEEDED} COMPONENTS Core Network WebEngine WebEngineWidgets Widgets Xml Concurrent PrintSupport LinguistTools)
 set(CMAKE_AUTOMOC ON)
 
 set( SOURCE_FILES
@@ -200,8 +201,8 @@ else()
 endif()
 
 # No need to explicity link Qt5::WinMain or to use the qt5_use_modules macro since CMAKE 2.8.11. We require CMAKE 3.0.0
-target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt5::Widgets  Qt5::Xml  Qt5::XmlPatterns  Qt5::PrintSupport
-                                     Qt5::Svg  Qt5::WebEngine  Qt5::WebEngineWidgets  Qt5::Network  Qt5::Concurrent )
+target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt5::Widgets  Qt5::Xml  Qt5::PrintSupport
+                                     Qt5::WebEngine  Qt5::WebEngineWidgets  Qt5::Network  Qt5::Concurrent )
 
 #############################################################################
 
@@ -209,7 +210,7 @@ target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt5::Widgets  Qt5::Xml
 if( MSVC )
     add_definitions( /DUNICODE /D_UNICODE /DHAVE_ROUND )
     set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
-    set( CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /Oi /GL" ) 
+    set( CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /Oi /GL" )
     set( CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} /LTCG" )
 
 # "Print all warnings" flag for GCC
@@ -234,7 +235,7 @@ if( UNIX AND NOT APPLE )
     endif()
 
     set ( PAGEEDIT_SHARE_ROOT "${SHARE_INSTALL_PREFIX}/share/${PROJECT_NAME}" )
-    
+
     # Set some defines that pageedit_constants.cpp can then access
     set_property (
         SOURCE pageedit_constants.cpp
