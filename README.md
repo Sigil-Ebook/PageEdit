@@ -41,7 +41,7 @@ Building on macOS:
 On Linux
 --------
 
-Make sure Qt5.12.3 (installed with the WebEngine package) and cmake are installed
+Make sure a minimum of Qt5.9.4(ish) is installed (with the WebEngine package) as well as cmake
 
 `mkdir build`<br>
 `cd build`<br>
