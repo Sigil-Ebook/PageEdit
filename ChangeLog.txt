@@ -1,6 +1,9 @@
 Change Log
 ==========
 
+PageEdit-0.7.1
+   - minor updates
+
 PageEdit-0.7.0
    - Initial Beta Release
 
