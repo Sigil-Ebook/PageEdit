@@ -109,7 +109,7 @@
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation type="unfinished"/>
+        <translation>Ümumi Sazlamalar</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
@@ -125,42 +125,42 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="70"/>
-        <source>Determine if Epubs are allowed to access non-multimedia remote resources.</source>
-        <translation>Əgər Epublara kənar qeyri-mutimedia resurslarından istifadə etməyə icazə verilmişdirsə onda bunu təyin edin.</translation>
+        <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="73"/>
-        <source> Control Access by Epubs to non-multimedia remote resources.</source>
-        <translation>Epubların kənar qeyri-multimedia resurslarına müraciətinin İdarəolunması.</translation>
+        <source> Control access by html files to non-multimedia remote resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="82"/>
-        <source>Check to allow Epubs to access non-multimedia remote resources.</source>
-        <translation>Epubların kənar qeyri-multimedia resurslarına müraciət icazəsinin Yoxlanması.</translation>
+        <source>Check to allow html files to access non-multimedia remote resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="85"/>
-        <source>Epubs may access all remote resources types.</source>
-        <translation>Epublar bütün kənar resurs tiplərinə müraciət edə bilərlər.</translation>
+        <source>Html files may access all remote resources types.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="99"/>
-        <source>Determine if javascript is allowed to be used by Epubs</source>
+        <source>Determine if javascript is allowed to be used by html files</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="102"/>
-        <source> Control Use of Javascript by Epubs.</source>
+        <source> Control use of javascript by html files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="111"/>
-        <source>Check to allow Epubs to use javascript.</source>
+        <source>Check to allow html files to use javascript.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="114"/>
-        <source>Epubs may use javascript.</source>
+        <source>Html files may use javascript.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -181,8 +181,8 @@ If a translation for specific word or phrase is not available it will be display
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="700"/>
-        <location filename="../MainWindow.cpp" line="1238"/>
+        <location filename="../MainWindow.cpp" line="714"/>
+        <location filename="../MainWindow.cpp" line="1307"/>
         <source>PageEdit</source>
         <translation type="unfinished"/>
     </message>
@@ -763,7 +763,7 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="910"/>
-        <source>&amp;SelectAll</source>
+        <source>&amp;Select All</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -792,94 +792,94 @@ If a translation for specific word or phrase is not available it will be display
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="695"/>
+        <location filename="../MainWindow.cpp" line="709"/>
         <source>PageEdit is closing...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="701"/>
+        <location filename="../MainWindow.cpp" line="715"/>
         <source>Do you want to save your changes before closing?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="830"/>
-        <location filename="../MainWindow.cpp" line="831"/>
-        <location filename="../MainWindow.cpp" line="832"/>
-        <location filename="../MainWindow.cpp" line="841"/>
-        <location filename="../MainWindow.cpp" line="842"/>
-        <location filename="../MainWindow.cpp" line="843"/>
+        <location filename="../MainWindow.cpp" line="845"/>
+        <location filename="../MainWindow.cpp" line="846"/>
+        <location filename="../MainWindow.cpp" line="847"/>
+        <location filename="../MainWindow.cpp" line="856"/>
+        <location filename="../MainWindow.cpp" line="857"/>
+        <location filename="../MainWindow.cpp" line="858"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML faylları (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="833"/>
+        <location filename="../MainWindow.cpp" line="848"/>
         <source>Text files (*.txt)</source>
         <translation>Mətn faylları (*.txt)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="834"/>
+        <location filename="../MainWindow.cpp" line="849"/>
         <source>All files (*.*)</source>
         <translation>Bütün fayllar (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="936"/>
+        <location filename="../MainWindow.cpp" line="1005"/>
         <source>Save File</source>
         <translation>Faylı Yadda saxla</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
-        <location filename="../MainWindow.cpp" line="972"/>
-        <location filename="../MainWindow.cpp" line="984"/>
-        <location filename="../MainWindow.cpp" line="985"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
+        <location filename="../MainWindow.cpp" line="1041"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1054"/>
         <source>File Save-As Failed!</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
         <source>is not writeable</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="980"/>
-        <location filename="../MainWindow.cpp" line="1010"/>
+        <location filename="../MainWindow.cpp" line="1049"/>
+        <location filename="../MainWindow.cpp" line="1079"/>
         <source>File Saved</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1001"/>
-        <location filename="../MainWindow.cpp" line="1003"/>
-        <location filename="../MainWindow.cpp" line="1014"/>
-        <location filename="../MainWindow.cpp" line="1015"/>
+        <location filename="../MainWindow.cpp" line="1070"/>
+        <location filename="../MainWindow.cpp" line="1072"/>
+        <location filename="../MainWindow.cpp" line="1083"/>
+        <location filename="../MainWindow.cpp" line="1084"/>
         <source>File Save Failed!</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1002"/>
+        <location filename="../MainWindow.cpp" line="1071"/>
         <source>does not exist or is not writeable</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1059"/>
+        <location filename="../MainWindow.cpp" line="1128"/>
         <source>File Opened</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1064"/>
+        <location filename="../MainWindow.cpp" line="1133"/>
         <source>File Open Failed!</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1087"/>
+        <location filename="../MainWindow.cpp" line="1156"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Mübadilə buferi  HTML formatını ehtiva edir</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1088"/>
+        <location filename="../MainWindow.cpp" line="1157"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Mübadilə buferindəki məlumatları açıq(sadə) mətn kimi əlavə etmək istəyirsiniz?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1239"/>
+        <location filename="../MainWindow.cpp" line="1308"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation type="unfinished"/>
     </message>

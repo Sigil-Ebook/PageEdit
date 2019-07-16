@@ -127,43 +127,43 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="70"/>
-        <source>Determine if Epubs are allowed to access non-multimedia remote resources.</source>
-        <translation>決定是否允許 Epub 存取非多媒體遠端資源。</translation>
+        <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
+        <translation>決定是否允許 html 檔案存取非多媒體遠端資源。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="73"/>
-        <source> Control Access by Epubs to non-multimedia remote resources.</source>
-        <translation>控制 Epub 對非多媒體遠端資源的存取。</translation>
+        <source> Control access by html files to non-multimedia remote resources.</source>
+        <translation>控制 html 檔案對非多媒體遠端資源的存取。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="82"/>
-        <source>Check to allow Epubs to access non-multimedia remote resources.</source>
-        <translation>勾選以允許 Epub 存取非多媒體遠端資源。</translation>
+        <source>Check to allow html files to access non-multimedia remote resources.</source>
+        <translation>勾選以允許 html 檔案存取非多媒體遠端資源。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="85"/>
-        <source>Epubs may access all remote resources types.</source>
-        <translation>Epub 可以存取所有遠端資源類型。</translation>
+        <source>Html files may access all remote resources types.</source>
+        <translation>Html 檔案可以存取所有遠端資源類型。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="99"/>
-        <source>Determine if javascript is allowed to be used by Epubs</source>
-        <translation>決定是否允許 Epub 使用 javascript</translation>
+        <source>Determine if javascript is allowed to be used by html files</source>
+        <translation>決定是否允許 html 檔案使用 javascript</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="102"/>
-        <source> Control Use of Javascript by Epubs.</source>
-        <translation>控制 Epub 使用 Javascript。</translation>
+        <source> Control use of javascript by html files.</source>
+        <translation>控制 html 檔案使用 javascript。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="111"/>
-        <source>Check to allow Epubs to use javascript.</source>
-        <translation>勾選以允許 Epub 使用 javascript。</translation>
+        <source>Check to allow html files to use javascript.</source>
+        <translation>勾選以允許 html 檔案使用 javascript。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="114"/>
-        <source>Epubs may use javascript.</source>
-        <translation>Epub 能使用 javascript。</translation>
+        <source>Html files may use javascript.</source>
+        <translation>html 檔案能使用 javascript。</translation>
     </message>
 </context>
 <context>
@@ -183,8 +183,8 @@ If a translation for specific word or phrase is not available it will be display
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="700"/>
-        <location filename="../MainWindow.cpp" line="1238"/>
+        <location filename="../MainWindow.cpp" line="714"/>
+        <location filename="../MainWindow.cpp" line="1307"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -765,7 +765,7 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="910"/>
-        <source>&amp;SelectAll</source>
+        <source>&amp;Select All</source>
         <translation>全部選取(&amp;S)</translation>
     </message>
     <message>
@@ -794,94 +794,94 @@ If a translation for specific word or phrase is not available it will be display
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="695"/>
+        <location filename="../MainWindow.cpp" line="709"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit 正在關閉...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="701"/>
+        <location filename="../MainWindow.cpp" line="715"/>
         <source>Do you want to save your changes before closing?</source>
         <translation>您要在關閉前儲存變更嗎？</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="830"/>
-        <location filename="../MainWindow.cpp" line="831"/>
-        <location filename="../MainWindow.cpp" line="832"/>
-        <location filename="../MainWindow.cpp" line="841"/>
-        <location filename="../MainWindow.cpp" line="842"/>
-        <location filename="../MainWindow.cpp" line="843"/>
+        <location filename="../MainWindow.cpp" line="845"/>
+        <location filename="../MainWindow.cpp" line="846"/>
+        <location filename="../MainWindow.cpp" line="847"/>
+        <location filename="../MainWindow.cpp" line="856"/>
+        <location filename="../MainWindow.cpp" line="857"/>
+        <location filename="../MainWindow.cpp" line="858"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML檔案 (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="833"/>
+        <location filename="../MainWindow.cpp" line="848"/>
         <source>Text files (*.txt)</source>
         <translation>文字檔案(*.txt)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="834"/>
+        <location filename="../MainWindow.cpp" line="849"/>
         <source>All files (*.*)</source>
         <translation>所有檔案(*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="936"/>
+        <location filename="../MainWindow.cpp" line="1005"/>
         <source>Save File</source>
         <translation>儲存檔案</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
-        <location filename="../MainWindow.cpp" line="972"/>
-        <location filename="../MainWindow.cpp" line="984"/>
-        <location filename="../MainWindow.cpp" line="985"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
+        <location filename="../MainWindow.cpp" line="1041"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1054"/>
         <source>File Save-As Failed!</source>
         <translation>另存新檔失敗！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
         <source>is not writeable</source>
         <translation>無法寫入</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="980"/>
-        <location filename="../MainWindow.cpp" line="1010"/>
+        <location filename="../MainWindow.cpp" line="1049"/>
+        <location filename="../MainWindow.cpp" line="1079"/>
         <source>File Saved</source>
         <translation>檔案已儲存</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1001"/>
-        <location filename="../MainWindow.cpp" line="1003"/>
-        <location filename="../MainWindow.cpp" line="1014"/>
-        <location filename="../MainWindow.cpp" line="1015"/>
+        <location filename="../MainWindow.cpp" line="1070"/>
+        <location filename="../MainWindow.cpp" line="1072"/>
+        <location filename="../MainWindow.cpp" line="1083"/>
+        <location filename="../MainWindow.cpp" line="1084"/>
         <source>File Save Failed!</source>
         <translation>檔案儲存失敗！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1002"/>
+        <location filename="../MainWindow.cpp" line="1071"/>
         <source>does not exist or is not writeable</source>
         <translation>不存在或無法寫入</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1059"/>
+        <location filename="../MainWindow.cpp" line="1128"/>
         <source>File Opened</source>
         <translation>檔案已開啟</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1064"/>
+        <location filename="../MainWindow.cpp" line="1133"/>
         <source>File Open Failed!</source>
         <translation>檔案開啟失敗！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1087"/>
+        <location filename="../MainWindow.cpp" line="1156"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>剪貼簿包含 HTML 格式</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1088"/>
+        <location filename="../MainWindow.cpp" line="1157"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>你要將剪貼簿的資料貼上為純文字嗎？</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1239"/>
+        <location filename="../MainWindow.cpp" line="1308"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>您要在覆寫這個檔案前儲存變更嗎？</translation>
     </message>

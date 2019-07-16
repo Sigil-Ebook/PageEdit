@@ -131,43 +131,43 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="70"/>
-        <source>Determine if Epubs are allowed to access non-multimedia remote resources.</source>
-        <translation>Määrittää, saavatko EPUBit käyttää ei-multimediamuotoisia etäresursseja.</translation>
+        <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="73"/>
-        <source> Control Access by Epubs to non-multimedia remote resources.</source>
-        <translation>Rajoitukset EPUB-tiedostoen pääsylle muihin kuin multimediaa sisältäviin etäresursseihin.</translation>
+        <source> Control access by html files to non-multimedia remote resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="82"/>
-        <source>Check to allow Epubs to access non-multimedia remote resources.</source>
-        <translation>Valitse salliaksesi EPUBien viitata ei-multimediamuotoisiin etäresursseihin.</translation>
+        <source>Check to allow html files to access non-multimedia remote resources.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="85"/>
-        <source>Epubs may access all remote resources types.</source>
-        <translation>EPUB-tiedostot saavat käyttää kaikentyyppisiä etäresursseja.</translation>
+        <source>Html files may access all remote resources types.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="99"/>
-        <source>Determine if javascript is allowed to be used by Epubs</source>
-        <translation>Määrittää, saavatko EPUB-kirjat käyttää JavaScriptiä.</translation>
+        <source>Determine if javascript is allowed to be used by html files</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="102"/>
-        <source> Control Use of Javascript by Epubs.</source>
-        <translation>Määrittää, saavatko EPUB-kirjat käyttää JavaScriptiäö.</translation>
+        <source> Control use of javascript by html files.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="111"/>
-        <source>Check to allow Epubs to use javascript.</source>
-        <translation>Tämän valitseminen sallii EPUB-kirjojen käyttää JavaScriptiä.</translation>
+        <source>Check to allow html files to use javascript.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="114"/>
-        <source>Epubs may use javascript.</source>
-        <translation>EPUBit saavat käyttää JavaScriptiä.</translation>
+        <source>Html files may use javascript.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -187,8 +187,8 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="700"/>
-        <location filename="../MainWindow.cpp" line="1238"/>
+        <location filename="../MainWindow.cpp" line="714"/>
+        <location filename="../MainWindow.cpp" line="1307"/>
         <source>PageEdit</source>
         <translation>Muokkaustila</translation>
     </message>
@@ -330,7 +330,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="359"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation type="unfinished"/>
+        <translation>Peruuttaa aiemman toimenpiteen tekemät muutokset.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="362"/>
@@ -345,7 +345,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="375"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation type="unfinished"/>
+        <translation>Palauttaa edellisen peruutustoiminnon peruuttamat muutokset.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="378"/>
@@ -360,7 +360,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="391"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation type="unfinished"/>
+        <translation>Kopioi valitun tekstin ja laittaa sen leikepöydälle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="404"/>
@@ -370,7 +370,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="407"/>
         <source>Align the paragraph to the left.</source>
-        <translation type="unfinished"/>
+        <translation>Tasaa kappale vasemmalle</translation>
     </message>
     <message>
         <location filename="../main.ui" line="421"/>
@@ -380,7 +380,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="424"/>
         <source>Align the paragraph to the right.</source>
-        <translation type="unfinished"/>
+        <translation>Tasaa kappale oikealle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="437"/>
@@ -390,7 +390,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="440"/>
         <source>Center the paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Keskitä kappale.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="443"/>
@@ -405,7 +405,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="459"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation type="unfinished"/>
+        <translation>Tasaa kappaleen sekä vasemmalle että oikealle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="462"/>
@@ -420,7 +420,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="478"/>
         <source>Make the selected text bold.</source>
-        <translation type="unfinished"/>
+        <translation>Lihavoi valittu teksti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="481"/>
@@ -435,7 +435,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="497"/>
         <source>Make the selected text italic.</source>
-        <translation type="unfinished"/>
+        <translation>Kursivoi valittu teksti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="500"/>
@@ -450,7 +450,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="513"/>
         <source>Open a file from disk.</source>
-        <translation type="unfinished"/>
+        <translation>Avaa tiedosto levyltä.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="516"/>
@@ -465,7 +465,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="533"/>
         <source>Underline the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Alleviivaa valittu teksti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="536"/>
@@ -480,7 +480,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="549"/>
         <source>Quit</source>
-        <translation type="unfinished"/>
+        <translation>Lopeta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="552"/>
@@ -495,7 +495,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="565"/>
         <source>Select a character to insert into your text.</source>
-        <translation type="unfinished"/>
+        <translation>Valitse tekstiin lisättävä merkki.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="578"/>
@@ -505,7 +505,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="581"/>
         <source>Create a numbered list from selection.</source>
-        <translation type="unfinished"/>
+        <translation>Tee valinnasta numeroitu luettelo.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="594"/>
@@ -515,7 +515,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="597"/>
         <source>Create a bulleted list from selection.</source>
-        <translation type="unfinished"/>
+        <translation>Tee valinnasta luetelma, jossa on luetelmapallot.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="600"/>
@@ -530,7 +530,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="616"/>
         <source>Draw a line through the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Yliviivaa valittu teksti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="629"/>
@@ -540,7 +540,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="632"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation type="unfinished"/>
+        <translation>Muuta valittu teksti hiukan pienemmäksi ja normaalin linjan alapuolelle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="645"/>
@@ -550,7 +550,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="648"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation type="unfinished"/>
+        <translation>Muuta valittu teksti hiukan pienemmäksi ja normaalin linjan yläpuolelle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="659"/>
@@ -590,7 +590,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="696"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Lisää kappaleen sisennystasoa.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="699"/>
@@ -605,7 +605,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="712"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Pienennäkappaleen sisennystasoa.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="715"/>
@@ -660,7 +660,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="768"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Muotoile kappale 1. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="771"/>
@@ -675,7 +675,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="787"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Muotoile kappale 2. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="790"/>
@@ -690,7 +690,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="806"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Muotoile kappale 3. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="809"/>
@@ -705,7 +705,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="826"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Muotoile kappale 4. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="829"/>
@@ -720,7 +720,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="845"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Muotoile kappale 5. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="848"/>
@@ -735,7 +735,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="864"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Muotoile kappale 6. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="867"/>
@@ -750,7 +750,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="884"/>
         <source>ormat paragraph as a normal paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Muotoile kappale normaaliksi kappaleeksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="887"/>
@@ -769,125 +769,125 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     </message>
     <message>
         <location filename="../main.ui" line="910"/>
-        <source>&amp;SelectAll</source>
+        <source>&amp;Select All</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="913"/>
         <source>Select all text in the document.</source>
-        <translation type="unfinished"/>
+        <translation>Valitse dokumentin koko teksti</translation>
     </message>
     <message>
         <location filename="../main.ui" line="916"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main.ui" line="926"/>
         <source>&amp;Inspector</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Tutkinta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="929"/>
         <source>Inspect the page.</source>
-        <translation type="unfinished"/>
+        <translation>Tutki sivua.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="932"/>
         <source>Ctrl+F5</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="695"/>
+        <location filename="../MainWindow.cpp" line="709"/>
         <source>PageEdit is closing...</source>
         <translation>Muokkaustilan lopetus...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="701"/>
+        <location filename="../MainWindow.cpp" line="715"/>
         <source>Do you want to save your changes before closing?</source>
-        <translation type="unfinished"/>
+        <translation>Haluatko tallentaa tekemäsi muutokset ennen sulkemista?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="830"/>
-        <location filename="../MainWindow.cpp" line="831"/>
-        <location filename="../MainWindow.cpp" line="832"/>
-        <location filename="../MainWindow.cpp" line="841"/>
-        <location filename="../MainWindow.cpp" line="842"/>
-        <location filename="../MainWindow.cpp" line="843"/>
+        <location filename="../MainWindow.cpp" line="845"/>
+        <location filename="../MainWindow.cpp" line="846"/>
+        <location filename="../MainWindow.cpp" line="847"/>
+        <location filename="../MainWindow.cpp" line="856"/>
+        <location filename="../MainWindow.cpp" line="857"/>
+        <location filename="../MainWindow.cpp" line="858"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML-tiedostot (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="833"/>
+        <location filename="../MainWindow.cpp" line="848"/>
         <source>Text files (*.txt)</source>
         <translation>Tekstitiedostot (*.txt)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="834"/>
+        <location filename="../MainWindow.cpp" line="849"/>
         <source>All files (*.*)</source>
         <translation>Kaikki tiedostot (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="936"/>
+        <location filename="../MainWindow.cpp" line="1005"/>
         <source>Save File</source>
         <translation>Tallenna tiedosto</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
-        <location filename="../MainWindow.cpp" line="972"/>
-        <location filename="../MainWindow.cpp" line="984"/>
-        <location filename="../MainWindow.cpp" line="985"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
+        <location filename="../MainWindow.cpp" line="1041"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1054"/>
         <source>File Save-As Failed!</source>
-        <translation type="unfinished"/>
+        <translation>Tallenna nimellä -toiminto epäonnistui!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
         <source>is not writeable</source>
-        <translation type="unfinished"/>
+        <translation>ei ole kirjoitettavissa</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="980"/>
-        <location filename="../MainWindow.cpp" line="1010"/>
+        <location filename="../MainWindow.cpp" line="1049"/>
+        <location filename="../MainWindow.cpp" line="1079"/>
         <source>File Saved</source>
-        <translation type="unfinished"/>
+        <translation>Tiedosto tallentui</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1001"/>
-        <location filename="../MainWindow.cpp" line="1003"/>
-        <location filename="../MainWindow.cpp" line="1014"/>
-        <location filename="../MainWindow.cpp" line="1015"/>
+        <location filename="../MainWindow.cpp" line="1070"/>
+        <location filename="../MainWindow.cpp" line="1072"/>
+        <location filename="../MainWindow.cpp" line="1083"/>
+        <location filename="../MainWindow.cpp" line="1084"/>
         <source>File Save Failed!</source>
-        <translation type="unfinished"/>
+        <translation>Tiedoston tallennus epäonnistui!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1002"/>
+        <location filename="../MainWindow.cpp" line="1071"/>
         <source>does not exist or is not writeable</source>
-        <translation type="unfinished"/>
+        <translation>ei ole olemassa tai ei ole kirjoitettavissa</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1059"/>
+        <location filename="../MainWindow.cpp" line="1128"/>
         <source>File Opened</source>
-        <translation type="unfinished"/>
+        <translation>Tiedosto avautui</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1064"/>
+        <location filename="../MainWindow.cpp" line="1133"/>
         <source>File Open Failed!</source>
-        <translation type="unfinished"/>
+        <translation>Tiedoston avaus epäonnistui!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1087"/>
+        <location filename="../MainWindow.cpp" line="1156"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Leikepöytä sisältää HTML-muotoilua</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1088"/>
+        <location filename="../MainWindow.cpp" line="1157"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Haluatko liittää leikepöydältä sisältöä pelkkänä tekstinä?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1239"/>
+        <location filename="../MainWindow.cpp" line="1308"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation type="unfinished"/>
+        <translation>Haluatko tallentaa muutokset ennen tämän tiedoston päälle kirjoittamista?</translation>
     </message>
 </context>
 <context>
@@ -925,12 +925,12 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../Utility.cpp" line="476"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation type="unfinished"/>
+        <translation>Sivun muokkauksessa on syntynyt ongelma.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="477"/>
         <source>PageEdit may need to close.</source>
-        <translation type="unfinished"/>
+        <translation>Sivunmuokkaustoiminto joutuu sulkemaan itsensä.</translation>
     </message>
 </context>
 <context>

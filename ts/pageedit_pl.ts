@@ -127,43 +127,43 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="70"/>
-        <source>Determine if Epubs are allowed to access non-multimedia remote resources.</source>
-        <translation>Ustal, czy pliki EPUB mają mieć dostęp do zdalnych zasobów, innych niż multimedialne.</translation>
+        <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
+        <translation>Ustal, czy pliki HTML mają mieć dostęp do zdalnych zasobów, innych niż multimedialne.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="73"/>
-        <source> Control Access by Epubs to non-multimedia remote resources.</source>
-        <translation>Kontrola dostępu plików EPUB do zdalnych zasobów innych niż multimedialne.</translation>
+        <source> Control access by html files to non-multimedia remote resources.</source>
+        <translation>Kontrola dostępu plików HTML do zdalnych zasobów innych niż multimedialne.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="82"/>
-        <source>Check to allow Epubs to access non-multimedia remote resources.</source>
-        <translation>Zaznacz, by zezwolić plikom EPUB na dostęp do zasobów zdalnych innych niż multimedialne.</translation>
+        <source>Check to allow html files to access non-multimedia remote resources.</source>
+        <translation>Zaznacz, by zezwolić plikom HTML na dostęp do zasobów zdalnych innych niż multimedialne.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="85"/>
-        <source>Epubs may access all remote resources types.</source>
-        <translation>Pliki EPUB mogą uzyskać dostęp do wszystkich typów zdalnych zasobów.</translation>
+        <source>Html files may access all remote resources types.</source>
+        <translation>Pliki HTML mogą uzyskać dostęp do wszystkich typów zdalnych zasobów.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="99"/>
-        <source>Determine if javascript is allowed to be used by Epubs</source>
-        <translation>Ustal, czy javascript może być używany w plikach EPUB</translation>
+        <source>Determine if javascript is allowed to be used by html files</source>
+        <translation>Ustal, czy javascript może być używany w plikach HTML</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="102"/>
-        <source> Control Use of Javascript by Epubs.</source>
-        <translation>Kontrola używania javascriptu w plikach EPUB.</translation>
+        <source> Control use of javascript by html files.</source>
+        <translation>Kontrola używania javascriptu w plikach HTML.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="111"/>
-        <source>Check to allow Epubs to use javascript.</source>
-        <translation>Zaznacz, by zezwolić plikom EPUB na korzystanie z javascriptu.</translation>
+        <source>Check to allow html files to use javascript.</source>
+        <translation>Zaznacz, by zezwolić plikom HTML na korzystanie z javascriptu.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="114"/>
-        <source>Epubs may use javascript.</source>
-        <translation>Pliki EPUB mogą używać javascriptu.</translation>
+        <source>Html files may use javascript.</source>
+        <translation>Pliki HTML mogą używać javascriptu.</translation>
     </message>
 </context>
 <context>
@@ -183,8 +183,8 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="700"/>
-        <location filename="../MainWindow.cpp" line="1238"/>
+        <location filename="../MainWindow.cpp" line="714"/>
+        <location filename="../MainWindow.cpp" line="1307"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -765,8 +765,8 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
     </message>
     <message>
         <location filename="../main.ui" line="910"/>
-        <source>&amp;SelectAll</source>
-        <translation>&amp;Zaznacz wszystko</translation>
+        <source>&amp;Select All</source>
+        <translation>Zaznacz w&amp;szystko</translation>
     </message>
     <message>
         <location filename="../main.ui" line="913"/>
@@ -794,94 +794,94 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="695"/>
+        <location filename="../MainWindow.cpp" line="709"/>
         <source>PageEdit is closing...</source>
         <translation>Zamykanie programu PageEdit…</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="701"/>
+        <location filename="../MainWindow.cpp" line="715"/>
         <source>Do you want to save your changes before closing?</source>
         <translation>Czy chcesz zapisać wprowadzone zmiany przez zamknięciem?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="830"/>
-        <location filename="../MainWindow.cpp" line="831"/>
-        <location filename="../MainWindow.cpp" line="832"/>
-        <location filename="../MainWindow.cpp" line="841"/>
-        <location filename="../MainWindow.cpp" line="842"/>
-        <location filename="../MainWindow.cpp" line="843"/>
+        <location filename="../MainWindow.cpp" line="845"/>
+        <location filename="../MainWindow.cpp" line="846"/>
+        <location filename="../MainWindow.cpp" line="847"/>
+        <location filename="../MainWindow.cpp" line="856"/>
+        <location filename="../MainWindow.cpp" line="857"/>
+        <location filename="../MainWindow.cpp" line="858"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Pliki HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="833"/>
+        <location filename="../MainWindow.cpp" line="848"/>
         <source>Text files (*.txt)</source>
         <translation>Pliki tekstowe (*.txt)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="834"/>
+        <location filename="../MainWindow.cpp" line="849"/>
         <source>All files (*.*)</source>
         <translation>Wszystkie pliki (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="936"/>
+        <location filename="../MainWindow.cpp" line="1005"/>
         <source>Save File</source>
         <translation>Zapisz plik</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
-        <location filename="../MainWindow.cpp" line="972"/>
-        <location filename="../MainWindow.cpp" line="984"/>
-        <location filename="../MainWindow.cpp" line="985"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
+        <location filename="../MainWindow.cpp" line="1041"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1054"/>
         <source>File Save-As Failed!</source>
         <translation>Nie powiodło się zapisanie pod inną nazwą.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
         <source>is not writeable</source>
         <translation>jest niezapisywalny</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="980"/>
-        <location filename="../MainWindow.cpp" line="1010"/>
+        <location filename="../MainWindow.cpp" line="1049"/>
+        <location filename="../MainWindow.cpp" line="1079"/>
         <source>File Saved</source>
         <translation>Plik zapisany</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1001"/>
-        <location filename="../MainWindow.cpp" line="1003"/>
-        <location filename="../MainWindow.cpp" line="1014"/>
-        <location filename="../MainWindow.cpp" line="1015"/>
+        <location filename="../MainWindow.cpp" line="1070"/>
+        <location filename="../MainWindow.cpp" line="1072"/>
+        <location filename="../MainWindow.cpp" line="1083"/>
+        <location filename="../MainWindow.cpp" line="1084"/>
         <source>File Save Failed!</source>
         <translation>Nie powiodło się zapisanie pliku!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1002"/>
+        <location filename="../MainWindow.cpp" line="1071"/>
         <source>does not exist or is not writeable</source>
         <translation>nie istnieje lub jest niezapisywalny</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1059"/>
+        <location filename="../MainWindow.cpp" line="1128"/>
         <source>File Opened</source>
         <translation>Plik załadowano</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1064"/>
+        <location filename="../MainWindow.cpp" line="1133"/>
         <source>File Open Failed!</source>
         <translation>Nie udało się załadować pliku!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1087"/>
+        <location filename="../MainWindow.cpp" line="1156"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Schowek zawiera formatowany HTML</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1088"/>
+        <location filename="../MainWindow.cpp" line="1157"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Czy chcesz wkleić dane ze schowka jako zwykły tekst?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1239"/>
+        <location filename="../MainWindow.cpp" line="1308"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Czy chcesz zapisać wprowadzone zmiany przed napisaniem tego pliku?</translation>
     </message>

@@ -9,22 +9,22 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="24"/>
         <source>Fonts/Sizes</source>
-        <translation type="unfinished"/>
+        <translation>Фонтови/Величине</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="30"/>
         <source>Preview:</source>
-        <translation type="unfinished"/>
+        <translation>Преглед:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="39"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation type="unfinished"/>
+        <translation>Ако CSS за вашу страну не наводи фонт, овај фонт ће да се користи за приказ унутар програма ЕдиторСтранице. Ови фонтови неће бити коришћени у вашим стварним е-књигама.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="59"/>
         <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Подразумевана величина фонта за WebView ако font-size није наведен у вашем CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="62"/>
@@ -35,7 +35,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="92"/>
         <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Подразумевана фамилија фонтова за WebView ако font-family није наведен у вашем CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="95"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="105"/>
         <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Подразумевана фамилија фонтова за WebView ако је серифна font-family наведена у вашем CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
@@ -56,7 +56,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="118"/>
         <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Подразумевана фамилија фонтова за WebView ако је бесерифна font-family наведена у вашем CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="121"/>
@@ -81,12 +81,12 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Icons</source>
-        <translation type="unfinished"/>
+        <translation>Иконе</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>Icon Size</source>
-        <translation type="unfinished"/>
+        <translation>Величина Икона</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="275"/>
@@ -109,14 +109,16 @@
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation type="unfinished"/>
+        <translation>Општа подешавања</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation type="unfinished"/>
+        <translation>Морате поново да покренете ЕдиторСтранице после промене језика корисничког интерфејса.
+
+Ако превод за поједину реч или фразу није доступан, биће приказан на енглеском.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
@@ -125,43 +127,43 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="70"/>
-        <source>Determine if Epubs are allowed to access non-multimedia remote resources.</source>
-        <translation>Одредите да ли је Epub-има дозвољено да приступају не-мултимедијалним удаљеним ресурсима.</translation>
+        <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
+        <translation>Одредите да ли је html датотекама дозвољено да приступају не-мултимедијалним удаљеним ресурсима.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="73"/>
-        <source> Control Access by Epubs to non-multimedia remote resources.</source>
-        <translation>Контрола приступа Epub-има не-мултимедијалним удаљеним ресурсима.</translation>
+        <source> Control access by html files to non-multimedia remote resources.</source>
+        <translation>Контрола приступа html датотекама не-мултимедијалним удаљеним ресурсима.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="82"/>
-        <source>Check to allow Epubs to access non-multimedia remote resources.</source>
-        <translation>Штиклирајте како бисте Epub-има дозволили приступ не-мултимедијалним удаљеним ресурсима.</translation>
+        <source>Check to allow html files to access non-multimedia remote resources.</source>
+        <translation>Штиклирајте како бисте html датотекама дозволили приступ не-мултимедијалним удаљеним ресурсима.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="85"/>
-        <source>Epubs may access all remote resources types.</source>
-        <translation>Epub-и могу да приступе свим типовима удаљених ресурса.</translation>
+        <source>Html files may access all remote resources types.</source>
+        <translation>Html датотеке могу да приступе свим типовима удаљених ресурса.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="99"/>
-        <source>Determine if javascript is allowed to be used by Epubs</source>
-        <translation type="unfinished"/>
+        <source>Determine if javascript is allowed to be used by html files</source>
+        <translation>Одредите да ли html датотеке могу да користе јаваскрипт</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="102"/>
-        <source> Control Use of Javascript by Epubs.</source>
-        <translation type="unfinished"/>
+        <source> Control use of javascript by html files.</source>
+        <translation>Контрола коришћења јаваскрипта у html датотекама</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="111"/>
-        <source>Check to allow Epubs to use javascript.</source>
-        <translation type="unfinished"/>
+        <source>Check to allow html files to use javascript.</source>
+        <translation>Штиклирајте да дозволите html датотекама коришћење јаваскрипта</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="114"/>
-        <source>Epubs may use javascript.</source>
-        <translation type="unfinished"/>
+        <source>Html files may use javascript.</source>
+        <translation>Html фајлови могу да користе јаваскрипт.</translation>
     </message>
 </context>
 <context>
@@ -169,22 +171,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Inspector.cpp" line="53"/>
         <source>Inspect Page or Element</source>
-        <translation type="unfinished"/>
+        <translation>Прегледајте страницу или елемент</translation>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="93"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation type="unfinished"/>
+        <translation>Функционалност Инспектора није подржана пре Qt 5.11</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="700"/>
-        <location filename="../MainWindow.cpp" line="1238"/>
+        <location filename="../MainWindow.cpp" line="714"/>
+        <location filename="../MainWindow.cpp" line="1307"/>
         <source>PageEdit</source>
-        <translation type="unfinished"/>
+        <translation>ЕдиторСтранице</translation>
     </message>
     <message>
         <location filename="../main.ui" line="62"/>
@@ -219,7 +221,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="144"/>
         <source>Inspector</source>
-        <translation type="unfinished"/>
+        <translation>Инспектор</translation>
     </message>
     <message>
         <location filename="../main.ui" line="159"/>
@@ -239,7 +241,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="207"/>
         <source>Inspect</source>
-        <translation type="unfinished"/>
+        <translation>Прегледање</translation>
     </message>
     <message>
         <location filename="../main.ui" line="220"/>
@@ -249,7 +251,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="234"/>
         <source>set Heading Level of Selected Text</source>
-        <translation type="unfinished"/>
+        <translation>постави ниво наслова за изабрани текст</translation>
     </message>
     <message>
         <location filename="../main.ui" line="248"/>
@@ -274,7 +276,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="305"/>
         <source>Save the current file.</source>
-        <translation type="unfinished"/>
+        <translation>Сачувај текућу датотеку.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="308"/>
@@ -289,7 +291,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="317"/>
         <source>Save the current file with a different filename.</source>
-        <translation type="unfinished"/>
+        <translation>Сачувај текућу датотеку под другим именом.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="320"/>
@@ -304,7 +306,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="333"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation type="unfinished"/>
+        <translation>Исеца изабрани текст из документа и ставља га у клипборд.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="343"/>
@@ -314,7 +316,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="346"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation type="unfinished"/>
+        <translation>Налепљује садржај клипборда у датотеку.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="356"/>
@@ -324,7 +326,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="359"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation type="unfinished"/>
+        <translation>Поништава промене које је начинила претходна операција.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="362"/>
@@ -339,7 +341,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="375"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation type="unfinished"/>
+        <translation>Поново примењује промене које је поништила претходна Опозови акција.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="378"/>
@@ -354,7 +356,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="391"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation type="unfinished"/>
+        <translation>Копира изабрани текст и ставља га у клипборд.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="404"/>
@@ -364,7 +366,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="407"/>
         <source>Align the paragraph to the left.</source>
-        <translation type="unfinished"/>
+        <translation>Поравнава пасус лево.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="421"/>
@@ -374,7 +376,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="424"/>
         <source>Align the paragraph to the right.</source>
-        <translation type="unfinished"/>
+        <translation>Поравнава пасус десно</translation>
     </message>
     <message>
         <location filename="../main.ui" line="437"/>
@@ -384,7 +386,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="440"/>
         <source>Center the paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Центрира пасус.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="443"/>
@@ -399,7 +401,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="459"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation type="unfinished"/>
+        <translation>Поравнава пасус обострано, и са левом и са десном маргином.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="462"/>
@@ -414,7 +416,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="478"/>
         <source>Make the selected text bold.</source>
-        <translation type="unfinished"/>
+        <translation>Поставља приказ изабраног текста подебљаним словима.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="481"/>
@@ -424,12 +426,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="494"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Искошено</translation>
+        <translation>&amp;Курзив</translation>
     </message>
     <message>
         <location filename="../main.ui" line="497"/>
         <source>Make the selected text italic.</source>
-        <translation type="unfinished"/>
+        <translation>Поставља приказ изабраног текста курзивом.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="500"/>
@@ -444,7 +446,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="513"/>
         <source>Open a file from disk.</source>
-        <translation type="unfinished"/>
+        <translation>Отвара датотеку са диска.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="516"/>
@@ -459,7 +461,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="533"/>
         <source>Underline the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Подвлачи изабрани текст.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="536"/>
@@ -474,7 +476,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="549"/>
         <source>Quit</source>
-        <translation type="unfinished"/>
+        <translation>Напуштање</translation>
     </message>
     <message>
         <location filename="../main.ui" line="552"/>
@@ -489,7 +491,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="565"/>
         <source>Select a character to insert into your text.</source>
-        <translation type="unfinished"/>
+        <translation>Изаберите карактер који желите да уметнете у текст.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="578"/>
@@ -499,7 +501,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="581"/>
         <source>Create a numbered list from selection.</source>
-        <translation type="unfinished"/>
+        <translation>Креира нумерисану листу од изабраног текста.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="594"/>
@@ -509,7 +511,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="597"/>
         <source>Create a bulleted list from selection.</source>
-        <translation type="unfinished"/>
+        <translation>Креира листу набрајања од изабраног текста.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="600"/>
@@ -524,7 +526,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="616"/>
         <source>Draw a line through the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Исцртава линију кроз изабрани текст.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="629"/>
@@ -534,7 +536,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="632"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation type="unfinished"/>
+        <translation>Подешава да изабрани текст буде мало мањи и испод основне линије.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="645"/>
@@ -544,7 +546,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="648"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation type="unfinished"/>
+        <translation>Подешава да изабрани текст буде мало мањи и изнад основне линије.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="659"/>
@@ -584,7 +586,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="696"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Увећава ниво увлачења пасуса.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="699"/>
@@ -599,7 +601,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="712"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Умањује ниво увлачења пасуса.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="715"/>
@@ -654,7 +656,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="768"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Форматира пасус као наслов нивоа 1.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="771"/>
@@ -669,7 +671,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="787"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Форматира пасус као наслов нивоа 2.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="790"/>
@@ -684,7 +686,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="806"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Форматира пасус као наслов нивоа 3.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="809"/>
@@ -699,7 +701,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="826"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Форматира пасус као наслов нивоа 4.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="829"/>
@@ -714,7 +716,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="845"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Форматира пасус као наслов нивоа 5.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="848"/>
@@ -729,7 +731,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="864"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation type="unfinished"/>
+        <translation>Форматира пасус као наслов нивоа 6.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="867"/>
@@ -744,7 +746,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="884"/>
         <source>ormat paragraph as a normal paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Форматира пасус као нормални пасус.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="887"/>
@@ -763,125 +765,125 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="910"/>
-        <source>&amp;SelectAll</source>
-        <translation type="unfinished"/>
+        <source>&amp;Select All</source>
+        <translation>&amp;Изабери све</translation>
     </message>
     <message>
         <location filename="../main.ui" line="913"/>
         <source>Select all text in the document.</source>
-        <translation type="unfinished"/>
+        <translation>Одабира сав текст у документу.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="916"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main.ui" line="926"/>
         <source>&amp;Inspector</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Инспектор</translation>
     </message>
     <message>
         <location filename="../main.ui" line="929"/>
         <source>Inspect the page.</source>
-        <translation type="unfinished"/>
+        <translation>Прегледа страницу.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="932"/>
         <source>Ctrl+F5</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="695"/>
+        <location filename="../MainWindow.cpp" line="709"/>
         <source>PageEdit is closing...</source>
-        <translation type="unfinished"/>
+        <translation>ЕдиторСтранице се затвара..</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="701"/>
+        <location filename="../MainWindow.cpp" line="715"/>
         <source>Do you want to save your changes before closing?</source>
-        <translation type="unfinished"/>
+        <translation>Да ли прво желите да сачувате измене пре затварања?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="830"/>
-        <location filename="../MainWindow.cpp" line="831"/>
-        <location filename="../MainWindow.cpp" line="832"/>
-        <location filename="../MainWindow.cpp" line="841"/>
-        <location filename="../MainWindow.cpp" line="842"/>
-        <location filename="../MainWindow.cpp" line="843"/>
+        <location filename="../MainWindow.cpp" line="845"/>
+        <location filename="../MainWindow.cpp" line="846"/>
+        <location filename="../MainWindow.cpp" line="847"/>
+        <location filename="../MainWindow.cpp" line="856"/>
+        <location filename="../MainWindow.cpp" line="857"/>
+        <location filename="../MainWindow.cpp" line="858"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML датотеке (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="833"/>
+        <location filename="../MainWindow.cpp" line="848"/>
         <source>Text files (*.txt)</source>
         <translation>Текстуални датотеке (*.txt)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="834"/>
+        <location filename="../MainWindow.cpp" line="849"/>
         <source>All files (*.*)</source>
         <translation>Сви датотеке (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="936"/>
+        <location filename="../MainWindow.cpp" line="1005"/>
         <source>Save File</source>
         <translation>Сачувај датотеку</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
-        <location filename="../MainWindow.cpp" line="972"/>
-        <location filename="../MainWindow.cpp" line="984"/>
-        <location filename="../MainWindow.cpp" line="985"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
+        <location filename="../MainWindow.cpp" line="1041"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1054"/>
         <source>File Save-As Failed!</source>
-        <translation type="unfinished"/>
+        <translation>Чување датотеке није успело!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="971"/>
+        <location filename="../MainWindow.cpp" line="1040"/>
         <source>is not writeable</source>
-        <translation type="unfinished"/>
+        <translation>не може да се пише</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="980"/>
-        <location filename="../MainWindow.cpp" line="1010"/>
+        <location filename="../MainWindow.cpp" line="1049"/>
+        <location filename="../MainWindow.cpp" line="1079"/>
         <source>File Saved</source>
-        <translation type="unfinished"/>
+        <translation>Датотека је сачувана</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1001"/>
-        <location filename="../MainWindow.cpp" line="1003"/>
-        <location filename="../MainWindow.cpp" line="1014"/>
-        <location filename="../MainWindow.cpp" line="1015"/>
+        <location filename="../MainWindow.cpp" line="1070"/>
+        <location filename="../MainWindow.cpp" line="1072"/>
+        <location filename="../MainWindow.cpp" line="1083"/>
+        <location filename="../MainWindow.cpp" line="1084"/>
         <source>File Save Failed!</source>
-        <translation type="unfinished"/>
+        <translation>Чување датотеке није успело!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1002"/>
+        <location filename="../MainWindow.cpp" line="1071"/>
         <source>does not exist or is not writeable</source>
-        <translation type="unfinished"/>
+        <translation>не постоји или не може да се пише</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1059"/>
+        <location filename="../MainWindow.cpp" line="1128"/>
         <source>File Opened</source>
-        <translation type="unfinished"/>
+        <translation>Датотека отворена</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1064"/>
+        <location filename="../MainWindow.cpp" line="1133"/>
         <source>File Open Failed!</source>
-        <translation type="unfinished"/>
+        <translation>Отварање датотеке није успело!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1087"/>
+        <location filename="../MainWindow.cpp" line="1156"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Клипборд садржи HTML форматирање</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1088"/>
+        <location filename="../MainWindow.cpp" line="1157"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Да ли желите да налепите податке из клипборда као чист текст?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1239"/>
+        <location filename="../MainWindow.cpp" line="1308"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation type="unfinished"/>
+        <translation>Да ли желите да сачувате измене пре преписивања овог фајла?</translation>
     </message>
 </context>
 <context>
@@ -894,12 +896,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Preferences.cpp" line="86"/>
         <source>PageEdit</source>
-        <translation type="unfinished"/>
+        <translation>ЕдиторСтранице</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="86"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation type="unfinished"/>
+        <translation>Измене ће да се примене када поново покренете ЕдиторСтранице.</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="143"/>
@@ -919,12 +921,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Utility.cpp" line="476"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation type="unfinished"/>
+        <translation>ЕдиторСтранице је наишао на проблем.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="477"/>
         <source>PageEdit may need to close.</source>
-        <translation type="unfinished"/>
+        <translation>ЕдиторСтранице можда мора да се затвори.</translation>
     </message>
 </context>
 <context>
@@ -940,7 +942,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Utility.cpp" line="578"/>
         <source>PageEdit</source>
-        <translation type="unfinished"/>
+        <translation>ЕдиторСтранице</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="579"/>
