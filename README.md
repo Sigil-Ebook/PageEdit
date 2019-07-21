@@ -45,12 +45,16 @@ Make sure a minimum of Qt5.9.4(ish) is installed (with the WebEngine package) as
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake -DCMAKE_BUILD_TYPE=Release ../PageEdit`<br>
+`cmake "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../PageEdit`<br>
 `make`<br>
+
+To test
 `cd bin`<br>
 `./pageedit /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`
 
 You can also install PageEdit with `make install` (defaults to the /usr/local prefix, so use sudo if required).
+
+__NOTE__: certain features, like Inspector, will require a minimum of Qt5.11.x to function on Linux.
 
 On Windows:
 -----------
@@ -63,8 +67,14 @@ Make sure that Qt's bin directory is also added to your PATH. Take note of the p
 `cd build`<br>
 `cmake -G "NMake Makefiles" -DQt5_DIR="C:\path\to\your\Qt5\prefix\lib\cmake\Qt5 -DCMAKE_BUILD_TYPE=Release "C:\path\to\PageEdit's\cloned\repository"`<br>
 `nmake`<br>
+
+To test:
 `cd bin`<br>
 `PageEdit.exe \FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB\FILENAME.xhtml`
+
+Use `nmake deploy` to package PageEdit and all of its dependencies into a zip archive (in a newly created 'deploy' folder in the build folder)
+
+__NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deploy` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
 
 
