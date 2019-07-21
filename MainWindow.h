@@ -183,6 +183,7 @@ private:
     QByteArray m_LastWindowSize;
     QString m_LastFolderOpen;
     bool m_modified;
+    bool m_using_wsprewrap;
     Ui::MainWindow ui;
 };
 

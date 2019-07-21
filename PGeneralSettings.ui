@@ -65,6 +65,20 @@ If a translation for specific word or phrase is not available it will be display
    </item>
 
    <item>
+    <spacer name="verticalSpacer1">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+
+   <item>
     <widget class="QGroupBox" name="groupBox_1">
      <property name="toolTip">
       <string>Determine if html files are allowed to access non-multimedia remote resources.</string>
@@ -91,6 +105,19 @@ If a translation for specific word or phrase is not available it will be display
       </item>
      </layout>
     </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
    </item>
    
    <item>
@@ -123,6 +150,102 @@ If a translation for specific word or phrase is not available it will be display
    </item>
 
    <item>
+    <spacer name="verticalSpacer3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+
+   <item>
+    <widget class="QGroupBox" name="groupBoxA">
+     <property name="toolTip">
+      <string>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</string>
+     </property>
+     <property name="title">
+      <string>Handle multiple white space layout using:</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutB">
+      <item>
+       <widget class="QRadioButton" name="UseWSPreWrap">
+        <property name="toolTip">
+         <string>Use CSS white-space: pre-wrap</string>
+        </property>
+        <property name="text">
+         <string>css white-space: pre-wrap</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="UseNBSp">
+        <property name="toolTip">
+         <string>Use non-breaking spaces as needed</string>
+        </property>
+        <property name="text">
+         <string>non-breaking spaces as needed</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <spacer name="verticalSpacer4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+
+   <item>
+    <widget class="QGroupBox" name="groupBoxB">
+     <property name="toolTip">
+      <string>Determine if Prettify is used when saving</string>
+     </property>
+     <property name="title">
+      <string> Use Prettify to reformat the xhtml when saving.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3B">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="UsePrettify">
+        <property name="toolTip">
+         <string>Check to reformat with Prettify when saving xhtml files.</string>
+        </property>
+        <property name="text">
+         <string>Use Prettify to reformat xhtml when saving.</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
     <spacer name="verticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -130,7 +253,7 @@ If a translation for specific word or phrase is not available it will be display
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>100</height>
+       <height>50</height>
       </size>
      </property>
     </spacer>

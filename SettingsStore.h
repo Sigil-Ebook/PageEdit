@@ -103,6 +103,10 @@ public:
 
     int remoteOn();
 
+    int usePrettify();
+
+    int useWSPreWrap();
+
 public slots:
 
     /**
@@ -143,6 +147,9 @@ public slots:
 
     void setRemoteOn(int on);
 
+    void setUsePrettify(int on);
+
+    void setUseWSPreWrap(int on);
 
 private:
     /**

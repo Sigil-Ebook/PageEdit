@@ -54,6 +54,18 @@ PreferencesWidget::ResultAction GeneralSettings::saveSettings()
 {
     SettingsStore settings;
 
+    int new_use_prettify = 0;
+    if (ui.UsePrettify->isChecked()) {
+        new_use_prettify = 1;
+    }
+    settings.setUsePrettify(new_use_prettify);
+
+    int new_use_wsprewrap = 0;
+    if (ui.UseWSPreWrap->isChecked()) {
+        new_use_wsprewrap = 1;
+    }
+    settings.setUseWSPreWrap(new_use_wsprewrap);
+
     int new_remote_on_level = 0;
     if (ui.AllowRemote->isChecked()) {
         new_remote_on_level = 1;
@@ -99,4 +111,11 @@ void GeneralSettings::readSettings()
 
     int javascriptOn = settings.javascriptOn();
     ui.AllowJavascript->setChecked(javascriptOn);
+
+    int usePrettify = settings.usePrettify();
+    ui.UsePrettify->setChecked(usePrettify);
+
+    int useWSPreWrap = settings.useWSPreWrap();
+    ui.UseWSPreWrap->setChecked(useWSPreWrap);
+    ui.UseNBSp->setChecked(1-useWSPreWrap);
 }
