@@ -77,5 +77,27 @@ Use `nmake deploy` to package PageEdit and all of its dependencies into a zip ar
 __NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deploy` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
 
+##For Github repository maintainers: <span style="font-weight:normal; font-size:.70em;">(Who am I kidding, this is to keep myself from forgetting/messing up!)</span>
+
+The upstream sigil-gumbo repository is included in PageEdit's repository (this one) as a subtree in the gumbo_subtree prefix. To pull in upstream sigil-gumbo changes (or even to safely check if there _are_ any), use the following command in the root of your local clone of the PageEdit repo:
+
+`git subtree pull --prefix gumbo_subtree https://github.com/Sigil-Ebook/sigil-gumbo.git master --squash`
+
+--squash because we don't need sigil-gumbo's entire history in the PageEdit repository. Push the changes to github master (with a commit message like "merge in upstream sigil-gumbo changes") if there are any.
+
+You can also create a remote for the upstream sigil-gumbo repo to simply the subtree pull command a bit -- BUT YOU MUST REMEMBER TO USE THE --no-tags OPTION WHEN CREATING THE REMOTE. Otherwise the --squash option may not suppress all upstream history when using the remote name. A careless `git fetch --all` could make a dog's lunch of your repo history with a very taggy remote (which sigil-gumbo is decidedly not):
+
+`git remote add --no-tags sigil-gumbo https://github.com/Sigil-Ebook/sigil-gumbo.git`
+
+After that, pulling in any upstream sigil-gumbo changes becomes:
+
+`git subtree pull --prefix gumbo_subtree sigil-gumbo master --squash`
+
+Probably safer in the long run to create a git alias specific to the PageEdit repository (without a remote added) using the full subtree pull command if you need a shortcut. From within the PageEdit repo:
+
+`git config alias.gumbo-sub-pull 'subtree pull --prefix gumbo_subtree https://github.com/Sigil-Ebook/sigil-gumbo.git master --squash'`
+
+Use any alias name you like. I chose "gumbo-sub-pull"  Then it's simply a matter of using `git gumbo-sub-pull` in the root of the PageEdit repository.
+
 
 
