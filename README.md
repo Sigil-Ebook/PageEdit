@@ -77,7 +77,7 @@ Use `nmake deploy` to package PageEdit and all of its dependencies into a zip ar
 __NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deploy` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
 
-##For Github repository maintainers (who am I kidding, this is to keep myself from forgetting/messing up):
+## For Github repository maintainers (who am I kidding, this is to keep myself from forgetting/messing up):
 
 The upstream sigil-gumbo repository is included in PageEdit's repository (this one) as a subtree in the gumbo_subtree prefix. To pull in upstream sigil-gumbo changes (or even to safely check if there _are_ any), use the following command in the root of your local clone of the PageEdit repo:
 
