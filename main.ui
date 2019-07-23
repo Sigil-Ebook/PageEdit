@@ -86,8 +86,6 @@
      <string>&amp;Find</string>
     </property>
     <addaction name="actionFind"/>
-    <addaction name="actionFindNext"/>
-    <addaction name="actionFindPrevious"/>
    </widget>
    
    <widget class="QMenu" name="menuInsert">
@@ -969,24 +967,6 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+F</string>
-   </property>
-  </action>
-
-  <action name="actionFindNext">
-   <property name="text">
-    <string>Find Next</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+G</string>
-   </property>
-  </action>
-
-  <action name="actionFindPrevious">
-   <property name="text">
-    <string>Find Previous</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+Shift+G</string>
    </property>
   </action>
 

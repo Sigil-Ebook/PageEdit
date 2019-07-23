@@ -79,5 +79,7 @@
         <file>split-section_48px.png</file>
         <file>process-stop_22px.png</file>
         <file>process-stop_48px.png</file>
+        <file>widget-close_22px.png</file>
+        <file>widget-close_48px.png</file>
     </qresource>
 </RCC>
