@@ -80,6 +80,15 @@
     <addaction name="actionPaste"/>
     <addaction name="actionSelectAll" />
    </widget>
+
+   <widget class="QMenu" name="menuFind">
+    <property name="title">
+     <string>&amp;Find</string>
+    </property>
+    <addaction name="actionFind"/>
+    <addaction name="actionFindNext"/>
+    <addaction name="actionFindPrevious"/>
+   </widget>
    
    <widget class="QMenu" name="menuInsert">
     <property name="title">
@@ -148,6 +157,7 @@
 
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
+   <addaction name="menuFind"/>
    <addaction name="menuInsert"/>
    <addaction name="menuFormat"/>
    <addaction name="menuView"/>
@@ -213,6 +223,19 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionInspect"/>
+  </widget>
+
+  <widget class="QToolBar" name="toolBarFind">
+   <property name="windowTitle">
+    <string>Find</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionFind"/>
   </widget>
 
   <widget class="QToolBar" name="toolBarHeadings">
@@ -933,6 +956,39 @@
    </property>
   </action>
 
+  <action name="actionFind">
+   <property name="icon">
+    <iconset resource="../Resource_Files/main/main.qrc">
+     <normaloff>:/main/edit-find_48px.png</normaloff>:/main/edit-find_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Find</string>
+   </property>
+   <property name="toolTip">
+    <string>Find text in the page</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+
+  <action name="actionFindNext">
+   <property name="text">
+    <string>Find Next</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+
+  <action name="actionFindPrevious">
+   <property name="text">
+    <string>Find Previous</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+G</string>
+   </property>
+  </action>
 
  </widget>
  <resources>

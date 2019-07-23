@@ -53,6 +53,8 @@
 #include "SelectCharacter.h"
 #include "Preferences.h"
 #include "GumboInterface.h"
+#include "SearchToolbar.h"
+
 
 static const QString SETTINGS_GROUP = "mainwindow";
 
@@ -90,7 +92,9 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_LastWindowSize(QByteArray()),
     m_LastFolderOpen(QString()),
     m_modified(false),
-    m_using_wsprewrap(false)
+    m_using_wsprewrap(false),
+    m_search(NULL),
+    m_layout(NULL)
 {
     ui.setupUi(this);
     SetupView();
@@ -303,10 +307,10 @@ void MainWindow::SetupView()
     setAttribute(Qt::WA_DeleteOnClose);
     
     QFrame *frame = new QFrame(this);
-    QLayout *layout = new QVBoxLayout(frame);
-    frame->setLayout(layout);
-    layout->addWidget(m_WebView);
-    layout->setContentsMargins(0, 0, 0, 0);
+    m_layout = new QVBoxLayout(frame);
+    frame->setLayout(m_layout);
+    m_layout->addWidget(m_WebView);
+    m_layout->setContentsMargins(0, 0, 0, 0);
     frame->setObjectName("PrimaryFrame");
     setCentralWidget(frame);
     m_Inspector->setObjectName("Inspector");
@@ -1196,6 +1200,17 @@ void MainWindow::PreferencesDialog()
     }
 }
 
+void MainWindow::SearchOnPage()
+{
+    if (!m_search) {
+        m_search = new SearchToolbar(m_WebView, this);
+        // m_search.data()->showMinimalInPopupWindow();
+        m_layout->insertWidget(m_layout->count() - 1, m_search);
+    }
+    m_search->show();
+    m_search->focusSearchLine();
+}
+
 void MainWindow::InsertSpecialCharacter()
 {
     // non-modal dialog
@@ -1345,6 +1360,10 @@ void MainWindow::ExtendIconSizes()
     icon = ui.actionCopy->icon();
     icon.addFile(QString::fromUtf8(":/icons/edit-copy_22px.png"));
     ui.actionCopy->setIcon(icon);
+
+    icon = ui.actionFind->icon();
+    icon.addFile(QString::fromUtf8(":/icons/edit-find_22px.png"));
+    ui.actionFind->setIcon(icon);
 
     icon = ui.actionSelectAll->icon();
     icon.addFile(QString::fromUtf8(":/icons/edit-select-all_22px.png"));
@@ -1510,6 +1529,9 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionCopy,      SIGNAL(triggered()),  this,   SLOT(Copy()));
     connect(ui.actionPaste,     SIGNAL(triggered()),  this,   SLOT(Paste()));
     connect(ui.actionSelectAll, SIGNAL(triggered()),  this,   SLOT(SelectAll()));
+
+    //Find Related
+    connect(ui.actionFind,      SIGNAL(triggered()),  this,   SLOT(SearchOnPage()));
 
     // Insert Related
     connect(ui.actionInsertSGFSectionMarker,   SIGNAL(triggered()),  this,   SLOT(InsertSGFSectionMarker()));

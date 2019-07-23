@@ -81,6 +81,8 @@ set( SOURCE_FILES
     GeneralSettings.cpp
     UILanguage.cpp
     SettingsStore.cpp
+    FocusSelectLineEdit.cpp
+    SearchToolbar.cpp
     Utility.cpp
     GumboInterface.cpp
     )
@@ -103,6 +105,8 @@ set( HEADER_FILES
     GeneralSettings.h
     UILanguage.h
     SettingsStore.h
+    FocusSelectLineEdit.h
+    SearchToolbar.h
     Utility.h
     GumboInterface.h
     )
@@ -113,6 +117,7 @@ set( FORM_FILES
     Preferences.ui
     PAppearanceWidget.ui
     PGeneralSettings.ui
+    SearchToolbar.ui
     )
 
 set( RESOURCE_FILES

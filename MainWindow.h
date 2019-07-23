@@ -43,6 +43,7 @@ class QHBoxLayout;
 class QSlider;
 class QLabel;
 class SelectCharacter;
+class SearchToolbar;
 
 const int STATUSBAR_MSG_DISPLAY_TIME = 7000;
 
@@ -117,6 +118,7 @@ public slots:
     void Paste();
     void PasteText(const QString& text);
     void PreferencesDialog();
+    void SearchOnPage();
     void InsertSpecialCharacter();
     void InsertSGFSectionMarker();
     void InsertBulletedList();
@@ -184,6 +186,8 @@ private:
     QString m_LastFolderOpen;
     bool m_modified;
     bool m_using_wsprewrap;
+    SearchToolbar * m_search;
+    QVBoxLayout * m_layout;
     Ui::MainWindow ui;
 };
 
