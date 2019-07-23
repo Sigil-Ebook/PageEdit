@@ -486,7 +486,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
     if (ss.useWSPreWrap()) {
         int endheadpos = text.indexOf("</head>");
         if (endheadpos > 1) {
-	    QString inject_editstyle = "<style type=\"text/css\">" + EDIT_WITH_PRE_WRAP + "</style>\n"; 
+	    QString inject_editstyle = "<style type=\"text/css\">" + EDIT_WITH_PRE_WRAP + "</style>"; 
 	    text.insert(endheadpos, inject_editstyle);
         }
     }
@@ -497,7 +497,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
         if (endheadpos > 1) {
             QString inject_userstyles = 
               "<link rel=\"stylesheet\" type=\"text/css\" "
-	      "href=\"" + m_usercssurl + "\" />\n";
+	      "href=\"" + m_usercssurl + "\" />";
 	    // qDebug() << "WebView injecting stylesheet: " << inject_userstyles;
             text.insert(endheadpos, inject_userstyles);
         }
