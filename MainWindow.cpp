@@ -32,6 +32,7 @@
 #include <QToolBar>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QtWebEngineWidgets/QWebEngineSettings>
+#include <QtWebEngineWidgets/QWebEngineProfile>
 #include <QDir>
 #include <QFileDialog>
 #include <QMessageBox>
@@ -605,11 +606,11 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
 		  // qDebug() << "Detected Left Mouse Button Press Event";
- 		  // qDebug() << "emitting GoToPreviewLocationRequest";
-	          // m_GoToRequestPending = true;
-		  // we must delay long enough to separate out LinksClicked from scroll sync clicks
-	          // QTimer::singleShot(100, this, SLOT(EmitGoToPreviewLocationRequest()));
 	      }
+	      if (mouseEvent->button() == Qt::RightButton) {
+		  // qDebug() << "Detected Right Mouse Button Press Event";
+	      }
+
 	  }
       }
       break;
@@ -620,6 +621,9 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
 		  // qDebug() << "Detected Left Mouse Button Release Event";
+	      }
+	      if (mouseEvent->button() == Qt::RightButton) {
+		  // qDebug() << "Detected Right Mouse Button Release Event";
 	      }
 	  }
       }
@@ -825,6 +829,13 @@ void MainWindow::LoadSettings()
         QString usercssurl = QUrl::fromLocalFile(CustomWebViewStylesheetInfo.absoluteFilePath()).toString();
 	setUserCSSURL(usercssurl);
     }
+
+    // Finally set up for spellchecking in the WebEngineView
+    QStringList dict_names;
+    dict_names.append(settings.uiDictionary());
+    QWebEngineProfile *profile = m_WebView->page()->profile();
+    profile->setSpellCheckEnabled(true);
+    profile->setSpellCheckLanguages(dict_names);
 }
 
 void MainWindow::SaveSettings()

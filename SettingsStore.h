@@ -51,6 +51,8 @@ public:
      */
     QString uiLanguage();
 
+    QString uiDictionary();
+
     /**
      * The zoom factor used by the component.
      *
@@ -115,6 +117,8 @@ public slots:
      * @param lang The language to set.
      */
     void setUILanguage(const QString &language_code);
+
+    void setUIDictionary(const QString &dictionary_name);
 
     /**
      * Set the zoom factor used by the component.

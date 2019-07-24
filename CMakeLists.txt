@@ -80,6 +80,7 @@ set( SOURCE_FILES
     AppearanceWidget.cpp
     GeneralSettings.cpp
     UILanguage.cpp
+    UIDictionary.cpp
     SettingsStore.cpp
     FocusSelectLineEdit.cpp
     SearchToolbar.cpp
@@ -104,6 +105,7 @@ set( HEADER_FILES
     AppearanceWidget.h
     GeneralSettings.h
     UILanguage.h
+    UIDictionary.h
     SettingsStore.h
     FocusSelectLineEdit.h
     SearchToolbar.h

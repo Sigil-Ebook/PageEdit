@@ -24,6 +24,7 @@
 
 #include <memory>
 #include <QEvent>
+#include <QContextMenuEvent>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include "WebPageEdit.h"
 #include "Viewer.h"
@@ -132,6 +133,8 @@ signals:
     void GoToPreviewLocationRequest();
 
 protected:
+
+    void contextMenuEvent(QContextMenuEvent *event) override;
 
     QString EscapeJSString(const QString &string);
 
@@ -242,6 +245,8 @@ private:
 
     bool m_isLoadFinished;
     bool m_LoadOkay;
+
+    QStringList m_dictionaries;
 
 };
 

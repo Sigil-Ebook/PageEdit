@@ -26,15 +26,19 @@
 #include <QSize>
 #include <QUrl>
 #include <QDir>
+#include <QMenu>
+#include <QContextMenuEvent>
 #include <QtWebEngineWidgets/QWebEngineSettings>
 #include <QtWebEngineWidgets/QWebEngineProfile>
 #include <QtWebEngineWidgets/QWebEnginePage>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QtWebEngineWidgets/QWebEngineScript>
+#include <QtWebEngineWidgets/QWebEngineContextMenuData>
 #include <QDebug>
 
 #include "Utility.h"
 #include "SettingsStore.h"
+#include "UIDictionary.h"
 
 #include "WebPageEdit.h"
 #include "WebViewEdit.h"
@@ -100,7 +104,6 @@ WebViewEdit::WebViewEdit(QWidget *parent)
       m_LoadOkay(false)
 {
     setPage(m_ViewWebPage);
-    setContextMenuPolicy(Qt::CustomContextMenu);
     // Set the Zoom factor but be sure no signals are set because of this.
     SettingsStore settings;
     SetCurrentZoomFactor(settings.zoomPreview());
@@ -116,6 +119,7 @@ WebViewEdit::WebViewEdit(QWidget *parent)
         storageDir.mkpath(localStorePath);
     }
     page()->profile()->setPersistentStoragePath(localStorePath);
+    m_dictionaries = UIDictionary::GetUIDictionaries();
     ConnectSignalsToSlots();
 }
 
@@ -125,6 +129,44 @@ WebViewEdit::~WebViewEdit()
         delete m_ViewWebPage;
         m_ViewWebPage = 0;
     }
+}
+
+void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
+{
+    const QWebEngineContextMenuData &data = page()->contextMenuData();
+    Q_ASSERT(data.isValid());
+
+    if (!data.isContentEditable()) {
+      QWebEngineView::contextMenuEvent(event);
+      return;
+    }
+
+    QWebEngineProfile *profile = page()->profile();
+    const QStringList &dictionaries = profile->spellCheckLanguages();
+    QMenu *menu = page()->createStandardContextMenu();
+    menu->addSeparator();
+
+    QAction *spellcheckAction = new QAction(tr("Check Spelling"), nullptr);
+    spellcheckAction->setCheckable(true);
+    spellcheckAction->setChecked(profile->isSpellCheckEnabled());
+    connect(spellcheckAction, &QAction::toggled, this, [profile](bool toogled) {
+        profile->setSpellCheckEnabled(toogled);
+    });
+    menu->addAction(spellcheckAction);
+
+    if (profile->isSpellCheckEnabled()) {
+        QMenu *subMenu = menu->addMenu(tr("Select Language"));
+        for (const QString &dict : m_dictionaries) {
+            QAction *action = subMenu->addAction(dict);
+            action->setCheckable(true);
+            action->setChecked(dictionaries.contains(dict));
+            connect(action, &QAction::triggered, this, [profile, dict](){
+	        profile->setSpellCheckLanguages(QStringList()<<dict);
+	    });
+        }
+    }
+    connect(menu, &QMenu::aboutToHide, menu, &QObject::deleteLater);
+    menu->popup(event->globalPos());
 }
 
 QString WebViewEdit::GetCaretElementName()
