@@ -316,6 +316,7 @@ if ( MSVC )
     set( MAIN_PACKAGE_DIR ${TEMP_PACKAGE_DIR}/PageEdit )
     set( OUTPUT_PACKAGE_DIR ${CMAKE_BINARY_DIR}/deploy )
     set( WINDEPLOYQT ${QT_INSTALL_BINS}/windeployqt.exe )
+    set( CONVERTDICT ${QT_INSTALL_BINS}/qwebengine_convert_dict.exe )
 
     set( pf_x86 "ProgramFiles(x86)" )
     find_program(SEVENZIP_BIN
@@ -381,6 +382,15 @@ if ( MSVC )
             add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${QTBASE_QM} ${MAIN_PACKAGE_DIR}/translations/ )
         endif()
     endforeach( QM )
+    
+    # Convert and copy the spellcheck dictionaries
+    if( NOT EXISTS ${MAIN_PACKAGE_DIR}/qtwebengine_dictionaries )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory ${MAIN_PACKAGE_DIR}/qtwebengine_dictionaries/ )
+    endif()
+    foreach( DICT ${DICTIONARY_FILES} )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD
+        COMMAND ${CONVERTDICT} ${PROJECT_SOURCE_DIR}/dictionaries/${DICT}.dic ${MAIN_PACKAGE_DIR}/qtwebengine_dictionaries/${DICT}.bdic )
+    endforeach( DICT )
 
     # Remove the temp directory used for building the installer
     add_custom_command( TARGET deploy POST_BUILD
