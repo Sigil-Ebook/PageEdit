@@ -129,6 +129,14 @@ set( RESOURCE_FILES
 
 file( GLOB TS_FILES ts/pageedit_*.ts )
 
+set( DICTIONARY_FILES
+     de_DE
+     en_GB
+     en_US
+     es
+     fr
+   )
+
 set( LINUX_DESKTOP_FILE
     platform/linux/freedesktop/pageedit.desktop
     )
@@ -169,10 +177,12 @@ endif()
 # Apple bundle configuration
 if( APPLE )
     exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources")
-    # exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/polyfills")
+
     # exec_program("unzip ${MATHJAX_ZIP} -d ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/polyfills")
+
     exec_program("cp ${PROJECT_SOURCE_DIR}/icons/PageEdit.icns ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources")
     exec_program("cp ${PROJECT_SOURCE_DIR}/icons/xhtml.icns ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources")
+
     # Create translation directory.
     exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/translations")
     exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/lib")
@@ -182,6 +192,14 @@ if( APPLE )
 
     # ...and set the PageEdit version string
     exec_program("sed -i -e 's/PEVERSION/${PAGEDIT_FULL_VERSION}/g' ${PROJECT_BINARY_DIR}/MacOSXBundleInfo.plist")
+
+    # create a directory for holding spellcheck dictionaries to be found by qtwebengine
+    # convert them to .bdic files in the correct location
+    exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources/qtwebengine_dictionaries")
+    foreach( DICT ${DICTIONARY_FILES} )
+        exec_program("qwebengine_convert_dict ${PROJECT_SOURCE_DIR}/dictionaries/${DICT}.dic ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources/qtwebengine_dictionaries/${DICT}.bdic")
+    endforeach( DICT )
+
 endif()
 
 #############################################################################

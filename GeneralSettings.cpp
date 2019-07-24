@@ -127,7 +127,7 @@ void GeneralSettings::readSettings()
     QString dictionary_name = settings.uiDictionary();
     int pos = ui.cbUIDictionary->findText(dictionary_name);
     if (pos == -1) {
-        pos = ui.cbUIDictionary->findText("en-US");
+        pos = ui.cbUIDictionary->findText("en_US");
         if (pos == -1) {
             pos = 0;
         }

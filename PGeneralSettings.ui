@@ -55,7 +55,7 @@ If a translation for specific word or phrase is not available it will be display
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>40</width>
+         <width>30</width>
          <height>20</height>
         </size>
        </property>
@@ -74,7 +74,7 @@ If a translation for specific word or phrase is not available it will be display
           <string>Select from installed spellcheck dictionaries.</string>
          </property>
          <property name="text">
-          <string>Spellcheck Dictionary Name:</string>
+          <string>Spellcheck Dictionary:</string>
          </property>
         </widget>
        </item>
@@ -90,7 +90,7 @@ If a translation for specific word or phrase is not available it will be display
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>40</width>
+         <width>30</width>
          <height>20</height>
         </size>
        </property>
