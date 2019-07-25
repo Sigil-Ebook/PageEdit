@@ -542,6 +542,8 @@ void MainWindow::UpdatePage(const QString &filename_url)
     m_WebView->ExecuteCaretUpdate();
 #endif
     UpdateWindowTitle();
+    m_WebView->show();
+    m_WebView->GrabFocus();
     m_modified = false;
 }
 

@@ -434,8 +434,9 @@ void WebViewEdit::FormatBlock(const QString &element_name, bool preserve_attribu
 // to determine where the previous focus was.
 void WebViewEdit::GrabFocus()
 {
-    // qobject_cast<QWidget *>(parent())->setFocus();
-    QWebEngineView::setFocus();
+    ScrollToTop();
+    qobject_cast<QWidget *>(parent())->setFocus();
+    QWebEngineView::setFocus(Qt::MouseFocusReason);
 }
 
 void WebViewEdit::WebPageJavascriptOnLoad()
