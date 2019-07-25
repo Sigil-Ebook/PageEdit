@@ -101,7 +101,8 @@ WebViewEdit::WebViewEdit(QWidget *parent)
       m_pendingLoadCount(0),
       m_pendingScrollToFragment(QString()),
       m_isLoadFinished(false),
-      m_LoadOkay(false)
+      m_LoadOkay(false),
+      m_menu(new QMenu(this))
 {
     setPage(m_ViewWebPage);
     // Set the Zoom factor but be sure no signals are set because of this.
@@ -143,8 +144,34 @@ void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
 
     QWebEngineProfile *profile = page()->profile();
     const QStringList &dictionaries = profile->spellCheckLanguages();
-    QMenu *menu = page()->createStandardContextMenu();
-    menu->addSeparator();
+    m_menu->clear();
+    if (!data.misspelledWord().isEmpty()) {
+        QFont boldFont = m_menu->font();
+        boldFont.setBold(true);
+
+        for (const QString &suggestion : data.spellCheckerSuggestions()) {
+	    QAction *action = m_menu->addAction(suggestion);
+	    action->setFont(boldFont);
+
+	    connect(action, &QAction::triggered, this, [=]() {
+	        page()->replaceMisspelledWord(suggestion);
+	      });
+         }
+
+        if (m_menu->actions().isEmpty()) {
+	    m_menu->addAction(tr("No suggestions"))->setEnabled(false);
+        }
+    }
+    m_menu->addSeparator();
+    m_menu->addAction(pageAction(QWebEnginePage::Cut));
+    m_menu->addAction(pageAction(QWebEnginePage::Copy));
+    m_menu->addAction(pageAction(QWebEnginePage::Paste));
+
+#if 0
+    QMenu menu = page()->createStandardContextMenu();
+#endif
+
+    m_menu->addSeparator();
 
     QAction *spellcheckAction = new QAction(tr("Check Spelling"), nullptr);
     spellcheckAction->setCheckable(true);
@@ -152,10 +179,10 @@ void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
     connect(spellcheckAction, &QAction::toggled, this, [profile](bool toogled) {
         profile->setSpellCheckEnabled(toogled);
     });
-    menu->addAction(spellcheckAction);
+    m_menu->addAction(spellcheckAction);
 
     if (profile->isSpellCheckEnabled()) {
-        QMenu *subMenu = menu->addMenu(tr("Select Language"));
+        QMenu *subMenu = m_menu->addMenu(tr("Select Language"));
         for (const QString &dict : m_dictionaries) {
             QAction *action = subMenu->addAction(dict);
             action->setCheckable(true);
@@ -165,8 +192,8 @@ void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
 	    });
         }
     }
-    connect(menu, &QMenu::aboutToHide, menu, &QObject::deleteLater);
-    menu->popup(event->globalPos());
+    // connect(m_menu, &QMenu::aboutToHide, m_menu, &QObject::deleteLater);
+    m_menu->popup(event->globalPos());
 }
 
 QString WebViewEdit::GetCaretElementName()

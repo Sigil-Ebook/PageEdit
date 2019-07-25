@@ -244,7 +244,10 @@ private:
     QString m_pendingScrollToFragment;
 
     bool m_isLoadFinished;
+
     bool m_LoadOkay;
+
+    QMenu * m_menu;
 
     QStringList m_dictionaries;
 
