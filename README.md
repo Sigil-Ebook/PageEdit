@@ -56,6 +56,8 @@ You can also install PageEdit with `make install` (defaults to the /usr/local pr
 
 __NOTE__: certain features, like Inspector, will require a minimum of Qt5.11.x to function on Linux.
 
+By default, bundled hunspell dictionaries are converted to webengine spell check dictionaries (with qt tools) and installed to the QT_INSTALL_DATA/qtwebengine_dictionaries location. This location can be found using the qmake binary (of the Qt you're building PageEdit with) with the following command `-qmake -query QT_INSTALL_DATA` . If using the system Qt, this will typically be /usr/share/qt/qtwebengine_dictionaries. To disable the conversion/installation of these bundled dictionaries, use -DUSE_BUNDLED_DICTS=0 when configuring PageEdit with cmake.
+
 On Windows:
 -----------
 
