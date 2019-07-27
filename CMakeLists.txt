@@ -24,12 +24,12 @@ endif()
 set( CMAKE_DEBUG_POSTFIX "d" )
 # Avoid the whole Release/Debug folder creation with Visual Studio
 if (MSVC_IDE)
-   set( CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${PROJECT_BINARY_DIR}/bin")
-   set( CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${PROJECT_BINARY_DIR}/bin")
-   set( CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG "${PROJECT_BINARY_DIR}/lib")
-   set( CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE "${PROJECT_BINARY_DIR}/lib")
-   set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG "${PROJECT_BINARY_DIR}/lib")
-   set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE "${PROJECT_BINARY_DIR}/lib")
+    set( CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${PROJECT_BINARY_DIR}/bin")
+    set( CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${PROJECT_BINARY_DIR}/bin")
+    set( CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG "${PROJECT_BINARY_DIR}/lib")
+    set( CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE "${PROJECT_BINARY_DIR}/lib")
+    set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG "${PROJECT_BINARY_DIR}/lib")
+    set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE "${PROJECT_BINARY_DIR}/lib")
 endif()
 set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin )
 set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib )
@@ -41,7 +41,11 @@ set( PAGEEDIT_REVISION_VERSION 1 )
 set( PAGEEDIT_FULL_VERSION ${PAGEEDIT_MAJOR_VERSION}.${PAGEEDIT_MINOR_VERSION}.${PAGEEDIT_REVISION_VERSION} )
 
 if( UNIX AND NOT APPLE )
-   include(GNUInstallDirs)
+    include(GNUInstallDirs)
+    #Use -DCMAKE_SKIP_RPATH=1 to cancel all the below
+    set( CMAKE_SKIP_BUILD_RPATH  FALSE )
+    set( CMAKE_BUILD_WITH_INSTALL_RPATH FALSE )
+    set( CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE )
 endif()
 
 # Make sure gumbo builds as static
@@ -267,6 +271,32 @@ if( UNIX AND NOT APPLE )
         PROPERTY COMPILE_DEFINITIONS
         PAGEEDIT_SHARE_ROOT="${PAGEEDIT_SHARE_ROOT}"
     )
+    
+    query_qmake( QT_INSTALL_BINS QT_INSTALL_BINS_DIR )
+    query_qmake( QT_INSTALL_DATA QT_INSTALL_DATA_DIR )
+
+    # Bundled dictionaries will be coverted to qtwebengine spellcheck dicts with qwebengine_convert_dict
+    # by default and installed to qmake -query QT_INSTALL_DATA + ./qtwebengine_dictionaries.
+    # Use -DINSTALL_BUNDLED_DICTS=0 to prevent this.
+    set( CONVERTDICT ${QT_INSTALL_BINS_DIR}/qwebengine_convert_dict )
+    if ( NOT DEFINED INSTALL_BUNDLED_DICTS )
+        set ( INSTALL_BUNDLED_DICTS 1 )
+    endif()
+
+    set( SPELLCHECK_DICTS_SRC ${PROJECT_SOURCE_DIR}/dictionaries )
+    # Create converted dics in bin folder so spellcheck can work in the build directory
+    set( CONVERTED_DICTS_DEST ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/qtwebengine_dictionaries )
+    # Remove previous directories
+    if ( EXISTS ${CONVERTED_DICTS_DEST} )
+        file( REMOVE_RECURSE ${CONVERTED_DICTS_DEST} )
+    endif()
+    # Create convert the spellcheck dictionaries into the newly created destination folder
+    if ( INSTALL_BUNDLED_DICTS )
+        file( MAKE_DIRECTORY ${CONVERTED_DICTS_DEST} )
+        foreach( DICT ${DICTIONARY_FILES} )
+            execute_process( COMMAND ${CONVERTDICT} ${SPELLCHECK_DICTS_SRC}/${DICT}.dic ${CONVERTED_DICTS_DEST}/${DICT}.bdic )
+        endforeach( DICT )    
+    endif()
 
     # Standard Linux 'make install'
     install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR} )
@@ -280,6 +310,10 @@ if( UNIX AND NOT APPLE )
     install( FILES ${PROJECT_SOURCE_DIR}/icons/app_icon_scalable.svg DESTINATION
                                ${SHARE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps RENAME pageedit.svg )
     install( FILES ${QM_FILES} DESTINATION ${PAGEEDIT_SHARE_ROOT}/translations/ )
+    # Install converted dicts to qmake -query QT_INSTALL_DATA + ./qtwebengine_dictionaries
+    if ( INSTALL_BUNDLED_DICTS )
+        install( DIRECTORY ${CONVERTED_DICTS_DEST} DESTINATION ${QT_INSTALL_DATA_DIR} )
+    endif()
 endif()
 
 # For Mac, add frameworks and make a DMG
