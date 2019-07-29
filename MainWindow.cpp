@@ -957,6 +957,40 @@ QString MainWindow::GetCleanHtml() {
         }
     }
 
+    // clean up leftovers from pasting from Word
+    // this should be eventually be controlled by a preference setting
+    if (true) {  
+
+        // remove any xhtml comments as these are often added by 
+        // pasting of Word data
+        GumboNode * root = gi.get_root_node();
+        QList<GumboNode*> comment_nodes = gi.get_nodes_with_comments(root);
+        foreach(GumboNode* node, comment_nodes) {
+            gumbo_remove_from_parent(node);
+            gumbo_destroy_node(node);
+        }
+
+        // remove non html5 tags prefixed with "o:" as these are Word leftovers
+        QList<GumboNode*> prefix_nodes = gi.get_element_nodes_with_prefix(root, "o:");
+        foreach(GumboNode* node, prefix_nodes) {
+            gumbo_remove_from_parent(node);
+            gumbo_destroy_node(node);
+        }
+
+        // remove any style tags in the body as these are often added by
+        // pasting of Word data
+        GumboNode * body_node = gi.get_body_node();
+        if (body_node) {
+            QList<GumboTag> style_tags = QList<GumboTag>() << GUMBO_TAG_STYLE;
+            QList<GumboNode*> style_nodes = gi.get_nodes_with_tags(body_node, style_tags);
+            foreach(GumboNode* node, style_nodes) {
+                gumbo_remove_from_parent(node);
+                gumbo_destroy_node(node);
+            }
+        }
+
+    }
+
     // remove any already injected pre-wrap editing style in head
     if (m_using_wsprewrap) {
         tags = QList<GumboTag>() << GUMBO_TAG_STYLE;

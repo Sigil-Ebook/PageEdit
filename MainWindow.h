@@ -157,7 +157,7 @@ protected:
     void closeEvent(QCloseEvent * event);
     bool MaybeSaveDialogSaysProceed();
     QString GetCleanHtml();
-
+    QString GetHTMLToPaste(const QString & hmtl_snippet);
 
 private:
     void SetupView();

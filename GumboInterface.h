@@ -51,8 +51,13 @@ public:
     ~GumboInterface();
 
     void    parse();
+    void    parse_fragment();
+
     QString repair();
+
     QString getxhtml();
+    QString get_fragment_xhtml();
+
     QString prettyprint(QString indent_chars="  ");
 
     // returns list tags that match manifest properties
@@ -60,6 +65,12 @@ public:
 
     // returns "html" node
     GumboNode * get_root_node();
+
+    // return document node
+    GumboNode * get_document_node();
+
+    // returns body node or NULL if none exists
+    GumboNode * get_body_node();
 
     // routines for working with gumbo paths
     GumboNode* get_node_from_path(QList<unsigned int> & apath);
@@ -92,12 +103,20 @@ public:
 
     // routine to check if well-formed
     QList<GumboWellFormedError> error_check();
+
     QList<GumboWellFormedError> fragment_error_check();
 
-    // routines to work with node and it children only
+    // routines to work with node and its children only
     QList<GumboNode*> get_nodes_with_attribute(GumboNode* node, const char * att_name);
 
     QList<GumboNode*> get_nodes_with_tags(GumboNode* node, const QList<GumboTag> & tags);
+
+    QList<GumboNode*> get_nodes_with_comments(GumboNode * node);
+
+    QList<GumboNode*> get_element_nodes_with_prefix(GumboNode * node, const std::string& prefix);
+
+
+
 
 private:
 

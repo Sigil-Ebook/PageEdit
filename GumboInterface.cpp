@@ -180,6 +180,32 @@ void GumboInterface::parse()
 }
 
 
+void GumboInterface::parse_fragment()
+{
+    if (!m_source.isEmpty() && (m_output == NULL)) {
+
+        // In case we ever have to revert to earlier versions, please note the following
+        // additional initialization is needed because Microsoft Visual Studio 2013 (and earlier?)
+        // do not properly initialize myoptions from the static const kGumboDefaultOptions defined
+        // in the gumbo library.  Instead whatever was in memory at the time is used causing random 
+        // issues later on so if reverting remember to keep these specific changes as the bug 
+        // they work around took a long long time to track down
+        GumboOptions myoptions = kGumboDefaultOptions;
+        myoptions.tab_stop = 4;
+        myoptions.use_xhtml_rules = true;
+        myoptions.stop_on_first_error = false;
+        myoptions.max_tree_depth = 400;
+        myoptions.max_errors = 50;
+
+        m_utf8src = m_source.toStdString();
+        m_output = gumbo_parse_fragment(&myoptions, m_utf8src.data(), m_utf8src.length(),
+					GUMBO_TAG_BODY, GUMBO_NAMESPACE_HTML);
+
+        m_output = gumbo_parse_with_options(&myoptions, m_utf8src.data(), m_utf8src.length());
+    }
+}
+
+
 QString GumboInterface::repair()
 {
     QString result = "";
@@ -194,6 +220,19 @@ QString GumboInterface::repair()
     return result;
 }
 
+QString GumboInterface::get_fragment_xhtml()
+{
+    QString result = "";
+    if (!m_source.isEmpty()) {
+        if (m_output == NULL) {
+            parse_fragment();
+        }
+        std::string utf8out = serialize(m_output->document);
+        rtrim(utf8out);
+        result = QString::fromStdString(utf8out);
+    }
+    return result;
+}
 
 QString GumboInterface::getxhtml()
 {
@@ -289,8 +328,18 @@ QString GumboInterface::perform_link_updates(const QString& newcsslinks)
     return result;
 }
 
+GumboNode * GumboInterface::get_document_node() 
+{
+    if (!m_source.isEmpty()) {
+        if (m_output == NULL) {
+            parse();
+        }
+    }
+    return m_output->document;
+}
 
-GumboNode * GumboInterface::get_root_node() {
+GumboNode * GumboInterface::get_root_node()
+{
     if (!m_source.isEmpty()) {
         if (m_output == NULL) {
             parse();
@@ -299,6 +348,21 @@ GumboNode * GumboInterface::get_root_node() {
     return m_output->root;
 }
 
+
+GumboNode * GumboInterface::get_body_node()
+{
+    if (!m_source.isEmpty()) {
+        if (m_output == NULL) {
+            parse();
+        }
+    }
+    QList<GumboTag> tags = QList<GumboTag>() << GUMBO_TAG_BODY;
+    QList<GumboNode*> nodes = get_all_nodes_with_tags(tags);
+    if (nodes.count() == 0) {
+        return NULL;
+    }
+    return nodes.at(0);
+}
 
 QString GumboInterface::get_body_contents() 
 {
@@ -588,6 +652,39 @@ QList<GumboWellFormedError> GumboInterface::fragment_error_check()
     return errlist;
 }
 
+QList<GumboNode*> GumboInterface::get_nodes_with_comments(GumboNode * node)
+{
+    QList<GumboNode*> nodes;
+    if (node->type == GUMBO_NODE_COMMENT) {
+        nodes.append(node);
+        return nodes;
+    }
+    if (node->type != GUMBO_NODE_ELEMENT) {
+        return nodes;
+    }
+    GumboVector* children = &node->v.element.children;
+    for (unsigned int i = 0; i < children->length; ++i) {
+        nodes.append(get_nodes_with_comments(static_cast<GumboNode*>(children->data[i])));
+    }
+    return nodes;
+}
+
+QList<GumboNode*> GumboInterface::get_element_nodes_with_prefix(GumboNode * node, const std::string& prefix)
+{
+    QList<GumboNode*> nodes;
+    if (node->type != GUMBO_NODE_ELEMENT) {
+        return nodes;
+    }
+    std::string tag_name = get_tag_name(node);
+    if (tag_name.rfind(prefix, 0) == 0) {
+        nodes.append(node);
+    }
+    GumboVector* children = &node->v.element.children;
+    for (unsigned int i = 0; i < children->length; ++i) {
+        nodes.append(get_element_nodes_with_prefix(static_cast<GumboNode*>(children->data[i]), prefix));
+    }
+    return nodes;
+}
 
 QList<GumboNode*> GumboInterface::get_all_nodes_with_attribute(const QString& attname)
 {
@@ -604,19 +701,19 @@ QList<GumboNode*> GumboInterface::get_all_nodes_with_attribute(const QString& at
 
 QList<GumboNode*> GumboInterface::get_nodes_with_attribute(GumboNode* node, const char * attname)
 {
-  if (node->type != GUMBO_NODE_ELEMENT) {
-    return QList<GumboNode*>();
-  }
-  QList<GumboNode*> nodes;
-  GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, attname);
-  if (attr) {
-      nodes.append(node);
-  }
-  GumboVector* children = &node->v.element.children;
-  for (unsigned int i = 0; i < children->length; ++i) {
-      nodes.append(get_nodes_with_attribute(static_cast<GumboNode*>(children->data[i]), attname));
-  }
-  return nodes;
+    QList<GumboNode*> nodes;
+    if (node->type != GUMBO_NODE_ELEMENT) {
+        return nodes;
+    }
+    GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, attname);
+    if (attr) {
+        nodes.append(node);
+    }
+    GumboVector* children = &node->v.element.children;
+    for (unsigned int i = 0; i < children->length; ++i) {
+        nodes.append(get_nodes_with_attribute(static_cast<GumboNode*>(children->data[i]), attname));
+    }
+    return nodes;
 }
 
 
@@ -725,25 +822,25 @@ QList<GumboNode*> GumboInterface::get_all_nodes_with_tags(const QList<GumboTag> 
 
 QList<GumboNode*>  GumboInterface::get_nodes_with_tags(GumboNode* node, const QList<GumboTag> & tags) 
 {
-  if (node->type != GUMBO_NODE_ELEMENT) {
-    return QList<GumboNode*>();
-  }
-  QList<GumboNode*> nodes;
-  GumboTag tag = node ->v.element.tag;
-  if (tags.contains(tag)) {
-    nodes.append(node);
-  }
-  GumboVector* children = &node->v.element.children;
-  for (unsigned int i = 0; i < children->length; ++i) {
-    nodes.append(get_nodes_with_tags(static_cast<GumboNode*>(children->data[i]), tags));
-  }
-  return nodes;
+    QList<GumboNode*> nodes;
+    if (node->type != GUMBO_NODE_ELEMENT) {
+        return nodes;
+    }
+    GumboTag tag = node ->v.element.tag;
+    if (tags.contains(tag)) {
+        nodes.append(node);
+    }
+    GumboVector* children = &node->v.element.children;
+    for (unsigned int i = 0; i < children->length; ++i) {
+        nodes.append(get_nodes_with_tags(static_cast<GumboNode*>(children->data[i]), tags));
+    }
+    return nodes;
 }
 
 
 bool GumboInterface::in_set(std::unordered_set<std::string> &s, std::string &key)
 {
-  return s.find(key) != s.end();
+    return s.find(key) != s.end();
 }
 
 
