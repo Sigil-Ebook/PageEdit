@@ -1381,6 +1381,17 @@ bool MainWindow::MaybeSaveDialogSaysProceed()
     return true;
 }
 
+#if 0
+void MainWindow::ToggleSpellCheck()
+{
+    SettingsStore settings;
+    QWebEngineProfile *profile = m_WebView->page()->profile();
+    bool is_enabled = settings.spellCheck();
+    profile->setSpellCheckEnabled(!is_enabled);
+    settings.setSpellCheck(!is_enabled);
+}
+#endif
+
 void MainWindow::ExtendIconSizes()
 {
     QIcon icon;
@@ -1388,6 +1399,12 @@ void MainWindow::ExtendIconSizes()
     icon = ui.actionSave->icon();
     icon.addFile(QString::fromUtf8(":/icons/document-save_22px.png"));
     ui.actionSave->setIcon(icon);
+
+#if 0
+    icon = ui.actionSpellCheck->icon();
+    icon.addFile(QString::fromUtf8(":/icons/document-spellcheck_22px.png"));
+    ui.actionSpellCheck->setIcon(icon);
+#endif
 
     icon = ui.actionCut->icon();
     icon.addFile(QString::fromUtf8(":/icons/edit-cut_22px.png"));
@@ -1569,6 +1586,7 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionSaveAs,    SIGNAL(triggered()), this, SLOT(SaveAs()));
     connect(ui.actionExit,      SIGNAL(triggered()), this, SLOT(Exit()));
     connect(ui.actionPreferences, SIGNAL(triggered()), this, SLOT(PreferencesDialog()));
+    // connect(ui.actionSpellCheck, SIGNAL(triggered()), this, SLOT(ToggleSpellCheck()));
       
     // Edit Related
     connect(ui.actionUndo,      SIGNAL(triggered()),  this,   SLOT(Undo()));

@@ -53,6 +53,8 @@ public:
 
     QString uiDictionary();
 
+    // bool spellCheck();
+
     /**
      * The zoom factor used by the component.
      *
@@ -119,6 +121,8 @@ public slots:
     void setUILanguage(const QString &language_code);
 
     void setUIDictionary(const QString &dictionary_name);
+
+    // void setSpellCheck(bool enabled);
 
     /**
      * Set the zoom factor used by the component.

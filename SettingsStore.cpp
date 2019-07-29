@@ -33,6 +33,7 @@ static const float ZOOM_NORMAL = 1.0f;
 static QString SETTINGS_GROUP = "user_preferences";
 static QString KEY_UI_LANGUAGE = SETTINGS_GROUP + "/" + "ui_language";
 static QString KEY_UI_DICTIONARY = SETTINGS_GROUP + "/" + "ui_dictionary";
+static QString KEY_SPELL_CHECK = SETTINGS_GROUP + "/" + "spellcheck";
 static QString KEY_ZOOM_IMAGE = SETTINGS_GROUP + "/" + "zoom_image";
 static QString KEY_ZOOM_TEXT = SETTINGS_GROUP + "/" + "zoom_text";
 static QString KEY_ZOOM_WEB = SETTINGS_GROUP + "/" + "zoom_web";
@@ -76,6 +77,14 @@ QString SettingsStore::uiDictionary()
     clearSettingsGroup();
     return value(KEY_UI_DICTIONARY, "en_US").toString();
 }
+
+#if 0
+bool SettingsStore::spellCheck()
+{
+  clearSettingsGroup();
+  return static_cast<bool>(value(KEY_SPELL_CHECK, false).toBool());
+}
+#endif
 
 float SettingsStore::zoomImage()
 {
@@ -167,6 +176,14 @@ void SettingsStore::setUIDictionary(const QString &dictionary_name)
     clearSettingsGroup();
     setValue(KEY_UI_DICTIONARY, dictionary_name);
 }
+
+#if 0
+void SettingsStore::setSpellCheck(bool enabled)
+{
+  clearSettingsGroup();
+  setValue(KEY_SPELL_CHECK, enabled);
+}
+#endif
 
 void SettingsStore::setZoomImage(float zoom)
 {

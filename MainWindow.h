@@ -135,6 +135,7 @@ public slots:
     void DecreaseIndent();
     void IncreaseIndent();
     void UpdateActionState();
+    // void ToggleSpellCheck();
 
 signals:
     void Shown();

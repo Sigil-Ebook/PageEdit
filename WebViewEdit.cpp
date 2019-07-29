@@ -163,13 +163,10 @@ void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
         }
     }
     m_menu->addSeparator();
+
     m_menu->addAction(pageAction(QWebEnginePage::Cut));
     m_menu->addAction(pageAction(QWebEnginePage::Copy));
     m_menu->addAction(pageAction(QWebEnginePage::Paste));
-
-#if 0
-    QMenu menu = page()->createStandardContextMenu();
-#endif
 
     m_menu->addSeparator();
 
