@@ -956,8 +956,8 @@
 
   <action name="actionFind">
    <property name="icon">
-    <iconset resource="../Resource_Files/main/main.qrc">
-     <normaloff>:/main/edit-find_48px.png</normaloff>:/main/edit-find_48px.png</iconset>
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/edit-find_48px.png</normaloff>:/icons/edit-find_48px.png</iconset>
    </property>
    <property name="text">
     <string>Find</string>
