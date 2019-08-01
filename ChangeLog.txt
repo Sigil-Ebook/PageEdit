@@ -1,5 +1,19 @@
 Change Log
 ==========
+PageEdit-0.8.0
+  New Features
+     - add user preferences to control use of white-space:pre-wrap vs nbsp chars
+     - add user preferences to set spellchecking dictionary
+     - add SpellChecking capability for QWebEngine Dictionaries 
+            (.bdic modified version of Hunspell dcitionaries)
+     - add Find capability (no replace just as in BookView)
+     - allow cleanup after paste from  Word during Save using
+            environment variable:PAGEEDIT_ENABLE_WORD_PASTE_CLEANUP
+       Note: risky since it removes style tags that are in the body and all xhtml comments
+  Bug Fixes
+     - remove spurious newlines in injected user stylesheets and controls (Thanks BeckyDTP!)
+     - actually compare source to detect all changes
+
 
 PageEdit-0.7.1
    - minor updates
