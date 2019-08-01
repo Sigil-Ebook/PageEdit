@@ -805,7 +805,7 @@ void MainWindow::LoadSettings()
     web_settings->setAttribute(QWebEngineSettings::LocalContentCanAccessFileUrls, false);
     web_settings->setAttribute(QWebEngineSettings::PluginsEnabled, false);
     web_settings->setAttribute(QWebEngineSettings::AutoLoadIconsForPage, false);
-    web_settings->setAttribute(QWebEngineSettings::FocusOnNavigationEnabled, true);
+    web_settings->setAttribute(QWebEngineSettings::FocusOnNavigationEnabled, false);
     web_settings->setAttribute(QWebEngineSettings::AllowRunningInsecureContent, false);
     web_settings->setAttribute(QWebEngineSettings::XSSAuditingEnabled, true);
     web_settings->setAttribute(QWebEngineSettings::AllowGeolocationOnInsecureOrigins, false);
@@ -958,8 +958,10 @@ QString MainWindow::GetCleanHtml() {
     }
 
     // clean up leftovers from pasting from Word
-    // this should be eventually be controlled by a preference setting
-    if (true) {  
+    // This is a bit risky as it may remove valid but rare style tags inside the body tag
+    // So enable this only via an Environment Variable
+
+    if (qEnvironmentVariableIsSet("PAGEEDIT_ENABLE_WORD_PASTE_CLEANUP")) {  
 
         // remove any xhtml comments as these are often added by 
         // pasting of Word data
