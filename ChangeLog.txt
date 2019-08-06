@@ -13,7 +13,7 @@ PageEdit-0.8.0
   Bug Fixes
      - remove spurious newlines in injected user stylesheets and controls (Thanks BeckyDTP!)
      - actually compare source to detect all changes
-     - fox macOS specific bug that allowed multiple Dockwidget windows to become tabs
+     - fix macOS specific bug that allowed multiple Dockwidget windows to become tabs
 
 
 PageEdit-0.7.1
