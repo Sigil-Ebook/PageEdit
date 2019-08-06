@@ -126,44 +126,104 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
         <translation>Język interfejsu użytkownika:</translation>
     </message>
     <message>
-        <location filename="../PGeneralSettings.ui" line="70"/>
+        <location filename="../PGeneralSettings.ui" line="74"/>
+        <source>Select from installed spellcheck dictionaries.</source>
+        <translation>Wybierz z zainstalowanych słowników pisowni.</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="77"/>
+        <source>Spellcheck Dictionary:</source>
+        <translation>Słownik pisowni:</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
         <translation>Ustal, czy pliki HTML mają mieć dostęp do zdalnych zasobów, innych niż multimedialne.</translation>
     </message>
     <message>
-        <location filename="../PGeneralSettings.ui" line="73"/>
+        <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
         <translation>Kontrola dostępu plików HTML do zdalnych zasobów innych niż multimedialne.</translation>
     </message>
     <message>
-        <location filename="../PGeneralSettings.ui" line="82"/>
+        <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
         <translation>Zaznacz, by zezwolić plikom HTML na dostęp do zasobów zdalnych innych niż multimedialne.</translation>
     </message>
     <message>
-        <location filename="../PGeneralSettings.ui" line="85"/>
+        <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
         <translation>Pliki HTML mogą uzyskać dostęp do wszystkich typów zdalnych zasobów.</translation>
     </message>
     <message>
-        <location filename="../PGeneralSettings.ui" line="99"/>
+        <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
         <translation>Ustal, czy javascript może być używany w plikach HTML</translation>
     </message>
     <message>
-        <location filename="../PGeneralSettings.ui" line="102"/>
+        <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
         <translation>Kontrola używania javascriptu w plikach HTML.</translation>
     </message>
     <message>
-        <location filename="../PGeneralSettings.ui" line="111"/>
+        <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
         <translation>Zaznacz, by zezwolić plikom HTML na korzystanie z javascriptu.</translation>
     </message>
     <message>
-        <location filename="../PGeneralSettings.ui" line="114"/>
+        <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
         <translation>Pliki HTML mogą używać javascriptu.</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="204"/>
+        <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
+        <translation>Wybierz, w jaki sposób PageEdit ma kontrolować użycie wielokrotnych białych znaków podczas edycji.</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="207"/>
+        <source>Handle multiple white space layout using:</source>
+        <translation>Kontrola wielokrotnych białych znaków za pomocą:</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="213"/>
+        <source>Use CSS white-space: pre-wrap</source>
+        <translation>Użyj CSS white-space: pre-wrap</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="216"/>
+        <source>css white-space: pre-wrap</source>
+        <translation>css white-space: pre-wrap</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="226"/>
+        <source>Use non-breaking spaces as needed</source>
+        <translation>Użyj twardych spacji w razie potrzeby</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="229"/>
+        <source>non-breaking spaces as needed</source>
+        <translation>twardych spacji w razie potrzeby</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="257"/>
+        <source>Determine if Prettify is used when saving</source>
+        <translation>Ustal, czy upiększanie kodu ma być stosowane podczas zapisywania</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="260"/>
+        <source> Use Prettify to reformat the xhtml when saving.</source>
+        <translation>Upiększaj kod XHTML podczas zapisywania.</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="269"/>
+        <source>Check to reformat with Prettify when saving xhtml files.</source>
+        <translation>Zaznacz, aby upiększać kod XHTML podczas zapisywania plików.</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="272"/>
+        <source>Use Prettify to reformat xhtml when saving.</source>
+        <translation>Upiększaj kod XHTML podczas zapisywania.</translation>
     </message>
 </context>
 <context>
@@ -183,8 +243,10 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="714"/>
-        <location filename="../MainWindow.cpp" line="1307"/>
+        <location filename="../MainWindow.cpp" line="735"/>
+        <location filename="../MainWindow.cpp" line="1374"/>
+        <location filename="../MainWindow.cpp.keep" line="726"/>
+        <location filename="../MainWindow.cpp.keep" line="1337"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -200,688 +262,737 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
     </message>
     <message>
         <location filename="../main.ui" line="86"/>
+        <source>&amp;Find</source>
+        <translation>&amp;Szukaj</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="93"/>
         <source>&amp;Insert</source>
         <translation>&amp;Wstaw</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="97"/>
+        <location filename="../main.ui" line="104"/>
         <source>For&amp;mat</source>
         <translation>For&amp;matuj</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="102"/>
+        <location filename="../main.ui" line="109"/>
         <source>&amp;Heading</source>
         <translation>&amp;Nagłówek</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="135"/>
+        <location filename="../main.ui" line="142"/>
         <source>&amp;View</source>
         <translation>W&amp;idok</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="144"/>
+        <location filename="../main.ui" line="151"/>
         <source>Inspector</source>
         <translation>Sprawdź kod</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="159"/>
+        <location filename="../main.ui" line="167"/>
         <source>File</source>
         <translation>Plik</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="173"/>
+        <location filename="../main.ui" line="181"/>
         <source>Edit</source>
         <translation>Edytujące</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="191"/>
+        <location filename="../main.ui" line="199"/>
         <source>Insert</source>
         <translation>Wstaw</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="207"/>
+        <location filename="../main.ui" line="215"/>
         <source>Inspect</source>
         <translation>Sprawdź</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="220"/>
+        <location filename="../main.ui" line="228"/>
+        <location filename="../main.ui" line="963"/>
+        <source>Find</source>
+        <translation>Znajdź</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="241"/>
         <source>Heading</source>
         <translation>Nagłówek</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="234"/>
+        <location filename="../main.ui" line="255"/>
         <source>set Heading Level of Selected Text</source>
         <translation>Ustaw poziom nagłówka</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="248"/>
+        <location filename="../main.ui" line="269"/>
         <source>Format</source>
         <translation>Format</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="266"/>
+        <location filename="../main.ui" line="287"/>
         <source>Align</source>
         <translation>Wyrównanie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="282"/>
+        <location filename="../main.ui" line="303"/>
         <source>Indent</source>
         <translation>Wcięcie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="302"/>
+        <location filename="../main.ui" line="323"/>
         <source>&amp;Save</source>
         <translation>Zapi&amp;sz</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="305"/>
+        <location filename="../main.ui" line="326"/>
         <source>Save the current file.</source>
         <translation>Zapisz aktualny plik.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="308"/>
+        <location filename="../main.ui" line="329"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="314"/>
+        <location filename="../main.ui" line="335"/>
         <source>Save &amp;As...</source>
         <translation>Zapisz j&amp;ako...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="317"/>
+        <location filename="../main.ui" line="338"/>
         <source>Save the current file with a different filename.</source>
         <translation>Zapisz aktualny plik z inną nazwą.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="320"/>
+        <location filename="../main.ui" line="341"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="330"/>
+        <location filename="../main.ui" line="351"/>
         <source>Cu&amp;t</source>
         <translation>Wy&amp;tnij</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="333"/>
+        <location filename="../main.ui" line="354"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
         <translation>Wycina zaznaczony tekst z dokumentu i umieszcza go w schowku.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="343"/>
+        <location filename="../main.ui" line="364"/>
         <source>&amp;Paste</source>
         <translation>Wkle&amp;j</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="346"/>
+        <location filename="../main.ui" line="367"/>
         <source>Pastes the content from the clipboard into the file.</source>
         <translation>Wkleja zawartość schowka do pliku.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="356"/>
+        <location filename="../main.ui" line="377"/>
         <source>&amp;Undo</source>
         <translation>Cofn&amp;ij</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="359"/>
+        <location filename="../main.ui" line="380"/>
         <source>Reverts the changes of the previous operation.</source>
         <translation>Wycofuje zmiany wykonane przez poprzednią operację.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="362"/>
+        <location filename="../main.ui" line="383"/>
         <source>Ctrl+Z</source>
         <translation>Ctrl+Z</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="372"/>
+        <location filename="../main.ui" line="393"/>
         <source>&amp;Redo</source>
         <translation>Ponó&amp;w</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="375"/>
+        <location filename="../main.ui" line="396"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
         <translation>Ponawia zmiany wycofane akcją Cofnij.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="378"/>
+        <location filename="../main.ui" line="399"/>
         <source>Ctrl+Y</source>
         <translation>Ctrl+Y</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="388"/>
+        <location filename="../main.ui" line="409"/>
         <source>&amp;Copy</source>
         <translation>K&amp;opiuj</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="391"/>
+        <location filename="../main.ui" line="412"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
         <translation>Kopiuje zaznaczony tekst z dokumentu i umieszcza go w schowku.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="404"/>
+        <location filename="../main.ui" line="425"/>
         <source>Align &amp;Left</source>
         <translation>Wyrównaj do &amp;lewej</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="407"/>
+        <location filename="../main.ui" line="428"/>
         <source>Align the paragraph to the left.</source>
         <translation>Wyrównuje akapit do lewej strony.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="421"/>
+        <location filename="../main.ui" line="442"/>
         <source>Align &amp;Right</source>
         <translation>Wyrównaj do p&amp;rawej</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="424"/>
+        <location filename="../main.ui" line="445"/>
         <source>Align the paragraph to the right.</source>
         <translation>Wyrównuje akapit do prawej strony.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="437"/>
+        <location filename="../main.ui" line="458"/>
         <source>&amp;Center</source>
         <translation>&amp;Wyśrodkuj</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="440"/>
+        <location filename="../main.ui" line="461"/>
         <source>Center the paragraph.</source>
         <translation>Wyśrodkowuje akapit w poziomie.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="443"/>
+        <location filename="../main.ui" line="464"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="456"/>
+        <location filename="../main.ui" line="477"/>
         <source>&amp;Justify</source>
         <translation>Wy&amp;justuj</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="459"/>
+        <location filename="../main.ui" line="480"/>
         <source>Align the paragraph to both the left and right margins.</source>
         <translation>Wyrównuje akapit do lewego i prawego marginesu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="462"/>
+        <location filename="../main.ui" line="483"/>
         <source>Ctrl+J</source>
         <translation>Ctrl+J</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="475"/>
+        <location filename="../main.ui" line="496"/>
         <source>&amp;Bold</source>
         <translation>Pogru&amp;bienie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="478"/>
+        <location filename="../main.ui" line="499"/>
         <source>Make the selected text bold.</source>
         <translation>Pogrubia zaznaczony tekst.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="481"/>
+        <location filename="../main.ui" line="502"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="494"/>
+        <location filename="../main.ui" line="515"/>
         <source>&amp;Italic</source>
         <translation>Pochylen&amp;ie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="497"/>
+        <location filename="../main.ui" line="518"/>
         <source>Make the selected text italic.</source>
         <translation>Pochyla zaznaczony tekst.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="500"/>
+        <location filename="../main.ui" line="521"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="510"/>
+        <location filename="../main.ui" line="531"/>
         <source>&amp;Open...</source>
         <translation>&amp;Otwórz...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="513"/>
+        <location filename="../main.ui" line="534"/>
         <source>Open a file from disk.</source>
         <translation>Otwiera plik z dysku.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="516"/>
+        <location filename="../main.ui" line="537"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="530"/>
+        <location filename="../main.ui" line="551"/>
         <source>&amp;Underline</source>
         <translation>Podkreś&amp;lenie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="533"/>
+        <location filename="../main.ui" line="554"/>
         <source>Underline the selected text.</source>
         <translation>Podkreśla zaznaczony tekst.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="536"/>
+        <location filename="../main.ui" line="557"/>
         <source>Ctrl+U</source>
         <translation>Ctrl+U</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="546"/>
+        <location filename="../main.ui" line="567"/>
         <source>&amp;Quit</source>
         <translation>&amp;Zakończ</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="549"/>
+        <location filename="../main.ui" line="570"/>
         <source>Quit</source>
         <translation>Wyjście</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="552"/>
+        <location filename="../main.ui" line="573"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="562"/>
+        <location filename="../main.ui" line="583"/>
         <source>&amp;Special Character...</source>
         <translation>Znak &amp;specjalny...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="565"/>
+        <location filename="../main.ui" line="586"/>
         <source>Select a character to insert into your text.</source>
         <translation>Wybierz znak do wstawienia do tekstu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="578"/>
+        <location filename="../main.ui" line="599"/>
         <source>&amp;Numbered List</source>
         <translation>Lista &amp;numerowana</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="581"/>
+        <location filename="../main.ui" line="602"/>
         <source>Create a numbered list from selection.</source>
         <translation>Tworzy listę numerowaną.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="594"/>
+        <location filename="../main.ui" line="615"/>
         <source>Bulle&amp;ted List</source>
         <translation>Wypunk&amp;towanie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="597"/>
+        <location filename="../main.ui" line="618"/>
         <source>Create a bulleted list from selection.</source>
         <translation>Tworzy listę wypunktowaną.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="600"/>
+        <location filename="../main.ui" line="621"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="613"/>
+        <location filename="../main.ui" line="634"/>
         <source>Stri&amp;kethrough</source>
         <translation>Prze&amp;kreślenie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="616"/>
+        <location filename="../main.ui" line="637"/>
         <source>Draw a line through the selected text.</source>
         <translation>Przekreśla poziomą linią zaznaczony tekst.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="629"/>
+        <location filename="../main.ui" line="650"/>
         <source>&amp;Subscript</source>
         <translation>Indeks &amp;dolny</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="632"/>
+        <location filename="../main.ui" line="653"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
         <translation>Ustawia zaznaczony tekst jako indeks dolny normalnego tekstu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="645"/>
+        <location filename="../main.ui" line="666"/>
         <source>Su&amp;perscript</source>
         <translation>Indeks &amp;górny</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="648"/>
+        <location filename="../main.ui" line="669"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
         <translation>Ustawia zaznaczony tekst jako indeks górny normalnego tekstu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="659"/>
+        <location filename="../main.ui" line="680"/>
         <source>Zoom &amp;In</source>
         <translation>Pow&amp;iększ</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="662"/>
+        <location filename="../main.ui" line="683"/>
         <source>Zoom In</source>
         <translation>Powiększ</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="665"/>
+        <location filename="../main.ui" line="686"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="676"/>
+        <location filename="../main.ui" line="697"/>
         <source>Zoom &amp;Out</source>
         <translation>P&amp;omniejsz</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="679"/>
+        <location filename="../main.ui" line="700"/>
         <source>Zoom Out</source>
         <translation>Pomniejsz</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="682"/>
+        <location filename="../main.ui" line="703"/>
         <source>Ctrl+-</source>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="693"/>
+        <location filename="../main.ui" line="714"/>
         <source>Incre&amp;ase Indent</source>
         <translation>Zwię&amp;ksz wcięcie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="696"/>
+        <location filename="../main.ui" line="717"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>Zwiększa wcięcie akapitu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="699"/>
+        <location filename="../main.ui" line="720"/>
         <source>Ctrl+Alt+M</source>
         <translation>Ctrl+Alt+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="709"/>
+        <location filename="../main.ui" line="730"/>
         <source>&amp;Decrease Indent</source>
         <translation>Zmniejsz wc&amp;ięcie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="712"/>
+        <location filename="../main.ui" line="733"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>Zmniejsza wcięcie akapitu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="715"/>
+        <location filename="../main.ui" line="736"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="725"/>
+        <location filename="../main.ui" line="746"/>
         <source>Split &amp;Marker</source>
         <translation>Znacznik po&amp;działu</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="728"/>
+        <location filename="../main.ui" line="749"/>
         <source>Insert Sigil split file marker</source>
         <translation>Wstaw znacznik podziału</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="731"/>
+        <location filename="../main.ui" line="752"/>
         <source>Ctrl+Shift+Return</source>
         <translation>Ctrl+Shift+Enter</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="737"/>
+        <location filename="../main.ui" line="758"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Ustawienia...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="740"/>
+        <location filename="../main.ui" line="761"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="746"/>
+        <location filename="../main.ui" line="767"/>
         <source>&amp;Zoom Reset</source>
         <translation>Ro&amp;zmiar pierwotny</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="749"/>
+        <location filename="../main.ui" line="770"/>
         <source>Zoom Reset</source>
         <translation>Rozmiar pierwotny</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="752"/>
+        <location filename="../main.ui" line="773"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="765"/>
+        <location filename="../main.ui" line="786"/>
         <source>Heading &amp;1</source>
         <translation>Nagłówek &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="768"/>
+        <location filename="../main.ui" line="789"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation>Formatuje akapit jako nagłówek 1 poziomu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="771"/>
+        <location filename="../main.ui" line="792"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="784"/>
+        <location filename="../main.ui" line="805"/>
         <source>Heading &amp;2</source>
         <translation>Nagłówek &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="787"/>
+        <location filename="../main.ui" line="808"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation>Formatuje akapit jako nagłówek 2 poziomu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="790"/>
+        <location filename="../main.ui" line="811"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="803"/>
+        <location filename="../main.ui" line="824"/>
         <source>Heading &amp;3</source>
         <translation>Nagłówek &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="806"/>
+        <location filename="../main.ui" line="827"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation>Formatuje akapit jako nagłówek 3 poziomu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="809"/>
+        <location filename="../main.ui" line="830"/>
         <source>Ctrl+3</source>
         <translation>Ctrl+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="823"/>
+        <location filename="../main.ui" line="844"/>
         <source>Heading &amp;4</source>
         <translation>Nagłówek &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="826"/>
+        <location filename="../main.ui" line="847"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation>Formatuje akapit jako nagłówek 4 poziomu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="829"/>
+        <location filename="../main.ui" line="850"/>
         <source>Ctrl+4</source>
         <translation>Ctrl+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="842"/>
+        <location filename="../main.ui" line="863"/>
         <source>Heading &amp;5</source>
         <translation>Nagłówek &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="845"/>
+        <location filename="../main.ui" line="866"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation>Formatuje akapit jako nagłówek 5 poziomu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="848"/>
+        <location filename="../main.ui" line="869"/>
         <source>Ctrl+5</source>
         <translation>Ctrl+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="861"/>
+        <location filename="../main.ui" line="882"/>
         <source>Heading &amp;6</source>
         <translation>Nagłówek &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="864"/>
+        <location filename="../main.ui" line="885"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation>Formatuje akapit jako nagłówek 6 poziomu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="867"/>
+        <location filename="../main.ui" line="888"/>
         <source>Ctrl+6</source>
         <translation>Ctrl+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="881"/>
+        <location filename="../main.ui" line="902"/>
         <source>&amp;Normal</source>
         <translation>&amp;Normalny</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="884"/>
+        <location filename="../main.ui" line="905"/>
         <source>ormat paragraph as a normal paragraph.</source>
         <translation>Formatuje tekst jako normalny akapit.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="887"/>
+        <location filename="../main.ui" line="908"/>
         <source>Ctrl+7</source>
         <translation>Ctrl+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="897"/>
+        <location filename="../main.ui" line="918"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>Zachowa&amp;j istniejące atrybuty</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="900"/>
+        <location filename="../main.ui" line="921"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>Kiedy zastosujesz ten styl, zachowasz wszystkie istniejące atrybuty w tagu</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="910"/>
+        <location filename="../main.ui" line="931"/>
         <source>&amp;Select All</source>
         <translation>Zaznacz w&amp;szystko</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="913"/>
+        <location filename="../main.ui" line="934"/>
         <source>Select all text in the document.</source>
         <translation>Zaznacza cały tekst w dokumencie.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="916"/>
+        <location filename="../main.ui" line="937"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="926"/>
+        <location filename="../main.ui" line="947"/>
         <source>&amp;Inspector</source>
         <translation>&amp;Sprawdzanie</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="929"/>
+        <location filename="../main.ui" line="950"/>
         <source>Inspect the page.</source>
         <translation>Sprawdź stronę.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="932"/>
+        <location filename="../main.ui" line="953"/>
         <source>Ctrl+F5</source>
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="709"/>
+        <location filename="../main.ui" line="966"/>
+        <source>Find text in the page</source>
+        <translation>Znajdź tekst na stronie</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="969"/>
+        <source>Ctrl+F</source>
+        <translation>Ctrl+F</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="718"/>
+        <location filename="../MainWindow.cpp.keep" line="721"/>
         <source>PageEdit is closing...</source>
         <translation>Zamykanie programu PageEdit…</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="715"/>
+        <location filename="../MainWindow.cpp" line="736"/>
+        <location filename="../MainWindow.cpp.keep" line="727"/>
         <source>Do you want to save your changes before closing?</source>
         <translation>Czy chcesz zapisać wprowadzone zmiany przez zamknięciem?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="845"/>
-        <location filename="../MainWindow.cpp" line="846"/>
-        <location filename="../MainWindow.cpp" line="847"/>
-        <location filename="../MainWindow.cpp" line="856"/>
-        <location filename="../MainWindow.cpp" line="857"/>
-        <location filename="../MainWindow.cpp" line="858"/>
+        <location filename="../MainWindow.cpp" line="873"/>
+        <location filename="../MainWindow.cpp" line="874"/>
+        <location filename="../MainWindow.cpp" line="875"/>
+        <location filename="../MainWindow.cpp" line="884"/>
+        <location filename="../MainWindow.cpp" line="885"/>
+        <location filename="../MainWindow.cpp" line="886"/>
+        <location filename="../MainWindow.cpp.keep" line="864"/>
+        <location filename="../MainWindow.cpp.keep" line="865"/>
+        <location filename="../MainWindow.cpp.keep" line="866"/>
+        <location filename="../MainWindow.cpp.keep" line="875"/>
+        <location filename="../MainWindow.cpp.keep" line="876"/>
+        <location filename="../MainWindow.cpp.keep" line="877"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Pliki HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="848"/>
+        <location filename="../MainWindow.cpp" line="876"/>
+        <location filename="../MainWindow.cpp.keep" line="867"/>
         <source>Text files (*.txt)</source>
         <translation>Pliki tekstowe (*.txt)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="849"/>
+        <location filename="../MainWindow.cpp" line="877"/>
+        <location filename="../MainWindow.cpp.keep" line="868"/>
         <source>All files (*.*)</source>
         <translation>Wszystkie pliki (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1005"/>
+        <location filename="../MainWindow.cpp" line="1068"/>
+        <location filename="../MainWindow.cpp.keep" line="1024"/>
         <source>Save File</source>
         <translation>Zapisz plik</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1040"/>
-        <location filename="../MainWindow.cpp" line="1041"/>
-        <location filename="../MainWindow.cpp" line="1053"/>
-        <location filename="../MainWindow.cpp" line="1054"/>
+        <location filename="../MainWindow.cpp" line="1103"/>
+        <location filename="../MainWindow.cpp" line="1104"/>
+        <location filename="../MainWindow.cpp" line="1116"/>
+        <location filename="../MainWindow.cpp" line="1117"/>
+        <location filename="../MainWindow.cpp.keep" line="1059"/>
+        <location filename="../MainWindow.cpp.keep" line="1060"/>
+        <location filename="../MainWindow.cpp.keep" line="1072"/>
+        <location filename="../MainWindow.cpp.keep" line="1073"/>
         <source>File Save-As Failed!</source>
         <translation>Nie powiodło się zapisanie pod inną nazwą.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1040"/>
+        <location filename="../MainWindow.cpp" line="1103"/>
+        <location filename="../MainWindow.cpp.keep" line="1059"/>
         <source>is not writeable</source>
         <translation>jest niezapisywalny</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1049"/>
-        <location filename="../MainWindow.cpp" line="1079"/>
+        <location filename="../MainWindow.cpp" line="1112"/>
+        <location filename="../MainWindow.cpp" line="1142"/>
+        <location filename="../MainWindow.cpp.keep" line="1068"/>
+        <location filename="../MainWindow.cpp.keep" line="1098"/>
         <source>File Saved</source>
         <translation>Plik zapisany</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1070"/>
-        <location filename="../MainWindow.cpp" line="1072"/>
-        <location filename="../MainWindow.cpp" line="1083"/>
-        <location filename="../MainWindow.cpp" line="1084"/>
+        <location filename="../MainWindow.cpp" line="1133"/>
+        <location filename="../MainWindow.cpp" line="1135"/>
+        <location filename="../MainWindow.cpp" line="1146"/>
+        <location filename="../MainWindow.cpp" line="1147"/>
+        <location filename="../MainWindow.cpp.keep" line="1089"/>
+        <location filename="../MainWindow.cpp.keep" line="1091"/>
+        <location filename="../MainWindow.cpp.keep" line="1102"/>
+        <location filename="../MainWindow.cpp.keep" line="1103"/>
         <source>File Save Failed!</source>
         <translation>Nie powiodło się zapisanie pliku!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1071"/>
+        <location filename="../MainWindow.cpp" line="1134"/>
+        <location filename="../MainWindow.cpp.keep" line="1090"/>
         <source>does not exist or is not writeable</source>
         <translation>nie istnieje lub jest niezapisywalny</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1128"/>
+        <location filename="../MainWindow.cpp" line="1191"/>
+        <location filename="../MainWindow.cpp.keep" line="1147"/>
         <source>File Opened</source>
         <translation>Plik załadowano</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1133"/>
+        <location filename="../MainWindow.cpp" line="1195"/>
+        <location filename="../MainWindow.cpp.keep" line="1152"/>
         <source>File Open Failed!</source>
         <translation>Nie udało się załadować pliku!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1156"/>
+        <location filename="../MainWindow.cpp" line="1218"/>
+        <location filename="../MainWindow.cpp.keep" line="1175"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Schowek zawiera formatowany HTML</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1157"/>
+        <location filename="../MainWindow.cpp" line="1219"/>
+        <location filename="../MainWindow.cpp.keep" line="1176"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Czy chcesz wkleić dane ze schowka jako zwykły tekst?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1308"/>
+        <location filename="../MainWindow.cpp" line="1375"/>
+        <location filename="../MainWindow.cpp.keep" line="1338"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Czy chcesz zapisać wprowadzone zmiany przed napisaniem tego pliku?</translation>
     </message>
@@ -930,6 +1041,29 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
     </message>
 </context>
 <context>
+    <name>SearchToolbar</name>
+    <message>
+        <location filename="../SearchToolbar.ui" line="36"/>
+        <source>Search: </source>
+        <translation>Znajdź:</translation>
+    </message>
+    <message>
+        <location filename="../SearchToolbar.ui" line="55"/>
+        <source>Search...</source>
+        <translation>Szukaj...</translation>
+    </message>
+    <message>
+        <location filename="../SearchToolbar.ui" line="88"/>
+        <source>&amp;Match Case</source>
+        <translation>&amp;Uwzględnij wielkość liter</translation>
+    </message>
+    <message>
+        <location filename="../SearchToolbar.cpp" line="140"/>
+        <source>No results found.</source>
+        <translation>Brak wyników.</translation>
+    </message>
+</context>
+<context>
     <name>SelectCharacter</name>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
@@ -952,6 +1086,24 @@ Continue using the requested filename?</source>
         <translation>Żądana nazwa pliku zawiera znaki spoza zestawu ASCII. Należy używać tylko znaków ASCII w nazwach plików. Używanie znaków spoza ASCII może powodować problemy z odczytem plików EPUB na niektórych czytnikach.
 
 Czy kontynuować przy użyciu żądanej nazwy pliku?</translation>
+    </message>
+</context>
+<context>
+    <name>WebViewEdit</name>
+    <message>
+        <location filename="../WebViewEdit.cpp" line="162"/>
+        <source>No suggestions</source>
+        <translation>Brak sugestii</translation>
+    </message>
+    <message>
+        <location filename="../WebViewEdit.cpp" line="173"/>
+        <source>Check Spelling</source>
+        <translation>Sprawdź pisownię</translation>
+    </message>
+    <message>
+        <location filename="../WebViewEdit.cpp" line="182"/>
+        <source>Select Language</source>
+        <translation>Wybierz język</translation>
     </message>
 </context>
 </TS>
