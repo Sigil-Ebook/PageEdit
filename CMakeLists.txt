@@ -131,6 +131,14 @@ set( RESOURCE_FILES
     javascript/javascript.qrc
     )
 
+if (APPLE)
+    LIST(APPEND SOURCE_FILES
+        macos_menu_and_window_fixes.mm
+    )
+
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -framework AppKit")
+endif()
+
 file( GLOB TS_FILES ts/pageedit_*.ts )
 
 set( DICTIONARY_FILES

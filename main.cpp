@@ -35,6 +35,8 @@
 # include <QFileDialog>
 # include <QKeySequence>
 # include <QAction>
+extern void disableWindowTabbing();
+extern void removeMacosSpecificMenuItems();
 #endif
 
 #include "MainWindow.h"
@@ -117,6 +119,11 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
     QApplication app(argc, argv);
+
+#ifdef Q_OS_MAC
+    disableWindowTabbing();
+    removeMacosSpecificMenuItems();
+#endif
 
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("utf8"));
 
