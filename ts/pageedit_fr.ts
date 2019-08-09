@@ -128,12 +128,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation type="unfinished"/>
+        <translation>Sélectionner des dictionnaires d&apos;orthographe installés</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation type="unfinished"/>
+        <translation>Dictionnaire de vérification d&apos;orthographe</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
@@ -434,7 +434,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="425"/>
         <source>Align &amp;Left</source>
-        <translation>Aligner à &amp;droite</translation>
+        <translation>Aligner à &amp;gauche</translation>
     </message>
     <message>
         <location filename="../main.ui" line="428"/>
@@ -444,7 +444,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="442"/>
         <source>Align &amp;Right</source>
-        <translation>Aligner à &amp;gauche</translation>
+        <translation>Aligner à &amp;droite</translation>
     </message>
     <message>
         <location filename="../main.ui" line="445"/>

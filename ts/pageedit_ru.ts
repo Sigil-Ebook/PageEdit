@@ -729,7 +729,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="789"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Форматировать абзац как Заголовок1.</translation>
+        <translation>Форматировать абзац как Заголовок 1.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="792"/>
@@ -744,7 +744,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="808"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Форматировать абзац как Заголовок2.</translation>
+        <translation>Форматировать абзац как Заголовок 2.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="811"/>
@@ -759,7 +759,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="827"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Форматировать абзац как Заголовок3.</translation>
+        <translation>Форматировать абзац как Заголовок 3.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="830"/>
@@ -774,7 +774,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="847"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Форматировать абзац как Заголовок4.</translation>
+        <translation>Форматировать абзац как Заголовок 4.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="850"/>
@@ -789,7 +789,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="866"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Форматировать абзац как Заголовок5.</translation>
+        <translation>Форматировать абзац как Заголовок 5.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="869"/>
@@ -804,7 +804,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="885"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Форматировать абзац как Заголовок6.</translation>
+        <translation>Форматировать абзац как Заголовок 6.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="888"/>
@@ -1032,7 +1032,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Utility.cpp" line="476"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>Ошибка при редактировании страницы.</translation>
+        <translation>PageEdit столкнулся с проблемой.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="477"/>
