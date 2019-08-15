@@ -37,6 +37,11 @@ QString AppEventFilter::getInitialFilePath()
     return m_initialFilePath;
 }
 
+void AppEventFilter::setInitialFilePath(const QString& filepath)
+{
+    m_initialFilePath = filepath;
+}
+
 // The event filter used to catch OS X's
 // QFileOpenEvents. These signal the user used the OS's
 // services to start Sigil with an existing document

@@ -125,6 +125,11 @@ int main(int argc, char *argv[])
     removeMacosSpecificMenuItems();
 #endif
 
+    // Install an event filter for the application
+    // so we can catch OS X's file open events
+    AppEventFilter *filter = new AppEventFilter(&app);
+    app.installEventFilter(filter);
+
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("utf8"));
 
     // set up for translations
@@ -186,11 +191,6 @@ int main(int argc, char *argv[])
 #endif
 #endif
 
-    // Install an event filter for the application
-    // so we can catch OS X's file open events
-    AppEventFilter *filter = new AppEventFilter(&app);
-    app.installEventFilter(filter);
-
     QStringList arguments = QCoreApplication::arguments();
 
 #ifdef Q_OS_MAC
@@ -204,6 +204,8 @@ int main(int argc, char *argv[])
     if ((arguments.size() == 1) && !filepath.isEmpty()) {
       arguments << QFileInfo(filepath).absoluteFilePath();
     }
+
+    if (filepath.isEmpty()) filter->setInitialFilePath(QString("placeholder"));
 
     // Work around QTBUG-62193 and QTBUG-65245 and others where menubar
     // menu items are lost under File and PageEdit menus and where
