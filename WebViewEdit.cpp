@@ -98,7 +98,7 @@ WebViewEdit::WebViewEdit(QWidget *parent)
       c_GetBlock(Utility::ReadUnicodeTextFile(":/javascript/get_block.js")),
       c_FormatBlock(Utility::ReadUnicodeTextFile(":/javascript/format_block.js")),
       m_CaretLocationUpdate(QString()),
-      m_pendingLoadCount(0),
+      m_CustomSetDocumentInProgress(false),
       m_pendingScrollToFragment(QString()),
       m_isLoadFinished(false),
       m_LoadOkay(false),
@@ -214,11 +214,12 @@ QSize WebViewEdit::sizeHint() const
 
 void WebViewEdit::CustomSetDocument(const QString &path, const QString &html)
 {
-    m_pendingLoadCount += 1;
 
     if (html.isEmpty()) {
         return;
     }
+
+    m_CustomSetDocumentInProgress = true;
 
     // If this is not the very first load of this document, store the caret location
     if (!url().isEmpty()) {
@@ -326,6 +327,15 @@ void WebViewEdit::LoadingStarted()
     m_LoadOkay = false;
 }
 
+void WebViewEdit::LoadingProgress(int progress)
+{
+    DBG qDebug() << "Loading progress " << progress;
+    if ((progress >= 100) && !m_CustomSetDocumentInProgress) {
+        m_isLoadFinished = true;
+        m_LoadOkay = true;
+    }
+}
+
 void WebViewEdit::UpdateFinishedState(bool okay)
 {
     // AAArrrrggggggghhhhhhhh - Qt 5.12.2 has a bug that returns 
@@ -334,7 +344,8 @@ void WebViewEdit::UpdateFinishedState(bool okay)
     // even when there are no apparent errors!
 
     DBG qDebug() << "UpdateFinishedState with okay " << okay;
-    m_isLoadFinished = true;
+    // Wait until after jQuery load to set this
+    // m_isLoadFinished = true;
     m_LoadOkay = okay;
     emit DocumentLoaded();
 }
@@ -468,15 +479,16 @@ void WebViewEdit::WebPageJavascriptOnLoad()
     page()->runJavaScript(c_jQuery, QWebEngineScript::ApplicationWorld);
     page()->runJavaScript(c_jQueryScrollTo, QWebEngineScript::ApplicationWorld);
     page()->runJavaScript("document.documentElement.contentEditable = true", QWebEngineScript::ApplicationWorld);
-    m_pendingLoadCount -= 1;
+    m_isLoadFinished = true;
 
-    if (m_pendingLoadCount == 0) {
+    if (m_CustomSetDocumentInProgress) {
         if (!m_pendingScrollToFragment.isEmpty()) {
             ScrollToFragment(m_pendingScrollToFragment);
             m_pendingScrollToFragment.clear();
         } else {
             executeCaretUpdateInternal();
         }
+        m_CustomSetDocumentInProgress = false;
     }
 }
 
@@ -577,12 +589,6 @@ QString WebViewEdit::GetElementSelectingJS_WithTextNode(const QList<ElementIndex
 
 bool WebViewEdit::ExecuteCaretUpdate()
 {
-    // Currently certain actions in PageEdit result in a document being loaded multiple times
-    // in response to the signals. Only proceed with moving the caret if all loads are finished.
-    if (m_pendingLoadCount > 0) {
-        return false;
-    }
-
     // If there is no caret location update pending...
     if (m_CaretLocationUpdate.isEmpty()) {
         return false;
@@ -612,5 +618,6 @@ void WebViewEdit::ConnectSignalsToSlots()
     connect(page(), SIGNAL(loadFinished(bool)), this, SLOT(UpdateFinishedState(bool)));
     connect(page(), SIGNAL(loadFinished(bool)), this, SLOT(WebPageJavascriptOnLoad()));
     connect(page(), SIGNAL(loadStarted()), this, SLOT(LoadingStarted()));
+    connect(page(), SIGNAL(loadProgress(int)), this, SLOT(LoadingProgress(int)));
     connect(page(), SIGNAL(LinkClicked(const QUrl &)), this, SIGNAL(LinkClicked(const QUrl &)));
 }

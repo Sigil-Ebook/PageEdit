@@ -156,6 +156,7 @@ protected slots:
 
     void UpdateFinishedState(bool okay);
     void LoadingStarted();
+    void LoadingProgress(int progress);
 
 protected:
 
@@ -240,7 +241,7 @@ private:
      */
     QString m_CaretLocationUpdate;
 
-    int m_pendingLoadCount;
+    bool  m_CustomSetDocumentInProgress;
     QString m_pendingScrollToFragment;
 
     bool m_isLoadFinished;
