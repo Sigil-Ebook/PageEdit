@@ -159,6 +159,9 @@ public:
     static QString stdWStringToQString(const std::wstring &str);
 #endif
 
+    static QString longestCommonPath(const QStringList& filepaths, const QString& sep);
+    static QString resolveRelativeSegmentsInFilePath(const QString& file_path, const QString &sep);
+
 };
 
 #endif // UTILITY_H

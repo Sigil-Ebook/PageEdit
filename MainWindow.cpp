@@ -55,6 +55,7 @@
 #include "Preferences.h"
 #include "GumboInterface.h"
 #include "SearchToolbar.h"
+#include "OPFReader.h"
 
 
 static const QString SETTINGS_GROUP = "mainwindow";
@@ -94,14 +95,17 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_LastFolderOpen(QString()),
     m_using_wsprewrap(false),
     m_search(NULL),
-    m_layout(NULL)
+    m_layout(NULL),
+    m_SpineList(QStringList()),
+    m_Base(QString()),
+    m_ListPtr(-1)
 {
     ui.setupUi(this);
     SetupView();
     LoadSettings();
     ConnectSignalsToSlots();
-    QFileInfo fi(filepath);
-    m_CurrentFilePath=fi.absoluteFilePath();
+    SetupFileList(filepath);
+    SetupNavigationComboBox();
     QTimer::singleShot(200, this, SLOT(DoUpdatePage()));
 }
 
@@ -122,6 +126,73 @@ MainWindow::~MainWindow()
     }
 }
 
+// Navigation related routines
+
+// initializes m_Base, m_SpineList, m_ListPtr, and m_CurrentFilePath 
+void MainWindow::SetupFileList(const QString &filepath)
+{
+    m_CurrentFilePath = "";
+    if (filepath.isEmpty()) return;
+    QFileInfo fi(filepath);
+    if (!fi.exists() || !fi.isReadable()) return;   
+    if (fi.suffix() == "opf") {
+        OPFReader opfrdr;
+        opfrdr.parseOPF(fi.canonicalFilePath());
+        QStringList spine_files = opfrdr.GetSpineFilePathList();
+        m_Base = Utility::longestCommonPath(spine_files, "/");
+        foreach(QString sf, spine_files) {
+	    m_SpineList << sf.right(sf.length()-m_Base.length());
+        }
+    } else {
+        m_Base = fi.canonicalPath();
+        m_SpineList << fi.fileName();
+    }
+    m_ListPtr = 0;
+    m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+}
+
+void MainWindow::SetupNavigationComboBox()
+{
+    ui.cbNavigate->clear();
+    ui.cbNavigate->addItems(m_SpineList);
+    ui.cbNavigate->setCurrentIndex(m_ListPtr);
+}
+
+void MainWindow::CBNavigateActivated(int index)
+{
+    if ((index > -1) && (index != m_ListPtr)) { 
+        AllowSaveIfModified();
+        m_ListPtr = index;
+        m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+        UpdatePage(m_CurrentFilePath);
+    }
+}
+
+void MainWindow::EditNext()
+{
+    int n = m_SpineList.length();
+    if (n > 1) {
+        AllowSaveIfModified();
+        m_ListPtr++;
+        if (m_ListPtr >= n) m_ListPtr = 0;
+	m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+	ui.cbNavigate->setCurrentIndex(m_ListPtr);
+	UpdatePage(m_CurrentFilePath);
+    }
+}
+
+void MainWindow::EditPrev()
+{
+    int n = m_SpineList.length();
+    if (n > 1) {
+        AllowSaveIfModified();
+        m_ListPtr--;
+        if (m_ListPtr < 0) m_ListPtr = n - 1;
+	m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+	ui.cbNavigate->setCurrentIndex(m_ListPtr);
+	UpdatePage(m_CurrentFilePath);
+    }
+}
 
 // Zoom Support Related Routines
 
@@ -713,12 +784,10 @@ void MainWindow::ReloadPreview()
     emit RequestPreviewReload();
 }
 
-void MainWindow::closeEvent(QCloseEvent *event)
+void MainWindow::AllowSaveIfModified() 
 {
-    ShowMessageOnStatusBar(tr("PageEdit is closing..."));
-    SaveSettings();
-
-    // see if the page source has been modified since it was loaded or saved
+    // if the page source has been modified since it was loaded or saved
+    // allow opportunity to save it
     QString source = m_WebView->GetHtml();
     bool modified = false;
     if (!m_source.isEmpty()) {
@@ -728,12 +797,11 @@ void MainWindow::closeEvent(QCloseEvent *event)
 	    modified = true;
 	}
     }
-
     if (modified) {
         QMessageBox::StandardButton button_pressed;
         button_pressed = QMessageBox::warning(this,
 					      tr("PageEdit"),
-					      tr("Do you want to save your changes before closing?"),
+					      tr("Do you want to save your changes before leaving?"),
 					      QMessageBox::Save | QMessageBox::Discard
 					     );
         if (button_pressed == QMessageBox::Save) {
@@ -745,6 +813,14 @@ void MainWindow::closeEvent(QCloseEvent *event)
 	    }
         }
     }
+}
+
+
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    ShowMessageOnStatusBar(tr("PageEdit is closing..."));
+    SaveSettings();
+    AllowSaveIfModified();
     event->accept();
 }
 
@@ -873,6 +949,7 @@ const QMap<QString, QString> MainWindow::GetLoadFiltersMap()
     file_filters[ "htm"   ] = tr("HTML files (*.htm *.html *.xhtml)");
     file_filters[ "html"  ] = tr("HTML files (*.htm *.html *.xhtml)");
     file_filters[ "xhtml" ] = tr("HTML files (*.htm *.html *.xhtml)");
+    file_filters[ "opf"   ] = tr("OPF files (*.opf)");    
     file_filters[ "txt"   ] = tr("Text files (*.txt)");
     file_filters[ "*"     ] = tr("All files (*.*)");
     return file_filters;
@@ -1178,15 +1255,19 @@ void MainWindow::Open()
                            &default_filter);
 
         if (!filename.isEmpty()) {
+
             QFileInfo fi(filename);
             if (fi.exists() && fi.isReadable()) {
-
 #ifdef Q_OS_MAC
 	        MainWindow * new_window = new MainWindow(filename);
 	        new_window->show();
 		return;
 #else
-    	        m_CurrentFilePath = filename;
+		m_ListPtr = -1;
+		m_SpineList.clear();
+		m_Base = QString();
+		SetUpFileList(filename);
+		SetupNavigationComboBox();
     	        UpdatePage(m_CurrentFilePath);
                 ShowMessageOnStatusBar(tr("File Opened"));
 	        return;
@@ -1408,6 +1489,14 @@ void MainWindow::ExtendIconSizes()
     ui.actionSpellCheck->setIcon(icon);
 #endif
 
+    icon = ui.actionNext->icon();
+    icon.addFile(QString::fromUtf8(":/icons/arrow-right_22px.png"));
+    ui.actionNext->setIcon(icon);
+
+    icon = ui.actionPrev->icon();
+    icon.addFile(QString::fromUtf8(":/icons/arrow-left_22px.png"));
+    ui.actionPrev->setIcon(icon);
+
     icon = ui.actionCut->icon();
     icon.addFile(QString::fromUtf8(":/icons/edit-cut_22px.png"));
     ui.actionCut->setIcon(icon);
@@ -1556,38 +1645,51 @@ void MainWindow::ExtendIconSizes()
 
 void MainWindow::ConnectSignalsToSlots()
 {
-    connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)), this, SLOT(UpdateZoomLabel(float)));
-    connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)), this, SLOT(UpdateZoomSlider(float)));
+    connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)),  this, SLOT(UpdateZoomLabel(float)));
+    connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)),  this, SLOT(UpdateZoomSlider(float)));
     connect(m_WebView,   SIGNAL(LinkClicked(const QUrl &)), this, SLOT(LinkClicked(const QUrl &)));
-    connect(m_WebView,   SIGNAL(selectionChanged()), this, SLOT(SelectionChanged()));
+    connect(m_WebView,   SIGNAL(selectionChanged()),        this, SLOT(SelectionChanged()));
 
-    connect(ui.actionInspect, SIGNAL(triggered()),     this, SLOT(InspectPreviewPage()));
-    connect(m_SelectCharacter, SIGNAL(SelectedCharacter(const QString &)), this, SLOT(PasteText(const QString &)));
+    connect(ui.actionInspect,   SIGNAL(triggered()),                       this, SLOT(InspectPreviewPage()));
+    connect(m_SelectCharacter,  SIGNAL(SelectedCharacter(const QString&)), this, SLOT(PasteText(const QString &)));
 
     // Headings Related
     connect(ui.actionHeading1, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeading1, "1");
+
     connect(ui.actionHeading2, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeading2, "2");
+
     connect(ui.actionHeading3, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeading3, "3");
+
     connect(ui.actionHeading4, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeading4, "4");
+
     connect(ui.actionHeading5, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeading5, "5");
+
     connect(ui.actionHeading6, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeading6, "6");
+
     connect(ui.actionHeadingNormal, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeadingNormal, "Normal");
+
     connect(m_headingMapper, SIGNAL(mapped(const QString &)), this, SLOT(ApplyHeadingToSelection(const QString &)));
-    connect(ui.actionHeadingPreserveAttributes, SIGNAL(triggered(bool)), this, SLOT(SetPreserveHeadingAttributes(bool)));
+
+    connect(ui.actionHeadingPreserveAttributes,SIGNAL(triggered(bool)),this,SLOT(SetPreserveHeadingAttributes(bool)));
+
+    // Navigation Related
+    connect(ui.actionPrev,  SIGNAL(triggered()),    this, SLOT(EditPrev()));
+    connect(ui.actionNext,  SIGNAL(triggered()),    this, SLOT(EditNext()));
+    connect(ui.cbNavigate,  SIGNAL(activated(int)), this, SLOT(CBNavigateActivated(int)));
 
     // File Related
-    connect(ui.actionOpen,      SIGNAL(triggered()), this, SLOT(Open()));
-    connect(ui.actionSave,      SIGNAL(triggered()), this, SLOT(Save()));
-    connect(ui.actionSaveAs,    SIGNAL(triggered()), this, SLOT(SaveAs()));
-    connect(ui.actionExit,      SIGNAL(triggered()), this, SLOT(Exit()));
-    connect(ui.actionPreferences, SIGNAL(triggered()), this, SLOT(PreferencesDialog()));
+    connect(ui.actionOpen,         SIGNAL(triggered()), this, SLOT(Open()));
+    connect(ui.actionSave,         SIGNAL(triggered()), this, SLOT(Save()));
+    connect(ui.actionSaveAs,       SIGNAL(triggered()), this, SLOT(SaveAs()));
+    connect(ui.actionExit,         SIGNAL(triggered()), this, SLOT(Exit()));
+    connect(ui.actionPreferences,  SIGNAL(triggered()), this, SLOT(PreferencesDialog()));
     // connect(ui.actionSpellCheck, SIGNAL(triggered()), this, SLOT(ToggleSpellCheck()));
       
     // Edit Related
@@ -1608,23 +1710,23 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionInsertNumberedList,       SIGNAL(triggered()),  this,   SLOT(InsertNumberedList()));
 
     // Format Related
-    connect(ui.actionBold,                     SIGNAL(triggered()),  this,   SLOT(Bold()));
-    connect(ui.actionItalic,                   SIGNAL(triggered()),  this,   SLOT(Italic()));
-    connect(ui.actionUnderline,                SIGNAL(triggered()),  this,   SLOT(Underline()));
-    connect(ui.actionStrikethrough,            SIGNAL(triggered()),  this,   SLOT(Strikethrough()));
-    connect(ui.actionSubscript,                SIGNAL(triggered()),  this,   SLOT(Subscript()));
-    connect(ui.actionSuperscript,              SIGNAL(triggered()),  this,   SLOT(Superscript()));
-    connect(ui.actionAlignLeft,                SIGNAL(triggered()),  this,   SLOT(AlignLeft()));
-    connect(ui.actionAlignCenter,              SIGNAL(triggered()),  this,   SLOT(AlignCenter()));
-    connect(ui.actionAlignRight,               SIGNAL(triggered()),  this,   SLOT(AlignRight()));
-    connect(ui.actionAlignJustify,             SIGNAL(triggered()),  this,   SLOT(AlignJustify()));
-    connect(ui.actionDecreaseIndent,           SIGNAL(triggered()),  this,   SLOT(DecreaseIndent()));
-    connect(ui.actionIncreaseIndent,           SIGNAL(triggered()),  this,   SLOT(IncreaseIndent()));
+    connect(ui.actionBold,            SIGNAL(triggered()),  this,   SLOT(Bold()));
+    connect(ui.actionItalic,          SIGNAL(triggered()),  this,   SLOT(Italic()));
+    connect(ui.actionUnderline,       SIGNAL(triggered()),  this,   SLOT(Underline()));
+    connect(ui.actionStrikethrough,   SIGNAL(triggered()),  this,   SLOT(Strikethrough()));
+    connect(ui.actionSubscript,       SIGNAL(triggered()),  this,   SLOT(Subscript()));
+    connect(ui.actionSuperscript,     SIGNAL(triggered()),  this,   SLOT(Superscript()));
+    connect(ui.actionAlignLeft,       SIGNAL(triggered()),  this,   SLOT(AlignLeft()));
+    connect(ui.actionAlignCenter,     SIGNAL(triggered()),  this,   SLOT(AlignCenter()));
+    connect(ui.actionAlignRight,      SIGNAL(triggered()),  this,   SLOT(AlignRight()));
+    connect(ui.actionAlignJustify,    SIGNAL(triggered()),  this,   SLOT(AlignJustify()));
+    connect(ui.actionDecreaseIndent,  SIGNAL(triggered()),  this,   SLOT(DecreaseIndent()));
+    connect(ui.actionIncreaseIndent,  SIGNAL(triggered()),  this,   SLOT(IncreaseIndent()));
 
     // View/Zoom Related
-    connect(ui.actionZoomIn,        SIGNAL(triggered()), this, SLOT(ZoomIn()));
-    connect(ui.actionZoomOut,       SIGNAL(triggered()), this, SLOT(ZoomOut()));
-    connect(ui.actionZoomReset,     SIGNAL(triggered()), this, SLOT(ZoomReset()));
-    connect(m_slZoomSlider,         SIGNAL(valueChanged(int)), this, SLOT(SliderZoom(int)));
-    connect(m_slZoomSlider,         SIGNAL(sliderMoved(int)),  this, SLOT(UpdateZoomLabel(int)));
+    connect(ui.actionZoomIn,     SIGNAL(triggered()),       this, SLOT(ZoomIn()));
+    connect(ui.actionZoomOut,    SIGNAL(triggered()),       this, SLOT(ZoomOut()));
+    connect(ui.actionZoomReset,  SIGNAL(triggered()),       this, SLOT(ZoomReset()));
+    connect(m_slZoomSlider,      SIGNAL(valueChanged(int)), this, SLOT(SliderZoom(int)));
+    connect(m_slZoomSlider,      SIGNAL(sliderMoved(int)),  this, SLOT(UpdateZoomLabel(int)));
 }

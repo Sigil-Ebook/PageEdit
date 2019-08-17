@@ -95,9 +95,13 @@ public slots:
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
     void OpenUrl(const QUrl &url);
 
+    // Navigation Slots
+    void EditNext();
+    void EditPrev();
+    void CBNavigateActivated(int index);
+
     static const QMap<QString, QString> GetLoadFiltersMap();
     static const QMap<QString, QString> GetSaveFiltersMap();
-
 
     // GUI slots
     void sizeMenuIcons();
@@ -162,8 +166,11 @@ protected:
 
 private:
     void SetupView();
+    void SetupFileList(const QString& filepath);
+    void SetupNavigationComboBox();
     void LoadSettings();
     void SaveSettings();
+    void AllowSaveIfModified();
     void ConnectSignalsToSlots();
 
     WebViewEdit *m_WebView;
@@ -188,6 +195,10 @@ private:
     SearchToolbar * m_search;
     QVBoxLayout * m_layout;
     QString m_source;
+
+    QStringList m_SpineList;
+    QString m_Base;
+    int m_ListPtr;
     Ui::MainWindow ui;
 };
 

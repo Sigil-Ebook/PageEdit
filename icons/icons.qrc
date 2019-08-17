@@ -5,6 +5,10 @@
         <file>app_icon_128.png</file>
         <file>app_icon_256.png</file>
         <file>app_icon_512.png</file>
+	<file>arrow-left_22px.png</file>
+	<file>arrow-left_48px.png</file>
+	<file>arrow-right_22px.png</file>
+	<file>arrow-right_48px.png</file>
         <file>document-open_22px.png</file>
         <file>document-open_48px.png</file>
         <file>document-save_22px.png</file>

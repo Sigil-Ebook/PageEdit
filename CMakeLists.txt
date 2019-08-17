@@ -90,6 +90,7 @@ set( SOURCE_FILES
     SearchToolbar.cpp
     Utility.cpp
     GumboInterface.cpp
+    OPFReader.cpp
     )
 
 set( HEADER_FILES
@@ -115,6 +116,7 @@ set( HEADER_FILES
     SearchToolbar.h
     Utility.h
     GumboInterface.h
+    OPFReader.h
     )
 
 set( FORM_FILES

@@ -20,6 +20,7 @@
 				<string>xhtml</string>
 				<string>html</string>
 				<string>htm</string>
+				<string>opf</string>
 			</array>
                         <key>CFBundleTypeRole</key>
                         <string>Editor</string>
@@ -28,12 +29,14 @@
 			<key>CFBundleTypeMIMETypes</key>
 			<array>
 				<string>application/xhtml+xml</string>
+				<string>application/oebps-package+xml</string>
 			</array>
 			<key>CFBundleTypeName</key>
 			<string>ebook pages</string>
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>xhtml</string>
+				<string>opf</string>
 			</array>
 		</dict>
 	</array>

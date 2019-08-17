@@ -312,6 +312,21 @@
    <addaction name="actionIncreaseIndent"/>
   </widget>
 
+  <widget class="QToolBar" name="toolBarNavigate">
+   <property name="windowTitle">
+    <string>Navigate</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actionPrev"/>
+   <addaction name="actionNext"/>
+   <widget class="QComboBox" name="cbNavigate" />
+  </widget>
+
   <widget class="QStatusBar" name="statusbar"/>
 
   <action name="actionSave">
@@ -967,6 +982,38 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+F</string>
+   </property>
+  </action>
+
+  <action name="actionNext">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/arrow-right_48px.png</normaloff>:/icons/arrow-right_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Next XHtml File</string>
+   </property>
+   <property name="toolTip">
+    <string>Navigate to the Next File in the Spine List</string>
+   </property>
+  </action>
+
+  <action name="actionPrev">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/arrow-left_48px.png</normaloff>:/icons/arrow-left_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Previous XHtml File</string>
+   </property>
+   <property name="toolTip">
+    <string>Navigate to the Previous Xhtml File in the Spine List</string>
    </property>
   </action>
 
