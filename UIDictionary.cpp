@@ -1,6 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019  Kevin B. Hendricks, Stratford, Ontario Canada 
+**  Copyright (C) 2019  Kevin B. Hendricks, Stratford, Ontario Canada
+**  Copyright (C) 2019  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -25,6 +26,7 @@
 #include <QString>
 #include <QStringList>
 #include "UIDictionary.h"
+#Include "Utility.h"
 
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
 #include <stdlib.h>
@@ -38,7 +40,7 @@ QString UIDictionary::GetDictionaryPath()
 
     // the environment variable takes precedence on all platforms
     if (qEnvironmentVariableIsSet("QTWEBENGINE_DICTIONARIES_PATH")) {
-        dict_path = qEnvironmentVariable("QTWEBENGINE_DICTIONARIES_PATH");
+        dict_path = Utility::GetEnvironmentVar("QTWEBENGINE_DICTIONARIES_PATH");
         return dict_path;
     }
 
