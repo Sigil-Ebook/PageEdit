@@ -144,11 +144,13 @@ void MainWindow::SetupFileList(const QString &filepath)
 	    m_SpineList << sf.right(sf.length()-m_Base.length());
         }
     } else {
-        m_Base = fi.canonicalPath();
+        // note lognestCommonPath always ends with "/" but fi.canonicalPath() does not
+        m_Base = fi.canonicalPath()+ "/";
         m_SpineList << fi.fileName();
     }
     m_ListPtr = 0;
     m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+    qDebug() << "in SetupFileList" << m_CurrentFilePath;
 }
 
 void MainWindow::SetupNavigationComboBox()
