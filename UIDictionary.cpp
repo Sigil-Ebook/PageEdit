@@ -26,7 +26,7 @@
 #include <QString>
 #include <QStringList>
 #include "UIDictionary.h"
-#Include "Utility.h"
+#include "Utility.h"
 
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
 #include <stdlib.h>
