@@ -1266,7 +1266,7 @@ void MainWindow::Open()
 		m_ListPtr = -1;
 		m_SpineList.clear();
 		m_Base = QString();
-		SetUpFileList(filename);
+		SetupFileList(filename);
 		SetupNavigationComboBox();
     	        UpdatePage(m_CurrentFilePath);
                 ShowMessageOnStatusBar(tr("File Opened"));
