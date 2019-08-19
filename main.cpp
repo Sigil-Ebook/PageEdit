@@ -31,7 +31,7 @@
 #include <QFileInfo>
 #include <QDebug>
 
-#ifdef Q_OS_WIN32
+#if 0 //def Q_OS_WIN32
 #include <QtWidgets/QPlainTextEdit>
 static const QString WIN_CLIPBOARD_ERROR = "QClipboard::setMimeData: Failed to set data on clipboard";
 static const int RETRY_DELAY_MS = 5;
@@ -129,7 +129,7 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
             break;
         case QtCriticalMsg:
             error_message = QString(message.toLatin1().constData());
-#ifdef Q_OS_WIN32
+#if 0 //def Q_OS_WIN32
             // On Windows there is a known issue with the clipboard that results in some copy
             // operations in controls being intermittently blocked. Rather than presenting
             // the user with an error dialog, we should simply retry the operation.
