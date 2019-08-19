@@ -58,7 +58,7 @@ void OPFReader::ReadManifestItemElement(QXmlStreamReader *opf_reader)
     QString file_path = m_opfDir.absolutePath() + "/" + href;
     qDebug() << "file path as built from opf info: " << file_path;
     file_path = Utility::resolveRelativeSegmentsInFilePath(file_path, "/");
-    qDebug() << "file path after resolving relaitve segments: " << file_path;
+    qDebug() << "file path after resolving relative segments: " << file_path;
     if (!m_ManifestFilePaths.contains(file_path)) {
         m_IDMap[ id ] = file_path;
         m_FileMimeTypes[ id ] = type;
