@@ -98,10 +98,13 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_layout(NULL),
     m_SpineList(QStringList()),
     m_Base(QString()),
-    m_ListPtr(-1)
+    m_ListPtr(-1),
+    m_UpdatePageInProgress(false)
 {
     ui.setupUi(this);
     SetupView();
+    // start up in preview mode when empty document
+    ui.actionMode->setChecked(false);
     LoadSettings();
     ConnectSignalsToSlots();
     SetupFileList(filepath);
@@ -137,15 +140,15 @@ void MainWindow::SetupFileList(const QString &filepath)
     if (!fi.exists() || !fi.isReadable()) return;   
     if (fi.suffix() == "opf") {
         OPFReader opfrdr;
-        opfrdr.parseOPF(fi.canonicalFilePath());
+        opfrdr.parseOPF(filepath);
         QStringList spine_files = opfrdr.GetSpineFilePathList();
         m_Base = Utility::longestCommonPath(spine_files, "/");
         foreach(QString sf, spine_files) {
 	    m_SpineList << sf.right(sf.length()-m_Base.length());
         }
     } else {
-        // note lognestCommonPath always ends with "/" but fi.canonicalPath() does not
-        m_Base = fi.canonicalPath()+ "/";
+        // note longestCommonPath always ends with "/" but fi.absolutePath() does not
+        m_Base = fi.absolutePath()+ "/";
         m_SpineList << fi.fileName();
     }
     m_ListPtr = 0;
@@ -162,6 +165,11 @@ void MainWindow::SetupNavigationComboBox()
 
 void MainWindow::CBNavigateActivated(int index)
 {
+    if (m_UpdatePageInProgress) {
+        ui.cbNavigate->setCurrentIndex(m_ListPtr);
+	return;
+    }
+    
     if ((index > -1) && (index != m_ListPtr)) { 
         AllowSaveIfModified();
         m_ListPtr = index;
@@ -172,6 +180,7 @@ void MainWindow::CBNavigateActivated(int index)
 
 void MainWindow::EditNext()
 {
+    if (m_UpdatePageInProgress) return;
     int n = m_SpineList.length();
     if (n > 1) {
         AllowSaveIfModified();
@@ -185,6 +194,7 @@ void MainWindow::EditNext()
 
 void MainWindow::EditPrev()
 {
+    if (m_UpdatePageInProgress) return;
     int n = m_SpineList.length();
     if (n > 1) {
         AllowSaveIfModified();
@@ -194,6 +204,14 @@ void MainWindow::EditPrev()
 	ui.cbNavigate->setCurrentIndex(m_ListPtr);
 	UpdatePage(m_CurrentFilePath);
     }
+}
+
+// Mode setting
+
+void MainWindow::ToggleMode(bool edit_mode)
+{
+    m_WebView->SetDocumentEditable(edit_mode);
+    UpdateWindowTitle();
 }
 
 // Zoom Support Related Routines
@@ -542,6 +560,7 @@ void MainWindow::DoUpdatePage()
   if (!m_CurrentFilePath.isEmpty()) {
       QFileInfo fi(m_CurrentFilePath);
       if (fi.exists() && fi.isReadable()) {
+	  ui.actionMode->setChecked(true);
           UpdatePage(m_CurrentFilePath);
       }
   }
@@ -549,6 +568,7 @@ void MainWindow::DoUpdatePage()
 
 void MainWindow::UpdatePage(const QString &filename_url)
 {
+    m_UpdatePageInProgress = true;
     SettingsStore ss;
     QString text = Utility::ReadUnicodeTextFile(filename_url);
 
@@ -614,9 +634,13 @@ void MainWindow::UpdatePage(const QString &filename_url)
     m_WebView->ExecuteCaretUpdate();
 #endif
     UpdateWindowTitle();
-    m_source = m_WebView->GetHtml();
+    m_source = GetSource();
     m_WebView->show();
     m_WebView->GrabFocus();
+
+    // now set the mode: edit or preview
+    ToggleMode(ui.actionMode->isChecked());
+    m_UpdatePageInProgress = false;
 }
 
 void MainWindow::ScrollTo(QList<ElementIndex> location)
@@ -634,8 +658,11 @@ void MainWindow::UpdateWindowTitle()
     if ((m_WebView) && m_WebView->isVisible()) {
         int height = m_WebView->height();
         int width = m_WebView->width();
-        QString filename = QFileInfo(m_CurrentFilePath).fileName();
-        setWindowTitle("PageEdit: " + filename + " (" + QString::number(width) + "x" + QString::number(height) + ")");
+        QString mode = " -- mode: Preview --";
+	if (ui.actionMode->isChecked()) {
+	    mode = " -- mode: Edit --";
+	}
+        setWindowTitle("PageEdit " + mode + " (" + QString::number(width) + "x" + QString::number(height) + ")");
     }
 }
 
@@ -666,7 +693,7 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
   switch (event->type()) {
     case QEvent::ChildAdded:
       if (object == m_WebView) {
-	  // qDebug() << "child add event";
+	  qDebug() << "child add event";
 	  const QChildEvent *childEvent(static_cast<QChildEvent*>(event));
 	  if (childEvent->child()) {
 	      childEvent->child()->installEventFilter(this);
@@ -675,14 +702,16 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
       break;
     case QEvent::MouseButtonPress:
       {
-	  // qDebug() << "Preview mouse button press event " << object;
+	  qDebug() << "Preview mouse button press event " << object;
 	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
-		  // qDebug() << "Detected Left Mouse Button Press Event";
+		  qDebug() << "Detected Left Mouse Button Press Event";
+		  QString hoverurl = m_WebView->GetHoverUrl();
+		  qDebug() << "hover url is: " << hoverurl;
 	      }
 	      if (mouseEvent->button() == Qt::RightButton) {
-		  // qDebug() << "Detected Right Mouse Button Press Event";
+		  qDebug() << "Detected Right Mouse Button Press Event";
 	      }
 
 	  }
@@ -690,14 +719,14 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
       break;
     case QEvent::MouseButtonRelease:
       {
-	  // qDebug() << "Preview mouse button release event " << object;
+	  qDebug() << "Preview mouse button release event " << object;
 	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
-		  // qDebug() << "Detected Left Mouse Button Release Event";
+		  qDebug() << "Detected Left Mouse Button Release Event";
 	      }
 	      if (mouseEvent->button() == Qt::RightButton) {
-		  // qDebug() << "Detected Right Mouse Button Release Event";
+		  qDebug() << "Detected Right Mouse Button Release Event";
 	      }
 	  }
       }
@@ -728,24 +757,44 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 
 void MainWindow::LinkClicked(const QUrl &url)
 {
-    if (m_GoToRequestPending) m_GoToRequestPending = false;
-
-    // qDebug() << "in WebView LinkClicked with url :" << url.toString();
-
+    qDebug() << " In Link Clicked with url: " << url.toString();
     if (url.toString().isEmpty()) {
         return;
     }
 
-    QFileInfo finfo(m_Filepath);
+    // First fix up the url if an internal link
     QString url_string = url.toString();
 
-    // Convert fragments to full filename/fragments
+    // replace empty fragments with target file
+    QFileInfo finfo(m_Filepath);
     if (url_string.startsWith("#")) {
         url_string.prepend(finfo.fileName());
     } else if (url.scheme() == "file") {
         if (url_string.contains("/#")) {
             url_string.insert(url_string.indexOf("/#") + 1, finfo.fileName());
         }
+    }
+    QUrl toUrl = QUrl(url_string);
+    QString fragment = toUrl.fragment();
+    QString filepath = toUrl.path();
+    qDebug() << "in Link Clicked: " << filepath << fragment;
+
+    if (filepath.startsWith(m_Base)) {
+        filepath = filepath.right(filepath.length() - m_Base.length());
+	if (m_SpineList.contains(filepath)) {
+	    int index = m_SpineList.indexOf(filepath);
+	    if ((index > -1) && (index != m_ListPtr)) {
+		AllowSaveIfModified();
+		m_ListPtr = index;
+		ui.cbNavigate->setCurrentIndex(m_ListPtr);
+		m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+		UpdatePage(m_CurrentFilePath);
+	    }
+	    if (!fragment.isEmpty()) {
+	        m_WebView->ScrollToFragment(fragment);
+	    }
+	    return;
+	}
     }
     OpenUrl(QUrl(url_string));
 }
@@ -790,7 +839,7 @@ void MainWindow::AllowSaveIfModified()
 {
     // if the page source has been modified since it was loaded or saved
     // allow opportunity to save it
-    QString source = m_WebView->GetHtml();
+   QString source = GetSource();
     bool modified = false;
     if (!m_source.isEmpty()) {
         if (m_source.length() != source.length()) {
@@ -1003,7 +1052,27 @@ void MainWindow::SetPreserveHeadingAttributes(bool new_state)
     ui.actionHeadingPreserveAttributes->setChecked(m_preserveHeadingAttributes);
 }
 
-QString MainWindow::GetCleanHtml() {
+QString MainWindow::GetSource() 
+{
+    QString text = m_WebView->GetHtml();
+    GumboInterface gi = GumboInterface(text, "any_version");
+    QList<GumboNode*> nodes;
+    // remove any added contenteditable attributes 
+    nodes = gi.get_all_nodes_with_attribute(QString("contenteditable"));
+    foreach(GumboNode * node, nodes) {
+        GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "contenteditable");
+        if (attr) {
+	    GumboElement* element = &node->v.element;
+	    gumbo_element_remove_attribute(element, attr);
+        }
+    }
+    text = gi.getxhtml();
+    return text;
+}
+
+ 
+QString MainWindow::GetCleanHtml() 
+{
     SettingsStore ss;
 
     QString text = m_WebView->GetHtml();
@@ -1197,7 +1266,7 @@ bool MainWindow::SaveAs()
 	m_CurrentFilePath.clear();
 	save_result = false;
     }
-    if (save_result) m_source = m_WebView->GetHtml();
+    if (save_result) m_source = GetSource();
     return save_result;
 }
 
@@ -1226,7 +1295,7 @@ bool MainWindow::Save()
         ShowMessageOnStatusBar(tr("File Save Failed!"));
 	save_result = false;;
     }
-    if (save_result) m_source = m_WebView->GetHtml();
+    if (save_result) m_source = GetSource();
     return save_result;
 }
 
@@ -1437,14 +1506,7 @@ void MainWindow::OpenUrl(const QUrl &url)
       return;
     }
 
-#if 0
-    if (url.scheme().isEmpty() || url.scheme() == "file") {
-        if (url.fragment().isEmpty()) {
-        }
-    }
-#endif 
-
-  QDesktopServices::openUrl(url);
+    QDesktopServices::openUrl(url);
 }
 
 bool MainWindow::MaybeSaveDialogSaysProceed()
@@ -1490,6 +1552,11 @@ void MainWindow::ExtendIconSizes()
     icon.addFile(QString::fromUtf8(":/icons/document-spellcheck_22px.png"));
     ui.actionSpellCheck->setIcon(icon);
 #endif
+
+    icon = ui.actionMode->icon();
+    icon.addFile(QString::fromUtf8(":/icons/mode-preview_22px.png"), QSize(22,22), QIcon::Normal, QIcon::Off);
+    icon.addFile(QString::fromUtf8(":/icons/mode-edit_22px.png"), QSize(22,22), QIcon::Normal, QIcon::On);
+    ui.actionMode->setIcon(icon);
 
     icon = ui.actionNext->icon();
     icon.addFile(QString::fromUtf8(":/icons/arrow-right_22px.png"));
@@ -1701,6 +1768,7 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionCopy,      SIGNAL(triggered()),  this,   SLOT(Copy()));
     connect(ui.actionPaste,     SIGNAL(triggered()),  this,   SLOT(Paste()));
     connect(ui.actionSelectAll, SIGNAL(triggered()),  this,   SLOT(SelectAll()));
+    connect(ui.actionMode,      SIGNAL(toggled(bool)),this,   SLOT(ToggleMode(bool))); 
 
     //Find Related
     connect(ui.actionFind,      SIGNAL(triggered()),  this,   SLOT(SearchOnPage()));

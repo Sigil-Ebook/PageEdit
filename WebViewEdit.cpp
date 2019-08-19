@@ -193,6 +193,17 @@ void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
     m_menu->popup(event->globalPos());
 }
 
+void WebViewEdit::LinkHovered(const QString &url)
+{
+    qDebug() << "linkHovered received " << url;;
+    m_hoverUrl = url;
+}
+
+QString WebViewEdit::GetHoverUrl()
+{
+    return m_hoverUrl;
+}
+
 QString WebViewEdit::GetCaretElementName()
 {
     QString javascript =  "var node = document.getSelection().anchorNode;"
@@ -474,11 +485,20 @@ void WebViewEdit::GrabFocus()
     QWebEngineView::setFocus(Qt::MouseFocusReason);
 }
 
+void WebViewEdit::SetDocumentEditable(bool newstate)
+{
+  if (newstate) {
+      page()->runJavaScript("document.documentElement.contentEditable = true", QWebEngineScript::ApplicationWorld);
+  } else {
+      page()->runJavaScript("document.documentElement.contentEditable = false", QWebEngineScript::ApplicationWorld);
+  }
+}
+
 void WebViewEdit::WebPageJavascriptOnLoad()
 {
     page()->runJavaScript(c_jQuery, QWebEngineScript::ApplicationWorld);
     page()->runJavaScript(c_jQueryScrollTo, QWebEngineScript::ApplicationWorld);
-    page()->runJavaScript("document.documentElement.contentEditable = true", QWebEngineScript::ApplicationWorld);
+    // page()->runJavaScript("document.documentElement.contentEditable = true", QWebEngineScript::ApplicationWorld);
     m_isLoadFinished = true;
 
     if (m_CustomSetDocumentInProgress) {
@@ -620,4 +640,5 @@ void WebViewEdit::ConnectSignalsToSlots()
     connect(page(), SIGNAL(loadStarted()), this, SLOT(LoadingStarted()));
     connect(page(), SIGNAL(loadProgress(int)), this, SLOT(LoadingProgress(int)));
     connect(page(), SIGNAL(LinkClicked(const QUrl &)), this, SIGNAL(LinkClicked(const QUrl &)));
+    connect(page(), SIGNAL(linkHovered(const QString &)), this, SLOT(LinkHovered(const QString &)));
 }

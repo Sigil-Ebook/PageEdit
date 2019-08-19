@@ -23,7 +23,8 @@ OPFReader::OPFReader()
 void OPFReader::parseOPF(const QString& opfpath)
 {
     QFileInfo fi(opfpath);
-    m_opfpath = fi.canonicalFilePath();
+    m_opfpath = fi.absoluteFilePath();
+    m_opfpath = Utility::resolveRelativeSegmentsInFilePath(m_opfpath, "/");
     m_opfDir = QFileInfo(m_opfpath).dir();
     QString opf_text = Utility::ReadUnicodeTextFile(opfpath);
     QXmlStreamReader opf_reader(opf_text);

@@ -80,6 +80,8 @@ public:
      */
     void GrabFocus();
 
+    void SetDocumentEditable(bool newstate);
+
     // inherited
     QList<ElementIndex> GetCaretLocation();
 
@@ -114,7 +116,7 @@ public slots:
      bool ExecCommand(const QString &command);
      bool ExecCommand(const QString &command, const QString &parameter);
      bool QueryCommandState(const QString &command);
-
+     QString GetHoverUrl();
 
 signals:
     /**
@@ -157,6 +159,7 @@ protected slots:
     void UpdateFinishedState(bool okay);
     void LoadingStarted();
     void LoadingProgress(int progress);
+    void LinkHovered(const QString&url);
 
 protected:
 
@@ -251,6 +254,8 @@ private:
     QMenu * m_menu;
 
     QStringList m_dictionaries;
+
+    QString m_hoverUrl;
 
 };
 

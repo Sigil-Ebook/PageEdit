@@ -100,6 +100,9 @@ public slots:
     void EditPrev();
     void CBNavigateActivated(int index);
 
+    // Mode slots
+    void ToggleMode(bool on);
+
     static const QMap<QString, QString> GetLoadFiltersMap();
     static const QMap<QString, QString> GetSaveFiltersMap();
 
@@ -162,6 +165,7 @@ protected:
     void closeEvent(QCloseEvent * event);
     bool MaybeSaveDialogSaysProceed();
     QString GetCleanHtml();
+    QString GetSource();
     QString GetHTMLToPaste(const QString & hmtl_snippet);
 
 private:
@@ -199,6 +203,7 @@ private:
     QStringList m_SpineList;
     QString m_Base;
     int m_ListPtr;
+    bool m_UpdatePageInProgress;
     Ui::MainWindow ui;
 };
 

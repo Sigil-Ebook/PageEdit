@@ -194,6 +194,19 @@
    <addaction name="actionSelectAll"/>
   </widget>
 
+  <widget class="QToolBar" name="toolBarMode">
+   <property name="windowTitle">
+    <string>Mode</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMode" />
+  </widget>
+
   <widget class="QToolBar" name="toolBarInsertions">
    <property name="windowTitle">
     <string>Insert</string>
@@ -1016,6 +1029,23 @@
     <string>Navigate to the Previous Xhtml File in the Spine List</string>
    </property>
   </action>
+
+  <action name="actionMode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/mode-preview_48px.png</normaloff>:/icons/mode-edit_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mode</string>
+   </property>
+   <property name="toolTip">
+    <string>Toggle between Edit and Preview Modes.</string>
+   </property>
+  </action>
+
 
  </widget>
  <resources>
