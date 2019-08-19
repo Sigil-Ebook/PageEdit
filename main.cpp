@@ -170,17 +170,17 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
             Utility::DisplayExceptionErrorDialog(QString("Fatal: %1").arg(QString(message)));
             abort();
     }
-    
+
     // qDebug() prints to SIGIL_DEBUG_LOGFILE environment variable.
     // User must have permissions to write to the location or no file will be created.
     QString sigil_log_file;
     sigil_log_file = Utility::GetEnvironmentVar("PAGEEDIT_DEBUG_LOGFILE");
-	if (!sigil_log_file.isEmpty()) {
-            QFile outFile(sigil_log_file);
-            outFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text);
-            QTextStream ts(&outFile);
-            ts << qt_debug_message << endl;
-	}
+    if (!sigil_log_file.isEmpty()) {
+        QFile outFile(sigil_log_file);
+        outFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text);
+        QTextStream ts(&outFile);
+        ts << qt_debug_message << endl;
+    }
 }
 
 
