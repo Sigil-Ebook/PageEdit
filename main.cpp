@@ -31,6 +31,12 @@
 #include <QFileInfo>
 #include <QDebug>
 
+#ifdef Q_OS_WIN32
+#include <QtWidgets/QPlainTextEdit>
+static const QString WIN_CLIPBOARD_ERROR = "QClipboard::setMimeData: Failed to set data on clipboard";
+static const int RETRY_DELAY_MS = 5;
+#endif
+
 #ifdef Q_OS_MAC
 # include <QFileDialog>
 # include <QKeySequence>
