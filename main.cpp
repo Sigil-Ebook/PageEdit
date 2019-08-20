@@ -1,6 +1,7 @@
 /************************************************************************
 **
 **  Copyright (C) 2019  Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -30,12 +31,6 @@
 #include <QMessageBox>
 #include <QFileInfo>
 #include <QDebug>
-
-#if 0 //def Q_OS_WIN32
-#include <QtWidgets/QPlainTextEdit>
-static const QString WIN_CLIPBOARD_ERROR = "QClipboard::setMimeData: Failed to set data on clipboard";
-static const int RETRY_DELAY_MS = 5;
-#endif
 
 #ifdef Q_OS_MAC
 # include <QFileDialog>
@@ -97,13 +92,13 @@ static void file_open()
 // Returns a QIcon with the PageEdit "PE" logo in various sizes
 static QIcon GetApplicationIcon()
 {
-  QIcon app_icon;
-  app_icon.addFile(":/icons/app_icon_32.png",  QSize(32, 32));
-  app_icon.addFile(":/icons/app_icon_48.png",  QSize(48, 48));
-  app_icon.addFile(":/icons/app_icon_128.png", QSize(128, 128));
-  app_icon.addFile(":/icons/app_icon_256.png", QSize(256, 256));
-  app_icon.addFile(":/icons/app_icon_512.png", QSize(512, 512));
-  return app_icon;
+    QIcon app_icon;
+    app_icon.addFile(":/icons/app_icon_32.png",  QSize(32, 32));
+    app_icon.addFile(":/icons/app_icon_48.png",  QSize(48, 48));
+    app_icon.addFile(":/icons/app_icon_128.png", QSize(128, 128));
+    app_icon.addFile(":/icons/app_icon_256.png", QSize(256, 256));
+    app_icon.addFile(":/icons/app_icon_512.png", QSize(512, 512));
+    return app_icon;
 }
 #endif
 
@@ -111,75 +106,40 @@ static QIcon GetApplicationIcon()
 // The message handler installed to handle Qt messages
 void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QString &message)
 {
-    QString error_message;
-    QString qt_debug_message;
+    QString qt_log_entry;
 
     switch (type) {
-        // TODO: should go to a log
         case QtDebugMsg:
-            qt_debug_message = QString("Debug: %1").arg(message.toLatin1().constData());
+            qt_log_entry = QString("Debug: %1").arg(message.toLatin1().constData());
             fprintf(stderr, "Debug: %s\n", message.toLatin1().constData());
             break;
         case QtInfoMsg:
+            qt_log_entry = QString("Info: %1").arg(message.toLatin1().constData());
             fprintf(stderr, "Info: %s\n", message.toLatin1().constData());
             break;
-        // TODO: should go to a log
         case QtWarningMsg:
+            qt_log_entry = QString("Warning: %1").arg(message.toLatin1().constData());
             fprintf(stderr, "Warning: %s\n", message.toLatin1().constData());
             break;
         case QtCriticalMsg:
-            error_message = QString(message.toLatin1().constData());
-#if 0 //def Q_OS_WIN32
-            // On Windows there is a known issue with the clipboard that results in some copy
-            // operations in controls being intermittently blocked. Rather than presenting
-            // the user with an error dialog, we should simply retry the operation.
-            // Hopefully this will be fixed in a future Qt version (still broken as of 4.8.3).
-            if (error_message.startsWith(WIN_CLIPBOARD_ERROR)) {
-                QWidget *widget = QApplication::focusWidget();
-
-                if (widget) {
-                    QPlainTextEdit *textEdit = dynamic_cast<QPlainTextEdit *>(widget);
-
-                    if (textEdit) {
-                        QTimer::singleShot(RETRY_DELAY_MS, textEdit, SLOT(copy()));
-                        break;
-                    }
-
-                    // Same issue can happen on a QLineEdit / QComboBox
-                    QLineEdit *lineEdit = dynamic_cast<QLineEdit *>(widget);
-
-                    if (lineEdit) {
-                        QTimer::singleShot(RETRY_DELAY_MS, lineEdit, SLOT(copy()));
-                        break;
-                    }
-
-                    QComboBox *comboBox = dynamic_cast<QComboBox *>(widget);
-
-                    if (comboBox) {
-                        QTimer::singleShot(RETRY_DELAY_MS, comboBox->lineEdit(), SLOT(copy()));
-                        break;
-                    }
-                }
-            }
-
-#endif
-            Utility::DisplayExceptionErrorDialog(QString("Critical: %1").arg(error_message));
+            qt_log_entry = QString("Critical: %1").arg(message.toLatin1().constData());
+            //Utility::DisplayExceptionErrorDialog(QString("Critical: %1").arg(error_message));
+            fprintf(stderr, "Critical: %s\n", message.toLatin1().constData());
             break;
-
         case QtFatalMsg:
             Utility::DisplayExceptionErrorDialog(QString("Fatal: %1").arg(QString(message)));
             abort();
     }
 
-    // qDebug() prints to SIGIL_DEBUG_LOGFILE environment variable.
+    // qDebug() prints to PAGEEDIT_DEBUG_LOGFILE environment variable.
     // User must have permissions to write to the location or no file will be created.
-    QString sigil_log_file;
-    sigil_log_file = Utility::GetEnvironmentVar("PAGEEDIT_DEBUG_LOGFILE");
-    if (!sigil_log_file.isEmpty()) {
-        QFile outFile(sigil_log_file);
+    QString pageedit_log_file;
+    pageedit_log_file = Utility::GetEnvironmentVar("PAGEEDIT_DEBUG_LOGFILE");
+    if (!pageedit_log_file.isEmpty()) {
+        QFile outFile(pageedit_log_file);
         outFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text);
         QTextStream ts(&outFile);
-        ts << qt_debug_message << endl;
+        ts << qt_log_entry << endl;
     }
 }
 
