@@ -159,6 +159,7 @@ void MainWindow::SetupFileList(const QString &filepath)
 void MainWindow::SetupNavigationComboBox()
 {
     ui.cbNavigate->clear();
+    ui.cbNavigate->setSizeAdjustPolicy(QComboBox::AdjustToContents);
     ui.cbNavigate->addItems(m_SpineList);
     ui.cbNavigate->setCurrentIndex(m_ListPtr);
 }
