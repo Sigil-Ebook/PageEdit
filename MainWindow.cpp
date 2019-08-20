@@ -801,7 +801,12 @@ void MainWindow::LinkClicked(const QUrl &url)
 	    }
 	}
     }
-    OpenUrl(toUrl);
+    QMessageBox::StandardButton button_pressed;
+    button_pressed = QMessageBox::warning(this, tr("PageEdit"), tr("Are you sure you want to open this link in your browser?\n\n%1").arg(toUrl.toString()), QMessageBox::Ok | QMessageBox::Cancel);
+
+    if (button_pressed == QMessageBox::Ok) {
+        QDesktopServices::openUrl(toUrl);
+    }
 }
 
 void MainWindow::InspectPreviewPage()
@@ -1503,15 +1508,6 @@ void MainWindow::sizeMenuIcons() {
     foreach(QToolBar * toolbar, all_toolbars) {
         toolbar->setIconSize(QSize(iconsize,iconsize));
     }
-}
-
-void MainWindow::OpenUrl(const QUrl &url)
-{
-    if (url.isEmpty()) {
-      return;
-    }
-
-    QDesktopServices::openUrl(url);
 }
 
 bool MainWindow::MaybeSaveDialogSaysProceed()
