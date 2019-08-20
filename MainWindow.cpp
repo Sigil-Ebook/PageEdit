@@ -103,8 +103,8 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
 {
     ui.setupUi(this);
     SetupView();
-    // start up in preview mode when empty document
-    ui.actionMode->setChecked(false);
+    // start up in edit mode unless the user changes it
+    ui.actionMode->setChecked(true);
     LoadSettings();
     ConnectSignalsToSlots();
     SetupFileList(filepath);
@@ -758,45 +758,49 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 void MainWindow::LinkClicked(const QUrl &url)
 {
     qDebug() << " In Link Clicked with url: " << url.toString();
-    if (url.toString().isEmpty()) {
+    QUrl toUrl(url);
+
+    if (toUrl.toString().isEmpty()) {
         return;
     }
 
-    // First fix up the url if an internal link
-    QString url_string = url.toString();
-
-    // replace empty fragments with target file
+    // First fix up the url to replace 
+    // any empty fragments with target file
+    QString url_string = toUrl.toString();
     QFileInfo finfo(m_Filepath);
     if (url_string.startsWith("#")) {
         url_string.prepend(finfo.fileName());
-    } else if (url.scheme() == "file") {
+    } else if (toUrl.scheme() == "file") {
         if (url_string.contains("/#")) {
             url_string.insert(url_string.indexOf("/#") + 1, finfo.fileName());
         }
     }
-    QUrl toUrl = QUrl(url_string);
-    QString fragment = toUrl.fragment();
-    QString filepath = toUrl.path();
-    qDebug() << "in Link Clicked: " << filepath << fragment;
+    toUrl = QUrl(url_string);
 
-    if (filepath.startsWith(m_Base)) {
-        filepath = filepath.right(filepath.length() - m_Base.length());
-	if (m_SpineList.contains(filepath)) {
-	    int index = m_SpineList.indexOf(filepath);
-	    if ((index > -1) && (index != m_ListPtr)) {
-		AllowSaveIfModified();
-		m_ListPtr = index;
-		ui.cbNavigate->setCurrentIndex(m_ListPtr);
-		m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-		UpdatePage(m_CurrentFilePath);
+    if (toUrl.scheme() == "file") {
+        QString filepath = toUrl.toLocalFile();
+	QString fragment = toUrl.fragment();
+        qDebug() << "in Link Clicked: " << filepath << fragment;
+
+        if (filepath.startsWith(m_Base)) {
+            filepath = filepath.right(filepath.length() - m_Base.length());
+	    if (m_SpineList.contains(filepath)) {
+	        int index = m_SpineList.indexOf(filepath);
+	        if ((index > -1) && (index != m_ListPtr)) {
+		    AllowSaveIfModified();
+		    m_ListPtr = index;
+		    ui.cbNavigate->setCurrentIndex(m_ListPtr);
+		    m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+		    UpdatePage(m_CurrentFilePath);
+	        }
+	        if (!fragment.isEmpty()) {
+	            m_WebView->ScrollToFragment(fragment);
+	        }
+	        return;
 	    }
-	    if (!fragment.isEmpty()) {
-	        m_WebView->ScrollToFragment(fragment);
-	    }
-	    return;
 	}
     }
-    OpenUrl(QUrl(url_string));
+    OpenUrl(toUrl);
 }
 
 void MainWindow::InspectPreviewPage()
