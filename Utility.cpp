@@ -43,6 +43,7 @@
 #include <QRegularExpressionMatch>
 #include <QFile>
 #include <QFileInfo>
+#include <QPixmap>
 #include <QDebug>
 
 #include "pageedit_constants.h"
@@ -662,5 +663,6 @@ void Utility::AboutBox()
 #endif
     about_text << "</ul>";
     message_box.setText(about_text.join("\n"));
+    message_box.setIconPixmap(QPixmap(":/icons/app_icon_128.png"));
     message_box.exec();
 }
