@@ -1,5 +1,23 @@
 Change Log
 ==========
+pre-PageEdit-0.9.0
+  New Features
+     - add the ability to pass all xhtml files in the spine in Reading Order to PageEdit 
+            via opening the OPF.  Allow quick file navigation via navigation menu and next 
+            and previous arrows keys.
+
+     - add a Edit vs Preview mode toggle icon that will allow links among xhtmls files in the spine
+            to be active and work (in Mode: Preview)
+
+     - installed a QtMessage handler to create a debug log file controlled via a
+          PAGEEDIT_DEBUG_LOGFILE environment setting, to simplify user bug issue feedback
+
+  Bug Fixes
+     - fix macOS specific launch bugs due to bug in canonical files and timing of Apple events
+     - make sure jQuery is loaded before trying to manipulate a file by imporving web load sequence
+     - use GetEnvironmentVar to uniformly access Environment Vars in a cross platform manner
+
+
 PageEdit-0.8.0
   New Features
      - add user preferences to control use of white-space:pre-wrap vs nbsp chars
