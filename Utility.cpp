@@ -647,18 +647,20 @@ void Utility::AboutBox()
     message_box.setStandardButtons(QMessageBox::Close);
     QStringList about_text;
     about_text    << "<h1>PageEdit</h1>"
-                  << "<h2>Version:     " + QString(PAGEEDIT_VERSION) + "</h2>"
-	          << "<h3>Build Date:  " + QString::fromLatin1(__DATE__) + "</h3>"
-	          << "<h3>Build Time:  " + QString::fromLatin1(__TIME__) + "</h3>"
-                  << "<h3>Runtime Qt:  " + QString(qVersion()) + "</h3>"
-                  << "<h3>Compiled Qt: " + QString(QT_VERSION_STR) + "</h3>" ;
+                  << "<ul>"
+                  << "<li><b>Version:</b>     " + QString(PAGEEDIT_VERSION) + "</li>"
+	          << "<li><b>Build Date:</b>  " + QString::fromLatin1(__DATE__) + "</li>"
+	          << "<li><b>Build Time:</b>  " + QString::fromLatin1(__TIME__) + "</li>"
+                  << "<li><b>Runtime Qt:</b>  " + QString(qVersion()) + "</li>"
+                  << "<li><b>Compiled Qt:</b> " + QString(QT_VERSION_STR) + "</li>" ;
 #if defined Q_OS_WIN32
-    about_text << "<h3>Windows SysInfo ID " + QString::number(QSysInfo::WindowsVersion)  + "</h3>";
+    about_text << "<li><b>Windows SysInfo ID:</b> " + QString::number(QSysInfo::WindowsVersion)  + "</li>";
 #elif defined Q_OS_MAC
-    about_text << "<h3>Mac SysInfo ID " + QString::number(QSysInfo::MacintoshVersion)  + "</h3>";
+    about_text << "<li>Mac SysInfo ID:</b> " + QString::number(QSysInfo::MacintoshVersion)  + "</li>";
 #else
-    about_text << "<h3>Linux</h3>";
+    about_text << "<li>Linux</li>";
 #endif
+    about_text << "</ul>";
     message_box.setText(about_text.join("\n"));
     message_box.exec();
 }
