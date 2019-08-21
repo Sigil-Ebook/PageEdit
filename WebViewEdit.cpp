@@ -195,7 +195,7 @@ void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
 
 void WebViewEdit::LinkHovered(const QString &url)
 {
-    qDebug() << "linkHovered received " << url;;
+    DBG qDebug() << "linkHovered received " << url;;
     m_hoverUrl = url;
 }
 

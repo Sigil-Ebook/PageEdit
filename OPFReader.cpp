@@ -9,6 +9,8 @@
 #include "Utility.h"
 #include "OPFReader.h"
 
+#define DBG if(0)
+
 OPFReader::OPFReader()
   : 
   m_opfDir(QDir()),
@@ -56,9 +58,9 @@ void OPFReader::ReadManifestItemElement(QXmlStreamReader *opf_reader)
     QString type = opf_reader->attributes().value("", "media-type").toString();
     href = Utility::URLDecodePath(href);
     QString file_path = m_opfDir.absolutePath() + "/" + href;
-    qDebug() << "file path as built from opf info: " << file_path;
+    DBG qDebug() << "file path as built from opf info: " << file_path;
     file_path = Utility::resolveRelativeSegmentsInFilePath(file_path, "/");
-    qDebug() << "file path after resolving relative segments: " << file_path;
+    DBG qDebug() << "file path after resolving relative segments: " << file_path;
     if (!m_ManifestFilePaths.contains(file_path)) {
         m_IDMap[ id ] = file_path;
         m_FileMimeTypes[ id ] = type;

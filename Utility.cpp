@@ -618,6 +618,7 @@ QString Utility::longestCommonPath(const QStringList& filepaths, const QString& 
     return res.join(sep) + sep;
 }
 
+// fixme this should also remove multiple path separators in a row after the first
 QString Utility::resolveRelativeSegmentsInFilePath(const QString& file_path, const QString &sep)
 {
     const QStringList segs = file_path.split(sep);
@@ -628,7 +629,7 @@ QString Utility::resolveRelativeSegmentsInFilePath(const QString& file_path, con
             if (!res.isEmpty()) {
 	        res.removeLast();
             } else {
-	        qDebug() << "Error resolving relative path segments";
+	        qDebug() << "Utility.cpp: Error resolving relative path segments";
             }
         } else {
             res << segs.at(i);

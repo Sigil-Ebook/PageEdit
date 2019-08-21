@@ -57,6 +57,7 @@
 #include "SearchToolbar.h"
 #include "OPFReader.h"
 
+#define DBG if(0)
 
 static const QString SETTINGS_GROUP = "mainwindow";
 
@@ -153,7 +154,7 @@ void MainWindow::SetupFileList(const QString &filepath)
     }
     m_ListPtr = 0;
     m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-    qDebug() << "in SetupFileList" << m_CurrentFilePath;
+    DBG qDebug() << "in SetupFileList" << m_CurrentFilePath;
 }
 
 void MainWindow::SetupNavigationComboBox()
@@ -592,7 +593,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
             QString inject_userstyles = 
               "<link rel=\"stylesheet\" type=\"text/css\" "
 	      "href=\"" + m_usercssurl + "\" />";
-	    // qDebug() << "WebView injecting stylesheet: " << inject_userstyles;
+	    DBG qDebug() << "WebView injecting stylesheet: " << inject_userstyles;
             text.insert(endheadpos, inject_userstyles);
         }
     }
@@ -627,13 +628,8 @@ void MainWindow::UpdatePage(const QString &filename_url)
     
     if (!m_WebView->WasLoadOkay()) qDebug() << "WV loadFinished with okay set to false!";
  
-    // qDebug() << "WebViewWindow UpdatePage load is Finished";
-    // qDebug() << "WebViewWindow UpdatePage final step scroll to location";
+    DBG qDebug() << "WebViewWindow UpdatePage load is Finished";
 
-#if 0
-    m_WebView->StoreCaretLocationUpdate(location);
-    m_WebView->ExecuteCaretUpdate();
-#endif
     UpdateWindowTitle();
     m_source = GetSource();
     m_WebView->show();
@@ -646,7 +642,7 @@ void MainWindow::UpdatePage(const QString &filename_url)
 
 void MainWindow::ScrollTo(QList<ElementIndex> location)
 {
-    // qDebug() << "received a WebViewWindow ScrollTo event";
+    DBG qDebug() << "received a WebViewWindow ScrollTo event";
     if (!m_WebView->isVisible()) {
         return;
     }
@@ -669,9 +665,9 @@ void MainWindow::UpdateWindowTitle()
 
 QList<ElementIndex> MainWindow::GetCaretLocation()
 {
-    // qDebug() << "WebView in GetCaretLocation";
+    DBG qDebug() << "WebView in GetCaretLocation";
     QList<ElementIndex> hierarchy = m_WebView->GetCaretLocation();
-    // foreach(ElementIndex ei, hierarchy) qDebug() << "name: " << ei.name << " index: " << ei.index;
+    DBG foreach(ElementIndex ei, hierarchy) qDebug() << "name: " << ei.name << " index: " << ei.index;
     return hierarchy;
 }
 
@@ -682,7 +678,7 @@ void MainWindow::SetZoomFactor(float factor)
 
 void MainWindow::EmitGoToPreviewLocationRequest()
 {
-    // qDebug() << "EmitGoToPreviewLocationRequest request: " << m_GoToRequestPending;
+    DBG qDebug() << "EmitGoToPreviewLocationRequest request: " << m_GoToRequestPending;
     if (m_GoToRequestPending) {
         m_GoToRequestPending = false;
         emit GoToPreviewLocationRequest();
@@ -694,7 +690,7 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
   switch (event->type()) {
     case QEvent::ChildAdded:
       if (object == m_WebView) {
-	  qDebug() << "child add event";
+	  DBG qDebug() << "child add event";
 	  const QChildEvent *childEvent(static_cast<QChildEvent*>(event));
 	  if (childEvent->child()) {
 	      childEvent->child()->installEventFilter(this);
@@ -703,16 +699,16 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
       break;
     case QEvent::MouseButtonPress:
       {
-	  qDebug() << "Preview mouse button press event " << object;
+	  DBG qDebug() << "Preview mouse button press event " << object;
 	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
-		  qDebug() << "Detected Left Mouse Button Press Event";
+		  DBG qDebug() << "Detected Left Mouse Button Press Event";
 		  QString hoverurl = m_WebView->GetHoverUrl();
-		  qDebug() << "hover url is: " << hoverurl;
+		  DBG qDebug() << "hover url is: " << hoverurl;
 	      }
 	      if (mouseEvent->button() == Qt::RightButton) {
-		  qDebug() << "Detected Right Mouse Button Press Event";
+		  DBG qDebug() << "Detected Right Mouse Button Press Event";
 	      }
 
 	  }
@@ -720,14 +716,14 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
       break;
     case QEvent::MouseButtonRelease:
       {
-	  qDebug() << "Preview mouse button release event " << object;
+	  DBG qDebug() << "Preview mouse button release event " << object;
 	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
 	  if (mouseEvent) {
 	      if (mouseEvent->button() == Qt::LeftButton) {
-		  qDebug() << "Detected Left Mouse Button Release Event";
+		  DBG qDebug() << "Detected Left Mouse Button Release Event";
 	      }
 	      if (mouseEvent->button() == Qt::RightButton) {
-		  qDebug() << "Detected Right Mouse Button Release Event";
+		  DBG qDebug() << "Detected Right Mouse Button Release Event";
 	      }
 	  }
       }
@@ -737,9 +733,7 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
           if (object == m_WebView) {
               const QResizeEvent *resizeEvent(static_cast<QResizeEvent*>(event));
 	      if (resizeEvent) {
-		  // QSize oldsize = resizeEvent->oldSize();
-	          // QSize newsize = resizeEvent->size();
-	          // qDebug() << "Detected ResizeEvent: " << oldsize << newsize;
+	          DBG qDebug() << "Detected ResizeEvent: " << resizeEvent->oldSize() << resizeEvent->size();
 	          QTimer::singleShot(100, this, SLOT(UpdateWindowTitle()));
 	      }
 	  }
@@ -758,7 +752,7 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 
 void MainWindow::LinkClicked(const QUrl &url)
 {
-    qDebug() << " In Link Clicked with url: " << url.toString();
+    DBG qDebug() << " In Link Clicked with url: " << url.toString();
     QUrl toUrl(url);
 
     if (toUrl.toString().isEmpty()) {
@@ -781,7 +775,7 @@ void MainWindow::LinkClicked(const QUrl &url)
     if (toUrl.scheme() == "file") {
         QString filepath = toUrl.toLocalFile();
 	QString fragment = toUrl.fragment();
-        qDebug() << "in Link Clicked: " << filepath << fragment;
+        DBG qDebug() << "in Link Clicked: " << filepath << fragment;
 
         if (filepath.startsWith(m_Base)) {
             filepath = filepath.right(filepath.length() - m_Base.length());
@@ -811,17 +805,17 @@ void MainWindow::LinkClicked(const QUrl &url)
 
 void MainWindow::InspectPreviewPage()
 {
-    //qDebug() << "InspectPreviewPage()";
+    DBG qDebug() << "InspectPreviewPage()";
     // non-modal dialog
     if (!m_Inspector->isVisible()) {
-        // qDebug() << "inspecting";
+        DBG qDebug() << "inspecting";
         m_Inspector->InspectPageofView(m_WebView);
         m_Inspector->show();
         m_Inspector->raise();
         m_Inspector->activateWindow();
         // if needed resulting m_WebView resize event will UpdateWindowTitle();
     } else {
-        // qDebug() << "stopping inspection()";
+        DBG qDebug() << "stopping inspection()";
         m_Inspector->StopInspection();
         m_Inspector->close();
         // if needed resulting m_WebView resize event will UpdateWindowTitle();
@@ -1255,7 +1249,7 @@ bool MainWindow::SaveAs()
 
     QString text = GetCleanHtml();
 
-    // qDebug() << "Save As: " << text;
+    DBG qDebug() << "Save As: " << text;
     QFileInfo fi(m_CurrentFilePath);
     if (fi.exists() && !fi.isWritable()) {
         Utility::DisplayStdErrorDialog(tr("File Save-As Failed!"), m_CurrentFilePath + " " + tr("is not writeable"));
@@ -1284,7 +1278,7 @@ bool MainWindow::Save()
 {
     QString text = GetCleanHtml();
 
-    // qDebug() << "Saving: " << text;
+    DBG qDebug() << "Saving: " << text;
     QFileInfo fi(m_CurrentFilePath);
 
     if (!fi.exists() || !fi.isWritable()) {

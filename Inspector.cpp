@@ -24,13 +24,14 @@
 #include <QtWebEngineWidgets/QWebEnginePage>
 #include <QtWebEngineWidgets/QWebEngineSettings>
 #include <QApplication>
+#include <QDebug>
 
 #include "SettingsStore.h"
 #include "Inspector.h"
 
-
 static const QString SETTINGS_GROUP = "inspect_dialog";
 
+#define DBG if(0)
 
 Inspector::Inspector(QWidget *parent) :
     QDockWidget(parent),
@@ -118,7 +119,7 @@ QSize Inspector::sizeHint()
 
 void Inspector::closeEvent(QCloseEvent* event)
 {
-    // qDebug() << "Inspector Close Event";
+    DBG qDebug() << "Inspector Close Event";
     StopInspection();
     QDockWidget::closeEvent(event);
 }
