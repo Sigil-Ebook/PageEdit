@@ -637,3 +637,28 @@ QString Utility::resolveRelativeSegmentsInFilePath(const QString& file_path, con
     }
     return res.join(sep);
 }
+
+void Utility::AboutBox()
+{
+    QMessageBox message_box(QApplication::activeWindow());
+    message_box.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
+    message_box.setModal(true);
+    message_box.setWindowTitle(QObject::tr("About PageEdit"));
+    message_box.setStandardButtons(QMessageBox::Close);
+    QStringList about_text;
+    about_text    << "<h1>PageEdit</h1>"
+                  << "<h2>Version:     " + QString(PAGEEDIT_VERSION) + "</h2>"
+	          << "<h3>Build Date:  " + QString::fromLatin1(__DATE__) + "</h3>"
+	          << "<h3>Build Time:  " + QString::fromLatin1(__TIME__) + "</h3>"
+                  << "<h3>Runtime Qt:  " + QString(qVersion()) + "</h3>"
+                  << "<h3>Compiled Qt: " + QString(QT_VERSION_STR) + "</h3>" ;
+#if defined Q_OS_WIN32
+    about_text << "<h3>Windows SysInfo ID " + QString::number(QSysInfo::WindowsVersion)  + "</h3>";
+#elif defined Q_OS_MAC
+    about_text << "<h3>Mac SysInfo ID " + QString::number(QSysInfo::MacintoshVersion)  + "</h3>";
+#else
+    about_text << "<h3>Linux</h3>";
+#endif
+    message_box.setText(about_text.join("\n"));
+    message_box.exec();
+}

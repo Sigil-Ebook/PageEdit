@@ -93,6 +93,7 @@ public slots:
     void CopyPreview();
     void ReloadPreview();
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
+    void AboutPageEdit();
 
     // Navigation Slots
     void EditNext();

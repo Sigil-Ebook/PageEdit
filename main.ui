@@ -66,6 +66,7 @@
     <addaction name="actionSaveAs"/>
     <addaction name="actionExit"/>
     <addaction name="actionPreferences"/>
+    <addaction name="actionAbout"/>
    </widget>
    
    <widget class="QMenu" name="menuEdit">
@@ -1046,6 +1047,18 @@
    </property>
   </action>
 
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../icons/icons.qrc">
+     <normaloff>:/icons/help-browser_48px.png</normaloff>:/main/help-browser_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>About...</string>
+   </property>
+   <property name="toolTip">
+    <string>Show information about PageEdit.</string>
+   </property>
+  </action>
 
  </widget>
  <resources>

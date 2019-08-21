@@ -435,9 +435,12 @@ void MainWindow::SetupView()
     // Headings QToolButton
     ui.tbHeadings->setPopupMode(QToolButton::InstantPopup);
 
-    // Preferences
+    // Preferences and About
     ui.actionPreferences->setMenuRole(QAction::PreferencesRole);
     ui.actionPreferences->setEnabled(true);
+
+    ui.actionAbout->setMenuRole(QAction::AboutRole);
+    ui.actionAbout->setEnabled(true);
 
     ui.actionOpen->setEnabled(true);
     ui.actionSave->setEnabled(true);
@@ -1534,6 +1537,11 @@ void MainWindow::ToggleSpellCheck()
 }
 #endif
 
+void MainWindow::AboutPageEdit()
+{
+    Utility::AboutBox();
+}
+
 void MainWindow::ExtendIconSizes()
 {
     QIcon icon;
@@ -1547,6 +1555,10 @@ void MainWindow::ExtendIconSizes()
     icon.addFile(QString::fromUtf8(":/icons/document-spellcheck_22px.png"));
     ui.actionSpellCheck->setIcon(icon);
 #endif
+
+    icon = ui.actionAbout->icon();
+    icon.addFile(QString::fromUtf8(":/icons/help-browser_22px.png"));
+    ui.actionAbout->setIcon(icon);
 
     icon = ui.actionMode->icon();
     icon.addFile(QString::fromUtf8(":/icons/mode-preview_22px.png"), QSize(22,22), QIcon::Normal, QIcon::Off);
@@ -1716,6 +1728,7 @@ void MainWindow::ConnectSignalsToSlots()
 
     connect(ui.actionInspect,   SIGNAL(triggered()),                       this, SLOT(InspectPreviewPage()));
     connect(m_SelectCharacter,  SIGNAL(SelectedCharacter(const QString&)), this, SLOT(PasteText(const QString &)));
+    connect(ui.actionAbout,     SIGNAL(triggered()),                       this, SLOT(AboutPageEdit()));
 
     // Headings Related
     connect(ui.actionHeading1, SIGNAL(triggered()), m_headingMapper, SLOT(map()));

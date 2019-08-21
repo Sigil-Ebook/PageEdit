@@ -162,6 +162,7 @@ public:
     static QString longestCommonPath(const QStringList& filepaths, const QString& sep);
     static QString resolveRelativeSegmentsInFilePath(const QString& file_path, const QString &sep);
 
+    static void AboutBox();
 };
 
 #endif // UTILITY_H
