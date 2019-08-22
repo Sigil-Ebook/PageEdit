@@ -482,10 +482,10 @@ void Utility::DisplayExceptionErrorDialog(const QString &error_info)
     QStringList detailed_text;
     detailed_text << "Error info: "       + error_info
                   << "PageEdit version: " + QString(PAGEEDIT_VERSION)
-                  << "Runtime Qt: "       + QString(qVersion())
-                  << "Compiled Qt: "      + QString(QT_VERSION_STR)
-                  << "System: "           + QSysInfo::prettyProductName()
-                  << "Architecture: "     + QSysInfo::currentCpuArchitecture();
+                  << "Qt Runtime Version: " + QString(qVersion())
+                  << "Qt Compiled Version: " + QString(QT_VERSION_STR)
+                  << "System: " + QSysInfo::prettyProductName()
+                  << "Architecture: " + QSysInfo::currentCpuArchitecture();
     message_box.setDetailedText(detailed_text.join("\n"));
     message_box.exec();
 }
@@ -644,13 +644,13 @@ void Utility::AboutBox()
     QStringList about_text;
     about_text    << "<h1>PageEdit</h1>"
                   << "<ul>"
-                  << "<li><b>" + QObject::tr("Version") + ":</b>      " + QString(PAGEEDIT_VERSION) + "</li>"
-	          << "<li><b>" + QObject::tr("Build Date") + ":</b>   " + QString::fromLatin1(__DATE__) + "</li>"
-	          << "<li><b>" + QObject::tr("Build Time") + ":</b>   " + QString::fromLatin1(__TIME__) + "</li>"
-                  << "<li><b>" + QObject::tr("Runtime Qt") + ":</b>   " + QString(qVersion()) + "</li>"
-                  << "<li><b>" + QObject::tr("Compiled Qt") + ":</b>  " + QString(QT_VERSION_STR) + "</li>"
-                  << "<li><b>" + QObject::tr("System") + ":</b>       " + QSysInfo::prettyProductName() + "</li>"
-                  << "<li><b>" + QObject::tr("Architecture") + ":</b> " + QSysInfo::currentCpuArchitecture() + "</li>";
+                  << "<li><b>" + QObject::tr("Version") + ":</b>             " + QString(PAGEEDIT_VERSION) + "</li>"
+	          << "<li><b>" + QObject::tr("Build Date") + ":</b>          " + QString::fromLatin1(__DATE__) + "</li>"
+	          << "<li><b>" + QObject::tr("Build Time") + ":</b>          " + QString::fromLatin1(__TIME__) + "</li>"
+                  << "<li><b>" + QObject::tr("Qt Runtime Version")+ ":</b>   " + QString(qVersion()) + "</li>"
+                  << "<li><b>" + QObject::tr("Qt Compiled Version") + ":</b> " + QString(QT_VERSION_STR) + "</li>"
+                  << "<li><b>" + QObject::tr("System") + ":</b>              " + QSysInfo::prettyProductName() + "</li>"
+                  << "<li><b>" + QObject::tr("Architecture") + ":</b>        " + QSysInfo::currentCpuArchitecture() + "</li>";
     about_text << "</ul>";
     message_box.setText(about_text.join("\n"));
     message_box.setIconPixmap(QPixmap(":/icons/app_icon_128.png"));
