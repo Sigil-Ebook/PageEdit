@@ -480,17 +480,12 @@ void Utility::DisplayExceptionErrorDialog(const QString &error_info)
     message_box.setInformativeText(QObject::tr("PageEdit may need to close."));
     message_box.setStandardButtons(QMessageBox::Close);
     QStringList detailed_text;
-    detailed_text << "Error info: "    + error_info
+    detailed_text << "Error info: "       + error_info
                   << "PageEdit version: " + QString(PAGEEDIT_VERSION)
-                  << "Runtime Qt: "    + QString(qVersion())
-                  << "Compiled Qt: "   + QString(QT_VERSION_STR);
-#if defined Q_OS_WIN32
-    detailed_text << "Platform: Windows SysInfo ID " + QString::number(QSysInfo::WindowsVersion);
-#elif defined Q_OS_MAC
-    detailed_text << "Platform: Mac SysInfo ID " + QString::number(QSysInfo::MacintoshVersion);
-#else
-    detailed_text << "Platform: Linux";
-#endif
+                  << "Runtime Qt: "       + QString(qVersion())
+                  << "Compiled Qt: "      + QString(QT_VERSION_STR)
+                  << "System: "           + QSysInfo::prettyProductName()
+                  << "Architecture: "     + QSysInfo::currentCpuArchitecture();
     message_box.setDetailedText(detailed_text.join("\n"));
     message_box.exec();
 }
@@ -649,18 +644,13 @@ void Utility::AboutBox()
     QStringList about_text;
     about_text    << "<h1>PageEdit</h1>"
                   << "<ul>"
-                  << "<li><b>Version:</b>     " + QString(PAGEEDIT_VERSION) + "</li>"
-	          << "<li><b>Build Date:</b>  " + QString::fromLatin1(__DATE__) + "</li>"
-	          << "<li><b>Build Time:</b>  " + QString::fromLatin1(__TIME__) + "</li>"
-                  << "<li><b>Runtime Qt:</b>  " + QString(qVersion()) + "</li>"
-                  << "<li><b>Compiled Qt:</b> " + QString(QT_VERSION_STR) + "</li>" ;
-#if defined Q_OS_WIN32
-    about_text << "<li><b>Windows SysInfo ID:</b> " + QString::number(QSysInfo::WindowsVersion)  + "</li>";
-#elif defined Q_OS_MAC
-    about_text << "<li>Mac SysInfo ID:</b> " + QString::number(QSysInfo::MacintoshVersion)  + "</li>";
-#else
-    about_text << "<li>Linux</li>";
-#endif
+                  << "<li><b>" + QObject::tr("Version") + ":</b>      " + QString(PAGEEDIT_VERSION) + "</li>"
+	          << "<li><b>" + QObject::tr("Build Date") + ":</b>   " + QString::fromLatin1(__DATE__) + "</li>"
+	          << "<li><b>" + QObject::tr("Build Time") + ":</b>   " + QString::fromLatin1(__TIME__) + "</li>"
+                  << "<li><b>" + QObject::tr("Runtime Qt") + ":</b>   " + QString(qVersion()) + "</li>"
+                  << "<li><b>" + QObject::tr("Compiled Qt") + ":</b>  " + QString(QT_VERSION_STR) + "</li>"
+                  << "<li><b>" + QObject::tr("System") + ":</b>       " + QSysInfo::prettyProductName() + "</li>"
+                  << "<li><b>" + QObject::tr("Architecture") + ":</b> " + QSysInfo::currentCpuArchitecture() + "</li>";
     about_text << "</ul>";
     message_box.setText(about_text.join("\n"));
     message_box.setIconPixmap(QPixmap(":/icons/app_icon_128.png"));
