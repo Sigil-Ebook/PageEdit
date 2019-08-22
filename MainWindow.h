@@ -35,6 +35,8 @@
 #include <Viewer.h>
 #include <Inspector.h>
 
+#include "ElementIndex.h"
+
 class WebViewEdit;
 class Inspector;
 class QWebEngineView;
@@ -86,7 +88,6 @@ public slots:
     void UpdateWindowTitle();
     void ScrollTo(QList<ElementIndex> location);
     void SetZoomFactor(float factor);
-    void LinkClicked(const QUrl &url);
     void EmitGoToPreviewLocationRequest();
     void InspectPreviewPage();
     void SelectAllPreview();
@@ -99,6 +100,8 @@ public slots:
     void EditNext();
     void EditPrev();
     void CBNavigateActivated(int index);
+    void LinkClicked(const QUrl &url);
+    void LinkReturn();
 
     // Mode slots
     void ToggleMode(bool on);
@@ -204,6 +207,10 @@ private:
     QString m_Base;
     int m_ListPtr;
     bool m_UpdatePageInProgress;
+
+    QList<ElementIndex> m_LastLocation;
+    int m_LastPtr;
+
     Ui::MainWindow ui;
 };
 

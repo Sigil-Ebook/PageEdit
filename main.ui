@@ -336,9 +336,10 @@
    <attribute name="toolBarBreak">
     <bool>true</bool>
    </attribute>
+   <widget class="QComboBox" name="cbNavigate" />
    <addaction name="actionPrev"/>
    <addaction name="actionNext"/>
-   <widget class="QComboBox" name="cbNavigate" />
+   <addaction name="actionLinkReturn"/>
   </widget>
 
   <widget class="QStatusBar" name="statusbar"/>
@@ -1057,6 +1058,19 @@
    </property>
    <property name="toolTip">
     <string>Show information about PageEdit.</string>
+   </property>
+  </action>
+
+  <action name="actionLinkReturn">
+   <property name="icon">
+    <iconset resource="../icons/icons.qrc">
+     <normaloff>:/icons/back-link_48px.png</normaloff>:/icons/back-link_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Back to Last Link</string>
+   </property>
+   <property name="toolTip">
+    <string>Return from the last link taken</string>
    </property>
   </action>
 

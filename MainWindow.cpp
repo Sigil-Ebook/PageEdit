@@ -100,7 +100,8 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_SpineList(QStringList()),
     m_Base(QString()),
     m_ListPtr(-1),
-    m_UpdatePageInProgress(false)
+    m_UpdatePageInProgress(false),
+    m_LastPtr(-1)
 {
     ui.setupUi(this);
     SetupView();
@@ -709,6 +710,11 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
 		  DBG qDebug() << "Detected Left Mouse Button Press Event";
 		  QString hoverurl = m_WebView->GetHoverUrl();
 		  DBG qDebug() << "hover url is: " << hoverurl;
+		  if (!hoverurl.isEmpty() && !ui.actionMode->isChecked()) {
+		      // we are taking a link so save the current location
+		      m_LastPtr = m_ListPtr;
+		      m_LastLocation = m_WebView->GetCaretLocation();
+		  }
 	      }
 	      if (mouseEvent->button() == Qt::RightButton) {
 		  DBG qDebug() << "Detected Right Mouse Button Press Event";
@@ -751,6 +757,26 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
       break;
   }
   return QObject::eventFilter(object, event);
+}
+
+void MainWindow::LinkReturn()
+{
+    // requires the Preview Mode to function
+    if (ui.actionMode->isChecked()) return;
+
+    // return to last location before link
+    if ((m_LastPtr != -1) && !m_LastLocation.isEmpty()) {
+        if (m_LastPtr != m_ListPtr) {
+            AllowSaveIfModified();
+	    m_ListPtr = m_LastPtr;
+	    ui.cbNavigate->setCurrentIndex(m_ListPtr);
+	    m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+	    UpdatePage(m_CurrentFilePath);
+	}
+	ScrollTo(m_LastLocation);
+    }
+    m_LastPtr = -1;
+    m_LastLocation.clear();
 }
 
 void MainWindow::LinkClicked(const QUrl &url)
@@ -1573,6 +1599,10 @@ void MainWindow::ExtendIconSizes()
     icon.addFile(QString::fromUtf8(":/icons/arrow-left_22px.png"));
     ui.actionPrev->setIcon(icon);
 
+    icon = ui.actionLinkReturn->icon();
+    icon.addFile(QString::fromUtf8(":/icons/back-link_22px.png"));
+    ui.actionLinkReturn->setIcon(icon);
+
     icon = ui.actionCut->icon();
     icon.addFile(QString::fromUtf8(":/icons/edit-cut_22px.png"));
     ui.actionCut->setIcon(icon);
@@ -1757,9 +1787,10 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionHeadingPreserveAttributes,SIGNAL(triggered(bool)),this,SLOT(SetPreserveHeadingAttributes(bool)));
 
     // Navigation Related
-    connect(ui.actionPrev,  SIGNAL(triggered()),    this, SLOT(EditPrev()));
-    connect(ui.actionNext,  SIGNAL(triggered()),    this, SLOT(EditNext()));
-    connect(ui.cbNavigate,  SIGNAL(activated(int)), this, SLOT(CBNavigateActivated(int)));
+    connect(ui.actionPrev,       SIGNAL(triggered()),    this, SLOT(EditPrev()));
+    connect(ui.actionNext,       SIGNAL(triggered()),    this, SLOT(EditNext()));
+    connect(ui.cbNavigate,       SIGNAL(activated(int)), this, SLOT(CBNavigateActivated(int)));
+    connect(ui.actionLinkReturn, SIGNAL(triggered()),    this, SLOT(LinkReturn()));
 
     // File Related
     connect(ui.actionOpen,         SIGNAL(triggered()), this, SLOT(Open()));
