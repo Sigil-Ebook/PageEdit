@@ -137,57 +137,63 @@ void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
     const QWebEngineContextMenuData &data = page()->contextMenuData();
     Q_ASSERT(data.isValid());
 
-    if (!data.isContentEditable()) {
-      QWebEngineView::contextMenuEvent(event);
-      return;
-    }
-
     QWebEngineProfile *profile = page()->profile();
-    const QStringList &dictionaries = profile->spellCheckLanguages();
     m_menu->clear();
-    if (!data.misspelledWord().isEmpty()) {
-        QFont boldFont = m_menu->font();
-        boldFont.setBold(true);
 
-        for (const QString &suggestion : data.spellCheckerSuggestions()) {
-	    QAction *action = m_menu->addAction(suggestion);
-	    action->setFont(boldFont);
+    if (data.isContentEditable()) {
 
-	    connect(action, &QAction::triggered, this, [=]() {
-	        page()->replaceMisspelledWord(suggestion);
-	      });
-         }
+        // Used for edit mode
+        const QStringList &dictionaries = profile->spellCheckLanguages();
 
-        if (m_menu->actions().isEmpty()) {
-	    m_menu->addAction(tr("No suggestions"))->setEnabled(false);
+        if (!data.misspelledWord().isEmpty()) {
+            QFont boldFont = m_menu->font();
+            boldFont.setBold(true);
+
+            for (const QString &suggestion : data.spellCheckerSuggestions()) {
+	        QAction *action = m_menu->addAction(suggestion);
+	        action->setFont(boldFont);
+
+	        connect(action, &QAction::triggered, this, [=]() {
+	            page()->replaceMisspelledWord(suggestion);
+	          });
+             }
+
+            if (m_menu->actions().isEmpty()) {
+	        m_menu->addAction(tr("No suggestions"))->setEnabled(false);
+            }
         }
-    }
-    m_menu->addSeparator();
+        m_menu->addSeparator();
 
-    m_menu->addAction(pageAction(QWebEnginePage::Cut));
-    m_menu->addAction(pageAction(QWebEnginePage::Copy));
-    m_menu->addAction(pageAction(QWebEnginePage::Paste));
+        m_menu->addAction(pageAction(QWebEnginePage::Cut));
+        m_menu->addAction(pageAction(QWebEnginePage::Copy));
+        m_menu->addAction(pageAction(QWebEnginePage::Paste));
+	m_menu->addAction(pageAction(QWebEnginePage::SelectAll));
 
-    m_menu->addSeparator();
+        m_menu->addSeparator();
 
-    QAction *spellcheckAction = new QAction(tr("Check Spelling"), nullptr);
-    spellcheckAction->setCheckable(true);
-    spellcheckAction->setChecked(profile->isSpellCheckEnabled());
-    connect(spellcheckAction, &QAction::toggled, this, [profile](bool toogled) {
-        profile->setSpellCheckEnabled(toogled);
-    });
-    m_menu->addAction(spellcheckAction);
+        QAction *spellcheckAction = new QAction(tr("Check Spelling"), nullptr);
+        spellcheckAction->setCheckable(true);
+        spellcheckAction->setChecked(profile->isSpellCheckEnabled());
+        connect(spellcheckAction, &QAction::toggled, this, [profile](bool toogled) {
+            profile->setSpellCheckEnabled(toogled);
+        });
+        m_menu->addAction(spellcheckAction);
 
-    if (profile->isSpellCheckEnabled()) {
-        QMenu *subMenu = m_menu->addMenu(tr("Select Language"));
-        for (const QString &dict : m_dictionaries) {
-            QAction *action = subMenu->addAction(dict);
-            action->setCheckable(true);
-            action->setChecked(dictionaries.contains(dict));
-            connect(action, &QAction::triggered, this, [profile, dict](){
-	        profile->setSpellCheckLanguages(QStringList()<<dict);
-	    });
+        if (profile->isSpellCheckEnabled()) {
+            QMenu *subMenu = m_menu->addMenu(tr("Select Language"));
+            for (const QString &dict : m_dictionaries) {
+                QAction *action = subMenu->addAction(dict);
+                action->setCheckable(true);
+                action->setChecked(dictionaries.contains(dict));
+                connect(action, &QAction::triggered, this, [profile, dict](){
+	            profile->setSpellCheckLanguages(QStringList()<<dict);
+	        });
+            }
         }
+    } else {  
+        // Used for preview mode
+        m_menu->addAction(pageAction(QWebEnginePage::Copy));
+        m_menu->addAction(pageAction(QWebEnginePage::SelectAll));
     }
     // connect(m_menu, &QMenu::aboutToHide, m_menu, &QObject::deleteLater);
     m_menu->popup(event->globalPos());
