@@ -1,6 +1,6 @@
 PageEdit
 ========
-A single page visual XHTML editor based on Sigil's Deprecated BookView.
+An ePub visual XHTML editor based on Sigil's Deprecated BookView.
 It uses WebEngine instead of WebKit.
 
 This app is working and fundamentally complete.
@@ -36,7 +36,8 @@ Building on macOS:
 `cd bin`<br>
 `open -a /FULL_PATH_TO_THIS_DIRECTORY/PageEdit.app /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`<br>
 `or simply drag and drop an xhtml file from an unzipped epub onto the PageEdit.app`<br>
-
+``<br>
+`or edit a set of XHtml files in epub Spine Order by loading the ePub's OPF file`<br>
 
 On Linux
 --------
