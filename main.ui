@@ -336,7 +336,11 @@
    <attribute name="toolBarBreak">
     <bool>true</bool>
    </attribute>
-   <widget class="QComboBox" name="cbNavigate" />
+   <widget class="QComboBox" name="cbNavigate">
+   <property name="toolTip">
+    <string>Navigation List</string>
+   </property>
+   </widget>
    <addaction name="actionPrev"/>
    <addaction name="actionNext"/>
    <addaction name="actionLinkReturn"/>
@@ -1012,7 +1016,7 @@
     <string>Next XHtml File</string>
    </property>
    <property name="toolTip">
-    <string>Navigate to the Next File in the Spine List</string>
+    <string>Next file in navigation list</string>
    </property>
   </action>
 
@@ -1028,7 +1032,7 @@
     <string>Previous XHtml File</string>
    </property>
    <property name="toolTip">
-    <string>Navigate to the Previous Xhtml File in the Spine List</string>
+    <string>Previous file in navigation list</string>
    </property>
   </action>
 

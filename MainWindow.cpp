@@ -137,6 +137,8 @@ MainWindow::~MainWindow()
 void MainWindow::SetupFileList(const QString &filepath)
 {
     m_CurrentFilePath = "";
+    ui.actionNext->setEnabled(false);
+    ui.actionPrev->setEnabled(false);
     if (filepath.isEmpty()) return;
     QFileInfo fi(filepath);
     if (!fi.exists() || !fi.isReadable()) return;   
@@ -155,6 +157,10 @@ void MainWindow::SetupFileList(const QString &filepath)
     }
     m_ListPtr = 0;
     m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+    if (m_SpineList.length() > 1) {
+        ui.actionNext->setEnabled(true);
+        ui.actionPrev->setEnabled(true);
+    }
     DBG qDebug() << "in SetupFileList" << m_CurrentFilePath;
 }
 
