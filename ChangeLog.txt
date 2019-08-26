@@ -1,6 +1,6 @@
 Change Log
 ==========
-pre-PageEdit-0.9.0
+PageEdit-0.9.5
   New Features
      - add the ability to pass all xhtml files in the spine in Reading Order to PageEdit 
             via opening the OPF.  Allow quick file navigation via navigation menu and next 
@@ -16,6 +16,7 @@ pre-PageEdit-0.9.0
      - fix macOS specific launch bugs due to bug in canonical files and timing of Apple events
      - make sure jQuery is loaded before trying to manipulate a file by imporving web load sequence
      - use GetEnvironmentVar to uniformly access Environment Vars in a cross platform manner
+     - disable prev and next navigation buttons when only one input xhtml file exists
 
 
 PageEdit-0.8.0
