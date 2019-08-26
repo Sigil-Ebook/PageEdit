@@ -1,107 +1,107 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="da_DK" version="2.1">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Appearance</translation>
+        <translation>Udseende</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="24"/>
         <source>Fonts/Sizes</source>
-        <translation>Fonts/Sizes</translation>
+        <translation>Skrifttyper/Størrelser</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="30"/>
         <source>Preview:</source>
-        <translation>Preview:</translation>
+        <translation>Forhåndsvisning:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="39"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</translation>
+        <translation>Er ingen skrifttyper angivet i den tilhørende CSS-fil, vil følgende skrifttype blive brugt til at vise teksten i &apos;PageEdit&apos;. Skrifterne vil ikke blive anvendt i den endelige bog.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="59"/>
         <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation>Default font size to be used for WebView if no font-size specified in your CSS</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="62"/>
         <location filename="../PAppearanceWidget.ui" line="186"/>
         <source>Font Size:</source>
-        <translation>Font Size:</translation>
+        <translation>Skriftstørrelse:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="92"/>
         <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if no font-family specified in your CSS</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="95"/>
         <location filename="../PAppearanceWidget.ui" line="219"/>
         <source>Standard Font:</source>
-        <translation>Standard Font:</translation>
+        <translation>Standardskrifttype:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="105"/>
         <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if a serif font-family specified in your CSS</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Serif Font:</source>
-        <translation>Serif Font:</translation>
+        <translation>Serif-skrifttype:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="118"/>
         <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="121"/>
         <source>Sans-Serif Font:</source>
-        <translation>Sans-Serif Font:</translation>
+        <translation>Sans-serif-skrifttype:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="169"/>
         <source>Insert Special Characters:</source>
-        <translation>Insert Special Characters:</translation>
+        <translation>Indsæt specialtegn:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="183"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Font size to be used for Insert Special Characters window</translation>
+        <translation>Skriftstørrelse, der skal anvendes ved Indsæt specialtegnsvinduet</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="216"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Font family to be used for Insert Special Characters window</translation>
+        <translation>Skrifttype, der skal anvendes ved Indsæt specialtegnsvinduet</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Icons</source>
-        <translation>Icons</translation>
+        <translation>Ikoner</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>Icon Size</source>
-        <translation>Icon Size</translation>
+        <translation>Ikonstørrelse</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="275"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Adjust the size of the icons in the main menu.</translation>
+        <translation>Tilpas størrelsen på ikoner i hovedmenuen.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="351"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Reset all fonts and colors to the default values</translation>
+        <translation>Nulstil alle skrifttyper og farver til standardværdierne</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="354"/>
         <source>Reset All</source>
-        <translation>Reset All</translation>
+        <translation>Nulstil alt</translation>
     </message>
 </context>
 <context>
@@ -109,121 +109,119 @@
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>General Settings</translation>
+        <translation>Generelle indstillinger</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>You must restart PageEdit after changing the User Interface language.
-
-If a translation for specific word or phrase is not available it will be displayed in English.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>User Interface Language:</translation>
+        <translation>Brugergrænsefladesprog:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Select from installed spellcheck dictionaries.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Spellcheck Dictionary:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Determine if html files are allowed to access non-multimedia remote resources.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation> Control access by html files to non-multimedia remote resources.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Check to allow html files to access non-multimedia remote resources.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Html files may access all remote resources types.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Determine if javascript is allowed to be used by html files</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation> Control use of javascript by html files.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Check to allow html files to use javascript.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Html files may use javascript.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Handle multiple white space layout using:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Use CSS white-space: pre-wrap</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation>css white-space: pre-wrap</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Use non-breaking spaces as needed</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>non-breaking spaces as needed</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Determine if Prettify is used when saving</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation> Use Prettify to reformat the xhtml when saving.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Check to reformat with Prettify when saving xhtml files.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Use Prettify to reformat xhtml when saving.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -231,12 +229,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Inspector.cpp" line="54"/>
         <source>Inspect Page or Element</source>
-        <translation>Inspect Page or Element</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="94"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>The Inspector functionality is not supported before Qt 5.11</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -249,27 +247,27 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="726"/>
         <location filename="../MainWindow.cpp.keep" line="1337"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;File</translation>
+        <translation>&amp;Filer</translation>
     </message>
     <message>
         <location filename="../main.ui" line="74"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Edit</translation>
+        <translation>&amp;Rediger</translation>
     </message>
     <message>
         <location filename="../main.ui" line="87"/>
         <source>&amp;Find</source>
-        <translation>&amp;Find</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="94"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Insert</translation>
+        <translation>&amp;Indsæt</translation>
     </message>
     <message>
         <location filename="../main.ui" line="105"/>
@@ -279,59 +277,59 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="110"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Heading</translation>
+        <translation>&amp;Overskrift</translation>
     </message>
     <message>
         <location filename="../main.ui" line="143"/>
         <source>&amp;View</source>
-        <translation>&amp;View</translation>
+        <translation>&amp;Vis</translation>
     </message>
     <message>
         <location filename="../main.ui" line="152"/>
         <source>Inspector</source>
-        <translation>Inspector</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="168"/>
         <source>File</source>
-        <translation>File</translation>
+        <translation>Fil</translation>
     </message>
     <message>
         <location filename="../main.ui" line="182"/>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation>Redigér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="200"/>
         <location filename="../main.ui" line="1048"/>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation>Tilstand</translation>
     </message>
     <message>
         <location filename="../main.ui" line="213"/>
         <source>Insert</source>
-        <translation>Insert</translation>
+        <translation>Indsæt</translation>
     </message>
     <message>
         <location filename="../main.ui" line="229"/>
         <source>Inspect</source>
-        <translation>Inspect</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="242"/>
         <location filename="../main.ui" line="997"/>
         <source>Find</source>
-        <translation>Find</translation>
+        <translation>Søg</translation>
     </message>
     <message>
         <location filename="../main.ui" line="255"/>
         <source>Heading</source>
-        <translation>Heading</translation>
+        <translation>Overskrift</translation>
     </message>
     <message>
         <location filename="../main.ui" line="269"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>set Heading Level of Selected Text</translation>
+        <translation>Angiv overskriftsniveau for valgt tekst</translation>
     </message>
     <message>
         <location filename="../main.ui" line="283"/>
@@ -341,32 +339,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="301"/>
         <source>Align</source>
-        <translation>Align</translation>
+        <translation>Justér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="317"/>
         <source>Indent</source>
-        <translation>Indent</translation>
+        <translation>Indryk</translation>
     </message>
     <message>
         <location filename="../main.ui" line="331"/>
         <source>Navigate</source>
-        <translation>Navigate</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="341"/>
         <source>Navigation List</source>
-        <translation>Navigation List</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="357"/>
         <source>&amp;Save</source>
-        <translation>&amp;Save</translation>
+        <translation>&amp;Gem</translation>
     </message>
     <message>
         <location filename="../main.ui" line="360"/>
         <source>Save the current file.</source>
-        <translation>Save the current file.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="363"/>
@@ -376,12 +374,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="369"/>
         <source>Save &amp;As...</source>
-        <translation>Save &amp;As...</translation>
+        <translation>Ge&amp;m som...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="372"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Save the current file with a different filename.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="375"/>
@@ -391,32 +389,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="385"/>
         <source>Cu&amp;t</source>
-        <translation>Cu&amp;t</translation>
+        <translation>&amp;Klip</translation>
     </message>
     <message>
         <location filename="../main.ui" line="388"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Cuts the selected text from the document and puts it on the clipboard.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="398"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Paste</translation>
+        <translation>Sæt i&amp;nd</translation>
     </message>
     <message>
         <location filename="../main.ui" line="401"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Pastes the content from the clipboard into the file.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="411"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Undo</translation>
+        <translation>Fortr&amp;yd</translation>
     </message>
     <message>
         <location filename="../main.ui" line="414"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Reverts the changes of the previous operation.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="417"/>
@@ -426,12 +424,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="427"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Redo</translation>
+        <translation>G&amp;endan</translation>
     </message>
     <message>
         <location filename="../main.ui" line="430"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Restores the changes reverted by the previous Undo action.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="433"/>
@@ -441,42 +439,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="443"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Copy</translation>
+        <translation>K&amp;opiér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="446"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Copies the selected text and puts it on the clipboard.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="459"/>
         <source>Align &amp;Left</source>
-        <translation>Align &amp;Left</translation>
+        <translation>Justér til &amp;venstre</translation>
     </message>
     <message>
         <location filename="../main.ui" line="462"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Align the paragraph to the left.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="476"/>
         <source>Align &amp;Right</source>
-        <translation>Align &amp;Right</translation>
+        <translation>Justér til &amp;højre</translation>
     </message>
     <message>
         <location filename="../main.ui" line="479"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Align the paragraph to the right.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="492"/>
         <source>&amp;Center</source>
-        <translation>&amp;Center</translation>
+        <translation>&amp;Centrér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="495"/>
         <source>Center the paragraph.</source>
-        <translation>Center the paragraph.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="498"/>
@@ -486,12 +484,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="511"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Justify</translation>
+        <translation>&amp;Lige margen</translation>
     </message>
     <message>
         <location filename="../main.ui" line="514"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Align the paragraph to both the left and right margins.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="517"/>
@@ -501,12 +499,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="530"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Bold</translation>
+        <translation>&amp;Fed</translation>
     </message>
     <message>
         <location filename="../main.ui" line="533"/>
         <source>Make the selected text bold.</source>
-        <translation>Make the selected text bold.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="536"/>
@@ -516,12 +514,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="549"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Italic</translation>
+        <translation>&amp;Kursiv</translation>
     </message>
     <message>
         <location filename="../main.ui" line="552"/>
         <source>Make the selected text italic.</source>
-        <translation>Make the selected text italic.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="555"/>
@@ -531,12 +529,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="565"/>
         <source>&amp;Open...</source>
-        <translation>&amp;Open...</translation>
+        <translation>Å&amp;bn...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="568"/>
         <source>Open a file from disk.</source>
-        <translation>Open a file from disk.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="571"/>
@@ -546,12 +544,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="585"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Underline</translation>
+        <translation>&amp;Understreget</translation>
     </message>
     <message>
         <location filename="../main.ui" line="588"/>
         <source>Underline the selected text.</source>
-        <translation>Underline the selected text.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="591"/>
@@ -561,12 +559,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="601"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Quit</translation>
+        <translation>&amp;Afslut</translation>
     </message>
     <message>
         <location filename="../main.ui" line="604"/>
         <source>Quit</source>
-        <translation>Quit</translation>
+        <translation>Afslut</translation>
     </message>
     <message>
         <location filename="../main.ui" line="607"/>
@@ -576,32 +574,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="617"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Special Character...</translation>
+        <translation>&amp;Specialtegn...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="620"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Select a character to insert into your text.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="633"/>
         <source>&amp;Numbered List</source>
-        <translation>&amp;Numbered List</translation>
+        <translation>&amp;Talopstilling</translation>
     </message>
     <message>
         <location filename="../main.ui" line="636"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Create a numbered list from selection.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="649"/>
         <source>Bulle&amp;ted List</source>
-        <translation>Bulle&amp;ted List</translation>
+        <translation>&amp;Punktopstilling</translation>
     </message>
     <message>
         <location filename="../main.ui" line="652"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Create a bulleted list from selection.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="655"/>
@@ -611,42 +609,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="668"/>
         <source>Stri&amp;kethrough</source>
-        <translation>Stri&amp;kethrough</translation>
+        <translation>&amp;Gennemstreget</translation>
     </message>
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Draw a line through the selected text.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Subscript</translation>
+        <translation>&amp;Sænket skrift</translation>
     </message>
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Set the selected text slightly smaller and below the normal line.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Su&amp;perscript</source>
-        <translation>Su&amp;perscript</translation>
+        <translation>H&amp;ævet skrift</translation>
     </message>
     <message>
         <location filename="../main.ui" line="703"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Set the selected text slightly smaller and above the normal line.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="714"/>
         <source>Zoom &amp;In</source>
-        <translation>Zoom &amp;In</translation>
+        <translation>Zoom &amp;ind</translation>
     </message>
     <message>
         <location filename="../main.ui" line="717"/>
         <source>Zoom In</source>
-        <translation>Zoom In</translation>
+        <translation>Zoom ind</translation>
     </message>
     <message>
         <location filename="../main.ui" line="720"/>
@@ -656,12 +654,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="731"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zoom &amp;Out</translation>
+        <translation>Zoom &amp;ud</translation>
     </message>
     <message>
         <location filename="../main.ui" line="734"/>
         <source>Zoom Out</source>
-        <translation>Zoom Out</translation>
+        <translation>Zoom ud</translation>
     </message>
     <message>
         <location filename="../main.ui" line="737"/>
@@ -671,12 +669,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="748"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>Incre&amp;ase Indent</translation>
+        <translation>For&amp;øg indrykning</translation>
     </message>
     <message>
         <location filename="../main.ui" line="751"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Increase the indent level of the paragraph.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="754"/>
@@ -686,12 +684,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="764"/>
         <source>&amp;Decrease Indent</source>
-        <translation>&amp;Decrease Indent</translation>
+        <translation>For&amp;mindsk indrykning</translation>
     </message>
     <message>
         <location filename="../main.ui" line="767"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Decrease the indent level of the paragraph.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="770"/>
@@ -701,22 +699,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="780"/>
         <source>Split &amp;Marker</source>
-        <translation>Split &amp;Marker</translation>
+        <translation>Opdelings&amp;markør</translation>
     </message>
     <message>
         <location filename="../main.ui" line="783"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Insert Sigil split file marker</translation>
+        <translation>Indsæt Sigil-fildelingsmarkør</translation>
     </message>
     <message>
         <location filename="../main.ui" line="786"/>
         <source>Ctrl+Shift+Return</source>
-        <translation>Ctrl+Shift+Return</translation>
+        <translation>Ctrl+Shift+Enter</translation>
     </message>
     <message>
         <location filename="../main.ui" line="792"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Preferences...</translation>
+        <translation>&amp;Indstillinger...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="795"/>
@@ -726,12 +724,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="801"/>
         <source>&amp;Zoom Reset</source>
-        <translation>&amp;Zoom Reset</translation>
+        <translation>Nulstil &amp;zoom </translation>
     </message>
     <message>
         <location filename="../main.ui" line="804"/>
         <source>Zoom Reset</source>
-        <translation>Zoom Reset</translation>
+        <translation>Nulstil zoom</translation>
     </message>
     <message>
         <location filename="../main.ui" line="807"/>
@@ -741,12 +739,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="820"/>
         <source>Heading &amp;1</source>
-        <translation>Heading &amp;1</translation>
+        <translation>Overskrift &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="823"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Format paragraph as a level 1 heading.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="826"/>
@@ -756,12 +754,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="839"/>
         <source>Heading &amp;2</source>
-        <translation>Heading &amp;2</translation>
+        <translation>Overskrift &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="842"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Format paragraph as a level 2 heading.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="845"/>
@@ -771,12 +769,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="858"/>
         <source>Heading &amp;3</source>
-        <translation>Heading &amp;3</translation>
+        <translation>Overskrift &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="861"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Format paragraph as a level 3 heading.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="864"/>
@@ -786,12 +784,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="878"/>
         <source>Heading &amp;4</source>
-        <translation>Heading &amp;4</translation>
+        <translation>Overskrift &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="881"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Format paragraph as a level 4 heading.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="884"/>
@@ -801,12 +799,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="897"/>
         <source>Heading &amp;5</source>
-        <translation>Heading &amp;5</translation>
+        <translation>Overskrift &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="900"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Format paragraph as a level 5 heading.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="903"/>
@@ -816,12 +814,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="916"/>
         <source>Heading &amp;6</source>
-        <translation>Heading &amp;6</translation>
+        <translation>Overskrift &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="919"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Format paragraph as a level 6 heading.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="922"/>
@@ -836,7 +834,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="939"/>
         <source>ormat paragraph as a normal paragraph.</source>
-        <translation>ormat paragraph as a normal paragraph.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="942"/>
@@ -846,47 +844,47 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="952"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Preserve Existing Attributes</translation>
+        <translation>&amp;Bevar eksisterende attributter</translation>
     </message>
     <message>
         <location filename="../main.ui" line="955"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>When applying this style, preserve any existing attributes on the tag</translation>
+        <translation>Ved anvendelse af denne typografi, skal alle eksisterende attributter på tagget bevares</translation>
     </message>
     <message>
         <location filename="../main.ui" line="965"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Select All</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="968"/>
         <source>Select all text in the document.</source>
-        <translation>Select all text in the document.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="971"/>
         <source>Ctrl+A</source>
-        <translation>Ctrl+A</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="981"/>
         <source>&amp;Inspector</source>
-        <translation>&amp;Inspector</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="984"/>
         <source>Inspect the page.</source>
-        <translation>Inspect the page.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="987"/>
         <source>Ctrl+F5</source>
-        <translation>Ctrl+F5</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1000"/>
         <source>Find text in the page</source>
-        <translation>Find text in the page</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1003"/>
@@ -896,67 +894,65 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1016"/>
         <source>Next XHtml File</source>
-        <translation>Next XHtml File</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1019"/>
         <source>Next file in navigation list</source>
-        <translation>Next file in navigation list</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1032"/>
         <source>Previous XHtml File</source>
-        <translation>Previous XHtml File</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1035"/>
         <source>Previous file in navigation list</source>
-        <translation>Previous file in navigation list</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Toggle between Edit and Preview Modes.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1061"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1064"/>
         <source>Show information about PageEdit.</source>
-        <translation>Show information about PageEdit.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1074"/>
         <source>Back to Last Link</source>
-        <translation>Back to Last Link</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1077"/>
         <source>Return from the last link taken</source>
-        <translation>Return from the last link taken</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="834"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Are you sure you want to open this link in your browser?
-
-%1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="894"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Do you want to save your changes before leaving?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="911"/>
         <location filename="../MainWindow.cpp.keep" line="721"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit is closing...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1039"/>
@@ -972,30 +968,30 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="876"/>
         <location filename="../MainWindow.cpp.keep" line="877"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>HTML files (*.htm *.html *.xhtml)</translation>
+        <translation>HTML-filer (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1042"/>
         <source>OPF files (*.opf)</source>
-        <translation>OPF files (*.opf)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1043"/>
         <location filename="../MainWindow.cpp.keep" line="867"/>
         <source>Text files (*.txt)</source>
-        <translation>Text files (*.txt)</translation>
+        <translation>Tekstfiler (*.txt)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1044"/>
         <location filename="../MainWindow.cpp.keep" line="868"/>
         <source>All files (*.*)</source>
-        <translation>All files (*.*)</translation>
+        <translation>Alle filer (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1255"/>
         <location filename="../MainWindow.cpp.keep" line="1024"/>
         <source>Save File</source>
-        <translation>Save File</translation>
+        <translation>Gem fil</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1290"/>
@@ -1007,13 +1003,13 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="1072"/>
         <location filename="../MainWindow.cpp.keep" line="1073"/>
         <source>File Save-As Failed!</source>
-        <translation>File Save-As Failed!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1290"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
         <source>is not writeable</source>
-        <translation>is not writeable</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1299"/>
@@ -1021,7 +1017,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="1068"/>
         <location filename="../MainWindow.cpp.keep" line="1098"/>
         <source>File Saved</source>
-        <translation>File Saved</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1320"/>
@@ -1033,48 +1029,48 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="1102"/>
         <location filename="../MainWindow.cpp.keep" line="1103"/>
         <source>File Save Failed!</source>
-        <translation>File Save Failed!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1321"/>
         <location filename="../MainWindow.cpp.keep" line="1090"/>
         <source>does not exist or is not writeable</source>
-        <translation>does not exist or is not writeable</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1382"/>
         <location filename="../MainWindow.cpp.keep" line="1147"/>
         <source>File Opened</source>
-        <translation>File Opened</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1386"/>
         <location filename="../MainWindow.cpp.keep" line="1152"/>
         <source>File Open Failed!</source>
-        <translation>File Open Failed!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1409"/>
         <location filename="../MainWindow.cpp.keep" line="1175"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Clipboard contains HTML formatting</translation>
+        <translation>Klippebordet indeholder HTML formateret kode</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1410"/>
         <location filename="../MainWindow.cpp.keep" line="1176"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Do you want to paste clipboard data as plain text?</translation>
+        <translation>Vil du indsætte klippebords data som almindelig tekst?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1550"/>
         <location filename="../MainWindow.cpp.keep" line="1338"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Do you want to save any changes before overwriting this file?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp.keep" line="727"/>
         <source>Do you want to save your changes before closing?</source>
-        <translation>Do you want to save your changes before closing?</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1082,22 +1078,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Preferences</translation>
+        <translation>Indstillinger...</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="86"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="86"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Changes will take effect when you restart PageEdit.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="143"/>
         <source>Open Preferences Location</source>
-        <translation>Open Preferences Location</translation>
+        <translation>Åben placering for indstillinger</translation>
     </message>
 </context>
 <context>
@@ -1106,30 +1102,30 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../OPFReader.cpp" line="46"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Unable to read OPF file.
-Line: %1 Column %2 - %3</translation>
+        <translation>Kunne ikke læse OPF-fil.
+Linje: %1 Kolonne %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="364"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Cannot read file %1:
+        <translation>Kan ikke indlæse filen %1:
 %2.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="479"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit has encountered a problem.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="480"/>
         <source>PageEdit may need to close.</source>
-        <translation>PageEdit may need to close.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="642"/>
         <source>About PageEdit</source>
-        <translation>About PageEdit</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="647"/>
@@ -1139,32 +1135,32 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="648"/>
         <source>Build Date</source>
-        <translation>Build Date</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="649"/>
         <source>Build Time</source>
-        <translation>Build Time</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="650"/>
         <source>Qt Runtime Version</source>
-        <translation>Qt Runtime Version</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="651"/>
         <source>Qt Compiled Version</source>
-        <translation>Qt Compiled Version</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="652"/>
         <source>System</source>
-        <translation>System</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="653"/>
         <source>Architecture</source>
-        <translation>Architecture</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1172,22 +1168,22 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Search: </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Search...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>&amp;Match Case</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="140"/>
         <source>No results found.</source>
-        <translation>No results found.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1195,7 +1191,7 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Insert Special Character</translation>
+        <translation>Indsæt specialtegn</translation>
     </message>
 </context>
 <context>
@@ -1203,16 +1199,16 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="575"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="576"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
+        <translation>Det ønskede filnavn indeholder ikke-ASCII-tegn. Du bør kun bruge ASCII-tegn i filnavne. Brug af ikke-ASCII-tegn kan forhindre EPUB i at fungere på nogle læsere.
 
-Continue using the requested filename?</translation>
+Fortsæt med at bruge det ønskede filnavn?</translation>
     </message>
 </context>
 <context>
@@ -1220,17 +1216,17 @@ Continue using the requested filename?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="162"/>
         <source>No suggestions</source>
-        <translation>No suggestions</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="174"/>
         <source>Check Spelling</source>
-        <translation>Check Spelling</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="183"/>
         <source>Select Language</source>
-        <translation>Select Language</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

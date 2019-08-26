@@ -1,107 +1,107 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk_UA" version="2.1">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Appearance</translation>
+        <translation>Вигляд</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="24"/>
         <source>Fonts/Sizes</source>
-        <translation>Fonts/Sizes</translation>
+        <translation>Шрифти/Розміри</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="30"/>
         <source>Preview:</source>
-        <translation>Preview:</translation>
+        <translation>Попередній перегляд:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="39"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</translation>
+        <translation>Якщо у CSS для вашої сторінки не вказано жодного шрифту, для відображення в програмі PageEdit буде використаний вказаний нижче шрифт. Ці шрифти не використовуватимуться у вашій фактичній електронній книзі.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="59"/>
         <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation>Default font size to be used for WebView if no font-size specified in your CSS</translation>
+        <translation>Розмір шрифту за замовчуванням, який буде використовуватися для WebView, якщо розмір шрифту не вказано у вашому CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="62"/>
         <location filename="../PAppearanceWidget.ui" line="186"/>
         <source>Font Size:</source>
-        <translation>Font Size:</translation>
+        <translation>Розмір шрифту:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="92"/>
         <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if no font-family specified in your CSS</translation>
+        <translation>Сімейство шрифтів, яке буде використовуватися для WebView, якщо у вашому CSS не вказано сімейство шрифтів</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="95"/>
         <location filename="../PAppearanceWidget.ui" line="219"/>
         <source>Standard Font:</source>
-        <translation>Standard Font:</translation>
+        <translation>Стандартний шрифт:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="105"/>
         <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if a serif font-family specified in your CSS</translation>
+        <translation>Сімейство шрифтів, яке буде використовуватися для WebView, якщо сімейство шрифтів із зарубками зазначено у вашому CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Serif Font:</source>
-        <translation>Serif Font:</translation>
+        <translation>Шрифт Serif:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="118"/>
         <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</translation>
+        <translation>Сімейство шрифтів, яке буде використовуватися для WebView, якщо сімейство шрифтів без зарубок зазначено у вашому CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="121"/>
         <source>Sans-Serif Font:</source>
-        <translation>Sans-Serif Font:</translation>
+        <translation>Шрифт Sans-Serif:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="169"/>
         <source>Insert Special Characters:</source>
-        <translation>Insert Special Characters:</translation>
+        <translation>Вставка спеціальних символів:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="183"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Font size to be used for Insert Special Characters window</translation>
+        <translation>Розмір шрифту для вікна &quot;Вставка спеціальних символів&quot;</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="216"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Font family to be used for Insert Special Characters window</translation>
+        <translation>Сімейство шрифтів для вікна &quot;Вставка спеціальних символів&quot;</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Icons</source>
-        <translation>Icons</translation>
+        <translation>Піктограми</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>Icon Size</source>
-        <translation>Icon Size</translation>
+        <translation>Розмір піктограми</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="275"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Adjust the size of the icons in the main menu.</translation>
+        <translation>Налаштувати розмір піктограм в головному меню.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="351"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Reset all fonts and colors to the default values</translation>
+        <translation>Скинути всі шрифти та кольори до значень за умовчанням</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="354"/>
         <source>Reset All</source>
-        <translation>Reset All</translation>
+        <translation>Скинути все</translation>
     </message>
 </context>
 <context>
@@ -109,86 +109,86 @@
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>General Settings</translation>
+        <translation>Загальні параметри</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>You must restart PageEdit after changing the User Interface language.
+        <translation>Після зміни мови інтерфейсу користувача необхідно перезапустити PageEdit.
 
-If a translation for specific word or phrase is not available it will be displayed in English.</translation>
+Якщо переклад для конкретного слова або фрази недоступний, він буде відображатися англійською мовою.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>User Interface Language:</translation>
+        <translation>Мова інтерфейсу користувача:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Select from installed spellcheck dictionaries.</translation>
+        <translation>Вибрати із встановлених словників перевірки орфографії.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Spellcheck Dictionary:</translation>
+        <translation>Орфографічний словник:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Determine if html files are allowed to access non-multimedia remote resources.</translation>
+        <translation>Визначає, чи дозволяється HTML-файлам доступ до віддалених немультимедійних ресурсів.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation> Control access by html files to non-multimedia remote resources.</translation>
+        <translation>Управління доступом HTML-файлів до віддалених немультимедійних ресурсів.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Check to allow html files to access non-multimedia remote resources.</translation>
+        <translation>Встановіть прапорець, щоб дозволити HTML-файлам отримати доступ до віддалених немультимедійних ресурсів.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Html files may access all remote resources types.</translation>
+        <translation>HTML-файли можуть отримувати доступ до всіх типів віддалених ресурсів.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Determine if javascript is allowed to be used by html files</translation>
+        <translation>Визначає, чи дозволено використовувати JavaScript у HTML-файлах</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation> Control use of javascript by html files.</translation>
+        <translation>Управління використанням JavaScript у HTML-файлах.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Check to allow html files to use javascript.</translation>
+        <translation>Встановіть прапорець, щоб дозволити HTML-файлам використовувати JavaScript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Html files may use javascript.</translation>
+        <translation>HTML-файли можуть використовувати JavaScript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</translation>
+        <translation>Виберіть, як ви хочете, щоб PageEdit обробляв використання декількох символів пробілу під час редагування.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Handle multiple white space layout using:</translation>
+        <translation>Обробка декількох символів пробілу за допомогою:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Use CSS white-space: pre-wrap</translation>
+        <translation>Використовуйте атрибут CSS &quot;white-space: pre-wrap&quot;</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
@@ -198,32 +198,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Use non-breaking spaces as needed</translation>
+        <translation>Використовуйте нерозривні пропуски в міру необхідності</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>non-breaking spaces as needed</translation>
+        <translation>нерозривний_пробіл якщо необхідно</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Determine if Prettify is used when saving</translation>
+        <translation>Визначте, чи використовується Prettify при збереженні</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation> Use Prettify to reformat the xhtml when saving.</translation>
+        <translation>Використовуйте Prettify щоб переформатувати xhtml при збереженні.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Check to reformat with Prettify when saving xhtml files.</translation>
+        <translation>Встановіть прапорець &quot;Переформатувати за допомогою Prettify&quot; при збереженні файлів xhtml.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Use Prettify to reformat xhtml when saving.</translation>
+        <translation>Використовуйте Prettify щоб переформатувати xhtml при збереженні.</translation>
     </message>
 </context>
 <context>
@@ -231,12 +231,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Inspector.cpp" line="54"/>
         <source>Inspect Page or Element</source>
-        <translation>Inspect Page or Element</translation>
+        <translation>Ревізувати Сторінку або Елемент</translation>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="94"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>The Inspector functionality is not supported before Qt 5.11</translation>
+        <translation>Функціональність інспектора не підтримується до Qt 5.11</translation>
     </message>
 </context>
 <context>
@@ -254,119 +254,119 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;File</translation>
+        <translation>&amp;Файл</translation>
     </message>
     <message>
         <location filename="../main.ui" line="74"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Edit</translation>
+        <translation>З&amp;міни</translation>
     </message>
     <message>
         <location filename="../main.ui" line="87"/>
         <source>&amp;Find</source>
-        <translation>&amp;Find</translation>
+        <translation>&amp;Знайти</translation>
     </message>
     <message>
         <location filename="../main.ui" line="94"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Insert</translation>
+        <translation>&amp;Вставити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="105"/>
         <source>For&amp;mat</source>
-        <translation>For&amp;mat</translation>
+        <translation>Фор&amp;мат</translation>
     </message>
     <message>
         <location filename="../main.ui" line="110"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Heading</translation>
+        <translation>&amp;Заголовок</translation>
     </message>
     <message>
         <location filename="../main.ui" line="143"/>
         <source>&amp;View</source>
-        <translation>&amp;View</translation>
+        <translation>П&amp;ерегляд</translation>
     </message>
     <message>
         <location filename="../main.ui" line="152"/>
         <source>Inspector</source>
-        <translation>Inspector</translation>
+        <translation>Інспектор</translation>
     </message>
     <message>
         <location filename="../main.ui" line="168"/>
         <source>File</source>
-        <translation>File</translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <location filename="../main.ui" line="182"/>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation>Редагувати</translation>
     </message>
     <message>
         <location filename="../main.ui" line="200"/>
         <location filename="../main.ui" line="1048"/>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation>Режим</translation>
     </message>
     <message>
         <location filename="../main.ui" line="213"/>
         <source>Insert</source>
-        <translation>Insert</translation>
+        <translation>Вставка</translation>
     </message>
     <message>
         <location filename="../main.ui" line="229"/>
         <source>Inspect</source>
-        <translation>Inspect</translation>
+        <translation>Ревізувати</translation>
     </message>
     <message>
         <location filename="../main.ui" line="242"/>
         <location filename="../main.ui" line="997"/>
         <source>Find</source>
-        <translation>Find</translation>
+        <translation>Знайти</translation>
     </message>
     <message>
         <location filename="../main.ui" line="255"/>
         <source>Heading</source>
-        <translation>Heading</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <location filename="../main.ui" line="269"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>set Heading Level of Selected Text</translation>
+        <translation>Встановити стиль виділеного тексту</translation>
     </message>
     <message>
         <location filename="../main.ui" line="283"/>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation>Формат</translation>
     </message>
     <message>
         <location filename="../main.ui" line="301"/>
         <source>Align</source>
-        <translation>Align</translation>
+        <translation>Вирівняти</translation>
     </message>
     <message>
         <location filename="../main.ui" line="317"/>
         <source>Indent</source>
-        <translation>Indent</translation>
+        <translation>Відступ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="331"/>
         <source>Navigate</source>
-        <translation>Navigate</translation>
+        <translation>Перехід</translation>
     </message>
     <message>
         <location filename="../main.ui" line="341"/>
         <source>Navigation List</source>
-        <translation>Navigation List</translation>
+        <translation>Навігаційний Список</translation>
     </message>
     <message>
         <location filename="../main.ui" line="357"/>
         <source>&amp;Save</source>
-        <translation>&amp;Save</translation>
+        <translation>&amp;Зберегти</translation>
     </message>
     <message>
         <location filename="../main.ui" line="360"/>
         <source>Save the current file.</source>
-        <translation>Save the current file.</translation>
+        <translation>Зберегти цей файл.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="363"/>
@@ -376,12 +376,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="369"/>
         <source>Save &amp;As...</source>
-        <translation>Save &amp;As...</translation>
+        <translation>Зберегти &amp;Як...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="372"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Save the current file with a different filename.</translation>
+        <translation>Зберегти цей файл з іншоу назвою.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="375"/>
@@ -391,32 +391,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="385"/>
         <source>Cu&amp;t</source>
-        <translation>Cu&amp;t</translation>
+        <translation>Виріза&amp;ти</translation>
     </message>
     <message>
         <location filename="../main.ui" line="388"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Cuts the selected text from the document and puts it on the clipboard.</translation>
+        <translation>Вирізати виділений текст з документа і помістити його в буфер обміну.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="398"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Paste</translation>
+        <translation>Вст&amp;авити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="401"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Pastes the content from the clipboard into the file.</translation>
+        <translation>Вставляє вміст буфера обміну у файл.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="411"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Undo</translation>
+        <translation>В&amp;ідмінити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="414"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Reverts the changes of the previous operation.</translation>
+        <translation>Повертає зміни попередньої операції.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="417"/>
@@ -426,12 +426,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="427"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Redo</translation>
+        <translation>&amp;Повернути</translation>
     </message>
     <message>
         <location filename="../main.ui" line="430"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Restores the changes reverted by the previous Undo action.</translation>
+        <translation>Відновити зміни після попередньої дії &quot;Відмінити&quot;.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="433"/>
@@ -441,42 +441,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="443"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Copy</translation>
+        <translation>&amp;Копіювати</translation>
     </message>
     <message>
         <location filename="../main.ui" line="446"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Copies the selected text and puts it on the clipboard.</translation>
+        <translation>Копіює виділений текст і поміщає його в буфер обміну.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="459"/>
         <source>Align &amp;Left</source>
-        <translation>Align &amp;Left</translation>
+        <translation>Вирівняти &amp;Ліворуч</translation>
     </message>
     <message>
         <location filename="../main.ui" line="462"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Align the paragraph to the left.</translation>
+        <translation>Вирівняти абзац ліворуч.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="476"/>
         <source>Align &amp;Right</source>
-        <translation>Align &amp;Right</translation>
+        <translation>Вирівняти &amp;Праворуч</translation>
     </message>
     <message>
         <location filename="../main.ui" line="479"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Align the paragraph to the right.</translation>
+        <translation>Вирівняти абзац праворуч.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="492"/>
         <source>&amp;Center</source>
-        <translation>&amp;Center</translation>
+        <translation>По &amp;Центру</translation>
     </message>
     <message>
         <location filename="../main.ui" line="495"/>
         <source>Center the paragraph.</source>
-        <translation>Center the paragraph.</translation>
+        <translation>Відцентрувати абзац.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="498"/>
@@ -486,12 +486,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="511"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Justify</translation>
+        <translation>По &amp;ширині</translation>
     </message>
     <message>
         <location filename="../main.ui" line="514"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Align the paragraph to both the left and right margins.</translation>
+        <translation>Вирівняти абзац між лівим та правим полем.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="517"/>
@@ -501,12 +501,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="530"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Bold</translation>
+        <translation>&amp;Жирний</translation>
     </message>
     <message>
         <location filename="../main.ui" line="533"/>
         <source>Make the selected text bold.</source>
-        <translation>Make the selected text bold.</translation>
+        <translation>Зробити виділений шрифт жирним</translation>
     </message>
     <message>
         <location filename="../main.ui" line="536"/>
@@ -516,12 +516,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="549"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Italic</translation>
+        <translation>&amp;Курсив</translation>
     </message>
     <message>
         <location filename="../main.ui" line="552"/>
         <source>Make the selected text italic.</source>
-        <translation>Make the selected text italic.</translation>
+        <translation>Зробити виділений шрифт курсивним</translation>
     </message>
     <message>
         <location filename="../main.ui" line="555"/>
@@ -531,12 +531,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="565"/>
         <source>&amp;Open...</source>
-        <translation>&amp;Open...</translation>
+        <translation>&amp;Відкрити...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="568"/>
         <source>Open a file from disk.</source>
-        <translation>Open a file from disk.</translation>
+        <translation>Відкрити файл розташований на носії</translation>
     </message>
     <message>
         <location filename="../main.ui" line="571"/>
@@ -546,12 +546,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="585"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Underline</translation>
+        <translation>&amp;Підкреслити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="588"/>
         <source>Underline the selected text.</source>
-        <translation>Underline the selected text.</translation>
+        <translation>Підкреслити виділений текст.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="591"/>
@@ -561,12 +561,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="601"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Quit</translation>
+        <translation>&amp;Вихід</translation>
     </message>
     <message>
         <location filename="../main.ui" line="604"/>
         <source>Quit</source>
-        <translation>Quit</translation>
+        <translation>Вихід</translation>
     </message>
     <message>
         <location filename="../main.ui" line="607"/>
@@ -576,32 +576,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="617"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Special Character...</translation>
+        <translation>&amp;Спеціальний знак...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="620"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Select a character to insert into your text.</translation>
+        <translation>Виберіть символ щоб вставити до тексту.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="633"/>
         <source>&amp;Numbered List</source>
-        <translation>&amp;Numbered List</translation>
+        <translation>&amp;Нумерований список</translation>
     </message>
     <message>
         <location filename="../main.ui" line="636"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Create a numbered list from selection.</translation>
+        <translation>Створити нумерований список з виділеного фрагменту.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="649"/>
         <source>Bulle&amp;ted List</source>
-        <translation>Bulle&amp;ted List</translation>
+        <translation>Марк&amp;ований список</translation>
     </message>
     <message>
         <location filename="../main.ui" line="652"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Create a bulleted list from selection.</translation>
+        <translation>Створити маркований список з виділеного фрагменту.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="655"/>
@@ -611,42 +611,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="668"/>
         <source>Stri&amp;kethrough</source>
-        <translation>Stri&amp;kethrough</translation>
+        <translation>Закре&amp;слити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Draw a line through the selected text.</translation>
+        <translation>Закреслити виділений текст лінією.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Subscript</translation>
+        <translation>Ни&amp;жній індекс</translation>
     </message>
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Set the selected text slightly smaller and below the normal line.</translation>
+        <translation>Встановіть виділений текст трохи менше і нижче звичайного рядка.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Su&amp;perscript</source>
-        <translation>Su&amp;perscript</translation>
+        <translation>Ве&amp;рхній індекс</translation>
     </message>
     <message>
         <location filename="../main.ui" line="703"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Set the selected text slightly smaller and above the normal line.</translation>
+        <translation>Встановлює виділений текст трохи менше і вище звичайного рядка.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="714"/>
         <source>Zoom &amp;In</source>
-        <translation>Zoom &amp;In</translation>
+        <translation>&amp;Збільшити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="717"/>
         <source>Zoom In</source>
-        <translation>Zoom In</translation>
+        <translation>Збільшити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="720"/>
@@ -656,12 +656,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="731"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zoom &amp;Out</translation>
+        <translation>Зм&amp;еншити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="734"/>
         <source>Zoom Out</source>
-        <translation>Zoom Out</translation>
+        <translation>Зменшити</translation>
     </message>
     <message>
         <location filename="../main.ui" line="737"/>
@@ -671,12 +671,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="748"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>Incre&amp;ase Indent</translation>
+        <translation>Збіль&amp;шити відступ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="751"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Increase the indent level of the paragraph.</translation>
+        <translation>Збільшує рівень відступу абзацу.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="754"/>
@@ -686,12 +686,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="764"/>
         <source>&amp;Decrease Indent</source>
-        <translation>&amp;Decrease Indent</translation>
+        <translation>&amp;Зменшити відступ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="767"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Decrease the indent level of the paragraph.</translation>
+        <translation>Зменьшує рівень відступу абзацу.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="770"/>
@@ -701,12 +701,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="780"/>
         <source>Split &amp;Marker</source>
-        <translation>Split &amp;Marker</translation>
+        <translation>&amp;Маркер розділення</translation>
     </message>
     <message>
         <location filename="../main.ui" line="783"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Insert Sigil split file marker</translation>
+        <translation>Вставити Sigil-маркер розділення файлу</translation>
     </message>
     <message>
         <location filename="../main.ui" line="786"/>
@@ -716,7 +716,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="792"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Preferences...</translation>
+        <translation>&amp;Налаштування…</translation>
     </message>
     <message>
         <location filename="../main.ui" line="795"/>
@@ -726,12 +726,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="801"/>
         <source>&amp;Zoom Reset</source>
-        <translation>&amp;Zoom Reset</translation>
+        <translation>Початковий &amp;масштаб</translation>
     </message>
     <message>
         <location filename="../main.ui" line="804"/>
         <source>Zoom Reset</source>
-        <translation>Zoom Reset</translation>
+        <translation>Повернутися до початкового масштабу</translation>
     </message>
     <message>
         <location filename="../main.ui" line="807"/>
@@ -741,12 +741,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="820"/>
         <source>Heading &amp;1</source>
-        <translation>Heading &amp;1</translation>
+        <translation>Заголовок &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="823"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Format paragraph as a level 1 heading.</translation>
+        <translation>Форматувати абзац як заголовок рівня 1.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="826"/>
@@ -756,12 +756,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="839"/>
         <source>Heading &amp;2</source>
-        <translation>Heading &amp;2</translation>
+        <translation>Заголовок &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="842"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Format paragraph as a level 2 heading.</translation>
+        <translation>Форматувати абзац як заголовок рівня 2.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="845"/>
@@ -771,12 +771,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="858"/>
         <source>Heading &amp;3</source>
-        <translation>Heading &amp;3</translation>
+        <translation>Заголовок &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="861"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Format paragraph as a level 3 heading.</translation>
+        <translation>Форматувати абзац як заголовок рівня 3.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="864"/>
@@ -786,12 +786,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="878"/>
         <source>Heading &amp;4</source>
-        <translation>Heading &amp;4</translation>
+        <translation>Заголовок &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="881"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Format paragraph as a level 4 heading.</translation>
+        <translation>Форматувати абзац як заголовок рівня 4.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="884"/>
@@ -801,12 +801,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="897"/>
         <source>Heading &amp;5</source>
-        <translation>Heading &amp;5</translation>
+        <translation>Заголовок &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="900"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Format paragraph as a level 5 heading.</translation>
+        <translation>Форматувати абзац як заголовок рівня 5.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="903"/>
@@ -816,12 +816,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="916"/>
         <source>Heading &amp;6</source>
-        <translation>Heading &amp;6</translation>
+        <translation>Заголовок &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="919"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Format paragraph as a level 6 heading.</translation>
+        <translation>Форматувати абзац як заголовок рівня 6.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="922"/>
@@ -831,12 +831,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="936"/>
         <source>&amp;Normal</source>
-        <translation>&amp;Normal</translation>
+        <translation>Звичайний текст</translation>
     </message>
     <message>
         <location filename="../main.ui" line="939"/>
         <source>ormat paragraph as a normal paragraph.</source>
-        <translation>ormat paragraph as a normal paragraph.</translation>
+        <translation>Форматувати абзац як звичайний текст.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="942"/>
@@ -846,22 +846,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="952"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Preserve Existing Attributes</translation>
+        <translation>&amp;Збереження Існуючих Атрибутів</translation>
     </message>
     <message>
         <location filename="../main.ui" line="955"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>When applying this style, preserve any existing attributes on the tag</translation>
+        <translation>При застосуванні цього стилю зберігаються всі існуючі атрибути тега</translation>
     </message>
     <message>
         <location filename="../main.ui" line="965"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Select All</translation>
+        <translation>&amp;Виділити все</translation>
     </message>
     <message>
         <location filename="../main.ui" line="968"/>
         <source>Select all text in the document.</source>
-        <translation>Select all text in the document.</translation>
+        <translation>Виділити весь текст в документі</translation>
     </message>
     <message>
         <location filename="../main.ui" line="971"/>
@@ -871,12 +871,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="981"/>
         <source>&amp;Inspector</source>
-        <translation>&amp;Inspector</translation>
+        <translation>&amp;Інспектор</translation>
     </message>
     <message>
         <location filename="../main.ui" line="984"/>
         <source>Inspect the page.</source>
-        <translation>Inspect the page.</translation>
+        <translation>Ревізувати сторінку</translation>
     </message>
     <message>
         <location filename="../main.ui" line="987"/>
@@ -886,7 +886,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1000"/>
         <source>Find text in the page</source>
-        <translation>Find text in the page</translation>
+        <translation>Знайти текст на сторінці</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1003"/>
@@ -896,67 +896,67 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1016"/>
         <source>Next XHtml File</source>
-        <translation>Next XHtml File</translation>
+        <translation>Наступний файл XHtml</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1019"/>
         <source>Next file in navigation list</source>
-        <translation>Next file in navigation list</translation>
+        <translation>Наступний файл у Навігаційному Списку</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1032"/>
         <source>Previous XHtml File</source>
-        <translation>Previous XHtml File</translation>
+        <translation>Попередній файл XHtml</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1035"/>
         <source>Previous file in navigation list</source>
-        <translation>Previous file in navigation list</translation>
+        <translation>Попередній файл у Навігаційному Списку</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Toggle between Edit and Preview Modes.</translation>
+        <translation>Зміна режимів редагування та попереднього перегляду.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1061"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation>Про це...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1064"/>
         <source>Show information about PageEdit.</source>
-        <translation>Show information about PageEdit.</translation>
+        <translation>Показати інформацію стосовно PageEdit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1074"/>
         <source>Back to Last Link</source>
-        <translation>Back to Last Link</translation>
+        <translation>Назад до останнього посилання</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1077"/>
         <source>Return from the last link taken</source>
-        <translation>Return from the last link taken</translation>
+        <translation>Повернутися від останнього використаного посилання</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="834"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Are you sure you want to open this link in your browser?
+        <translation>Ви впевнені, що хочете відкрити це посилання у своєму браузері?
 
 %1</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="894"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Do you want to save your changes before leaving?</translation>
+        <translation>Зберегти зроблені зміни перед подальшими діями?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="911"/>
         <location filename="../MainWindow.cpp.keep" line="721"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit is closing...</translation>
+        <translation>PageEdit закривається...</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1039"/>
@@ -972,30 +972,30 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="876"/>
         <location filename="../MainWindow.cpp.keep" line="877"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>HTML files (*.htm *.html *.xhtml)</translation>
+        <translation>Файли HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1042"/>
         <source>OPF files (*.opf)</source>
-        <translation>OPF files (*.opf)</translation>
+        <translation>Файли OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1043"/>
         <location filename="../MainWindow.cpp.keep" line="867"/>
         <source>Text files (*.txt)</source>
-        <translation>Text files (*.txt)</translation>
+        <translation>Текстові файли (*.txt)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1044"/>
         <location filename="../MainWindow.cpp.keep" line="868"/>
         <source>All files (*.*)</source>
-        <translation>All files (*.*)</translation>
+        <translation>Усі файли (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1255"/>
         <location filename="../MainWindow.cpp.keep" line="1024"/>
         <source>Save File</source>
-        <translation>Save File</translation>
+        <translation>Зберегти файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1290"/>
@@ -1007,13 +1007,13 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="1072"/>
         <location filename="../MainWindow.cpp.keep" line="1073"/>
         <source>File Save-As Failed!</source>
-        <translation>File Save-As Failed!</translation>
+        <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1290"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
         <source>is not writeable</source>
-        <translation>is not writeable</translation>
+        <translation>недоступно для запису</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1299"/>
@@ -1021,7 +1021,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="1068"/>
         <location filename="../MainWindow.cpp.keep" line="1098"/>
         <source>File Saved</source>
-        <translation>File Saved</translation>
+        <translation>Файл збережено</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1320"/>
@@ -1033,48 +1033,48 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="1102"/>
         <location filename="../MainWindow.cpp.keep" line="1103"/>
         <source>File Save Failed!</source>
-        <translation>File Save Failed!</translation>
+        <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1321"/>
         <location filename="../MainWindow.cpp.keep" line="1090"/>
         <source>does not exist or is not writeable</source>
-        <translation>does not exist or is not writeable</translation>
+        <translation>не існує або недоступно для запису </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1382"/>
         <location filename="../MainWindow.cpp.keep" line="1147"/>
         <source>File Opened</source>
-        <translation>File Opened</translation>
+        <translation>Файл відкрито</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1386"/>
         <location filename="../MainWindow.cpp.keep" line="1152"/>
         <source>File Open Failed!</source>
-        <translation>File Open Failed!</translation>
+        <translation>Не вдалося відкрити файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1409"/>
         <location filename="../MainWindow.cpp.keep" line="1175"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Clipboard contains HTML formatting</translation>
+        <translation>Буфер обміну містить форматований HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1410"/>
         <location filename="../MainWindow.cpp.keep" line="1176"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Do you want to paste clipboard data as plain text?</translation>
+        <translation>Ви хочете вставити дані з буферу обміну як звичайний текст?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1550"/>
         <location filename="../MainWindow.cpp.keep" line="1338"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Do you want to save any changes before overwriting this file?</translation>
+        <translation>Зберегти зроблені зміни перед перезаписом цього файлу?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp.keep" line="727"/>
         <source>Do you want to save your changes before closing?</source>
-        <translation>Do you want to save your changes before closing?</translation>
+        <translation>Зберегти зроблені зміни перед закриттям?</translation>
     </message>
 </context>
 <context>
@@ -1082,7 +1082,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Preferences</translation>
+        <translation>Налаштування</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="86"/>
@@ -1092,12 +1092,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Preferences.cpp" line="86"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Changes will take effect when you restart PageEdit.</translation>
+        <translation>Зміни будуть застосовані після перезапуску PageEdit.</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="143"/>
         <source>Open Preferences Location</source>
-        <translation>Open Preferences Location</translation>
+        <translation>Відкрити місце розташування Налаштувань</translation>
     </message>
 </context>
 <context>
@@ -1106,65 +1106,65 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../OPFReader.cpp" line="46"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Unable to read OPF file.
-Line: %1 Column %2 - %3</translation>
+        <translation>Не вдається прочитати файл OPF.
+Рядок: %1 Стовпець %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="364"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Cannot read file %1:
+        <translation>Неможливо прочитати файл %1:
 %2.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="479"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit has encountered a problem.</translation>
+        <translation>У PageEdit виникли проблеми.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="480"/>
         <source>PageEdit may need to close.</source>
-        <translation>PageEdit may need to close.</translation>
+        <translation>PageEdit, має закритися.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="642"/>
         <source>About PageEdit</source>
-        <translation>About PageEdit</translation>
+        <translation>Про програму PageEdit</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="647"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Версія</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="648"/>
         <source>Build Date</source>
-        <translation>Build Date</translation>
+        <translation>Дата збірки</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="649"/>
         <source>Build Time</source>
-        <translation>Build Time</translation>
+        <translation>Час збірки</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="650"/>
         <source>Qt Runtime Version</source>
-        <translation>Qt Runtime Version</translation>
+        <translation>Версія Qt Runtime</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="651"/>
         <source>Qt Compiled Version</source>
-        <translation>Qt Compiled Version</translation>
+        <translation>Версія компіляції Qt</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="652"/>
         <source>System</source>
-        <translation>System</translation>
+        <translation>Система</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="653"/>
         <source>Architecture</source>
-        <translation>Architecture</translation>
+        <translation>Архітектура</translation>
     </message>
 </context>
 <context>
@@ -1172,22 +1172,22 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Search: </translation>
+        <translation>Пошук: </translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Search...</translation>
+        <translation>Пошук...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>&amp;Match Case</translation>
+        <translation>&amp;Враховувати регістр</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="140"/>
         <source>No results found.</source>
-        <translation>No results found.</translation>
+        <translation>Нічого не знайдено</translation>
     </message>
 </context>
 <context>
@@ -1195,7 +1195,7 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Insert Special Character</translation>
+        <translation>Вставити спеціальний знак</translation>
     </message>
 </context>
 <context>
@@ -1210,9 +1210,9 @@ Line: %1 Column %2 - %3</translation>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
+        <translation>Назва файлу містить символи, які не входять до ASCII. В назві файлу можно використовувати тільки символи ASCII. Використання символів, відмінних від ASCII, може перешкодити роботі деяких EPUB-рідерів.
 
-Continue using the requested filename?</translation>
+Продовжити використання цієї назви файлу?</translation>
     </message>
 </context>
 <context>
@@ -1220,17 +1220,17 @@ Continue using the requested filename?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="162"/>
         <source>No suggestions</source>
-        <translation>No suggestions</translation>
+        <translation>Варіанти відсутні</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="174"/>
         <source>Check Spelling</source>
-        <translation>Check Spelling</translation>
+        <translation>Перевірити орфографію</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="183"/>
         <source>Select Language</source>
-        <translation>Select Language</translation>
+        <translation>Оберіть мову</translation>
     </message>
 </context>
 </TS>
