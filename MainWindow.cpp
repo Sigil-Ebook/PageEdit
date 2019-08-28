@@ -665,9 +665,9 @@ void MainWindow::UpdateWindowTitle()
     if ((m_WebView) && m_WebView->isVisible()) {
         int height = m_WebView->height();
         int width = m_WebView->width();
-        QString mode = " -- mode: Preview --";
+        QString mode = "-- " + tr("mode: Preview") + " --";
 	if (ui.actionMode->isChecked()) {
-	    mode = " -- mode: Edit --";
+	    mode = "-- " + tr("mode: Edit") + " --";
 	}
         setWindowTitle("PageEdit " + mode + " (" + QString::number(width) + "x" + QString::number(height) + ")");
     }
