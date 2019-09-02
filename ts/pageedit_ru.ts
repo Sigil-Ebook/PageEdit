@@ -101,7 +101,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="354"/>
         <source>Reset All</source>
-        <translation>Восстановить всё</translation>
+        <translation>Сброс всех настроек</translation>
     </message>
 </context>
 <context>
@@ -937,6 +937,16 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../main.ui" line="1077"/>
         <source>Return from the last link taken</source>
         <translation>Вернуться от последней посещённой ссылки</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="668"/>
+        <source>mode: Preview</source>
+        <translation>режим: Предпросмотр</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="670"/>
+        <source>mode: Edit</source>
+        <translation>режим: Редактирование</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="834"/>

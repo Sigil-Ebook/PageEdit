@@ -943,6 +943,16 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
         <translation>Regresar del último enlace seguido</translation>
     </message>
     <message>
+        <location filename="../MainWindow.cpp" line="668"/>
+        <source>mode: Preview</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="670"/>
+        <source>mode: Edit</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../MainWindow.cpp" line="834"/>
         <source>Are you sure you want to open this link in your browser?
 

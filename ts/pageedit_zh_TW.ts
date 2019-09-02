@@ -931,12 +931,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1074"/>
         <source>Back to Last Link</source>
-        <translation type="unfinished"/>
+        <translation>回到上一個連結</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1077"/>
         <source>Return from the last link taken</source>
-        <translation type="unfinished"/>
+        <translation>從上一個連結返回</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="668"/>
+        <source>mode: Preview</source>
+        <translation>模式：預覽</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="670"/>
+        <source>mode: Edit</source>
+        <translation>模式：編輯</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="834"/>
@@ -1149,12 +1159,12 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../Utility.cpp" line="650"/>
         <source>Qt Runtime Version</source>
-        <translation type="unfinished"/>
+        <translation>Qt 執行階段版本</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="651"/>
         <source>Qt Compiled Version</source>
-        <translation type="unfinished"/>
+        <translation>Qt 編譯版本</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="652"/>

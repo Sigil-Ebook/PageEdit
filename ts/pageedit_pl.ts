@@ -939,6 +939,16 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
         <translation>Powrót z ostatnio odwiedzonego łącza</translation>
     </message>
     <message>
+        <location filename="../MainWindow.cpp" line="668"/>
+        <source>mode: Preview</source>
+        <translation>tryb: Podglądu</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="670"/>
+        <source>mode: Edit</source>
+        <translation>tryb: Edycji</translation>
+    </message>
+    <message>
         <location filename="../MainWindow.cpp" line="834"/>
         <source>Are you sure you want to open this link in your browser?
 
