@@ -44,7 +44,7 @@ WebPageEdit::WebPageEdit(QObject *parent)
 
 bool WebPageEdit::acceptNavigationRequest(const QUrl & url, QWebEnginePage::NavigationType type, bool isMainFrame)
 {
-    if (type == QWebEnginePage::NavigationTypeLinkClicked) {
+    if ((type == QWebEnginePage::NavigationTypeLinkClicked) || (type == QWebEnginePage::NavigationTypeOther)) {
         DBG qDebug() << "acceptNavigationRequest " << url.toString() << " , " << type << " , " << isMainFrame;
         m_url = url;
 	QTimer::singleShot(20,this,SLOT(EmitLinkClicked()));
