@@ -581,9 +581,18 @@ void MainWindow::DoUpdatePage()
 void MainWindow::UpdatePage(const QString &filename_url)
 {
     m_UpdatePageInProgress = true;
-    SettingsStore ss;
-    QString text = Utility::ReadUnicodeTextFile(filename_url);
+    QString text;
+    QString file_path = filename_url;
+    try {
+        text = Utility::ReadUnicodeTextFile(filename_url);
+    } catch (std::exception &e) {
+        Utility::DisplayStdErrorDialog(tr("File load failed"), e.what());
+	text = "<html><head><title></title></head><body><h1>" + tr("File Load Failed") + "</h1></body></html>";
+	file_path = "";
+	m_CurrentFilePath = "";
+    }
 
+    SettingsStore ss;
     // to prevent the WebEngine from inserting extraneous non-breaking space characters
     //  during editing, the official editing api says we should set white-space:pre-wrap
     // on the elements we want to edit.  In our case this is just about everything
@@ -624,8 +633,8 @@ void MainWindow::UpdatePage(const QString &filename_url)
     }
 #endif
 
-    m_Filepath = filename_url;
-    m_WebView->CustomSetDocument(filename_url, text);
+    m_Filepath = file_path;
+    m_WebView->CustomSetDocument(file_path, text);
 
     // this next bit is allowing javascript to run before
     // the page is finished loading somehow? 
