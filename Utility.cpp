@@ -596,6 +596,8 @@ QString Utility::stdWStringToQString(const std::wstring &str)
 #endif
 
 
+#if 0
+// brute force method
 QString Utility::longestCommonPath(const QStringList& filepaths, const QString& sep)
 {
     // handle special cases
@@ -633,6 +635,26 @@ QString Utility::longestCommonPath(const QStringList& filepaths, const QString& 
     if (res.isEmpty()) return "";
     return res.join(sep) + sep;
 }
+
+#else
+QString Utility::longestCommonPath(const QStringList& filepaths, const QString& sep)
+{
+    if (filepaths.isEmpty()) return QString();
+    if (filepaths.length() == 1) return QFileInfo(filepaths.at(0)).absolutePath() + sep;
+    QStringList fpaths(filepaths);
+    fpaths.sort();
+    const QStringList segs1 = fpaths.first().split(sep);
+    const QStringList segs2 = fpaths.last().split(sep);
+    QStringList res;
+    int i = 0;
+    while((i < segs1.length()) && (i < segs2.length()) && (segs1.at(i) == segs2.at(i))) {
+        res.append(segs1.at(i));
+        i++;
+    }
+    if (res.length() == 0) return sep;
+    return res.join(sep) + sep;
+}
+#endif
 
 
 // fixme this should also remove multiple path separators in a row after the first
