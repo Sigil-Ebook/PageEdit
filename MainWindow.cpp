@@ -1049,7 +1049,6 @@ const QMap<QString, QString> MainWindow::GetLoadFiltersMap()
     file_filters[ "html"  ] = tr("HTML files (*.htm *.html *.xhtml)");
     file_filters[ "xhtml" ] = tr("HTML files (*.htm *.html *.xhtml)");
     file_filters[ "opf"   ] = tr("OPF files (*.opf)");    
-    file_filters[ "txt"   ] = tr("Text files (*.txt)");
     file_filters[ "*"     ] = tr("All files (*.*)");
     return file_filters;
 }
