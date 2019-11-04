@@ -495,6 +495,7 @@ void WebViewEdit::SetDocumentEditable(bool newstate)
 {
   if (newstate) {
       page()->runJavaScript("document.documentElement.contentEditable = true", QWebEngineScript::ApplicationWorld);
+      ExecCommand("defaultParagraphSeparator","p");
   } else {
       page()->runJavaScript("document.documentElement.contentEditable = false", QWebEngineScript::ApplicationWorld);
   }
