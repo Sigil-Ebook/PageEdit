@@ -1,5 +1,14 @@
 Change Log
 ==========
+PageEdit-0.9.6
+  Bug Fixes:
+    - properly handle javascript location.href style links
+    - try to prevent crashes when files deleted out from under PageEdit
+    - fix the longest common path routine to actually work
+    - remove the load text filter as it was not supported
+    - set default paragraph separator to 'p' not 'div' when editing
+
+
 PageEdit-0.9.5
   New Features
      - add the ability to pass all xhtml files in the spine in Reading Order to PageEdit 
