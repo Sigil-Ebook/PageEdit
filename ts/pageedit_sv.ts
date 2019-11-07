@@ -941,12 +941,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../MainWindow.cpp" line="668"/>
         <source>mode: Preview</source>
-        <translation type="unfinished"/>
+        <translation>läge: Förhandsgranska</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="670"/>
         <source>mode: Edit</source>
-        <translation type="unfinished"/>
+        <translation>läge: Redigera</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="834"/>
@@ -1149,12 +1149,12 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="648"/>
         <source>Build Date</source>
-        <translation type="unfinished"/>
+        <translation>Byggdatum</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="649"/>
         <source>Build Time</source>
-        <translation type="unfinished"/>
+        <translation>Byggtid</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="650"/>

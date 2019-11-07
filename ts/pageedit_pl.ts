@@ -299,7 +299,7 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
     <message>
         <location filename="../main.ui" line="182"/>
         <source>Edit</source>
-        <translation>Edytujące</translation>
+        <translation>Edycja</translation>
     </message>
     <message>
         <location filename="../main.ui" line="200"/>

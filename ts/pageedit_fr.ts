@@ -138,92 +138,92 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation type="unfinished"/>
+        <translation>Déterminez si les fichiers HTML sont autorisés à accéder aux ressources distantes non multimédias.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation type="unfinished"/>
+        <translation>Contrôler l&apos;accès des fichiers HTML aux ressources distantes non multimédias.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation type="unfinished"/>
+        <translation>Cochez cette case pour permettre aux fichiers HTML d&apos;accéder aux ressources distantes non multimédias.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation type="unfinished"/>
+        <translation>Les fichiers HTML peuvent accéder à tous les types de ressources distantes.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation type="unfinished"/>
+        <translation>Déterminer si JavaScript peut être utilisé par les fichiers HTML</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation type="unfinished"/>
+        <translation>Contrôle de l&apos;utilisation de JavaScript par les fichiers HTML.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation type="unfinished"/>
+        <translation>Cochez cette case pour permettre aux fichiers HTML d&apos;utiliser JavaScript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation type="unfinished"/>
+        <translation>Les fichiers HTML peuvent utiliser JavaScript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation type="unfinished"/>
+        <translation>Choisissez la façon dont vous souhaitez que PageEdit gère l&apos;utilisation de plusieurs espaces blancs pendant l&apos;édition.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation type="unfinished"/>
+        <translation>Gérer la disposition de plusieurs espaces blancs à l&apos;aide de :</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation type="unfinished"/>
+        <translation>Utiliser l&apos;espace blanc CSS : pre-wrap</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation type="unfinished"/>
+        <translation>CSS white-space: pre-wrap</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation type="unfinished"/>
+        <translation>Utilisez des espaces incassables au besoin.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation type="unfinished"/>
+        <translation>espaces incassables selon les besoins</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation type="unfinished"/>
+        <translation>Déterminez si Prettify est utilisé lors de l&apos;enregistrement.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation type="unfinished"/>
+        <translation>Utilisez Prettify pour reformater le XHTML lors de l&apos;enregistrement.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation type="unfinished"/>
+        <translation>Cochez cette case pour reformater avec Prettify lors de l&apos;enregistrement de fichiers XHTML.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation type="unfinished"/>
+        <translation>Utilisez Prettify pour reformater XHTML lors de l&apos;enregistrement.</translation>
     </message>
 </context>
 <context>
@@ -264,7 +264,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="87"/>
         <source>&amp;Find</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Chercher</translation>
     </message>
     <message>
         <location filename="../main.ui" line="94"/>
@@ -305,7 +305,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../main.ui" line="200"/>
         <location filename="../main.ui" line="1048"/>
         <source>Mode</source>
-        <translation type="unfinished"/>
+        <translation>Mode</translation>
     </message>
     <message>
         <location filename="../main.ui" line="213"/>
@@ -351,12 +351,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="331"/>
         <source>Navigate</source>
-        <translation type="unfinished"/>
+        <translation>Naviguer</translation>
     </message>
     <message>
         <location filename="../main.ui" line="341"/>
         <source>Navigation List</source>
-        <translation type="unfinished"/>
+        <translation>Liste de navigation</translation>
     </message>
     <message>
         <location filename="../main.ui" line="357"/>
@@ -856,7 +856,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="965"/>
         <source>&amp;Select All</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sélectionner tout</translation>
     </message>
     <message>
         <location filename="../main.ui" line="968"/>
@@ -886,7 +886,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1000"/>
         <source>Find text in the page</source>
-        <translation type="unfinished"/>
+        <translation>Chercher du texte dans la page</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1003"/>
@@ -896,69 +896,71 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1016"/>
         <source>Next XHtml File</source>
-        <translation type="unfinished"/>
+        <translation>Fichier XHTML suivant</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1019"/>
         <source>Next file in navigation list</source>
-        <translation type="unfinished"/>
+        <translation>Fichier XHTML suivant dans la liste de navigation</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1032"/>
         <source>Previous XHtml File</source>
-        <translation type="unfinished"/>
+        <translation>Fichier XHTML précédent</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1035"/>
         <source>Previous file in navigation list</source>
-        <translation type="unfinished"/>
+        <translation>Fichier XHTML précédent dans la liste de navigation</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation type="unfinished"/>
+        <translation>Basculer entre les modes Édition et Aperçu.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1061"/>
         <source>About...</source>
-        <translation type="unfinished"/>
+        <translation>A propos…</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1064"/>
         <source>Show information about PageEdit.</source>
-        <translation type="unfinished"/>
+        <translation>Afficher les informations a propos PageEdit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1074"/>
         <source>Back to Last Link</source>
-        <translation type="unfinished"/>
+        <translation>Retourner au dernier lien</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1077"/>
         <source>Return from the last link taken</source>
-        <translation type="unfinished"/>
+        <translation>Revenir au dernier lien pris</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="668"/>
         <source>mode: Preview</source>
-        <translation type="unfinished"/>
+        <translation>Mode : Aperçu</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="670"/>
         <source>mode: Edit</source>
-        <translation type="unfinished"/>
+        <translation>Mode : Édition</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="834"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation type="unfinished"/>
+        <translation>Êtes-vous sûr de vouloir ouvrir ce lien dans votre navigateur ?
+
+%1</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="894"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation type="unfinished"/>
+        <translation>Voulez-vous sauvegarder vos modifications avant de partir ?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="911"/>
@@ -985,7 +987,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../MainWindow.cpp" line="1042"/>
         <source>OPF files (*.opf)</source>
-        <translation type="unfinished"/>
+        <translation>Fichier OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1043"/>
@@ -1047,7 +1049,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../MainWindow.cpp" line="1321"/>
         <location filename="../MainWindow.cpp.keep" line="1090"/>
         <source>does not exist or is not writeable</source>
-        <translation>n&apos;existe pas ou écrivable</translation>
+        <translation>n&apos;existe pas ou n&apos;est pas écrivable</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1382"/>
@@ -1137,7 +1139,7 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="642"/>
         <source>About PageEdit</source>
-        <translation type="unfinished"/>
+        <translation>A propos PageEdit</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="647"/>
@@ -1147,32 +1149,32 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="648"/>
         <source>Build Date</source>
-        <translation type="unfinished"/>
+        <translation>Date de construction</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="649"/>
         <source>Build Time</source>
-        <translation type="unfinished"/>
+        <translation>Durée de construction</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="650"/>
         <source>Qt Runtime Version</source>
-        <translation type="unfinished"/>
+        <translation>Version d&apos;exécution Qt</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="651"/>
         <source>Qt Compiled Version</source>
-        <translation type="unfinished"/>
+        <translation>Version compilé de Qt</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="652"/>
         <source>System</source>
-        <translation type="unfinished"/>
+        <translation>Systeme</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="653"/>
         <source>Architecture</source>
-        <translation type="unfinished"/>
+        <translation>Architecture</translation>
     </message>
 </context>
 <context>
@@ -1180,22 +1182,22 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation type="unfinished"/>
+        <translation>Recherche :</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation type="unfinished"/>
+        <translation>Recherche...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sensible a la Case</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="140"/>
         <source>No results found.</source>
-        <translation type="unfinished"/>
+        <translation>Aucun résultat trouvé.</translation>
     </message>
 </context>
 <context>
@@ -1228,17 +1230,17 @@ Voulez-vous toujours utiliser ce nom de fichier ?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="162"/>
         <source>No suggestions</source>
-        <translation type="unfinished"/>
+        <translation>Aucune suggestion</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="174"/>
         <source>Check Spelling</source>
-        <translation type="unfinished"/>
+        <translation>Vérifier l&apos;orthographe</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="183"/>
         <source>Select Language</source>
-        <translation type="unfinished"/>
+        <translation>Choisir la langue</translation>
     </message>
 </context>
 </TS>

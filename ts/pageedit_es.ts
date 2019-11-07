@@ -945,12 +945,12 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../MainWindow.cpp" line="668"/>
         <source>mode: Preview</source>
-        <translation type="unfinished"/>
+        <translation>modo: Previsualización</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="670"/>
         <source>mode: Edit</source>
-        <translation type="unfinished"/>
+        <translation>modo: Edición</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="834"/>

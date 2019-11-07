@@ -305,7 +305,7 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
         <location filename="../main.ui" line="200"/>
         <location filename="../main.ui" line="1048"/>
         <source>Mode</source>
-        <translation type="unfinished"/>
+        <translation>Modus</translation>
     </message>
     <message>
         <location filename="../main.ui" line="213"/>
@@ -351,12 +351,12 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../main.ui" line="331"/>
         <source>Navigate</source>
-        <translation type="unfinished"/>
+        <translation>Navigeren</translation>
     </message>
     <message>
         <location filename="../main.ui" line="341"/>
         <source>Navigation List</source>
-        <translation type="unfinished"/>
+        <translation>Navigatielijst</translation>
     </message>
     <message>
         <location filename="../main.ui" line="357"/>
@@ -896,69 +896,71 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../main.ui" line="1016"/>
         <source>Next XHtml File</source>
-        <translation type="unfinished"/>
+        <translation>Volgend xhtml-bestand</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1019"/>
         <source>Next file in navigation list</source>
-        <translation type="unfinished"/>
+        <translation>Volgend bestand in de navigatielijst</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1032"/>
         <source>Previous XHtml File</source>
-        <translation type="unfinished"/>
+        <translation>Voorgaand xhtml-bestand</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1035"/>
         <source>Previous file in navigation list</source>
-        <translation type="unfinished"/>
+        <translation>Voorgaand bestand in de navigatielijst</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation type="unfinished"/>
+        <translation>Wisselen tussen Bewerkingsmodus en voorbeeldweergave.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1061"/>
         <source>About...</source>
-        <translation type="unfinished"/>
+        <translation>Over...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1064"/>
         <source>Show information about PageEdit.</source>
-        <translation type="unfinished"/>
+        <translation>Informatie tonen over PageEdit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1074"/>
         <source>Back to Last Link</source>
-        <translation type="unfinished"/>
+        <translation>Terug naar de laatste koppeling</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1077"/>
         <source>Return from the last link taken</source>
-        <translation type="unfinished"/>
+        <translation>Terugkeren van de laatst uitgevoerde koppeling</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="668"/>
         <source>mode: Preview</source>
-        <translation type="unfinished"/>
+        <translation>modus: Voorbeeld</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="670"/>
         <source>mode: Edit</source>
-        <translation type="unfinished"/>
+        <translation>modus: Bewerken</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="834"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation type="unfinished"/>
+        <translation>Weet u zeker dat u deze koppeling wilt openen in uw browser?
+
+%1</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="894"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation type="unfinished"/>
+        <translation>Wilt u de wijzigingen opslaan voor het verlaten?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="911"/>
@@ -985,7 +987,7 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../MainWindow.cpp" line="1042"/>
         <source>OPF files (*.opf)</source>
-        <translation type="unfinished"/>
+        <translation>OPF-bestanden (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1043"/>
@@ -1137,7 +1139,7 @@ Regel: %1 Kolom %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="642"/>
         <source>About PageEdit</source>
-        <translation type="unfinished"/>
+        <translation>Over PageEdit</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="647"/>
@@ -1147,32 +1149,32 @@ Regel: %1 Kolom %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="648"/>
         <source>Build Date</source>
-        <translation type="unfinished"/>
+        <translation>Bouwdatum</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="649"/>
         <source>Build Time</source>
-        <translation type="unfinished"/>
+        <translation>Bouwtijd</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="650"/>
         <source>Qt Runtime Version</source>
-        <translation type="unfinished"/>
+        <translation>Qt runtime-versie</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="651"/>
         <source>Qt Compiled Version</source>
-        <translation type="unfinished"/>
+        <translation>Qt gecompileerde versie</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="652"/>
         <source>System</source>
-        <translation type="unfinished"/>
+        <translation>Systeem</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="653"/>
         <source>Architecture</source>
-        <translation type="unfinished"/>
+        <translation>Architectuur</translation>
     </message>
 </context>
 <context>
