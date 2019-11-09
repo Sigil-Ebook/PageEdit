@@ -7,6 +7,7 @@ AppName=PageEdit
 AppVerName=PageEdit ${PAGEEDIT_FULL_VERSION}
 VersionInfoVersion=${PAGEEDIT_FULL_VERSION}
 DefaultDirName={pf}\PageEdit
+AllowNoIcons=yes
 DisableDirPage=no
 DefaultGroupName=PageEdit
 UninstallDisplayIcon={app}\PageEdit.exe
@@ -53,15 +54,10 @@ Name: dicon\user; Description: "For the current user only"; Flags: exclusive
 
 [Icons]
 Name: "{group}\PageEdit"; Filename: "{app}\PageEdit.exe"
-Name: "{group}\Uninstall PageEdit"; Filename: "{uninstallexe}"
+;Name: "{group}\Uninstall PageEdit"; Filename: "{uninstallexe}"
 ; Optional desktop icon.
 Components: dicon\common; Name: "{commondesktop}\PageEdit"; Filename: "{app}\PageEdit.exe"
 Components: dicon\user; Name: "{userdesktop}\PageEdit"; Filename: "{app}\PageEdit.exe"
-
-;[InstallDelete]
-;Type: filesandordirs; Name: "{app}\python3"
-; Might be moving to precompiled python files in future.
-; and to keep install directory clean for future enhancement possibilities
 
 
 [Run]

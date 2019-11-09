@@ -62,7 +62,7 @@ build_script:
 
 after_build:
 - cmd: |-
-    ninja -j4 deployzip
+    ninja -j4 deployinstaller
  
 artifacts:
     path: build\deploy\*.exe
