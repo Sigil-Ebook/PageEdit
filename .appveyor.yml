@@ -53,7 +53,7 @@ before_build:
     echo 'PATH = %PATH%'
     cd project\pageedit\build
     call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" %PLATFORM%
-    cmake .. -G "Ninja" -DDEPLOY_SFX=1 -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5
+    cmake .. -G "Ninja" -DWIN_INSTALLER_USE_64BIT_CRT=1 -DDEPLOY_SFX=1 -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5
 
     
 build_script:
