@@ -170,6 +170,15 @@ set_property( SOURCE ${QRC_FILES_CPP} PROPERTY SKIP_AUTOMOC ON )
 # Runs lrelease on the specified files
 qt5_add_translation( QM_FILES ${TS_FILES} )
 
+# Check if platform is 64 bit
+if( NOT APPLE )
+   if( CMAKE_SIZEOF_VOID_P EQUAL 4 )
+     set( 64_BIT_PLATFORM 0 )
+   else()
+     set( 64_BIT_PLATFORM 1 )
+   endif()
+endif()
+
 # Define the PageEdit version string for use in source files
 set_source_files_properties( Utility.cpp PROPERTIES COMPILE_DEFINITIONS PAGEEDIT_VERSION="${PAGEEDIT_FULL_VERSION}" )
 set_source_files_properties( main.cpp PROPERTIES COMPILE_DEFINITIONS PAGEEDIT_VERSION="${PAGEEDIT_FULL_VERSION}" )
@@ -362,6 +371,25 @@ if ( MSVC )
     set( WINDEPLOYQT ${QT_INSTALL_BINS}/windeployqt.exe )
     set( CONVERTDICT ${QT_INSTALL_BINS}/qwebengine_convert_dict.exe )
 
+    # ISS conf file for the Inno Setup compiler
+    # We first create a CMake configured version of the ISS file,
+    # and then we copy it to the temp folder every time we need to build the installer.
+    set( ISS_MAIN_LOCATION ${CMAKE_SOURCE_DIR}/installer/PageEdit.iss  )
+    set( ISS_CONFIGURED_LOCATION ${CMAKE_BINARY_DIR}/PageEdit_configured.iss )
+    set( ISS_TEMP_LOCATION ${CMAKE_BINARY_DIR}/temp_folder/PageEdit_configured.iss )
+
+    # Specify platform var for Inno
+    if ( 64_BIT_PLATFORM )
+        # Used in the ISS CMake configuration
+        set( ISS_ARCH "x64" )
+        set( ISS_SETUP_FILENAME_PLATFORM "-x64" )
+    endif()
+
+    # Creates a copy of the ISS file in ${ISS_CONFIGURED_LOCATION} and then configures it
+    # Used in the ISS CMake configuration
+    set( LICENSE_LOCATION ${CMAKE_SOURCE_DIR}/installer/win_installer_note.txt  )
+    configure_file( ${ISS_MAIN_LOCATION} ${ISS_CONFIGURED_LOCATION} )
+
     set( pf_x86 "ProgramFiles(x86)" )
     find_program(SEVENZIP_BIN
 	    NAMES 7z 7za
@@ -379,7 +407,13 @@ if ( MSVC )
         set( SEVENZIP_OUTPUT "${PROJECT_NAME}_${PAGEEDIT_FULL_VERSION}.zip" )
     endif()
 
-    add_custom_target( deploy
+    # Run Inno Setup's iscc compiler (*AFTER* all the PRE_BUILD custom commands execute)
+    add_custom_target(  deployinstaller
+        COMMAND cmake -E echo "For this to work, Inno Setup's iscc compiler needs to be installed and on the system path."
+        COMMAND iscc ${ISS_TEMP_LOCATION} )
+
+    # Create zip archive (or self-extracting zip) instead of Windows installer
+    add_custom_target( deployzip
                        COMMAND ${CMAKE_COMMAND} -E echo "For this to work, 7zip needs to be installed (and possibly on the system path)."
                        COMMAND del ${SEVENZIP_OUTPUT}
                        COMMAND ${SEVENZIP_BIN} ${SEVENZIP_ARGS} ${SEVENZIP_OUTPUT} ${MAIN_PACKAGE_DIR}
@@ -391,7 +425,8 @@ if ( MSVC )
                        COMMENT "Copying files to temporary location..."
                        DEPENDS ${PROJECT_NAME} )
 
-    add_dependencies( deploy ${TARGET_FOR_COPY} )
+    add_dependencies( deployzip ${TARGET_FOR_COPY} )
+    add_dependencies( deployinstaller ${TARGET_FOR_COPY} )
 
     add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
                         COMMAND ${CMAKE_COMMAND} -E make_directory ${MAIN_PACKAGE_DIR}
@@ -403,6 +438,28 @@ if ( MSVC )
     # Copy the application executable
     add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
                         COMMAND ${CMAKE_COMMAND} -E copy ${EXE_PATH} ${MAIN_PACKAGE_DIR} )
+
+    set( VCREDIST_VER "2017" )
+    # We need to copy the CRT dlls
+    # Add -DWIN_INSTALLER_USE_64BIT_CRT=1 to the cmake call if you want to build
+    # an installer for the x64 verison of PageEdit. This will make sure that the
+    # correct CRT libs are included in the installer.
+    add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND cmake -E make_directory ${TEMP_PACKAGE_DIR}/vendor/ )
+    if ( WIN_INSTALLER_USE_64BIT_CRT )
+        message( STATUS "Using the 64 bit CRT in the PageEdit Windows installer" )
+        message( STATUS "Ensure vcredist_x64.exe for VS${VCREDIST_VER} has been placed in installer/ if you plan on running makeinstaller" )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
+            COMMAND cmake -E copy ${CMAKE_SOURCE_DIR}/installer/vcredist_x64.exe ${TEMP_PACKAGE_DIR}/vendor/vcredist.exe )
+    else()
+        message( STATUS "Using the 32 bit CRT in the PageEdit Windows installer" )
+        message( STATUS "Ensure vcredist_x86.exe for VS${VCREDIST_VER} has been placed in installer/ if you plan on running makeinstaller" )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
+            COMMAND cmake -E copy ${CMAKE_SOURCE_DIR}/installer/vcredist_x86.exe ${TEMP_PACKAGE_DIR}/vendor/vcredist.exe )
+    endif()
+
+    # Copy ISS file to temp folder location
+    add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
+                        COMMAND cmake -E copy ${ISS_CONFIGURED_LOCATION} ${ISS_TEMP_LOCATION} )
 
     add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD
                         COMMAND ${WINDEPLOYQT} --release --no-translations --no-compiler-runtime --dir ${MAIN_PACKAGE_DIR}
@@ -437,7 +494,10 @@ if ( MSVC )
     endforeach( DICT )
 
     # Remove the temp directory used for building the installer
-    add_custom_command( TARGET deploy POST_BUILD
+    add_custom_command( TARGET deployzip POST_BUILD
+                        COMMAND ${CMAKE_COMMAND} -E remove_directory ${TEMP_PACKAGE_DIR}
+                        COMMENT "Removing temporary directory..." )
+    add_custom_command( TARGET deployinstaller POST_BUILD
                         COMMAND ${CMAKE_COMMAND} -E remove_directory ${TEMP_PACKAGE_DIR}
                         COMMENT "Removing temporary directory..." )
 endif( MSVC )

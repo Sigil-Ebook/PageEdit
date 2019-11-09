@@ -1,4 +1,4 @@
-version: '0.9.5-{build}'
+version: '0.9.6-{build}'
 
 branches:
   only:
@@ -61,7 +61,7 @@ build_script:
 
 after_build:
 - cmd: |-
-    ninja -j4 deploy
+    ninja -j4 deployzip
  
 artifacts:
     path: build\deploy\*.exe
