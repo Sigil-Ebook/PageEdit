@@ -44,6 +44,7 @@ environment:
 
 before_build:
 - cmd: |-
+    cp '%REDIST%' installer/
     mkdir build
     cd ..\..
     curl.exe -L -o webkit.7z %DOWNLOAD%
