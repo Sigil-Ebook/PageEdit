@@ -38,8 +38,8 @@ environment:
   global:
       INNO: C:\Program Files (x86)\Inno Setup 5
       REDIST: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\%RedistVersion%\vcredist_%PLATFORM%.exe
-      DOWNLOAD: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/MyQt%PLATFORM%-5.12.3_WE-WK_VS2017.7z
-      QT: C:\MyQtx64_WE\Qt5.12.3
+      DOWNLOAD: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/MyQt%PLATFORM%_5.12.6_VS2017_WE.7z
+      QT: C:\MyQtx64_WE\Qt5.12.6
 
 
 before_build:
