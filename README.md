@@ -42,27 +42,53 @@ Building on macOS:
 On Linux
 --------
 
-Make sure a minimum of Qt5.9.4(ish) is installed (with the WebEngine package) as well as cmake
+Make sure a minimum of Qt5.9.4(ish) is installed (with the WebEngine package) as well as cmake.<br>
+You build in a separate directory and not in the source directory.
+
+Qt5.11+ is probably a more realistic minimum to be able enjoy all of PageEdit's features.
+
+Get the PageEdit Source:
+
+`git clone https://github.com/sigil-ebook/PageEdit.git`<br>
+(or download/extract the gzipped tarball from a PageEdit Release)<br>
+`cd PageEdit`
+
+__Ubuntu__
+
+`sudo apt-get install build-essential`<br>
+`sudo apt-get install cmake`<br>
+`sudo apt-get install qtwebengine5-dev qttools5-dev qttools5-dev-tools`
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../PageEdit`<br>
+`cmake "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
 `make`<br>
+
+__Arch Linux__
+
+sudo pacman -S cmake qt5-webengine qt5-tools<br>
+
+`mkdir build`<br>
+`cd build`<br>
+`cmake "Unix Makefiles" -DINSTALL_BUNDLED_DICTS=0 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
+`make`<br>
+
+__All Flavors__:
 
 To test
 `cd bin`<br>
 `./pageedit /FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB/FILENAME.xhtml`
 
-You can also install PageEdit with `make install` (defaults to the /usr/local prefix, so use sudo if required).
+`make install` (defaults to the /usr/local prefix, so use sudo if required).
 
 __NOTE__: certain features, like Inspector, will require a minimum of Qt5.11.x to function on Linux.
 
-By default, bundled hunspell dictionaries are converted to webengine spell check dictionaries (with qt tools) and installed to the QT_INSTALL_DATA/qtwebengine_dictionaries location. This location can be found using the qmake binary (of the Qt you're building PageEdit with) with the following command `-qmake -query QT_INSTALL_DATA` . If using the system Qt, this will typically be /usr/share/qt/qtwebengine_dictionaries. To disable the conversion/installation of these bundled dictionaries, use -DNSTALL_BUNDLED_DICTS=0 when configuring PageEdit with cmake.
+By default, bundled hunspell dictionaries are converted to webengine spell check dictionaries (with qt tools) and installed to the QT_INSTALL_DATA/qtwebengine_dictionaries location. This location can be found using the qmake binary (of the Qt you're building PageEdit with) with the following command `-qmake -query QT_INSTALL_DATA` . If using the system Qt, this will typically be /usr/share/qt/qtwebengine_dictionaries. To disable the conversion/installation of these bundled dictionaries, use -DNSTALL_BUNDLED_DICTS=0 when configuring PageEdit with cmake. Arch Linux already includes these dictionaries with the corresponding hunspell language dictionaries. So you'll want to skip their conversion/installation on Arch and make sure you have the correct hunspell languages installed instead.
 
 On Windows:
 -----------
 
-Make sure Qt5.12.3 (with the WebEngine component) and Visual Studio 2017 are installed. Install the x64 version of Qt5.12.3 for VS2017. Install cmake 3.0+ and make sure its bin directory is added to your path.
+Make sure a minimum of Qt5.12.3 (with the WebEngine component) and Visual Studio 2017 are installed. Install the x64 version of Qt5.12.3 for VS2017. Install cmake 3.0+ and make sure its bin directory is added to your path.
 
 Make sure that Qt's bin directory is also added to your PATH. Take note of the path for your Qt's prefix (the directory right above the bin directory). Open an "x64 Native Tools Command Prompt for VS2017" from the Start menu and cd to wherever you want to build.
 
@@ -77,7 +103,11 @@ To test:
 
 Use `nmake deploy` to package PageEdit and all of its dependencies into a zip archive (in a newly created 'deploy' folder in the build folder)
 
+Use `nmake deployinstaller` to package PageEdit and all of its dependencies into an Inno Setup installer (must have InnoSetup installed and on the PATH for is to work).
+
 __NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deploy` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
+
+__NOTE__: as of this writing, the Official PageEdit release are built using Qt5.12.6
 
 
 ## For Github repository maintainers (who am I kidding, this is to keep myself from forgetting/messing up):
