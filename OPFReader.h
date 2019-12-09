@@ -21,6 +21,10 @@ public:
 
   void parseOPF(const QString& opfpath);
   QStringList GetSpineFilePathList();
+  QStringList GetAudioFilePathList();
+  QStringList GetVideoFilePathList();
+  QStringList GetImageFilePathList();
+  QStringList GetSVGFilePathList();
 
 protected:
 

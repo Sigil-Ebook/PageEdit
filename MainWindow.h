@@ -138,6 +138,8 @@ public slots:
     void InsertNumberedList();
     void InsertId();
     void InsertHyperlink();
+    void InsertFileDialog();
+    void InsertFiles(const QStringList &selected_files);
     void Bold();
     void Italic();
     void Underline();
@@ -213,6 +215,9 @@ private:
     QString m_Base;
     int m_ListPtr;
     bool m_UpdatePageInProgress;
+    QStringList m_MediaList;
+    QStringList m_MediaKind;
+    QString m_MediaBase;
 
     QList<ElementIndex> m_LastLocation;
     int m_LastPtr;

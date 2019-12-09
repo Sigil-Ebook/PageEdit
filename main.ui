@@ -101,6 +101,7 @@
     <addaction name="separator"/>
     <addaction name="actionInsertId"/>
     <addaction name="actionInsertHyperlink"/>
+    <addaction name="actionInsertFile"/>
    </widget>
    
    <widget class="QMenu" name="menuFormat">
@@ -227,6 +228,7 @@
    <addaction name="actionInsertSGFSectionMarker"/>
    <addaction name="actionInsertId"/>
    <addaction name="actionInsertHyperlink"/>
+   <addaction name="actionInsertFile"/>
   </widget>
 
   <widget class="QToolBar" name="toolBarInspect">
@@ -1106,6 +1108,22 @@
    </property>
    <property name="toolTip">
     <string>Insert or edit an anchor with a hyperlink to a target.</string>
+   </property>
+  </action>
+
+  <action name="actionInsertFile">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/insert-image_48px.png</normaloff>:/icons/insert-image_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;File...</string>
+   </property>
+   <property name="toolTip">
+    <string>Select existing image, video or audio files from your book to insert into the text.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+I</string>
    </property>
   </action>
 

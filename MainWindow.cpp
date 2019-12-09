@@ -52,8 +52,9 @@
 #include "Utility.h"
 #include "WebViewEdit.h"
 #include "SelectCharacter.h"
-#include "SelectId.h"
+#include "SelectFiles.h"
 #include "SelectHyperlink.h"
+#include "SelectId.h"
 #include "Preferences.h"
 #include "GumboInterface.h"
 #include "SearchToolbar.h"
@@ -103,6 +104,9 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_Base(QString()),
     m_ListPtr(-1),
     m_UpdatePageInProgress(false),
+    m_MediaList(QStringList()),
+    m_MediaKind(QStringList()),
+    m_MediaBase(QString()),
     m_LastPtr(-1)
 {
     ui.setupUi(this);
@@ -151,6 +155,34 @@ void MainWindow::SetupFileList(const QString &filepath)
         m_Base = Utility::longestCommonPath(spine_files, "/");
         foreach(QString sf, spine_files) {
 	    m_SpineList << sf.right(sf.length()-m_Base.length());
+        }
+        // now collect a list of media file and kind
+        QStringList media_list;
+        m_MediaKind.clear();
+	QStringList audiolist = opfrdr.GetAudioFilePathList();
+        foreach(QString filepath, audiolist) {
+            media_list << filepath;
+            m_MediaKind << "audio";
+	}
+	QStringList videolist = opfrdr.GetVideoFilePathList();
+        foreach(QString filepath, videolist) {
+            media_list << filepath;
+            m_MediaKind << "video";
+	}
+	QStringList imagelist = opfrdr.GetImageFilePathList();
+        foreach(QString filepath, imagelist) {
+            media_list << filepath;
+            m_MediaKind << "image";
+	}
+	QStringList svglist = opfrdr.GetSVGFilePathList();
+        foreach(QString filepath, svglist) {
+            media_list << filepath;
+            m_MediaKind << "svgimage";
+	}
+        m_MediaBase = Utility::longestCommonPath(media_list, "/");
+        m_MediaList.clear();
+        foreach(QString mf, media_list) {
+	    m_MediaList << mf.right(mf.length()-m_MediaBase.length());
         }
     } else {
         // note longestCommonPath always ends with "/" but fi.absolutePath() does not
@@ -489,6 +521,7 @@ void MainWindow::SetupView()
     ui.actionInsertNumberedList ->setEnabled(true);
     ui.actionInsertId->setEnabled(true);
     ui.actionInsertHyperlink->setEnabled(true);
+    ui.actionInsertFile->setEnabled(true);
 
     ui.actionHeading1->setEnabled(true);
     ui.actionHeading2->setEnabled(true);
@@ -1571,6 +1604,61 @@ void MainWindow::InsertHyperlink()
 }
 
 
+void MainWindow::InsertFileDialog()
+{
+    if (m_MediaList.isEmpty()) return;
+
+    QStringList selected_files;
+    QString title = tr("Insert File");
+    SelectFiles select_files(title, m_MediaList, m_MediaKind, m_MediaBase, this);
+
+    if (select_files.exec() == QDialog::Accepted) {
+        selected_files = select_files.SelectedImages();
+        InsertFiles(selected_files);
+    }
+}
+
+void MainWindow::InsertFiles(const QStringList &selected_files)
+{
+    if (selected_files.isEmpty()) return;
+    
+    QString currentpath = m_Base + GetCurrentFilePath();
+
+    foreach(QString selected_file, selected_files) {
+        QString mediapath = m_MediaBase + selected_file;
+
+        int pos = m_MediaList.indexOf(selected_file);
+        if (pos < 0) continue;
+        QString mkind = m_MediaKind.at(pos);
+    
+        QFileInfo fi(mediapath);
+        if (!fi.exists()) continue;
+            
+        QString relative_link = Utility::buildRelativePath(currentpath, mediapath);
+
+        // extract just the filename without extension to create a text label
+        QString filename = fi.fileName();
+        if (filename.contains(".")) {
+            filename = filename.left(filename.lastIndexOf("."));
+        }
+            
+        QString html;
+        if (mkind == "image" || mkind == "svgimage") {
+            html = QString("<img alt=\"%1\" src=\"%2\"/>").arg(filename).arg(relative_link);
+        } else if (mkind == "video") {
+            // When inserted in BV the filename will disappear
+            html = QString("<video controls=\"controls\" src=\"%1\">%2</video>").arg(relative_link).arg(filename);
+        } else if (mkind == "audio") {
+            html = QString("<audio controls=\"controls\" src=\"%1\">%2</audio>").arg(relative_link).arg(filename);
+        }
+        if (!m_WebView->InsertHtml(html)) {
+	    QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert a media file at this position."));
+        }
+    }
+}
+
+
+
 void MainWindow::Subscript()
 {
     m_WebView->ExecCommand("subscript");
@@ -1790,6 +1878,10 @@ void MainWindow::ExtendIconSizes()
     icon.addFile(QString::fromUtf8(":/icons/insert-id_22px.png"));
     ui.actionInsertId->setIcon(icon);
 
+    icon = ui.actionInsertFile->icon();
+    icon.addFile(QString::fromUtf8(":/icons/insert-image_22px.png"));
+    ui.actionInsertFile->setIcon(icon);
+
     icon = ui.actionInsertHyperlink->icon();
     icon.addFile(QString::fromUtf8(":/icons/insert-hyperlink_22px.png"));
     ui.actionInsertHyperlink->setIcon(icon);
@@ -1928,12 +2020,13 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionFind,      SIGNAL(triggered()),  this,   SLOT(SearchOnPage()));
 
     // Insert Related
-    connect(ui.actionInsertSGFSectionMarker,   SIGNAL(triggered()),  this,   SLOT(InsertSGFSectionMarker()));
-    connect(ui.actionInsertSpecialCharacter,   SIGNAL(triggered()),  this,   SLOT(InsertSpecialCharacter()));
-    connect(ui.actionInsertBulletedList,       SIGNAL(triggered()),  this,   SLOT(InsertBulletedList()));
-    connect(ui.actionInsertNumberedList,       SIGNAL(triggered()),  this,   SLOT(InsertNumberedList()));
-    connect(ui.actionInsertId,                 SIGNAL(triggered()),  this,   SLOT(InsertId()));
-    connect(ui.actionInsertHyperlink,          SIGNAL(triggered()),  this,   SLOT(InsertHyperlink()));
+    connect(ui.actionInsertSGFSectionMarker, SIGNAL(triggered()), this, SLOT(InsertSGFSectionMarker()));
+    connect(ui.actionInsertSpecialCharacter, SIGNAL(triggered()), this, SLOT(InsertSpecialCharacter()));
+    connect(ui.actionInsertBulletedList,     SIGNAL(triggered()), this, SLOT(InsertBulletedList()));
+    connect(ui.actionInsertNumberedList,     SIGNAL(triggered()), this, SLOT(InsertNumberedList()));
+    connect(ui.actionInsertId,               SIGNAL(triggered()), this, SLOT(InsertId()));
+    connect(ui.actionInsertHyperlink,        SIGNAL(triggered()), this, SLOT(InsertHyperlink()));
+    connect(ui.actionInsertFile,             SIGNAL(triggered()), this, SLOT(InsertFileDialog()));
 
     // Format Related
     connect(ui.actionBold,            SIGNAL(triggered()),  this,   SLOT(Bold()));

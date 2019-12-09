@@ -11,6 +11,18 @@
 
 #define DBG if(0)
 
+const QStringList IMAGE_MIMETYPES = QStringList() << "image/gif" << "image/jpeg" 
+						  << "image/png" << "image/webp" 
+						  << "image/tiff" << "image/bmp";
+
+const QStringList SVG_MIMETYPES   = QStringList() << "image/svg+xml";
+
+const QStringList AUDIO_MIMETYPES = QStringList() << "audio/mpeg" << "audio/mp3" 
+						  << "audio/ogg" << "audio/mp4";
+
+const QStringList VIDEO_MIMETYPES = QStringList() << "video/mp4" << "video/ogg" 
+						  << "video/webm"; 
+
 OPFReader::OPFReader()
   : 
   m_opfDir(QDir()),
@@ -83,4 +95,52 @@ void OPFReader::ReadSpineItemRef(QXmlStreamReader *opf_reader)
 QStringList OPFReader::GetSpineFilePathList()
 {
     return m_SpineFilePaths;
+}
+
+QStringList OPFReader::GetAudioFilePathList()
+{
+    QStringList res;
+    foreach(QString id, m_IDMap.keys()) {
+        QString mtype = m_FileMimeTypes.value(id, "");
+        if (AUDIO_MIMETYPES.contains(mtype)) {
+            res << m_IDMap[id];
+	}
+    }
+    return res;
+}
+
+QStringList OPFReader::GetVideoFilePathList()
+{
+    QStringList res;
+    foreach(QString id, m_IDMap.keys()) {
+        QString mtype = m_FileMimeTypes.value(id, "");
+        if (VIDEO_MIMETYPES.contains(mtype)) {
+            res << m_IDMap[id];
+	}
+    }
+    return res;
+}
+
+QStringList OPFReader::GetImageFilePathList()
+{
+    QStringList res;
+    foreach(QString id, m_IDMap.keys()) {
+        QString mtype = m_FileMimeTypes.value(id, "");
+        if (IMAGE_MIMETYPES.contains(mtype)) {
+            res << m_IDMap[id];
+	}
+    }
+    return res;
+}
+
+QStringList OPFReader::GetSVGFilePathList()
+{
+    QStringList res;
+    foreach(QString id, m_IDMap.keys()) {
+        QString mtype = m_FileMimeTypes.value(id, "");
+        if (SVG_MIMETYPES.contains(mtype)) {
+            res << m_IDMap[id];
+	}
+    }
+    return res;
 }

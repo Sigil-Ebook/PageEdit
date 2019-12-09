@@ -77,8 +77,9 @@ set( SOURCE_FILES
     AppEventFilter.cpp
     MainWindow.cpp
     SelectCharacter.cpp
-    SelectId.cpp
+    SelectFiles.cpp
     SelectHyperlink.cpp
+    SelectId.cpp
     WebPageEdit.cpp
     WebViewEdit.cpp
     Inspector.cpp
@@ -104,8 +105,9 @@ set( HEADER_FILES
     Viewer.h
     ElementIndex.h
     SelectCharacter.h
-    SelectId.h
+    SelectFiles.h
     SelectHyperlink.h
+    SelectId.h
     WebPageEdit.h
     WebViewEdit.h
     Inspector.h
@@ -126,8 +128,9 @@ set( HEADER_FILES
 set( FORM_FILES
     main.ui
     SelectCharacter.ui
-    SelectId.ui
+    SelectFiles.ui
     SelectHyperlink.ui
+    SelectId.ui
     Preferences.ui
     PAppearanceWidget.ui
     PGeneralSettings.ui
