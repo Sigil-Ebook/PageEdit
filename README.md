@@ -5,13 +5,13 @@ It uses WebEngine instead of WebKit.
 
 This app is working and fundamentally complete.
 
-It requires Qt 5.12.3 or later.
+It prefers Qt 5.12.6 or later.
 
 To build after cloning the repo
 
 You will need cmake version 3.0 to build:
 
-Make sure the qt tools and libraries from Qt 5.12.3 are in your path<br>
+Make sure the qt tools and libraries from Qt 5.12.6 are in your path<br>
 `export PATH=~/QT512/bin:${PATH}`
 
 You build in a separate directory and not in the source directory.

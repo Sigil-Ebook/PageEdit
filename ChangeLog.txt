@@ -1,5 +1,15 @@
 Change Log
 ==========
+
+PageEdit-1.0.0
+  Bug Fixes:
+    - modified Qt code to fix the return after an h6 heading bug
+    - whitespace is now preserved in code tags
+   New Features
+    - added ability to insert "id" attibutes into current xhtml file
+    - added ability to insert hyperlinks to other existing xhtml files (only when opened with OPF)
+    - added ability to insert links to existing images, audio, and video (open when opened with OPF) 
+
 PageEdit-0.9.6
   Bug Fixes:
     - properly handle javascript location.href style links
