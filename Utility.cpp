@@ -677,6 +677,119 @@ QString Utility::resolveRelativeSegmentsInFilePath(const QString& file_path, con
     return res.join(sep);
 }
 
+
+// dest_relpath is the relative path to the destination file
+// start_folder is the *book path* (path internal to the epub) to the starting folder
+QString Utility::buildBookPath(const QString& dest_relpath, const QString& start_folder)
+{
+    QString bookpath(start_folder);
+    while (bookpath.endsWith("/")) bookpath.chop(1);
+    if (!bookpath.isEmpty()) { 
+        bookpath = bookpath + "/" + dest_relpath;
+    } else {
+        bookpath = dest_relpath;
+    }
+    bookpath = resolveRelativeSegmentsInFilePath(bookpath, "/");
+    return bookpath;
+}
+
+// no ending path separator
+QString Utility::startingDir(const QString &file_bookpath)
+{
+    QString start_dir(file_bookpath);
+    int pos = start_dir.lastIndexOf('/');
+    if (pos > -1) { 
+        start_dir = start_dir.left(pos);
+    } else {
+        start_dir = "";
+    }
+    return start_dir;
+}
+
+
+// Generate relative path to destination from starting directory path
+// Both paths should be cannonical
+QString Utility::relativePath(const QString & destination, const QString & start_dir)
+{
+    QString dest(destination);
+    QString start(start_dir);
+
+    // first handle the special case
+    if (start_dir.isEmpty()) return destination;
+
+    QChar sep = '/';
+
+    // remove any trailing path separators from both paths
+    while (dest.endsWith(sep)) dest.chop(1);
+    while (start.endsWith(sep)) start.chop(1);
+
+    QStringList dsegs = dest.split(sep, QString::KeepEmptyParts);
+    QStringList ssegs = start.split(sep, QString::KeepEmptyParts);
+    QStringList res;
+    int i = 0;
+    int nd = dsegs.size();
+    int ns = ssegs.size();
+    // skip over starting common path segments in both paths
+    while (i < ns && i < nd && (dsegs.at(i) == ssegs.at(i))) {
+        i++;
+    }
+    // now "move up" for each remaining path segment in the starting directory
+    int p = i;
+    while (p < ns) {
+        res.append("..");
+        p++;
+    }
+    // And append the remaining path segments from the destination
+    p = i;
+    while(p < nd) {
+        res.append(dsegs.at(p));
+        p++;
+    }
+    return res.join(sep);
+}
+
+
+// This is the equivalent of Resource.cpp's GetRelativePathFromResource but using book paths
+QString Utility::buildRelativePath(const QString &from_file_bkpath, const QString & to_file_bkpath)
+{
+    // handle special case of "from" and "to" being identical
+    if (from_file_bkpath == to_file_bkpath) return "";
+
+    // convert start_file_bkpath to start_dir by stripping off existing filename component
+    return relativePath(to_file_bkpath, startingDir(from_file_bkpath));
+}   
+
+
+std::pair<QString, QString> Utility::parseHREF(const QString &relative_href)
+{
+    QString fragment;
+    QString attpath = relative_href;
+    int fragpos = attpath.lastIndexOf("#");
+    // fragment will include any # if one exists
+    if (fragpos != -1) {
+        fragment = attpath.mid(fragpos, -1);
+        attpath = attpath.mid(0, fragpos);
+    }
+    if (attpath.startsWith("./")) attpath = attpath.mid(2,-1);
+    return std::make_pair(attpath, fragment);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void Utility::AboutBox()
 {
     QMessageBox message_box(QApplication::activeWindow());

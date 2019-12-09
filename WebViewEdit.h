@@ -108,11 +108,24 @@ public:
 
     QString GetCaretElementName();
 
+    /**
+     * From the current cursor position, search for a parent tag element named in the tag list.
+     * When first if any matching tag found, return the value of the named attribute if exists.
+     */
+    QString GetAncestorTagAttributeValue(const QString &attribute_name, const QStringList &tag_list);
+
+    bool InsertTagAttribute(const QString &element_name, const QString &attribute_name, const QString &attribute_value, const QStringList &tag_list, bool ignore_selection = false);
+
+    bool SetAncestorTagAttributeValue(const QString &attribute_name, const QString &attribute_value, const QStringList &tag_list);
+
+
 public slots:
      void PasteText(const QString &text);
      QString GetHtml() const;
      QString GetSelectedText();
      bool InsertHtml(const QString &html);
+     bool InsertId(const QString &id);
+     bool InsertHyperlink(const QString &href);
      bool ExecCommand(const QString &command);
      bool ExecCommand(const QString &command, const QString &parameter);
      bool QueryCommandState(const QString &command);
@@ -176,6 +189,10 @@ private slots:
 
 private:
 
+
+
+
+
     /**
      * Actually performs the scrolling, will only be invoked after the document has loaded.
      */
@@ -232,10 +249,13 @@ private:
 
     /**
      * The JavaScript source code routines used
-     * to format a block element
+     * to format block elements, ancestor attributes, etc
      */
     const QString c_GetBlock;
     const QString c_FormatBlock;
+    const QString c_GetAncestor;
+    const QString c_GetAncestorAttribute;
+    const QString c_SetAncestorAttribute;
 
 
     /**

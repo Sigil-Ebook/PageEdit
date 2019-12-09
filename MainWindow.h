@@ -103,6 +103,10 @@ public slots:
     void LinkClicked(const QUrl &url);
     void LinkReturn();
 
+    // Utility routines
+    QString GetCurrentFilePath();
+    QStringList GetAllFilePaths(int skip = -1);
+
     // Mode slots
     void ToggleMode(bool on);
 
@@ -132,6 +136,8 @@ public slots:
     void InsertSGFSectionMarker();
     void InsertBulletedList();
     void InsertNumberedList();
+    void InsertId();
+    void InsertHyperlink();
     void Bold();
     void Italic();
     void Underline();

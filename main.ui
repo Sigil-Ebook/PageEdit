@@ -98,6 +98,9 @@
     <addaction name="separator"/>
     <addaction name="actionInsertBulletedList"/>
     <addaction name="actionInsertNumberedList"/>
+    <addaction name="separator"/>
+    <addaction name="actionInsertId"/>
+    <addaction name="actionInsertHyperlink"/>
    </widget>
    
    <widget class="QMenu" name="menuFormat">
@@ -222,6 +225,8 @@
    <addaction name="actionInsertNumberedList"/>
    <addaction name="actionInsertSpecialCharacter"/>
    <addaction name="actionInsertSGFSectionMarker"/>
+   <addaction name="actionInsertId"/>
+   <addaction name="actionInsertHyperlink"/>
   </widget>
 
   <widget class="QToolBar" name="toolBarInspect">
@@ -1054,7 +1059,7 @@
 
   <action name="actionAbout">
    <property name="icon">
-    <iconset resource="../icons/icons.qrc">
+    <iconset resource="./icons/icons.qrc">
      <normaloff>:/icons/help-browser_48px.png</normaloff>:/main/help-browser_48px.png</iconset>
    </property>
    <property name="text">
@@ -1067,7 +1072,7 @@
 
   <action name="actionLinkReturn">
    <property name="icon">
-    <iconset resource="../icons/icons.qrc">
+    <iconset resource="./icons/icons.qrc">
      <normaloff>:/icons/back-link_48px.png</normaloff>:/icons/back-link_48px.png</iconset>
    </property>
    <property name="text">
@@ -1075,6 +1080,32 @@
    </property>
    <property name="toolTip">
     <string>Return from the last link taken</string>
+   </property>
+  </action>
+
+  <action name="actionInsertId">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/insert-id_48px.png</normaloff>:/icons/insert-id_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>I&amp;D...</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert or edit an anchor with an ID name to use as a link target.</string>
+   </property>
+  </action>
+  
+  <action name="actionInsertHyperlink">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/insert-hyperlink_48px.png</normaloff>:/icons/insert-hyperlink_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Link...</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert or edit an anchor with a hyperlink to a target.</string>
    </property>
   </action>
 

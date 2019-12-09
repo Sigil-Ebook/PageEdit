@@ -52,6 +52,8 @@
 #include "Utility.h"
 #include "WebViewEdit.h"
 #include "SelectCharacter.h"
+#include "SelectId.h"
+#include "SelectHyperlink.h"
 #include "Preferences.h"
 #include "GumboInterface.h"
 #include "SearchToolbar.h"
@@ -215,8 +217,29 @@ void MainWindow::EditPrev()
     }
 }
 
-// Mode setting
+QString MainWindow::GetCurrentFilePath()
+{
+    QString res;
+    if (m_ListPtr != -1) {
+	res = m_SpineList.at(m_ListPtr);
+    }
+    return res;
+}
 
+QStringList MainWindow::GetAllFilePaths(int skip)
+{
+    QStringList res;
+    int i = 0;
+    foreach(QString apath, m_SpineList) {
+        if (skip != i) {
+	    res << apath;
+	}
+        i++;
+    }
+    return res;
+}
+
+// Mode setting
 void MainWindow::ToggleMode(bool edit_mode)
 {
     m_WebView->SetDocumentEditable(edit_mode);
@@ -464,6 +487,8 @@ void MainWindow::SetupView()
     ui.actionInsertSGFSectionMarker->setEnabled(true);
     ui.actionInsertBulletedList ->setEnabled(true);
     ui.actionInsertNumberedList ->setEnabled(true);
+    ui.actionInsertId->setEnabled(true);
+    ui.actionInsertHyperlink->setEnabled(true);
 
     ui.actionHeading1->setEnabled(true);
     ui.actionHeading2->setEnabled(true);
@@ -887,7 +912,7 @@ void MainWindow::AllowSaveIfModified()
 {
     // if the page source has been modified since it was loaded or saved
     // allow opportunity to save it
-   QString source = GetSource();
+    QString source = GetSource();
     bool modified = false;
     if (!m_source.isEmpty()) {
         if (m_source.length() != source.length()) {
@@ -1478,6 +1503,74 @@ void MainWindow::InsertSGFSectionMarker()
     m_WebView->InsertHtml(BREAK_TAG_INSERT);
 }
 
+void MainWindow::InsertId()
+{
+    if (m_ListPtr == -1) return;
+
+    QString id = m_WebView->GetAncestorTagAttributeValue("id", QStringList() << "a");
+
+    // Prevent adding a hidden anchor id in PageEdit.
+    if (id.isEmpty() && m_WebView->GetSelectedText().isEmpty()) {
+	QMessageBox::warning(this, tr("PageEdit"), tr("You must select text before inserting a new id."));
+        return;
+    }
+
+    QString source = GetSource();
+    SelectId select_id(id, source, this);
+
+    if (select_id.exec() == QDialog::Accepted) {
+        QString selected_id = select_id.GetId();
+        QRegularExpression invalid_id("(^[^A-Za-z]|[^A-Za-z0-9_:\\.-])");
+        QRegularExpressionMatch mo = invalid_id.match(selected_id);
+
+        if (mo.hasMatch()) {
+	    QMessageBox::warning(this, tr("PageEdit"), tr("ID is invalid - must start with a letter, followed by letter\
+ number _ : - or ."));
+            return;
+        };
+
+        if (!m_WebView->InsertId(select_id.GetId())) {
+	    QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert an id at this position."));
+        }
+    }
+}
+
+void MainWindow::InsertHyperlink()
+{
+
+    if (m_ListPtr == -1) return;
+
+    QString href = m_WebView->GetAncestorTagAttributeValue("href", QStringList() << "a");
+
+    // Prevent adding a hidden anchor link in PageEdit.
+    if (href.isEmpty() && m_WebView->GetSelectedText().isEmpty()) {
+	QMessageBox::warning(this, tr("PageEdit"), tr("You must select text before inserting a new link."));
+        return;
+    }
+
+    QString source = GetSource();
+    QString currentpath = GetCurrentFilePath();
+
+    QStringList other_files = GetAllFilePaths(m_ListPtr);
+    SelectHyperlink select_hyperlink(href, source, currentpath, m_Base, other_files, this);
+
+    if (select_hyperlink.exec() == QDialog::Accepted) {
+        QString target = select_hyperlink.GetTarget();
+        if (target.contains("<") || target.contains(">")) {
+	    QMessageBox::warning(this, tr("PageEdit"), tr("Link is invalid - cannot contain '<' or '>'"));
+            return;
+        };
+        // convert target to relative link from the current file
+	std::pair<QString, QString> parts = Utility::parseHREF(target);
+        QString relative_link = Utility::buildRelativePath(m_Base + currentpath, m_Base + parts.first);
+        relative_link = relative_link + parts.second;
+        if (!m_WebView->InsertHyperlink(relative_link)) {
+	    QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert a link at this position."));
+        }
+    }
+}
+
+
 void MainWindow::Subscript()
 {
     m_WebView->ExecCommand("subscript");
@@ -1693,6 +1786,14 @@ void MainWindow::ExtendIconSizes()
     icon.addFile(QString::fromUtf8(":/icons/insert-bullet-list_22px.png"));
     ui.actionInsertBulletedList->setIcon(icon);
 
+    icon = ui.actionInsertId->icon();
+    icon.addFile(QString::fromUtf8(":/icons/insert-id_22px.png"));
+    ui.actionInsertId->setIcon(icon);
+
+    icon = ui.actionInsertHyperlink->icon();
+    icon.addFile(QString::fromUtf8(":/icons/insert-hyperlink_22px.png"));
+    ui.actionInsertHyperlink->setIcon(icon);
+
     icon = ui.actionIncreaseIndent->icon();
     icon.addFile(QString::fromUtf8(":/icons/format-indent-more_22px.png"));
     ui.actionIncreaseIndent->setIcon(icon);
@@ -1831,6 +1932,8 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionInsertSpecialCharacter,   SIGNAL(triggered()),  this,   SLOT(InsertSpecialCharacter()));
     connect(ui.actionInsertBulletedList,       SIGNAL(triggered()),  this,   SLOT(InsertBulletedList()));
     connect(ui.actionInsertNumberedList,       SIGNAL(triggered()),  this,   SLOT(InsertNumberedList()));
+    connect(ui.actionInsertId,                 SIGNAL(triggered()),  this,   SLOT(InsertId()));
+    connect(ui.actionInsertHyperlink,          SIGNAL(triggered()),  this,   SLOT(InsertHyperlink()));
 
     // Format Related
     connect(ui.actionBold,            SIGNAL(triggered()),  this,   SLOT(Bold()));

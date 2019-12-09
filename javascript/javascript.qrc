@@ -6,5 +6,8 @@
         <file>book_view_current_location.js</file>
         <file>format_block.js</file>
         <file>get_block.js</file>
+        <file>get_ancestor.js</file>
+        <file>get_ancestor_attribute.js</file>
+        <file>set_ancestor_attribute.js</file>
     </qresource>
 </RCC>

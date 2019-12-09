@@ -53,6 +53,8 @@ const QString SET_CURSOR_JS2 =
     "selection.removeAllRanges();"
     "selection.addRange(range);";
 
+const QStringList ANCHOR_TAGS = QStringList() << "a";
+
 struct JSResult {
   QVariant res;
   bool     finished;
@@ -97,6 +99,9 @@ WebViewEdit::WebViewEdit(QWidget *parent)
       c_GetCaretLocation(Utility::ReadUnicodeTextFile(":/javascript/book_view_current_location.js")),
       c_GetBlock(Utility::ReadUnicodeTextFile(":/javascript/get_block.js")),
       c_FormatBlock(Utility::ReadUnicodeTextFile(":/javascript/format_block.js")),
+      c_GetAncestor(Utility::ReadUnicodeTextFile(":/javascript/get_ancestor.js")),
+      c_GetAncestorAttribute(Utility::ReadUnicodeTextFile(":/javascript/get_ancestor_attribute.js")),
+      c_SetAncestorAttribute(Utility::ReadUnicodeTextFile(":/javascript/set_ancestor_attribute.js")),
       m_CaretLocationUpdate(QString()),
       m_CustomSetDocumentInProgress(false),
       m_pendingScrollToFragment(QString()),
@@ -394,6 +399,91 @@ bool WebViewEdit::InsertHtml(const QString &html)
 {
     return ExecCommand("insertHTML", html);
 }
+
+bool WebViewEdit::InsertId(const QString &id)
+{
+    const QString &element_name = "a";
+    const QString &attribute_name = "id";
+    return InsertTagAttribute(element_name, attribute_name, id, ANCHOR_TAGS);
+}
+
+bool WebViewEdit::InsertHyperlink(const QString &href)
+{
+    const QString &element_name = "a";
+    const QString &attribute_name = "href";
+    return InsertTagAttribute(element_name, attribute_name, href, ANCHOR_TAGS);
+}
+
+
+bool WebViewEdit::InsertTagAttribute(const QString &element_name, const QString &attribute_name, const QString &attribute_value, const QStringList &tag_list, bool ignore_selection)
+{
+    QString selected_text = GetSelectedText();
+
+    if (SetAncestorTagAttributeValue(attribute_name, attribute_value, tag_list)) {
+        return true;
+    }
+
+    // We need to insert a new tag element into the document - cannot insert an empty
+    // element or else Qt will push it into a new block. So we will just insert the
+    // attribute value as some placeholder text.
+    if (selected_text.isEmpty()) {
+        selected_text = attribute_value;
+    }
+
+    // Just prepend and append the tag pairs to the text
+    const QString html = "<" + element_name + " " + attribute_name + "=\"" + 
+	                  attribute_value + "\">" + selected_text + "</" + element_name + ">";
+    bool insert_ok = InsertHtml(html);
+
+#if 0
+    // We will have lost our selection from the insert - viewable text hasn't changed
+    for (int i = 0; i < selected_text.length(); i++) {
+        page()->triggerAction(QWebPage::SelectPreviousChar);
+    }
+#endif
+
+    return insert_ok;
+}
+
+
+QString WebViewEdit::GetAncestorTagAttributeValue(const QString &attribute_name, const QStringList &tag_list)
+{
+    if (tag_list.isEmpty() || attribute_name.isEmpty()) {
+        return QString();
+    }
+
+    const QString js = c_GetAncestor + c_GetAncestorAttribute +
+	"var tagNames = [\"" + tag_list.join("\", \"") + "\"];"
+                       "var attributeName = '" + attribute_name + "';"
+                       "var startNode = document.getSelection().anchorNode;"
+	               "get_ancestor_attribute(startNode, tagNames, attributeName);";
+    return EvaluateJavascript(js).toString();
+}
+
+bool WebViewEdit::SetAncestorTagAttributeValue(const QString &attribute_name, const QString &attribute_value, const QStringList &tag_list)
+{
+    if (tag_list.isEmpty() || attribute_name.isEmpty()) {
+        return false;
+    }
+
+    const QString js = c_GetAncestor + c_SetAncestorAttribute +
+	"var tagNames = [\"" + tag_list.join("\", \"") + "\"];"
+                       "var attributeName = '" + attribute_name + "';"
+                       "var attributeValue = '" + attribute_value + "';"
+                       "var startNode = document.getSelection().anchorNode;"
+	               "set_ancestor_attribute(startNode, tagNames, attributeName, attributeValue);";
+    bool applied = EvaluateJavascript(js).toBool();
+
+#if 0
+    if (applied) {
+        emit contentsChangedExtra();
+    }
+#endif
+
+    return applied;
+}
+
+
 
 QString WebViewEdit::EscapeJSString(const QString &string)
 {

@@ -162,6 +162,12 @@ public:
     static QString longestCommonPath(const QStringList& filepaths, const QString& sep);
     static QString resolveRelativeSegmentsInFilePath(const QString& file_path, const QString &sep);
 
+    static QString buildBookPath(const QString& dest_relpath, const QString& start_folder);
+    static QString startingDir(const QString &file_bookpath);
+    static QString relativePath(const QString & destination, const QString & start_dir);
+    static QString buildRelativePath(const QString &from_file_bkpath, const QString & to_file_bkpath);
+    static std::pair<QString, QString> parseHREF(const QString &relative_href);
+
     static void AboutBox();
 };
 
