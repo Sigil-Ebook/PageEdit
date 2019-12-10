@@ -346,6 +346,7 @@ endif()
 
 # For Mac, add frameworks and make a DMG
 if( APPLE )
+    query_qmake(QT_INSTALL_TRANSLATIONS QT_TRANSLATIONS_DIR)
     set( WORK_DIR "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}" )
     set( MAIN_PACKAGE_DIR ${WORK_DIR}/PageEdit.app )
 
@@ -366,6 +367,18 @@ if( APPLE )
                         WORKING_DIRECTORY ${WORK_DIR})
 
     add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${PROJECT_BINARY_DIR}/*.qm ${WORK_DIR}/PageEdit.app/Contents/translations/ )
+    foreach( QM ${QM_FILES} )
+        # Copy Qt's qm files that coincide with the above
+        # message( "QM = ${QM}")
+        string( REGEX REPLACE "(.*)(pageedit_)(.*)(\\.qm)" "\\1;\\2;\\3;\\4" PATH_ELEMENTS "${QM}" )
+        list( GET PATH_ELEMENTS 2 LANG_ID )
+        # message( "LANG_ID = ${LANG_ID}")
+        set( QTBASE_QM ${QT_TRANSLATIONS_DIR}/qtbase_${LANG_ID}.qm )
+        # message( "QTBASE_QM = ${QTBASE_QM}" )
+        if ( EXISTS ${QTBASE_QM} )
+            add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${QTBASE_QM} ${WORK_DIR}/PageEdit.app/Contents/translations/ )
+        endif()
+    endforeach( QM )
     # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/../lib/*.dylib ${WORK_DIR}/PageEdit.app/Contents/lib/ )
     # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND install_name_tool -rpath ${CMAKE_BINARY_DIR}/lib "@executable_path/../lib" ${WORK_DIR}/PageEdit.app/Contents/MacOS/PageEdit )
 endif()
