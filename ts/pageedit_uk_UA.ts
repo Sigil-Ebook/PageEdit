@@ -19,12 +19,12 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="39"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>Якщо у CSS для вашої сторінки не вказано жодного шрифту, для відображення в програмі PageEdit буде використаний вказаний нижче шрифт. Ці шрифти не використовуватимуться у вашій фактичній електронній книзі.</translation>
+        <translation>Якщо для сторінки не вказано жодного шрифту в CSS, то цей шрифт буде використано для відображення в PageEdit. Ці шрифти не буде використано у справжній електронній книзі.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="59"/>
         <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation>Розмір шрифту за замовчуванням, який буде використовуватися для WebView, якщо розмір шрифту не вказано у вашому CSS</translation>
+        <translation>Розмір шрифту за замовчуванням, який буде використаний для WebView, якщо розмір шрифту не вказано у вашому CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="62"/>
@@ -35,7 +35,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="92"/>
         <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation>Сімейство шрифтів, яке буде використовуватися для WebView, якщо у вашому CSS не вказано сімейство шрифтів</translation>
+        <translation>Сімейство шрифтів, яке буде використане для WebView, якщо у вашому CSS не вказано сімейство шрифтів</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="95"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="105"/>
         <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation>Сімейство шрифтів, яке буде використовуватися для WebView, якщо сімейство шрифтів із зарубками зазначено у вашому CSS</translation>
+        <translation>Сімейство шрифтів, яке буде використане для WebView, якщо сімейство шрифтів із зарубками зазначено у вашому CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
@@ -56,7 +56,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="118"/>
         <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation>Сімейство шрифтів, яке буде використовуватися для WebView, якщо сімейство шрифтів без зарубок зазначено у вашому CSS</translation>
+        <translation>Сімейство шрифтів, яке буде використане для WebView, якщо сімейство шрифтів без зарубок зазначено у вашому CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="121"/>
@@ -96,7 +96,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="351"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Скинути всі шрифти та кольори до значень за умовчанням</translation>
+        <translation>Скинути всі шрифти та кольори до значень за замовчуванням</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="354"/>
@@ -109,16 +109,16 @@
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>Загальні параметри</translation>
+        <translation>Загальні налаштування</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>Після зміни мови інтерфейсу користувача необхідно перезапустити PageEdit.
+        <translation>Змінивши мову інтерфейсу користувача, ви мусите перезапустити PageEdit.
 
-Якщо переклад для конкретного слова або фрази недоступний, він буде відображатися англійською мовою.</translation>
+Якщо переклад певного слова чи фрази недоступний, то вони будуть відображатися англійською.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
@@ -128,7 +128,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Вибрати із встановлених словників перевірки орфографії.</translation>
+        <translation>Обрати зі встановлених словників перевірки орфографії.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
@@ -138,7 +138,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Визначає, чи дозволяється HTML-файлам доступ до віддалених немультимедійних ресурсів.</translation>
+        <translation>Визначає, чи мають HTML-файли доступ до віддалених немультимедійних ресурсів.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
@@ -148,17 +148,17 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Встановіть прапорець, щоб дозволити HTML-файлам отримати доступ до віддалених немультимедійних ресурсів.</translation>
+        <translation>Відмітьте, щоб дозволити HTML-файлам доступ до віддалених немультимедійних ресурсів.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>HTML-файли можуть отримувати доступ до всіх типів віддалених ресурсів.</translation>
+        <translation>HTML-файли мають доступ до всіх типів віддалених ресурсів.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Визначає, чи дозволено використовувати JavaScript у HTML-файлах</translation>
+        <translation>Визначає, чи можна використовувати JavaScript у HTML-файлах</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
@@ -168,7 +168,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Встановіть прапорець, щоб дозволити HTML-файлам використовувати JavaScript.</translation>
+        <translation>Відмітьте, щоб дозволити HTML-файлам використовувати JavaScript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
@@ -178,7 +178,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Виберіть, як ви хочете, щоб PageEdit обробляв використання декількох символів пробілу під час редагування.</translation>
+        <translation>Оберіть, як має PageEdit обробляти використання декількох символів пробілу при редагуванні.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
@@ -198,27 +198,27 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Використовуйте нерозривні пропуски в міру необхідності</translation>
+        <translation>Використовуйте нерозривні пробіли при необхідності</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>нерозривний_пробіл якщо необхідно</translation>
+        <translation>нерозривний пробіл, якщо необхідно</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Визначте, чи використовується Prettify при збереженні</translation>
+        <translation>Визначте, чи використовувати Prettify при збереженні</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation>Використовуйте Prettify щоб переформатувати xhtml при збереженні.</translation>
+        <translation>Використати Prettify, щоб переформатувати xhtml при збереженні.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Встановіть прапорець &quot;Переформатувати за допомогою Prettify&quot; при збереженні файлів xhtml.</translation>
+        <translation>Зазначте, щоб переформатувати за допомогою Prettify, при збереженні файлів xhtml.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
@@ -231,23 +231,40 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Inspector.cpp" line="54"/>
         <source>Inspect Page or Element</source>
-        <translation>Ревізувати Сторінку або Елемент</translation>
+        <translation>Ревізувати Сторінку чи Елемент</translation>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="94"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>Функціональність інспектора не підтримується до Qt 5.11</translation>
+        <translation>Функції спектора не підтримуються до Qt 5.11</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="834"/>
-        <location filename="../MainWindow.cpp" line="893"/>
-        <location filename="../MainWindow.cpp" line="1549"/>
+        <location filename="../MainWindow.cpp" line="901"/>
+        <location filename="../MainWindow.cpp" line="960"/>
+        <location filename="../MainWindow.cpp" line="1547"/>
+        <location filename="../MainWindow.cpp" line="1560"/>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1580"/>
+        <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp" line="1655"/>
+        <location filename="../MainWindow.cpp" line="1738"/>
         <location filename="../MainWindow.cpp.keep" line="726"/>
         <location filename="../MainWindow.cpp.keep" line="1337"/>
+        <location filename="../MainWindow.cpp~" line="901"/>
+        <location filename="../MainWindow.cpp~" line="960"/>
+        <location filename="../MainWindow.cpp~" line="1547"/>
+        <location filename="../MainWindow.cpp~" line="1560"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1580"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1655"/>
+        <location filename="../MainWindow.cpp~" line="1738"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -272,812 +289,932 @@ If a translation for specific word or phrase is not available it will be display
         <translation>&amp;Вставити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="105"/>
+        <location filename="../main.ui" line="109"/>
         <source>For&amp;mat</source>
         <translation>Фор&amp;мат</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="110"/>
+        <location filename="../main.ui" line="114"/>
         <source>&amp;Heading</source>
         <translation>&amp;Заголовок</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="143"/>
+        <location filename="../main.ui" line="147"/>
         <source>&amp;View</source>
         <translation>П&amp;ерегляд</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="152"/>
+        <location filename="../main.ui" line="156"/>
         <source>Inspector</source>
         <translation>Інспектор</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="168"/>
+        <location filename="../main.ui" line="172"/>
         <source>File</source>
         <translation>Файл</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="182"/>
+        <location filename="../main.ui" line="186"/>
         <source>Edit</source>
         <translation>Редагувати</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="200"/>
-        <location filename="../main.ui" line="1048"/>
+        <location filename="../main.ui" line="204"/>
+        <location filename="../main.ui" line="1055"/>
         <source>Mode</source>
         <translation>Режим</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="213"/>
+        <location filename="../main.ui" line="217"/>
         <source>Insert</source>
         <translation>Вставка</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="229"/>
+        <location filename="../main.ui" line="236"/>
         <source>Inspect</source>
         <translation>Ревізувати</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="242"/>
-        <location filename="../main.ui" line="997"/>
+        <location filename="../main.ui" line="249"/>
+        <location filename="../main.ui" line="1004"/>
         <source>Find</source>
         <translation>Знайти</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="255"/>
+        <location filename="../main.ui" line="262"/>
         <source>Heading</source>
         <translation>Заголовок</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="269"/>
+        <location filename="../main.ui" line="276"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>Встановити стиль виділеного тексту</translation>
+        <translation>Встановити рівень заголовка для виділеного тексту</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="283"/>
+        <location filename="../main.ui" line="290"/>
         <source>Format</source>
         <translation>Формат</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="301"/>
+        <location filename="../main.ui" line="308"/>
         <source>Align</source>
         <translation>Вирівняти</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="317"/>
+        <location filename="../main.ui" line="324"/>
         <source>Indent</source>
         <translation>Відступ</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="331"/>
+        <location filename="../main.ui" line="338"/>
         <source>Navigate</source>
         <translation>Перехід</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="341"/>
+        <location filename="../main.ui" line="348"/>
         <source>Navigation List</source>
         <translation>Навігаційний Список</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="357"/>
+        <location filename="../main.ui" line="364"/>
         <source>&amp;Save</source>
         <translation>&amp;Зберегти</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="360"/>
+        <location filename="../main.ui" line="367"/>
         <source>Save the current file.</source>
         <translation>Зберегти цей файл.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="363"/>
+        <location filename="../main.ui" line="370"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="369"/>
+        <location filename="../main.ui" line="376"/>
         <source>Save &amp;As...</source>
         <translation>Зберегти &amp;Як...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="372"/>
+        <location filename="../main.ui" line="379"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Зберегти цей файл з іншоу назвою.</translation>
+        <translation>Зберегти цей файл з іншою назвою.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="375"/>
+        <location filename="../main.ui" line="382"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="385"/>
+        <location filename="../main.ui" line="392"/>
         <source>Cu&amp;t</source>
         <translation>Виріза&amp;ти</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="388"/>
+        <location filename="../main.ui" line="395"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Вирізати виділений текст з документа і помістити його в буфер обміну.</translation>
+        <translation>Вирізати виділений текст з документа та помістити його в буфер обміну.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="398"/>
+        <location filename="../main.ui" line="405"/>
         <source>&amp;Paste</source>
         <translation>Вст&amp;авити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="401"/>
+        <location filename="../main.ui" line="408"/>
         <source>Pastes the content from the clipboard into the file.</source>
         <translation>Вставляє вміст буфера обміну у файл.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="411"/>
+        <location filename="../main.ui" line="418"/>
         <source>&amp;Undo</source>
         <translation>В&amp;ідмінити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="414"/>
+        <location filename="../main.ui" line="421"/>
         <source>Reverts the changes of the previous operation.</source>
         <translation>Повертає зміни попередньої операції.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="417"/>
+        <location filename="../main.ui" line="424"/>
         <source>Ctrl+Z</source>
         <translation>Ctrl+Z</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="427"/>
+        <location filename="../main.ui" line="434"/>
         <source>&amp;Redo</source>
         <translation>&amp;Повернути</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="430"/>
+        <location filename="../main.ui" line="437"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Відновити зміни після попередньої дії &quot;Відмінити&quot;.</translation>
+        <translation>Поновити зміни після попередньої дії &quot;Відмінити&quot;.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="433"/>
+        <location filename="../main.ui" line="440"/>
         <source>Ctrl+Y</source>
         <translation>Ctrl+Y</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="443"/>
+        <location filename="../main.ui" line="450"/>
         <source>&amp;Copy</source>
         <translation>&amp;Копіювати</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="446"/>
+        <location filename="../main.ui" line="453"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
         <translation>Копіює виділений текст і поміщає його в буфер обміну.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="459"/>
+        <location filename="../main.ui" line="466"/>
         <source>Align &amp;Left</source>
         <translation>Вирівняти &amp;Ліворуч</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="462"/>
+        <location filename="../main.ui" line="469"/>
         <source>Align the paragraph to the left.</source>
         <translation>Вирівняти абзац ліворуч.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="476"/>
+        <location filename="../main.ui" line="483"/>
         <source>Align &amp;Right</source>
         <translation>Вирівняти &amp;Праворуч</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="479"/>
+        <location filename="../main.ui" line="486"/>
         <source>Align the paragraph to the right.</source>
         <translation>Вирівняти абзац праворуч.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="492"/>
+        <location filename="../main.ui" line="499"/>
         <source>&amp;Center</source>
         <translation>По &amp;Центру</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="495"/>
+        <location filename="../main.ui" line="502"/>
         <source>Center the paragraph.</source>
         <translation>Відцентрувати абзац.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="498"/>
+        <location filename="../main.ui" line="505"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="511"/>
+        <location filename="../main.ui" line="518"/>
         <source>&amp;Justify</source>
         <translation>По &amp;ширині</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="514"/>
+        <location filename="../main.ui" line="521"/>
         <source>Align the paragraph to both the left and right margins.</source>
         <translation>Вирівняти абзац між лівим та правим полем.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="517"/>
+        <location filename="../main.ui" line="524"/>
         <source>Ctrl+J</source>
         <translation>Ctrl+J</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="530"/>
+        <location filename="../main.ui" line="537"/>
         <source>&amp;Bold</source>
         <translation>&amp;Жирний</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="533"/>
+        <location filename="../main.ui" line="540"/>
         <source>Make the selected text bold.</source>
         <translation>Зробити виділений шрифт жирним</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="536"/>
+        <location filename="../main.ui" line="543"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="549"/>
+        <location filename="../main.ui" line="556"/>
         <source>&amp;Italic</source>
         <translation>&amp;Курсив</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="552"/>
+        <location filename="../main.ui" line="559"/>
         <source>Make the selected text italic.</source>
         <translation>Зробити виділений шрифт курсивним</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="555"/>
+        <location filename="../main.ui" line="562"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="565"/>
+        <location filename="../main.ui" line="572"/>
         <source>&amp;Open...</source>
         <translation>&amp;Відкрити...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="568"/>
+        <location filename="../main.ui" line="575"/>
         <source>Open a file from disk.</source>
         <translation>Відкрити файл розташований на носії</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="571"/>
+        <location filename="../main.ui" line="578"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="585"/>
+        <location filename="../main.ui" line="592"/>
         <source>&amp;Underline</source>
         <translation>&amp;Підкреслити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="588"/>
+        <location filename="../main.ui" line="595"/>
         <source>Underline the selected text.</source>
         <translation>Підкреслити виділений текст.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="591"/>
+        <location filename="../main.ui" line="598"/>
         <source>Ctrl+U</source>
         <translation>Ctrl+U</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="601"/>
+        <location filename="../main.ui" line="608"/>
         <source>&amp;Quit</source>
         <translation>&amp;Вихід</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="604"/>
+        <location filename="../main.ui" line="611"/>
         <source>Quit</source>
         <translation>Вихід</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="607"/>
+        <location filename="../main.ui" line="614"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="617"/>
+        <location filename="../main.ui" line="624"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Спеціальний знак...</translation>
+        <translation>&amp;Спеціальний символ...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="620"/>
+        <location filename="../main.ui" line="627"/>
         <source>Select a character to insert into your text.</source>
         <translation>Виберіть символ щоб вставити до тексту.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="633"/>
+        <location filename="../main.ui" line="640"/>
         <source>&amp;Numbered List</source>
         <translation>&amp;Нумерований список</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="636"/>
+        <location filename="../main.ui" line="643"/>
         <source>Create a numbered list from selection.</source>
         <translation>Створити нумерований список з виділеного фрагменту.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="649"/>
+        <location filename="../main.ui" line="656"/>
         <source>Bulle&amp;ted List</source>
         <translation>Марк&amp;ований список</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="652"/>
+        <location filename="../main.ui" line="659"/>
         <source>Create a bulleted list from selection.</source>
         <translation>Створити маркований список з виділеного фрагменту.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="655"/>
+        <location filename="../main.ui" line="662"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="668"/>
+        <location filename="../main.ui" line="675"/>
         <source>Stri&amp;kethrough</source>
         <translation>Закре&amp;слити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="671"/>
+        <location filename="../main.ui" line="678"/>
         <source>Draw a line through the selected text.</source>
         <translation>Закреслити виділений текст лінією.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="684"/>
+        <location filename="../main.ui" line="691"/>
         <source>&amp;Subscript</source>
         <translation>Ни&amp;жній індекс</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="687"/>
+        <location filename="../main.ui" line="694"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Встановіть виділений текст трохи менше і нижче звичайного рядка.</translation>
+        <translation>Зробити виділений текст трохи меншим і нижче звичайного рядка. </translation>
     </message>
     <message>
-        <location filename="../main.ui" line="700"/>
+        <location filename="../main.ui" line="707"/>
         <source>Su&amp;perscript</source>
         <translation>Ве&amp;рхній індекс</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="703"/>
+        <location filename="../main.ui" line="710"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Встановлює виділений текст трохи менше і вище звичайного рядка.</translation>
+        <translation>Робить виділений текст трохи меншим і вище звичайного рядка.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="714"/>
+        <location filename="../main.ui" line="721"/>
         <source>Zoom &amp;In</source>
         <translation>&amp;Збільшити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="717"/>
+        <location filename="../main.ui" line="724"/>
         <source>Zoom In</source>
         <translation>Збільшити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="720"/>
+        <location filename="../main.ui" line="727"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="731"/>
+        <location filename="../main.ui" line="738"/>
         <source>Zoom &amp;Out</source>
         <translation>Зм&amp;еншити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="734"/>
+        <location filename="../main.ui" line="741"/>
         <source>Zoom Out</source>
         <translation>Зменшити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="737"/>
+        <location filename="../main.ui" line="744"/>
         <source>Ctrl+-</source>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="748"/>
+        <location filename="../main.ui" line="755"/>
         <source>Incre&amp;ase Indent</source>
         <translation>Збіль&amp;шити відступ</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="751"/>
+        <location filename="../main.ui" line="758"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>Збільшує рівень відступу абзацу.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="754"/>
+        <location filename="../main.ui" line="761"/>
         <source>Ctrl+Alt+M</source>
         <translation>Ctrl+Alt+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="764"/>
+        <location filename="../main.ui" line="771"/>
         <source>&amp;Decrease Indent</source>
         <translation>&amp;Зменшити відступ</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="767"/>
+        <location filename="../main.ui" line="774"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>Зменьшує рівень відступу абзацу.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="770"/>
+        <location filename="../main.ui" line="777"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="780"/>
+        <location filename="../main.ui" line="787"/>
         <source>Split &amp;Marker</source>
         <translation>&amp;Маркер розділення</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="783"/>
+        <location filename="../main.ui" line="790"/>
         <source>Insert Sigil split file marker</source>
         <translation>Вставити Sigil-маркер розділення файлу</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="786"/>
+        <location filename="../main.ui" line="793"/>
         <source>Ctrl+Shift+Return</source>
         <translation>Ctrl+Shift+Return</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="792"/>
+        <location filename="../main.ui" line="799"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Налаштування…</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="795"/>
+        <location filename="../main.ui" line="802"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="801"/>
+        <location filename="../main.ui" line="808"/>
         <source>&amp;Zoom Reset</source>
         <translation>Початковий &amp;масштаб</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="804"/>
+        <location filename="../main.ui" line="811"/>
         <source>Zoom Reset</source>
         <translation>Повернутися до початкового масштабу</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="807"/>
+        <location filename="../main.ui" line="814"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="820"/>
+        <location filename="../main.ui" line="827"/>
         <source>Heading &amp;1</source>
         <translation>Заголовок &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="823"/>
+        <location filename="../main.ui" line="830"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 1.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="826"/>
+        <location filename="../main.ui" line="833"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="839"/>
+        <location filename="../main.ui" line="846"/>
         <source>Heading &amp;2</source>
         <translation>Заголовок &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="842"/>
+        <location filename="../main.ui" line="849"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 2.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="845"/>
+        <location filename="../main.ui" line="852"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="858"/>
+        <location filename="../main.ui" line="865"/>
         <source>Heading &amp;3</source>
         <translation>Заголовок &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="861"/>
+        <location filename="../main.ui" line="868"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 3.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="864"/>
+        <location filename="../main.ui" line="871"/>
         <source>Ctrl+3</source>
         <translation>Ctrl+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="878"/>
+        <location filename="../main.ui" line="885"/>
         <source>Heading &amp;4</source>
         <translation>Заголовок &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="881"/>
+        <location filename="../main.ui" line="888"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 4.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="884"/>
+        <location filename="../main.ui" line="891"/>
         <source>Ctrl+4</source>
         <translation>Ctrl+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="897"/>
+        <location filename="../main.ui" line="904"/>
         <source>Heading &amp;5</source>
         <translation>Заголовок &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="900"/>
+        <location filename="../main.ui" line="907"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 5.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="903"/>
+        <location filename="../main.ui" line="910"/>
         <source>Ctrl+5</source>
         <translation>Ctrl+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="916"/>
+        <location filename="../main.ui" line="923"/>
         <source>Heading &amp;6</source>
         <translation>Заголовок &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="919"/>
+        <location filename="../main.ui" line="926"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 6.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="922"/>
+        <location filename="../main.ui" line="929"/>
         <source>Ctrl+6</source>
         <translation>Ctrl+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="936"/>
+        <location filename="../main.ui" line="943"/>
         <source>&amp;Normal</source>
         <translation>Звичайний текст</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="939"/>
+        <location filename="../main.ui" line="946"/>
         <source>ormat paragraph as a normal paragraph.</source>
         <translation>Форматувати абзац як звичайний текст.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="942"/>
+        <location filename="../main.ui" line="949"/>
         <source>Ctrl+7</source>
         <translation>Ctrl+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="952"/>
+        <location filename="../main.ui" line="959"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>&amp;Збереження Існуючих Атрибутів</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="955"/>
+        <location filename="../main.ui" line="962"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>При застосуванні цього стилю зберігаються всі існуючі атрибути тега</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="965"/>
+        <location filename="../main.ui" line="972"/>
         <source>&amp;Select All</source>
         <translation>&amp;Виділити все</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="968"/>
+        <location filename="../main.ui" line="975"/>
         <source>Select all text in the document.</source>
-        <translation>Виділити весь текст в документі</translation>
+        <translation>Виділити весь текст документа</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="971"/>
+        <location filename="../main.ui" line="978"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="981"/>
+        <location filename="../main.ui" line="988"/>
         <source>&amp;Inspector</source>
         <translation>&amp;Інспектор</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="984"/>
+        <location filename="../main.ui" line="991"/>
         <source>Inspect the page.</source>
         <translation>Ревізувати сторінку</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="987"/>
+        <location filename="../main.ui" line="994"/>
         <source>Ctrl+F5</source>
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1000"/>
+        <location filename="../main.ui" line="1007"/>
         <source>Find text in the page</source>
         <translation>Знайти текст на сторінці</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1003"/>
+        <location filename="../main.ui" line="1010"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1016"/>
+        <location filename="../main.ui" line="1023"/>
         <source>Next XHtml File</source>
         <translation>Наступний файл XHtml</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1019"/>
+        <location filename="../main.ui" line="1026"/>
         <source>Next file in navigation list</source>
         <translation>Наступний файл у Навігаційному Списку</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1032"/>
+        <location filename="../main.ui" line="1039"/>
         <source>Previous XHtml File</source>
         <translation>Попередній файл XHtml</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1035"/>
+        <location filename="../main.ui" line="1042"/>
         <source>Previous file in navigation list</source>
         <translation>Попередній файл у Навігаційному Списку</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1051"/>
+        <location filename="../main.ui" line="1058"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation>Зміна режимів редагування та попереднього перегляду.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1061"/>
+        <location filename="../main.ui" line="1068"/>
         <source>About...</source>
         <translation>Про це...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1064"/>
+        <location filename="../main.ui" line="1071"/>
         <source>Show information about PageEdit.</source>
         <translation>Показати інформацію стосовно PageEdit.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1074"/>
+        <location filename="../main.ui" line="1081"/>
         <source>Back to Last Link</source>
         <translation>Назад до останнього посилання</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1077"/>
+        <location filename="../main.ui" line="1084"/>
         <source>Return from the last link taken</source>
         <translation>Повернутися від останнього використаного посилання</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="668"/>
+        <location filename="../main.ui" line="1094"/>
+        <source>I&amp;D...</source>
+        <translation>I&amp;D...</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1097"/>
+        <source>Insert or edit an anchor with an ID name to use as a link target.</source>
+        <translation>Вставити або редагувати якір із ідентифікатором, щоб використовувати його як ціль посилання.</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1107"/>
+        <source>&amp;Link...</source>
+        <translation>&amp;Посилання...</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1110"/>
+        <source>Insert or edit an anchor with a hyperlink to a target.</source>
+        <translation>Вставити або редагувати якір із гіперпосиланням на ціль.</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1120"/>
+        <source>&amp;File...</source>
+        <translation>&amp;Файл...</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1123"/>
+        <source>Select existing image, video or audio files from your book to insert into the text.</source>
+        <translation>Виберіть наявні в книзі файли зображень, відео чи аудіо, які потрібно вставити в текст.</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1126"/>
+        <source>Ctrl+Shift+I</source>
+        <translation>Ctrl+Shift+I</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="647"/>
+        <location filename="../MainWindow.cpp~" line="647"/>
+        <source>File load failed</source>
+        <translation>Не вдалося загрузити файл</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="648"/>
+        <location filename="../MainWindow.cpp~" line="648"/>
+        <source>File Load Failed</source>
+        <translation>Не вдалося загрузити файл</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="735"/>
+        <location filename="../MainWindow.cpp~" line="735"/>
         <source>mode: Preview</source>
         <translation>режим: Попередній перегляд</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="670"/>
+        <location filename="../MainWindow.cpp" line="737"/>
+        <location filename="../MainWindow.cpp~" line="737"/>
         <source>mode: Edit</source>
         <translation>режим: Редагування</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="834"/>
+        <location filename="../MainWindow.cpp" line="901"/>
+        <location filename="../MainWindow.cpp~" line="901"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Ви впевнені, що хочете відкрити це посилання у своєму браузері?
+        <translation>Ви дійсно хочете відкрити це посилання у своєму браузері?
 
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="894"/>
+        <location filename="../MainWindow.cpp" line="961"/>
+        <location filename="../MainWindow.cpp~" line="961"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Зберегти зроблені зміни перед подальшими діями?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="911"/>
+        <location filename="../MainWindow.cpp" line="978"/>
         <location filename="../MainWindow.cpp.keep" line="721"/>
+        <location filename="../MainWindow.cpp~" line="978"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit закривається...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1039"/>
-        <location filename="../MainWindow.cpp" line="1040"/>
-        <location filename="../MainWindow.cpp" line="1041"/>
-        <location filename="../MainWindow.cpp" line="1051"/>
-        <location filename="../MainWindow.cpp" line="1052"/>
-        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1106"/>
+        <location filename="../MainWindow.cpp" line="1107"/>
+        <location filename="../MainWindow.cpp" line="1108"/>
+        <location filename="../MainWindow.cpp" line="1117"/>
+        <location filename="../MainWindow.cpp" line="1118"/>
+        <location filename="../MainWindow.cpp" line="1119"/>
         <location filename="../MainWindow.cpp.keep" line="864"/>
         <location filename="../MainWindow.cpp.keep" line="865"/>
         <location filename="../MainWindow.cpp.keep" line="866"/>
         <location filename="../MainWindow.cpp.keep" line="875"/>
         <location filename="../MainWindow.cpp.keep" line="876"/>
         <location filename="../MainWindow.cpp.keep" line="877"/>
+        <location filename="../MainWindow.cpp~" line="1106"/>
+        <location filename="../MainWindow.cpp~" line="1107"/>
+        <location filename="../MainWindow.cpp~" line="1108"/>
+        <location filename="../MainWindow.cpp~" line="1117"/>
+        <location filename="../MainWindow.cpp~" line="1118"/>
+        <location filename="../MainWindow.cpp~" line="1119"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Файли HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1042"/>
+        <location filename="../MainWindow.cpp" line="1109"/>
+        <location filename="../MainWindow.cpp~" line="1109"/>
         <source>OPF files (*.opf)</source>
         <translation>Файли OPF (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1043"/>
-        <location filename="../MainWindow.cpp.keep" line="867"/>
-        <source>Text files (*.txt)</source>
-        <translation>Текстові файли (*.txt)</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp" line="1044"/>
+        <location filename="../MainWindow.cpp" line="1110"/>
         <location filename="../MainWindow.cpp.keep" line="868"/>
+        <location filename="../MainWindow.cpp~" line="1110"/>
         <source>All files (*.*)</source>
         <translation>Усі файли (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1255"/>
+        <location filename="../MainWindow.cpp" line="1321"/>
         <location filename="../MainWindow.cpp.keep" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1321"/>
         <source>Save File</source>
         <translation>Зберегти файл</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1290"/>
-        <location filename="../MainWindow.cpp" line="1291"/>
-        <location filename="../MainWindow.cpp" line="1303"/>
-        <location filename="../MainWindow.cpp" line="1304"/>
+        <location filename="../MainWindow.cpp" line="1356"/>
+        <location filename="../MainWindow.cpp" line="1357"/>
+        <location filename="../MainWindow.cpp" line="1369"/>
+        <location filename="../MainWindow.cpp" line="1370"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
         <location filename="../MainWindow.cpp.keep" line="1060"/>
         <location filename="../MainWindow.cpp.keep" line="1072"/>
         <location filename="../MainWindow.cpp.keep" line="1073"/>
+        <location filename="../MainWindow.cpp~" line="1356"/>
+        <location filename="../MainWindow.cpp~" line="1357"/>
+        <location filename="../MainWindow.cpp~" line="1369"/>
+        <location filename="../MainWindow.cpp~" line="1370"/>
         <source>File Save-As Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1290"/>
+        <location filename="../MainWindow.cpp" line="1356"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
+        <location filename="../MainWindow.cpp~" line="1356"/>
         <source>is not writeable</source>
         <translation>недоступно для запису</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1299"/>
-        <location filename="../MainWindow.cpp" line="1329"/>
+        <location filename="../MainWindow.cpp" line="1365"/>
+        <location filename="../MainWindow.cpp" line="1395"/>
         <location filename="../MainWindow.cpp.keep" line="1068"/>
         <location filename="../MainWindow.cpp.keep" line="1098"/>
+        <location filename="../MainWindow.cpp~" line="1365"/>
+        <location filename="../MainWindow.cpp~" line="1395"/>
         <source>File Saved</source>
         <translation>Файл збережено</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1320"/>
-        <location filename="../MainWindow.cpp" line="1322"/>
-        <location filename="../MainWindow.cpp" line="1333"/>
-        <location filename="../MainWindow.cpp" line="1334"/>
+        <location filename="../MainWindow.cpp" line="1386"/>
+        <location filename="../MainWindow.cpp" line="1388"/>
+        <location filename="../MainWindow.cpp" line="1399"/>
+        <location filename="../MainWindow.cpp" line="1400"/>
         <location filename="../MainWindow.cpp.keep" line="1089"/>
         <location filename="../MainWindow.cpp.keep" line="1091"/>
         <location filename="../MainWindow.cpp.keep" line="1102"/>
         <location filename="../MainWindow.cpp.keep" line="1103"/>
+        <location filename="../MainWindow.cpp~" line="1386"/>
+        <location filename="../MainWindow.cpp~" line="1388"/>
+        <location filename="../MainWindow.cpp~" line="1399"/>
+        <location filename="../MainWindow.cpp~" line="1400"/>
         <source>File Save Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1321"/>
+        <location filename="../MainWindow.cpp" line="1387"/>
         <location filename="../MainWindow.cpp.keep" line="1090"/>
+        <location filename="../MainWindow.cpp~" line="1387"/>
         <source>does not exist or is not writeable</source>
         <translation>не існує або недоступно для запису </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1382"/>
+        <location filename="../MainWindow.cpp" line="1448"/>
         <location filename="../MainWindow.cpp.keep" line="1147"/>
+        <location filename="../MainWindow.cpp~" line="1448"/>
         <source>File Opened</source>
         <translation>Файл відкрито</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1386"/>
+        <location filename="../MainWindow.cpp" line="1452"/>
         <location filename="../MainWindow.cpp.keep" line="1152"/>
+        <location filename="../MainWindow.cpp~" line="1452"/>
         <source>File Open Failed!</source>
         <translation>Не вдалося відкрити файл!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1409"/>
+        <location filename="../MainWindow.cpp" line="1475"/>
         <location filename="../MainWindow.cpp.keep" line="1175"/>
+        <location filename="../MainWindow.cpp~" line="1475"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Буфер обміну містить форматований HTML</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1410"/>
+        <location filename="../MainWindow.cpp" line="1476"/>
         <location filename="../MainWindow.cpp.keep" line="1176"/>
+        <location filename="../MainWindow.cpp~" line="1476"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Ви хочете вставити дані з буферу обміну як звичайний текст?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1550"/>
+        <location filename="../MainWindow.cpp" line="1547"/>
+        <location filename="../MainWindow.cpp~" line="1547"/>
+        <source>You must select text before inserting a new id.</source>
+        <translation>Ви повинні виділити текст перед тим, як вставити новий ідентифікатор.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1560"/>
+        <location filename="../MainWindow.cpp~" line="1560"/>
+        <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
+        <translation>ID недійсний — повинен починатися з літери, після чого можуть додаватися букви, цифри, знаки  &quot;-&quot;, &quot;_&quot;, &quot;:&quot;, або &quot;.&quot;</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <source>You cannot insert an id at this position.</source>
+        <translation>Ви не можете вставити ідентифікатор у цю позицію.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1580"/>
+        <location filename="../MainWindow.cpp~" line="1580"/>
+        <source>You must select text before inserting a new link.</source>
+        <translation>Ви повинні виділити текст перед тим, як вставити нове посилання.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
+        <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
+        <translation>Посилання недійсне — не може містити &apos;&lt;&apos; або &apos;&gt;&apos;</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
+        <source>You cannot insert a link at this position.</source>
+        <translation>Ви не можете вставити посилання в цій позиції.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp~" line="1612"/>
+        <source>Insert File</source>
+        <translation>Вставити Файл</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1655"/>
+        <location filename="../MainWindow.cpp~" line="1655"/>
+        <source>You cannot insert a media file at this position.</source>
+        <translation>Ви не можете вставити медіафайл у цій позиції.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1739"/>
         <location filename="../MainWindow.cpp.keep" line="1338"/>
+        <location filename="../MainWindow.cpp~" line="1739"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Зберегти зроблені зміни перед перезаписом цього файлу?</translation>
     </message>
@@ -1085,6 +1222,11 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="727"/>
         <source>Do you want to save your changes before closing?</source>
         <translation>Зберегти зроблені зміни перед закриттям?</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp.keep" line="867"/>
+        <source>Text files (*.txt)</source>
+        <translation>Текстові файли (*.txt)</translation>
     </message>
 </context>
 <context>
@@ -1113,7 +1255,7 @@ If a translation for specific word or phrase is not available it will be display
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../OPFReader.cpp" line="46"/>
+        <location filename="../OPFReader.cpp" line="58"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
         <translation>Не вдається прочитати файл OPF.
@@ -1137,42 +1279,42 @@ Line: %1 Column %2 - %3</source>
         <translation>PageEdit, має закритися.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="642"/>
+        <location filename="../Utility.cpp" line="798"/>
         <source>About PageEdit</source>
         <translation>Про програму PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="647"/>
+        <location filename="../Utility.cpp" line="803"/>
         <source>Version</source>
         <translation>Версія</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="648"/>
+        <location filename="../Utility.cpp" line="804"/>
         <source>Build Date</source>
         <translation>Дата збірки</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="649"/>
+        <location filename="../Utility.cpp" line="805"/>
         <source>Build Time</source>
         <translation>Час збірки</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="650"/>
+        <location filename="../Utility.cpp" line="806"/>
         <source>Qt Runtime Version</source>
         <translation>Версія Qt Runtime</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="651"/>
+        <location filename="../Utility.cpp" line="807"/>
         <source>Qt Compiled Version</source>
         <translation>Версія компіляції Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="652"/>
+        <location filename="../Utility.cpp" line="808"/>
         <source>System</source>
         <translation>Система</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="653"/>
+        <location filename="../Utility.cpp" line="809"/>
         <source>Architecture</source>
         <translation>Архітектура</translation>
     </message>
@@ -1205,7 +1347,156 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Вставити спеціальний знак</translation>
+        <translation>Вставити спеціальний символ</translation>
+    </message>
+</context>
+<context>
+    <name>SelectFiles</name>
+    <message>
+        <location filename="../SelectFiles.ui" line="14"/>
+        <source>Insert File</source>
+        <translation>Вставити Файл</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="46"/>
+        <source>List only the file names which contain the text you enter.</source>
+        <translation>Вивести тільки файли, що містять введений мною текст</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="49"/>
+        <source>Filter:</source>
+        <translation>Фільтр:</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="118"/>
+        <source>Thumbnail size:</source>
+        <translation>Розмір мініатюри:</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="111"/>
+        <location filename="../SelectFiles.cpp~" line="111"/>
+        <source>All</source>
+        <translation>Всюди</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="112"/>
+        <location filename="../SelectFiles.cpp~" line="112"/>
+        <source>Images</source>
+        <translation>Зображення</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="113"/>
+        <location filename="../SelectFiles.cpp~" line="113"/>
+        <source>Video</source>
+        <translation>Відео</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="114"/>
+        <location filename="../SelectFiles.cpp~" line="114"/>
+        <source>Audio</source>
+        <translation>Аудіо</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="153"/>
+        <location filename="../SelectFiles.cpp~" line="153"/>
+        <source>Media Files In the Book</source>
+        <translation>Медіафайли в книзі</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="156"/>
+        <location filename="../SelectFiles.cpp~" line="156"/>
+        <source>Thumbnails</source>
+        <translation>Мініатюри</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="316"/>
+        <location filename="../SelectFiles.cpp~" line="316"/>
+        <source>shades</source>
+        <translation>тіні</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="316"/>
+        <location filename="../SelectFiles.cpp~" line="316"/>
+        <source>colors</source>
+        <translation>кольори</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="317"/>
+        <location filename="../SelectFiles.cpp~" line="317"/>
+        <source>Grayscale</source>
+        <translation>Відтінки сірого</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="317"/>
+        <location filename="../SelectFiles.cpp~" line="317"/>
+        <source>Color</source>
+        <translation>Колір</translation>
+    </message>
+</context>
+<context>
+    <name>SelectHyperlink</name>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="14"/>
+        <source>Select Target</source>
+        <translation>Вибрати Адресат</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="22"/>
+        <source>List only the entries that match the text you enter.</source>
+        <translation>Перелічені лише записи, які відповідають введеному тексту.</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="25"/>
+        <source>Filter:</source>
+        <translation>Фільтр:</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="58"/>
+        <source>Enter the target URL for this hyperlink.  You can select or 
+double click on existing destinations in your book from the list above.</source>
+        <translation>Введіть цільову URL-адресу цього гіперпосилання. Ви можете вибрати або
+двічі клацніть на існуючих місцях у вашій книзі зі списку вище.</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="62"/>
+        <source>Target:</source>
+        <translation>Ціль:</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.cpp" line="94"/>
+        <source>Targets in the Book</source>
+        <translation>Цілі в книзі</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.cpp" line="95"/>
+        <source>Text</source>
+        <translation>Текст</translation>
+    </message>
+</context>
+<context>
+    <name>SelectId</name>
+    <message>
+        <location filename="../SelectId.ui" line="14"/>
+        <source>Insert ID </source>
+        <translation>Вставити ID </translation>
+    </message>
+    <message>
+        <location filename="../SelectId.ui" line="22"/>
+        <source>Enter an ID name to use as a destination for hyperlinks, notes, and TOC entries.
+
+The dropdown box shows existing ID names in the current file.
+
+ID names must be unique and start with a letter.</source>
+        <translation>Введіть ідентифікаційне ім&apos;я, яке використовуватиметься як місце призначення для гіперпосилань, нотаток та записів TOC.
+
+У контекстному списку відображаються існуючі імена ідентифікаторів у поточному файлі.
+
+Імена ідентифікаторів повинні бути унікальними і починатись з літери.</translation>
+    </message>
+    <message>
+        <location filename="../SelectId.ui" line="29"/>
+        <source>ID:</source>
+        <translation>ID:</translation>
     </message>
 </context>
 <context>
@@ -1220,25 +1511,25 @@ Line: %1 Column %2 - %3</source>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>Назва файлу містить символи, які не входять до ASCII. В назві файлу можно використовувати тільки символи ASCII. Використання символів, відмінних від ASCII, може перешкодити роботі деяких EPUB-рідерів.
+        <translation>В назві файлу є не ASCII символи. В назві файлу допустимі лише символи ASCII. Використання символів, що відмінні від ASCII, може завадити роботі деяких рідерів з EPUB.
 
-Продовжити використання цієї назви файлу?</translation>
+Залишити цю назву файлу?</translation>
     </message>
 </context>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="162"/>
+        <location filename="../WebViewEdit.cpp" line="167"/>
         <source>No suggestions</source>
         <translation>Варіанти відсутні</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="174"/>
+        <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Check Spelling</source>
         <translation>Перевірити орфографію</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="183"/>
+        <location filename="../WebViewEdit.cpp" line="188"/>
         <source>Select Language</source>
         <translation>Оберіть мову</translation>
     </message>

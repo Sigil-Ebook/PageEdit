@@ -1,107 +1,107 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Appearance</translation>
+        <translation>外観</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="24"/>
         <source>Fonts/Sizes</source>
-        <translation>Fonts/Sizes</translation>
+        <translation>フォント/サイズ</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="30"/>
         <source>Preview:</source>
-        <translation>Preview:</translation>
+        <translation>プレビュー:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="39"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</translation>
+        <translation>ページのCSSでフォント指定されていない場合は、PageEdit内の表示で以下のフォントが使用されます。これらのフォントは実際の電子書籍では使用されません。</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="59"/>
         <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation>Default font size to be used for WebView if no font-size specified in your CSS</translation>
+        <translation>CSSでフォントサイズが指定されていない場合は、Webビューでデフォルトのフォントサイズが使用されます。</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="62"/>
         <location filename="../PAppearanceWidget.ui" line="186"/>
         <source>Font Size:</source>
-        <translation>Font Size:</translation>
+        <translation>フォントサイズ:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="92"/>
         <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if no font-family specified in your CSS</translation>
+        <translation>CSSでフォントファミリが指定されていない場合は、Webビューでデフォルトのフォントファミリが使用されます。</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="95"/>
         <location filename="../PAppearanceWidget.ui" line="219"/>
         <source>Standard Font:</source>
-        <translation>Standard Font:</translation>
+        <translation>標準フォント:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="105"/>
         <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if a serif font-family specified in your CSS</translation>
+        <translation>CSSでセリフのフォントファミリが指定されている場合は、Webビューでデフォルトのフォントファミリが使用されます。</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Serif Font:</source>
-        <translation>Serif Font:</translation>
+        <translation>セリフフォント:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="118"/>
         <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</translation>
+        <translation>CSSでサンセリフのフォントファミリが指定されている場合は、Webビューでデフォルトのフォントファミリが使用されます。</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="121"/>
         <source>Sans-Serif Font:</source>
-        <translation>Sans-Serif Font:</translation>
+        <translation>サンセリフフォント:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="169"/>
         <source>Insert Special Characters:</source>
-        <translation>Insert Special Characters:</translation>
+        <translation>特殊文字を挿入:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="183"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Font size to be used for Insert Special Characters window</translation>
+        <translation>&quot;特殊文字を挿入&quot;ウィンドウで使用するフォントサイズ</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="216"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Font family to be used for Insert Special Characters window</translation>
+        <translation>&quot;特殊文字を挿入&quot;ウィンドウで使用するフォントの種類</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Icons</source>
-        <translation>Icons</translation>
+        <translation>アイコン</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>Icon Size</source>
-        <translation>Icon Size</translation>
+        <translation>アイコンサイズ</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="275"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Adjust the size of the icons in the main menu.</translation>
+        <translation>メインメニューのアイコンのサイズを調整します</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="351"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Reset all fonts and colors to the default values</translation>
+        <translation>すべてのフォントと色をデフォルト値にリセットします</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="354"/>
         <source>Reset All</source>
-        <translation>Reset All</translation>
+        <translation>すべてリセット</translation>
     </message>
 </context>
 <context>
@@ -109,121 +109,123 @@
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>General Settings</translation>
+        <translation>全般の設定</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>You must restart PageEdit after changing the User Interface language.
+        <translation>ユーザーインターフェース言語を切り替えた後にSigilを再起動する必要があります。
 
-If a translation for specific word or phrase is not available it will be displayed in English.</translation>
+特定の単語またはフレーズが翻訳されていない場合は、英語で表示されます。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>User Interface Language:</translation>
+        <translation>ユーザーインターフェース言語:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Select from installed spellcheck dictionaries.</translation>
+        <translation>インストールされているスペルチェック辞書から選択します。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Spellcheck Dictionary:</translation>
+        <translation>スペルチェック辞書:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Determine if html files are allowed to access non-multimedia remote resources.</translation>
+        <translation>HTMLファイルが、マルチメディア以外のリモートリソースにアクセスすることを許可するかどうかを決定します。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation> Control access by html files to non-multimedia remote resources.</translation>
+        <translation>HTMLファイルによる、マルチメディア以外のリモートリソースへのアクセスを制御する</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Check to allow html files to access non-multimedia remote resources.</translation>
+        <translation>HTMLファイルが、マルチメディア以外のリモートリソースにアクセスすることを許可する場合にチェックします。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Html files may access all remote resources types.</translation>
+        <translation>HTMLファイルが、すべてのリモートリソースタイプにアクセスすることを許可する</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Determine if javascript is allowed to be used by html files</translation>
+        <translation>HTMLファイルが、JavaScriptを利用することを許可するかどうかを決定します。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation> Control use of javascript by html files.</translation>
+        <translation>HTMLファイルによる、JavaScriptの利用を制御する</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Check to allow html files to use javascript.</translation>
+        <translation>HTMLファイルが、JavaScriptを利用することを許可する場合にチェックします。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Html files may use javascript.</translation>
+        <translation>HTMLファイルが、JavaScriptを利用することを許可する</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</translation>
+        <translation>PageEditで編集中に、連続するホワイトスペース（半角空白、タブ、改行）を使用する場合の処理方法を選択します。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Handle multiple white space layout using:</translation>
+        <translation>以下を使用して、連続するホワイトスペースのレイアウトを処理する:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Use CSS white-space: pre-wrap</translation>
+        <translation>CSSの「white-space: pre-wrap」を使用します。
+（連続空白をそのまま表示し、自動で改行されます。）</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation>css white-space: pre-wrap</translation>
+        <translation>CSSの「white-space: pre-wrap」</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Use non-breaking spaces as needed</translation>
+        <translation>必要に応じて「white-space: nowrap」(non-breaking)を使用します。
+（連続空白を詰めて表示し、自動改行されません。）</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>non-breaking spaces as needed</translation>
+        <translation>必要に応じて自動改行されないホワイトスペース</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Determine if Prettify is used when saving</translation>
+        <translation>保存時に、Prettifyを使用するかどうかを決定します。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation> Use Prettify to reformat the xhtml when saving.</translation>
+        <translation>保存時にxhtmlを再フォーマットするために、Prettifyを使用する</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Check to reformat with Prettify when saving xhtml files.</translation>
+        <translation>xhtmlファイルを保存時に、Prettifyを使用して再フォーマットする場合にチェックします。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Use Prettify to reformat xhtml when saving.</translation>
+        <translation>保存時にxhtmlを再フォーマットするために、Prettifyを使用する</translation>
     </message>
 </context>
 <context>
@@ -231,12 +233,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Inspector.cpp" line="54"/>
         <source>Inspect Page or Element</source>
-        <translation>Inspect Page or Element</translation>
+        <translation>ページまたは要素の検査</translation>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="94"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>The Inspector functionality is not supported before Qt 5.11</translation>
+        <translation>インスペクタ機能は、Qt 5.11 以前ではサポートされていません。</translation>
     </message>
 </context>
 <context>
@@ -271,119 +273,119 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;File</translation>
+        <translation>ファイル(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="74"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Edit</translation>
+        <translation>編集(&amp;E)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="87"/>
         <source>&amp;Find</source>
-        <translation>&amp;Find</translation>
+        <translation>検索(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="94"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Insert</translation>
+        <translation>挿入(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="109"/>
         <source>For&amp;mat</source>
-        <translation>For&amp;mat</translation>
+        <translation>書式(&amp;M)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="114"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Heading</translation>
+        <translation>見出し(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="147"/>
         <source>&amp;View</source>
-        <translation>&amp;View</translation>
+        <translation>表示(&amp;V)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="156"/>
         <source>Inspector</source>
-        <translation>Inspector</translation>
+        <translation>インスペクタ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="172"/>
         <source>File</source>
-        <translation>File</translation>
+        <translation>ファイル</translation>
     </message>
     <message>
         <location filename="../main.ui" line="186"/>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation>編集</translation>
     </message>
     <message>
         <location filename="../main.ui" line="204"/>
         <location filename="../main.ui" line="1055"/>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation>モード</translation>
     </message>
     <message>
         <location filename="../main.ui" line="217"/>
         <source>Insert</source>
-        <translation>Insert</translation>
+        <translation>挿入</translation>
     </message>
     <message>
         <location filename="../main.ui" line="236"/>
         <source>Inspect</source>
-        <translation>Inspect</translation>
+        <translation>検査</translation>
     </message>
     <message>
         <location filename="../main.ui" line="249"/>
         <location filename="../main.ui" line="1004"/>
         <source>Find</source>
-        <translation>Find</translation>
+        <translation>検索</translation>
     </message>
     <message>
         <location filename="../main.ui" line="262"/>
         <source>Heading</source>
-        <translation>Heading</translation>
+        <translation>見出し</translation>
     </message>
     <message>
         <location filename="../main.ui" line="276"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>set Heading Level of Selected Text</translation>
+        <translation>選択したテキストの見出しレベルを設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="290"/>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation>書式</translation>
     </message>
     <message>
         <location filename="../main.ui" line="308"/>
         <source>Align</source>
-        <translation>Align</translation>
+        <translation>テキスト揃え</translation>
     </message>
     <message>
         <location filename="../main.ui" line="324"/>
         <source>Indent</source>
-        <translation>Indent</translation>
+        <translation>インデント</translation>
     </message>
     <message>
         <location filename="../main.ui" line="338"/>
         <source>Navigate</source>
-        <translation>Navigate</translation>
+        <translation>ナビゲート</translation>
     </message>
     <message>
         <location filename="../main.ui" line="348"/>
         <source>Navigation List</source>
-        <translation>Navigation List</translation>
+        <translation>ナビゲーションリスト</translation>
     </message>
     <message>
         <location filename="../main.ui" line="364"/>
         <source>&amp;Save</source>
-        <translation>&amp;Save</translation>
+        <translation>保存(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="367"/>
         <source>Save the current file.</source>
-        <translation>Save the current file.</translation>
+        <translation>現在のファイルを保存します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="370"/>
@@ -393,12 +395,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="376"/>
         <source>Save &amp;As...</source>
-        <translation>Save &amp;As...</translation>
+        <translation>名前を付けて保存(&amp;A)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="379"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Save the current file with a different filename.</translation>
+        <translation>現在のファイルと異なるファイル名を付けて保存します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="382"/>
@@ -408,32 +410,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="392"/>
         <source>Cu&amp;t</source>
-        <translation>Cu&amp;t</translation>
+        <translation>切り取り(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="395"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Cuts the selected text from the document and puts it on the clipboard.</translation>
+        <translation>ドキュメントから選択されたテキストを切り出してクリップボードに出力します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="405"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Paste</translation>
+        <translation>貼り付け(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="408"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Pastes the content from the clipboard into the file.</translation>
+        <translation>クリップボードからファイルに内容を貼り付けます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="418"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Undo</translation>
+        <translation>元に戻す(&amp;U)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="421"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Reverts the changes of the previous operation.</translation>
+        <translation>直前に行った操作の変更点を元に戻します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="424"/>
@@ -443,12 +445,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="434"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Redo</translation>
+        <translation>やり直す(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="437"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Restores the changes reverted by the previous Undo action.</translation>
+        <translation>直前に行った「元に戻す」操作で元に戻した変更点を復活させます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="440"/>
@@ -458,42 +460,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="450"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Copy</translation>
+        <translation>コピー(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="453"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Copies the selected text and puts it on the clipboard.</translation>
+        <translation>選択されたテキストをコピーしてクリップボードに出力します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="466"/>
         <source>Align &amp;Left</source>
-        <translation>Align &amp;Left</translation>
+        <translation>左揃え(&amp;L)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="469"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Align the paragraph to the left.</translation>
+        <translation>段落を左に揃えます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="483"/>
         <source>Align &amp;Right</source>
-        <translation>Align &amp;Right</translation>
+        <translation>右揃え(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="486"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Align the paragraph to the right.</translation>
+        <translation>段落を右に揃えます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="499"/>
         <source>&amp;Center</source>
-        <translation>&amp;Center</translation>
+        <translation>中央揃え(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="502"/>
         <source>Center the paragraph.</source>
-        <translation>Center the paragraph.</translation>
+        <translation>段落を中央に揃えます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="505"/>
@@ -503,12 +505,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="518"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Justify</translation>
+        <translation>両端揃え(&amp;J)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="521"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Align the paragraph to both the left and right margins.</translation>
+        <translation>段落を左右両方のマージンに揃えます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="524"/>
@@ -518,12 +520,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="537"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Bold</translation>
+        <translation>太字(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="540"/>
         <source>Make the selected text bold.</source>
-        <translation>Make the selected text bold.</translation>
+        <translation>選択されたテキストを太字にします。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="543"/>
@@ -533,12 +535,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="556"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Italic</translation>
+        <translation>イタリック(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="559"/>
         <source>Make the selected text italic.</source>
-        <translation>Make the selected text italic.</translation>
+        <translation>選択されたテキストをイタリックにします。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="562"/>
@@ -548,12 +550,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="572"/>
         <source>&amp;Open...</source>
-        <translation>&amp;Open...</translation>
+        <translation>開く(&amp;O)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="575"/>
         <source>Open a file from disk.</source>
-        <translation>Open a file from disk.</translation>
+        <translation>ディスクからファイルを開きます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="578"/>
@@ -563,12 +565,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="592"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Underline</translation>
+        <translation>下線(&amp;U)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="595"/>
         <source>Underline the selected text.</source>
-        <translation>Underline the selected text.</translation>
+        <translation>選択されたテキストに下線を引きます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="598"/>
@@ -578,12 +580,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="608"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Quit</translation>
+        <translation>終了(&amp;Q)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="611"/>
         <source>Quit</source>
-        <translation>Quit</translation>
+        <translation>終了</translation>
     </message>
     <message>
         <location filename="../main.ui" line="614"/>
@@ -593,32 +595,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="624"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Special Character...</translation>
+        <translation>特殊文字(&amp;S)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="627"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Select a character to insert into your text.</translation>
+        <translation>テキストに挿入したい文字を選択します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="640"/>
         <source>&amp;Numbered List</source>
-        <translation>&amp;Numbered List</translation>
+        <translation>番号付け(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="643"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Create a numbered list from selection.</translation>
+        <translation>選択範囲から番号付けリストを作成します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="656"/>
         <source>Bulle&amp;ted List</source>
-        <translation>Bulle&amp;ted List</translation>
+        <translation>箇条書き(&amp;T)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="659"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Create a bulleted list from selection.</translation>
+        <translation>選択範囲から箇条書きリストを作成します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="662"/>
@@ -628,42 +630,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="675"/>
         <source>Stri&amp;kethrough</source>
-        <translation>Stri&amp;kethrough</translation>
+        <translation>取り消し線(&amp;K)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="678"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Draw a line through the selected text.</translation>
+        <translation>選択されたテキスト範囲に直線を描きます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="691"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Subscript</translation>
+        <translation>下付き文字(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="694"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Set the selected text slightly smaller and below the normal line.</translation>
+        <translation>選択されたテキストを少し小さくして基準線より下に設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="707"/>
         <source>Su&amp;perscript</source>
-        <translation>Su&amp;perscript</translation>
+        <translation>上付き文字(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Set the selected text slightly smaller and above the normal line.</translation>
+        <translation>選択されたテキストを少し小さくして基準線より上に設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="721"/>
         <source>Zoom &amp;In</source>
-        <translation>Zoom &amp;In</translation>
+        <translation>拡大(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="724"/>
         <source>Zoom In</source>
-        <translation>Zoom In</translation>
+        <translation>拡大</translation>
     </message>
     <message>
         <location filename="../main.ui" line="727"/>
@@ -673,12 +675,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="738"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zoom &amp;Out</translation>
+        <translation>縮小(&amp;O)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="741"/>
         <source>Zoom Out</source>
-        <translation>Zoom Out</translation>
+        <translation>縮小</translation>
     </message>
     <message>
         <location filename="../main.ui" line="744"/>
@@ -688,12 +690,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="755"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>Incre&amp;ase Indent</translation>
+        <translation>インデントを増やす(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="758"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Increase the indent level of the paragraph.</translation>
+        <translation>段落のインデントレベルを増やします。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="761"/>
@@ -703,12 +705,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="771"/>
         <source>&amp;Decrease Indent</source>
-        <translation>&amp;Decrease Indent</translation>
+        <translation>インデントを減らす(&amp;D)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="774"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Decrease the indent level of the paragraph.</translation>
+        <translation>段落のインデントレベルを減らします。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="777"/>
@@ -718,12 +720,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="787"/>
         <source>Split &amp;Marker</source>
-        <translation>Split &amp;Marker</translation>
+        <translation>分割マーカー(&amp;M)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="790"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Insert Sigil split file marker</translation>
+        <translation>Sigil分割ファイルマーカーを挿入します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="793"/>
@@ -733,7 +735,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="799"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Preferences...</translation>
+        <translation>環境設定(&amp;P)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="802"/>
@@ -743,12 +745,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="808"/>
         <source>&amp;Zoom Reset</source>
-        <translation>&amp;Zoom Reset</translation>
+        <translation>ズームをリセット(&amp;Z)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="811"/>
         <source>Zoom Reset</source>
-        <translation>Zoom Reset</translation>
+        <translation>ズームをリセット</translation>
     </message>
     <message>
         <location filename="../main.ui" line="814"/>
@@ -758,12 +760,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="827"/>
         <source>Heading &amp;1</source>
-        <translation>Heading &amp;1</translation>
+        <translation>見出し&amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="830"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Format paragraph as a level 1 heading.</translation>
+        <translation>レベル1の見出しとして段落を書式設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="833"/>
@@ -773,12 +775,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="846"/>
         <source>Heading &amp;2</source>
-        <translation>Heading &amp;2</translation>
+        <translation>見出し&amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="849"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Format paragraph as a level 2 heading.</translation>
+        <translation>レベル2の見出しとして段落を書式設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="852"/>
@@ -788,12 +790,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="865"/>
         <source>Heading &amp;3</source>
-        <translation>Heading &amp;3</translation>
+        <translation>見出し&amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="868"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Format paragraph as a level 3 heading.</translation>
+        <translation>レベル3の見出しとして段落を書式設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="871"/>
@@ -803,12 +805,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="885"/>
         <source>Heading &amp;4</source>
-        <translation>Heading &amp;4</translation>
+        <translation>見出し&amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="888"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Format paragraph as a level 4 heading.</translation>
+        <translation>レベル4の見出しとして段落を書式設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="891"/>
@@ -818,12 +820,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="904"/>
         <source>Heading &amp;5</source>
-        <translation>Heading &amp;5</translation>
+        <translation>見出し&amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="907"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Format paragraph as a level 5 heading.</translation>
+        <translation>レベル5の見出しとして段落を書式設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="910"/>
@@ -833,12 +835,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="923"/>
         <source>Heading &amp;6</source>
-        <translation>Heading &amp;6</translation>
+        <translation>見出し&amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="926"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Format paragraph as a level 6 heading.</translation>
+        <translation>レベル6の見出しとして段落を書式設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="929"/>
@@ -848,12 +850,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="943"/>
         <source>&amp;Normal</source>
-        <translation>&amp;Normal</translation>
+        <translation>通常(&amp;N)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="946"/>
         <source>ormat paragraph as a normal paragraph.</source>
-        <translation>ormat paragraph as a normal paragraph.</translation>
+        <translation>通常の段落として段落を書式設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="949"/>
@@ -863,22 +865,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="959"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Preserve Existing Attributes</translation>
+        <translation>既存の属性を保持(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="962"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>When applying this style, preserve any existing attributes on the tag</translation>
+        <translation>このスタイルを適用する際にタグの既存の属性をすべて保持する</translation>
     </message>
     <message>
         <location filename="../main.ui" line="972"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Select All</translation>
+        <translation>すべて選択(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="975"/>
         <source>Select all text in the document.</source>
-        <translation>Select all text in the document.</translation>
+        <translation>ドキュメント内のすべてのテキストを選択します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="978"/>
@@ -888,12 +890,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="988"/>
         <source>&amp;Inspector</source>
-        <translation>&amp;Inspector</translation>
+        <translation>インスペクタ(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="991"/>
         <source>Inspect the page.</source>
-        <translation>Inspect the page.</translation>
+        <translation>ページを検査します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="994"/>
@@ -903,7 +905,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1007"/>
         <source>Find text in the page</source>
-        <translation>Find text in the page</translation>
+        <translation>ページ内のテキストを検索します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1010"/>
@@ -913,77 +915,77 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1023"/>
         <source>Next XHtml File</source>
-        <translation>Next XHtml File</translation>
+        <translation>次のXHtmlファイル</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1026"/>
         <source>Next file in navigation list</source>
-        <translation>Next file in navigation list</translation>
+        <translation>ナビゲーションリストの次のファイル</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1039"/>
         <source>Previous XHtml File</source>
-        <translation>Previous XHtml File</translation>
+        <translation>前のXHtmlファイル</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1042"/>
         <source>Previous file in navigation list</source>
-        <translation>Previous file in navigation list</translation>
+        <translation>ナビゲーションリストの前のファイル</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1058"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Toggle between Edit and Preview Modes.</translation>
+        <translation>編集モードとプレビューモードを切り替えます。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1068"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation>情報...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1071"/>
         <source>Show information about PageEdit.</source>
-        <translation>Show information about PageEdit.</translation>
+        <translation>PageEditに関する情報を表示します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1081"/>
         <source>Back to Last Link</source>
-        <translation>Back to Last Link</translation>
+        <translation>最後のリンクに戻る</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1084"/>
         <source>Return from the last link taken</source>
-        <translation>Return from the last link taken</translation>
+        <translation>最後に移動したリンクから戻る</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1094"/>
         <source>I&amp;D...</source>
-        <translation>I&amp;D...</translation>
+        <translation>ID(&amp;D)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1097"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation>Insert or edit an anchor with an ID name to use as a link target.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1107"/>
         <source>&amp;Link...</source>
-        <translation>&amp;Link...</translation>
+        <translation>リンク(&amp;L)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1110"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation>Insert or edit an anchor with a hyperlink to a target.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1120"/>
         <source>&amp;File...</source>
-        <translation>&amp;File...</translation>
+        <translation>ファイル(&amp;F)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1123"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation>Select existing image, video or audio files from your book to insert into the text.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1126"/>
@@ -994,25 +996,25 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="647"/>
         <location filename="../MainWindow.cpp~" line="647"/>
         <source>File load failed</source>
-        <translation>File load failed</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="648"/>
         <location filename="../MainWindow.cpp~" line="648"/>
         <source>File Load Failed</source>
-        <translation>File Load Failed</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="735"/>
         <location filename="../MainWindow.cpp~" line="735"/>
         <source>mode: Preview</source>
-        <translation>mode: Preview</translation>
+        <translation>モード: プレビュー</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="737"/>
         <location filename="../MainWindow.cpp~" line="737"/>
         <source>mode: Edit</source>
-        <translation>mode: Edit</translation>
+        <translation>モード: 編集</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="901"/>
@@ -1020,7 +1022,7 @@ If a translation for specific word or phrase is not available it will be display
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Are you sure you want to open this link in your browser?
+        <translation>このリンクをブラウザーで開きますか?
 
 %1</translation>
     </message>
@@ -1028,14 +1030,14 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="961"/>
         <location filename="../MainWindow.cpp~" line="961"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Do you want to save your changes before leaving?</translation>
+        <translation>終了する前に、変更を保存しますか?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="978"/>
         <location filename="../MainWindow.cpp.keep" line="721"/>
         <location filename="../MainWindow.cpp~" line="978"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit is closing...</translation>
+        <translation>PageEditを閉じています...</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1106"/>
@@ -1057,27 +1059,27 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1118"/>
         <location filename="../MainWindow.cpp~" line="1119"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>HTML files (*.htm *.html *.xhtml)</translation>
+        <translation>HTMLファイル (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1109"/>
         <location filename="../MainWindow.cpp~" line="1109"/>
         <source>OPF files (*.opf)</source>
-        <translation>OPF files (*.opf)</translation>
+        <translation>OPFファイル (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1110"/>
         <location filename="../MainWindow.cpp.keep" line="868"/>
         <location filename="../MainWindow.cpp~" line="1110"/>
         <source>All files (*.*)</source>
-        <translation>All files (*.*)</translation>
+        <translation>すべてのファイル (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1321"/>
         <location filename="../MainWindow.cpp.keep" line="1024"/>
         <location filename="../MainWindow.cpp~" line="1321"/>
         <source>Save File</source>
-        <translation>Save File</translation>
+        <translation>ファイルを保存</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1356"/>
@@ -1093,14 +1095,14 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1369"/>
         <location filename="../MainWindow.cpp~" line="1370"/>
         <source>File Save-As Failed!</source>
-        <translation>File Save-As Failed!</translation>
+        <translation>ファイルの名前を付けて保存に失敗しました！</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1356"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
         <location filename="../MainWindow.cpp~" line="1356"/>
         <source>is not writeable</source>
-        <translation>is not writeable</translation>
+        <translation>書き込み不可</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1365"/>
@@ -1110,7 +1112,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1365"/>
         <location filename="../MainWindow.cpp~" line="1395"/>
         <source>File Saved</source>
-        <translation>File Saved</translation>
+        <translation>ファイルを保存</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1386"/>
@@ -1126,107 +1128,107 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1399"/>
         <location filename="../MainWindow.cpp~" line="1400"/>
         <source>File Save Failed!</source>
-        <translation>File Save Failed!</translation>
+        <translation>ファイルの保存に失敗しました！</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1387"/>
         <location filename="../MainWindow.cpp.keep" line="1090"/>
         <location filename="../MainWindow.cpp~" line="1387"/>
         <source>does not exist or is not writeable</source>
-        <translation>does not exist or is not writeable</translation>
+        <translation>ファイルが存在しないか、書き込み不可</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1448"/>
         <location filename="../MainWindow.cpp.keep" line="1147"/>
         <location filename="../MainWindow.cpp~" line="1448"/>
         <source>File Opened</source>
-        <translation>File Opened</translation>
+        <translation>ファイルを開きました</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1452"/>
         <location filename="../MainWindow.cpp.keep" line="1152"/>
         <location filename="../MainWindow.cpp~" line="1452"/>
         <source>File Open Failed!</source>
-        <translation>File Open Failed!</translation>
+        <translation>ファイルのオープンに失敗しました！</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1475"/>
         <location filename="../MainWindow.cpp.keep" line="1175"/>
         <location filename="../MainWindow.cpp~" line="1475"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Clipboard contains HTML formatting</translation>
+        <translation>クリップボードにHTML形式が含まれています</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1476"/>
         <location filename="../MainWindow.cpp.keep" line="1176"/>
         <location filename="../MainWindow.cpp~" line="1476"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Do you want to paste clipboard data as plain text?</translation>
+        <translation>クリップボードのデータをプレーンテキスト形式でペーストしますか?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1547"/>
         <location filename="../MainWindow.cpp~" line="1547"/>
         <source>You must select text before inserting a new id.</source>
-        <translation>You must select text before inserting a new id.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1560"/>
         <location filename="../MainWindow.cpp~" line="1560"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
-        <translation>ID is invalid - must start with a letter, followed by letter number _ : - or .</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp~" line="1566"/>
         <source>You cannot insert an id at this position.</source>
-        <translation>You cannot insert an id at this position.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1580"/>
         <location filename="../MainWindow.cpp~" line="1580"/>
         <source>You must select text before inserting a new link.</source>
-        <translation>You must select text before inserting a new link.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
         <location filename="../MainWindow.cpp~" line="1593"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
-        <translation>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</translation>
+        <translation>リンクは有効です - &apos;&lt;&apos;または&apos;&gt;&apos;は含めません</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1601"/>
         <location filename="../MainWindow.cpp~" line="1601"/>
         <source>You cannot insert a link at this position.</source>
-        <translation>You cannot insert a link at this position.</translation>
+        <translation>この位置にリンクを挿入できません。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1612"/>
         <location filename="../MainWindow.cpp~" line="1612"/>
         <source>Insert File</source>
-        <translation>Insert File</translation>
+        <translation>ファイルを挿入</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1655"/>
         <location filename="../MainWindow.cpp~" line="1655"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation>You cannot insert a media file at this position.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1739"/>
         <location filename="../MainWindow.cpp.keep" line="1338"/>
         <location filename="../MainWindow.cpp~" line="1739"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Do you want to save any changes before overwriting this file?</translation>
+        <translation>このファイルを上書きする前に、変更を保存しますか?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp.keep" line="727"/>
         <source>Do you want to save your changes before closing?</source>
-        <translation>Do you want to save your changes before closing?</translation>
+        <translation>閉じる前に、変更を保存しますか?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp.keep" line="867"/>
         <source>Text files (*.txt)</source>
-        <translation>Text files (*.txt)</translation>
+        <translation>テキストファイル (*.txt)</translation>
     </message>
 </context>
 <context>
@@ -1234,7 +1236,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Preferences</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="86"/>
@@ -1244,12 +1246,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Preferences.cpp" line="86"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Changes will take effect when you restart PageEdit.</translation>
+        <translation>変更した内容はPageEditの再起動後に有効になります。</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="143"/>
         <source>Open Preferences Location</source>
-        <translation>Open Preferences Location</translation>
+        <translation>設定ファイルの場所を開く</translation>
     </message>
 </context>
 <context>
@@ -1258,65 +1260,65 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../OPFReader.cpp" line="58"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Unable to read OPF file.
-Line: %1 Column %2 - %3</translation>
+        <translation>OPF ファイルを読めません。
+行: %1 列 %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="364"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Cannot read file %1:
-%2.</translation>
+        <translation>ファイル %1 を読み込めませんでした:
+%2。</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="479"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit has encountered a problem.</translation>
+        <translation>PageEditで問題が発生しました。</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="480"/>
         <source>PageEdit may need to close.</source>
-        <translation>PageEdit may need to close.</translation>
+        <translation>PageEditを終了する必要がある可能性があります。</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="798"/>
         <source>About PageEdit</source>
-        <translation>About PageEdit</translation>
+        <translation>PageEditについて</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="803"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>バージョン</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="804"/>
         <source>Build Date</source>
-        <translation>Build Date</translation>
+        <translation>ビルド日付</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="805"/>
         <source>Build Time</source>
-        <translation>Build Time</translation>
+        <translation>ビルド時刻</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="806"/>
         <source>Qt Runtime Version</source>
-        <translation>Qt Runtime Version</translation>
+        <translation>Qtランタイムバージョン</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="807"/>
         <source>Qt Compiled Version</source>
-        <translation>Qt Compiled Version</translation>
+        <translation>Qtコンパイル済みバージョン</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="808"/>
         <source>System</source>
-        <translation>System</translation>
+        <translation>システム</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="809"/>
         <source>Architecture</source>
-        <translation>Architecture</translation>
+        <translation>アーキテクチャー</translation>
     </message>
 </context>
 <context>
@@ -1324,22 +1326,22 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Search: </translation>
+        <translation>検索: </translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Search...</translation>
+        <translation>検索...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>&amp;Match Case</translation>
+        <translation>大文字小文字を区別(&amp;M)</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="140"/>
         <source>No results found.</source>
-        <translation>No results found.</translation>
+        <translation>検索結果が見つかりません。</translation>
     </message>
 </context>
 <context>
@@ -1347,7 +1349,7 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Insert Special Character</translation>
+        <translation>特殊文字を挿入</translation>
     </message>
 </context>
 <context>
@@ -1355,82 +1357,82 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.ui" line="14"/>
         <source>Insert File</source>
-        <translation>Insert File</translation>
+        <translation>ファイルを挿入</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="46"/>
         <source>List only the file names which contain the text you enter.</source>
-        <translation>List only the file names which contain the text you enter.</translation>
+        <translation>入力したテキストを含むファイル名のみリスト表示します。</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="49"/>
         <source>Filter:</source>
-        <translation>Filter:</translation>
+        <translation>フィルター:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="118"/>
         <source>Thumbnail size:</source>
-        <translation>Thumbnail size:</translation>
+        <translation>サムネイルサイズ:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="111"/>
         <location filename="../SelectFiles.cpp~" line="111"/>
         <source>All</source>
-        <translation>All</translation>
+        <translation>すべて</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="112"/>
         <location filename="../SelectFiles.cpp~" line="112"/>
         <source>Images</source>
-        <translation>Images</translation>
+        <translation>画像</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="113"/>
         <location filename="../SelectFiles.cpp~" line="113"/>
         <source>Video</source>
-        <translation>Video</translation>
+        <translation>動画</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="114"/>
         <location filename="../SelectFiles.cpp~" line="114"/>
         <source>Audio</source>
-        <translation>Audio</translation>
+        <translation>オーディオ</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="153"/>
         <location filename="../SelectFiles.cpp~" line="153"/>
         <source>Media Files In the Book</source>
-        <translation>Media Files In the Book</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="156"/>
         <location filename="../SelectFiles.cpp~" line="156"/>
         <source>Thumbnails</source>
-        <translation>Thumbnails</translation>
+        <translation>サムネイル</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="316"/>
         <location filename="../SelectFiles.cpp~" line="316"/>
         <source>shades</source>
-        <translation>shades</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="316"/>
         <location filename="../SelectFiles.cpp~" line="316"/>
         <source>colors</source>
-        <translation>colors</translation>
+        <translation>カラー</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="317"/>
         <location filename="../SelectFiles.cpp~" line="317"/>
         <source>Grayscale</source>
-        <translation>Grayscale</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="317"/>
         <location filename="../SelectFiles.cpp~" line="317"/>
         <source>Color</source>
-        <translation>Color</translation>
+        <translation>カラー</translation>
     </message>
 </context>
 <context>
@@ -1438,39 +1440,38 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SelectHyperlink.ui" line="14"/>
         <source>Select Target</source>
-        <translation>Select Target</translation>
+        <translation>ターゲットを選択</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="22"/>
         <source>List only the entries that match the text you enter.</source>
-        <translation>List only the entries that match the text you enter.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="25"/>
         <source>Filter:</source>
-        <translation>Filter:</translation>
+        <translation>フィルター:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="58"/>
         <source>Enter the target URL for this hyperlink.  You can select or 
 double click on existing destinations in your book from the list above.</source>
-        <translation>Enter the target URL for this hyperlink.  You can select or 
-double click on existing destinations in your book from the list above.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="62"/>
         <source>Target:</source>
-        <translation>Target:</translation>
+        <translation>ターゲット:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="94"/>
         <source>Targets in the Book</source>
-        <translation>Targets in the Book</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="95"/>
         <source>Text</source>
-        <translation>Text</translation>
+        <translation>テキスト</translation>
     </message>
 </context>
 <context>
@@ -1478,7 +1479,7 @@ double click on existing destinations in your book from the list above.</transla
     <message>
         <location filename="../SelectId.ui" line="14"/>
         <source>Insert ID </source>
-        <translation>Insert ID </translation>
+        <translation>IDを挿入</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="22"/>
@@ -1487,11 +1488,7 @@ double click on existing destinations in your book from the list above.</transla
 The dropdown box shows existing ID names in the current file.
 
 ID names must be unique and start with a letter.</source>
-        <translation>Enter an ID name to use as a destination for hyperlinks, notes, and TOC entries.
-
-The dropdown box shows existing ID names in the current file.
-
-ID names must be unique and start with a letter.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectId.ui" line="29"/>
@@ -1511,9 +1508,9 @@ ID names must be unique and start with a letter.</translation>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
+        <translation>要求されたファイル名に非ASCII文字が含まれています。ファイル名にはASCII文字のみを使用する必要があります。非ASCII文字を使用すると、一部のリーダーでEPUBが機能しなくなる可能性があります。
 
-Continue using the requested filename?</translation>
+要求されたファイル名を使用しますか?</translation>
     </message>
 </context>
 <context>
@@ -1521,17 +1518,17 @@ Continue using the requested filename?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="167"/>
         <source>No suggestions</source>
-        <translation>No suggestions</translation>
+        <translation>候補なし</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Check Spelling</source>
-        <translation>Check Spelling</translation>
+        <translation>スペルチェックを実行</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="188"/>
         <source>Select Language</source>
-        <translation>Select Language</translation>
+        <translation>言語の選択</translation>
     </message>
 </context>
 </TS>

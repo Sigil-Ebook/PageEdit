@@ -247,11 +247,28 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="834"/>
-        <location filename="../MainWindow.cpp" line="893"/>
-        <location filename="../MainWindow.cpp" line="1549"/>
+        <location filename="../MainWindow.cpp" line="901"/>
+        <location filename="../MainWindow.cpp" line="960"/>
+        <location filename="../MainWindow.cpp" line="1547"/>
+        <location filename="../MainWindow.cpp" line="1560"/>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1580"/>
+        <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp" line="1655"/>
+        <location filename="../MainWindow.cpp" line="1738"/>
         <location filename="../MainWindow.cpp.keep" line="726"/>
         <location filename="../MainWindow.cpp.keep" line="1337"/>
+        <location filename="../MainWindow.cpp~" line="901"/>
+        <location filename="../MainWindow.cpp~" line="960"/>
+        <location filename="../MainWindow.cpp~" line="1547"/>
+        <location filename="../MainWindow.cpp~" line="1560"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1580"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1655"/>
+        <location filename="../MainWindow.cpp~" line="1738"/>
         <source>PageEdit</source>
         <translation>Muokkaustila</translation>
     </message>
@@ -276,810 +293,930 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <translation>Lisää</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="105"/>
+        <location filename="../main.ui" line="109"/>
         <source>For&amp;mat</source>
         <translation>Muotoile</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="110"/>
+        <location filename="../main.ui" line="114"/>
         <source>&amp;Heading</source>
         <translation>Otsikko</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="143"/>
+        <location filename="../main.ui" line="147"/>
         <source>&amp;View</source>
         <translation>Näytä</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="152"/>
+        <location filename="../main.ui" line="156"/>
         <source>Inspector</source>
         <translation>Tutkinta</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="168"/>
+        <location filename="../main.ui" line="172"/>
         <source>File</source>
         <translation>Tiedosto</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="182"/>
+        <location filename="../main.ui" line="186"/>
         <source>Edit</source>
         <translation>Muokkaa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="200"/>
-        <location filename="../main.ui" line="1048"/>
+        <location filename="../main.ui" line="204"/>
+        <location filename="../main.ui" line="1055"/>
         <source>Mode</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="213"/>
+        <location filename="../main.ui" line="217"/>
         <source>Insert</source>
         <translation>Lisää</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="229"/>
+        <location filename="../main.ui" line="236"/>
         <source>Inspect</source>
         <translation>Tutki</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="242"/>
-        <location filename="../main.ui" line="997"/>
+        <location filename="../main.ui" line="249"/>
+        <location filename="../main.ui" line="1004"/>
         <source>Find</source>
         <translation>Etsi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="255"/>
+        <location filename="../main.ui" line="262"/>
         <source>Heading</source>
         <translation>Otsikko</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="269"/>
+        <location filename="../main.ui" line="276"/>
         <source>set Heading Level of Selected Text</source>
         <translation>aseta valitun tekstin otsikkotaso</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="283"/>
+        <location filename="../main.ui" line="290"/>
         <source>Format</source>
         <translation>Muoto</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="301"/>
+        <location filename="../main.ui" line="308"/>
         <source>Align</source>
         <translation>Tasaa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="317"/>
+        <location filename="../main.ui" line="324"/>
         <source>Indent</source>
         <translation>Sisennä</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="331"/>
+        <location filename="../main.ui" line="338"/>
         <source>Navigate</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="341"/>
+        <location filename="../main.ui" line="348"/>
         <source>Navigation List</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="357"/>
+        <location filename="../main.ui" line="364"/>
         <source>&amp;Save</source>
         <translation>Tallenna</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="360"/>
+        <location filename="../main.ui" line="367"/>
         <source>Save the current file.</source>
         <translation>Tallenna nykyinen tiedosto</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="363"/>
+        <location filename="../main.ui" line="370"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="369"/>
+        <location filename="../main.ui" line="376"/>
         <source>Save &amp;As...</source>
         <translation>Tallenna nimellä...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="372"/>
+        <location filename="../main.ui" line="379"/>
         <source>Save the current file with a different filename.</source>
         <translation>Tallenna nykyinen tiedosto eri nimellä</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="375"/>
+        <location filename="../main.ui" line="382"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Vaihto+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="385"/>
+        <location filename="../main.ui" line="392"/>
         <source>Cu&amp;t</source>
         <translation>Leikkaa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="388"/>
+        <location filename="../main.ui" line="395"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
         <translation>Leikkaa valitun tekstin dokumentista ja sijoittaa sen leikepoydälle</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="398"/>
+        <location filename="../main.ui" line="405"/>
         <source>&amp;Paste</source>
         <translation>Liitä</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="401"/>
+        <location filename="../main.ui" line="408"/>
         <source>Pastes the content from the clipboard into the file.</source>
         <translation>Liittää sisällön leikepöydältä tiedostoon</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="411"/>
+        <location filename="../main.ui" line="418"/>
         <source>&amp;Undo</source>
         <translation>Kumoa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="414"/>
+        <location filename="../main.ui" line="421"/>
         <source>Reverts the changes of the previous operation.</source>
         <translation>Peruuttaa aiemman toimenpiteen tekemät muutokset.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="417"/>
+        <location filename="../main.ui" line="424"/>
         <source>Ctrl+Z</source>
         <translation>Ctrl+Z</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="427"/>
+        <location filename="../main.ui" line="434"/>
         <source>&amp;Redo</source>
         <translation>Tee uudestaan</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="430"/>
+        <location filename="../main.ui" line="437"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
         <translation>Palauttaa edellisen peruutustoiminnon peruuttamat muutokset.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="433"/>
+        <location filename="../main.ui" line="440"/>
         <source>Ctrl+Y</source>
         <translation>Ctrl+Y</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="443"/>
+        <location filename="../main.ui" line="450"/>
         <source>&amp;Copy</source>
         <translation>Kopioi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="446"/>
+        <location filename="../main.ui" line="453"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
         <translation>Kopioi valitun tekstin ja laittaa sen leikepöydälle.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="459"/>
+        <location filename="../main.ui" line="466"/>
         <source>Align &amp;Left</source>
         <translation>Tasaa vasemmalle</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="462"/>
+        <location filename="../main.ui" line="469"/>
         <source>Align the paragraph to the left.</source>
         <translation>Tasaa kappale vasemmalle</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="476"/>
+        <location filename="../main.ui" line="483"/>
         <source>Align &amp;Right</source>
         <translation>Tasaa oikealle</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="479"/>
+        <location filename="../main.ui" line="486"/>
         <source>Align the paragraph to the right.</source>
         <translation>Tasaa kappale oikealle.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="492"/>
+        <location filename="../main.ui" line="499"/>
         <source>&amp;Center</source>
         <translation>Keskitä</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="495"/>
+        <location filename="../main.ui" line="502"/>
         <source>Center the paragraph.</source>
         <translation>Keskitä kappale.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="498"/>
+        <location filename="../main.ui" line="505"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="511"/>
+        <location filename="../main.ui" line="518"/>
         <source>&amp;Justify</source>
         <translation>Tasaa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="514"/>
+        <location filename="../main.ui" line="521"/>
         <source>Align the paragraph to both the left and right margins.</source>
         <translation>Tasaa kappaleen sekä vasemmalle että oikealle.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="517"/>
+        <location filename="../main.ui" line="524"/>
         <source>Ctrl+J</source>
         <translation>Ctrl+J</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="530"/>
+        <location filename="../main.ui" line="537"/>
         <source>&amp;Bold</source>
         <translation>Lihavoi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="533"/>
+        <location filename="../main.ui" line="540"/>
         <source>Make the selected text bold.</source>
         <translation>Lihavoi valittu teksti.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="536"/>
+        <location filename="../main.ui" line="543"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="549"/>
+        <location filename="../main.ui" line="556"/>
         <source>&amp;Italic</source>
         <translation>Kursivoi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="552"/>
+        <location filename="../main.ui" line="559"/>
         <source>Make the selected text italic.</source>
         <translation>Kursivoi valittu teksti.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="555"/>
+        <location filename="../main.ui" line="562"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="565"/>
+        <location filename="../main.ui" line="572"/>
         <source>&amp;Open...</source>
         <translation>Avaa...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="568"/>
+        <location filename="../main.ui" line="575"/>
         <source>Open a file from disk.</source>
         <translation>Avaa tiedosto levyltä.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="571"/>
+        <location filename="../main.ui" line="578"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="585"/>
+        <location filename="../main.ui" line="592"/>
         <source>&amp;Underline</source>
         <translation>Alleviivaa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="588"/>
+        <location filename="../main.ui" line="595"/>
         <source>Underline the selected text.</source>
         <translation>Alleviivaa valittu teksti.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="591"/>
+        <location filename="../main.ui" line="598"/>
         <source>Ctrl+U</source>
         <translation>Ctrl+U</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="601"/>
+        <location filename="../main.ui" line="608"/>
         <source>&amp;Quit</source>
         <translation>Lopeta</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="604"/>
+        <location filename="../main.ui" line="611"/>
         <source>Quit</source>
         <translation>Lopeta</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="607"/>
+        <location filename="../main.ui" line="614"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="617"/>
+        <location filename="../main.ui" line="624"/>
         <source>&amp;Special Character...</source>
         <translation>Erikoismerkki...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="620"/>
+        <location filename="../main.ui" line="627"/>
         <source>Select a character to insert into your text.</source>
         <translation>Valitse tekstiin lisättävä merkki.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="633"/>
+        <location filename="../main.ui" line="640"/>
         <source>&amp;Numbered List</source>
         <translation>Numerointi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="636"/>
+        <location filename="../main.ui" line="643"/>
         <source>Create a numbered list from selection.</source>
         <translation>Tee valinnasta numeroitu luettelo.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="649"/>
+        <location filename="../main.ui" line="656"/>
         <source>Bulle&amp;ted List</source>
         <translation>Luettelomerkit</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="652"/>
+        <location filename="../main.ui" line="659"/>
         <source>Create a bulleted list from selection.</source>
         <translation>Tee valinnasta luetelma, jossa on luetelmapallot.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="655"/>
+        <location filename="../main.ui" line="662"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Vaihto+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="668"/>
+        <location filename="../main.ui" line="675"/>
         <source>Stri&amp;kethrough</source>
         <translation>Yliviivaa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="671"/>
+        <location filename="../main.ui" line="678"/>
         <source>Draw a line through the selected text.</source>
         <translation>Yliviivaa valittu teksti.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="684"/>
+        <location filename="../main.ui" line="691"/>
         <source>&amp;Subscript</source>
         <translation>Alaindeksi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="687"/>
+        <location filename="../main.ui" line="694"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
         <translation>Muuta valittu teksti hiukan pienemmäksi ja normaalin linjan alapuolelle.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="700"/>
+        <location filename="../main.ui" line="707"/>
         <source>Su&amp;perscript</source>
         <translation>Yläindeksi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="703"/>
+        <location filename="../main.ui" line="710"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
         <translation>Muuta valittu teksti hiukan pienemmäksi ja normaalin linjan yläpuolelle.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="714"/>
+        <location filename="../main.ui" line="721"/>
         <source>Zoom &amp;In</source>
         <translation>Suurenna fonttikokoa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="717"/>
+        <location filename="../main.ui" line="724"/>
         <source>Zoom In</source>
         <translation>Suurenna fonttikokoa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="720"/>
+        <location filename="../main.ui" line="727"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="731"/>
+        <location filename="../main.ui" line="738"/>
         <source>Zoom &amp;Out</source>
         <translation>Pienennä fonttikokoa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="734"/>
+        <location filename="../main.ui" line="741"/>
         <source>Zoom Out</source>
         <translation>Pienennä fonttikokoa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="737"/>
+        <location filename="../main.ui" line="744"/>
         <source>Ctrl+-</source>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="748"/>
+        <location filename="../main.ui" line="755"/>
         <source>Incre&amp;ase Indent</source>
         <translation>Suurenna sisennystä</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="751"/>
+        <location filename="../main.ui" line="758"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>Lisää kappaleen sisennystasoa.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="754"/>
+        <location filename="../main.ui" line="761"/>
         <source>Ctrl+Alt+M</source>
         <translation>AltGr+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="764"/>
+        <location filename="../main.ui" line="771"/>
         <source>&amp;Decrease Indent</source>
         <translation>Pienennä sisennystä</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="767"/>
+        <location filename="../main.ui" line="774"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>Pienennäkappaleen sisennystasoa.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="770"/>
+        <location filename="../main.ui" line="777"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Vaihto+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="780"/>
+        <location filename="../main.ui" line="787"/>
         <source>Split &amp;Marker</source>
         <translation>Jakomerkki</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="783"/>
+        <location filename="../main.ui" line="790"/>
         <source>Insert Sigil split file marker</source>
         <translation>Lisää jakokohtamerkki tiedostoiksi jakamista varten</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="786"/>
+        <location filename="../main.ui" line="793"/>
         <source>Ctrl+Shift+Return</source>
         <translation>Ctrl+Vaihto+Enter</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="792"/>
+        <location filename="../main.ui" line="799"/>
         <source>&amp;Preferences...</source>
         <translation>Asetukset...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="795"/>
+        <location filename="../main.ui" line="802"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="801"/>
+        <location filename="../main.ui" line="808"/>
         <source>&amp;Zoom Reset</source>
         <translation>Palauta fonttikoko</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="804"/>
+        <location filename="../main.ui" line="811"/>
         <source>Zoom Reset</source>
         <translation>Palauta fonttikoko</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="807"/>
+        <location filename="../main.ui" line="814"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="820"/>
+        <location filename="../main.ui" line="827"/>
         <source>Heading &amp;1</source>
         <translation>Otsikko 1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="823"/>
+        <location filename="../main.ui" line="830"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation>Muotoile kappale 1. tason otsikoksi.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="826"/>
+        <location filename="../main.ui" line="833"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="839"/>
+        <location filename="../main.ui" line="846"/>
         <source>Heading &amp;2</source>
         <translation>Otsikko 2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="842"/>
+        <location filename="../main.ui" line="849"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation>Muotoile kappale 2. tason otsikoksi.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="845"/>
+        <location filename="../main.ui" line="852"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="858"/>
+        <location filename="../main.ui" line="865"/>
         <source>Heading &amp;3</source>
         <translation>Otsikko 3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="861"/>
+        <location filename="../main.ui" line="868"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation>Muotoile kappale 3. tason otsikoksi.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="864"/>
+        <location filename="../main.ui" line="871"/>
         <source>Ctrl+3</source>
         <translation>Ctrl+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="878"/>
+        <location filename="../main.ui" line="885"/>
         <source>Heading &amp;4</source>
         <translation>Otsikko 4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="881"/>
+        <location filename="../main.ui" line="888"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation>Muotoile kappale 4. tason otsikoksi.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="884"/>
+        <location filename="../main.ui" line="891"/>
         <source>Ctrl+4</source>
         <translation>Ctrl+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="897"/>
+        <location filename="../main.ui" line="904"/>
         <source>Heading &amp;5</source>
         <translation>Otsikko 5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="900"/>
+        <location filename="../main.ui" line="907"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation>Muotoile kappale 5. tason otsikoksi.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="903"/>
+        <location filename="../main.ui" line="910"/>
         <source>Ctrl+5</source>
         <translation>Ctrl+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="916"/>
+        <location filename="../main.ui" line="923"/>
         <source>Heading &amp;6</source>
         <translation>Otsikko 6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="919"/>
+        <location filename="../main.ui" line="926"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation>Muotoile kappale 6. tason otsikoksi.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="922"/>
+        <location filename="../main.ui" line="929"/>
         <source>Ctrl+6</source>
         <translation>Ctrl+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="936"/>
+        <location filename="../main.ui" line="943"/>
         <source>&amp;Normal</source>
         <translation>Normaali</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="939"/>
+        <location filename="../main.ui" line="946"/>
         <source>ormat paragraph as a normal paragraph.</source>
         <translation>Muotoile kappale normaaliksi kappaleeksi.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="942"/>
+        <location filename="../main.ui" line="949"/>
         <source>Ctrl+7</source>
         <translation>Ctrl+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="952"/>
+        <location filename="../main.ui" line="959"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>Säilytä olemassaolevat määritteet</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="955"/>
+        <location filename="../main.ui" line="962"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>Säilytä tagiin liittyvät määritteet soveltaessasi tätä tyyliä</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="965"/>
+        <location filename="../main.ui" line="972"/>
         <source>&amp;Select All</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="968"/>
+        <location filename="../main.ui" line="975"/>
         <source>Select all text in the document.</source>
         <translation>Valitse dokumentin koko teksti</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="971"/>
+        <location filename="../main.ui" line="978"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="981"/>
+        <location filename="../main.ui" line="988"/>
         <source>&amp;Inspector</source>
         <translation>&amp;Tutkinta</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="984"/>
+        <location filename="../main.ui" line="991"/>
         <source>Inspect the page.</source>
         <translation>Tutki sivua.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="987"/>
+        <location filename="../main.ui" line="994"/>
         <source>Ctrl+F5</source>
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1000"/>
+        <location filename="../main.ui" line="1007"/>
         <source>Find text in the page</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1003"/>
+        <location filename="../main.ui" line="1010"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1016"/>
+        <location filename="../main.ui" line="1023"/>
         <source>Next XHtml File</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1019"/>
+        <location filename="../main.ui" line="1026"/>
         <source>Next file in navigation list</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1032"/>
+        <location filename="../main.ui" line="1039"/>
         <source>Previous XHtml File</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1035"/>
+        <location filename="../main.ui" line="1042"/>
         <source>Previous file in navigation list</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1051"/>
+        <location filename="../main.ui" line="1058"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1061"/>
+        <location filename="../main.ui" line="1068"/>
         <source>About...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1064"/>
+        <location filename="../main.ui" line="1071"/>
         <source>Show information about PageEdit.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1074"/>
+        <location filename="../main.ui" line="1081"/>
         <source>Back to Last Link</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1077"/>
+        <location filename="../main.ui" line="1084"/>
         <source>Return from the last link taken</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="668"/>
+        <location filename="../main.ui" line="1094"/>
+        <source>I&amp;D...</source>
+        <translation>Tunniste</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1097"/>
+        <source>Insert or edit an anchor with an ID name to use as a link target.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1107"/>
+        <source>&amp;Link...</source>
+        <translation>Linkki</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1110"/>
+        <source>Insert or edit an anchor with a hyperlink to a target.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1120"/>
+        <source>&amp;File...</source>
+        <translation>Tiedosto...</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1123"/>
+        <source>Select existing image, video or audio files from your book to insert into the text.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1126"/>
+        <source>Ctrl+Shift+I</source>
+        <translation>Ctrl+Vaihto+I</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="647"/>
+        <location filename="../MainWindow.cpp~" line="647"/>
+        <source>File load failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="648"/>
+        <location filename="../MainWindow.cpp~" line="648"/>
+        <source>File Load Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="735"/>
+        <location filename="../MainWindow.cpp~" line="735"/>
         <source>mode: Preview</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="670"/>
+        <location filename="../MainWindow.cpp" line="737"/>
+        <location filename="../MainWindow.cpp~" line="737"/>
         <source>mode: Edit</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="834"/>
+        <location filename="../MainWindow.cpp" line="901"/>
+        <location filename="../MainWindow.cpp~" line="901"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="894"/>
+        <location filename="../MainWindow.cpp" line="961"/>
+        <location filename="../MainWindow.cpp~" line="961"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="911"/>
+        <location filename="../MainWindow.cpp" line="978"/>
         <location filename="../MainWindow.cpp.keep" line="721"/>
+        <location filename="../MainWindow.cpp~" line="978"/>
         <source>PageEdit is closing...</source>
         <translation>Muokkaustilan lopetus...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1039"/>
-        <location filename="../MainWindow.cpp" line="1040"/>
-        <location filename="../MainWindow.cpp" line="1041"/>
-        <location filename="../MainWindow.cpp" line="1051"/>
-        <location filename="../MainWindow.cpp" line="1052"/>
-        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1106"/>
+        <location filename="../MainWindow.cpp" line="1107"/>
+        <location filename="../MainWindow.cpp" line="1108"/>
+        <location filename="../MainWindow.cpp" line="1117"/>
+        <location filename="../MainWindow.cpp" line="1118"/>
+        <location filename="../MainWindow.cpp" line="1119"/>
         <location filename="../MainWindow.cpp.keep" line="864"/>
         <location filename="../MainWindow.cpp.keep" line="865"/>
         <location filename="../MainWindow.cpp.keep" line="866"/>
         <location filename="../MainWindow.cpp.keep" line="875"/>
         <location filename="../MainWindow.cpp.keep" line="876"/>
         <location filename="../MainWindow.cpp.keep" line="877"/>
+        <location filename="../MainWindow.cpp~" line="1106"/>
+        <location filename="../MainWindow.cpp~" line="1107"/>
+        <location filename="../MainWindow.cpp~" line="1108"/>
+        <location filename="../MainWindow.cpp~" line="1117"/>
+        <location filename="../MainWindow.cpp~" line="1118"/>
+        <location filename="../MainWindow.cpp~" line="1119"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML-tiedostot (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1042"/>
+        <location filename="../MainWindow.cpp" line="1109"/>
+        <location filename="../MainWindow.cpp~" line="1109"/>
         <source>OPF files (*.opf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1043"/>
-        <location filename="../MainWindow.cpp.keep" line="867"/>
-        <source>Text files (*.txt)</source>
-        <translation>Tekstitiedostot (*.txt)</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp" line="1044"/>
+        <location filename="../MainWindow.cpp" line="1110"/>
         <location filename="../MainWindow.cpp.keep" line="868"/>
+        <location filename="../MainWindow.cpp~" line="1110"/>
         <source>All files (*.*)</source>
         <translation>Kaikki tiedostot (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1255"/>
+        <location filename="../MainWindow.cpp" line="1321"/>
         <location filename="../MainWindow.cpp.keep" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1321"/>
         <source>Save File</source>
         <translation>Tallenna tiedosto</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1290"/>
-        <location filename="../MainWindow.cpp" line="1291"/>
-        <location filename="../MainWindow.cpp" line="1303"/>
-        <location filename="../MainWindow.cpp" line="1304"/>
+        <location filename="../MainWindow.cpp" line="1356"/>
+        <location filename="../MainWindow.cpp" line="1357"/>
+        <location filename="../MainWindow.cpp" line="1369"/>
+        <location filename="../MainWindow.cpp" line="1370"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
         <location filename="../MainWindow.cpp.keep" line="1060"/>
         <location filename="../MainWindow.cpp.keep" line="1072"/>
         <location filename="../MainWindow.cpp.keep" line="1073"/>
+        <location filename="../MainWindow.cpp~" line="1356"/>
+        <location filename="../MainWindow.cpp~" line="1357"/>
+        <location filename="../MainWindow.cpp~" line="1369"/>
+        <location filename="../MainWindow.cpp~" line="1370"/>
         <source>File Save-As Failed!</source>
         <translation>Tallenna nimellä -toiminto epäonnistui!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1290"/>
+        <location filename="../MainWindow.cpp" line="1356"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
+        <location filename="../MainWindow.cpp~" line="1356"/>
         <source>is not writeable</source>
         <translation>ei ole kirjoitettavissa</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1299"/>
-        <location filename="../MainWindow.cpp" line="1329"/>
+        <location filename="../MainWindow.cpp" line="1365"/>
+        <location filename="../MainWindow.cpp" line="1395"/>
         <location filename="../MainWindow.cpp.keep" line="1068"/>
         <location filename="../MainWindow.cpp.keep" line="1098"/>
+        <location filename="../MainWindow.cpp~" line="1365"/>
+        <location filename="../MainWindow.cpp~" line="1395"/>
         <source>File Saved</source>
         <translation>Tiedosto tallentui</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1320"/>
-        <location filename="../MainWindow.cpp" line="1322"/>
-        <location filename="../MainWindow.cpp" line="1333"/>
-        <location filename="../MainWindow.cpp" line="1334"/>
+        <location filename="../MainWindow.cpp" line="1386"/>
+        <location filename="../MainWindow.cpp" line="1388"/>
+        <location filename="../MainWindow.cpp" line="1399"/>
+        <location filename="../MainWindow.cpp" line="1400"/>
         <location filename="../MainWindow.cpp.keep" line="1089"/>
         <location filename="../MainWindow.cpp.keep" line="1091"/>
         <location filename="../MainWindow.cpp.keep" line="1102"/>
         <location filename="../MainWindow.cpp.keep" line="1103"/>
+        <location filename="../MainWindow.cpp~" line="1386"/>
+        <location filename="../MainWindow.cpp~" line="1388"/>
+        <location filename="../MainWindow.cpp~" line="1399"/>
+        <location filename="../MainWindow.cpp~" line="1400"/>
         <source>File Save Failed!</source>
         <translation>Tiedoston tallennus epäonnistui!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1321"/>
+        <location filename="../MainWindow.cpp" line="1387"/>
         <location filename="../MainWindow.cpp.keep" line="1090"/>
+        <location filename="../MainWindow.cpp~" line="1387"/>
         <source>does not exist or is not writeable</source>
         <translation>ei ole olemassa tai ei ole kirjoitettavissa</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1382"/>
+        <location filename="../MainWindow.cpp" line="1448"/>
         <location filename="../MainWindow.cpp.keep" line="1147"/>
+        <location filename="../MainWindow.cpp~" line="1448"/>
         <source>File Opened</source>
         <translation>Tiedosto avautui</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1386"/>
+        <location filename="../MainWindow.cpp" line="1452"/>
         <location filename="../MainWindow.cpp.keep" line="1152"/>
+        <location filename="../MainWindow.cpp~" line="1452"/>
         <source>File Open Failed!</source>
         <translation>Tiedoston avaus epäonnistui!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1409"/>
+        <location filename="../MainWindow.cpp" line="1475"/>
         <location filename="../MainWindow.cpp.keep" line="1175"/>
+        <location filename="../MainWindow.cpp~" line="1475"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Leikepöytä sisältää HTML-muotoilua</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1410"/>
+        <location filename="../MainWindow.cpp" line="1476"/>
         <location filename="../MainWindow.cpp.keep" line="1176"/>
+        <location filename="../MainWindow.cpp~" line="1476"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Haluatko liittää leikepöydältä sisältöä pelkkänä tekstinä?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1550"/>
+        <location filename="../MainWindow.cpp" line="1547"/>
+        <location filename="../MainWindow.cpp~" line="1547"/>
+        <source>You must select text before inserting a new id.</source>
+        <translation>Valitse teksti ennen uuden tunnisteen määrittelemistä.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1560"/>
+        <location filename="../MainWindow.cpp~" line="1560"/>
+        <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
+        <translation>Tunniste on virheellinen. Tunnisteen pitää alkaa kirjaimella, ja siinä saa olla kirjaimia, numeroita ja merkkejä ”_:-.”.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <source>You cannot insert an id at this position.</source>
+        <translation>Et voi lisätä tähän paikkaan tunnistetta</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1580"/>
+        <location filename="../MainWindow.cpp~" line="1580"/>
+        <source>You must select text before inserting a new link.</source>
+        <translation>Valitse teksti ennen uuden linkin luomista.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
+        <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
+        <translation>Linkki on virheellinen – ei voi sisältää merkkiä ”&lt;” tai ”&gt;”.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
+        <source>You cannot insert a link at this position.</source>
+        <translation>Tähän kohtaan ei voi lisätä linkkiä.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp~" line="1612"/>
+        <source>Insert File</source>
+        <translation>Lisää tiedosto</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1655"/>
+        <location filename="../MainWindow.cpp~" line="1655"/>
+        <source>You cannot insert a media file at this position.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1739"/>
         <location filename="../MainWindow.cpp.keep" line="1338"/>
+        <location filename="../MainWindow.cpp~" line="1739"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Haluatko tallentaa muutokset ennen tämän tiedoston päälle kirjoittamista?</translation>
     </message>
@@ -1087,6 +1224,11 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <location filename="../MainWindow.cpp.keep" line="727"/>
         <source>Do you want to save your changes before closing?</source>
         <translation>Haluatko tallentaa tekemäsi muutokset ennen sulkemista?</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp.keep" line="867"/>
+        <source>Text files (*.txt)</source>
+        <translation>Tekstitiedostot (*.txt)</translation>
     </message>
 </context>
 <context>
@@ -1115,7 +1257,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../OPFReader.cpp" line="46"/>
+        <location filename="../OPFReader.cpp" line="58"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
         <translation>OPF-tiedostoa ei voi lukea.
@@ -1139,42 +1281,42 @@ Rivi: %1 Sarake %2 - %3</translation>
         <translation>Sivunmuokkaustoiminto joutuu sulkemaan itsensä.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="642"/>
+        <location filename="../Utility.cpp" line="798"/>
         <source>About PageEdit</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="647"/>
+        <location filename="../Utility.cpp" line="803"/>
         <source>Version</source>
         <translation>Versio</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="648"/>
+        <location filename="../Utility.cpp" line="804"/>
         <source>Build Date</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="649"/>
+        <location filename="../Utility.cpp" line="805"/>
         <source>Build Time</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="650"/>
+        <location filename="../Utility.cpp" line="806"/>
         <source>Qt Runtime Version</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="651"/>
+        <location filename="../Utility.cpp" line="807"/>
         <source>Qt Compiled Version</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="652"/>
+        <location filename="../Utility.cpp" line="808"/>
         <source>System</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="653"/>
+        <location filename="../Utility.cpp" line="809"/>
         <source>Architecture</source>
         <translation type="unfinished"/>
     </message>
@@ -1211,6 +1353,155 @@ Rivi: %1 Sarake %2 - %3</translation>
     </message>
 </context>
 <context>
+    <name>SelectFiles</name>
+    <message>
+        <location filename="../SelectFiles.ui" line="14"/>
+        <source>Insert File</source>
+        <translation>Lisää tiedosto</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="46"/>
+        <source>List only the file names which contain the text you enter.</source>
+        <translation>Näytä vain ne tiedostonimet, jotka sisältävät annetun tekstin.</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="49"/>
+        <source>Filter:</source>
+        <translation>Suodatin:</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="118"/>
+        <source>Thumbnail size:</source>
+        <translation>Pienoiskuvan koko:</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="111"/>
+        <location filename="../SelectFiles.cpp~" line="111"/>
+        <source>All</source>
+        <translation>Kaikki</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="112"/>
+        <location filename="../SelectFiles.cpp~" line="112"/>
+        <source>Images</source>
+        <translation>Kuvat</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="113"/>
+        <location filename="../SelectFiles.cpp~" line="113"/>
+        <source>Video</source>
+        <translation>Video</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="114"/>
+        <location filename="../SelectFiles.cpp~" line="114"/>
+        <source>Audio</source>
+        <translation>Audio</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="153"/>
+        <location filename="../SelectFiles.cpp~" line="153"/>
+        <source>Media Files In the Book</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="156"/>
+        <location filename="../SelectFiles.cpp~" line="156"/>
+        <source>Thumbnails</source>
+        <translation>Pienoiskuvat</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="316"/>
+        <location filename="../SelectFiles.cpp~" line="316"/>
+        <source>shades</source>
+        <translation>sävyä</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="316"/>
+        <location filename="../SelectFiles.cpp~" line="316"/>
+        <source>colors</source>
+        <translation>väriä</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="317"/>
+        <location filename="../SelectFiles.cpp~" line="317"/>
+        <source>Grayscale</source>
+        <translation>Harmaasävy</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="317"/>
+        <location filename="../SelectFiles.cpp~" line="317"/>
+        <source>Color</source>
+        <translation>Väri</translation>
+    </message>
+</context>
+<context>
+    <name>SelectHyperlink</name>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="14"/>
+        <source>Select Target</source>
+        <translation>Valitse kohde</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="22"/>
+        <source>List only the entries that match the text you enter.</source>
+        <translation>Listaa vain kohdat, jotka sisältävät annetun tekstin.</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="25"/>
+        <source>Filter:</source>
+        <translation>Suodatin:</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="58"/>
+        <source>Enter the target URL for this hyperlink.  You can select or 
+double click on existing destinations in your book from the list above.</source>
+        <translation>Ilmoita tämän linkin kohde. Voit valita kirjassa olevan kohteen
+napsauttamalla sitä yllä olevassa listassa.</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="62"/>
+        <source>Target:</source>
+        <translation>Kohde:</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.cpp" line="94"/>
+        <source>Targets in the Book</source>
+        <translation>Kirjassa olevat kohteet:</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.cpp" line="95"/>
+        <source>Text</source>
+        <translation>Teksti</translation>
+    </message>
+</context>
+<context>
+    <name>SelectId</name>
+    <message>
+        <location filename="../SelectId.ui" line="14"/>
+        <source>Insert ID </source>
+        <translation>Liitä tunniste</translation>
+    </message>
+    <message>
+        <location filename="../SelectId.ui" line="22"/>
+        <source>Enter an ID name to use as a destination for hyperlinks, notes, and TOC entries.
+
+The dropdown box shows existing ID names in the current file.
+
+ID names must be unique and start with a letter.</source>
+        <translation>Kirjoita tunnisteen nimi, jota käytetään kohteena linkeissä ja sisällysluettelossa.
+
+Pudotusvalikossa näkyvät ne tunnisteiden nimet, jotka jo ovat käytössä nykyisessä tiedostossa.
+
+Tunnisteiden nimien tulee olla yksikäsitteisiä, ja niiden pitää alkaa kirjaimella.</translation>
+    </message>
+    <message>
+        <location filename="../SelectId.ui" line="29"/>
+        <source>ID:</source>
+        <translation>Tunnus:</translation>
+    </message>
+</context>
+<context>
     <name>Utility</name>
     <message>
         <location filename="../Utility.cpp" line="575"/>
@@ -1230,17 +1521,17 @@ Haluatko jatkaa käyttäen antamaasi tiedostonimeä?</translation>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="162"/>
+        <location filename="../WebViewEdit.cpp" line="167"/>
         <source>No suggestions</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="174"/>
+        <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Check Spelling</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="183"/>
+        <location filename="../WebViewEdit.cpp" line="188"/>
         <source>Select Language</source>
         <translation type="unfinished"/>
     </message>

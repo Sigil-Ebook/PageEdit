@@ -1,107 +1,107 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ko" version="2.1">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Appearance</translation>
+        <translation>모양</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="24"/>
         <source>Fonts/Sizes</source>
-        <translation>Fonts/Sizes</translation>
+        <translation>글꼴/크기</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="30"/>
         <source>Preview:</source>
-        <translation>Preview:</translation>
+        <translation>미리보기:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="39"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</translation>
+        <translation>CSS에 글꼴이 지정되지 않은 경우 다음 글꼴을 사용하여 PageEdit 내에 표시합니다. 이 글꼴은 실제 전자 책에서 사용되지 않습니다.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="59"/>
         <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation>Default font size to be used for WebView if no font-size specified in your CSS</translation>
+        <translation>CSS에서 글꼴 크기가 지정되지 않은 경우 WebView에서 사용하는 기본 글자 크기</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="62"/>
         <location filename="../PAppearanceWidget.ui" line="186"/>
         <source>Font Size:</source>
-        <translation>Font Size:</translation>
+        <translation>글자 크기:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="92"/>
         <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if no font-family specified in your CSS</translation>
+        <translation>CSS에서 font-family가 지정되지 않은 경우 WebView에서 사용하는 기본 font family</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="95"/>
         <location filename="../PAppearanceWidget.ui" line="219"/>
         <source>Standard Font:</source>
-        <translation>Standard Font:</translation>
+        <translation>기본 글꼴:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="105"/>
         <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if a serif font-family specified in your CSS</translation>
+        <translation>CSS에서 명조 계열 글꼴(serif) font-family가 지정되지 않은 경우 WebView에서 사용하는 기본 font family</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Serif Font:</source>
-        <translation>Serif Font:</translation>
+        <translation>명조 계열 글꼴 :</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="118"/>
         <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</translation>
+        <translation>CSS에서 고딕 계열(sans-serif) 글꼴 font-family가 지정되지 않은 경우 WebView에서 사용하는 기본 font family</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="121"/>
         <source>Sans-Serif Font:</source>
-        <translation>Sans-Serif Font:</translation>
+        <translation>고딕 계열(Sans-Serif) 글꼴:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="169"/>
         <source>Insert Special Characters:</source>
-        <translation>Insert Special Characters:</translation>
+        <translation>특수 문자 삽입 :</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="183"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Font size to be used for Insert Special Characters window</translation>
+        <translation>특수 문자 삽입 창에서 사용할 글자 크기</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="216"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Font family to be used for Insert Special Characters window</translation>
+        <translation>특수 문자 삽입 창에서 사용할 글꼴 모음</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Icons</source>
-        <translation>Icons</translation>
+        <translation>아이콘</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>Icon Size</source>
-        <translation>Icon Size</translation>
+        <translation>아이콘 크기</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="275"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Adjust the size of the icons in the main menu.</translation>
+        <translation>메인 메뉴 아이콘 크기 조절</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="351"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Reset all fonts and colors to the default values</translation>
+        <translation>모든 글꼴과 색상을 기본값으로 초기화합니다</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="354"/>
         <source>Reset All</source>
-        <translation>Reset All</translation>
+        <translation>모두 초기화</translation>
     </message>
 </context>
 <context>
@@ -109,121 +109,119 @@
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>General Settings</translation>
+        <translation>일반 설정</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>You must restart PageEdit after changing the User Interface language.
-
-If a translation for specific word or phrase is not available it will be displayed in English.</translation>
+        <translation>사용자 인터페이스 언어를 변경 한 후에는 반드시 PageEdit를 다시 시작해야합니다.  번역되지 않은 특정 단어나 구문은 영어로 표시됩니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>User Interface Language:</translation>
+        <translation>사용자 인터페이스 언어:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Select from installed spellcheck dictionaries.</translation>
+        <translation>설치된 맞춤법 검사 사전에서 선택</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Spellcheck Dictionary:</translation>
+        <translation>맞춤법 검사 사전</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Determine if html files are allowed to access non-multimedia remote resources.</translation>
+        <translation>멀티미디어 이외의 원격 리소스를 HTML 파일에 사용할 수 있는지 설정합니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation> Control access by html files to non-multimedia remote resources.</translation>
+        <translation>멀티미디어 이외의 원격 리소스를 HTML 파일에 사용할 수 있도록 설정</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Check to allow html files to access non-multimedia remote resources.</translation>
+        <translation>체크를 하면 모든 형태의 원격 리소스를 HTML 파일에 사용할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Html files may access all remote resources types.</translation>
+        <translation>HTML 파일에서 모든 형태의 원격 리소스 허용</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Determine if javascript is allowed to be used by html files</translation>
+        <translation>HTML 파일에서 자바 스크립트를 사용할 수 있는지 설정할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation> Control use of javascript by html files.</translation>
+        <translation>HTML 파일에서 자바 스크립트 사용 설정</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Check to allow html files to use javascript.</translation>
+        <translation>체크를 하면 HTML 파일에서 자바스크립트를 사용할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Html files may use javascript.</translation>
+        <translation>HTML에서 자바스크립트 허용</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</translation>
+        <translation>페이지 에디터에서 코드보기 상에서 연속으로 입력된 2개 이상의 공백 글자를 어떻게 표현할지 결정합니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Handle multiple white space layout using:</translation>
+        <translation>연속된 공백 표시 방식 선택</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Use CSS white-space: pre-wrap</translation>
+        <translation>CSS white-space: pre-wrap(공백 보존) 방식을 사용합니다. 공백 만큼 간격이 벌어지기 때문에 실제 전자책과 다르게 보일 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation>css white-space: pre-wrap</translation>
+        <translation>공백을 그대로 표시(css white-space: pre-wrap)</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Use non-breaking spaces as needed</translation>
+        <translation>공백을 하나만 표시하고 나머지는 무시합니다. 대부분의 전자책 뷰어에서 동일하게 보입니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>non-breaking spaces as needed</translation>
+        <translation>공백 무시(non-breaking spaces and needed)</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Determine if Prettify is used when saving</translation>
+        <translation>저장시 태그 정리(Prettify) 사용할 것인지 선택합니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation> Use Prettify to reformat the xhtml when saving.</translation>
+        <translation>xhtml 저장 시 코드 정리(Prettify) 사용</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Check to reformat with Prettify when saving xhtml files.</translation>
+        <translation>체크를 하면 xhtml을 저장할 때 Prettify 방식으로 태그를 정리합니다.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Use Prettify to reformat xhtml when saving.</translation>
+        <translation>xhtml 저장시 코드 정리(Prettify) 사용</translation>
     </message>
 </context>
 <context>
@@ -231,12 +229,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Inspector.cpp" line="54"/>
         <source>Inspect Page or Element</source>
-        <translation>Inspect Page or Element</translation>
+        <translation>페이지 또는 요소 검사</translation>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="94"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>The Inspector functionality is not supported before Qt 5.11</translation>
+        <translation>검사 기능은 Qt 5.11 이전에는 지원되지 않습니다.</translation>
     </message>
 </context>
 <context>
@@ -266,57 +264,57 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1655"/>
         <location filename="../MainWindow.cpp~" line="1738"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>페이지 에디터</translation>
     </message>
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;File</translation>
+        <translation>파일</translation>
     </message>
     <message>
         <location filename="../main.ui" line="74"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Edit</translation>
+        <translation>편집</translation>
     </message>
     <message>
         <location filename="../main.ui" line="87"/>
         <source>&amp;Find</source>
-        <translation>&amp;Find</translation>
+        <translation>&amp;찾기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="94"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Insert</translation>
+        <translation>삽입(&amp;I)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="109"/>
         <source>For&amp;mat</source>
-        <translation>For&amp;mat</translation>
+        <translation>서식(&amp;m)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="114"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Heading</translation>
+        <translation>제목 스타일(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="147"/>
         <source>&amp;View</source>
-        <translation>&amp;View</translation>
+        <translation>보기(&amp;V)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="156"/>
         <source>Inspector</source>
-        <translation>Inspector</translation>
+        <translation>검사</translation>
     </message>
     <message>
         <location filename="../main.ui" line="172"/>
         <source>File</source>
-        <translation>File</translation>
+        <translation>파일</translation>
     </message>
     <message>
         <location filename="../main.ui" line="186"/>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation>편집</translation>
     </message>
     <message>
         <location filename="../main.ui" line="204"/>
@@ -327,63 +325,63 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="217"/>
         <source>Insert</source>
-        <translation>Insert</translation>
+        <translation>삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="236"/>
         <source>Inspect</source>
-        <translation>Inspect</translation>
+        <translation>검사</translation>
     </message>
     <message>
         <location filename="../main.ui" line="249"/>
         <location filename="../main.ui" line="1004"/>
         <source>Find</source>
-        <translation>Find</translation>
+        <translation>찾기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="262"/>
         <source>Heading</source>
-        <translation>Heading</translation>
+        <translation>제목 스타일</translation>
     </message>
     <message>
         <location filename="../main.ui" line="276"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>set Heading Level of Selected Text</translation>
+        <translation>선택한 텍스트의 제목 수준 설정</translation>
     </message>
     <message>
         <location filename="../main.ui" line="290"/>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation>서식</translation>
     </message>
     <message>
         <location filename="../main.ui" line="308"/>
         <source>Align</source>
-        <translation>Align</translation>
+        <translation>정렬</translation>
     </message>
     <message>
         <location filename="../main.ui" line="324"/>
         <source>Indent</source>
-        <translation>Indent</translation>
+        <translation>들여쓰기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="338"/>
         <source>Navigate</source>
-        <translation>Navigate</translation>
+        <translation>목차</translation>
     </message>
     <message>
         <location filename="../main.ui" line="348"/>
         <source>Navigation List</source>
-        <translation>Navigation List</translation>
+        <translation>목차 목록</translation>
     </message>
     <message>
         <location filename="../main.ui" line="364"/>
         <source>&amp;Save</source>
-        <translation>&amp;Save</translation>
+        <translation>저장(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="367"/>
         <source>Save the current file.</source>
-        <translation>Save the current file.</translation>
+        <translation>파일 저장</translation>
     </message>
     <message>
         <location filename="../main.ui" line="370"/>
@@ -393,12 +391,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="376"/>
         <source>Save &amp;As...</source>
-        <translation>Save &amp;As...</translation>
+        <translation>다른 이름으로 저장하기(&amp;A)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="379"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Save the current file with a different filename.</translation>
+        <translation>다른 이름으로 저장</translation>
     </message>
     <message>
         <location filename="../main.ui" line="382"/>
@@ -408,32 +406,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="392"/>
         <source>Cu&amp;t</source>
-        <translation>Cu&amp;t</translation>
+        <translation>잘라내기(&amp;t)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="395"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Cuts the selected text from the document and puts it on the clipboard.</translation>
+        <translation>선택한 텍스트를 문서에서 잘라내어 클립 보드에 저장합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="405"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Paste</translation>
+        <translation>붙여넣기(&amp;P)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="408"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Pastes the content from the clipboard into the file.</translation>
+        <translation>클립 보드의 내용을 파일에 붙여 넣습니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="418"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Undo</translation>
+        <translation>되돌리기(&amp;U)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="421"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Reverts the changes of the previous operation.</translation>
+        <translation>이전에 작업한 변경 사항을 되돌립니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="424"/>
@@ -443,12 +441,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="434"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Redo</translation>
+        <translation>다시 실행(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="437"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Restores the changes reverted by the previous Undo action.</translation>
+        <translation>실행 취소로 되돌려 진 이전 변경 내용을 복원합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="440"/>
@@ -458,42 +456,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="450"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Copy</translation>
+        <translation>복사(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="453"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Copies the selected text and puts it on the clipboard.</translation>
+        <translation>선택한 텍스트를 복사하여 클립 보드에 저장합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="466"/>
         <source>Align &amp;Left</source>
-        <translation>Align &amp;Left</translation>
+        <translation>왼쪽 정렬(&amp;L)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="469"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Align the paragraph to the left.</translation>
+        <translation>단락에 왼쪽 정렬 스타일을 적용합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="483"/>
         <source>Align &amp;Right</source>
-        <translation>Align &amp;Right</translation>
+        <translation>오른쪽 정렬(&amp;R)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="486"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Align the paragraph to the right.</translation>
+        <translation>단락에 오른쪽 정렬 스타일을 적용합니다. </translation>
     </message>
     <message>
         <location filename="../main.ui" line="499"/>
         <source>&amp;Center</source>
-        <translation>&amp;Center</translation>
+        <translation>가운데 정렬(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="502"/>
         <source>Center the paragraph.</source>
-        <translation>Center the paragraph.</translation>
+        <translation>단락에 가운데 정렬 스타일을 적요합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="505"/>
@@ -503,12 +501,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="518"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Justify</translation>
+        <translation>양쪽 맞춤(&amp;J)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="521"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Align the paragraph to both the left and right margins.</translation>
+        <translation>단락에 양쪽 정렬 스타일을 적용합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="524"/>
@@ -518,12 +516,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="537"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Bold</translation>
+        <translation>진하게</translation>
     </message>
     <message>
         <location filename="../main.ui" line="540"/>
         <source>Make the selected text bold.</source>
-        <translation>Make the selected text bold.</translation>
+        <translation>선택한 텍스트에 진하게 스타일을 적용합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="543"/>
@@ -533,12 +531,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="556"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Italic</translation>
+        <translation>기울임꼴</translation>
     </message>
     <message>
         <location filename="../main.ui" line="559"/>
         <source>Make the selected text italic.</source>
-        <translation>Make the selected text italic.</translation>
+        <translation>선택한 텍스에 이탤릭체 스타일을 적용합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="562"/>
@@ -548,12 +546,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="572"/>
         <source>&amp;Open...</source>
-        <translation>&amp;Open...</translation>
+        <translation>열기...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="575"/>
         <source>Open a file from disk.</source>
-        <translation>Open a file from disk.</translation>
+        <translation>저장된 파일을 엽니 다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="578"/>
@@ -563,12 +561,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="592"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Underline</translation>
+        <translation>밑줄</translation>
     </message>
     <message>
         <location filename="../main.ui" line="595"/>
         <source>Underline the selected text.</source>
-        <translation>Underline the selected text.</translation>
+        <translation>선택한 텍스트에 밑줄 스타일을 적용합니다. </translation>
     </message>
     <message>
         <location filename="../main.ui" line="598"/>
@@ -578,12 +576,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="608"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Quit</translation>
+        <translation>나가기(&amp;Q)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="611"/>
         <source>Quit</source>
-        <translation>Quit</translation>
+        <translation>나가기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="614"/>
@@ -593,32 +591,32 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="624"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Special Character...</translation>
+        <translation>특수 문자(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="627"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Select a character to insert into your text.</translation>
+        <translation>텍스트에 삽입 할 문자를 선택하십시오.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="640"/>
         <source>&amp;Numbered List</source>
-        <translation>&amp;Numbered List</translation>
+        <translation>번호 매기기 목록</translation>
     </message>
     <message>
         <location filename="../main.ui" line="643"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Create a numbered list from selection.</translation>
+        <translation>선택 항목을 번호 매기기 목록으로 만듭니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="656"/>
         <source>Bulle&amp;ted List</source>
-        <translation>Bulle&amp;ted List</translation>
+        <translation>글머리 기호 목록</translation>
     </message>
     <message>
         <location filename="../main.ui" line="659"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Create a bulleted list from selection.</translation>
+        <translation>선택 항목을 글머리 기호 목록으로 만듭니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="662"/>
@@ -628,42 +626,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="675"/>
         <source>Stri&amp;kethrough</source>
-        <translation>Stri&amp;kethrough</translation>
+        <translation>취소선(&amp;K)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="678"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Draw a line through the selected text.</translation>
+        <translation>선택한 텍스트에 취소선 스타일을 적용합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="691"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Subscript</translation>
+        <translation>아래 첨자(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="694"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Set the selected text slightly smaller and below the normal line.</translation>
+        <translation>선택한 텍스트에 아래첨자 스타일을 적용합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="707"/>
         <source>Su&amp;perscript</source>
-        <translation>Su&amp;perscript</translation>
+        <translation>위첨자</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Set the selected text slightly smaller and above the normal line.</translation>
+        <translation>선택한 텍스트에 위첨자 스타일을 적용합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="721"/>
         <source>Zoom &amp;In</source>
-        <translation>Zoom &amp;In</translation>
+        <translation>확대</translation>
     </message>
     <message>
         <location filename="../main.ui" line="724"/>
         <source>Zoom In</source>
-        <translation>Zoom In</translation>
+        <translation>확대</translation>
     </message>
     <message>
         <location filename="../main.ui" line="727"/>
@@ -673,12 +671,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="738"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zoom &amp;Out</translation>
+        <translation>축소</translation>
     </message>
     <message>
         <location filename="../main.ui" line="741"/>
         <source>Zoom Out</source>
-        <translation>Zoom Out</translation>
+        <translation>축소</translation>
     </message>
     <message>
         <location filename="../main.ui" line="744"/>
@@ -688,12 +686,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="755"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>Incre&amp;ase Indent</translation>
+        <translation>들여쓰기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="758"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Increase the indent level of the paragraph.</translation>
+        <translation>문단의 들여쓰기 수준을 증가시킵니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="761"/>
@@ -703,12 +701,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="771"/>
         <source>&amp;Decrease Indent</source>
-        <translation>&amp;Decrease Indent</translation>
+        <translation>둘여쓰기 취소</translation>
     </message>
     <message>
         <location filename="../main.ui" line="774"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Decrease the indent level of the paragraph.</translation>
+        <translation>문단의 들여쓰기 수준을 감소시킵니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="777"/>
@@ -718,12 +716,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="787"/>
         <source>Split &amp;Marker</source>
-        <translation>Split &amp;Marker</translation>
+        <translation>나눌 위치 표시</translation>
     </message>
     <message>
         <location filename="../main.ui" line="790"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Insert Sigil split file marker</translation>
+        <translation>파일을 나눌 위치를 표시합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="793"/>
@@ -733,7 +731,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="799"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Preferences...</translation>
+        <translation>설정(&amp;P)...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="802"/>
@@ -743,12 +741,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="808"/>
         <source>&amp;Zoom Reset</source>
-        <translation>&amp;Zoom Reset</translation>
+        <translation>줌 리셋(&amp;Z)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="811"/>
         <source>Zoom Reset</source>
-        <translation>Zoom Reset</translation>
+        <translation>확대/축소 다시 설정</translation>
     </message>
     <message>
         <location filename="../main.ui" line="814"/>
@@ -763,7 +761,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="830"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Format paragraph as a level 1 heading.</translation>
+        <translation>h1 제목으로 단락 서식을 지정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="833"/>
@@ -778,7 +776,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="849"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Format paragraph as a level 2 heading.</translation>
+        <translation>h2 제목으로 단락 서식을 지정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="852"/>
@@ -793,7 +791,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="868"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Format paragraph as a level 3 heading.</translation>
+        <translation>h3 제목으로 단락 서식을 지정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="871"/>
@@ -808,7 +806,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="888"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Format paragraph as a level 4 heading.</translation>
+        <translation>h4 제목으로 단락 서식을 지정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="891"/>
@@ -823,7 +821,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="907"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Format paragraph as a level 5 heading.</translation>
+        <translation>h5 제목으로 단락 서식을 지정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="910"/>
@@ -838,7 +836,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="926"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Format paragraph as a level 6 heading.</translation>
+        <translation>h6 제목으로 단락 서식을 지정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="929"/>
@@ -848,12 +846,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="943"/>
         <source>&amp;Normal</source>
-        <translation>&amp;Normal</translation>
+        <translation>&amp;기본문단</translation>
     </message>
     <message>
         <location filename="../main.ui" line="946"/>
         <source>ormat paragraph as a normal paragraph.</source>
-        <translation>ormat paragraph as a normal paragraph.</translation>
+        <translation>기본 문단(p)으로 지정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="949"/>
@@ -863,22 +861,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="959"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Preserve Existing Attributes</translation>
+        <translation>&amp;기존 속성 유지</translation>
     </message>
     <message>
         <location filename="../main.ui" line="962"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>When applying this style, preserve any existing attributes on the tag</translation>
+        <translation>이 스타일을 적용할때 태그에 있는 기존의 특성(attributes)은 보존됩니다</translation>
     </message>
     <message>
         <location filename="../main.ui" line="972"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Select All</translation>
+        <translation>&amp;모두 선택</translation>
     </message>
     <message>
         <location filename="../main.ui" line="975"/>
         <source>Select all text in the document.</source>
-        <translation>Select all text in the document.</translation>
+        <translation>문서 내의 모든 텍스트를 선택합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="978"/>
@@ -888,12 +886,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="988"/>
         <source>&amp;Inspector</source>
-        <translation>&amp;Inspector</translation>
+        <translation>코드 검사기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="991"/>
         <source>Inspect the page.</source>
-        <translation>Inspect the page.</translation>
+        <translation>페이지 검사</translation>
     </message>
     <message>
         <location filename="../main.ui" line="994"/>
@@ -903,7 +901,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1007"/>
         <source>Find text in the page</source>
-        <translation>Find text in the page</translation>
+        <translation>페이지 안에서 찾기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1010"/>
@@ -913,77 +911,77 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1023"/>
         <source>Next XHtml File</source>
-        <translation>Next XHtml File</translation>
+        <translation>다음 XHtml 파일</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1026"/>
         <source>Next file in navigation list</source>
-        <translation>Next file in navigation list</translation>
+        <translation>목차 목록의 다음 파일</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1039"/>
         <source>Previous XHtml File</source>
-        <translation>Previous XHtml File</translation>
+        <translation>이전 XHtml 파일</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1042"/>
         <source>Previous file in navigation list</source>
-        <translation>Previous file in navigation list</translation>
+        <translation>목차 목록의 이전 파일</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1058"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Toggle between Edit and Preview Modes.</translation>
+        <translation>편집, 미리보기 모드 전환</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1068"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation>페이지 에디터 정보</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1071"/>
         <source>Show information about PageEdit.</source>
-        <translation>Show information about PageEdit.</translation>
+        <translation>페이지 에디터 정보 보기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1081"/>
         <source>Back to Last Link</source>
-        <translation>Back to Last Link</translation>
+        <translation>마지막 링크로 돌아가기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1084"/>
         <source>Return from the last link taken</source>
-        <translation>Return from the last link taken</translation>
+        <translation>마지막으로 연결한 링크에서 돌아오기</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1094"/>
         <source>I&amp;D...</source>
-        <translation>I&amp;D...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1097"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation>Insert or edit an anchor with an ID name to use as a link target.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1107"/>
         <source>&amp;Link...</source>
-        <translation>&amp;Link...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1110"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation>Insert or edit an anchor with a hyperlink to a target.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1120"/>
         <source>&amp;File...</source>
-        <translation>&amp;File...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1123"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation>Select existing image, video or audio files from your book to insert into the text.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1126"/>
@@ -994,25 +992,25 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="647"/>
         <location filename="../MainWindow.cpp~" line="647"/>
         <source>File load failed</source>
-        <translation>File load failed</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="648"/>
         <location filename="../MainWindow.cpp~" line="648"/>
         <source>File Load Failed</source>
-        <translation>File Load Failed</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="735"/>
         <location filename="../MainWindow.cpp~" line="735"/>
         <source>mode: Preview</source>
-        <translation>mode: Preview</translation>
+        <translation>mode: 미리보기</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="737"/>
         <location filename="../MainWindow.cpp~" line="737"/>
         <source>mode: Edit</source>
-        <translation>mode: Edit</translation>
+        <translation>mode: 편집</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="901"/>
@@ -1020,7 +1018,7 @@ If a translation for specific word or phrase is not available it will be display
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Are you sure you want to open this link in your browser?
+        <translation>브라우저에서 이 링크를 열겠습니까?
 
 %1</translation>
     </message>
@@ -1028,14 +1026,14 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="961"/>
         <location filename="../MainWindow.cpp~" line="961"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Do you want to save your changes before leaving?</translation>
+        <translation>종료하기 전에 변경 사항을 저장하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="978"/>
         <location filename="../MainWindow.cpp.keep" line="721"/>
         <location filename="../MainWindow.cpp~" line="978"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit is closing...</translation>
+        <translation>페이지 에디터를 종료합니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1106"/>
@@ -1057,27 +1055,27 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1118"/>
         <location filename="../MainWindow.cpp~" line="1119"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>HTML files (*.htm *.html *.xhtml)</translation>
+        <translation>HTML 파일 (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1109"/>
         <location filename="../MainWindow.cpp~" line="1109"/>
         <source>OPF files (*.opf)</source>
-        <translation>OPF files (*.opf)</translation>
+        <translation>OPF 파일 (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1110"/>
         <location filename="../MainWindow.cpp.keep" line="868"/>
         <location filename="../MainWindow.cpp~" line="1110"/>
         <source>All files (*.*)</source>
-        <translation>All files (*.*)</translation>
+        <translation>모든 파일 (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1321"/>
         <location filename="../MainWindow.cpp.keep" line="1024"/>
         <location filename="../MainWindow.cpp~" line="1321"/>
         <source>Save File</source>
-        <translation>Save File</translation>
+        <translation>파일 저장</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1356"/>
@@ -1093,14 +1091,14 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1369"/>
         <location filename="../MainWindow.cpp~" line="1370"/>
         <source>File Save-As Failed!</source>
-        <translation>File Save-As Failed!</translation>
+        <translation>다른이름으로 파일 저장 실패!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1356"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
         <location filename="../MainWindow.cpp~" line="1356"/>
         <source>is not writeable</source>
-        <translation>is not writeable</translation>
+        <translation>저장할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1365"/>
@@ -1110,7 +1108,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1365"/>
         <location filename="../MainWindow.cpp~" line="1395"/>
         <source>File Saved</source>
-        <translation>File Saved</translation>
+        <translation>파일 저장</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1386"/>
@@ -1126,107 +1124,107 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp~" line="1399"/>
         <location filename="../MainWindow.cpp~" line="1400"/>
         <source>File Save Failed!</source>
-        <translation>File Save Failed!</translation>
+        <translation>파일 저장 실패</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1387"/>
         <location filename="../MainWindow.cpp.keep" line="1090"/>
         <location filename="../MainWindow.cpp~" line="1387"/>
         <source>does not exist or is not writeable</source>
-        <translation>does not exist or is not writeable</translation>
+        <translation>존재하지 않거나 저장할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1448"/>
         <location filename="../MainWindow.cpp.keep" line="1147"/>
         <location filename="../MainWindow.cpp~" line="1448"/>
         <source>File Opened</source>
-        <translation>File Opened</translation>
+        <translation>파일을 열었습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1452"/>
         <location filename="../MainWindow.cpp.keep" line="1152"/>
         <location filename="../MainWindow.cpp~" line="1452"/>
         <source>File Open Failed!</source>
-        <translation>File Open Failed!</translation>
+        <translation>파일을 열지 못했습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1475"/>
         <location filename="../MainWindow.cpp.keep" line="1175"/>
         <location filename="../MainWindow.cpp~" line="1475"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Clipboard contains HTML formatting</translation>
+        <translation>클립보드에 HTML 서식이 있습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1476"/>
         <location filename="../MainWindow.cpp.keep" line="1176"/>
         <location filename="../MainWindow.cpp~" line="1476"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Do you want to paste clipboard data as plain text?</translation>
+        <translation>클립보드의 내용을 서식 없는 텍스트로 추가하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1547"/>
         <location filename="../MainWindow.cpp~" line="1547"/>
         <source>You must select text before inserting a new id.</source>
-        <translation>You must select text before inserting a new id.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1560"/>
         <location filename="../MainWindow.cpp~" line="1560"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
-        <translation>ID is invalid - must start with a letter, followed by letter number _ : - or .</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp~" line="1566"/>
         <source>You cannot insert an id at this position.</source>
-        <translation>You cannot insert an id at this position.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1580"/>
         <location filename="../MainWindow.cpp~" line="1580"/>
         <source>You must select text before inserting a new link.</source>
-        <translation>You must select text before inserting a new link.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
         <location filename="../MainWindow.cpp~" line="1593"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
-        <translation>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1601"/>
         <location filename="../MainWindow.cpp~" line="1601"/>
         <source>You cannot insert a link at this position.</source>
-        <translation>You cannot insert a link at this position.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1612"/>
         <location filename="../MainWindow.cpp~" line="1612"/>
         <source>Insert File</source>
-        <translation>Insert File</translation>
+        <translation>파일 삽입</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1655"/>
         <location filename="../MainWindow.cpp~" line="1655"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation>You cannot insert a media file at this position.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1739"/>
         <location filename="../MainWindow.cpp.keep" line="1338"/>
         <location filename="../MainWindow.cpp~" line="1739"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Do you want to save any changes before overwriting this file?</translation>
+        <translation>이 파일을 덮어쓰기 전에 모든 변경사항을 저장하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp.keep" line="727"/>
         <source>Do you want to save your changes before closing?</source>
-        <translation>Do you want to save your changes before closing?</translation>
+        <translation>닫기 전에 변경사항을 저장하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp.keep" line="867"/>
         <source>Text files (*.txt)</source>
-        <translation>Text files (*.txt)</translation>
+        <translation>텍스트 파일 (*.txt)</translation>
     </message>
 </context>
 <context>
@@ -1234,22 +1232,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Preferences</translation>
+        <translation>기본 설정</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="86"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>페이지 에디터</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="86"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Changes will take effect when you restart PageEdit.</translation>
+        <translation>페이지 에디터를 다시 시작하면 변경사항이 반영됩니다.</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="143"/>
         <source>Open Preferences Location</source>
-        <translation>Open Preferences Location</translation>
+        <translation>기본 설정 위치 열기</translation>
     </message>
 </context>
 <context>
@@ -1258,60 +1256,60 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../OPFReader.cpp" line="58"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Unable to read OPF file.
+        <translation>OPF 파일을 읽을 수 없습니다.
 Line: %1 Column %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="364"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Cannot read file %1:
+        <translation>다음 파일을 읽을 수 없습니다 %1:
 %2.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="479"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit has encountered a problem.</translation>
+        <translation>페이지 에디터에 문제가 생겼습니다.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="480"/>
         <source>PageEdit may need to close.</source>
-        <translation>PageEdit may need to close.</translation>
+        <translation>페이지 에디터를 종료해야 합니다.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="798"/>
         <source>About PageEdit</source>
-        <translation>About PageEdit</translation>
+        <translation>페이지 에디터 정보</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="803"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>버전</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="804"/>
         <source>Build Date</source>
-        <translation>Build Date</translation>
+        <translation>배포일</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="805"/>
         <source>Build Time</source>
-        <translation>Build Time</translation>
+        <translation>배포 시간</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="806"/>
         <source>Qt Runtime Version</source>
-        <translation>Qt Runtime Version</translation>
+        <translation>Qt Runtime 버전</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="807"/>
         <source>Qt Compiled Version</source>
-        <translation>Qt Compiled Version</translation>
+        <translation>Qt Compiled 버전</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="808"/>
         <source>System</source>
-        <translation>System</translation>
+        <translation>시스템</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="809"/>
@@ -1324,22 +1322,22 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Search: </translation>
+        <translation>검색:</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Search...</translation>
+        <translation>검색...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>&amp;Match Case</translation>
+        <translation>&amp;일치 여부</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="140"/>
         <source>No results found.</source>
-        <translation>No results found.</translation>
+        <translation>검색 결과 없음</translation>
     </message>
 </context>
 <context>
@@ -1347,7 +1345,7 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Insert Special Character</translation>
+        <translation>특수 문자 삽입</translation>
     </message>
 </context>
 <context>
@@ -1355,82 +1353,82 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.ui" line="14"/>
         <source>Insert File</source>
-        <translation>Insert File</translation>
+        <translation>파일 삽입</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="46"/>
         <source>List only the file names which contain the text you enter.</source>
-        <translation>List only the file names which contain the text you enter.</translation>
+        <translation>입력한 텍스트가 포함된 파일만 보기.</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="49"/>
         <source>Filter:</source>
-        <translation>Filter:</translation>
+        <translation>필터:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="118"/>
         <source>Thumbnail size:</source>
-        <translation>Thumbnail size:</translation>
+        <translation>썸네일 크기:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="111"/>
         <location filename="../SelectFiles.cpp~" line="111"/>
         <source>All</source>
-        <translation>All</translation>
+        <translation>모두</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="112"/>
         <location filename="../SelectFiles.cpp~" line="112"/>
         <source>Images</source>
-        <translation>Images</translation>
+        <translation>이미지</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="113"/>
         <location filename="../SelectFiles.cpp~" line="113"/>
         <source>Video</source>
-        <translation>Video</translation>
+        <translation>비디오</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="114"/>
         <location filename="../SelectFiles.cpp~" line="114"/>
         <source>Audio</source>
-        <translation>Audio</translation>
+        <translation>오디오</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="153"/>
         <location filename="../SelectFiles.cpp~" line="153"/>
         <source>Media Files In the Book</source>
-        <translation>Media Files In the Book</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="156"/>
         <location filename="../SelectFiles.cpp~" line="156"/>
         <source>Thumbnails</source>
-        <translation>Thumbnails</translation>
+        <translation>썸네일</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="316"/>
         <location filename="../SelectFiles.cpp~" line="316"/>
         <source>shades</source>
-        <translation>shades</translation>
+        <translation>그림자</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="316"/>
         <location filename="../SelectFiles.cpp~" line="316"/>
         <source>colors</source>
-        <translation>colors</translation>
+        <translation>색상</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="317"/>
         <location filename="../SelectFiles.cpp~" line="317"/>
         <source>Grayscale</source>
-        <translation>Grayscale</translation>
+        <translation>회색조(Grayscale)</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="317"/>
         <location filename="../SelectFiles.cpp~" line="317"/>
         <source>Color</source>
-        <translation>Color</translation>
+        <translation>색상</translation>
     </message>
 </context>
 <context>
@@ -1438,39 +1436,38 @@ Line: %1 Column %2 - %3</translation>
     <message>
         <location filename="../SelectHyperlink.ui" line="14"/>
         <source>Select Target</source>
-        <translation>Select Target</translation>
+        <translation>대상 선택</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="22"/>
         <source>List only the entries that match the text you enter.</source>
-        <translation>List only the entries that match the text you enter.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="25"/>
         <source>Filter:</source>
-        <translation>Filter:</translation>
+        <translation>필터:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="58"/>
         <source>Enter the target URL for this hyperlink.  You can select or 
 double click on existing destinations in your book from the list above.</source>
-        <translation>Enter the target URL for this hyperlink.  You can select or 
-double click on existing destinations in your book from the list above.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="62"/>
         <source>Target:</source>
-        <translation>Target:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="94"/>
         <source>Targets in the Book</source>
-        <translation>Targets in the Book</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="95"/>
         <source>Text</source>
-        <translation>Text</translation>
+        <translation>텍스트</translation>
     </message>
 </context>
 <context>
@@ -1478,7 +1475,7 @@ double click on existing destinations in your book from the list above.</transla
     <message>
         <location filename="../SelectId.ui" line="14"/>
         <source>Insert ID </source>
-        <translation>Insert ID </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectId.ui" line="22"/>
@@ -1487,11 +1484,7 @@ double click on existing destinations in your book from the list above.</transla
 The dropdown box shows existing ID names in the current file.
 
 ID names must be unique and start with a letter.</source>
-        <translation>Enter an ID name to use as a destination for hyperlinks, notes, and TOC entries.
-
-The dropdown box shows existing ID names in the current file.
-
-ID names must be unique and start with a letter.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectId.ui" line="29"/>
@@ -1504,16 +1497,15 @@ ID names must be unique and start with a letter.</translation>
     <message>
         <location filename="../Utility.cpp" line="575"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>페이지 에디터</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="576"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
-
-Continue using the requested filename?</translation>
+        <translation>요청한 파일 명에 non-ASCII 문자가 포함되어 있습니다. 파일명에는 ASCII 문자만 사용할 수 있습니다. non-ASCII 문자를 사용할 경우 일부 전자책 뷰어에서 작동하지 않을 수 있습니다.
+그래도 파일명을 사용하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -1521,17 +1513,17 @@ Continue using the requested filename?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="167"/>
         <source>No suggestions</source>
-        <translation>No suggestions</translation>
+        <translation>추천이 없습니다.</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Check Spelling</source>
-        <translation>Check Spelling</translation>
+        <translation>맞춤법 검사</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="188"/>
         <source>Select Language</source>
-        <translation>Select Language</translation>
+        <translation>언어 선택</translation>
     </message>
 </context>
 </TS>

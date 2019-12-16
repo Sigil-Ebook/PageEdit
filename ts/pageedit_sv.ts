@@ -243,11 +243,28 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="834"/>
-        <location filename="../MainWindow.cpp" line="893"/>
-        <location filename="../MainWindow.cpp" line="1549"/>
+        <location filename="../MainWindow.cpp" line="901"/>
+        <location filename="../MainWindow.cpp" line="960"/>
+        <location filename="../MainWindow.cpp" line="1547"/>
+        <location filename="../MainWindow.cpp" line="1560"/>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1580"/>
+        <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp" line="1655"/>
+        <location filename="../MainWindow.cpp" line="1738"/>
         <location filename="../MainWindow.cpp.keep" line="726"/>
         <location filename="../MainWindow.cpp.keep" line="1337"/>
+        <location filename="../MainWindow.cpp~" line="901"/>
+        <location filename="../MainWindow.cpp~" line="960"/>
+        <location filename="../MainWindow.cpp~" line="1547"/>
+        <location filename="../MainWindow.cpp~" line="1560"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1580"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1655"/>
+        <location filename="../MainWindow.cpp~" line="1738"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -272,684 +289,734 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
         <translation>&amp;Infoga</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="105"/>
+        <location filename="../main.ui" line="109"/>
         <source>For&amp;mat</source>
         <translation>For&amp;mat</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="110"/>
+        <location filename="../main.ui" line="114"/>
         <source>&amp;Heading</source>
         <translation>&amp;Rubrik</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="143"/>
+        <location filename="../main.ui" line="147"/>
         <source>&amp;View</source>
         <translation>&amp;Visa</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="152"/>
+        <location filename="../main.ui" line="156"/>
         <source>Inspector</source>
         <translation>Inspektör</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="168"/>
+        <location filename="../main.ui" line="172"/>
         <source>File</source>
         <translation>Fil</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="182"/>
+        <location filename="../main.ui" line="186"/>
         <source>Edit</source>
         <translation>Redigera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="200"/>
-        <location filename="../main.ui" line="1048"/>
+        <location filename="../main.ui" line="204"/>
+        <location filename="../main.ui" line="1055"/>
         <source>Mode</source>
         <translation>Läge</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="213"/>
+        <location filename="../main.ui" line="217"/>
         <source>Insert</source>
         <translation>Infoga</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="229"/>
+        <location filename="../main.ui" line="236"/>
         <source>Inspect</source>
         <translation>Inspektera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="242"/>
-        <location filename="../main.ui" line="997"/>
+        <location filename="../main.ui" line="249"/>
+        <location filename="../main.ui" line="1004"/>
         <source>Find</source>
         <translation>Hitta</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="255"/>
+        <location filename="../main.ui" line="262"/>
         <source>Heading</source>
         <translation>Rubrik</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="269"/>
+        <location filename="../main.ui" line="276"/>
         <source>set Heading Level of Selected Text</source>
         <translation>ange rubriknivå för markerad text</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="283"/>
+        <location filename="../main.ui" line="290"/>
         <source>Format</source>
         <translation>Format</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="301"/>
+        <location filename="../main.ui" line="308"/>
         <source>Align</source>
         <translation>Justera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="317"/>
+        <location filename="../main.ui" line="324"/>
         <source>Indent</source>
         <translation>Stycke</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="331"/>
+        <location filename="../main.ui" line="338"/>
         <source>Navigate</source>
         <translation>Navigera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="341"/>
+        <location filename="../main.ui" line="348"/>
         <source>Navigation List</source>
         <translation>Navigeringslista</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="357"/>
+        <location filename="../main.ui" line="364"/>
         <source>&amp;Save</source>
         <translation>&amp;Spara</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="360"/>
+        <location filename="../main.ui" line="367"/>
         <source>Save the current file.</source>
         <translation>Spara den aktuella filen.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="363"/>
+        <location filename="../main.ui" line="370"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="369"/>
+        <location filename="../main.ui" line="376"/>
         <source>Save &amp;As...</source>
         <translation>Spara &amp;som...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="372"/>
+        <location filename="../main.ui" line="379"/>
         <source>Save the current file with a different filename.</source>
         <translation>Spara den aktuella filen med ett annat filnamn.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="375"/>
+        <location filename="../main.ui" line="382"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="385"/>
+        <location filename="../main.ui" line="392"/>
         <source>Cu&amp;t</source>
         <translation>Klipp u&amp;t</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="388"/>
+        <location filename="../main.ui" line="395"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
         <translation>Klipper ut den markerade texten från dokumentet och lägger den i urklipp.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="398"/>
+        <location filename="../main.ui" line="405"/>
         <source>&amp;Paste</source>
         <translation>&amp;Klistra in</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="401"/>
+        <location filename="../main.ui" line="408"/>
         <source>Pastes the content from the clipboard into the file.</source>
         <translation>Klistrar in innehållet från urklipp i filen.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="411"/>
+        <location filename="../main.ui" line="418"/>
         <source>&amp;Undo</source>
         <translation>&amp;Ångra</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="414"/>
+        <location filename="../main.ui" line="421"/>
         <source>Reverts the changes of the previous operation.</source>
         <translation>Återställer ändringarna i föregående operation.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="417"/>
+        <location filename="../main.ui" line="424"/>
         <source>Ctrl+Z</source>
         <translation>Ctrl+Z</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="427"/>
+        <location filename="../main.ui" line="434"/>
         <source>&amp;Redo</source>
         <translation>&amp;Gör om</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="430"/>
+        <location filename="../main.ui" line="437"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
         <translation>Återställer ändringarna som återställts av föregående Ångra-åtgärd.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="433"/>
+        <location filename="../main.ui" line="440"/>
         <source>Ctrl+Y</source>
         <translation>Ctrl+Y</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="443"/>
+        <location filename="../main.ui" line="450"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopiera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="446"/>
+        <location filename="../main.ui" line="453"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
         <translation>Kopierar den markerade texten och lägger den i urklipp.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="459"/>
+        <location filename="../main.ui" line="466"/>
         <source>Align &amp;Left</source>
         <translation>&amp;Vänsterjustera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="462"/>
+        <location filename="../main.ui" line="469"/>
         <source>Align the paragraph to the left.</source>
         <translation>Justera stycket till vänster.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="476"/>
+        <location filename="../main.ui" line="483"/>
         <source>Align &amp;Right</source>
         <translation>&amp;Högerjustera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="479"/>
+        <location filename="../main.ui" line="486"/>
         <source>Align the paragraph to the right.</source>
         <translation>Justera stycket till höger.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="492"/>
+        <location filename="../main.ui" line="499"/>
         <source>&amp;Center</source>
         <translation>&amp;Centrera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="495"/>
+        <location filename="../main.ui" line="502"/>
         <source>Center the paragraph.</source>
         <translation>Centrera stycket.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="498"/>
+        <location filename="../main.ui" line="505"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="511"/>
+        <location filename="../main.ui" line="518"/>
         <source>&amp;Justify</source>
         <translation>&amp;Justera</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="514"/>
+        <location filename="../main.ui" line="521"/>
         <source>Align the paragraph to both the left and right margins.</source>
         <translation>Justera stycket till både vänster och höger marginaler.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="517"/>
+        <location filename="../main.ui" line="524"/>
         <source>Ctrl+J</source>
         <translation>Ctrl+J</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="530"/>
+        <location filename="../main.ui" line="537"/>
         <source>&amp;Bold</source>
         <translation>&amp;Fet</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="533"/>
+        <location filename="../main.ui" line="540"/>
         <source>Make the selected text bold.</source>
         <translation>Gör den markerade texten fet.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="536"/>
+        <location filename="../main.ui" line="543"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="549"/>
+        <location filename="../main.ui" line="556"/>
         <source>&amp;Italic</source>
         <translation>&amp;Kursiv</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="552"/>
+        <location filename="../main.ui" line="559"/>
         <source>Make the selected text italic.</source>
         <translation>Gör den markerade texten kursiv.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="555"/>
+        <location filename="../main.ui" line="562"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="565"/>
+        <location filename="../main.ui" line="572"/>
         <source>&amp;Open...</source>
         <translation>&amp;Öppna...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="568"/>
+        <location filename="../main.ui" line="575"/>
         <source>Open a file from disk.</source>
         <translation>Öppna en fil från disk.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="571"/>
+        <location filename="../main.ui" line="578"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="585"/>
+        <location filename="../main.ui" line="592"/>
         <source>&amp;Underline</source>
         <translation>&amp;Understryk</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="588"/>
+        <location filename="../main.ui" line="595"/>
         <source>Underline the selected text.</source>
         <translation>Stryk under den markerade texten.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="591"/>
+        <location filename="../main.ui" line="598"/>
         <source>Ctrl+U</source>
         <translation>Ctrl+U</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="601"/>
+        <location filename="../main.ui" line="608"/>
         <source>&amp;Quit</source>
         <translation>&amp;Avsluta</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="604"/>
+        <location filename="../main.ui" line="611"/>
         <source>Quit</source>
         <translation>Avsluta</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="607"/>
+        <location filename="../main.ui" line="614"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="617"/>
+        <location filename="../main.ui" line="624"/>
         <source>&amp;Special Character...</source>
         <translation>&amp;Specialtecknet...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="620"/>
+        <location filename="../main.ui" line="627"/>
         <source>Select a character to insert into your text.</source>
         <translation>Välj ett tecken att infoga i din text.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="633"/>
+        <location filename="../main.ui" line="640"/>
         <source>&amp;Numbered List</source>
         <translation>&amp;Numrerad lista</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="636"/>
+        <location filename="../main.ui" line="643"/>
         <source>Create a numbered list from selection.</source>
         <translation>Skapa en numrerad lista från markeringen.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="649"/>
+        <location filename="../main.ui" line="656"/>
         <source>Bulle&amp;ted List</source>
         <translation>&amp;Punktlista</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="652"/>
+        <location filename="../main.ui" line="659"/>
         <source>Create a bulleted list from selection.</source>
         <translation>Skapa en punktlista från markeringen.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="655"/>
+        <location filename="../main.ui" line="662"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="668"/>
+        <location filename="../main.ui" line="675"/>
         <source>Stri&amp;kethrough</source>
         <translation>&amp;Genomstruken</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="671"/>
+        <location filename="../main.ui" line="678"/>
         <source>Draw a line through the selected text.</source>
         <translation>Rita en linje genom den markerade texten.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="684"/>
+        <location filename="../main.ui" line="691"/>
         <source>&amp;Subscript</source>
         <translation>&amp;Nedsänkt</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="687"/>
+        <location filename="../main.ui" line="694"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
         <translation>Ställ in den markerade texten något mindre och under den normala raden.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="700"/>
+        <location filename="../main.ui" line="707"/>
         <source>Su&amp;perscript</source>
         <translation>&amp;Upphöjt</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="703"/>
+        <location filename="../main.ui" line="710"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
         <translation>Ställ in den markerade texten något mindre och över den normala raden.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="714"/>
+        <location filename="../main.ui" line="721"/>
         <source>Zoom &amp;In</source>
         <translation>Zooma &amp;in</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="717"/>
+        <location filename="../main.ui" line="724"/>
         <source>Zoom In</source>
         <translation>Zooma in</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="720"/>
+        <location filename="../main.ui" line="727"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="731"/>
+        <location filename="../main.ui" line="738"/>
         <source>Zoom &amp;Out</source>
         <translation>Zooma &amp;ut</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="734"/>
+        <location filename="../main.ui" line="741"/>
         <source>Zoom Out</source>
         <translation>Zooma ut</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="737"/>
+        <location filename="../main.ui" line="744"/>
         <source>Ctrl+-</source>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="748"/>
+        <location filename="../main.ui" line="755"/>
         <source>Incre&amp;ase Indent</source>
         <translation>Ök&amp;a indrag</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="751"/>
+        <location filename="../main.ui" line="758"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>Öka indragsnivån i stycket.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="754"/>
+        <location filename="../main.ui" line="761"/>
         <source>Ctrl+Alt+M</source>
         <translation>Ctrl+Alt+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="764"/>
+        <location filename="../main.ui" line="771"/>
         <source>&amp;Decrease Indent</source>
         <translation>&amp;Minska indrag</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="767"/>
+        <location filename="../main.ui" line="774"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>Minska indragsnivån i stycket.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="770"/>
+        <location filename="../main.ui" line="777"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="780"/>
+        <location filename="../main.ui" line="787"/>
         <source>Split &amp;Marker</source>
         <translation>Dela &amp;markör</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="783"/>
+        <location filename="../main.ui" line="790"/>
         <source>Insert Sigil split file marker</source>
         <translation>Infoga Sigil dela fil markör</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="786"/>
+        <location filename="../main.ui" line="793"/>
         <source>Ctrl+Shift+Return</source>
         <translation>Ctrl+Shift+Return</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="792"/>
+        <location filename="../main.ui" line="799"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Inställningar...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="795"/>
+        <location filename="../main.ui" line="802"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="801"/>
+        <location filename="../main.ui" line="808"/>
         <source>&amp;Zoom Reset</source>
         <translation>&amp;Zoom-återställning</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="804"/>
+        <location filename="../main.ui" line="811"/>
         <source>Zoom Reset</source>
         <translation>Zoomåterställning</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="807"/>
+        <location filename="../main.ui" line="814"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="820"/>
+        <location filename="../main.ui" line="827"/>
         <source>Heading &amp;1</source>
         <translation>Rubrik &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="823"/>
+        <location filename="../main.ui" line="830"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation>Formatera stycket som en nivå 1 rubrik.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="826"/>
+        <location filename="../main.ui" line="833"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="839"/>
+        <location filename="../main.ui" line="846"/>
         <source>Heading &amp;2</source>
         <translation>Rubrik &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="842"/>
+        <location filename="../main.ui" line="849"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation>Formatera stycket som en nivå 2 rubrik.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="845"/>
+        <location filename="../main.ui" line="852"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="858"/>
+        <location filename="../main.ui" line="865"/>
         <source>Heading &amp;3</source>
         <translation>Rubrik &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="861"/>
+        <location filename="../main.ui" line="868"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation>Formatera stycket som en nivå 3 rubrik.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="864"/>
+        <location filename="../main.ui" line="871"/>
         <source>Ctrl+3</source>
         <translation>Ctrl+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="878"/>
+        <location filename="../main.ui" line="885"/>
         <source>Heading &amp;4</source>
         <translation>Rubrik &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="881"/>
+        <location filename="../main.ui" line="888"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation>Formatera stycket som en nivå 4 rubrik.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="884"/>
+        <location filename="../main.ui" line="891"/>
         <source>Ctrl+4</source>
         <translation>Ctrl+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="897"/>
+        <location filename="../main.ui" line="904"/>
         <source>Heading &amp;5</source>
         <translation>Rubrik &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="900"/>
+        <location filename="../main.ui" line="907"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation>Formatera stycket som en nivå 5 rubrik.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="903"/>
+        <location filename="../main.ui" line="910"/>
         <source>Ctrl+5</source>
         <translation>Ctrl+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="916"/>
+        <location filename="../main.ui" line="923"/>
         <source>Heading &amp;6</source>
         <translation>Rubrik &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="919"/>
+        <location filename="../main.ui" line="926"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation>Formatera stycket som en nivå 6 rubrik.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="922"/>
+        <location filename="../main.ui" line="929"/>
         <source>Ctrl+6</source>
         <translation>Ctrl+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="936"/>
+        <location filename="../main.ui" line="943"/>
         <source>&amp;Normal</source>
         <translation>&amp;Normal</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="939"/>
+        <location filename="../main.ui" line="946"/>
         <source>ormat paragraph as a normal paragraph.</source>
         <translation>formatera stycke som ett normalt stycke.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="942"/>
+        <location filename="../main.ui" line="949"/>
         <source>Ctrl+7</source>
         <translation>Ctrl+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="952"/>
+        <location filename="../main.ui" line="959"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>&amp;Bevara befintliga attribut</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="955"/>
+        <location filename="../main.ui" line="962"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>När du använder denna stil, bevara alla befintliga attribut på taggen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="965"/>
+        <location filename="../main.ui" line="972"/>
         <source>&amp;Select All</source>
         <translation>&amp;Markera alla</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="968"/>
+        <location filename="../main.ui" line="975"/>
         <source>Select all text in the document.</source>
         <translation>Markera all text i dokumentet.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="971"/>
+        <location filename="../main.ui" line="978"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="981"/>
+        <location filename="../main.ui" line="988"/>
         <source>&amp;Inspector</source>
         <translation>&amp;Inspektör</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="984"/>
+        <location filename="../main.ui" line="991"/>
         <source>Inspect the page.</source>
         <translation>Inspektera sidan.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="987"/>
+        <location filename="../main.ui" line="994"/>
         <source>Ctrl+F5</source>
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1000"/>
+        <location filename="../main.ui" line="1007"/>
         <source>Find text in the page</source>
         <translation>Hitta text på sidan</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1003"/>
+        <location filename="../main.ui" line="1010"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1016"/>
+        <location filename="../main.ui" line="1023"/>
         <source>Next XHtml File</source>
         <translation>Nästa XHtml-fil</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1019"/>
+        <location filename="../main.ui" line="1026"/>
         <source>Next file in navigation list</source>
         <translation>Nästa fil i navigeringslistan</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1032"/>
+        <location filename="../main.ui" line="1039"/>
         <source>Previous XHtml File</source>
         <translation>Föregående XHTML-fil</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1035"/>
+        <location filename="../main.ui" line="1042"/>
         <source>Previous file in navigation list</source>
         <translation>Föregående fil i navigeringslistan</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1051"/>
+        <location filename="../main.ui" line="1058"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation>Växla mellan Redigera och Förhandsgranska lägen.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1061"/>
+        <location filename="../main.ui" line="1068"/>
         <source>About...</source>
         <translation>Om...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1064"/>
+        <location filename="../main.ui" line="1071"/>
         <source>Show information about PageEdit.</source>
         <translation>Visa information om PageEdit.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1074"/>
+        <location filename="../main.ui" line="1081"/>
         <source>Back to Last Link</source>
         <translation>Tillbaka till senaste länken</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1077"/>
+        <location filename="../main.ui" line="1084"/>
         <source>Return from the last link taken</source>
         <translation>Återgå från den sista länken tagen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="668"/>
+        <location filename="../main.ui" line="1094"/>
+        <source>I&amp;D...</source>
+        <translation>I&amp;D...</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1097"/>
+        <source>Insert or edit an anchor with an ID name to use as a link target.</source>
+        <translation>Infoga eller redigera ett ankare med ett ID-namn som ska användas som länkmål.</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1107"/>
+        <source>&amp;Link...</source>
+        <translation>&amp;Länk...</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1110"/>
+        <source>Insert or edit an anchor with a hyperlink to a target.</source>
+        <translation>Infoga eller redigera ett ankare med en hyperlänk till ett mål.</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1120"/>
+        <source>&amp;File...</source>
+        <translation>&amp;Fil...</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1123"/>
+        <source>Select existing image, video or audio files from your book to insert into the text.</source>
+        <translation>Välj befintliga bild-, video- eller ljudfiler från din bok för att infoga i texten.</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1126"/>
+        <source>Ctrl+Shift+I</source>
+        <translation>Ctrl+Shift+I</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="647"/>
+        <location filename="../MainWindow.cpp~" line="647"/>
+        <source>File load failed</source>
+        <translation>Det gick inte att läsa in fil</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="648"/>
+        <location filename="../MainWindow.cpp~" line="648"/>
+        <source>File Load Failed</source>
+        <translation>Det gick inte att läsa in fil</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="735"/>
+        <location filename="../MainWindow.cpp~" line="735"/>
         <source>mode: Preview</source>
         <translation>läge: Förhandsgranska</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="670"/>
+        <location filename="../MainWindow.cpp" line="737"/>
+        <location filename="../MainWindow.cpp~" line="737"/>
         <source>mode: Edit</source>
         <translation>läge: Redigera</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="834"/>
+        <location filename="../MainWindow.cpp" line="901"/>
+        <location filename="../MainWindow.cpp~" line="901"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -958,126 +1025,196 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="894"/>
+        <location filename="../MainWindow.cpp" line="961"/>
+        <location filename="../MainWindow.cpp~" line="961"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Vill du spara dina ändringar innan du lämnar?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="911"/>
+        <location filename="../MainWindow.cpp" line="978"/>
         <location filename="../MainWindow.cpp.keep" line="721"/>
+        <location filename="../MainWindow.cpp~" line="978"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit stänger...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1039"/>
-        <location filename="../MainWindow.cpp" line="1040"/>
-        <location filename="../MainWindow.cpp" line="1041"/>
-        <location filename="../MainWindow.cpp" line="1051"/>
-        <location filename="../MainWindow.cpp" line="1052"/>
-        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1106"/>
+        <location filename="../MainWindow.cpp" line="1107"/>
+        <location filename="../MainWindow.cpp" line="1108"/>
+        <location filename="../MainWindow.cpp" line="1117"/>
+        <location filename="../MainWindow.cpp" line="1118"/>
+        <location filename="../MainWindow.cpp" line="1119"/>
         <location filename="../MainWindow.cpp.keep" line="864"/>
         <location filename="../MainWindow.cpp.keep" line="865"/>
         <location filename="../MainWindow.cpp.keep" line="866"/>
         <location filename="../MainWindow.cpp.keep" line="875"/>
         <location filename="../MainWindow.cpp.keep" line="876"/>
         <location filename="../MainWindow.cpp.keep" line="877"/>
+        <location filename="../MainWindow.cpp~" line="1106"/>
+        <location filename="../MainWindow.cpp~" line="1107"/>
+        <location filename="../MainWindow.cpp~" line="1108"/>
+        <location filename="../MainWindow.cpp~" line="1117"/>
+        <location filename="../MainWindow.cpp~" line="1118"/>
+        <location filename="../MainWindow.cpp~" line="1119"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML-filer (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1042"/>
+        <location filename="../MainWindow.cpp" line="1109"/>
+        <location filename="../MainWindow.cpp~" line="1109"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF-filer (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1043"/>
-        <location filename="../MainWindow.cpp.keep" line="867"/>
-        <source>Text files (*.txt)</source>
-        <translation>Textfiler (*.txt)</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp" line="1044"/>
+        <location filename="../MainWindow.cpp" line="1110"/>
         <location filename="../MainWindow.cpp.keep" line="868"/>
+        <location filename="../MainWindow.cpp~" line="1110"/>
         <source>All files (*.*)</source>
         <translation>Alla filer (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1255"/>
+        <location filename="../MainWindow.cpp" line="1321"/>
         <location filename="../MainWindow.cpp.keep" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1321"/>
         <source>Save File</source>
         <translation>Spara fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1290"/>
-        <location filename="../MainWindow.cpp" line="1291"/>
-        <location filename="../MainWindow.cpp" line="1303"/>
-        <location filename="../MainWindow.cpp" line="1304"/>
+        <location filename="../MainWindow.cpp" line="1356"/>
+        <location filename="../MainWindow.cpp" line="1357"/>
+        <location filename="../MainWindow.cpp" line="1369"/>
+        <location filename="../MainWindow.cpp" line="1370"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
         <location filename="../MainWindow.cpp.keep" line="1060"/>
         <location filename="../MainWindow.cpp.keep" line="1072"/>
         <location filename="../MainWindow.cpp.keep" line="1073"/>
+        <location filename="../MainWindow.cpp~" line="1356"/>
+        <location filename="../MainWindow.cpp~" line="1357"/>
+        <location filename="../MainWindow.cpp~" line="1369"/>
+        <location filename="../MainWindow.cpp~" line="1370"/>
         <source>File Save-As Failed!</source>
         <translation>Spara fil som misslyckades!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1290"/>
+        <location filename="../MainWindow.cpp" line="1356"/>
         <location filename="../MainWindow.cpp.keep" line="1059"/>
+        <location filename="../MainWindow.cpp~" line="1356"/>
         <source>is not writeable</source>
         <translation>är inte skrivbar</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1299"/>
-        <location filename="../MainWindow.cpp" line="1329"/>
+        <location filename="../MainWindow.cpp" line="1365"/>
+        <location filename="../MainWindow.cpp" line="1395"/>
         <location filename="../MainWindow.cpp.keep" line="1068"/>
         <location filename="../MainWindow.cpp.keep" line="1098"/>
+        <location filename="../MainWindow.cpp~" line="1365"/>
+        <location filename="../MainWindow.cpp~" line="1395"/>
         <source>File Saved</source>
         <translation>Filen sparad</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1320"/>
-        <location filename="../MainWindow.cpp" line="1322"/>
-        <location filename="../MainWindow.cpp" line="1333"/>
-        <location filename="../MainWindow.cpp" line="1334"/>
+        <location filename="../MainWindow.cpp" line="1386"/>
+        <location filename="../MainWindow.cpp" line="1388"/>
+        <location filename="../MainWindow.cpp" line="1399"/>
+        <location filename="../MainWindow.cpp" line="1400"/>
         <location filename="../MainWindow.cpp.keep" line="1089"/>
         <location filename="../MainWindow.cpp.keep" line="1091"/>
         <location filename="../MainWindow.cpp.keep" line="1102"/>
         <location filename="../MainWindow.cpp.keep" line="1103"/>
+        <location filename="../MainWindow.cpp~" line="1386"/>
+        <location filename="../MainWindow.cpp~" line="1388"/>
+        <location filename="../MainWindow.cpp~" line="1399"/>
+        <location filename="../MainWindow.cpp~" line="1400"/>
         <source>File Save Failed!</source>
         <translation>Spara fil misslyckades!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1321"/>
+        <location filename="../MainWindow.cpp" line="1387"/>
         <location filename="../MainWindow.cpp.keep" line="1090"/>
+        <location filename="../MainWindow.cpp~" line="1387"/>
         <source>does not exist or is not writeable</source>
         <translation>finns inte eller är inte skrivbar</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1382"/>
+        <location filename="../MainWindow.cpp" line="1448"/>
         <location filename="../MainWindow.cpp.keep" line="1147"/>
+        <location filename="../MainWindow.cpp~" line="1448"/>
         <source>File Opened</source>
         <translation>Filen öppnades</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1386"/>
+        <location filename="../MainWindow.cpp" line="1452"/>
         <location filename="../MainWindow.cpp.keep" line="1152"/>
+        <location filename="../MainWindow.cpp~" line="1452"/>
         <source>File Open Failed!</source>
         <translation>Öppna fil misslyckades!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1409"/>
+        <location filename="../MainWindow.cpp" line="1475"/>
         <location filename="../MainWindow.cpp.keep" line="1175"/>
+        <location filename="../MainWindow.cpp~" line="1475"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Urklipp innehåller HTML-formatering</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1410"/>
+        <location filename="../MainWindow.cpp" line="1476"/>
         <location filename="../MainWindow.cpp.keep" line="1176"/>
+        <location filename="../MainWindow.cpp~" line="1476"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Vill du klistra in urklippsdata som vanlig text?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1550"/>
+        <location filename="../MainWindow.cpp" line="1547"/>
+        <location filename="../MainWindow.cpp~" line="1547"/>
+        <source>You must select text before inserting a new id.</source>
+        <translation>Du måste välja text innan du infogar ett nytt id.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1560"/>
+        <location filename="../MainWindow.cpp~" line="1560"/>
+        <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
+        <translation>ID är ogiltigt - måste börja med en bokstav, följt av bokstavsnummer _ : - eller .</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <source>You cannot insert an id at this position.</source>
+        <translation>Du kan inte infoga ett id i denna position.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1580"/>
+        <location filename="../MainWindow.cpp~" line="1580"/>
+        <source>You must select text before inserting a new link.</source>
+        <translation>Du måste välja text innan du infogar en ny länk.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
+        <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
+        <translation>Länken är ogiltig - kan inte innehålla &quot;&lt;&quot; eller &quot;&gt;&quot;</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
+        <source>You cannot insert a link at this position.</source>
+        <translation>Du kan inte infoga en länk i denna position.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp~" line="1612"/>
+        <source>Insert File</source>
+        <translation>Infoga fil</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1655"/>
+        <location filename="../MainWindow.cpp~" line="1655"/>
+        <source>You cannot insert a media file at this position.</source>
+        <translation>Du kan inte infoga en mediefil på den här positionen.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1739"/>
         <location filename="../MainWindow.cpp.keep" line="1338"/>
+        <location filename="../MainWindow.cpp~" line="1739"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Vill du spara några ändringar innan du skriver över den här filen?</translation>
     </message>
@@ -1085,6 +1222,11 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
         <location filename="../MainWindow.cpp.keep" line="727"/>
         <source>Do you want to save your changes before closing?</source>
         <translation>Vill du spara dina ändringar innan du stänger?</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp.keep" line="867"/>
+        <source>Text files (*.txt)</source>
+        <translation>Textfiler (*.txt)</translation>
     </message>
 </context>
 <context>
@@ -1113,7 +1255,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../OPFReader.cpp" line="46"/>
+        <location filename="../OPFReader.cpp" line="58"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
         <translation>Det går inte att läsa OPF-filen.
@@ -1137,42 +1279,42 @@ Rad: %1 Kolumn %2 - %3</translation>
         <translation>PageEdit kan behöva stängas.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="642"/>
+        <location filename="../Utility.cpp" line="798"/>
         <source>About PageEdit</source>
         <translation>Om PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="647"/>
+        <location filename="../Utility.cpp" line="803"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="648"/>
+        <location filename="../Utility.cpp" line="804"/>
         <source>Build Date</source>
         <translation>Byggdatum</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="649"/>
+        <location filename="../Utility.cpp" line="805"/>
         <source>Build Time</source>
         <translation>Byggtid</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="650"/>
+        <location filename="../Utility.cpp" line="806"/>
         <source>Qt Runtime Version</source>
         <translation>Qt Runtime version</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="651"/>
+        <location filename="../Utility.cpp" line="807"/>
         <source>Qt Compiled Version</source>
         <translation>Qt Compiled version</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="652"/>
+        <location filename="../Utility.cpp" line="808"/>
         <source>System</source>
         <translation>System</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="653"/>
+        <location filename="../Utility.cpp" line="809"/>
         <source>Architecture</source>
         <translation>Arkitektur</translation>
     </message>
@@ -1209,6 +1351,155 @@ Rad: %1 Kolumn %2 - %3</translation>
     </message>
 </context>
 <context>
+    <name>SelectFiles</name>
+    <message>
+        <location filename="../SelectFiles.ui" line="14"/>
+        <source>Insert File</source>
+        <translation>Infoga fil</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="46"/>
+        <source>List only the file names which contain the text you enter.</source>
+        <translation>Lista endast de filnamn som innehåller texten du anger.</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="49"/>
+        <source>Filter:</source>
+        <translation>Filter:</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.ui" line="118"/>
+        <source>Thumbnail size:</source>
+        <translation>Miniatyrbildsstorlek:</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="111"/>
+        <location filename="../SelectFiles.cpp~" line="111"/>
+        <source>All</source>
+        <translation>Alla</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="112"/>
+        <location filename="../SelectFiles.cpp~" line="112"/>
+        <source>Images</source>
+        <translation>Bilder</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="113"/>
+        <location filename="../SelectFiles.cpp~" line="113"/>
+        <source>Video</source>
+        <translation>Video</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="114"/>
+        <location filename="../SelectFiles.cpp~" line="114"/>
+        <source>Audio</source>
+        <translation>Ljud</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="153"/>
+        <location filename="../SelectFiles.cpp~" line="153"/>
+        <source>Media Files In the Book</source>
+        <translation>Mediefiler i boken</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="156"/>
+        <location filename="../SelectFiles.cpp~" line="156"/>
+        <source>Thumbnails</source>
+        <translation>Miniatyrbilder</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="316"/>
+        <location filename="../SelectFiles.cpp~" line="316"/>
+        <source>shades</source>
+        <translation>nyanser</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="316"/>
+        <location filename="../SelectFiles.cpp~" line="316"/>
+        <source>colors</source>
+        <translation>färger</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="317"/>
+        <location filename="../SelectFiles.cpp~" line="317"/>
+        <source>Grayscale</source>
+        <translation>Gråskala</translation>
+    </message>
+    <message>
+        <location filename="../SelectFiles.cpp" line="317"/>
+        <location filename="../SelectFiles.cpp~" line="317"/>
+        <source>Color</source>
+        <translation>Färg</translation>
+    </message>
+</context>
+<context>
+    <name>SelectHyperlink</name>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="14"/>
+        <source>Select Target</source>
+        <translation>Välj mål</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="22"/>
+        <source>List only the entries that match the text you enter.</source>
+        <translation>Lista endast de poster som matchar texten du anger.</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="25"/>
+        <source>Filter:</source>
+        <translation>Filter:</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="58"/>
+        <source>Enter the target URL for this hyperlink.  You can select or 
+double click on existing destinations in your book from the list above.</source>
+        <translation>Ange målwebbadressen för denna hyperlänk. Du kan markera eller 
+dubbelklicka på befintliga destinationer i din bok från listan ovan.</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.ui" line="62"/>
+        <source>Target:</source>
+        <translation>Mål:</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.cpp" line="94"/>
+        <source>Targets in the Book</source>
+        <translation>Mål i boken</translation>
+    </message>
+    <message>
+        <location filename="../SelectHyperlink.cpp" line="95"/>
+        <source>Text</source>
+        <translation>Text</translation>
+    </message>
+</context>
+<context>
+    <name>SelectId</name>
+    <message>
+        <location filename="../SelectId.ui" line="14"/>
+        <source>Insert ID </source>
+        <translation>Infoga ID</translation>
+    </message>
+    <message>
+        <location filename="../SelectId.ui" line="22"/>
+        <source>Enter an ID name to use as a destination for hyperlinks, notes, and TOC entries.
+
+The dropdown box shows existing ID names in the current file.
+
+ID names must be unique and start with a letter.</source>
+        <translation>Ange ett ID-namn som ska användas som destination för hyperlänkar, anteckningar och innehållsförteckningsposter.
+
+Rullgardinsmenyn visar befintliga ID-namn i den aktuella filen.
+
+ID-namn måste vara unika och börja med en bokstav.</translation>
+    </message>
+    <message>
+        <location filename="../SelectId.ui" line="29"/>
+        <source>ID:</source>
+        <translation>ID:</translation>
+    </message>
+</context>
+<context>
     <name>Utility</name>
     <message>
         <location filename="../Utility.cpp" line="575"/>
@@ -1228,17 +1519,17 @@ Fortsätt använda det begärda filnamnet?</translation>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="162"/>
+        <location filename="../WebViewEdit.cpp" line="167"/>
         <source>No suggestions</source>
         <translation>Inga förslag</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="174"/>
+        <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Check Spelling</source>
         <translation>Kontrollera stavning</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="183"/>
+        <location filename="../WebViewEdit.cpp" line="188"/>
         <source>Select Language</source>
         <translation>Välj språk</translation>
     </message>
