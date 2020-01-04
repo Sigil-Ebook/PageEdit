@@ -1,8 +1,8 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin B. Hendricks, Stratford, Ontario, Canada
-**  Copyright (C) 2011, 2012, 2013  John Schember <john@nachtimwald.com>
-**  Copyright (C) 2012, 2013  Dave Heiland
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2011-2013 John Schember <john@nachtimwald.com>
+**  Copyright (C) 2012-2013 Dave Heiland
 **
 **  This file is part of PageEdit.
 **
@@ -64,6 +64,7 @@ public:
     float zoomText();
     float zoomWeb();
     float zoomPreview();
+    float zoomInspector();
 
     /**
      * All appearance settings related to PageEdit.
@@ -133,6 +134,7 @@ public slots:
     void setZoomText(float zoom);
     void setZoomWeb(float zoom);
     void setZoomPreview(float zoom);
+    void setZoomInspector(float zoom);
 
     void setAppearancePrefsTabIndex(int index);
 

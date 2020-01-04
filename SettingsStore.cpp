@@ -1,8 +1,8 @@
 /************************************************************************
 **
-**  Copyright (C) 2016 - 2019  Kevin B. Hendricks, Stratford, ON
-**  Copyright (C) 2011, 2012, 2013  John Schember <john@nachtimwald.com>
-**  Copyright (C) 2012, 2013  Dave Heiland
+**  Copyright (C) 2016-2020 Kevin B. Hendricks, Stratford, ON
+**  Copyright (C) 2011-2013 John Schember <john@nachtimwald.com>
+**  Copyright (C) 2012-2013 Dave Heiland
 **
 **  This file is part of PageEdit.
 **
@@ -38,6 +38,7 @@ static QString KEY_ZOOM_IMAGE = SETTINGS_GROUP + "/" + "zoom_image";
 static QString KEY_ZOOM_TEXT = SETTINGS_GROUP + "/" + "zoom_text";
 static QString KEY_ZOOM_WEB = SETTINGS_GROUP + "/" + "zoom_web";
 static QString KEY_ZOOM_PREVIEW = SETTINGS_GROUP + "/" + "zoom_preview";
+static QString KEY_ZOOM_INSPECTOR = SETTINGS_GROUP + "/" + "zoom_inspector";
 static QString KEY_APPEARANCE_PREFS_TAB_INDEX = SETTINGS_GROUP + "/" + "appearance_prefs_tab_index";
 static QString KEY_WEBVIEW_FONT_FAMILY_STANDARD = SETTINGS_GROUP + "/" + "webview_font_family_standard";
 static QString KEY_WEBVIEW_FONT_FAMILY_SERIF = SETTINGS_GROUP + "/" + "webview_font_family_serif";
@@ -108,6 +109,12 @@ float SettingsStore::zoomPreview()
 {
     clearSettingsGroup();
     return value(KEY_ZOOM_PREVIEW, ZOOM_NORMAL).toFloat();
+}
+
+float SettingsStore::zoomInspector()
+{
+    clearSettingsGroup();
+    return value(KEY_ZOOM_INSPECTOR, ZOOM_NORMAL).toFloat();
 }
 
 int SettingsStore::appearancePrefsTabIndex() {
@@ -207,6 +214,12 @@ void SettingsStore::setZoomPreview(float zoom)
 {
     clearSettingsGroup();
     setValue(KEY_ZOOM_PREVIEW, zoom);
+}
+
+void SettingsStore::setZoomInspector(float zoom)
+{
+    clearSettingsGroup();
+    setValue(KEY_ZOOM_INSPECTOR, zoom);
 }
 
 void SettingsStore::setAppearancePrefsTabIndex(int index) {
