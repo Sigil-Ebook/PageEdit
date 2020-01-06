@@ -131,6 +131,7 @@ void SelectHyperlink::AddEntry(const QList<SelectHyperlink::TargetInfo> &targets
         if (m_CurrentFile == tinfo.filename) {
             // link is local to this file
             target = fragment;
+            if (target.isEmpty()) target = "#";
 	} else {
 	    target = tinfo.filename + fragment;
 	}
