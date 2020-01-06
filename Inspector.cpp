@@ -178,10 +178,10 @@ void Inspector::closeEvent(QCloseEvent* event)
 void Inspector::LoadSettings()
 {
     SettingsStore settings;
-    settings.beginGroup(SETTINGS_GROUP);
+    // in the basic user_preferences group
     SetCurrentZoomFactor(settings.zoomInspector());
+    settings.beginGroup(SETTINGS_GROUP);
     QByteArray geometry = settings.value("geometry").toByteArray();
-
     if (!geometry.isNull()) {
         restoreGeometry(geometry);
     }
