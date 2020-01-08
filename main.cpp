@@ -259,7 +259,7 @@ int main(int argc, char *argv[])
     QFileInfo QtStylesheetInfo(qt_stylesheet_path);
     if (QtStylesheetInfo.exists() && QtStylesheetInfo.isFile() && QtStylesheetInfo.isReadable()) {
         QString qtstyles = Utility::ReadUnicodeTextFile(qt_stylesheet_path);
-        app.setStyleSheet(qtstyles);
+        app.setStyleSheet(app.styleSheet().append(qtstyles));
     }
 
     // Qt's setCursorFlashTime(msecs) (or the docs) are broken
