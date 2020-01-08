@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="dark">
+    <file>closetab-hover.svg</file>
+    <file>closetab-mini.svg</file>
+    <file>closetab-pressed.svg</file>
+    <file>dock-close.svg</file>
+    <file>dock-close-hover.svg</file>
+    <file>undock.svg</file>
+    <file>undock-hover.svg</file>
+    <file>win-dark-style.qss</file>
+    <file>win_dark_scrollbar.css</file>
+    <file>mac_dark_scrollbar.css</file>
+  </qresource>
+</RCC>

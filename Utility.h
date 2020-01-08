@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin B. Hendricks, Stratford, Ontario, Canada
-**  Copyright (C) 2009, 2010, 2011  Strahinja Markovic  <strahinja.markovic@gmail.com>
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2009-2011 Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
 **  This file is part of PageEdit.
 **
@@ -169,6 +169,23 @@ public:
     static std::pair<QString, QString> parseHREF(const QString &relative_href);
 
     static void AboutBox();
+
+
+    // Indicates if application palette in dark mode
+    static bool IsDarkMode();
+
+    // Indicates Windows system dark mode is enabled
+    static bool IsWindowsSysDarkMode();
+
+    // Should Windows Sigil be using dark mode?
+    static bool WindowsShouldUseDarkMode();
+
+    // inject dark mode css into html
+    static QString AddDarkCSS(const QString &html);
+
+    // return the proper background color for QWebEngineView
+    static QColor WebViewBackgroundColor();
+
 };
 
 #endif // UTILITY_H

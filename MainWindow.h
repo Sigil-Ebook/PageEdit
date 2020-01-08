@@ -84,7 +84,8 @@ public slots:
 
     // General Slots
     void DoUpdatePage();
-    void UpdatePage(const QString &filename);
+    void UpdatePage(const QString &filename, const QString &source="");
+    void RefreshPage();
     void UpdateWindowTitle();
     void ScrollTo(QList<ElementIndex> location);
     void SetZoomFactor(float factor);
@@ -154,6 +155,8 @@ public slots:
     void IncreaseIndent();
     void UpdateActionState();
     // void ToggleSpellCheck();
+
+    void ApplicationPaletteChanged();
 
 signals:
     void Shown();

@@ -73,6 +73,7 @@ set(CMAKE_AUTOMOC ON)
 
 set( SOURCE_FILES
     main.cpp
+    MainApplication.cpp
     pageedit_constants.cpp
     AppEventFilter.cpp
     MainWindow.cpp
@@ -97,6 +98,7 @@ set( SOURCE_FILES
     )
 
 set( HEADER_FILES
+    MainApplication.h
     pageedit_constants.h
     pageedit_exception.h
     AppEventFilter.h
@@ -140,6 +142,7 @@ set( FORM_FILES
 set( RESOURCE_FILES
     icons/icons.qrc
     javascript/javascript.qrc
+    dark/dark.qrc
     )
 
 if (APPLE)

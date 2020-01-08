@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin Hendricks, Doug Massay
+**  Copyright (C) 2019-2020 Kevin Hendricks, Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -46,7 +46,6 @@
 #include <QFileInfo>
 #include <QDebug>
 
-#include "MainWindow.h"
 #include "Inspector.h"
 #include "SettingsStore.h"
 #include "Utility.h"
@@ -59,6 +58,8 @@
 #include "GumboInterface.h"
 #include "SearchToolbar.h"
 #include "OPFReader.h"
+#include "MainApplication.h"
+#include "MainWindow.h"
 
 #define DBG if(0)
 
@@ -135,6 +136,12 @@ MainWindow::~MainWindow()
         delete m_Inspector;
         m_Inspector = nullptr;
     }
+}
+
+void MainWindow::ApplicationPaletteChanged()
+{
+    // qDebug() << "ApplicationPaletteChanged";
+    RefreshPage();
 }
 
 // Navigation related routines
@@ -636,19 +643,27 @@ void MainWindow::DoUpdatePage()
   }
 }
 
-void MainWindow::UpdatePage(const QString &filename_url)
+void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
 {
     m_UpdatePageInProgress = true;
     QString text;
     QString file_path = filename_url;
-    try {
-        text = Utility::ReadUnicodeTextFile(filename_url);
-    } catch (std::exception &e) {
-        Utility::DisplayStdErrorDialog(tr("File load failed"), e.what());
-	text = "<html><head><title></title></head><body><h1>" + tr("File Load Failed") + "</h1></body></html>";
-	file_path = "";
-	m_CurrentFilePath = "";
+    if (!source.isEmpty()) {
+	text = source;
+    } else { 
+        try {
+            text = Utility::ReadUnicodeTextFile(filename_url);
+        } catch (std::exception &e) {
+            Utility::DisplayStdErrorDialog(tr("File load failed"), e.what());
+	    text = "<html><head><title></title></head><body><h1>" + tr("File Load Failed") + "</h1></body></html>";
+	    file_path = "";
+	    m_CurrentFilePath = "";
+        }
     }
+
+
+    // inject dark mode css
+    text = Utility::AddDarkCSS(text);
 
     SettingsStore ss;
     // to prevent the WebEngine from inserting extraneous non-breaking space characters
@@ -1260,6 +1275,35 @@ QString MainWindow::GetCleanHtml()
         }
     }
 
+    // remove any added AddDarkCSS
+    // first remove the :root background-color
+    // FIXME: we need to make this uniquely identifiable in some way
+    tags = QList<GumboTag>() << GUMBO_TAG_STYLE;
+    nodes = gi.get_all_nodes_with_tags(tags);
+    foreach(GumboNode * node, nodes) {
+        QString styleinfo = gi.get_local_text_of_node(node);
+	if (styleinfo.contains(":root { background-color:")) {
+	    gumbo_remove_from_parent(node);
+	    gumbo_destroy_node(node);
+	    break;
+        }
+    }
+    // then the associated scrollbar stylesheet link
+    tags = QList<GumboTag>() << GUMBO_TAG_LINK;
+    nodes = gi.get_all_nodes_with_tags(tags);
+    foreach(GumboNode * node, nodes) {
+        GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "href");
+        if (attr) {
+	    QString attrval = QString::fromUtf8(attr->value);
+	    if (attrval.contains("qrc:///dark/mac_dark_scrollbar.css") || 
+		attrval.contains("qrc:///dark/win_dark_scrollbar.css") ) {
+		gumbo_remove_from_parent(node);
+		gumbo_destroy_node(node);
+		break;
+	    }
+        }
+    }
+
     // remove any injected user css stylesheet link in head
     // make sure this comes last so that it can override any earlier styles
     if (!m_usercssurl.isEmpty()) {
@@ -1373,6 +1417,15 @@ bool MainWindow::SaveAs()
     }
     if (save_result) m_source = GetSource();
     return save_result;
+}
+
+void MainWindow::RefreshPage()
+{
+    m_WebView->page()->setBackgroundColor(Utility::WebViewBackgroundColor());
+    if (!m_CurrentFilePath.isEmpty()) {
+        QString text = GetCleanHtml();
+        UpdatePage(m_CurrentFilePath, text);
+    }
 }
 
 bool MainWindow::Save()
@@ -1958,6 +2011,9 @@ void MainWindow::ExtendIconSizes()
 
 void MainWindow::ConnectSignalsToSlots()
 {
+    MainApplication *mainApplication = qobject_cast<MainApplication *>(qApp);
+    connect(mainApplication, SIGNAL(applicationPaletteChanged()), this, SLOT(ApplicationPaletteChanged()));
+
     connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)),  this, SLOT(UpdateZoomLabel(float)));
     connect(m_WebView,   SIGNAL(ZoomFactorChanged(float)),  this, SLOT(UpdateZoomSlider(float)));
     connect(m_WebView,   SIGNAL(LinkClicked(const QUrl &)), this, SLOT(LinkClicked(const QUrl &)));

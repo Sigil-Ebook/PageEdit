@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019  Kevin B. Hendricks Stratford, Ontario, Canada
+**  Copyright (C) 2019-2020  Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -110,6 +110,7 @@ WebViewEdit::WebViewEdit(QWidget *parent)
       m_menu(new QMenu(this))
 {
     setPage(m_ViewWebPage);
+    page()->setBackgroundColor(Utility::WebViewBackgroundColor());
     // Set the Zoom factor but be sure no signals are set because of this.
     SettingsStore settings;
     SetCurrentZoomFactor(settings.zoomPreview());

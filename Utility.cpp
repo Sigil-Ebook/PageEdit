@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin B. Hendricks, Stratford, Ontario, Canada
-**  Copyright (C) 2009, 2010, 2011  Strahinja Markovic  <strahinja.markovic@gmail.com>
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2009-2011 Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
 **  This file is part of PageEdit.
 **
@@ -37,6 +37,7 @@
 #include <QtCore/QUrl>
 #include <QtCore/QUuid>
 #include <QtWidgets/QMainWindow>
+#include <QSettings>
 #include <QTextEdit>
 #include <QMessageBox>
 #include <QRegularExpression>
@@ -46,6 +47,7 @@
 #include <QPixmap>
 #include <QDebug>
 
+#include "MainApplication.h"
 #include "pageedit_constants.h"
 #include "pageedit_exception.h"
 
@@ -77,6 +79,14 @@ class PageEditMessageBox: public QMessageBox
 
 #include "Utility.h"
 
+static const QString DARK_STYLE =
+    "<style>\n"
+    "  :root { background-color: %1; color: %2; }\n"
+    "  a:link { color: #ff9999; }\n"
+    "  a:visited { color: #99ff99; }\n"
+    "</style>\n"
+    "<link rel=\"stylesheet\" type=\"text/css\" "
+    "href=\"%3\" />\n";
 
 // Define the user preferences location to be used
 QString Utility::DefinePrefsDir()
@@ -774,22 +784,6 @@ std::pair<QString, QString> Utility::parseHREF(const QString &relative_href)
     return std::make_pair(attpath, fragment);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void Utility::AboutBox()
 {
     QMessageBox message_box(QApplication::activeWindow());
@@ -811,4 +805,71 @@ void Utility::AboutBox()
     message_box.setText(about_text.join("\n"));
     message_box.setIconPixmap(QPixmap(":/icons/app_icon_128.png"));
     message_box.exec();
+}
+
+bool Utility::IsDarkMode()
+{
+#ifdef Q_OS_MAC
+    MainApplication *mainApplication = qobject_cast<MainApplication *>(qApp);
+    return mainApplication->isDarkMode();
+#else
+    // Windows, Linux and Other platforms
+    QPalette app_palette = qApp->palette();
+    bool isdark = app_palette.color(QPalette::Active,QPalette::WindowText).lightness() > 128;
+    return isdark;
+#endif
+}
+
+bool Utility::IsWindowsSysDarkMode()
+{
+    QSettings s("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize", QSettings::NativeFormat);
+    if (s.status() == QSettings::NoError) {
+        qDebug() << "Registry Value = " << s.value("AppsUseLightTheme");
+        return s.value("AppsUseLightTheme") == 0;
+    }
+    return false;
+}
+
+bool Utility::WindowsShouldUseDarkMode()
+{
+    QString override(GetEnvironmentVar("SIGIL_USES_DARK_MODE"));
+    if (override.isEmpty()) {
+        //Env var unset - use system registry setting.
+        return IsWindowsSysDarkMode();
+    }
+    // Otherwise use the env var: anything other than "0" is true.
+    return (override == "0" ? false : true);
+}
+
+QString Utility::AddDarkCSS(const QString &html)
+{
+    QString text = html;
+    int endheadpos = text.indexOf("</head>");
+    if (endheadpos == -1) return text;
+    QPalette pal = qApp->palette();
+    QString back = pal.color(QPalette::Base).name();
+    QString fore = pal.color(QPalette::Text).name();
+#ifdef Q_OS_MAC
+    // on macOS the Base role is used for the background not the Window role
+    QString dark_css_url = "qrc:///dark/mac_dark_scrollbar.css";
+#elif defined(Q_OS_WIN32)
+    QString dark_css_url = "qrc:///dark/win_dark_scrollbar.css";
+#else
+    // Linux Temporary
+    QString dark_css_url = "qrc:///dark/win_dark_scrollbar.css";
+#endif
+    QString inject_dark_style = DARK_STYLE.arg(back).arg(fore).arg(dark_css_url);
+    // qDebug() << "Injecting dark style: ";
+    text.insert(endheadpos, inject_dark_style);
+    return text;
+}
+
+QColor Utility::WebViewBackgroundColor()
+{
+    QColor back_color = Qt::white;
+    if (IsDarkMode()) {
+	QPalette pal = qApp->palette();
+	back_color = pal.color(QPalette::Base);
+    }
+    return back_color; 
 }
