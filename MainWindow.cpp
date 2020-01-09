@@ -1275,14 +1275,12 @@ QString MainWindow::GetCleanHtml()
         }
     }
 
-    // remove any added AddDarkCSS
-    // first remove the :root background-color
-    // FIXME: we need to make this uniquely identifiable in some way
+    // remove any added AddDarkCSS (style node has id="PageEdit_Injected")
     tags = QList<GumboTag>() << GUMBO_TAG_STYLE;
     nodes = gi.get_all_nodes_with_tags(tags);
     foreach(GumboNode * node, nodes) {
-        QString styleinfo = gi.get_local_text_of_node(node);
-	if (styleinfo.contains(":root { background-color:")) {
+        GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "id");
+        if (attr && QString::fromUtf8(attr->value) == "PageEdit_Injected") {
 	    gumbo_remove_from_parent(node);
 	    gumbo_destroy_node(node);
 	    break;

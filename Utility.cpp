@@ -80,7 +80,7 @@ class PageEditMessageBox: public QMessageBox
 #include "Utility.h"
 
 static const QString DARK_STYLE =
-    "<style>\n"
+    "<style id=\"PageEdit_Injected\">\n"
     "  :root { background-color: %1; color: %2; }\n"
     "  a:link { color: #ff9999; }\n"
     "  a:visited { color: #99ff99; }\n"
