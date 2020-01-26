@@ -21,6 +21,7 @@
 #include <QTimer>
 #include <QtWebEngineWidgets/QWebEnginePage>
 #include <QDebug>
+#include "Utility.h"
 #include "WebPageEdit.h"
 
 #define DBG if(0)
@@ -28,6 +29,8 @@
 WebPageEdit::WebPageEdit(QObject *parent)
     : QWebEnginePage(parent)
 {
+    setBackgroundColor(Utility::WebViewBackgroundColor());
+    setUrl(QUrl("about:blank"));
 }
 
 // Because you can not delegate all links in QtWebEngine we must override 

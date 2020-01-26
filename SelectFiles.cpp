@@ -30,6 +30,8 @@
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QtWebEngineWidgets/QWebEngineSettings>
 
+#include "Utility.h"
+#include "SimplePage.h"
 #include "SelectFiles.h"
 #include "SettingsStore.h"
 
@@ -97,7 +99,7 @@ SelectFiles::SelectFiles(QString title,
 {
     ui.setupUi(this);
     setWindowTitle(title);
-
+    m_WebView->setPage(new SimplePage(m_WebView));
     m_WebView->setContextMenuPolicy(Qt::NoContextMenu);
     m_WebView->setFocusPolicy(Qt::NoFocus);
     m_WebView->setAcceptDrops(false);
@@ -146,7 +148,11 @@ QStringList SelectFiles::SelectedImages()
 void SelectFiles::SetImages()
 {
     ui.Details->clear();
-    m_WebView->setHtml("", QUrl());
+    QString html = "<html><head><title></title></head><body></body></html>";
+    if (Utility::IsDarkMode()) {
+        html = Utility::AddDarkCSS(html);
+    }
+    m_WebView->setHtml(html, QUrl());
 
     m_SelectFilesModel->clear();
     QStringList header;
@@ -288,8 +294,11 @@ void SelectFiles::SetPreviewImage()
     QStandardItem *item = GetLastSelectedImageItem();
     
     ui.Details->clear();
-    m_WebView->setHtml("", QUrl());
-
+    QString html = "<html><head><title></title></head><body></body></html>";
+    if (Utility::IsDarkMode()) {
+	html = Utility::AddDarkCSS(html);
+    }
+    m_WebView->setHtml(html, QUrl());
     if (!item || item->text().isEmpty()) {
         m_PreviewReady = true;
         return;
@@ -330,6 +339,9 @@ void SelectFiles::SetPreviewImage()
         const QUrl resourceUrl = QUrl::fromLocalFile(path);
         QString html = IMAGE_HTML_BASE_PREVIEW.arg(resourceUrl.toString());
         m_PreviewLoaded = false;
+        if (Utility::IsDarkMode()) {
+	    html = Utility::AddDarkCSS(html);
+        }
         m_WebView->setHtml(html, resourceUrl);
         loading_resources = true;
     }
@@ -340,6 +352,9 @@ void SelectFiles::SetPreviewImage()
         // MainWindow::clearMemoryCaches();
         html = VIDEO_HTML_BASE.arg(resourceUrl.toString());
         m_PreviewLoaded = false;
+        if (Utility::IsDarkMode()) {
+	    html = Utility::AddDarkCSS(html);
+        }
         m_WebView->setHtml(html, resourceUrl);
         loading_resources = true;
         details = QString("%1 MB").arg(fmbsize);
@@ -349,6 +364,9 @@ void SelectFiles::SetPreviewImage()
         // MainWindow::clearMemoryCaches();
         html = AUDIO_HTML_BASE.arg(resourceUrl.toString());
         m_PreviewLoaded = false;
+        if (Utility::IsDarkMode()) {
+	    html = Utility::AddDarkCSS(html);
+        }
         m_WebView->setHtml(html, resourceUrl);
         loading_resources = true;
         details = QString("%1 MB").arg(fmbsize);

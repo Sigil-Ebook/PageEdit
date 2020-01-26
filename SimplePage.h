@@ -1,9 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin B. Hendricks, Stratford, Ontario Canada
-**  Copyright (C) 2012 John Schember <john@nachtimwald.com>
-**  Copyright (C) 2012 Grant Drake
-**  Copyright (C) 2012 Dave Heiland
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of Sigil.
 **
@@ -23,41 +20,21 @@
 *************************************************************************/
 
 #pragma once
-#ifndef MAINAPPLICATION_H
-#define MAINAPPLICATION_H
+#ifndef SIMPLEPAGE_H
+#define SIMPLEPAGE_H
 
-#include <QEvent>
-#include <QPalette>
-#include <QtWidgets/QApplication>
+#include <QObject>
+#include <QUrl>
+#include <QtWebEngineWidgets/QWebEnginePage>
 
-class QStyle;
-
-class MainApplication : public QApplication
+class SimplePage : public QWebEnginePage
 {
     Q_OBJECT
 
 public:
-    MainApplication(int &argc, char **argv);
+    SimplePage(QObject *parent = 0);
 
-    bool isDarkMode() { return m_isDark; }
-    void fixMacDarkModePalette(QPalette & pal);
-
-signals:
-    void applicationActivated();
-    void applicationDeactivated();
-    void applicationPaletteChanged();
-
-public slots:
-    void EmitPaletteChanged();
-
-protected:
-    bool event(QEvent *pEvent);
-
-private:
-    QStyle * m_Style;
-    bool m_isDark;
 };
 
-#endif // MAINAPPLICATION_H
-
+#endif // SIMPLEPAGE_H
 

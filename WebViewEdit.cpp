@@ -110,7 +110,6 @@ WebViewEdit::WebViewEdit(QWidget *parent)
       m_menu(new QMenu(this))
 {
     setPage(m_ViewWebPage);
-    page()->setBackgroundColor(Utility::WebViewBackgroundColor());
     // Set the Zoom factor but be sure no signals are set because of this.
     SettingsStore settings;
     SetCurrentZoomFactor(settings.zoomPreview());

@@ -81,6 +81,7 @@ set( SOURCE_FILES
     SelectFiles.cpp
     SelectHyperlink.cpp
     SelectId.cpp
+    SimplePage.cpp
     WebPageEdit.cpp
     WebViewEdit.cpp
     Inspector.cpp
@@ -110,6 +111,7 @@ set( HEADER_FILES
     SelectFiles.h
     SelectHyperlink.h
     SelectId.h
+    SimplePage.h
     WebPageEdit.h
     WebViewEdit.h
     Inspector.h

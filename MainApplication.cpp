@@ -42,10 +42,30 @@ MainApplication::MainApplication(int &argc, char **argv)
     m_Style = QStyleFactory::create("macintosh");
     QPalette app_palette = m_Style->standardPalette();
     m_isDark = app_palette.color(QPalette::Active,QPalette::WindowText).lightness() > 128;
-    // do not forget to set the initial app palette as well
+    fixMacDarkModePalette(app_palette);
+    // set the initial app palette
     setPalette(app_palette);
 #endif
 }
+
+void MainApplication::fixMacDarkModePalette(QPalette &pal)
+{
+# ifdef Q_OS_MAC
+    // See QTBUG-75321 and follow Kovid's workaround for broken ButtonText always being dark
+    pal.setColor(QPalette::ButtonText, pal.color(QPalette::WindowText));
+    if (m_isDark) {
+        // make alternating base color change not so sharp
+        pal.setColor(QPalette::AlternateBase, pal.color(QPalette::Base).lighter(150));
+        // make link color better for dark mode (try to match calibre for consistency)
+        pal.setColor(QPalette::Link, QColor("#6cb4ee"));
+    }
+#endif
+}
+
+
+
+
+
 
 bool MainApplication::event(QEvent *pEvent)
 {
@@ -66,15 +86,16 @@ bool MainApplication::event(QEvent *pEvent)
 void MainApplication::EmitPaletteChanged()
 {
 #ifdef Q_OS_MAC
-    // on macOS the application palette actual colors never seem to change after launch 
+    // on macOS the application palette actual colors never seem to change after launch
     // even when DarkMode is enabled. So we use a mac style standardPalette to determine
-    // if a drak vs light mode transition has been made and then use it to set the 
+    // if a drak vs light mode transition has been made and then use it to set the
     // Application palette
     QPalette app_palette = m_Style->standardPalette();
     bool isdark = app_palette.color(QPalette::Active,QPalette::WindowText).lightness() > 128;
     if (m_isDark != isdark) {
-        qDebug() << "Theme changed " << "was isDark:" << m_isDark << "now isDark:" << isdark;
+        // qDebug() << "Theme changed " << "was isDark:" << m_isDark << "now isDark:" << isdark;
         m_isDark = isdark;
+        fixMacDarkModePalette(app_palette);
         setPalette(app_palette);
         emit applicationPaletteChanged();
     }

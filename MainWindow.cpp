@@ -73,6 +73,8 @@ static const QString BREAK_TAG_INSERT    = "<hr class=\"sigil_split_marker\" />"
 
 static const QString DEFAULT_FILENAME = "untitled.xhtml";
 
+static const QStringList HEADERTAGS = QStringList() << "h1" << "h2" << "h3" << "h4" << "h5" << "h6";
+
 const float ZOOM_STEP               = 0.1f;
 const float ZOOM_MIN                = 0.09f;
 const float ZOOM_MAX                = 5.0f;
