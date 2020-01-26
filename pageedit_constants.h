@@ -1,6 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2020  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2020  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -37,6 +38,8 @@ extern const QString PATH_LIST_DELIM;
 #if !defined(_WIN32) && !defined(__APPLE__)
 extern const QString pageedit_extra_root;
 extern const QString pageedit_share_root;
+extern const QString force_sigil_darkmode_palette;
+extern const QString force_pageedit_darkmode_palette;
 extern const QString mathjax_dir;
 #endif
 

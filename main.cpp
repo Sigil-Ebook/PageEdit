@@ -147,6 +147,42 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
 }
 
 
+QPalette getDarkPalette()
+{
+    // Dark palette for PageEdit
+    QPalette darkPalette;
+
+    darkPalette.setColor(QPalette::Window, QColor(53, 53, 53));
+    darkPalette.setColor(QPalette::Disabled, QPalette::Window, QColor(80, 80, 80));
+    darkPalette.setColor(QPalette::WindowText, QColor(238, 238, 238));
+    darkPalette.setColor(QPalette::Disabled, QPalette::WindowText,
+                        QColor(127, 127, 127));
+    darkPalette.setColor(QPalette::Base, QColor(42, 42, 42));
+    darkPalette.setColor(QPalette::Disabled, QPalette::Base, QColor(80, 80, 80));
+    darkPalette.setColor(QPalette::AlternateBase, QColor(66, 66, 66));
+    darkPalette.setColor(QPalette::ToolTipBase, QColor(53, 53, 53));
+    darkPalette.setColor(QPalette::ToolTipText, QColor(238, 238, 238));
+    darkPalette.setColor(QPalette::Text, QColor(238, 238, 238));
+    darkPalette.setColor(QPalette::Disabled, QPalette::Text, QColor(127, 127, 127));
+    darkPalette.setColor(QPalette::Dark, QColor(35, 35, 35));
+    darkPalette.setColor(QPalette::Shadow, QColor(20, 20, 20));
+    darkPalette.setColor(QPalette::Button, QColor(53, 53, 53));
+    darkPalette.setColor(QPalette::ButtonText, QColor(238, 238, 238));
+    darkPalette.setColor(QPalette::Disabled, QPalette::ButtonText,
+                        QColor(127, 127, 127));
+    darkPalette.setColor(QPalette::BrightText, Qt::red);
+    darkPalette.setColor(QPalette::Link, QColor(108, 180, 238));
+    darkPalette.setColor(QPalette::LinkVisited, QColor(108, 180, 238));
+    darkPalette.setColor(QPalette::Highlight, QColor(42, 130, 218));
+    darkPalette.setColor(QPalette::Disabled, QPalette::Highlight, QColor(80, 80, 80));
+    darkPalette.setColor(QPalette::HighlightedText, QColor(238, 238, 238));
+    darkPalette.setColor(QPalette::Disabled, QPalette::HighlightedText,
+                        QColor(127, 127, 127));
+
+    return darkPalette;
+}
+
+
 // Application entry point
 int main(int argc, char *argv[])
 {
@@ -212,46 +248,26 @@ int main(int argc, char *argv[])
     }
     app.installTranslator(&pageeditTranslator);
 
-#ifdef Q_OS_WIN32
-    // Fusion style is fully dpi aware on Windows
-    app.setStyle(QStyleFactory::create("fusion"));
-    if (Utility::WindowsShouldUseDarkMode()) {
-	// qss stylesheet from resources
-	QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
-	app.setStyleSheet(dark_styles);
-
-	// Dark palette for Sigil
-	QPalette darkPalette;
-
-	darkPalette.setColor(QPalette::Window, QColor(53, 53, 53));
-	darkPalette.setColor(QPalette::Disabled, QPalette::Window, QColor(80, 80, 80));
-	darkPalette.setColor(QPalette::WindowText, Qt::white);
-	darkPalette.setColor(QPalette::Disabled, QPalette::WindowText,
-			     QColor(127, 127, 127));
-	darkPalette.setColor(QPalette::Base, QColor(42, 42, 42));
-	darkPalette.setColor(QPalette::Disabled, QPalette::Base, QColor(80, 80, 80));
-	darkPalette.setColor(QPalette::AlternateBase, QColor(66, 66, 66));
-	darkPalette.setColor(QPalette::ToolTipBase, Qt::white);
-	darkPalette.setColor(QPalette::ToolTipText, QColor(53, 53, 53));
-	darkPalette.setColor(QPalette::Text, Qt::white);
-	darkPalette.setColor(QPalette::Disabled, QPalette::Text, QColor(127, 127, 127));
-	darkPalette.setColor(QPalette::Dark, QColor(35, 35, 35));
-	darkPalette.setColor(QPalette::Shadow, QColor(20, 20, 20));
-	darkPalette.setColor(QPalette::Button, QColor(53, 53, 53));
-	darkPalette.setColor(QPalette::ButtonText, Qt::white);
-	darkPalette.setColor(QPalette::Disabled, QPalette::ButtonText,
-			     QColor(127, 127, 127));
-	darkPalette.setColor(QPalette::BrightText, Qt::red);
-	darkPalette.setColor(QPalette::Link, QColor(108, 180, 238));
-	darkPalette.setColor(QPalette::LinkVisited, QColor(108, 180, 238));
-	darkPalette.setColor(QPalette::Highlight, QColor(42, 130, 218));
-	darkPalette.setColor(QPalette::Disabled, QPalette::Highlight, QColor(80, 80, 80));
-	darkPalette.setColor(QPalette::HighlightedText, Qt::white);
-	darkPalette.setColor(QPalette::Disabled, QPalette::HighlightedText,
-			     QColor(127, 127, 127));
-
-	app.setPalette(darkPalette);
-    }
+#ifndef Q_OS_MAC
+#ifndef Q_OS_WIN32
+        // Use platform themes/styles on Linux unless either Sigil or PageEdit's FORCE variable is set
+        if (!force_pageedit_darkmode_palette.isEmpty() || !force_sigil_darkmode_palette.isEmpty()) {
+            // Fusion style is fully dpi aware on Windows/Linux
+            app.setStyle(QStyleFactory::create("fusion"));
+            // qss stylesheet from resources
+            QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
+            app.setStyleSheet(dark_styles);
+            app.setPalette(getDarkPalette());
+        }
+#endif
+        if (Utility::WindowsShouldUseDarkMode()) {
+            // Fusion style is fully dpi aware on Windows/Linux
+            app.setStyle(QStyleFactory::create("fusion"));
+            // qss stylesheet from resources
+            QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
+            app.setStyleSheet(dark_styles);
+            app.setPalette(getDarkPalette());
+        }
 #endif
 
     // Check for existing qt_styles.qss in Prefs dir and load it if present
