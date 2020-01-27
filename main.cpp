@@ -110,6 +110,7 @@ static QIcon GetApplicationIcon()
 void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QString &message)
 {
     QString qt_log_entry;
+    QString context_file;
 
     switch (type) {
         case QtDebugMsg:
@@ -126,8 +127,12 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
             break;
         case QtCriticalMsg:
             qt_log_entry = QString("Critical: %1").arg(message.toLatin1().constData());
-            //Utility::DisplayExceptionErrorDialog(QString("Critical: %1").arg(error_message));
-            fprintf(stderr, "Critical: %s\n", message.toLatin1().constData());
+	    if (context.file) context_file = QString(context.file);
+	    // screen out error messages from inspector / devtools
+            if (!context_file.contains("devtools://devtools")) {
+                //Utility::DisplayExceptionErrorDialog(QString("Critical: %1").arg(error_message));
+                fprintf(stderr, "Critical: %s\n", message.toLatin1().constData());
+	    }
             break;
         case QtFatalMsg:
             Utility::DisplayExceptionErrorDialog(QString("Fatal: %1").arg(QString(message)));
