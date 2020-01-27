@@ -33,6 +33,13 @@ static const float ZOOM_NORMAL = 1.0f;
 static QString SETTINGS_GROUP = "user_preferences";
 static QString KEY_UI_LANGUAGE = SETTINGS_GROUP + "/" + "ui_language";
 static QString KEY_UI_DICTIONARY = SETTINGS_GROUP + "/" + "ui_dictionary";
+
+static QString KEY_UI_FONT = SETTINGS_GROUP + "/" + "ui_font";
+static QString KEY_ORIGINAL_UI_FONT = SETTINGS_GROUP + "/" + "original_ui_font";
+
+static QString KEY_HIGHDPI_SETTING = SETTINGS_GROUP + "/" + "high_dpi";
+static QString KEY_PREVIEW_DARK_IN_DM = SETTINGS_GROUP + "/" + "preview_dark_in_dm";
+
 static QString KEY_SPELL_CHECK = SETTINGS_GROUP + "/" + "spellcheck";
 static QString KEY_ZOOM_IMAGE = SETTINGS_GROUP + "/" + "zoom_image";
 static QString KEY_ZOOM_TEXT = SETTINGS_GROUP + "/" + "zoom_text";
@@ -77,6 +84,30 @@ QString SettingsStore::uiDictionary()
 {
     clearSettingsGroup();
     return value(KEY_UI_DICTIONARY, "en_US").toString();
+}
+
+QString SettingsStore::uiFont()
+{
+    clearSettingsGroup();
+    return value(KEY_UI_FONT, "").toString();
+}
+
+QString SettingsStore::originalUIFont()
+{
+    clearSettingsGroup();
+    return value(KEY_ORIGINAL_UI_FONT, "").toString();
+}
+
+int SettingsStore::highDPI()
+{
+    clearSettingsGroup();
+    return value(KEY_HIGHDPI_SETTING, 0).toInt();
+}
+
+int SettingsStore::previewDark()
+{
+    clearSettingsGroup();
+    return value(KEY_PREVIEW_DARK_IN_DM, 1).toInt();
 }
 
 #if 0
@@ -182,6 +213,30 @@ void SettingsStore::setUIDictionary(const QString &dictionary_name)
 {
     clearSettingsGroup();
     setValue(KEY_UI_DICTIONARY, dictionary_name);
+}
+
+void SettingsStore::setUIFont(const QString &font_data)
+{
+    clearSettingsGroup();
+    setValue(KEY_UI_FONT, font_data);
+}
+
+void SettingsStore::setOriginalUIFont(const QString &font_data)
+{
+    clearSettingsGroup();
+    setValue(KEY_ORIGINAL_UI_FONT, font_data);
+}
+
+void SettingsStore::setHighDPI(int value)
+{
+    clearSettingsGroup();
+    setValue(KEY_HIGHDPI_SETTING, value);
+}
+
+void SettingsStore::setPreviewDark(int enabled)
+{
+    clearSettingsGroup();
+    setValue(KEY_PREVIEW_DARK_IN_DM, enabled);
 }
 
 #if 0

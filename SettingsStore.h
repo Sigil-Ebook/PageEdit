@@ -53,6 +53,15 @@ public:
 
     QString uiDictionary();
 
+    QString uiFont();
+
+    QString originalUIFont();
+
+    int highDPI();
+
+    int previewDark();
+
+
     // bool spellCheck();
 
     /**
@@ -122,6 +131,14 @@ public slots:
     void setUILanguage(const QString &language_code);
 
     void setUIDictionary(const QString &dictionary_name);
+
+    void setUIFont(const QString &font_data);
+
+    void setOriginalUIFont(const QString &font_data);
+
+    void setHighDPI(int value);
+
+    void setPreviewDark(int enabled);
 
     // void setSpellCheck(bool enabled);
 
