@@ -259,7 +259,7 @@ int main(int argc, char *argv[])
             app.setStyleSheet(dark_styles);
             app.setPalette(getDarkPalette());
         }
-#endif
+#else
         if (Utility::WindowsShouldUseDarkMode()) {
             // Fusion style is fully dpi aware on Windows/Linux
             app.setStyle(QStyleFactory::create("fusion"));
@@ -268,6 +268,7 @@ int main(int argc, char *argv[])
             app.setStyleSheet(dark_styles);
             app.setPalette(getDarkPalette());
         }
+#endif
 #endif
 
     // Check for existing qt_styles.qss in Prefs dir and load it if present

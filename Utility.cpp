@@ -824,7 +824,6 @@ bool Utility::IsWindowsSysDarkMode()
 {
     QSettings s("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize", QSettings::NativeFormat);
     if (s.status() == QSettings::NoError) {
-        qDebug() << "Registry Value = " << s.value("AppsUseLightTheme");
         return s.value("AppsUseLightTheme") == 0;
     }
     return false;
@@ -832,7 +831,7 @@ bool Utility::IsWindowsSysDarkMode()
 
 bool Utility::WindowsShouldUseDarkMode()
 {
-    QString override(GetEnvironmentVar("SIGIL_USES_DARK_MODE"));
+    QString override(GetEnvironmentVar("PAGEDIT_USES_DARK_MODE"));
     if (override.isEmpty()) {
         //Env var unset - use system registry setting.
         return IsWindowsSysDarkMode();
