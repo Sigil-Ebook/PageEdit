@@ -1,8 +1,8 @@
 /************************************************************************
 **
-**  Copyright (C) 2019  Kevin B. Hendricks, Stratford, Ontario Canada
-**  Copyright (C) 2012  John Schember <john@nachtimwald.com>
-**  Copyright (C) 2012  Grant Drake
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford, Ontario Canada
+**  Copyright (C) 2012      John Schember <john@nachtimwald.com>
+**  Copyright (C) 2012      Grant Drake
 **
 **  This file is part of PageEdit.
 **
@@ -40,17 +40,25 @@ class AppearanceWidget : public PreferencesWidget
 public:
     AppearanceWidget();
     void readSettings();
-    PreferencesWidget::ResultAction saveSettings();
+    PreferencesWidget::ResultActions saveSettings();
 
 private slots:
+    void changeUIFontButtonClicked();
     void resetAllButtonClicked();
     void newSliderValue(int value);
 
 private:
+    void updateUIFontDisplay();
     void loadComboValueOrDefault(QFontComboBox *fontComboBox, const QString &value, const QString &defaultValue);
     void connectSignalsToSlots();
 
     Ui::AppearanceWidget ui;
+    int m_HighDPI;
+    int m_PreviewDark;
+    QString m_initUIFont;
+    QString m_currentUIFont;
+    bool m_isHighDPIComboEnabled;
+    bool m_uiFontResetFlag;
 };
 
 #endif // APPEARANCEWIDGET_H
