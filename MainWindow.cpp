@@ -1557,8 +1557,13 @@ void MainWindow::PasteText(const QString& text)
 
 void MainWindow::PreferencesDialog()
 {
-    Preferences preferences(this);
-    preferences.exec();
+    Preferences prefers(this);
+    prefers.exec();
+
+    if (prefers.isReloadPreviewRequired()) {
+        RefreshPage();
+    }
+
     if (m_SelectCharacter->isVisible()) {
         // To ensure any font size changes are immediately applied.                                 
         m_SelectCharacter->show();

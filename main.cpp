@@ -106,6 +106,35 @@ static QIcon GetApplicationIcon()
 #endif
 
 
+void setupHighDPI()
+{
+    bool has_env_setting = false;
+    QStringList env_vars;
+    env_vars << "QT_ENABLE_HIGHDPI_SCALING" << "QT_SCALE_FACTOR_ROUNDING_POLICY"
+             << "QT_AUTO_SCREEN_SCALE_FACTOR" << "QT_SCALE_FACTOR"
+             << "QT_SCREEN_SCALE_FACTORS" << "QT_DEVICE_PIXEL_RATIO";
+    foreach(QString v, env_vars) {
+        if (!Utility::GetEnvironmentVar(v).isEmpty()) {
+            has_env_setting = true;
+            break;
+        }
+    }
+
+    SettingsStore ss;
+    int highdpi = ss.highDPI();
+    if (highdpi == 1 || (highdpi == 0 && !has_env_setting)) {
+        // Turning on Automatic High DPI scaling
+	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
+    } else if (highdpi == 2) {
+        // Turning off Automatic High DPI scaling
+	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, false);
+        foreach(QString v, env_vars) {
+            bool irrel = qunsetenv(v.toUtf8().constData());
+        }
+    }
+}
+
+
 // The message handler installed to handle Qt messages
 void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QString &message)
 {
@@ -206,6 +235,10 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("sigil-ebook.com");
     QCoreApplication::setApplicationName("pageedit");
     QCoreApplication::setApplicationVersion(QString(PAGEEDIT_VERSION));
+#ifndef Q_OS_MAC
+    setupHighDPI();
+    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
+#endif
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
     MainApplication app(argc, argv);
@@ -255,26 +288,62 @@ int main(int argc, char *argv[])
 
 #ifndef Q_OS_MAC
 #ifndef Q_OS_WIN32
-        // Use platform themes/styles on Linux unless either Sigil or PageEdit's FORCE variable is set
-        if (!force_pageedit_darkmode_palette.isEmpty() || !force_sigil_darkmode_palette.isEmpty()) {
-            // Fusion style is fully dpi aware on Windows/Linux
-            app.setStyle(QStyleFactory::create("fusion"));
-            // qss stylesheet from resources
-            QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
-            app.setStyleSheet(dark_styles);
-            app.setPalette(getDarkPalette());
-        }
+    // Use platform themes/styles on Linux unless either Sigil or PageEdit's FORCE variable is set
+    if (!force_pageedit_darkmode_palette.isEmpty() || !force_sigil_darkmode_palette.isEmpty()) {
+        // Fusion style is fully dpi aware on Windows/Linux
+        app.setStyle(QStyleFactory::create("fusion"));
+        // qss stylesheet from resources
+        QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
+        app.setStyleSheet(dark_styles);
+        app.setPalette(getDarkPalette());
+    }
 #else
-        if (Utility::WindowsShouldUseDarkMode()) {
-            // Fusion style is fully dpi aware on Windows/Linux
-            app.setStyle(QStyleFactory::create("fusion"));
-            // qss stylesheet from resources
-            QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
-            app.setStyleSheet(dark_styles);
-            app.setPalette(getDarkPalette());
+    if (Utility::WindowsShouldUseDarkMode()) {
+        // Fusion style is fully dpi aware on Windows/Linux
+        app.setStyle(QStyleFactory::create("fusion"));
+        // qss stylesheet from resources
+        QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
+        app.setStyleSheet(dark_styles);
+        app.setPalette(getDarkPalette());
+    }
+#endif
+#endif
+
+    // Set ui font from preferences after dark theming
+    QFont f = QFont(QApplication::font());
+#ifdef Q_OS_WIN32
+    if (f.family() == "MS Shell Dlg 2" && f.pointSize() == 8) {
+        // Microsoft's recommended UI defaults
+        f.setFamily("Segoe UI");
+        f.setPointSize(9);
+	QApplication::setFont(f);
+    }
+#elif defined(Q_OS_MAC)
+    // Just in case
+#else
+    if (f.family() == "Sans Serif" && f.pointSize() == 9) {
+        f.setPointSize(10);
+	QApplication::setFont(f);
+    }
+#endif
+    settings.setOriginalUIFont(f.toString());
+    if (!settings.uiFont().isEmpty()) {
+        QFont font;
+        if (font.fromString(settings.uiFont()))
+	    QApplication::setFont(font);
+    }
+#ifndef Q_OS_MAC
+    // redo on a timer to ensure in all cases
+    if (!settings.uiFont().isEmpty()) {
+        QFont font;
+        if (font.fromString(settings.uiFont())) {
+	    QTimer::singleShot(0, [=]() {
+		    QApplication::setFont(font);
+		} );
         }
+    }
 #endif
-#endif
+    // End of UI font stuff
 
     // Check for existing qt_styles.qss in Prefs dir and load it if present
     QString qt_stylesheet_path = Utility::DefinePrefsDir() + "/qt_styles.qss";
