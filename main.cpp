@@ -32,6 +32,7 @@
 #include <QTranslator>
 #include <QMessageBox>
 #include <QFileInfo>
+#include <QTimer>
 #include <QDebug>
 
 #ifdef Q_OS_MAC
