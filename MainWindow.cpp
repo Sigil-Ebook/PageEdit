@@ -664,8 +664,11 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
     }
 
 
-    // inject dark mode css
-    text = Utility::AddDarkCSS(text);
+    //if isDarkMode is set, inject a local style in head
+    SettingsStore settings;
+    if (Utility::IsDarkMode() && settings.previewDark()) {
+        text = Utility::AddDarkCSS(text);
+    }
 
     SettingsStore ss;
     // to prevent the WebEngine from inserting extraneous non-breaking space characters
@@ -1421,7 +1424,7 @@ bool MainWindow::SaveAs()
 
 void MainWindow::RefreshPage()
 {
-    m_WebView->page()->setBackgroundColor(Utility::WebViewBackgroundColor());
+    m_WebView->page()->setBackgroundColor(Utility::WebViewBackgroundColor(true));
     if (!m_CurrentFilePath.isEmpty()) {
         QString text = GetCleanHtml();
         UpdatePage(m_CurrentFilePath, text);

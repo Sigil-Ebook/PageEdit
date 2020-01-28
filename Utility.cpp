@@ -47,6 +47,7 @@
 #include <QPixmap>
 #include <QDebug>
 
+#include "SettingsStore.h"
 #include "MainApplication.h"
 #include "pageedit_constants.h"
 #include "pageedit_exception.h"
@@ -849,26 +850,31 @@ QString Utility::AddDarkCSS(const QString &html)
     QString back = pal.color(QPalette::Base).name();
     QString fore = pal.color(QPalette::Text).name();
 #ifdef Q_OS_MAC
-    // on macOS the Base role is used for the background not the Window role
     QString dark_css_url = "qrc:///dark/mac_dark_scrollbar.css";
 #elif defined(Q_OS_WIN32)
     QString dark_css_url = "qrc:///dark/win_dark_scrollbar.css";
 #else
-    // Linux Temporary
+    // Linux
     QString dark_css_url = "qrc:///dark/win_dark_scrollbar.css";
 #endif
     QString inject_dark_style = DARK_STYLE.arg(back).arg(fore).arg(dark_css_url);
-    // qDebug() << "Injecting dark style: ";
     text.insert(endheadpos, inject_dark_style);
     return text;
 }
 
-QColor Utility::WebViewBackgroundColor()
+
+QColor Utility::WebViewBackgroundColor(bool followpref)
 {
     QColor back_color = Qt::white;
     if (IsDarkMode()) {
-	QPalette pal = qApp->palette();
-	back_color = pal.color(QPalette::Base);
+        if (followpref) {
+            SettingsStore ss;
+            if (!ss.previewDark()) {
+                return back_color;    
+            }
+        }
+        QPalette pal = qApp->palette();
+        back_color = pal.color(QPalette::Base);
     }
     return back_color; 
 }
