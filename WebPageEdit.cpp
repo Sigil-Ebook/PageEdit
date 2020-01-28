@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -29,7 +29,7 @@
 WebPageEdit::WebPageEdit(QObject *parent)
     : QWebEnginePage(parent)
 {
-    setBackgroundColor(Utility::WebViewBackgroundColor());
+    setBackgroundColor(Utility::WebViewBackgroundColor(true));
     setUrl(QUrl("about:blank"));
 }
 
