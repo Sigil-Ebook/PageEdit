@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019  Kevin B. Hendricks, Stratford Ontario Canada
-**  Copyright (C) 2011  John Schember <john@nachtimwald.com>
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2011      John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
 **
@@ -64,7 +64,7 @@ GeneralSettings::GeneralSettings()
     readSettings();
 }
 
-PreferencesWidget::ResultAction GeneralSettings::saveSettings()
+PreferencesWidget::ResultActions GeneralSettings::saveSettings()
 {
     SettingsStore settings;
 
@@ -95,12 +95,13 @@ PreferencesWidget::ResultAction GeneralSettings::saveSettings()
     settings.setUIDictionary(ui.cbUIDictionary->currentText());
 
     settings.setUILanguage(ui.cbUILanguage->currentText().replace("-", "_"));
+
+    PreferencesWidget::ResultActions results = PreferencesWidget::ResultAction_None;
     if (ui.cbUILanguage->currentText() != m_UILanguage) {
-        return PreferencesWidget::ResultAction_RestartPageEdit;
+        results = results | PreferencesWidget::ResultAction_RestartPageEdit;
     }
-
-
-    return PreferencesWidget::ResultAction_None;
+    results = results & PreferencesWidget::ResultAction_Mask;
+    return results;
 }
 
 void GeneralSettings::readSettings()

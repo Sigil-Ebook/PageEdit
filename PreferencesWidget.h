@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019  Kevin B. Hendricks, Stratford Ontario Canada
-**  Copyright (C) 2011  John Schember <john@nachtimwald.com>
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2011      John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
 **
@@ -36,20 +36,23 @@ class PreferencesWidget : public QWidget
     Q_OBJECT
 
 public:
+    typedef uint32_t ResultActions;
     /**
      * Describes the result actions to present to the user as a result
      * of saving any changes made in the preferences widgets.
-     * Results are in order of increasing priority of result to display.
+     * Results values of powers of 2 flags
      */
     enum ResultAction {
-        ResultAction_None = 0,               /**< Default, no further action required */
-        ResultAction_RestartPageEdit         /**< Warn user that PageEdit needs to be restarted. */
+        ResultAction_None            = 0,    // Default, no further action required
+        ResultAction_RestartPageEdit = 1,    // Warn user that PageEdit needs to be restarted.
+        ResultAction_ReloadPreview   = 2,    // Reload main Preview/PageEdit widget
+        ResultAction_Mask            = 3,    // And Mask of allowable values
     };
 
     /**
      * Save settings made available by the widget.
      */
-    virtual ResultAction saveSettings() = 0;
+    virtual ResultActions saveSettings() = 0;
 };
 
 #endif // PREFERENCESWIDGET_H

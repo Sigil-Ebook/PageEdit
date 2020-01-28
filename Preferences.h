@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019  Kevin B. Hendricks, Stratford Ontario Canada
-**  Copyright (C) 2011  John Schember <john@nachtimwald.com>
+**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2011      John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
 **
@@ -57,6 +57,8 @@ public:
      */
     bool isRestartRequired();
 
+    bool isReloadPreviewRequired();
+
     void makeActive(int);
 
 private slots:
@@ -99,6 +101,7 @@ private:
     void connectSignalsSlots();
 
     bool m_restartPageEdit;
+    bool m_reloadPreview;
 
     Ui::Preferences ui;
 };

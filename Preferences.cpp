@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019  Kevin B, Hendricks, Stratford Ontario Canada
-**  Copyright (C) 2011  John Schember <john@nachtimwald.com>
+**  Copyright (C) 2019-2020 Kevin B, Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2011      John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
 **
@@ -38,7 +38,8 @@ static const QString SETTINGS_GROUP = "preferences_dialog";
 
 Preferences::Preferences(QWidget *parent) :
     QDialog(parent),
-    m_restartPageEdit(false)
+    m_restartPageEdit(false),
+    m_reloadPreview(false)
 {
     ui.setupUi(this);
     extendUI();
@@ -60,7 +61,7 @@ void Preferences::selectPWidget(QListWidgetItem *current, QListWidgetItem *previ
 
 void Preferences::saveSettings()
 {
-    PreferencesWidget::ResultAction widgetResult;
+    PreferencesWidget::ResultActions widgetResult;
     SettingsStore settings;
     settings.beginGroup(SETTINGS_GROUP);
     QApplication::setOverrideCursor(Qt::WaitCursor);
@@ -73,9 +74,12 @@ void Preferences::saveSettings()
         if (pw != 0) {
             widgetResult = pw->saveSettings();
 
-            if (widgetResult == PreferencesWidget::ResultAction_RestartPageEdit) {
+            if (widgetResult & PreferencesWidget::ResultAction_RestartPageEdit) {
                 m_restartPageEdit = true;
             }
+            if (widgetResult & PreferencesWidget::ResultAction_ReloadPreview) {
+                m_reloadPreview = true;
+	    }
         }
     }
 
@@ -129,6 +133,11 @@ void Preferences::appendPreferenceWidget(PreferencesWidget *widget)
 bool Preferences::isRestartRequired()
 {
     return m_restartPageEdit;
+}
+
+bool Preferences::isReloadPreviewRequired()
+{
+    return m_reloadPreview;
 }
 
 void Preferences::openPreferencesLocation()
