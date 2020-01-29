@@ -562,6 +562,8 @@ void MainWindow::SetupView()
     sizeMenuIcons();
 
     m_WebView->Zoom();
+    UpdateZoomSlider(GetZoomFactor());
+    UpdateZoomLabel(GetZoomFactor());
 
     QApplication::restoreOverrideCursor();
 }
