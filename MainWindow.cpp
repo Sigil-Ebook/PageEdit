@@ -61,7 +61,7 @@
 #include "MainApplication.h"
 #include "MainWindow.h"
 
-#define DBG if(0)
+#define DBG if(1)
 
 static const QString SETTINGS_GROUP = "mainwindow";
 
@@ -466,6 +466,12 @@ void MainWindow::SetupView()
 {
     // QWebEngineView events are routed to their parent
     m_WebView->installEventFilter(this);
+
+#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+    // #if QT_VERSION < QT_VERSION_CHECK(5, 11, 0)
+    m_WebView->focusProxy()->installEventFilter(this);
+    // #endif
+#endif
 
     QApplication::setOverrideCursor(Qt::WaitCursor);
     setAttribute(Qt::WA_DeleteOnClose);
