@@ -1853,6 +1853,7 @@ void MainWindow::ExtendIconSizes()
     icon = ui.actionMode->icon();
     icon.addFile(QString::fromUtf8(":/icons/mode-preview_22px.png"), QSize(22,22), QIcon::Normal, QIcon::Off);
     icon.addFile(QString::fromUtf8(":/icons/mode-edit_22px.png"), QSize(22,22), QIcon::Normal, QIcon::On);
+    icon.addFile(QString::fromUtf8(":/icons/mode-edit_48px.png"), QSize(48,48), QIcon::Normal, QIcon::On);
     ui.actionMode->setIcon(icon);
 
     icon = ui.actionNext->icon();
