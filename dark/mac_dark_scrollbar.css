@@ -16,3 +16,5 @@
 ::-webkit-scrollbar-corner {
     background: rgb(61,61,61);
 }
+
+::-webkit-scrollbar {display: block;}

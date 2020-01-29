@@ -85,6 +85,7 @@ static const QString DARK_STYLE =
     "  :root { background-color: %1; color: %2; }\n"
     "  a:link { color: #ff9999; }\n"
     "  a:visited { color: #99ff99; }\n"
+    "  ::-webkit-scrollbar { display: none; }\n"
     "</style>\n"
     "<link rel=\"stylesheet\" type=\"text/css\" "
     "href=\"%3\" />\n";
@@ -855,7 +856,7 @@ QString Utility::AddDarkCSS(const QString &html)
     QString dark_css_url = "qrc:///dark/win_dark_scrollbar.css";
 #else
     // Linux
-    QString dark_css_url = "qrc:///dark/win_dark_scrollbar.css";
+    QString dark_css_url = "qrc:///dark/lin_dark_scrollbar.css";
 #endif
     QString inject_dark_style = DARK_STYLE.arg(back).arg(fore).arg(dark_css_url);
     text.insert(endheadpos, inject_dark_style);

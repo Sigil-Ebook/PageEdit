@@ -45,7 +45,7 @@ AppearanceWidget::AppearanceWidget()
 
     ui.setupUi(this);
 
-    // setup the HibhDPI combo box here
+    // setup the HighDPI combo box here
     ui.comboHighDPI->addItems({tr("Detect"), tr("On"), tr("Off")});
     QString highdpi_tooltip = "<p><dt><b>" + tr("Detect") + "</b><dd>" + tr("Detect whether any high dpi scaling should take place.");
     highdpi_tooltip += " " + tr("Defers to any Qt environment variables that are set to control high dpi behavior.") + "</dd>";
