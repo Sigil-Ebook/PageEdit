@@ -29,7 +29,7 @@
 
 static const QString BASIC_HTML =
     "<html><head><title></title></head>"
-    "<body bgcolor=\"%1\"></body></html>";
+    "<body style=\"background-color: %1\"></body></html>";
  
 WebPageEdit::WebPageEdit(QObject *parent)
     : QWebEnginePage(parent)
