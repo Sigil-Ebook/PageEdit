@@ -468,9 +468,9 @@ void MainWindow::SetupView()
     m_WebView->installEventFilter(this);
 
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
-    // #if QT_VERSION < QT_VERSION_CHECK(5, 11, 0)
-    m_WebView->focusProxy()->installEventFilter(this);
-    // #endif
+    // this may be needed by all platforms in the future
+    QWidget * fp = m_WebView->focusProxy();
+    if (fp) fp->installEventFilter(this);
 #endif
 
     QApplication::setOverrideCursor(Qt::WaitCursor);
