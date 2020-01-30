@@ -1,6 +1,7 @@
 /************************************************************************
 **
 **  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2020      Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -25,12 +26,21 @@
 #include "WebPageEdit.h"
 
 #define DBG if(0)
+
+static const QString BASIC_HTML =
+    "<html><head><title></title></head>"
+    "<body bgcolor=\"%1\"></body></html>";
  
 WebPageEdit::WebPageEdit(QObject *parent)
     : QWebEnginePage(parent)
 {
+
     setBackgroundColor(Utility::WebViewBackgroundColor(true));
+#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+    setHtml(BASIC_HTML.arg(backgroundColor().name()));
+#else
     setUrl(QUrl("about:blank"));
+#endif
 }
 
 // Because you can not delegate all links in QtWebEngine we must override 
