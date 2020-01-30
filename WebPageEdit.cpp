@@ -36,7 +36,11 @@ WebPageEdit::WebPageEdit(QObject *parent)
 {
 
     setBackgroundColor(Utility::WebViewBackgroundColor(true));
+
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+    // Qt 5.14 seems to have broken setBackgroundColor completely
+    // Linux is the only one there now but this may be needed for all platforms
+    // in the future unless Qt is fixed
     setHtml(BASIC_HTML.arg(backgroundColor().name()));
 #else
     setUrl(QUrl("about:blank"));
