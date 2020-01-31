@@ -833,7 +833,7 @@ bool Utility::IsWindowsSysDarkMode()
 
 bool Utility::WindowsShouldUseDarkMode()
 {
-    QString override(GetEnvironmentVar("PAGEDIT_USES_DARK_MODE"));
+    QString override(GetEnvironmentVar("PAGEEDIT_USES_DARK_MODE"));
     if (override.isEmpty()) {
         //Env var unset - use system registry setting.
         return IsWindowsSysDarkMode();
