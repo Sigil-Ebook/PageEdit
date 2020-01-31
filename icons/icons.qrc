@@ -31,6 +31,8 @@
         <file>edit-select-all_48px.png</file>
         <file>edit-undo_22px.png</file>
         <file>edit-undo_48px.png</file>
+	<file>find-next_16px.png</file>
+        <file>find-previous_16px.png</file>
         <file>format-indent-less_22px.png</file>
         <file>format-indent-less_48px.png</file>
         <file>format-indent-more_22px.png</file>

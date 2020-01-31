@@ -48,15 +48,16 @@ SearchToolbar::SearchToolbar(WebViewEdit* view, QWidget* parent)
 {
     ui->setupUi(this);
 
-    // ui->closeButton->setIcon(QApplication::style()->standardIcon(QStyle::SP_TitleBarCloseButton));
     QIcon icon(QString::fromUtf8(":/icons/widget-close_48px.png"));
     icon.addFile(QString::fromUtf8(":/icons/widget-close_22px.png"));
     ui->closeButton->setIcon(icon);
-   
-    ui->next->setIcon(QApplication::style()->standardIcon(QStyle::SP_ArrowDown));
+
+    icon.addFile(QString::fromUtf8(":/icons/find-next_16px.png"));
+    ui->next->setIcon(icon);
     ui->next->setShortcut(QKeySequence("Ctrl+G"));
 
-    ui->previous->setIcon(QApplication::style()->standardIcon(QStyle::SP_ArrowUp));
+    icon.addFile(QString::fromUtf8(":/icons/find-previous_16px.png"));
+    ui->previous->setIcon(icon);
     ui->previous->setShortcut(QKeySequence("Ctrl+Shift+G"));
 
     connect(ui->closeButton, SIGNAL(clicked()), this, SLOT(close()));
