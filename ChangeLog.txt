@@ -1,5 +1,16 @@
 Change Log
 ==========
+PageEdit-1.1.0
+  Bug Fixes
+    - fix bug for linking to top of page in SelectHyperlink
+    - fix bug in zoom slider that did not reflect initial zoom setting on startup
+    - fix bug in missing icon sizes (Thanks BeckyEbook)
+  New Features
+    - added support for a Dark Mode for Windows, Linux and macOS
+    - added new icons courtesy of BeckyEbook that work under both light and dark modes
+    - added Zoom-In, Zoom-Out, reset support to Inspector using key shortcuts (META +, META -, META 0) 
+    - added support for Windows HighDPI settings
+    - added support for setting the user interface font
 
 PageEdit-1.0.0
   Bug Fixes:
