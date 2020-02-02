@@ -58,7 +58,7 @@ before_build:
     echo 'PATH = %PATH%'
     cd project\pageedit\build
     curl.exe -L -o gdrive.exe %GDRIVE%
-    c:\project\sigil\build\gdrive.exe version
+    c:\project\pageedit\build\gdrive.exe version
     call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" %PLATFORM%
     cmake .. -G "Ninja" -DWIN_INSTALLER_USE_64BIT_CRT=1 -DDEPLOY_SFX=1 -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5
 
