@@ -1,19 +1,32 @@
 #!/usr/bin/env python3
 
 import os
+import sys
 import subprocess
 import datetime
 import shutil
+import glob
 
 gparent = os.path.expandvars('$GDRIVE_DIR')
 grefresh_token = os.path.expandvars('$GDRIVE_REFRESH_TOKEN')
 
-travis_branch = os.path.expandvars('$TRAVIS_BRANCH')
-travis_commit = os.path.expandvars('$TRAVIS_COMMIT')
-travis_build_number = os.path.expandvars('$TRAVIS_BUILD_NUMBER')
+if sys.platform.lower().startswith('darwin'):
+    travis_branch = os.path.expandvars('$TRAVIS_BRANCH')
+    travis_commit = os.path.expandvars('$TRAVIS_COMMIT')
+    travis_build_number = os.path.expandvars('$TRAVIS_BUILD_NUMBER')
+    
+    origfilename = './bin/PageEdit.tar.xz'
+    newfilename = './bin/PageEdit-{}-{}-build_num-{}.tar.xz'.format(travis_branch, travis_commit[:7],travis_build_number)
+else:
+    appveyor_branch = os.path.expandvars('$APPVEYOR_REPO_BRANCH')
+    appveyor_commit = os.path.expandvars('$APPVEYOR_REPO_COMMIT')
+    appveyor_build_number = os.path.expandvars('$APPVEYOR_BUILD_NUMBER')
+    names = glob.glob('.\\installer\\PageEdit-*-Setup.exe')
+    if not names:
+        exit(1)
+    origfilename = names[0]
+    newfilename = '.\\installer\\PageEdit-{}-{}-build_num-{}-Setup.exe'.format(appveyor_branch, appveyor_commit[:7], appveyor_build_number)
 
-origfilename = './bin/PageEdit.tar.xz'
-newfilename = './bin/PageEdit-{}-{}-build_num-{}.tar.xz'.format(travis_branch, travis_commit[:7],travis_build_number)
 shutil.copy2(origfilename, newfilename)
 
 folder_name = datetime.date.today()

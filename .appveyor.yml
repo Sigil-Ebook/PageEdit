@@ -40,6 +40,11 @@ environment:
       REDIST: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\%RedistVersion%\vcredist_%PLATFORM%.exe
       DOWNLOAD: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/MyQt%PLATFORM%_5.12.6_VS2017_WE.7z
       QT: C:\MyQtx64_WE\Qt5.12.6
+      GDRIVE: https://github.com/gdrive-org/gdrive/releases/download/2.1.0/gdrive-windows-x64.exe
+      GDRIVE_REFRESH_TOKEN:
+        secure: +J2q/4lkiBXik5Ttvt06vpNiWBjNIXx+jFnYw1rOR9sLkyksyXGj+NeNKQB8kPwE
+      GDRIVE_DIR:
+        secure: igOA10tmVbccXE8T92NCKPGcsixGGzyu69QmsBGw6seBOqcQ8+XXm0vjkoLMtrLF
 
 
 before_build:
@@ -52,6 +57,8 @@ before_build:
     set PATH=%QT%\bin;%INNO%;%PATH%
     echo 'PATH = %PATH%'
     cd project\pageedit\build
+    curl.exe -L -o gdrive.exe %GDRIVE%
+    c:\project\sigil\build\gdrive.exe version
     call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" %PLATFORM%
     cmake .. -G "Ninja" -DWIN_INSTALLER_USE_64BIT_CRT=1 -DDEPLOY_SFX=1 -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5
 
@@ -63,6 +70,14 @@ build_script:
 after_build:
 - cmd: |-
     ninja -j4 deployinstaller
+
+deploy_script:
+- ps: >-
+    if(-not $env:appveyor_pull_request_number) {
+        python --version
+        c:\project\pageedit\build\gdrive.exe version
+        python ..\ci_scripts\gddeploy.py
+    }
  
-artifacts:
-    path: build\deploy\*.exe
+#artifacts:
+#    path: build\deploy\*.exe
