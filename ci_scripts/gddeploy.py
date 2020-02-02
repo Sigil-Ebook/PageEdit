@@ -21,11 +21,11 @@ else:
     appveyor_branch = os.path.expandvars('$APPVEYOR_REPO_BRANCH')
     appveyor_commit = os.path.expandvars('$APPVEYOR_REPO_COMMIT')
     appveyor_build_number = os.path.expandvars('$APPVEYOR_BUILD_NUMBER')
-    names = glob.glob('.\\installer\\PageEdit-*-Setup.exe')
+    names = glob.glob('.\\deploy\\PageEdit-*-Setup.exe')
     if not names:
         exit(1)
     origfilename = names[0]
-    newfilename = '.\\installer\\PageEdit-{}-{}-build_num-{}-Setup.exe'.format(appveyor_branch, appveyor_commit[:7], appveyor_build_number)
+    newfilename = '.\\deploy\\PageEdit-{}-{}-build_num-{}-Setup.exe'.format(appveyor_branch, appveyor_commit[:7], appveyor_build_number)
 
 shutil.copy2(origfilename, newfilename)
 
