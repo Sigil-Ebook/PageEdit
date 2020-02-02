@@ -45,6 +45,7 @@ environment:
         secure: +J2q/4lkiBXik5Ttvt06vpNiWBjNIXx+jFnYw1rOR9sLkyksyXGj+NeNKQB8kPwE
       GDRIVE_DIR:
         secure: igOA10tmVbccXE8T92NCKPGcsixGGzyu69QmsBGw6seBOqcQ8+XXm0vjkoLMtrLF
+      PYTHON: C:\Python37
 
 
 before_build:
@@ -54,7 +55,7 @@ before_build:
     cd ..\..
     curl.exe -L -o webkit.7z %DOWNLOAD%
     7z x webkit.7z -y
-    set PATH=%QT%\bin;%INNO%;%PATH%
+    set PATH=%PYTHON%;%PYTHON%\Scripts;%QT%\bin;%INNO%;%PATH%
     echo 'PATH = %PATH%'
     cd project\pageedit\build
     curl.exe -L -o gdrive.exe %GDRIVE%
