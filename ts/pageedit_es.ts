@@ -7,105 +7,192 @@
         <translation>Aspecto</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="24"/>
-        <source>Fonts/Sizes</source>
-        <translation>Tipo y tamaño de letra</translation>
+        <location filename="../PAppearanceWidget.ui" line="25"/>
+        <source>PageEdit</source>
+        <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="30"/>
-        <source>Preview:</source>
-        <translation>Vista previa:</translation>
+        <location filename="../PAppearanceWidget.ui" line="31"/>
+        <location filename="../PAppearanceWidget.ui" line="263"/>
+        <source>Fonts:</source>
+        <translation>Tipos de letra:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="39"/>
+        <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
         <translation>Si no se especifica ningún tipo de letra en el código CSS de la página, se usará el siguiente tipo de letra dentro de PageEdit. Estos tipos de letra no se emplearán en el libro electrónico generado. </translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="59"/>
-        <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation>Tamaño de letra predeterminado para usar en la vista web
+        <location filename="../PAppearanceWidget.ui" line="70"/>
+        <source>Default font size to be used for PageEdit
+if no font-size specified in your CSS</source>
+        <translation>Tamaño de letra predeterminado para usar en la PageEdit
 si no hay un tamaño de letra especificado en el CSS</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="62"/>
-        <location filename="../PAppearanceWidget.ui" line="186"/>
+        <location filename="../PAppearanceWidget.ui" line="74"/>
+        <location filename="../PAppearanceWidget.ui" line="323"/>
         <source>Font Size:</source>
         <translation>Tamaño de letra:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="92"/>
-        <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation>Tipo de letra predeterminado para usar en la vista web
+        <location filename="../PAppearanceWidget.ui" line="81"/>
+        <source>Default font family to be used for PageEdit
+if no font-family specified in your CSS</source>
+        <translation>Tipo de letra predeterminado para usar en PageEdit
 si no hay un tipo de letra especificado en el CSS</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="95"/>
-        <location filename="../PAppearanceWidget.ui" line="219"/>
-        <source>Standard Font:</source>
-        <translation>Tipo de letra normal:</translation>
-    </message>
-    <message>
-        <location filename="../PAppearanceWidget.ui" line="105"/>
-        <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation>Tipo de letra predeterminado para usar en la vista web
-si se especifica un tipo de letra «serif» en el CSS</translation>
+        <location filename="../PAppearanceWidget.ui" line="85"/>
+        <source>Standard:</source>
+        <translation>Normal:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
-        <source>Serif Font:</source>
-        <translation>Tipo de letra serif:</translation>
+        <source>Default font family to be used for PageEdit
+if a serif font-family specified in your CSS</source>
+        <translation>Tipo de letra predeterminado para usar en PageEdit
+si se especifica un tipo de letra «serif» en el CSS</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="118"/>
-        <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation>Tipo de letra predeterminado para usar en la vista web
+        <location filename="../PAppearanceWidget.ui" line="112"/>
+        <source>Serif:</source>
+        <translation>Serif:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="125"/>
+        <source>Default font family to be used for PageEdit
+if a sans-serif font-family specified in your CSS</source>
+        <translation>Tipo de letra predeterminado para usar en PageEdit
 si se especifica un tipo de letra «sans-serif» en el CSS</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="121"/>
-        <source>Sans-Serif Font:</source>
-        <translation>Tipo de letra sans-serif:</translation>
+        <location filename="../PAppearanceWidget.ui" line="129"/>
+        <source>Sans-Serif:</source>
+        <translation>Sans-serif:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="169"/>
-        <source>Insert Special Characters:</source>
-        <translation>Insertar caracteres especiales:</translation>
+        <location filename="../PAppearanceWidget.ui" line="156"/>
+        <source>Make PageEdit simulate a dark appearance in dark mode</source>
+        <translation>Hacer que PageEdit simule una apariencia oscura en modo oscuro</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="183"/>
-        <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Tamaño de letra en la ventana para insertar caracteres especiales</translation>
+        <location filename="../PAppearanceWidget.ui" line="181"/>
+        <source>Main UI</source>
+        <translation>Interfaz principal</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="216"/>
-        <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Tipo de letra en la ventana para insertar caracteres especiales</translation>
+        <location filename="../PAppearanceWidget.ui" line="187"/>
+        <source>Main Menu Icon Size:</source>
+        <translation>Tamaño de iconos en el menú principal:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="263"/>
-        <source>Icons</source>
-        <translation>Iconos</translation>
-    </message>
-    <message>
-        <location filename="../PAppearanceWidget.ui" line="269"/>
-        <source>Icon Size</source>
-        <translation>Tamaño de iconos</translation>
-    </message>
-    <message>
-        <location filename="../PAppearanceWidget.ui" line="275"/>
+        <location filename="../PAppearanceWidget.ui" line="193"/>
         <source>Adjust the size of the icons in the main menu.</source>
         <translation>Ajustar el tamaño de los iconos en el menú principal.</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="351"/>
+        <location filename="../PAppearanceWidget.ui" line="231"/>
+        <source>High DPI Setting:</source>
+        <translation>Configuración de alta resolución:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="240"/>
+        <source>(Needs PageEdit Restart)</source>
+        <translation>(Requiere reiniciar PageEdit)</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="269"/>
+        <source>UI Font:</source>
+        <translation>Tipo de letra de la interfaz:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="279"/>
+        <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
+        <translation>Cambiar el tipo de letra usado por los menús de PageEdit, botones, etc.</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="282"/>
+        <source>Change Font (Needs PageEdit Restart)</source>
+        <translation>Cambiar tipo de letra (requiere reiniciar PageEdit)</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="306"/>
+        <source>Insert Special Characters:</source>
+        <translation>Insertar caracteres especiales:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="320"/>
+        <source>Font size to be used for Insert Special Characters window</source>
+        <translation>Tamaño de letra en la ventana para insertar caracteres especiales</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="353"/>
+        <source>Font family to be used for Insert Special Characters window</source>
+        <translation>Tipo de letra en la ventana para insertar caracteres especiales</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="356"/>
+        <source>Standard Font:</source>
+        <translation>Tipo de letra normal:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="423"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>Restablecer todos los tipos de letra y colores a sus valores predeterminados</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="354"/>
+        <location filename="../PAppearanceWidget.ui" line="426"/>
         <source>Reset All</source>
         <translation>Restablecer todos</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <source>Detect</source>
+        <translation>Detectar</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <source>On</source>
+        <translation>Activado</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <source>Off</source>
+        <translation>Desactivado</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <source>Detect whether any high dpi scaling should take place.</source>
+        <translation>Detectar si se debe redimensionar para alta resolución.</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="51"/>
+        <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
+        <translation>Delega en las variables de entorno Qt que controlan el comportamiento de alta resolución.</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
+        <translation>Activa el redimensionado de alta resolución e ignora las variables de entorno Qt</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
+        <source>that are set controlling high dpi behavior.</source>
+        <translation>que controlan el comportamiento de alta resolución.</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <source>Turns off high dpi scaling regardless if any Qt environment</source>
+        <translation>Desactiva el redimensionado de alta resolución, independientemente de las variables</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
+        <source>variables controlling high dpi behavior are set.</source>
+        <translation>de entorno Qt que controlan el comportamiento de alta resolución.</translation>
     </message>
 </context>
 <context>
@@ -233,12 +320,12 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
 <context>
     <name>Inspector</name>
     <message>
-        <location filename="../Inspector.cpp" line="54"/>
+        <location filename="../Inspector.cpp" line="74"/>
         <source>Inspect Page or Element</source>
         <translation>Examinar página o elemento</translation>
     </message>
     <message>
-        <location filename="../Inspector.cpp" line="94"/>
+        <location filename="../Inspector.cpp" line="156"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
         <translation>La función de examinar no está soportada con Qt anterior a 5.11</translation>
     </message>
@@ -247,28 +334,36 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="901"/>
-        <location filename="../MainWindow.cpp" line="960"/>
-        <location filename="../MainWindow.cpp" line="1547"/>
-        <location filename="../MainWindow.cpp" line="1560"/>
-        <location filename="../MainWindow.cpp" line="1566"/>
-        <location filename="../MainWindow.cpp" line="1580"/>
-        <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp" line="1655"/>
-        <location filename="../MainWindow.cpp" line="1738"/>
-        <location filename="../MainWindow.cpp.keep" line="726"/>
-        <location filename="../MainWindow.cpp.keep" line="1337"/>
-        <location filename="../MainWindow.cpp~" line="901"/>
-        <location filename="../MainWindow.cpp~" line="960"/>
-        <location filename="../MainWindow.cpp~" line="1547"/>
-        <location filename="../MainWindow.cpp~" line="1560"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1580"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1655"/>
-        <location filename="../MainWindow.cpp~" line="1738"/>
+        <location filename="../MainWindow.cpp" line="929"/>
+        <location filename="../MainWindow.cpp" line="988"/>
+        <location filename="../MainWindow.cpp" line="1616"/>
+        <location filename="../MainWindow.cpp" line="1629"/>
+        <location filename="../MainWindow.cpp" line="1635"/>
+        <location filename="../MainWindow.cpp" line="1649"/>
+        <location filename="../MainWindow.cpp" line="1662"/>
+        <location filename="../MainWindow.cpp" line="1670"/>
+        <location filename="../MainWindow.cpp" line="1724"/>
+        <location filename="../MainWindow.cpp" line="1807"/>
+        <location filename="../MainWindow.cpp.keep" line="929"/>
+        <location filename="../MainWindow.cpp.keep" line="988"/>
+        <location filename="../MainWindow.cpp.keep" line="1616"/>
+        <location filename="../MainWindow.cpp.keep" line="1629"/>
+        <location filename="../MainWindow.cpp.keep" line="1635"/>
+        <location filename="../MainWindow.cpp.keep" line="1649"/>
+        <location filename="../MainWindow.cpp.keep" line="1662"/>
+        <location filename="../MainWindow.cpp.keep" line="1670"/>
+        <location filename="../MainWindow.cpp.keep" line="1724"/>
+        <location filename="../MainWindow.cpp.keep" line="1807"/>
+        <location filename="../MainWindow.cpp~" line="929"/>
+        <location filename="../MainWindow.cpp~" line="988"/>
+        <location filename="../MainWindow.cpp~" line="1616"/>
+        <location filename="../MainWindow.cpp~" line="1629"/>
+        <location filename="../MainWindow.cpp~" line="1635"/>
+        <location filename="../MainWindow.cpp~" line="1649"/>
+        <location filename="../MainWindow.cpp~" line="1662"/>
+        <location filename="../MainWindow.cpp~" line="1670"/>
+        <location filename="../MainWindow.cpp~" line="1724"/>
+        <location filename="../MainWindow.cpp~" line="1807"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -995,32 +1090,37 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
         <translation>Ctrl+Mayús+I</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="647"/>
-        <location filename="../MainWindow.cpp~" line="647"/>
+        <location filename="../MainWindow.cpp" line="667"/>
+        <location filename="../MainWindow.cpp.keep" line="667"/>
+        <location filename="../MainWindow.cpp~" line="667"/>
         <source>File load failed</source>
         <translation>Fallo al cargar el archivo</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="648"/>
-        <location filename="../MainWindow.cpp~" line="648"/>
+        <location filename="../MainWindow.cpp" line="668"/>
+        <location filename="../MainWindow.cpp.keep" line="668"/>
+        <location filename="../MainWindow.cpp~" line="668"/>
         <source>File Load Failed</source>
         <translation>Fallo al cargar el archivo</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="735"/>
-        <location filename="../MainWindow.cpp~" line="735"/>
+        <location filename="../MainWindow.cpp" line="763"/>
+        <location filename="../MainWindow.cpp.keep" line="763"/>
+        <location filename="../MainWindow.cpp~" line="763"/>
         <source>mode: Preview</source>
         <translation>modo: Previsualización</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="737"/>
-        <location filename="../MainWindow.cpp~" line="737"/>
+        <location filename="../MainWindow.cpp" line="765"/>
+        <location filename="../MainWindow.cpp.keep" line="765"/>
+        <location filename="../MainWindow.cpp~" line="765"/>
         <source>mode: Edit</source>
         <translation>modo: Edición</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="901"/>
-        <location filename="../MainWindow.cpp~" line="901"/>
+        <location filename="../MainWindow.cpp" line="929"/>
+        <location filename="../MainWindow.cpp.keep" line="929"/>
+        <location filename="../MainWindow.cpp~" line="929"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1029,208 +1129,208 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="961"/>
-        <location filename="../MainWindow.cpp~" line="961"/>
+        <location filename="../MainWindow.cpp" line="989"/>
+        <location filename="../MainWindow.cpp.keep" line="989"/>
+        <location filename="../MainWindow.cpp~" line="989"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>¿Quiere guardar los cambios antes de salir?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="978"/>
-        <location filename="../MainWindow.cpp.keep" line="721"/>
-        <location filename="../MainWindow.cpp~" line="978"/>
+        <location filename="../MainWindow.cpp" line="1006"/>
+        <location filename="../MainWindow.cpp.keep" line="1006"/>
+        <location filename="../MainWindow.cpp~" line="1006"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit se está cerrando...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1106"/>
-        <location filename="../MainWindow.cpp" line="1107"/>
-        <location filename="../MainWindow.cpp" line="1108"/>
-        <location filename="../MainWindow.cpp" line="1117"/>
-        <location filename="../MainWindow.cpp" line="1118"/>
-        <location filename="../MainWindow.cpp" line="1119"/>
-        <location filename="../MainWindow.cpp.keep" line="864"/>
-        <location filename="../MainWindow.cpp.keep" line="865"/>
-        <location filename="../MainWindow.cpp.keep" line="866"/>
-        <location filename="../MainWindow.cpp.keep" line="875"/>
-        <location filename="../MainWindow.cpp.keep" line="876"/>
-        <location filename="../MainWindow.cpp.keep" line="877"/>
-        <location filename="../MainWindow.cpp~" line="1106"/>
-        <location filename="../MainWindow.cpp~" line="1107"/>
-        <location filename="../MainWindow.cpp~" line="1108"/>
-        <location filename="../MainWindow.cpp~" line="1117"/>
-        <location filename="../MainWindow.cpp~" line="1118"/>
-        <location filename="../MainWindow.cpp~" line="1119"/>
+        <location filename="../MainWindow.cpp" line="1134"/>
+        <location filename="../MainWindow.cpp" line="1135"/>
+        <location filename="../MainWindow.cpp" line="1136"/>
+        <location filename="../MainWindow.cpp" line="1145"/>
+        <location filename="../MainWindow.cpp" line="1146"/>
+        <location filename="../MainWindow.cpp" line="1147"/>
+        <location filename="../MainWindow.cpp.keep" line="1134"/>
+        <location filename="../MainWindow.cpp.keep" line="1135"/>
+        <location filename="../MainWindow.cpp.keep" line="1136"/>
+        <location filename="../MainWindow.cpp.keep" line="1145"/>
+        <location filename="../MainWindow.cpp.keep" line="1146"/>
+        <location filename="../MainWindow.cpp.keep" line="1147"/>
+        <location filename="../MainWindow.cpp~" line="1134"/>
+        <location filename="../MainWindow.cpp~" line="1135"/>
+        <location filename="../MainWindow.cpp~" line="1136"/>
+        <location filename="../MainWindow.cpp~" line="1145"/>
+        <location filename="../MainWindow.cpp~" line="1146"/>
+        <location filename="../MainWindow.cpp~" line="1147"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Archivos HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1109"/>
-        <location filename="../MainWindow.cpp~" line="1109"/>
+        <location filename="../MainWindow.cpp" line="1137"/>
+        <location filename="../MainWindow.cpp.keep" line="1137"/>
+        <location filename="../MainWindow.cpp~" line="1137"/>
         <source>OPF files (*.opf)</source>
         <translation>archivos OPF (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1110"/>
-        <location filename="../MainWindow.cpp.keep" line="868"/>
-        <location filename="../MainWindow.cpp~" line="1110"/>
+        <location filename="../MainWindow.cpp" line="1138"/>
+        <location filename="../MainWindow.cpp.keep" line="1138"/>
+        <location filename="../MainWindow.cpp~" line="1138"/>
         <source>All files (*.*)</source>
         <translation>Todos los archivos (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1321"/>
-        <location filename="../MainWindow.cpp.keep" line="1024"/>
-        <location filename="../MainWindow.cpp~" line="1321"/>
+        <location filename="../MainWindow.cpp" line="1376"/>
+        <location filename="../MainWindow.cpp.keep" line="1376"/>
+        <location filename="../MainWindow.cpp~" line="1376"/>
         <source>Save File</source>
         <translation>Guardar archivo</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1356"/>
-        <location filename="../MainWindow.cpp" line="1357"/>
-        <location filename="../MainWindow.cpp" line="1369"/>
-        <location filename="../MainWindow.cpp" line="1370"/>
-        <location filename="../MainWindow.cpp.keep" line="1059"/>
-        <location filename="../MainWindow.cpp.keep" line="1060"/>
-        <location filename="../MainWindow.cpp.keep" line="1072"/>
-        <location filename="../MainWindow.cpp.keep" line="1073"/>
-        <location filename="../MainWindow.cpp~" line="1356"/>
-        <location filename="../MainWindow.cpp~" line="1357"/>
-        <location filename="../MainWindow.cpp~" line="1369"/>
-        <location filename="../MainWindow.cpp~" line="1370"/>
+        <location filename="../MainWindow.cpp" line="1411"/>
+        <location filename="../MainWindow.cpp" line="1412"/>
+        <location filename="../MainWindow.cpp" line="1424"/>
+        <location filename="../MainWindow.cpp" line="1425"/>
+        <location filename="../MainWindow.cpp.keep" line="1411"/>
+        <location filename="../MainWindow.cpp.keep" line="1412"/>
+        <location filename="../MainWindow.cpp.keep" line="1424"/>
+        <location filename="../MainWindow.cpp.keep" line="1425"/>
+        <location filename="../MainWindow.cpp~" line="1411"/>
+        <location filename="../MainWindow.cpp~" line="1412"/>
+        <location filename="../MainWindow.cpp~" line="1424"/>
+        <location filename="../MainWindow.cpp~" line="1425"/>
         <source>File Save-As Failed!</source>
         <translation>¡El guardado del archivo ha fallado!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1356"/>
-        <location filename="../MainWindow.cpp.keep" line="1059"/>
-        <location filename="../MainWindow.cpp~" line="1356"/>
+        <location filename="../MainWindow.cpp" line="1411"/>
+        <location filename="../MainWindow.cpp.keep" line="1411"/>
+        <location filename="../MainWindow.cpp~" line="1411"/>
         <source>is not writeable</source>
         <translation>no puede escribirse</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1365"/>
-        <location filename="../MainWindow.cpp" line="1395"/>
-        <location filename="../MainWindow.cpp.keep" line="1068"/>
-        <location filename="../MainWindow.cpp.keep" line="1098"/>
-        <location filename="../MainWindow.cpp~" line="1365"/>
-        <location filename="../MainWindow.cpp~" line="1395"/>
+        <location filename="../MainWindow.cpp" line="1420"/>
+        <location filename="../MainWindow.cpp" line="1459"/>
+        <location filename="../MainWindow.cpp.keep" line="1420"/>
+        <location filename="../MainWindow.cpp.keep" line="1459"/>
+        <location filename="../MainWindow.cpp~" line="1420"/>
+        <location filename="../MainWindow.cpp~" line="1459"/>
         <source>File Saved</source>
         <translation>Archivo guardado</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1386"/>
-        <location filename="../MainWindow.cpp" line="1388"/>
-        <location filename="../MainWindow.cpp" line="1399"/>
-        <location filename="../MainWindow.cpp" line="1400"/>
-        <location filename="../MainWindow.cpp.keep" line="1089"/>
-        <location filename="../MainWindow.cpp.keep" line="1091"/>
-        <location filename="../MainWindow.cpp.keep" line="1102"/>
-        <location filename="../MainWindow.cpp.keep" line="1103"/>
-        <location filename="../MainWindow.cpp~" line="1386"/>
-        <location filename="../MainWindow.cpp~" line="1388"/>
-        <location filename="../MainWindow.cpp~" line="1399"/>
-        <location filename="../MainWindow.cpp~" line="1400"/>
+        <location filename="../MainWindow.cpp" line="1450"/>
+        <location filename="../MainWindow.cpp" line="1452"/>
+        <location filename="../MainWindow.cpp" line="1463"/>
+        <location filename="../MainWindow.cpp" line="1464"/>
+        <location filename="../MainWindow.cpp.keep" line="1450"/>
+        <location filename="../MainWindow.cpp.keep" line="1452"/>
+        <location filename="../MainWindow.cpp.keep" line="1463"/>
+        <location filename="../MainWindow.cpp.keep" line="1464"/>
+        <location filename="../MainWindow.cpp~" line="1450"/>
+        <location filename="../MainWindow.cpp~" line="1452"/>
+        <location filename="../MainWindow.cpp~" line="1463"/>
+        <location filename="../MainWindow.cpp~" line="1464"/>
         <source>File Save Failed!</source>
         <translation>¡El guardado del archivo ha fallado!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1387"/>
-        <location filename="../MainWindow.cpp.keep" line="1090"/>
-        <location filename="../MainWindow.cpp~" line="1387"/>
+        <location filename="../MainWindow.cpp" line="1451"/>
+        <location filename="../MainWindow.cpp.keep" line="1451"/>
+        <location filename="../MainWindow.cpp~" line="1451"/>
         <source>does not exist or is not writeable</source>
         <translation>no existe o no se puede escribir</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1448"/>
-        <location filename="../MainWindow.cpp.keep" line="1147"/>
-        <location filename="../MainWindow.cpp~" line="1448"/>
+        <location filename="../MainWindow.cpp" line="1512"/>
+        <location filename="../MainWindow.cpp.keep" line="1512"/>
+        <location filename="../MainWindow.cpp~" line="1512"/>
         <source>File Opened</source>
         <translation>Archivo abierto</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1452"/>
-        <location filename="../MainWindow.cpp.keep" line="1152"/>
-        <location filename="../MainWindow.cpp~" line="1452"/>
+        <location filename="../MainWindow.cpp" line="1516"/>
+        <location filename="../MainWindow.cpp.keep" line="1516"/>
+        <location filename="../MainWindow.cpp~" line="1516"/>
         <source>File Open Failed!</source>
         <translation>¡La apertura del archivo ha fallado!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1475"/>
-        <location filename="../MainWindow.cpp.keep" line="1175"/>
-        <location filename="../MainWindow.cpp~" line="1475"/>
+        <location filename="../MainWindow.cpp" line="1539"/>
+        <location filename="../MainWindow.cpp.keep" line="1539"/>
+        <location filename="../MainWindow.cpp~" line="1539"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>El portapapeles contiene formato HTML</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1476"/>
-        <location filename="../MainWindow.cpp.keep" line="1176"/>
-        <location filename="../MainWindow.cpp~" line="1476"/>
+        <location filename="../MainWindow.cpp" line="1540"/>
+        <location filename="../MainWindow.cpp.keep" line="1540"/>
+        <location filename="../MainWindow.cpp~" line="1540"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>¿Desea pegar los datos del portapapeles como texto sin formato?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1547"/>
-        <location filename="../MainWindow.cpp~" line="1547"/>
+        <location filename="../MainWindow.cpp" line="1616"/>
+        <location filename="../MainWindow.cpp.keep" line="1616"/>
+        <location filename="../MainWindow.cpp~" line="1616"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Debe seleccionar texto antes de insertar un nuevo ID.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1560"/>
-        <location filename="../MainWindow.cpp~" line="1560"/>
+        <location filename="../MainWindow.cpp" line="1629"/>
+        <location filename="../MainWindow.cpp.keep" line="1629"/>
+        <location filename="../MainWindow.cpp~" line="1629"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>El ID no es válido, debe empezar por una letra, seguida de letras, números, «_», «:», «-» o «.».</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1635"/>
+        <location filename="../MainWindow.cpp.keep" line="1635"/>
+        <location filename="../MainWindow.cpp~" line="1635"/>
         <source>You cannot insert an id at this position.</source>
         <translation>No puede insertar un ID en esta posición.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1580"/>
-        <location filename="../MainWindow.cpp~" line="1580"/>
+        <location filename="../MainWindow.cpp" line="1649"/>
+        <location filename="../MainWindow.cpp.keep" line="1649"/>
+        <location filename="../MainWindow.cpp~" line="1649"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Debe seleccionar antes de insertar un nuevo enlace.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
+        <location filename="../MainWindow.cpp" line="1662"/>
+        <location filename="../MainWindow.cpp.keep" line="1662"/>
+        <location filename="../MainWindow.cpp~" line="1662"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>El enlace no es válido, no puede contener «&lt;» ni «&gt;»</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
+        <location filename="../MainWindow.cpp" line="1670"/>
+        <location filename="../MainWindow.cpp.keep" line="1670"/>
+        <location filename="../MainWindow.cpp~" line="1670"/>
         <source>You cannot insert a link at this position.</source>
         <translation>No se puede insertar un enlace en esta posición.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
-        <location filename="../MainWindow.cpp~" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1681"/>
+        <location filename="../MainWindow.cpp.keep" line="1681"/>
+        <location filename="../MainWindow.cpp~" line="1681"/>
         <source>Insert File</source>
         <translation>Insertar archivo</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1655"/>
-        <location filename="../MainWindow.cpp~" line="1655"/>
+        <location filename="../MainWindow.cpp" line="1724"/>
+        <location filename="../MainWindow.cpp.keep" line="1724"/>
+        <location filename="../MainWindow.cpp~" line="1724"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>No se puede insertar un archivo multimedia en esta posición.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1739"/>
-        <location filename="../MainWindow.cpp.keep" line="1338"/>
-        <location filename="../MainWindow.cpp~" line="1739"/>
+        <location filename="../MainWindow.cpp" line="1808"/>
+        <location filename="../MainWindow.cpp.keep" line="1808"/>
+        <location filename="../MainWindow.cpp~" line="1808"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>¿Desea guardar los cambios antes de sustituir este archivo?</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp.keep" line="727"/>
-        <source>Do you want to save your changes before closing?</source>
-        <translation>¿Quiere guardar los cambios antes de cerrar?</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp.keep" line="867"/>
-        <source>Text files (*.txt)</source>
-        <translation>Archivos de texto (*.txt)</translation>
     </message>
 </context>
 <context>
@@ -1241,17 +1341,17 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
         <translation>Preferencias</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="86"/>
+        <location filename="../Preferences.cpp" line="90"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="86"/>
+        <location filename="../Preferences.cpp" line="90"/>
         <source>Changes will take effect when you restart PageEdit.</source>
         <translation>Los cambios surtirán efecto al reiniciar PageEdit.</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="143"/>
+        <location filename="../Preferences.cpp" line="152"/>
         <source>Open Preferences Location</source>
         <translation>Abrir ubicación de preferencias</translation>
     </message>
@@ -1266,59 +1366,59 @@ Line: %1 Column %2 - %3</source>
 Línea: %1 Columna %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="364"/>
+        <location filename="../Utility.cpp" line="376"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>No se pudo leer el archivo %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="479"/>
+        <location filename="../Utility.cpp" line="491"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>PageEdit ha encontrado un problema.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="480"/>
+        <location filename="../Utility.cpp" line="492"/>
         <source>PageEdit may need to close.</source>
         <translation>Puede que PageEdit necesite cerrarse.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="798"/>
+        <location filename="../Utility.cpp" line="794"/>
         <source>About PageEdit</source>
         <translation>Acerca de PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="803"/>
+        <location filename="../Utility.cpp" line="799"/>
         <source>Version</source>
         <translation>Versión</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="804"/>
+        <location filename="../Utility.cpp" line="800"/>
         <source>Build Date</source>
         <translation>Fecha de compilación</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="805"/>
+        <location filename="../Utility.cpp" line="801"/>
         <source>Build Time</source>
         <translation>Hora de compilación</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="806"/>
+        <location filename="../Utility.cpp" line="802"/>
         <source>Qt Runtime Version</source>
         <translation>Versión de Qt Runtime</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="807"/>
+        <location filename="../Utility.cpp" line="803"/>
         <source>Qt Compiled Version</source>
         <translation>Versión de Qt compilada</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="808"/>
+        <location filename="../Utility.cpp" line="804"/>
         <source>System</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="809"/>
+        <location filename="../Utility.cpp" line="805"/>
         <source>Architecture</source>
         <translation>Arquitectura</translation>
     </message>
@@ -1377,62 +1477,52 @@ Línea: %1 Columna %2 - %3</translation>
         <translation>Tamaño de miniatura:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="111"/>
-        <location filename="../SelectFiles.cpp~" line="111"/>
+        <location filename="../SelectFiles.cpp" line="113"/>
         <source>All</source>
         <translation>Todo</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="112"/>
-        <location filename="../SelectFiles.cpp~" line="112"/>
+        <location filename="../SelectFiles.cpp" line="114"/>
         <source>Images</source>
         <translation>Imágenes</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="113"/>
-        <location filename="../SelectFiles.cpp~" line="113"/>
+        <location filename="../SelectFiles.cpp" line="115"/>
         <source>Video</source>
         <translation>Vídeo</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="114"/>
-        <location filename="../SelectFiles.cpp~" line="114"/>
+        <location filename="../SelectFiles.cpp" line="116"/>
         <source>Audio</source>
         <translation>Audio</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="153"/>
-        <location filename="../SelectFiles.cpp~" line="153"/>
+        <location filename="../SelectFiles.cpp" line="159"/>
         <source>Media Files In the Book</source>
         <translation>Archivos multimedia en el libro</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="156"/>
-        <location filename="../SelectFiles.cpp~" line="156"/>
+        <location filename="../SelectFiles.cpp" line="162"/>
         <source>Thumbnails</source>
         <translation>Miniaturas</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="316"/>
-        <location filename="../SelectFiles.cpp~" line="316"/>
+        <location filename="../SelectFiles.cpp" line="325"/>
         <source>shades</source>
         <translation>niveles</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="316"/>
-        <location filename="../SelectFiles.cpp~" line="316"/>
+        <location filename="../SelectFiles.cpp" line="325"/>
         <source>colors</source>
         <translation>colores</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="317"/>
-        <location filename="../SelectFiles.cpp~" line="317"/>
+        <location filename="../SelectFiles.cpp" line="326"/>
         <source>Grayscale</source>
         <translation>Escala de grises</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="317"/>
-        <location filename="../SelectFiles.cpp~" line="317"/>
+        <location filename="../SelectFiles.cpp" line="326"/>
         <source>Color</source>
         <translation>Color</translation>
     </message>
@@ -1506,12 +1596,12 @@ Los nombres de ID deben ser únicos y empezar por una letra.</translation>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="575"/>
+        <location filename="../Utility.cpp" line="587"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="576"/>
+        <location filename="../Utility.cpp" line="588"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>

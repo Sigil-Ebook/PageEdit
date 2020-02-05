@@ -7,101 +7,192 @@
         <translation>外貌</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="24"/>
-        <source>Fonts/Sizes</source>
-        <translation>字型/大小</translation>
+        <location filename="../PAppearanceWidget.ui" line="25"/>
+        <source>PageEdit</source>
+        <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="30"/>
-        <source>Preview:</source>
-        <translation>預覽：</translation>
+        <location filename="../PAppearanceWidget.ui" line="31"/>
+        <location filename="../PAppearanceWidget.ui" line="263"/>
+        <source>Fonts:</source>
+        <translation>字型：</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="39"/>
+        <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
         <translation>如果您的頁面 CSS 中沒有指定字型，則 PageEdit 顯示時會使用以下的字型。這些字型不會真的用在您的電子書中。</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="59"/>
-        <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation>若是您的 CSS 中未指定字型大小時，用於 WebView 的預設字型大小</translation>
+        <location filename="../PAppearanceWidget.ui" line="70"/>
+        <source>Default font size to be used for PageEdit
+if no font-size specified in your CSS</source>
+        <translation>若是您的 CSS 檔中未指定字型大小時，
+用於 PageEdit 的預設字型大小</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="62"/>
-        <location filename="../PAppearanceWidget.ui" line="186"/>
+        <location filename="../PAppearanceWidget.ui" line="74"/>
+        <location filename="../PAppearanceWidget.ui" line="323"/>
         <source>Font Size:</source>
         <translation>字型大小:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="92"/>
-        <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation>若是您的 CSS 中未指定字型家族時，用於 WebView 的預設字型家族</translation>
+        <location filename="../PAppearanceWidget.ui" line="81"/>
+        <source>Default font family to be used for PageEdit
+if no font-family specified in your CSS</source>
+        <translation>若是您的 CSS 中沒有指定字型家族時，
+用於 PageEdit 的預設字型家族</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="95"/>
-        <location filename="../PAppearanceWidget.ui" line="219"/>
-        <source>Standard Font:</source>
-        <translation>標準字型:</translation>
-    </message>
-    <message>
-        <location filename="../PAppearanceWidget.ui" line="105"/>
-        <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation>若是您的 CSS 檔中指定了有襯線字型家族時，用於 WebView 的預設字型家族</translation>
+        <location filename="../PAppearanceWidget.ui" line="85"/>
+        <source>Standard:</source>
+        <translation>標準：</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
-        <source>Serif Font:</source>
-        <translation>有襯線字型:</translation>
+        <source>Default font family to be used for PageEdit
+if a serif font-family specified in your CSS</source>
+        <translation>若是您的 CSS 檔中指定了有襯線字型家族時，
+用於 PageEdit 的預設字型家族</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="118"/>
-        <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation>若是您的 CSS 檔中指定了無襯線字型家族時，用於 WebView 的預設字型家族</translation>
+        <location filename="../PAppearanceWidget.ui" line="112"/>
+        <source>Serif:</source>
+        <translation>有襯線字型：</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="121"/>
-        <source>Sans-Serif Font:</source>
-        <translation>無襯線字型:</translation>
+        <location filename="../PAppearanceWidget.ui" line="125"/>
+        <source>Default font family to be used for PageEdit
+if a sans-serif font-family specified in your CSS</source>
+        <translation>若是您的 CSS 檔中指定了無襯線字型家族時，
+用於 PageEdit 的預設字型家族</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="169"/>
-        <source>Insert Special Characters:</source>
-        <translation>插入特殊字元:</translation>
+        <location filename="../PAppearanceWidget.ui" line="129"/>
+        <source>Sans-Serif:</source>
+        <translation>無襯線字型：</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="183"/>
-        <source>Font size to be used for Insert Special Characters window</source>
-        <translation>在插入特殊字元視窗中使用的字型大小</translation>
+        <location filename="../PAppearanceWidget.ui" line="156"/>
+        <source>Make PageEdit simulate a dark appearance in dark mode</source>
+        <translation>在暗色模式使 PageEdit 模擬暗色外觀</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="216"/>
-        <source>Font family to be used for Insert Special Characters window</source>
-        <translation>在插入特殊字元視窗中使用的字型家族</translation>
+        <location filename="../PAppearanceWidget.ui" line="181"/>
+        <source>Main UI</source>
+        <translation>主要使用者介面</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="263"/>
-        <source>Icons</source>
-        <translation>圖示</translation>
+        <location filename="../PAppearanceWidget.ui" line="187"/>
+        <source>Main Menu Icon Size:</source>
+        <translation>主選單圖示大小：</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="269"/>
-        <source>Icon Size</source>
-        <translation>圖示大小</translation>
-    </message>
-    <message>
-        <location filename="../PAppearanceWidget.ui" line="275"/>
+        <location filename="../PAppearanceWidget.ui" line="193"/>
         <source>Adjust the size of the icons in the main menu.</source>
         <translation>調整主選單裡的圖示大小。</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="351"/>
+        <location filename="../PAppearanceWidget.ui" line="231"/>
+        <source>High DPI Setting:</source>
+        <translation>高 DPI 設定：</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="240"/>
+        <source>(Needs PageEdit Restart)</source>
+        <translation>（PageEdit 需要重新啟動）</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="269"/>
+        <source>UI Font:</source>
+        <translation>使用者介面字型：</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="279"/>
+        <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
+        <translation>變更 PageEdit 的選單、按鈕等等使用的字型</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="282"/>
+        <source>Change Font (Needs PageEdit Restart)</source>
+        <translation>變更字型（PageEdit 需要重新啟動）</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="306"/>
+        <source>Insert Special Characters:</source>
+        <translation>插入特殊字元:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="320"/>
+        <source>Font size to be used for Insert Special Characters window</source>
+        <translation>在插入特殊字元視窗中使用的字型大小</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="353"/>
+        <source>Font family to be used for Insert Special Characters window</source>
+        <translation>在插入特殊字元視窗中使用的字型家族</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="356"/>
+        <source>Standard Font:</source>
+        <translation>標準字型:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="423"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>將所有字型與顏色回復預設值</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="354"/>
+        <location filename="../PAppearanceWidget.ui" line="426"/>
         <source>Reset All</source>
         <translation>全部重設</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <source>Detect</source>
+        <translation>偵測</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <source>On</source>
+        <translation>開</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <source>Off</source>
+        <translation>關閉</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <source>Detect whether any high dpi scaling should take place.</source>
+        <translation>偵測是否進行高 DPI 縮放。</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="51"/>
+        <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
+        <translation>聽從任何設定控制高 dpi 行為的 Qt 環境變數。</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
+        <translation>開啟高 dpi 縮放並忽略任何控制高</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
+        <source>that are set controlling high dpi behavior.</source>
+        <translation>dpi 行為的 Qt 環境變數。</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <source>Turns off high dpi scaling regardless if any Qt environment</source>
+        <translation>關閉高 dpi 縮放，不管任何控制高</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
+        <source>variables controlling high dpi behavior are set.</source>
+        <translation>dpi 行為的 Qt 環境變數。</translation>
     </message>
 </context>
 <context>
@@ -229,12 +320,12 @@ If a translation for specific word or phrase is not available it will be display
 <context>
     <name>Inspector</name>
     <message>
-        <location filename="../Inspector.cpp" line="54"/>
+        <location filename="../Inspector.cpp" line="74"/>
         <source>Inspect Page or Element</source>
         <translation>檢查頁面或元素</translation>
     </message>
     <message>
-        <location filename="../Inspector.cpp" line="94"/>
+        <location filename="../Inspector.cpp" line="156"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
         <translation>Qt 5.11 之前不支援檢查器功能</translation>
     </message>
@@ -243,28 +334,36 @@ If a translation for specific word or phrase is not available it will be display
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="901"/>
-        <location filename="../MainWindow.cpp" line="960"/>
-        <location filename="../MainWindow.cpp" line="1547"/>
-        <location filename="../MainWindow.cpp" line="1560"/>
-        <location filename="../MainWindow.cpp" line="1566"/>
-        <location filename="../MainWindow.cpp" line="1580"/>
-        <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp" line="1655"/>
-        <location filename="../MainWindow.cpp" line="1738"/>
-        <location filename="../MainWindow.cpp.keep" line="726"/>
-        <location filename="../MainWindow.cpp.keep" line="1337"/>
-        <location filename="../MainWindow.cpp~" line="901"/>
-        <location filename="../MainWindow.cpp~" line="960"/>
-        <location filename="../MainWindow.cpp~" line="1547"/>
-        <location filename="../MainWindow.cpp~" line="1560"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1580"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1655"/>
-        <location filename="../MainWindow.cpp~" line="1738"/>
+        <location filename="../MainWindow.cpp" line="929"/>
+        <location filename="../MainWindow.cpp" line="988"/>
+        <location filename="../MainWindow.cpp" line="1616"/>
+        <location filename="../MainWindow.cpp" line="1629"/>
+        <location filename="../MainWindow.cpp" line="1635"/>
+        <location filename="../MainWindow.cpp" line="1649"/>
+        <location filename="../MainWindow.cpp" line="1662"/>
+        <location filename="../MainWindow.cpp" line="1670"/>
+        <location filename="../MainWindow.cpp" line="1724"/>
+        <location filename="../MainWindow.cpp" line="1807"/>
+        <location filename="../MainWindow.cpp.keep" line="929"/>
+        <location filename="../MainWindow.cpp.keep" line="988"/>
+        <location filename="../MainWindow.cpp.keep" line="1616"/>
+        <location filename="../MainWindow.cpp.keep" line="1629"/>
+        <location filename="../MainWindow.cpp.keep" line="1635"/>
+        <location filename="../MainWindow.cpp.keep" line="1649"/>
+        <location filename="../MainWindow.cpp.keep" line="1662"/>
+        <location filename="../MainWindow.cpp.keep" line="1670"/>
+        <location filename="../MainWindow.cpp.keep" line="1724"/>
+        <location filename="../MainWindow.cpp.keep" line="1807"/>
+        <location filename="../MainWindow.cpp~" line="929"/>
+        <location filename="../MainWindow.cpp~" line="988"/>
+        <location filename="../MainWindow.cpp~" line="1616"/>
+        <location filename="../MainWindow.cpp~" line="1629"/>
+        <location filename="../MainWindow.cpp~" line="1635"/>
+        <location filename="../MainWindow.cpp~" line="1649"/>
+        <location filename="../MainWindow.cpp~" line="1662"/>
+        <location filename="../MainWindow.cpp~" line="1670"/>
+        <location filename="../MainWindow.cpp~" line="1724"/>
+        <location filename="../MainWindow.cpp~" line="1807"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -991,32 +1090,37 @@ If a translation for specific word or phrase is not available it will be display
         <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="647"/>
-        <location filename="../MainWindow.cpp~" line="647"/>
+        <location filename="../MainWindow.cpp" line="667"/>
+        <location filename="../MainWindow.cpp.keep" line="667"/>
+        <location filename="../MainWindow.cpp~" line="667"/>
         <source>File load failed</source>
         <translation>檔案載入失敗</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="648"/>
-        <location filename="../MainWindow.cpp~" line="648"/>
+        <location filename="../MainWindow.cpp" line="668"/>
+        <location filename="../MainWindow.cpp.keep" line="668"/>
+        <location filename="../MainWindow.cpp~" line="668"/>
         <source>File Load Failed</source>
         <translation>檔案載入失敗</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="735"/>
-        <location filename="../MainWindow.cpp~" line="735"/>
+        <location filename="../MainWindow.cpp" line="763"/>
+        <location filename="../MainWindow.cpp.keep" line="763"/>
+        <location filename="../MainWindow.cpp~" line="763"/>
         <source>mode: Preview</source>
         <translation>模式：預覽</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="737"/>
-        <location filename="../MainWindow.cpp~" line="737"/>
+        <location filename="../MainWindow.cpp" line="765"/>
+        <location filename="../MainWindow.cpp.keep" line="765"/>
+        <location filename="../MainWindow.cpp~" line="765"/>
         <source>mode: Edit</source>
         <translation>模式：編輯</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="901"/>
-        <location filename="../MainWindow.cpp~" line="901"/>
+        <location filename="../MainWindow.cpp" line="929"/>
+        <location filename="../MainWindow.cpp.keep" line="929"/>
+        <location filename="../MainWindow.cpp~" line="929"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1025,208 +1129,208 @@ If a translation for specific word or phrase is not available it will be display
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="961"/>
-        <location filename="../MainWindow.cpp~" line="961"/>
+        <location filename="../MainWindow.cpp" line="989"/>
+        <location filename="../MainWindow.cpp.keep" line="989"/>
+        <location filename="../MainWindow.cpp~" line="989"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>您要在離開前儲存變更嗎？</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="978"/>
-        <location filename="../MainWindow.cpp.keep" line="721"/>
-        <location filename="../MainWindow.cpp~" line="978"/>
+        <location filename="../MainWindow.cpp" line="1006"/>
+        <location filename="../MainWindow.cpp.keep" line="1006"/>
+        <location filename="../MainWindow.cpp~" line="1006"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit 正在關閉...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1106"/>
-        <location filename="../MainWindow.cpp" line="1107"/>
-        <location filename="../MainWindow.cpp" line="1108"/>
-        <location filename="../MainWindow.cpp" line="1117"/>
-        <location filename="../MainWindow.cpp" line="1118"/>
-        <location filename="../MainWindow.cpp" line="1119"/>
-        <location filename="../MainWindow.cpp.keep" line="864"/>
-        <location filename="../MainWindow.cpp.keep" line="865"/>
-        <location filename="../MainWindow.cpp.keep" line="866"/>
-        <location filename="../MainWindow.cpp.keep" line="875"/>
-        <location filename="../MainWindow.cpp.keep" line="876"/>
-        <location filename="../MainWindow.cpp.keep" line="877"/>
-        <location filename="../MainWindow.cpp~" line="1106"/>
-        <location filename="../MainWindow.cpp~" line="1107"/>
-        <location filename="../MainWindow.cpp~" line="1108"/>
-        <location filename="../MainWindow.cpp~" line="1117"/>
-        <location filename="../MainWindow.cpp~" line="1118"/>
-        <location filename="../MainWindow.cpp~" line="1119"/>
+        <location filename="../MainWindow.cpp" line="1134"/>
+        <location filename="../MainWindow.cpp" line="1135"/>
+        <location filename="../MainWindow.cpp" line="1136"/>
+        <location filename="../MainWindow.cpp" line="1145"/>
+        <location filename="../MainWindow.cpp" line="1146"/>
+        <location filename="../MainWindow.cpp" line="1147"/>
+        <location filename="../MainWindow.cpp.keep" line="1134"/>
+        <location filename="../MainWindow.cpp.keep" line="1135"/>
+        <location filename="../MainWindow.cpp.keep" line="1136"/>
+        <location filename="../MainWindow.cpp.keep" line="1145"/>
+        <location filename="../MainWindow.cpp.keep" line="1146"/>
+        <location filename="../MainWindow.cpp.keep" line="1147"/>
+        <location filename="../MainWindow.cpp~" line="1134"/>
+        <location filename="../MainWindow.cpp~" line="1135"/>
+        <location filename="../MainWindow.cpp~" line="1136"/>
+        <location filename="../MainWindow.cpp~" line="1145"/>
+        <location filename="../MainWindow.cpp~" line="1146"/>
+        <location filename="../MainWindow.cpp~" line="1147"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML檔案 (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1109"/>
-        <location filename="../MainWindow.cpp~" line="1109"/>
+        <location filename="../MainWindow.cpp" line="1137"/>
+        <location filename="../MainWindow.cpp.keep" line="1137"/>
+        <location filename="../MainWindow.cpp~" line="1137"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF 檔案 (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1110"/>
-        <location filename="../MainWindow.cpp.keep" line="868"/>
-        <location filename="../MainWindow.cpp~" line="1110"/>
+        <location filename="../MainWindow.cpp" line="1138"/>
+        <location filename="../MainWindow.cpp.keep" line="1138"/>
+        <location filename="../MainWindow.cpp~" line="1138"/>
         <source>All files (*.*)</source>
         <translation>所有檔案(*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1321"/>
-        <location filename="../MainWindow.cpp.keep" line="1024"/>
-        <location filename="../MainWindow.cpp~" line="1321"/>
+        <location filename="../MainWindow.cpp" line="1376"/>
+        <location filename="../MainWindow.cpp.keep" line="1376"/>
+        <location filename="../MainWindow.cpp~" line="1376"/>
         <source>Save File</source>
         <translation>儲存檔案</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1356"/>
-        <location filename="../MainWindow.cpp" line="1357"/>
-        <location filename="../MainWindow.cpp" line="1369"/>
-        <location filename="../MainWindow.cpp" line="1370"/>
-        <location filename="../MainWindow.cpp.keep" line="1059"/>
-        <location filename="../MainWindow.cpp.keep" line="1060"/>
-        <location filename="../MainWindow.cpp.keep" line="1072"/>
-        <location filename="../MainWindow.cpp.keep" line="1073"/>
-        <location filename="../MainWindow.cpp~" line="1356"/>
-        <location filename="../MainWindow.cpp~" line="1357"/>
-        <location filename="../MainWindow.cpp~" line="1369"/>
-        <location filename="../MainWindow.cpp~" line="1370"/>
+        <location filename="../MainWindow.cpp" line="1411"/>
+        <location filename="../MainWindow.cpp" line="1412"/>
+        <location filename="../MainWindow.cpp" line="1424"/>
+        <location filename="../MainWindow.cpp" line="1425"/>
+        <location filename="../MainWindow.cpp.keep" line="1411"/>
+        <location filename="../MainWindow.cpp.keep" line="1412"/>
+        <location filename="../MainWindow.cpp.keep" line="1424"/>
+        <location filename="../MainWindow.cpp.keep" line="1425"/>
+        <location filename="../MainWindow.cpp~" line="1411"/>
+        <location filename="../MainWindow.cpp~" line="1412"/>
+        <location filename="../MainWindow.cpp~" line="1424"/>
+        <location filename="../MainWindow.cpp~" line="1425"/>
         <source>File Save-As Failed!</source>
         <translation>另存新檔失敗！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1356"/>
-        <location filename="../MainWindow.cpp.keep" line="1059"/>
-        <location filename="../MainWindow.cpp~" line="1356"/>
+        <location filename="../MainWindow.cpp" line="1411"/>
+        <location filename="../MainWindow.cpp.keep" line="1411"/>
+        <location filename="../MainWindow.cpp~" line="1411"/>
         <source>is not writeable</source>
         <translation>無法寫入</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1365"/>
-        <location filename="../MainWindow.cpp" line="1395"/>
-        <location filename="../MainWindow.cpp.keep" line="1068"/>
-        <location filename="../MainWindow.cpp.keep" line="1098"/>
-        <location filename="../MainWindow.cpp~" line="1365"/>
-        <location filename="../MainWindow.cpp~" line="1395"/>
+        <location filename="../MainWindow.cpp" line="1420"/>
+        <location filename="../MainWindow.cpp" line="1459"/>
+        <location filename="../MainWindow.cpp.keep" line="1420"/>
+        <location filename="../MainWindow.cpp.keep" line="1459"/>
+        <location filename="../MainWindow.cpp~" line="1420"/>
+        <location filename="../MainWindow.cpp~" line="1459"/>
         <source>File Saved</source>
         <translation>檔案已儲存</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1386"/>
-        <location filename="../MainWindow.cpp" line="1388"/>
-        <location filename="../MainWindow.cpp" line="1399"/>
-        <location filename="../MainWindow.cpp" line="1400"/>
-        <location filename="../MainWindow.cpp.keep" line="1089"/>
-        <location filename="../MainWindow.cpp.keep" line="1091"/>
-        <location filename="../MainWindow.cpp.keep" line="1102"/>
-        <location filename="../MainWindow.cpp.keep" line="1103"/>
-        <location filename="../MainWindow.cpp~" line="1386"/>
-        <location filename="../MainWindow.cpp~" line="1388"/>
-        <location filename="../MainWindow.cpp~" line="1399"/>
-        <location filename="../MainWindow.cpp~" line="1400"/>
+        <location filename="../MainWindow.cpp" line="1450"/>
+        <location filename="../MainWindow.cpp" line="1452"/>
+        <location filename="../MainWindow.cpp" line="1463"/>
+        <location filename="../MainWindow.cpp" line="1464"/>
+        <location filename="../MainWindow.cpp.keep" line="1450"/>
+        <location filename="../MainWindow.cpp.keep" line="1452"/>
+        <location filename="../MainWindow.cpp.keep" line="1463"/>
+        <location filename="../MainWindow.cpp.keep" line="1464"/>
+        <location filename="../MainWindow.cpp~" line="1450"/>
+        <location filename="../MainWindow.cpp~" line="1452"/>
+        <location filename="../MainWindow.cpp~" line="1463"/>
+        <location filename="../MainWindow.cpp~" line="1464"/>
         <source>File Save Failed!</source>
         <translation>檔案儲存失敗！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1387"/>
-        <location filename="../MainWindow.cpp.keep" line="1090"/>
-        <location filename="../MainWindow.cpp~" line="1387"/>
+        <location filename="../MainWindow.cpp" line="1451"/>
+        <location filename="../MainWindow.cpp.keep" line="1451"/>
+        <location filename="../MainWindow.cpp~" line="1451"/>
         <source>does not exist or is not writeable</source>
         <translation>不存在或無法寫入</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1448"/>
-        <location filename="../MainWindow.cpp.keep" line="1147"/>
-        <location filename="../MainWindow.cpp~" line="1448"/>
+        <location filename="../MainWindow.cpp" line="1512"/>
+        <location filename="../MainWindow.cpp.keep" line="1512"/>
+        <location filename="../MainWindow.cpp~" line="1512"/>
         <source>File Opened</source>
         <translation>檔案已開啟</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1452"/>
-        <location filename="../MainWindow.cpp.keep" line="1152"/>
-        <location filename="../MainWindow.cpp~" line="1452"/>
+        <location filename="../MainWindow.cpp" line="1516"/>
+        <location filename="../MainWindow.cpp.keep" line="1516"/>
+        <location filename="../MainWindow.cpp~" line="1516"/>
         <source>File Open Failed!</source>
         <translation>檔案開啟失敗！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1475"/>
-        <location filename="../MainWindow.cpp.keep" line="1175"/>
-        <location filename="../MainWindow.cpp~" line="1475"/>
+        <location filename="../MainWindow.cpp" line="1539"/>
+        <location filename="../MainWindow.cpp.keep" line="1539"/>
+        <location filename="../MainWindow.cpp~" line="1539"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>剪貼簿包含 HTML 格式</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1476"/>
-        <location filename="../MainWindow.cpp.keep" line="1176"/>
-        <location filename="../MainWindow.cpp~" line="1476"/>
+        <location filename="../MainWindow.cpp" line="1540"/>
+        <location filename="../MainWindow.cpp.keep" line="1540"/>
+        <location filename="../MainWindow.cpp~" line="1540"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>你要將剪貼簿的資料貼上為純文字嗎？</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1547"/>
-        <location filename="../MainWindow.cpp~" line="1547"/>
+        <location filename="../MainWindow.cpp" line="1616"/>
+        <location filename="../MainWindow.cpp.keep" line="1616"/>
+        <location filename="../MainWindow.cpp~" line="1616"/>
         <source>You must select text before inserting a new id.</source>
         <translation>在插入新的代碼前您必須選取文字。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1560"/>
-        <location filename="../MainWindow.cpp~" line="1560"/>
+        <location filename="../MainWindow.cpp" line="1629"/>
+        <location filename="../MainWindow.cpp.keep" line="1629"/>
+        <location filename="../MainWindow.cpp~" line="1629"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID 不合法 - 需要以字母開頭，後面跟著字母、數字、_ : - 或 .</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1635"/>
+        <location filename="../MainWindow.cpp.keep" line="1635"/>
+        <location filename="../MainWindow.cpp~" line="1635"/>
         <source>You cannot insert an id at this position.</source>
         <translation>您不能在此位置插入 ID。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1580"/>
-        <location filename="../MainWindow.cpp~" line="1580"/>
+        <location filename="../MainWindow.cpp" line="1649"/>
+        <location filename="../MainWindow.cpp.keep" line="1649"/>
+        <location filename="../MainWindow.cpp~" line="1649"/>
         <source>You must select text before inserting a new link.</source>
         <translation>在插入新的連結前您必須選取文字。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
+        <location filename="../MainWindow.cpp" line="1662"/>
+        <location filename="../MainWindow.cpp.keep" line="1662"/>
+        <location filename="../MainWindow.cpp~" line="1662"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>連結不合法 - 不能含有 &apos;&lt;&apos; 或 &apos;&gt;&apos;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
+        <location filename="../MainWindow.cpp" line="1670"/>
+        <location filename="../MainWindow.cpp.keep" line="1670"/>
+        <location filename="../MainWindow.cpp~" line="1670"/>
         <source>You cannot insert a link at this position.</source>
         <translation>您不能在此位置插入連結。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
-        <location filename="../MainWindow.cpp~" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1681"/>
+        <location filename="../MainWindow.cpp.keep" line="1681"/>
+        <location filename="../MainWindow.cpp~" line="1681"/>
         <source>Insert File</source>
         <translation>插入檔案</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1655"/>
-        <location filename="../MainWindow.cpp~" line="1655"/>
+        <location filename="../MainWindow.cpp" line="1724"/>
+        <location filename="../MainWindow.cpp.keep" line="1724"/>
+        <location filename="../MainWindow.cpp~" line="1724"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>您不能在此位置插入媒體檔案。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1739"/>
-        <location filename="../MainWindow.cpp.keep" line="1338"/>
-        <location filename="../MainWindow.cpp~" line="1739"/>
+        <location filename="../MainWindow.cpp" line="1808"/>
+        <location filename="../MainWindow.cpp.keep" line="1808"/>
+        <location filename="../MainWindow.cpp~" line="1808"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>您要在覆寫這個檔案前儲存變更嗎？</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp.keep" line="727"/>
-        <source>Do you want to save your changes before closing?</source>
-        <translation>您要在關閉前儲存變更嗎？</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp.keep" line="867"/>
-        <source>Text files (*.txt)</source>
-        <translation>文字檔案(*.txt)</translation>
     </message>
 </context>
 <context>
@@ -1237,17 +1341,17 @@ If a translation for specific word or phrase is not available it will be display
         <translation>偏好設定</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="86"/>
+        <location filename="../Preferences.cpp" line="90"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="86"/>
+        <location filename="../Preferences.cpp" line="90"/>
         <source>Changes will take effect when you restart PageEdit.</source>
         <translation>變更會在您重新啟動 PageEdit 後生效。</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="143"/>
+        <location filename="../Preferences.cpp" line="152"/>
         <source>Open Preferences Location</source>
         <translation>開啟偏好設定位置</translation>
     </message>
@@ -1262,59 +1366,59 @@ Line: %1 Column %2 - %3</source>
 第 %1 行第 %2 欄 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="364"/>
+        <location filename="../Utility.cpp" line="376"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>無法讀取檔案 %1:
 %2。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="479"/>
+        <location filename="../Utility.cpp" line="491"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>PageEdit 遇到了問題。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="480"/>
+        <location filename="../Utility.cpp" line="492"/>
         <source>PageEdit may need to close.</source>
         <translation>PageEdit 可能需要關閉。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="798"/>
+        <location filename="../Utility.cpp" line="794"/>
         <source>About PageEdit</source>
         <translation>關於 PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="803"/>
+        <location filename="../Utility.cpp" line="799"/>
         <source>Version</source>
         <translation>版本</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="804"/>
+        <location filename="../Utility.cpp" line="800"/>
         <source>Build Date</source>
         <translation>建置日期</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="805"/>
+        <location filename="../Utility.cpp" line="801"/>
         <source>Build Time</source>
         <translation>建置時間</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="806"/>
+        <location filename="../Utility.cpp" line="802"/>
         <source>Qt Runtime Version</source>
         <translation>Qt 執行階段版本</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="807"/>
+        <location filename="../Utility.cpp" line="803"/>
         <source>Qt Compiled Version</source>
         <translation>Qt 編譯版本</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="808"/>
+        <location filename="../Utility.cpp" line="804"/>
         <source>System</source>
         <translation>系統</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="809"/>
+        <location filename="../Utility.cpp" line="805"/>
         <source>Architecture</source>
         <translation>架構</translation>
     </message>
@@ -1373,62 +1477,52 @@ Line: %1 Column %2 - %3</source>
         <translation>縮圖大小：</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="111"/>
-        <location filename="../SelectFiles.cpp~" line="111"/>
+        <location filename="../SelectFiles.cpp" line="113"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="112"/>
-        <location filename="../SelectFiles.cpp~" line="112"/>
+        <location filename="../SelectFiles.cpp" line="114"/>
         <source>Images</source>
         <translation>圖片</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="113"/>
-        <location filename="../SelectFiles.cpp~" line="113"/>
+        <location filename="../SelectFiles.cpp" line="115"/>
         <source>Video</source>
         <translation>影片</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="114"/>
-        <location filename="../SelectFiles.cpp~" line="114"/>
+        <location filename="../SelectFiles.cpp" line="116"/>
         <source>Audio</source>
         <translation>聲音</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="153"/>
-        <location filename="../SelectFiles.cpp~" line="153"/>
+        <location filename="../SelectFiles.cpp" line="159"/>
         <source>Media Files In the Book</source>
         <translation>書中的媒體檔案</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="156"/>
-        <location filename="../SelectFiles.cpp~" line="156"/>
+        <location filename="../SelectFiles.cpp" line="162"/>
         <source>Thumbnails</source>
         <translation>縮圖</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="316"/>
-        <location filename="../SelectFiles.cpp~" line="316"/>
+        <location filename="../SelectFiles.cpp" line="325"/>
         <source>shades</source>
         <translation>陰影</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="316"/>
-        <location filename="../SelectFiles.cpp~" line="316"/>
+        <location filename="../SelectFiles.cpp" line="325"/>
         <source>colors</source>
         <translation>顏色</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="317"/>
-        <location filename="../SelectFiles.cpp~" line="317"/>
+        <location filename="../SelectFiles.cpp" line="326"/>
         <source>Grayscale</source>
         <translation>灰階</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="317"/>
-        <location filename="../SelectFiles.cpp~" line="317"/>
+        <location filename="../SelectFiles.cpp" line="326"/>
         <source>Color</source>
         <translation>顏色</translation>
     </message>
@@ -1501,12 +1595,12 @@ ID names must be unique and start with a letter.</source>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="575"/>
+        <location filename="../Utility.cpp" line="587"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="576"/>
+        <location filename="../Utility.cpp" line="588"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>

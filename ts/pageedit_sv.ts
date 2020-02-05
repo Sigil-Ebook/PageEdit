@@ -7,101 +7,192 @@
         <translation>Utseende</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="24"/>
-        <source>Fonts/Sizes</source>
-        <translation>Typsnitt/storlekar</translation>
+        <location filename="../PAppearanceWidget.ui" line="25"/>
+        <source>PageEdit</source>
+        <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="30"/>
-        <source>Preview:</source>
-        <translation>Förhandsgranskning:</translation>
+        <location filename="../PAppearanceWidget.ui" line="31"/>
+        <location filename="../PAppearanceWidget.ui" line="263"/>
+        <source>Fonts:</source>
+        <translation>Typsnitt:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="39"/>
+        <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
         <translation>Om inget typsnitt anges i CSS för din sida, kommer följande typsnitt att användas för att visa inom PageEdit. Dessa typsnitt kommer inte att användas i din faktiska e-bok.</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="59"/>
-        <source>Default font size to be used for WebView if no font-size specified in your CSS</source>
-        <translation>Standard teckenstorlek som ska användas för WebView om ingen teckenstorlek anges i din CSS</translation>
+        <location filename="../PAppearanceWidget.ui" line="70"/>
+        <source>Default font size to be used for PageEdit
+if no font-size specified in your CSS</source>
+        <translation>Standard teckenstorlek ska användas för PageEdit
+om ingen teckenstorlek anges i din CSS</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="62"/>
-        <location filename="../PAppearanceWidget.ui" line="186"/>
+        <location filename="../PAppearanceWidget.ui" line="74"/>
+        <location filename="../PAppearanceWidget.ui" line="323"/>
         <source>Font Size:</source>
         <translation>Teckenstorlek:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="92"/>
-        <source>Default font family to be used for WebView if no font-family specified in your CSS</source>
-        <translation>Standard typsnittsfamilj som ska användas för WebView om ingen typsnittsfamilj anges i din CSS</translation>
+        <location filename="../PAppearanceWidget.ui" line="81"/>
+        <source>Default font family to be used for PageEdit
+if no font-family specified in your CSS</source>
+        <translation>Standardtypsnittsfamilj ska användas för PageEdit
+om ingen typsnittsfamilj anges i din CSS</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="95"/>
-        <location filename="../PAppearanceWidget.ui" line="219"/>
-        <source>Standard Font:</source>
-        <translation>Standard typsnitt:</translation>
-    </message>
-    <message>
-        <location filename="../PAppearanceWidget.ui" line="105"/>
-        <source>Default font family to be used for WebView if a serif font-family specified in your CSS</source>
-        <translation>Standard typsnittsfamilj som ska användas för WebView om en serif-typsnittsfamilj anges i din CSS</translation>
+        <location filename="../PAppearanceWidget.ui" line="85"/>
+        <source>Standard:</source>
+        <translation>Standard:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
-        <source>Serif Font:</source>
-        <translation>Serif-typsnitt:</translation>
+        <source>Default font family to be used for PageEdit
+if a serif font-family specified in your CSS</source>
+        <translation>Standardtypsnittsfamilj ska användas för PageEdit
+om en serif-typsnittsfamilj anges i din CSS</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="118"/>
-        <source>Default font family to be used for WebView if a sans-serif font-family specified in your CSS</source>
-        <translation>Standard typsnittsfamilj som ska användas för WebView om en sans-serif-typsnittsfamilj anges i din CSS</translation>
+        <location filename="../PAppearanceWidget.ui" line="112"/>
+        <source>Serif:</source>
+        <translation>Serif:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="121"/>
-        <source>Sans-Serif Font:</source>
-        <translation>Sans-Serif-typsnitt:</translation>
+        <location filename="../PAppearanceWidget.ui" line="125"/>
+        <source>Default font family to be used for PageEdit
+if a sans-serif font-family specified in your CSS</source>
+        <translation>Standardtypsnittsfamilj ska användas för PageEdit
+om en sans-serif-typsnittsfamilj anges i din CSS</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="169"/>
-        <source>Insert Special Characters:</source>
-        <translation>Infoga specialtecken:</translation>
+        <location filename="../PAppearanceWidget.ui" line="129"/>
+        <source>Sans-Serif:</source>
+        <translation>Sans-Serif:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="183"/>
-        <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Teckenstorlek som ska användas i fönstret Infoga specialtecken</translation>
+        <location filename="../PAppearanceWidget.ui" line="156"/>
+        <source>Make PageEdit simulate a dark appearance in dark mode</source>
+        <translation>Gör att PageEdit simulera ett mörkt utseende i mörkt läge</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="216"/>
-        <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Typsnittsfamilj som ska användas i fönstret Infoga specialtecken</translation>
+        <location filename="../PAppearanceWidget.ui" line="181"/>
+        <source>Main UI</source>
+        <translation>Huvudanvändargränssnitt</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="263"/>
-        <source>Icons</source>
-        <translation>Ikoner</translation>
+        <location filename="../PAppearanceWidget.ui" line="187"/>
+        <source>Main Menu Icon Size:</source>
+        <translation>Ikonstorlek i huvudmeny:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="269"/>
-        <source>Icon Size</source>
-        <translation>Ikonstorlek</translation>
-    </message>
-    <message>
-        <location filename="../PAppearanceWidget.ui" line="275"/>
+        <location filename="../PAppearanceWidget.ui" line="193"/>
         <source>Adjust the size of the icons in the main menu.</source>
         <translation>Justera storleken på ikonerna i huvudmenyn.</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="351"/>
+        <location filename="../PAppearanceWidget.ui" line="231"/>
+        <source>High DPI Setting:</source>
+        <translation>Hög DPI inställning:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="240"/>
+        <source>(Needs PageEdit Restart)</source>
+        <translation>(Kräver att PageEdit startas om)</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="269"/>
+        <source>UI Font:</source>
+        <translation>Typsnitt för användargränsnittet:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="279"/>
+        <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
+        <translation>Ändra typsnittet som används av PageEdit menyer, knappar, o.s.v...</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="282"/>
+        <source>Change Font (Needs PageEdit Restart)</source>
+        <translation>Ändra typsnitt (kräver att PageEdit startas om)</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="306"/>
+        <source>Insert Special Characters:</source>
+        <translation>Infoga specialtecken:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="320"/>
+        <source>Font size to be used for Insert Special Characters window</source>
+        <translation>Teckenstorlek som ska användas i fönstret Infoga specialtecken</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="353"/>
+        <source>Font family to be used for Insert Special Characters window</source>
+        <translation>Typsnittsfamilj som ska användas i fönstret Infoga specialtecken</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="356"/>
+        <source>Standard Font:</source>
+        <translation>Standard typsnitt:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="423"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>Återställ alla typsnitt och färger till standardvärdena</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="354"/>
+        <location filename="../PAppearanceWidget.ui" line="426"/>
         <source>Reset All</source>
         <translation>Återställ alla</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <source>Detect</source>
+        <translation>Upptäck</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <source>On</source>
+        <translation>På</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="49"/>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <source>Off</source>
+        <translation>Av</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <source>Detect whether any high dpi scaling should take place.</source>
+        <translation>Upptäck om någon hög dpi skalning ska ske.</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="51"/>
+        <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
+        <translation>Slår på hög dpi skalning och ignorerar alla Qt-miljövariabler</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
+        <source>that are set controlling high dpi behavior.</source>
+        <translation>som är inställda styra hög DPI beteende.</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <source>Turns off high dpi scaling regardless if any Qt environment</source>
+        <translation>Stänger av hög dpi skalning oavsett om någon Qt-miljö</translation>
+    </message>
+    <message>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
+        <source>variables controlling high dpi behavior are set.</source>
+        <translation>variabler som styr hög DPI-beteende är inställda.</translation>
     </message>
 </context>
 <context>
@@ -229,12 +320,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
 <context>
     <name>Inspector</name>
     <message>
-        <location filename="../Inspector.cpp" line="54"/>
+        <location filename="../Inspector.cpp" line="74"/>
         <source>Inspect Page or Element</source>
         <translation>Inspektera sida eller element</translation>
     </message>
     <message>
-        <location filename="../Inspector.cpp" line="94"/>
+        <location filename="../Inspector.cpp" line="156"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
         <translation>Inspektörens funktionalitet stöds inte innan Qt 5.11</translation>
     </message>
@@ -243,28 +334,36 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="901"/>
-        <location filename="../MainWindow.cpp" line="960"/>
-        <location filename="../MainWindow.cpp" line="1547"/>
-        <location filename="../MainWindow.cpp" line="1560"/>
-        <location filename="../MainWindow.cpp" line="1566"/>
-        <location filename="../MainWindow.cpp" line="1580"/>
-        <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp" line="1655"/>
-        <location filename="../MainWindow.cpp" line="1738"/>
-        <location filename="../MainWindow.cpp.keep" line="726"/>
-        <location filename="../MainWindow.cpp.keep" line="1337"/>
-        <location filename="../MainWindow.cpp~" line="901"/>
-        <location filename="../MainWindow.cpp~" line="960"/>
-        <location filename="../MainWindow.cpp~" line="1547"/>
-        <location filename="../MainWindow.cpp~" line="1560"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1580"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1655"/>
-        <location filename="../MainWindow.cpp~" line="1738"/>
+        <location filename="../MainWindow.cpp" line="929"/>
+        <location filename="../MainWindow.cpp" line="988"/>
+        <location filename="../MainWindow.cpp" line="1616"/>
+        <location filename="../MainWindow.cpp" line="1629"/>
+        <location filename="../MainWindow.cpp" line="1635"/>
+        <location filename="../MainWindow.cpp" line="1649"/>
+        <location filename="../MainWindow.cpp" line="1662"/>
+        <location filename="../MainWindow.cpp" line="1670"/>
+        <location filename="../MainWindow.cpp" line="1724"/>
+        <location filename="../MainWindow.cpp" line="1807"/>
+        <location filename="../MainWindow.cpp.keep" line="929"/>
+        <location filename="../MainWindow.cpp.keep" line="988"/>
+        <location filename="../MainWindow.cpp.keep" line="1616"/>
+        <location filename="../MainWindow.cpp.keep" line="1629"/>
+        <location filename="../MainWindow.cpp.keep" line="1635"/>
+        <location filename="../MainWindow.cpp.keep" line="1649"/>
+        <location filename="../MainWindow.cpp.keep" line="1662"/>
+        <location filename="../MainWindow.cpp.keep" line="1670"/>
+        <location filename="../MainWindow.cpp.keep" line="1724"/>
+        <location filename="../MainWindow.cpp.keep" line="1807"/>
+        <location filename="../MainWindow.cpp~" line="929"/>
+        <location filename="../MainWindow.cpp~" line="988"/>
+        <location filename="../MainWindow.cpp~" line="1616"/>
+        <location filename="../MainWindow.cpp~" line="1629"/>
+        <location filename="../MainWindow.cpp~" line="1635"/>
+        <location filename="../MainWindow.cpp~" line="1649"/>
+        <location filename="../MainWindow.cpp~" line="1662"/>
+        <location filename="../MainWindow.cpp~" line="1670"/>
+        <location filename="../MainWindow.cpp~" line="1724"/>
+        <location filename="../MainWindow.cpp~" line="1807"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -718,7 +817,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="787"/>
         <source>Split &amp;Marker</source>
-        <translation>Dela &amp;markör</translation>
+        <translation>Del&amp;markör</translation>
     </message>
     <message>
         <location filename="../main.ui" line="790"/>
@@ -991,32 +1090,37 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
         <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="647"/>
-        <location filename="../MainWindow.cpp~" line="647"/>
+        <location filename="../MainWindow.cpp" line="667"/>
+        <location filename="../MainWindow.cpp.keep" line="667"/>
+        <location filename="../MainWindow.cpp~" line="667"/>
         <source>File load failed</source>
         <translation>Det gick inte att läsa in fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="648"/>
-        <location filename="../MainWindow.cpp~" line="648"/>
+        <location filename="../MainWindow.cpp" line="668"/>
+        <location filename="../MainWindow.cpp.keep" line="668"/>
+        <location filename="../MainWindow.cpp~" line="668"/>
         <source>File Load Failed</source>
         <translation>Det gick inte att läsa in fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="735"/>
-        <location filename="../MainWindow.cpp~" line="735"/>
+        <location filename="../MainWindow.cpp" line="763"/>
+        <location filename="../MainWindow.cpp.keep" line="763"/>
+        <location filename="../MainWindow.cpp~" line="763"/>
         <source>mode: Preview</source>
         <translation>läge: Förhandsgranska</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="737"/>
-        <location filename="../MainWindow.cpp~" line="737"/>
+        <location filename="../MainWindow.cpp" line="765"/>
+        <location filename="../MainWindow.cpp.keep" line="765"/>
+        <location filename="../MainWindow.cpp~" line="765"/>
         <source>mode: Edit</source>
         <translation>läge: Redigera</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="901"/>
-        <location filename="../MainWindow.cpp~" line="901"/>
+        <location filename="../MainWindow.cpp" line="929"/>
+        <location filename="../MainWindow.cpp.keep" line="929"/>
+        <location filename="../MainWindow.cpp~" line="929"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1025,208 +1129,208 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="961"/>
-        <location filename="../MainWindow.cpp~" line="961"/>
+        <location filename="../MainWindow.cpp" line="989"/>
+        <location filename="../MainWindow.cpp.keep" line="989"/>
+        <location filename="../MainWindow.cpp~" line="989"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Vill du spara dina ändringar innan du lämnar?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="978"/>
-        <location filename="../MainWindow.cpp.keep" line="721"/>
-        <location filename="../MainWindow.cpp~" line="978"/>
+        <location filename="../MainWindow.cpp" line="1006"/>
+        <location filename="../MainWindow.cpp.keep" line="1006"/>
+        <location filename="../MainWindow.cpp~" line="1006"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit stänger...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1106"/>
-        <location filename="../MainWindow.cpp" line="1107"/>
-        <location filename="../MainWindow.cpp" line="1108"/>
-        <location filename="../MainWindow.cpp" line="1117"/>
-        <location filename="../MainWindow.cpp" line="1118"/>
-        <location filename="../MainWindow.cpp" line="1119"/>
-        <location filename="../MainWindow.cpp.keep" line="864"/>
-        <location filename="../MainWindow.cpp.keep" line="865"/>
-        <location filename="../MainWindow.cpp.keep" line="866"/>
-        <location filename="../MainWindow.cpp.keep" line="875"/>
-        <location filename="../MainWindow.cpp.keep" line="876"/>
-        <location filename="../MainWindow.cpp.keep" line="877"/>
-        <location filename="../MainWindow.cpp~" line="1106"/>
-        <location filename="../MainWindow.cpp~" line="1107"/>
-        <location filename="../MainWindow.cpp~" line="1108"/>
-        <location filename="../MainWindow.cpp~" line="1117"/>
-        <location filename="../MainWindow.cpp~" line="1118"/>
-        <location filename="../MainWindow.cpp~" line="1119"/>
+        <location filename="../MainWindow.cpp" line="1134"/>
+        <location filename="../MainWindow.cpp" line="1135"/>
+        <location filename="../MainWindow.cpp" line="1136"/>
+        <location filename="../MainWindow.cpp" line="1145"/>
+        <location filename="../MainWindow.cpp" line="1146"/>
+        <location filename="../MainWindow.cpp" line="1147"/>
+        <location filename="../MainWindow.cpp.keep" line="1134"/>
+        <location filename="../MainWindow.cpp.keep" line="1135"/>
+        <location filename="../MainWindow.cpp.keep" line="1136"/>
+        <location filename="../MainWindow.cpp.keep" line="1145"/>
+        <location filename="../MainWindow.cpp.keep" line="1146"/>
+        <location filename="../MainWindow.cpp.keep" line="1147"/>
+        <location filename="../MainWindow.cpp~" line="1134"/>
+        <location filename="../MainWindow.cpp~" line="1135"/>
+        <location filename="../MainWindow.cpp~" line="1136"/>
+        <location filename="../MainWindow.cpp~" line="1145"/>
+        <location filename="../MainWindow.cpp~" line="1146"/>
+        <location filename="../MainWindow.cpp~" line="1147"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML-filer (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1109"/>
-        <location filename="../MainWindow.cpp~" line="1109"/>
+        <location filename="../MainWindow.cpp" line="1137"/>
+        <location filename="../MainWindow.cpp.keep" line="1137"/>
+        <location filename="../MainWindow.cpp~" line="1137"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF-filer (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1110"/>
-        <location filename="../MainWindow.cpp.keep" line="868"/>
-        <location filename="../MainWindow.cpp~" line="1110"/>
+        <location filename="../MainWindow.cpp" line="1138"/>
+        <location filename="../MainWindow.cpp.keep" line="1138"/>
+        <location filename="../MainWindow.cpp~" line="1138"/>
         <source>All files (*.*)</source>
         <translation>Alla filer (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1321"/>
-        <location filename="../MainWindow.cpp.keep" line="1024"/>
-        <location filename="../MainWindow.cpp~" line="1321"/>
+        <location filename="../MainWindow.cpp" line="1376"/>
+        <location filename="../MainWindow.cpp.keep" line="1376"/>
+        <location filename="../MainWindow.cpp~" line="1376"/>
         <source>Save File</source>
         <translation>Spara fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1356"/>
-        <location filename="../MainWindow.cpp" line="1357"/>
-        <location filename="../MainWindow.cpp" line="1369"/>
-        <location filename="../MainWindow.cpp" line="1370"/>
-        <location filename="../MainWindow.cpp.keep" line="1059"/>
-        <location filename="../MainWindow.cpp.keep" line="1060"/>
-        <location filename="../MainWindow.cpp.keep" line="1072"/>
-        <location filename="../MainWindow.cpp.keep" line="1073"/>
-        <location filename="../MainWindow.cpp~" line="1356"/>
-        <location filename="../MainWindow.cpp~" line="1357"/>
-        <location filename="../MainWindow.cpp~" line="1369"/>
-        <location filename="../MainWindow.cpp~" line="1370"/>
+        <location filename="../MainWindow.cpp" line="1411"/>
+        <location filename="../MainWindow.cpp" line="1412"/>
+        <location filename="../MainWindow.cpp" line="1424"/>
+        <location filename="../MainWindow.cpp" line="1425"/>
+        <location filename="../MainWindow.cpp.keep" line="1411"/>
+        <location filename="../MainWindow.cpp.keep" line="1412"/>
+        <location filename="../MainWindow.cpp.keep" line="1424"/>
+        <location filename="../MainWindow.cpp.keep" line="1425"/>
+        <location filename="../MainWindow.cpp~" line="1411"/>
+        <location filename="../MainWindow.cpp~" line="1412"/>
+        <location filename="../MainWindow.cpp~" line="1424"/>
+        <location filename="../MainWindow.cpp~" line="1425"/>
         <source>File Save-As Failed!</source>
         <translation>Spara fil som misslyckades!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1356"/>
-        <location filename="../MainWindow.cpp.keep" line="1059"/>
-        <location filename="../MainWindow.cpp~" line="1356"/>
+        <location filename="../MainWindow.cpp" line="1411"/>
+        <location filename="../MainWindow.cpp.keep" line="1411"/>
+        <location filename="../MainWindow.cpp~" line="1411"/>
         <source>is not writeable</source>
         <translation>är inte skrivbar</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1365"/>
-        <location filename="../MainWindow.cpp" line="1395"/>
-        <location filename="../MainWindow.cpp.keep" line="1068"/>
-        <location filename="../MainWindow.cpp.keep" line="1098"/>
-        <location filename="../MainWindow.cpp~" line="1365"/>
-        <location filename="../MainWindow.cpp~" line="1395"/>
+        <location filename="../MainWindow.cpp" line="1420"/>
+        <location filename="../MainWindow.cpp" line="1459"/>
+        <location filename="../MainWindow.cpp.keep" line="1420"/>
+        <location filename="../MainWindow.cpp.keep" line="1459"/>
+        <location filename="../MainWindow.cpp~" line="1420"/>
+        <location filename="../MainWindow.cpp~" line="1459"/>
         <source>File Saved</source>
         <translation>Filen sparad</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1386"/>
-        <location filename="../MainWindow.cpp" line="1388"/>
-        <location filename="../MainWindow.cpp" line="1399"/>
-        <location filename="../MainWindow.cpp" line="1400"/>
-        <location filename="../MainWindow.cpp.keep" line="1089"/>
-        <location filename="../MainWindow.cpp.keep" line="1091"/>
-        <location filename="../MainWindow.cpp.keep" line="1102"/>
-        <location filename="../MainWindow.cpp.keep" line="1103"/>
-        <location filename="../MainWindow.cpp~" line="1386"/>
-        <location filename="../MainWindow.cpp~" line="1388"/>
-        <location filename="../MainWindow.cpp~" line="1399"/>
-        <location filename="../MainWindow.cpp~" line="1400"/>
+        <location filename="../MainWindow.cpp" line="1450"/>
+        <location filename="../MainWindow.cpp" line="1452"/>
+        <location filename="../MainWindow.cpp" line="1463"/>
+        <location filename="../MainWindow.cpp" line="1464"/>
+        <location filename="../MainWindow.cpp.keep" line="1450"/>
+        <location filename="../MainWindow.cpp.keep" line="1452"/>
+        <location filename="../MainWindow.cpp.keep" line="1463"/>
+        <location filename="../MainWindow.cpp.keep" line="1464"/>
+        <location filename="../MainWindow.cpp~" line="1450"/>
+        <location filename="../MainWindow.cpp~" line="1452"/>
+        <location filename="../MainWindow.cpp~" line="1463"/>
+        <location filename="../MainWindow.cpp~" line="1464"/>
         <source>File Save Failed!</source>
         <translation>Spara fil misslyckades!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1387"/>
-        <location filename="../MainWindow.cpp.keep" line="1090"/>
-        <location filename="../MainWindow.cpp~" line="1387"/>
+        <location filename="../MainWindow.cpp" line="1451"/>
+        <location filename="../MainWindow.cpp.keep" line="1451"/>
+        <location filename="../MainWindow.cpp~" line="1451"/>
         <source>does not exist or is not writeable</source>
         <translation>finns inte eller är inte skrivbar</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1448"/>
-        <location filename="../MainWindow.cpp.keep" line="1147"/>
-        <location filename="../MainWindow.cpp~" line="1448"/>
+        <location filename="../MainWindow.cpp" line="1512"/>
+        <location filename="../MainWindow.cpp.keep" line="1512"/>
+        <location filename="../MainWindow.cpp~" line="1512"/>
         <source>File Opened</source>
         <translation>Filen öppnades</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1452"/>
-        <location filename="../MainWindow.cpp.keep" line="1152"/>
-        <location filename="../MainWindow.cpp~" line="1452"/>
+        <location filename="../MainWindow.cpp" line="1516"/>
+        <location filename="../MainWindow.cpp.keep" line="1516"/>
+        <location filename="../MainWindow.cpp~" line="1516"/>
         <source>File Open Failed!</source>
         <translation>Öppna fil misslyckades!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1475"/>
-        <location filename="../MainWindow.cpp.keep" line="1175"/>
-        <location filename="../MainWindow.cpp~" line="1475"/>
+        <location filename="../MainWindow.cpp" line="1539"/>
+        <location filename="../MainWindow.cpp.keep" line="1539"/>
+        <location filename="../MainWindow.cpp~" line="1539"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Urklipp innehåller HTML-formatering</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1476"/>
-        <location filename="../MainWindow.cpp.keep" line="1176"/>
-        <location filename="../MainWindow.cpp~" line="1476"/>
+        <location filename="../MainWindow.cpp" line="1540"/>
+        <location filename="../MainWindow.cpp.keep" line="1540"/>
+        <location filename="../MainWindow.cpp~" line="1540"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Vill du klistra in urklippsdata som vanlig text?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1547"/>
-        <location filename="../MainWindow.cpp~" line="1547"/>
+        <location filename="../MainWindow.cpp" line="1616"/>
+        <location filename="../MainWindow.cpp.keep" line="1616"/>
+        <location filename="../MainWindow.cpp~" line="1616"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Du måste välja text innan du infogar ett nytt id.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1560"/>
-        <location filename="../MainWindow.cpp~" line="1560"/>
+        <location filename="../MainWindow.cpp" line="1629"/>
+        <location filename="../MainWindow.cpp.keep" line="1629"/>
+        <location filename="../MainWindow.cpp~" line="1629"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID är ogiltigt - måste börja med en bokstav, följt av bokstavsnummer _ : - eller .</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1635"/>
+        <location filename="../MainWindow.cpp.keep" line="1635"/>
+        <location filename="../MainWindow.cpp~" line="1635"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Du kan inte infoga ett id i denna position.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1580"/>
-        <location filename="../MainWindow.cpp~" line="1580"/>
+        <location filename="../MainWindow.cpp" line="1649"/>
+        <location filename="../MainWindow.cpp.keep" line="1649"/>
+        <location filename="../MainWindow.cpp~" line="1649"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Du måste välja text innan du infogar en ny länk.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
+        <location filename="../MainWindow.cpp" line="1662"/>
+        <location filename="../MainWindow.cpp.keep" line="1662"/>
+        <location filename="../MainWindow.cpp~" line="1662"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Länken är ogiltig - kan inte innehålla &quot;&lt;&quot; eller &quot;&gt;&quot;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
+        <location filename="../MainWindow.cpp" line="1670"/>
+        <location filename="../MainWindow.cpp.keep" line="1670"/>
+        <location filename="../MainWindow.cpp~" line="1670"/>
         <source>You cannot insert a link at this position.</source>
         <translation>Du kan inte infoga en länk i denna position.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
-        <location filename="../MainWindow.cpp~" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1681"/>
+        <location filename="../MainWindow.cpp.keep" line="1681"/>
+        <location filename="../MainWindow.cpp~" line="1681"/>
         <source>Insert File</source>
         <translation>Infoga fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1655"/>
-        <location filename="../MainWindow.cpp~" line="1655"/>
+        <location filename="../MainWindow.cpp" line="1724"/>
+        <location filename="../MainWindow.cpp.keep" line="1724"/>
+        <location filename="../MainWindow.cpp~" line="1724"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Du kan inte infoga en mediefil på den här positionen.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1739"/>
-        <location filename="../MainWindow.cpp.keep" line="1338"/>
-        <location filename="../MainWindow.cpp~" line="1739"/>
+        <location filename="../MainWindow.cpp" line="1808"/>
+        <location filename="../MainWindow.cpp.keep" line="1808"/>
+        <location filename="../MainWindow.cpp~" line="1808"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Vill du spara några ändringar innan du skriver över den här filen?</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp.keep" line="727"/>
-        <source>Do you want to save your changes before closing?</source>
-        <translation>Vill du spara dina ändringar innan du stänger?</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp.keep" line="867"/>
-        <source>Text files (*.txt)</source>
-        <translation>Textfiler (*.txt)</translation>
     </message>
 </context>
 <context>
@@ -1237,17 +1341,17 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
         <translation>Inställningar</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="86"/>
+        <location filename="../Preferences.cpp" line="90"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="86"/>
+        <location filename="../Preferences.cpp" line="90"/>
         <source>Changes will take effect when you restart PageEdit.</source>
         <translation>Ändringar träder i kraft när du startar om PageEdit.</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="143"/>
+        <location filename="../Preferences.cpp" line="152"/>
         <source>Open Preferences Location</source>
         <translation>Öppna platsen för Inställningar</translation>
     </message>
@@ -1262,59 +1366,59 @@ Line: %1 Column %2 - %3</source>
 Rad: %1 Kolumn %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="364"/>
+        <location filename="../Utility.cpp" line="376"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Det går inte att läsa filen %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="479"/>
+        <location filename="../Utility.cpp" line="491"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>PageEdit har stött på ett problem.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="480"/>
+        <location filename="../Utility.cpp" line="492"/>
         <source>PageEdit may need to close.</source>
         <translation>PageEdit kan behöva stängas.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="798"/>
+        <location filename="../Utility.cpp" line="794"/>
         <source>About PageEdit</source>
         <translation>Om PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="803"/>
+        <location filename="../Utility.cpp" line="799"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="804"/>
+        <location filename="../Utility.cpp" line="800"/>
         <source>Build Date</source>
         <translation>Byggdatum</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="805"/>
+        <location filename="../Utility.cpp" line="801"/>
         <source>Build Time</source>
         <translation>Byggtid</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="806"/>
+        <location filename="../Utility.cpp" line="802"/>
         <source>Qt Runtime Version</source>
         <translation>Qt Runtime version</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="807"/>
+        <location filename="../Utility.cpp" line="803"/>
         <source>Qt Compiled Version</source>
         <translation>Qt Compiled version</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="808"/>
+        <location filename="../Utility.cpp" line="804"/>
         <source>System</source>
         <translation>System</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="809"/>
+        <location filename="../Utility.cpp" line="805"/>
         <source>Architecture</source>
         <translation>Arkitektur</translation>
     </message>
@@ -1373,62 +1477,52 @@ Rad: %1 Kolumn %2 - %3</translation>
         <translation>Miniatyrbildsstorlek:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="111"/>
-        <location filename="../SelectFiles.cpp~" line="111"/>
+        <location filename="../SelectFiles.cpp" line="113"/>
         <source>All</source>
         <translation>Alla</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="112"/>
-        <location filename="../SelectFiles.cpp~" line="112"/>
+        <location filename="../SelectFiles.cpp" line="114"/>
         <source>Images</source>
         <translation>Bilder</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="113"/>
-        <location filename="../SelectFiles.cpp~" line="113"/>
+        <location filename="../SelectFiles.cpp" line="115"/>
         <source>Video</source>
         <translation>Video</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="114"/>
-        <location filename="../SelectFiles.cpp~" line="114"/>
+        <location filename="../SelectFiles.cpp" line="116"/>
         <source>Audio</source>
         <translation>Ljud</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="153"/>
-        <location filename="../SelectFiles.cpp~" line="153"/>
+        <location filename="../SelectFiles.cpp" line="159"/>
         <source>Media Files In the Book</source>
         <translation>Mediefiler i boken</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="156"/>
-        <location filename="../SelectFiles.cpp~" line="156"/>
+        <location filename="../SelectFiles.cpp" line="162"/>
         <source>Thumbnails</source>
         <translation>Miniatyrbilder</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="316"/>
-        <location filename="../SelectFiles.cpp~" line="316"/>
+        <location filename="../SelectFiles.cpp" line="325"/>
         <source>shades</source>
         <translation>nyanser</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="316"/>
-        <location filename="../SelectFiles.cpp~" line="316"/>
+        <location filename="../SelectFiles.cpp" line="325"/>
         <source>colors</source>
         <translation>färger</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="317"/>
-        <location filename="../SelectFiles.cpp~" line="317"/>
+        <location filename="../SelectFiles.cpp" line="326"/>
         <source>Grayscale</source>
         <translation>Gråskala</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="317"/>
-        <location filename="../SelectFiles.cpp~" line="317"/>
+        <location filename="../SelectFiles.cpp" line="326"/>
         <source>Color</source>
         <translation>Färg</translation>
     </message>
@@ -1502,12 +1596,12 @@ ID-namn måste vara unika och börja med en bokstav.</translation>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="575"/>
+        <location filename="../Utility.cpp" line="587"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="576"/>
+        <location filename="../Utility.cpp" line="588"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
