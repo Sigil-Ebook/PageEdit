@@ -75,6 +75,10 @@ static const QString DEFAULT_FILENAME = "untitled.xhtml";
 
 static const QStringList HEADERTAGS = QStringList() << "h1" << "h2" << "h3" << "h4" << "h5" << "h6";
 
+static const QStringList DARKCSSLINKS = QStringList() << "qrc:///dark/mac_dark_scrollbar.css" 
+                                                      << "qrc:///dark/win_dark_scrollbar.css" 
+                                                      << "qrc:///dark/lin_dark_scrollbar.css";
+
 const float ZOOM_STEP               = 0.1f;
 const float ZOOM_MIN                = 0.09f;
 const float ZOOM_MAX                = 5.0f;
@@ -974,6 +978,8 @@ void MainWindow::AllowSaveIfModified()
     // if the page source has been modified since it was loaded or saved
     // allow opportunity to save it
     QString source = GetSource();
+    // qDebug() << "new  source: " << source;
+    // qDebug() << "orig source: " << m_source;
     bool modified = false;
     if (!m_source.isEmpty()) {
         if (m_source.length() != source.length()) {
@@ -1294,6 +1300,7 @@ QString MainWindow::GetCleanHtml()
     foreach(GumboNode * node, nodes) {
         GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "id");
         if (attr && QString::fromUtf8(attr->value) == "PageEdit_Injected") {
+            // qDebug() << "removing PageEdit_Injected dark style";
 	    gumbo_remove_from_parent(node);
 	    gumbo_destroy_node(node);
 	    break;
@@ -1306,8 +1313,8 @@ QString MainWindow::GetCleanHtml()
         GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "href");
         if (attr) {
 	    QString attrval = QString::fromUtf8(attr->value);
-	    if (attrval.contains("qrc:///dark/mac_dark_scrollbar.css") || 
-		attrval.contains("qrc:///dark/win_dark_scrollbar.css") ) {
+            if (DARKCSSLINKS.contains(attrval) ) {
+                // qDebug() << "removing dark css links";
 		gumbo_remove_from_parent(node);
 		gumbo_destroy_node(node);
 		break;
