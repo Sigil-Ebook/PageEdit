@@ -1,5 +1,11 @@
 Change Log
 ==========
+PageEdit-1.1.1
+  Bug Fixes
+    - prevent the lin_dark_scrollbar.css link from being leftover when dark mode used
+    - prevent open from asking to save if nothing else has changed
+    - clean up whitespace leftover after dark injection
+
 PageEdit-1.1.0
   Bug Fixes
     - fix bug for linking to top of page in SelectHyperlink
