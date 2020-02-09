@@ -177,7 +177,7 @@ protected:
     void resizeEvent(QResizeEvent * event);
     void moveEvent(QMoveEvent *event);
     void closeEvent(QCloseEvent * event);
-    bool MaybeSaveDialogSaysProceed();
+    bool MaybeSaveDialogSaysProceed(bool modified);
     QString GetCleanHtml();
     QString GetSource();
     QString GetHTMLToPaste(const QString & hmtl_snippet);

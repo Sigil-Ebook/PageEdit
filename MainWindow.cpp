@@ -1492,7 +1492,7 @@ void MainWindow::Open()
             modified = true;
         }
     }
-    if (modified) if (MaybeSaveDialogSaysProceed())
+    if (MaybeSaveDialogSaysProceed(modified))
 #endif 
     {
         const QMap<QString, QString> load_filters = MainWindow::GetLoadFiltersMap();
@@ -1813,10 +1813,14 @@ void MainWindow::sizeMenuIcons() {
     }
 }
 
-bool MainWindow::MaybeSaveDialogSaysProceed()
+bool MainWindow::MaybeSaveDialogSaysProceed(bool modified)
 {
     // allow processing of any outstanding events
     qApp->processEvents();
+
+    // since if nothing is modified you can not discard anything (as it is already saved)
+    // and since you do not need to save anything (nothing can be lost)
+    if (!modified) return true;
 
     QMessageBox::StandardButton button_pressed;
     button_pressed = QMessageBox::warning(this,
