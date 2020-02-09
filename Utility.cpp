@@ -81,14 +81,12 @@ class PageEditMessageBox: public QMessageBox
 #include "Utility.h"
 
 static const QString DARK_STYLE =
-    "<style id=\"PageEdit_Injected\">\n"
+    "<style id=\"PageEdit_Injected\">"
     "  :root { background-color: %1; color: %2; }\n"
-    "  a:link { color: #ff9999; }\n"
-    "  a:visited { color: #99ff99; }\n"
-    "  ::-webkit-scrollbar { display: none; }\n"
-    "</style>\n"
+    "  ::-webkit-scrollbar { display: none; }"
+    "</style>"
     "<link rel=\"stylesheet\" type=\"text/css\" "
-    "href=\"%3\" />\n";
+    "href=\"%3\" />";
 
 // Define the user preferences location to be used
 QString Utility::DefinePrefsDir()

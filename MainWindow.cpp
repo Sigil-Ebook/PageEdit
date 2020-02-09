@@ -1483,7 +1483,16 @@ void MainWindow::Open()
     }
 
 #ifndef Q_OS_MAC
-    if (MaybeSaveDialogSaysProceed())
+    QString source = GetSource();
+    bool modified = false;
+    if (!m_source.isEmpty()) {
+	if (m_source.length() != source.length()) {
+            modified = true;
+        } else if (m_source != source) {
+            modified = true;
+        }
+    }
+    if (modified) if (MaybeSaveDialogSaysProceed())
 #endif 
     {
         const QMap<QString, QString> load_filters = MainWindow::GetLoadFiltersMap();
