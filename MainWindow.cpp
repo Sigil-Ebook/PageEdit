@@ -56,6 +56,7 @@
 #include "SelectId.h"
 #include "Preferences.h"
 #include "GumboInterface.h"
+#include "HTMLEncodingResolver.h"
 #include "SearchToolbar.h"
 #include "OPFReader.h"
 #include "MainApplication.h"
@@ -666,7 +667,15 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
 	text = source;
     } else { 
         try {
-            text = Utility::ReadUnicodeTextFile(filename_url);
+            // This will read in the data and properly convert to unicode
+	    // from whatever encoding it is in now
+	    text = HTMLEncodingResolver::ReadHTMLFile(filename_url);
+
+	    // This will convert all html to xhtml and remove any 
+	    // improper xml header and add the proper xml header
+	    GumboInterface gi(text, "any_version");
+	    text = gi.getxhtml();
+
         } catch (std::exception &e) {
             Utility::DisplayStdErrorDialog(tr("File load failed"), e.what());
 	    text = "<html><head><title></title></head><body><h1>" + tr("File Load Failed") + "</h1></body></html>";

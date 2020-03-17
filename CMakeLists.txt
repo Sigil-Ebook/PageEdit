@@ -95,6 +95,7 @@ set( SOURCE_FILES
     SearchToolbar.cpp
     Utility.cpp
     GumboInterface.cpp
+    HTMLEncodingResolver.cpp
     OPFReader.cpp
     )
 
@@ -126,6 +127,7 @@ set( HEADER_FILES
     SearchToolbar.h
     Utility.h
     GumboInterface.h
+    HTMLEncodingResolver.h
     OPFReader.h
     )
 
