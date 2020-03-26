@@ -15,7 +15,7 @@
         <location filename="../PAppearanceWidget.ui" line="31"/>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Fonts:</source>
-        <translation type="unfinished"/>
+        <translation>Lettertypen:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="40"/>
@@ -26,7 +26,8 @@
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Standaard tekengrootte die PageEdit gebruikt
+als in de CSS geen tekengrootte is opgegeven</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
@@ -38,49 +39,52 @@ if no font-size specified in your CSS</source>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Standaard lettertypefamilie die PageEdit gebruikt
+als in de CSS geen lettertypefamilie is opgegeven</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
         <source>Standard:</source>
-        <translation type="unfinished"/>
+        <translation>Standaard:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Standaard lettertypefamilie die PageEdit gebruikt
+als in de CSS een lettertypefamilie met schreef is opgegeven</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
         <source>Serif:</source>
-        <translation type="unfinished"/>
+        <translation>Met schreef:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Standaard lettertypefamilie die PageEdit gebruikt
+als in de CSS een schreefloze lettertypefamilie is opgegeven</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
         <source>Sans-Serif:</source>
-        <translation type="unfinished"/>
+        <translation>Schreefloos:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="156"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation type="unfinished"/>
+        <translation>In donkere modus een donker uiterlijk tonen in PageEdit</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="181"/>
         <source>Main UI</source>
-        <translation type="unfinished"/>
+        <translation>Hoofdgebruikersinterface</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="187"/>
         <source>Main Menu Icon Size:</source>
-        <translation type="unfinished"/>
+        <translation>Formaat van pictogrammen in hoofdmenu:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="193"/>
@@ -90,27 +94,27 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="231"/>
         <source>High DPI Setting:</source>
-        <translation type="unfinished"/>
+        <translation>Hoge DPI-instellingen:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="240"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation type="unfinished"/>
+        <translation>(Vereist opnieuw starten van PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>UI Font:</source>
-        <translation type="unfinished"/>
+        <translation>Lettertype gebruikersinterface:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="279"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation type="unfinished"/>
+        <translation>Het lettertype wijzigen dat door PageEdit wordt gebruikt voor menu&apos;s, knoppen en dergelijke</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="282"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation type="unfinished"/>
+        <translation>Lettertype wijzigen (vereist opnieuw starten PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="306"/>
@@ -146,13 +150,13 @@ if a sans-serif font-family specified in your CSS</source>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect</source>
-        <translation type="unfinished"/>
+        <translation>Autodetectie</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>On</source>
-        <translation type="unfinished"/>
+        <translation>Aan</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
@@ -163,32 +167,32 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect whether any high dpi scaling should take place.</source>
-        <translation type="unfinished"/>
+        <translation>Detecteren of DPI-schaalbaarheid moet worden toegepast.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="51"/>
         <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation type="unfinished"/>
+        <translation>Overlaten aan de Qt-omgevingsvariabelen voor het regelen van het gedrag bij hoge DPI. </translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation type="unfinished"/>
+        <translation>Schakelt DPI-schaalbaarheid in en negeert de Qt-omgevingsvariabelen.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>that are set controlling high dpi behavior.</source>
-        <translation type="unfinished"/>
+        <translation>voor het regelen van het gedrag bij hoge DPI.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation type="unfinished"/>
+        <translation>Schakelt DPI-schaalbaarheid uit ongeacht de Qt-omgevingsvariabelen</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>variables controlling high dpi behavior are set.</source>
-        <translation type="unfinished"/>
+        <translation>voor het regelen van het gedrag bij hoge DPI.</translation>
     </message>
 </context>
 <context>

@@ -1,5 +1,12 @@
 Change Log
 ==========
+PageEdit-1.2.0
+  Bug Fixes
+    - fix issues when using PageEdit to edit epubs outside of Sigil's environment
+        - properly detect and handle non utf-8 encodings
+        - properly convert html to xhtml syntax
+        - properly add the xml header file
+
 PageEdit-1.1.1
   Bug Fixes
     - prevent the lin_dark_scrollbar.css link from being leftover when dark mode used

@@ -20,7 +20,7 @@
     <message>
         <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>Wenn keine Schriftart im CSS für Ihre Seite angegeben wurde, wird die folgende Schriftart in PageEdit zur Anzeige verwendet. Diese Schriftarten werden nicht im aktuellen Ebook verwendet.</translation>
+        <translation>Wenn keine Schriftarten im Stylesheet angegeben wurden, werden die folgenden Schriftarten in PageEdit zur Anzeige verwendet. Diese Schriftarten werden nicht im aktuellen Ebook verwendet.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="70"/>
@@ -94,7 +94,7 @@ Sans-Serif-Schriftfamilie in der CSS-Datei angegeben wurde.</translation>
     <message>
         <location filename="../PAppearanceWidget.ui" line="231"/>
         <source>High DPI Setting:</source>
-        <translation>Skalierung bei hohem DPI-Wert:</translation>
+        <translation>DPI-Skalierung für hochauflösende Monitore:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="240"/>

@@ -26,7 +26,7 @@
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>CSS에서 글꼴 크기를 지정하지 않을 경우 페이지 에디터에서 사용할 기본 글꼴 크기</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
@@ -38,18 +38,18 @@ if no font-size specified in your CSS</source>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>CSS에서 글꼴 모음을 지정하지 않을 경우 페이지 에디터에서 사용할 기본 글꼴 모음</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
         <source>Standard:</source>
-        <translation type="unfinished"/>
+        <translation>기본 글꼴:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>CSS에서 명조 계열 글꼴(serif)을 지정한 경우 페이지 에디터에서 사용할 기본 글꼴 모음</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
@@ -60,7 +60,7 @@ if a serif font-family specified in your CSS</source>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>CSS에서 고딕 계열 글꼴(sans-serif)을 지정한 경우 페이지 에디터에서 사용할 기본 글꼴 모음</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
@@ -70,7 +70,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="156"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation type="unfinished"/>
+        <translation>다크 모드에서 페이지 에디터를 다크 모드로 변경</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="181"/>
@@ -95,7 +95,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="240"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation type="unfinished"/>
+        <translation>(페이지 에디터를 다시 시작해야 합니다)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
@@ -105,12 +105,12 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="279"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation type="unfinished"/>
+        <translation>페이지 에디터의 메뉴, 버튼 등에 사용되는 글꼴 변경</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="282"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation type="unfinished"/>
+        <translation>글꼴 변경(페이지 에디터를 다시 시작해야 합니다)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="306"/>
@@ -146,13 +146,13 @@ if a sans-serif font-family specified in your CSS</source>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect</source>
-        <translation type="unfinished"/>
+        <translation>감지</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>On</source>
-        <translation type="unfinished"/>
+        <translation>켜기</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>

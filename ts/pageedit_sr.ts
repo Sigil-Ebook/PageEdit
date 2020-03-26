@@ -15,7 +15,7 @@
         <location filename="../PAppearanceWidget.ui" line="31"/>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Fonts:</source>
-        <translation type="unfinished"/>
+        <translation>Фонтови:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="40"/>
@@ -26,7 +26,8 @@
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Подразумевана величина фонта која се користи за PageEdit
+ако font-size није наведен у вашем CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
@@ -38,49 +39,52 @@ if no font-size specified in your CSS</source>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Подразумевана фамилија фонтова која се користи за PageEdit
+ако font-family није наведен у вашем CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
         <source>Standard:</source>
-        <translation type="unfinished"/>
+        <translation>Стандардни:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Подразумевана фамилија фонтова која се користи за PageEdit
+ако је серифна font-family наведена у вашем CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
         <source>Serif:</source>
-        <translation type="unfinished"/>
+        <translation>Серифни:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>Подразумевана фамилија фонтова која се користи за PageEdit
+ако је бесерифна font-family наведена у вашем CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
         <source>Sans-Serif:</source>
-        <translation type="unfinished"/>
+        <translation>Бесерифни:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="156"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation type="unfinished"/>
+        <translation>Нека PageEdit симулира тамни изглед у тамном режиму</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="181"/>
         <source>Main UI</source>
-        <translation type="unfinished"/>
+        <translation>Главни КИ</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="187"/>
         <source>Main Menu Icon Size:</source>
-        <translation type="unfinished"/>
+        <translation>Величина иконе главног менија</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="193"/>
@@ -90,27 +94,27 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="231"/>
         <source>High DPI Setting:</source>
-        <translation type="unfinished"/>
+        <translation>Поставка високе густине пиксела:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="240"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation type="unfinished"/>
+        <translation>(неопходно поновно покретање програма PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>UI Font:</source>
-        <translation type="unfinished"/>
+        <translation>КИ фонт</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="279"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation type="unfinished"/>
+        <translation>Мења фонт који програм PageEdit користи за меније, дугмиће, итд...</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="282"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation type="unfinished"/>
+        <translation>Измена фонта (неопходно поновно покретање програма PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="306"/>
@@ -146,49 +150,49 @@ if a sans-serif font-family specified in your CSS</source>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect</source>
-        <translation type="unfinished"/>
+        <translation>Детектуј</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>On</source>
-        <translation type="unfinished"/>
+        <translation>Укљ.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Off</source>
-        <translation type="unfinished"/>
+        <translation>Искљ.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect whether any high dpi scaling should take place.</source>
-        <translation type="unfinished"/>
+        <translation>Детектује да ли је потребно скалирање услед високе густине пиксела.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="51"/>
         <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation type="unfinished"/>
+        <translation>Преусмерава на евентуално постављене Qt променљиве окружења за контролу понашања код високе густине пиксела.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation type="unfinished"/>
+        <translation>Укључује скалирање за високу густину пиксела и игнорише евентуалне Qt променљиве окружења</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>that are set controlling high dpi behavior.</source>
-        <translation type="unfinished"/>
+        <translation>које су постављене за контролу понашања код високе густине пиксела.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation type="unfinished"/>
+        <translation>Искључује скалирање за високу густину пиксела без обзира на евентуалне Qt</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>variables controlling high dpi behavior are set.</source>
-        <translation type="unfinished"/>
+        <translation>променљиве окружења које контролишу понашање за високу густину пиксела.</translation>
     </message>
 </context>
 <context>
@@ -1058,7 +1062,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1097"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation type="unfinished"/>
+        <translation>Умеће или уређује сидро са ИД именом које ће да се користи као циљ линка.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1107"/>
@@ -1068,7 +1072,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1110"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation type="unfinished"/>
+        <translation>Умеће или уређује сидро са хипервезом на циљ.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1120"/>
@@ -1078,7 +1082,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1123"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation type="unfinished"/>
+        <translation>Одаберите постојеће датотеке слика, видеа или звука из ваше књиге који треба да се уметну у текст.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1126"/>
@@ -1090,14 +1094,14 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="667"/>
         <location filename="../MainWindow.cpp~" line="667"/>
         <source>File load failed</source>
-        <translation type="unfinished"/>
+        <translation>Учитавање датотеке није било успешно</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="668"/>
         <location filename="../MainWindow.cpp.keep" line="668"/>
         <location filename="../MainWindow.cpp~" line="668"/>
         <source>File Load Failed</source>
-        <translation type="unfinished"/>
+        <translation>Неуспешно учитавање датотеке</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="763"/>
@@ -1319,7 +1323,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp.keep" line="1724"/>
         <location filename="../MainWindow.cpp~" line="1724"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation type="unfinished"/>
+        <translation>На ову позицију не можете да уметнете датотеку медија.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1808"/>
@@ -1495,7 +1499,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectFiles.cpp" line="159"/>
         <source>Media Files In the Book</source>
-        <translation type="unfinished"/>
+        <translation>Датотеке медија у књизи</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="162"/>
