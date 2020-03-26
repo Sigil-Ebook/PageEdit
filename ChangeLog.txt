@@ -2,10 +2,10 @@ Change Log
 ==========
 PageEdit-1.2.0
   Bug Fixes
-    - fix issues when using PageEdit to edit epubs outside of Sigil's environment
+    - fix issues when using PageEdit to edit epubs from outside of Sigil's environment
         - properly detect and handle non utf-8 encodings
         - properly convert html to xhtml syntax
-        - properly add the xml header file
+        - properly add the xml header file where needed
 
 PageEdit-1.1.1
   Bug Fixes
