@@ -98,6 +98,7 @@ set( SOURCE_FILES
     GumboInterface.cpp
     HTMLEncodingResolver.cpp
     OPFReader.cpp
+    PEDarkStyle.cpp
     )
 
 set( HEADER_FILES
@@ -131,6 +132,7 @@ set( HEADER_FILES
     GumboInterface.h
     HTMLEncodingResolver.h
     OPFReader.h
+    PEDarkStyle.h
     )
 
 set( FORM_FILES

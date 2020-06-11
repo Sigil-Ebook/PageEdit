@@ -51,6 +51,7 @@ extern void removeMacosSpecificMenuItems();
 #include "AppEventFilter.h"
 #include "SettingsStore.h"
 #include "UILanguage.h"
+#include "PEDarkStyle.h"
 #include "pageedit_constants.h"
 #include "pageedit_exception.h"
 
@@ -184,42 +185,6 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
 }
 
 
-QPalette getDarkPalette()
-{
-    // Dark palette for PageEdit
-    QPalette darkPalette;
-
-    darkPalette.setColor(QPalette::Window, QColor(53, 53, 53));
-    darkPalette.setColor(QPalette::Disabled, QPalette::Window, QColor(80, 80, 80));
-    darkPalette.setColor(QPalette::WindowText, QColor(238, 238, 238));
-    darkPalette.setColor(QPalette::Disabled, QPalette::WindowText,
-                        QColor(127, 127, 127));
-    darkPalette.setColor(QPalette::Base, QColor(42, 42, 42));
-    darkPalette.setColor(QPalette::Disabled, QPalette::Base, QColor(80, 80, 80));
-    darkPalette.setColor(QPalette::AlternateBase, QColor(66, 66, 66));
-    darkPalette.setColor(QPalette::ToolTipBase, QColor(53, 53, 53));
-    darkPalette.setColor(QPalette::ToolTipText, QColor(238, 238, 238));
-    darkPalette.setColor(QPalette::Text, QColor(238, 238, 238));
-    darkPalette.setColor(QPalette::Disabled, QPalette::Text, QColor(127, 127, 127));
-    darkPalette.setColor(QPalette::Dark, QColor(35, 35, 35));
-    darkPalette.setColor(QPalette::Shadow, QColor(20, 20, 20));
-    darkPalette.setColor(QPalette::Button, QColor(53, 53, 53));
-    darkPalette.setColor(QPalette::ButtonText, QColor(238, 238, 238));
-    darkPalette.setColor(QPalette::Disabled, QPalette::ButtonText,
-                        QColor(127, 127, 127));
-    darkPalette.setColor(QPalette::BrightText, Qt::red);
-    darkPalette.setColor(QPalette::Link, QColor(108, 180, 238));
-    darkPalette.setColor(QPalette::LinkVisited, QColor(108, 180, 238));
-    darkPalette.setColor(QPalette::Highlight, QColor(42, 130, 218));
-    darkPalette.setColor(QPalette::Disabled, QPalette::Highlight, QColor(80, 80, 80));
-    darkPalette.setColor(QPalette::HighlightedText, QColor(238, 238, 238));
-    darkPalette.setColor(QPalette::Disabled, QPalette::HighlightedText,
-                        QColor(127, 127, 127));
-
-    return darkPalette;
-}
-
-
 // Application entry point
 int main(int argc, char *argv[])
 {
@@ -290,24 +255,19 @@ int main(int argc, char *argv[])
     app.installTranslator(&pageeditTranslator);
 
 #ifndef Q_OS_MAC
+    // Custom dark style/palette for Windows and Linux
 #ifndef Q_OS_WIN32
     // Use platform themes/styles on Linux unless either Sigil or PageEdit's FORCE variable is set
     if (!force_pageedit_darkmode_palette.isEmpty() || !force_sigil_darkmode_palette.isEmpty()) {
-        // Fusion style is fully dpi aware on Windows/Linux
-        app.setStyle(QStyleFactory::create("fusion"));
-        // qss stylesheet from resources
-        QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
-        app.setStyleSheet(dark_styles);
-        app.setPalette(getDarkPalette());
+        // Apply custom dark style
+        app.setStyle(new PEDarkStyle);
+        app.setPalette(QApplication::style()->standardPalette());
     }
 #else
     if (Utility::WindowsShouldUseDarkMode()) {
-        // Fusion style is fully dpi aware on Windows/Linux
-        app.setStyle(QStyleFactory::create("fusion"));
-        // qss stylesheet from resources
-        QString dark_styles = Utility::ReadUnicodeTextFile(":/dark/win-dark-style.qss");
-        app.setStyleSheet(dark_styles);
-        app.setPalette(getDarkPalette());
+        // Apply custom dark style
+        app.setStyle(new PEDarkStyle);
+        app.setPalette(QApplication::style()->standardPalette());
     }
 #endif
 #endif
@@ -362,12 +322,12 @@ int main(int argc, char *argv[])
     // a value which for Mac OS X is hardcoded to 1000 ms
     // This was the only way I could get Qt to disable cursor blinking on a Mac if desired
     if (qEnvironmentVariableIsSet("PAGEEDIT_DISABLE_CURSOR_BLINK")) {
-      // qDebug() << "trying to disable text cursor blinking";
-      app.setCursorFlashTime(0);
-      // qDebug() << "cursorFlashTime: " << app.cursorFlashTime();
+        // qDebug() << "trying to disable text cursor blinking";
+        app.setCursorFlashTime(0);
+        // qDebug() << "cursorFlashTime: " << app.cursorFlashTime();
     }
 
-// application icons linuxicons
+    // application icons linuxicons
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
     app.setWindowIcon(GetApplicationIcon());
 #if QT_VERSION >= 0x050700
