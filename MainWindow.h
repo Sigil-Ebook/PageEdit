@@ -71,6 +71,8 @@ public:
     void  ZoomByStep(bool zoom_in);
     void  ZoomByFactor(float new_zoom_factor);
 
+    QString GetSandBoxPath() { return m_SandBoxPath; };
+
 public slots:
 
     // Zoom Related
@@ -221,6 +223,7 @@ private:
     QStringList m_MediaList;
     QStringList m_MediaKind;
     QString m_MediaBase;
+    QString m_SandBoxPath;
 
     QList<ElementIndex> m_LastLocation;
     int m_LastPtr;

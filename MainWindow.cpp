@@ -153,7 +153,8 @@ void MainWindow::ApplicationPaletteChanged()
 
 // Navigation related routines
 
-// initializes m_Base, m_SpineList, m_ListPtr, and m_CurrentFilePath 
+// initializes m_Base, m_SpineList, m_ListPtr, and m_CurrentFilePath
+// Also sets m_SandBoxPath to limit file: urls
 void MainWindow::SetupFileList(const QString &filepath)
 {
     m_CurrentFilePath = "";
@@ -198,10 +199,24 @@ void MainWindow::SetupFileList(const QString &filepath)
         foreach(QString mf, media_list) {
 	    m_MediaList << mf.right(mf.length()-m_MediaBase.length());
         }
+        // finally determine the sandbox to play in
+	QStringList manifestlist = opfrdr.GetManifestFilePathList();
+        m_SandBoxPath = Utility::longestCommonPath(manifestlist, "/");
+	if (m_SandBoxPath == "/") m_SandBoxPath = m_Base;
+
     } else {
         // note longestCommonPath always ends with "/" but fi.absolutePath() does not
         m_Base = fi.absolutePath()+ "/";
         m_SpineList << fi.fileName();
+	// FIXME: how should we determine an appropriate sandbox for this case?
+	// For Now: limit to the directory holding this file and its parent if not root
+	m_SandBoxPath = m_Base;
+	QDir sb(m_Base);
+	if (sb.cdUp()) {
+	    if (!sb.isRoot()) {
+		m_SandBoxPath = sb.absolutePath();
+	    }
+	}
     }
     m_ListPtr = 0;
     m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);

@@ -1,6 +1,7 @@
 #include <QString>
 #include <QStringList>
 #include <QMap>
+#include <QUrl>
 #include <QDebug>
 #include <QXmlStreamReader>
 #include <QTextStream>
@@ -68,6 +69,9 @@ void OPFReader::ReadManifestItemElement(QXmlStreamReader *opf_reader)
     QString id   = opf_reader->attributes().value("", "id").toString();
     QString href = opf_reader->attributes().value("", "href").toString();
     QString type = opf_reader->attributes().value("", "media-type").toString();
+    QUrl url = QUrl(href);
+    // skip any non-relative urls
+    if (!url.scheme().isEmpty()) return;
     href = Utility::URLDecodePath(href);
     QString file_path = m_opfDir.absolutePath() + "/" + href;
     DBG qDebug() << "file path as built from opf info: " << file_path;
@@ -141,6 +145,15 @@ QStringList OPFReader::GetSVGFilePathList()
         if (SVG_MIMETYPES.contains(mtype)) {
             res << m_IDMap[id];
 	}
+    }
+    return res;
+}
+
+QStringList OPFReader::GetManifestFilePathList()
+{
+    QStringList res;
+    foreach(QString id, m_IDMap.keys()) {
+        res << m_IDMap[id];
     }
     return res;
 }

@@ -94,6 +94,7 @@ set( SOURCE_FILES
     FocusSelectLineEdit.cpp
     SearchToolbar.cpp
     Utility.cpp
+    URLInterceptor.cpp
     GumboInterface.cpp
     HTMLEncodingResolver.cpp
     OPFReader.cpp
@@ -126,6 +127,7 @@ set( HEADER_FILES
     FocusSelectLineEdit.h
     SearchToolbar.h
     Utility.h
+    URLInterceptor.h
     GumboInterface.h
     HTMLEncodingResolver.h
     OPFReader.h

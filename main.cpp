@@ -33,6 +33,7 @@
 #include <QMessageBox>
 #include <QFileInfo>
 #include <QTimer>
+#include <QtWebEngineWidgets/QWebEngineProfile>
 #include <QDebug>
 
 #ifdef Q_OS_MAC
@@ -46,6 +47,7 @@ extern void removeMacosSpecificMenuItems();
 #include "MainApplication.h"
 #include "MainWindow.h"
 #include "Utility.h"
+#include "URLInterceptor.h"
 #include "AppEventFilter.h"
 #include "SettingsStore.h"
 #include "UILanguage.h"
@@ -80,11 +82,11 @@ static void file_open()
     // "All Files (*.*)" is the default
     QString default_filter = load_filters.value("xhtml");
     QString filename = QFileDialog::getOpenFileName(0,
-						  "Open File",
-						  "~",
-						  filter_string,
-						  &default_filter
-						  );
+                                                  "Open File",
+                                                  "~",
+                                                  filter_string,
+                                                  &default_filter
+                                                  );
     if (!filename.isEmpty()) {
         MainWindow *w = GetMainWindow(QStringList() << "" << filename);
         w->show();
@@ -125,10 +127,10 @@ void setupHighDPI()
     int highdpi = ss.highDPI();
     if (highdpi == 1 || (highdpi == 0 && !has_env_setting)) {
         // Turning on Automatic High DPI scaling
-	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
+        QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
     } else if (highdpi == 2) {
         // Turning off Automatic High DPI scaling
-	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, false);
+        QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, false);
         foreach(QString v, env_vars) {
             bool irrel = qunsetenv(v.toUtf8().constData());
         }
@@ -157,12 +159,12 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
             break;
         case QtCriticalMsg:
             qt_log_entry = QString("Critical: %1").arg(message.toLatin1().constData());
-	    if (context.file) context_file = QString(context.file);
-	    // screen out error messages from inspector / devtools
+            if (context.file) context_file = QString(context.file);
+            // screen out error messages from inspector / devtools
             if (!context_file.contains("devtools://devtools")) {
                 //Utility::DisplayExceptionErrorDialog(QString("Critical: %1").arg(error_message));
                 fprintf(stderr, "Critical: %s\n", message.toLatin1().constData());
-	    }
+            }
             break;
         case QtFatalMsg:
             Utility::DisplayExceptionErrorDialog(QString("Fatal: %1").arg(QString(message)));
@@ -266,9 +268,9 @@ int main(int argc, char *argv[])
     // an appropriate Qt base translation.
     foreach(QString path, UILanguage::GetPossibleTranslationPaths()) {
         if (QDir(path).exists()) {
-	    if (qtbaseTranslator.load(qm_name_qtbase, path)) {
-	        break;
-	    }
+            if (qtbaseTranslator.load(qm_name_qtbase, path)) {
+                break;
+            }
         }
     }
     app.installTranslator(&qtbaseTranslator);
@@ -280,9 +282,9 @@ int main(int argc, char *argv[])
     // an appropriate translation.
     foreach(QString path, UILanguage::GetPossibleTranslationPaths()) {
         if (QDir(path).exists()) {
-	    if (pageeditTranslator.load(qm_name, path)) {
-	        break;
-	    }
+            if (pageeditTranslator.load(qm_name, path)) {
+                break;
+            }
         }
     }
     app.installTranslator(&pageeditTranslator);
@@ -317,30 +319,30 @@ int main(int argc, char *argv[])
         // Microsoft's recommended UI defaults
         f.setFamily("Segoe UI");
         f.setPointSize(9);
-	QApplication::setFont(f);
+        QApplication::setFont(f);
     }
 #elif defined(Q_OS_MAC)
     // Just in case
 #else
     if (f.family() == "Sans Serif" && f.pointSize() == 9) {
         f.setPointSize(10);
-	QApplication::setFont(f);
+        QApplication::setFont(f);
     }
 #endif
     settings.setOriginalUIFont(f.toString());
     if (!settings.uiFont().isEmpty()) {
         QFont font;
         if (font.fromString(settings.uiFont()))
-	    QApplication::setFont(font);
+            QApplication::setFont(font);
     }
 #ifndef Q_OS_MAC
     // redo on a timer to ensure in all cases
     if (!settings.uiFont().isEmpty()) {
         QFont font;
         if (font.fromString(settings.uiFont())) {
-	    QTimer::singleShot(0, [=]() {
-		    QApplication::setFont(font);
-		} );
+            QTimer::singleShot(0, [=]() {
+                    QApplication::setFont(font);
+                } );
         }
     }
 #endif
@@ -372,6 +374,15 @@ int main(int argc, char *argv[])
     // Wayland needs this clarified in order to propery assign the icon 
     app.setDesktopFileName(QStringLiteral("pageedit.desktop"));
 #endif
+#endif
+
+    // Install our own URLInterceptor for QtWebEngine to protect                                                                     
+    // against bad file:: urls                                                                                                       
+    URLInterceptor* urlint = new URLInterceptor();
+#if QT_VERSION >= QT_VERSION_CHECK(5, 13, 0)
+    QWebEngineProfile::defaultProfile()->setUrlRequestInterceptor(urlint);
+#else
+    QWebEngineProfile::defaultProfile()->setRequestInterceptor(urlint);
 #endif
 
     QStringList arguments = QCoreApplication::arguments();

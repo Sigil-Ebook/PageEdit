@@ -25,6 +25,7 @@ public:
   QStringList GetVideoFilePathList();
   QStringList GetImageFilePathList();
   QStringList GetSVGFilePathList();
+  QStringList GetManifestFilePathList();
 
 protected:
 
