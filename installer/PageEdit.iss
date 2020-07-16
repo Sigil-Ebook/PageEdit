@@ -2,15 +2,17 @@
 ; with actual values. Note the dollar sign; {VAR_NAME} variables are from
 ; Inno, the ones with the dollar we define with CMake.
 
+#define AppName "PageEdit"
+
 [Setup]
-AppName=PageEdit
-AppVerName=PageEdit ${PAGEEDIT_FULL_VERSION}
+AppName={#AppName}
+AppVerName={#AppName} ${PAGEEDIT_FULL_VERSION}
 VersionInfoVersion=${PAGEEDIT_FULL_VERSION}
-DefaultDirName={pf}\PageEdit
+DefaultDirName={pf}\{#AppName}
 AllowNoIcons=yes
 DisableDirPage=no
-DefaultGroupName=PageEdit
-UninstallDisplayIcon={app}\PageEdit.exe
+DefaultGroupName={#AppName}
+UninstallDisplayIcon={app}\{#AppName}.exe
 AppPublisher=Sigil-Ebook
 AppPublisherURL=https://github.com/Sigil-Ebook/
 WizardImageFile=compiler:wizmodernimage-IS.bmp
@@ -22,7 +24,8 @@ LicenseFile=${LICENSE_LOCATION}
 ; Win 7sp1 is the lowest supported version
 MinVersion=0,6.1.7601
 PrivilegesRequired=admin
-OutputBaseFilename=PageEdit-${PAGEEDIT_FULL_VERSION}-Windows${ISS_SETUP_FILENAME_PLATFORM}-Setup
+PrivilegesRequiredOverridesAllowed=dialog
+OutputBaseFilename={#AppName}-${PAGEEDIT_FULL_VERSION}-Windows${ISS_SETUP_FILENAME_PLATFORM}-Setup
 ;ChangesAssociations=yes
 
 ; "ArchitecturesAllowed=x64" specifies that Setup cannot run on
@@ -36,28 +39,30 @@ ArchitecturesAllowed="${ISS_ARCH}"
 ArchitecturesInstallIn64BitMode="${ISS_ARCH}"
 
 [Files]
-Source: "PageEdit\*"; DestDir: "{app}"; Flags: createallsubdirs recursesubdirs ignoreversion
+Source: "{#AppName}\*"; DestDir: "{app}"; Flags: createallsubdirs recursesubdirs ignoreversion
 Source: vendor\vcredist.exe; DestDir: {tmp}
 
 [Components]
 ; Main files cannot be unchecked. Doesn't do anything, just here for show
-Name: main; Description: "PageEdit"; Types: full compact custom; Flags: fixed
+Name: main; Description: "{#AppName}"; Types: full compact custom; Flags: fixed
 ; Desktop icon.
 Name: dicon; Description: "Create a desktop icon"; Types: full custom
-Name: dicon\common; Description: "For all users"; Types: full custom; Flags: exclusive
-Name: dicon\user; Description: "For the current user only"; Flags: exclusive
+
+; Cancel runtime install if desired.
+Name: vcruntime; Description: "Check if bundled VS runtime install is necessary? (admin required)"; Types: full custom
 
 ;[Registry]
-; Add PageEdit as a global file handler for (X)HTML.
-;Root: HKLM; Subkey: "Software\Classes\.html\OpenWithList\PageEdit.exe"; Flags: uninsdeletekey
-;Root: HKLM; Subkey: "Software\Classes\.xhtml\OpenWithList\PageEdit.exe"; Flags: uninsdeletekey
+; Add {#AppName} as a global file handler for (X)HTML.
+;Root: HKLM; Subkey: "Software\Classes\.html\OpenWithList\{#AppName}.exe"; Flags: uninsdeletekey
+;Root: HKLM; Subkey: "Software\Classes\.xhtml\OpenWithList\{#AppName}.exe"; Flags: uninsdeletekey
 
 [Icons]
-Name: "{group}\PageEdit"; Filename: "{app}\PageEdit.exe"
-;Name: "{group}\Uninstall PageEdit"; Filename: "{uninstallexe}"
+Name: "{group}\{#AppName}"; Filename: "{app}\{#AppName}.exe"
+Name: "{group}\Uninstall {#AppName}"; Filename: "{uninstallexe}"
+
 ; Optional desktop icon.
-Components: dicon\common; Name: "{commondesktop}\PageEdit"; Filename: "{app}\PageEdit.exe"
-Components: dicon\user; Name: "{userdesktop}\PageEdit"; Filename: "{app}\PageEdit.exe"
+; commondesktop if admin, userdesktop if not
+Components: dicon; Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppName}.exe"
 
 
 [Run]
@@ -119,7 +124,7 @@ end;
 
 
 function NeedsVCRedistInstall: Boolean;
-// Return True if VC++ redist included with PageEdit Installer needs to be installed.
+// Return True if VC++ redist included with PageEdit Installer should be installed.
 var
   reg_key, installed_ver, min_ver: String;
   R: Integer;
@@ -147,3 +152,16 @@ begin
         Result := False;
     end
  end;
+ 
+function NextButtonClick(CurPageID: Integer): Boolean ;
+begin
+  Result := True;
+  if CurPageID = wpSelectComponents then
+  begin
+    if (not WizardIsComponentSelected('vcruntime')) and (not IsAdminInstallMode)  then
+      Result := MsgBox('When installing for the current user only, you are' + #13#10 +
+        'responsible for insuring that the proper Visual Studio' + #13#10 +
+        'runtime distributable is installed.' + #13#10 + #13#10 +
+        'Do you wish to continue?' , mbInformation, MB_YESNO) = IDYES;
+  end;
+end;
