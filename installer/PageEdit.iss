@@ -152,7 +152,20 @@ begin
         Result := False;
     end
  end;
- 
+
+// Disable ability to install VS runtime in "for current user only" mode
+procedure CurPageChanged(CurPageID: Integer);
+begin
+  if CurPageID = wpSelectComponents then
+    if not IsAdminInstallMode then
+    begin
+      WizardForm.ComponentsList.Checked[3] := False;
+      WizardForm.ComponentsList.ItemEnabled[3] := False;
+    end;
+end;
+
+// Warn "for current user only" installers that someone will need to
+// make sure a compatible version of the VS runtime is installed.
 function NextButtonClick(CurPageID: Integer): Boolean ;
 begin
   Result := True;
