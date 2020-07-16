@@ -8,7 +8,7 @@
 AppName={#AppName}
 AppVerName={#AppName} ${PAGEEDIT_FULL_VERSION}
 VersionInfoVersion=${PAGEEDIT_FULL_VERSION}
-DefaultDirName={pf}\{#AppName}
+DefaultDirName={autopf}\{#AppName}
 AllowNoIcons=yes
 DisableDirPage=no
 DefaultGroupName={#AppName}
