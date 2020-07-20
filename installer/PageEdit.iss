@@ -2,15 +2,17 @@
 ; with actual values. Note the dollar sign; {VAR_NAME} variables are from
 ; Inno, the ones with the dollar we define with CMake.
 
+#define AppName "PageEdit"
+
 [Setup]
-AppName=PageEdit
-AppVerName=PageEdit ${PAGEEDIT_FULL_VERSION}
+AppName={#AppName}
+AppVerName={#AppName} ${PAGEEDIT_FULL_VERSION}
 VersionInfoVersion=${PAGEEDIT_FULL_VERSION}
-DefaultDirName={pf}\PageEdit
+DefaultDirName={autopf}\{#AppName}
 AllowNoIcons=yes
 DisableDirPage=no
-DefaultGroupName=PageEdit
-UninstallDisplayIcon={app}\PageEdit.exe
+DefaultGroupName={#AppName}
+UninstallDisplayIcon={app}\{#AppName}.exe
 AppPublisher=Sigil-Ebook
 AppPublisherURL=https://github.com/Sigil-Ebook/
 WizardImageFile=compiler:wizmodernimage-IS.bmp
@@ -22,7 +24,8 @@ LicenseFile=${LICENSE_LOCATION}
 ; Win 7sp1 is the lowest supported version
 MinVersion=0,6.1.7601
 PrivilegesRequired=admin
-OutputBaseFilename=PageEdit-${PAGEEDIT_FULL_VERSION}-Windows${ISS_SETUP_FILENAME_PLATFORM}-Setup
+PrivilegesRequiredOverridesAllowed=dialog
+OutputBaseFilename={#AppName}-${PAGEEDIT_FULL_VERSION}-Windows${ISS_SETUP_FILENAME_PLATFORM}-Setup
 ;ChangesAssociations=yes
 
 ; "ArchitecturesAllowed=x64" specifies that Setup cannot run on
@@ -36,33 +39,37 @@ ArchitecturesAllowed="${ISS_ARCH}"
 ArchitecturesInstallIn64BitMode="${ISS_ARCH}"
 
 [Files]
-Source: "PageEdit\*"; DestDir: "{app}"; Flags: createallsubdirs recursesubdirs ignoreversion
+Source: "{#AppName}\*"; DestDir: "{app}"; Flags: createallsubdirs recursesubdirs ignoreversion
 Source: vendor\vcredist.exe; DestDir: {tmp}
 
 [Components]
 ; Main files cannot be unchecked. Doesn't do anything, just here for show
-Name: main; Description: "PageEdit"; Types: full compact custom; Flags: fixed
+Name: main; Description: "{#AppName}"; Types: full compact custom; Flags: fixed
 ; Desktop icon.
 Name: dicon; Description: "Create a desktop icon"; Types: full custom
-Name: dicon\common; Description: "For all users"; Types: full custom; Flags: exclusive
-Name: dicon\user; Description: "For the current user only"; Flags: exclusive
+
+; Cancel runtime install if desired.
+Name: vcruntimeadmin; Description: "Check if bundled VS runtime install is necessary? (admin required)"; Types: full custom; Check: IsAdminInstallMode
+Name: vcruntimeuser; Description: "Check if bundled VS runtime install is necessary? (admin required)"; Types: full custom; Check: not IsAdminInstallMode
 
 ;[Registry]
-; Add PageEdit as a global file handler for (X)HTML.
-;Root: HKLM; Subkey: "Software\Classes\.html\OpenWithList\PageEdit.exe"; Flags: uninsdeletekey
-;Root: HKLM; Subkey: "Software\Classes\.xhtml\OpenWithList\PageEdit.exe"; Flags: uninsdeletekey
+; Add {#AppName} as a global file handler for (X)HTML.
+;Root: HKLM; Subkey: "Software\Classes\.html\OpenWithList\{#AppName}.exe"; Flags: uninsdeletekey
+;Root: HKLM; Subkey: "Software\Classes\.xhtml\OpenWithList\{#AppName}.exe"; Flags: uninsdeletekey
 
 [Icons]
-Name: "{group}\PageEdit"; Filename: "{app}\PageEdit.exe"
-;Name: "{group}\Uninstall PageEdit"; Filename: "{uninstallexe}"
+Name: "{group}\{#AppName}"; Filename: "{app}\{#AppName}.exe"
+Name: "{group}\Uninstall {#AppName}"; Filename: "{uninstallexe}"
+
 ; Optional desktop icon.
-Components: dicon\common; Name: "{commondesktop}\PageEdit"; Filename: "{app}\PageEdit.exe"
-Components: dicon\user; Name: "{userdesktop}\PageEdit"; Filename: "{app}\PageEdit.exe"
+; commondesktop if admin, userdesktop if not
+Components: dicon; Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppName}.exe"
 
 
 [Run]
 ; The following command detects whether or not the c++ runtime need to be installed.
-Filename: {tmp}\vcredist.exe; Check: NeedsVCRedistInstall; Parameters: "/passive /norestart /Q:a /c:""msiexec /qb /i vcredist.msi"" "; StatusMsg: Checking for VC++ RunTime ...
+Components: vcruntimeadmin; Filename: {tmp}\vcredist.exe; Check: IsAdminInstallMode and NeedsVCRedistInstall; Parameters: "/passive /norestart /Q:a /c:""msiexec /qb /i vcredist.msi"" "; StatusMsg: Checking for VC++ RunTime ...
+Components: vcruntimeuser; Filename: {tmp}\vcredist.exe; Check: (not IsAdminInstallMode) and NeedsVCRedistInstall; Parameters: "/passive /norestart /Q:a /c:""msiexec /qb /i vcredist.msi"" "; Flags: runasoriginaluser; StatusMsg: Checking for VC++ RunTime ...
 
 [Code]
 
@@ -119,7 +126,7 @@ end;
 
 
 function NeedsVCRedistInstall: Boolean;
-// Return True if VC++ redist included with PageEdit Installer needs to be installed.
+// Return True if VC++ redist included with PageEdit Installer should be installed.
 var
   reg_key, installed_ver, min_ver: String;
   R: Integer;
@@ -127,6 +134,7 @@ begin
   Result := True;
   // Mimimum version of the VC++ Redistributable needed (currently VS2017 and later).
   min_ver := '14.10.00000';
+  //MsgBox('Did runtime check', mbInformation, MB_OK);
   if IsWin64 and not Is64BitInstallMode then
     // 32-bit version being installed on 64-bit machine
     reg_key := 'SOFTWARE\WoW6432Node\Microsoft\DevDiv\vc\servicing\14.0\RuntimeMinimum'
@@ -147,3 +155,40 @@ begin
         Result := False;
     end
  end;
+
+// Disable ability to install VS runtime in "for current user only" mode
+procedure CurPageChanged(CurPageID: Integer);
+begin
+  if CurPageID = wpSelectComponents then
+    if not IsAdminInstallMode then
+    begin
+      WizardForm.ComponentsList.Checked[2] := False;
+      //WizardForm.ComponentsList.ItemEnabled[2] := False;
+    end;
+end;
+
+// Warn "for current user only" installers that someone will need to
+// make sure a compatible version of the VS runtime is installed.
+function NextButtonClick(CurPageID: Integer): Boolean;
+var
+  msg: String;
+begin
+  Result := True;
+   msg := 'The option to check/install the VS' + #13#10 +
+          'runtime is unchecked. Please make sure a' + #13#10 +
+          'compatible version of the Visual Studio' + #13#10 +
+          'VC++ runtime is already installed (by you' + #13#10 +
+          'or an admin), or click "No" and check' + #13#10 +
+          'the box before proceeding.' + #13#10 + #13#10 +
+          'You will need admin privileges to' + #13#10 +
+          'to install the runtime.' + #13#10 + #13#10 +
+          'Do you wish to proceed as is?';
+  if CurPageID = wpSelectComponents then begin
+    if IsAdminInstallMode then begin
+      if (not WizardIsComponentSelected('vcruntimeadmin')) then
+        Result := MsgBox( msg, mbInformation, MB_YESNO) = IDYES
+    end else
+      if (not WizardIsComponentSelected('vcruntimeuser')) then
+        Result := MsgBox( msg, mbInformation, MB_YESNO) = IDYES;
+  end;
+end;
