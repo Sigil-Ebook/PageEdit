@@ -26,7 +26,8 @@
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>要用于PageEdit的默认字体大小
+如果您CSS中没有指定字体大小</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
@@ -38,7 +39,8 @@ if no font-size specified in your CSS</source>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>要用于PageEdit的默认字体系列
+如果您CSS中没有指定字体系列</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
@@ -49,7 +51,8 @@ if no font-family specified in your CSS</source>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>要用于PageEdit的默认字体系列
+如果CSS中指定了衬线字体系列</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
@@ -60,7 +63,8 @@ if a serif font-family specified in your CSS</source>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation type="unfinished"/>
+        <translation>要用于PageEdit的默认字体系列
+如果CSS中指定了sans-serif字体系列</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
@@ -70,7 +74,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="156"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation type="unfinished"/>
+        <translation>使PageEdit在深色模式下模拟深色外观</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="181"/>
@@ -95,7 +99,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="240"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation type="unfinished"/>
+        <translation>(需要重新启动PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
@@ -105,12 +109,12 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="279"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation type="unfinished"/>
+        <translation>更改PageEdit的菜单、按钮等使用的字体.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="282"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation type="unfinished"/>
+        <translation>更改字体(需要PageEdit重新启动)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="306"/>
@@ -215,42 +219,42 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation type="unfinished"/>
+        <translation>从已安装的拼写检查词典中选择。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation type="unfinished"/>
+        <translation>拼写检查词典:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation type="unfinished"/>
+        <translation>确定是否允许html文件访问非多媒体远程资源。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation type="unfinished"/>
+        <translation>控制Html文件对非多媒体远程资源的访问。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation type="unfinished"/>
+        <translation>勾选将会允许html文件访问非多媒体远程资源。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation type="unfinished"/>
+        <translation>Html文件可以访问所有远程资源类型。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation type="unfinished"/>
+        <translation>确定html文件是否允许使用javascript</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation type="unfinished"/>
+        <translation>通过html文件控制javascript的使用。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
@@ -260,57 +264,57 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation type="unfinished"/>
+        <translation>Html 文件可以使用javascript。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation type="unfinished"/>
+        <translation>选择您希望PageEdit处理在编辑过程中使用多个空白字符的方式。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation type="unfinished"/>
+        <translation>使用以下方法处理多个空白布局：</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation type="unfinished"/>
+        <translation>使用CSS空白：预换行</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation type="unfinished"/>
+        <translation>CSS空白：预换行</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation type="unfinished"/>
+        <translation>根据需要使用不间断空格</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation type="unfinished"/>
+        <translation>根据需要的不间断空格</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation type="unfinished"/>
+        <translation>确定在保存时是否使用Prettify</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation type="unfinished"/>
+        <translation>保存时使用Prettify重新格式化xhtml。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation type="unfinished"/>
+        <translation>勾选此项可在保存xhtml文件时使用Prettify重新格式化。</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation type="unfinished"/>
+        <translation>保存时使用Prettify重新格式化xhtml。</translation>
     </message>
 </context>
 <context>
@@ -330,36 +334,26 @@ If a translation for specific word or phrase is not available it will be display
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="929"/>
-        <location filename="../MainWindow.cpp" line="988"/>
-        <location filename="../MainWindow.cpp" line="1616"/>
-        <location filename="../MainWindow.cpp" line="1629"/>
-        <location filename="../MainWindow.cpp" line="1635"/>
-        <location filename="../MainWindow.cpp" line="1649"/>
-        <location filename="../MainWindow.cpp" line="1662"/>
-        <location filename="../MainWindow.cpp" line="1670"/>
-        <location filename="../MainWindow.cpp" line="1724"/>
-        <location filename="../MainWindow.cpp" line="1807"/>
-        <location filename="../MainWindow.cpp.keep" line="929"/>
-        <location filename="../MainWindow.cpp.keep" line="988"/>
-        <location filename="../MainWindow.cpp.keep" line="1616"/>
-        <location filename="../MainWindow.cpp.keep" line="1629"/>
-        <location filename="../MainWindow.cpp.keep" line="1635"/>
-        <location filename="../MainWindow.cpp.keep" line="1649"/>
-        <location filename="../MainWindow.cpp.keep" line="1662"/>
-        <location filename="../MainWindow.cpp.keep" line="1670"/>
-        <location filename="../MainWindow.cpp.keep" line="1724"/>
-        <location filename="../MainWindow.cpp.keep" line="1807"/>
-        <location filename="../MainWindow.cpp~" line="929"/>
-        <location filename="../MainWindow.cpp~" line="988"/>
-        <location filename="../MainWindow.cpp~" line="1616"/>
-        <location filename="../MainWindow.cpp~" line="1629"/>
-        <location filename="../MainWindow.cpp~" line="1635"/>
-        <location filename="../MainWindow.cpp~" line="1649"/>
-        <location filename="../MainWindow.cpp~" line="1662"/>
-        <location filename="../MainWindow.cpp~" line="1670"/>
-        <location filename="../MainWindow.cpp~" line="1724"/>
-        <location filename="../MainWindow.cpp~" line="1807"/>
+        <location filename="../MainWindow.cpp" line="957"/>
+        <location filename="../MainWindow.cpp" line="1018"/>
+        <location filename="../MainWindow.cpp" line="1656"/>
+        <location filename="../MainWindow.cpp" line="1669"/>
+        <location filename="../MainWindow.cpp" line="1675"/>
+        <location filename="../MainWindow.cpp" line="1689"/>
+        <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp" line="1764"/>
+        <location filename="../MainWindow.cpp" line="1853"/>
+        <location filename="../MainWindow.cpp~" line="957"/>
+        <location filename="../MainWindow.cpp~" line="1018"/>
+        <location filename="../MainWindow.cpp~" line="1656"/>
+        <location filename="../MainWindow.cpp~" line="1669"/>
+        <location filename="../MainWindow.cpp~" line="1675"/>
+        <location filename="../MainWindow.cpp~" line="1689"/>
+        <location filename="../MainWindow.cpp~" line="1702"/>
+        <location filename="../MainWindow.cpp~" line="1710"/>
+        <location filename="../MainWindow.cpp~" line="1764"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -376,7 +370,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="87"/>
         <source>&amp;Find</source>
-        <translation type="unfinished"/>
+        <translation>查找(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="94"/>
@@ -417,7 +411,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../main.ui" line="204"/>
         <location filename="../main.ui" line="1055"/>
         <source>Mode</source>
-        <translation type="unfinished"/>
+        <translation>模式</translation>
     </message>
     <message>
         <location filename="../main.ui" line="217"/>
@@ -463,12 +457,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="338"/>
         <source>Navigate</source>
-        <translation type="unfinished"/>
+        <translation>导航</translation>
     </message>
     <message>
         <location filename="../main.ui" line="348"/>
         <source>Navigation List</source>
-        <translation type="unfinished"/>
+        <translation>导航列表</translation>
     </message>
     <message>
         <location filename="../main.ui" line="364"/>
@@ -998,7 +992,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1007"/>
         <source>Find text in the page</source>
-        <translation type="unfinished"/>
+        <translation>在页面中查找文本</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1010"/>
@@ -1008,47 +1002,47 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1023"/>
         <source>Next XHtml File</source>
-        <translation type="unfinished"/>
+        <translation>下一个XHtml文件</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1026"/>
         <source>Next file in navigation list</source>
-        <translation type="unfinished"/>
+        <translation>导航列表中的下一个文件</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1039"/>
         <source>Previous XHtml File</source>
-        <translation type="unfinished"/>
+        <translation>上一个XHtml文件</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1042"/>
         <source>Previous file in navigation list</source>
-        <translation type="unfinished"/>
+        <translation>导航列表中的上一个文件</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1058"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation type="unfinished"/>
+        <translation>在编辑和预览模式之间切换。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1068"/>
         <source>About...</source>
-        <translation type="unfinished"/>
+        <translation>关于...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1071"/>
         <source>Show information about PageEdit.</source>
-        <translation type="unfinished"/>
+        <translation>显示有关PageEdit的信息。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1081"/>
         <source>Back to Last Link</source>
-        <translation type="unfinished"/>
+        <translation>返回到最后一个链接</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1084"/>
         <source>Return from the last link taken</source>
-        <translation type="unfinished"/>
+        <translation>从上一个链接返回</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1094"/>
@@ -1058,7 +1052,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1097"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation type="unfinished"/>
+        <translation>插入或编辑具有要用作链接目标的ID名称的定位点。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1107"/>
@@ -1068,7 +1062,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1110"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation type="unfinished"/>
+        <translation>使用指向目标的超链接插入或编辑定位点。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1120"/>
@@ -1078,7 +1072,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1123"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation type="unfinished"/>
+        <translation>从图书中选择要插入文本的现有图像、视频或音频文件。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1126"/>
@@ -1086,243 +1080,204 @@ If a translation for specific word or phrase is not available it will be display
         <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="667"/>
-        <location filename="../MainWindow.cpp.keep" line="667"/>
-        <location filename="../MainWindow.cpp~" line="667"/>
+        <location filename="../MainWindow.cpp" line="695"/>
+        <location filename="../MainWindow.cpp~" line="695"/>
         <source>File load failed</source>
-        <translation type="unfinished"/>
+        <translation>文件加载失败</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="668"/>
-        <location filename="../MainWindow.cpp.keep" line="668"/>
-        <location filename="../MainWindow.cpp~" line="668"/>
+        <location filename="../MainWindow.cpp" line="696"/>
+        <location filename="../MainWindow.cpp~" line="696"/>
         <source>File Load Failed</source>
-        <translation type="unfinished"/>
+        <translation>文件加载失败</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="763"/>
-        <location filename="../MainWindow.cpp.keep" line="763"/>
-        <location filename="../MainWindow.cpp~" line="763"/>
+        <location filename="../MainWindow.cpp" line="791"/>
+        <location filename="../MainWindow.cpp~" line="791"/>
         <source>mode: Preview</source>
-        <translation type="unfinished"/>
+        <translation>模式：预览</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="765"/>
-        <location filename="../MainWindow.cpp.keep" line="765"/>
-        <location filename="../MainWindow.cpp~" line="765"/>
+        <location filename="../MainWindow.cpp" line="793"/>
+        <location filename="../MainWindow.cpp~" line="793"/>
         <source>mode: Edit</source>
-        <translation type="unfinished"/>
+        <translation>模式：编辑</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="929"/>
-        <location filename="../MainWindow.cpp.keep" line="929"/>
-        <location filename="../MainWindow.cpp~" line="929"/>
+        <location filename="../MainWindow.cpp" line="957"/>
+        <location filename="../MainWindow.cpp~" line="957"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation type="unfinished"/>
+        <translation>您确定要在浏览器中打开此链接吗？
+
+%1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="989"/>
-        <location filename="../MainWindow.cpp.keep" line="989"/>
-        <location filename="../MainWindow.cpp~" line="989"/>
+        <location filename="../MainWindow.cpp" line="1019"/>
+        <location filename="../MainWindow.cpp~" line="1019"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation type="unfinished"/>
+        <translation>是否要在离开前保存更改？</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1006"/>
-        <location filename="../MainWindow.cpp.keep" line="1006"/>
-        <location filename="../MainWindow.cpp~" line="1006"/>
+        <location filename="../MainWindow.cpp" line="1036"/>
+        <location filename="../MainWindow.cpp~" line="1036"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit 正在关闭…</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1134"/>
-        <location filename="../MainWindow.cpp" line="1135"/>
-        <location filename="../MainWindow.cpp" line="1136"/>
-        <location filename="../MainWindow.cpp" line="1145"/>
-        <location filename="../MainWindow.cpp" line="1146"/>
-        <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp.keep" line="1134"/>
-        <location filename="../MainWindow.cpp.keep" line="1135"/>
-        <location filename="../MainWindow.cpp.keep" line="1136"/>
-        <location filename="../MainWindow.cpp.keep" line="1145"/>
-        <location filename="../MainWindow.cpp.keep" line="1146"/>
-        <location filename="../MainWindow.cpp.keep" line="1147"/>
-        <location filename="../MainWindow.cpp~" line="1134"/>
-        <location filename="../MainWindow.cpp~" line="1135"/>
-        <location filename="../MainWindow.cpp~" line="1136"/>
-        <location filename="../MainWindow.cpp~" line="1145"/>
-        <location filename="../MainWindow.cpp~" line="1146"/>
-        <location filename="../MainWindow.cpp~" line="1147"/>
+        <location filename="../MainWindow.cpp" line="1164"/>
+        <location filename="../MainWindow.cpp" line="1165"/>
+        <location filename="../MainWindow.cpp" line="1166"/>
+        <location filename="../MainWindow.cpp" line="1175"/>
+        <location filename="../MainWindow.cpp" line="1176"/>
+        <location filename="../MainWindow.cpp" line="1177"/>
+        <location filename="../MainWindow.cpp~" line="1164"/>
+        <location filename="../MainWindow.cpp~" line="1165"/>
+        <location filename="../MainWindow.cpp~" line="1166"/>
+        <location filename="../MainWindow.cpp~" line="1175"/>
+        <location filename="../MainWindow.cpp~" line="1176"/>
+        <location filename="../MainWindow.cpp~" line="1177"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML文件(*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1137"/>
-        <location filename="../MainWindow.cpp.keep" line="1137"/>
-        <location filename="../MainWindow.cpp~" line="1137"/>
+        <location filename="../MainWindow.cpp" line="1167"/>
+        <location filename="../MainWindow.cpp~" line="1167"/>
         <source>OPF files (*.opf)</source>
-        <translation type="unfinished"/>
+        <translation>OPF文件 (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1138"/>
-        <location filename="../MainWindow.cpp.keep" line="1138"/>
-        <location filename="../MainWindow.cpp~" line="1138"/>
+        <location filename="../MainWindow.cpp" line="1168"/>
+        <location filename="../MainWindow.cpp~" line="1168"/>
         <source>All files (*.*)</source>
         <translation>所有文件（*.*）</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1376"/>
-        <location filename="../MainWindow.cpp.keep" line="1376"/>
-        <location filename="../MainWindow.cpp~" line="1376"/>
+        <location filename="../MainWindow.cpp" line="1407"/>
+        <location filename="../MainWindow.cpp~" line="1407"/>
         <source>Save File</source>
         <translation>保存文件</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1411"/>
-        <location filename="../MainWindow.cpp" line="1412"/>
-        <location filename="../MainWindow.cpp" line="1424"/>
-        <location filename="../MainWindow.cpp" line="1425"/>
-        <location filename="../MainWindow.cpp.keep" line="1411"/>
-        <location filename="../MainWindow.cpp.keep" line="1412"/>
-        <location filename="../MainWindow.cpp.keep" line="1424"/>
-        <location filename="../MainWindow.cpp.keep" line="1425"/>
-        <location filename="../MainWindow.cpp~" line="1411"/>
-        <location filename="../MainWindow.cpp~" line="1412"/>
-        <location filename="../MainWindow.cpp~" line="1424"/>
-        <location filename="../MainWindow.cpp~" line="1425"/>
+        <location filename="../MainWindow.cpp" line="1442"/>
+        <location filename="../MainWindow.cpp" line="1443"/>
+        <location filename="../MainWindow.cpp" line="1455"/>
+        <location filename="../MainWindow.cpp" line="1456"/>
+        <location filename="../MainWindow.cpp~" line="1442"/>
+        <location filename="../MainWindow.cpp~" line="1443"/>
+        <location filename="../MainWindow.cpp~" line="1455"/>
+        <location filename="../MainWindow.cpp~" line="1456"/>
         <source>File Save-As Failed!</source>
         <translation>文件另存为失败！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1411"/>
-        <location filename="../MainWindow.cpp.keep" line="1411"/>
-        <location filename="../MainWindow.cpp~" line="1411"/>
+        <location filename="../MainWindow.cpp" line="1442"/>
+        <location filename="../MainWindow.cpp~" line="1442"/>
         <source>is not writeable</source>
         <translation>无法写入</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1420"/>
-        <location filename="../MainWindow.cpp" line="1459"/>
-        <location filename="../MainWindow.cpp.keep" line="1420"/>
-        <location filename="../MainWindow.cpp.keep" line="1459"/>
-        <location filename="../MainWindow.cpp~" line="1420"/>
-        <location filename="../MainWindow.cpp~" line="1459"/>
+        <location filename="../MainWindow.cpp" line="1451"/>
+        <location filename="../MainWindow.cpp" line="1490"/>
+        <location filename="../MainWindow.cpp~" line="1451"/>
+        <location filename="../MainWindow.cpp~" line="1490"/>
         <source>File Saved</source>
         <translation>文件已保存</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1450"/>
-        <location filename="../MainWindow.cpp" line="1452"/>
-        <location filename="../MainWindow.cpp" line="1463"/>
-        <location filename="../MainWindow.cpp" line="1464"/>
-        <location filename="../MainWindow.cpp.keep" line="1450"/>
-        <location filename="../MainWindow.cpp.keep" line="1452"/>
-        <location filename="../MainWindow.cpp.keep" line="1463"/>
-        <location filename="../MainWindow.cpp.keep" line="1464"/>
-        <location filename="../MainWindow.cpp~" line="1450"/>
-        <location filename="../MainWindow.cpp~" line="1452"/>
-        <location filename="../MainWindow.cpp~" line="1463"/>
-        <location filename="../MainWindow.cpp~" line="1464"/>
+        <location filename="../MainWindow.cpp" line="1481"/>
+        <location filename="../MainWindow.cpp" line="1483"/>
+        <location filename="../MainWindow.cpp" line="1494"/>
+        <location filename="../MainWindow.cpp" line="1495"/>
+        <location filename="../MainWindow.cpp~" line="1481"/>
+        <location filename="../MainWindow.cpp~" line="1483"/>
+        <location filename="../MainWindow.cpp~" line="1494"/>
+        <location filename="../MainWindow.cpp~" line="1495"/>
         <source>File Save Failed!</source>
         <translation>文件保存失败！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1451"/>
-        <location filename="../MainWindow.cpp.keep" line="1451"/>
-        <location filename="../MainWindow.cpp~" line="1451"/>
+        <location filename="../MainWindow.cpp" line="1482"/>
+        <location filename="../MainWindow.cpp~" line="1482"/>
         <source>does not exist or is not writeable</source>
         <translation>不存在或无法写入</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1512"/>
-        <location filename="../MainWindow.cpp.keep" line="1512"/>
-        <location filename="../MainWindow.cpp~" line="1512"/>
+        <location filename="../MainWindow.cpp" line="1552"/>
+        <location filename="../MainWindow.cpp~" line="1552"/>
         <source>File Opened</source>
         <translation>文件已打开</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1516"/>
-        <location filename="../MainWindow.cpp.keep" line="1516"/>
-        <location filename="../MainWindow.cpp~" line="1516"/>
+        <location filename="../MainWindow.cpp" line="1556"/>
+        <location filename="../MainWindow.cpp~" line="1556"/>
         <source>File Open Failed!</source>
         <translation>打开文件失败！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1539"/>
-        <location filename="../MainWindow.cpp.keep" line="1539"/>
-        <location filename="../MainWindow.cpp~" line="1539"/>
+        <location filename="../MainWindow.cpp" line="1579"/>
+        <location filename="../MainWindow.cpp~" line="1579"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>粘贴板包含 HTML 格式</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1540"/>
-        <location filename="../MainWindow.cpp.keep" line="1540"/>
-        <location filename="../MainWindow.cpp~" line="1540"/>
+        <location filename="../MainWindow.cpp" line="1580"/>
+        <location filename="../MainWindow.cpp~" line="1580"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>你想把剪贴板上的数据按纯文本的方式粘贴吗？</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1616"/>
-        <location filename="../MainWindow.cpp.keep" line="1616"/>
-        <location filename="../MainWindow.cpp~" line="1616"/>
+        <location filename="../MainWindow.cpp" line="1656"/>
+        <location filename="../MainWindow.cpp~" line="1656"/>
         <source>You must select text before inserting a new id.</source>
         <translation>你必须在插入新ID之前选择文本。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1629"/>
-        <location filename="../MainWindow.cpp.keep" line="1629"/>
-        <location filename="../MainWindow.cpp~" line="1629"/>
+        <location filename="../MainWindow.cpp" line="1669"/>
+        <location filename="../MainWindow.cpp~" line="1669"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID是无效的，必须以字母开头，后面跟_ : - 或 .符号。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1635"/>
-        <location filename="../MainWindow.cpp.keep" line="1635"/>
-        <location filename="../MainWindow.cpp~" line="1635"/>
+        <location filename="../MainWindow.cpp" line="1675"/>
+        <location filename="../MainWindow.cpp~" line="1675"/>
         <source>You cannot insert an id at this position.</source>
         <translation>您无法在此处插入id。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1649"/>
-        <location filename="../MainWindow.cpp.keep" line="1649"/>
-        <location filename="../MainWindow.cpp~" line="1649"/>
+        <location filename="../MainWindow.cpp" line="1689"/>
+        <location filename="../MainWindow.cpp~" line="1689"/>
         <source>You must select text before inserting a new link.</source>
         <translation>你必须在插入新链接之前选择文本。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1662"/>
-        <location filename="../MainWindow.cpp.keep" line="1662"/>
-        <location filename="../MainWindow.cpp~" line="1662"/>
+        <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp~" line="1702"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
-        <translation type="unfinished"/>
+        <translation>链接无效-不能包含‘&lt;’或‘&gt;’</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1670"/>
-        <location filename="../MainWindow.cpp.keep" line="1670"/>
-        <location filename="../MainWindow.cpp~" line="1670"/>
+        <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>You cannot insert a link at this position.</source>
         <translation>您无法在此处插入链接。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1681"/>
-        <location filename="../MainWindow.cpp.keep" line="1681"/>
-        <location filename="../MainWindow.cpp~" line="1681"/>
+        <location filename="../MainWindow.cpp" line="1721"/>
+        <location filename="../MainWindow.cpp~" line="1721"/>
         <source>Insert File</source>
         <translation>插入文件</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1724"/>
-        <location filename="../MainWindow.cpp.keep" line="1724"/>
-        <location filename="../MainWindow.cpp~" line="1724"/>
+        <location filename="../MainWindow.cpp" line="1764"/>
+        <location filename="../MainWindow.cpp~" line="1764"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation type="unfinished"/>
+        <translation>不能在此位置插入媒体文件。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1808"/>
-        <location filename="../MainWindow.cpp.keep" line="1808"/>
-        <location filename="../MainWindow.cpp~" line="1808"/>
+        <location filename="../MainWindow.cpp" line="1854"/>
+        <location filename="../MainWindow.cpp~" line="1852"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>要在覆盖此文件前保存修改吗？</translation>
     </message>
@@ -1353,68 +1308,68 @@ If a translation for specific word or phrase is not available it will be display
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../OPFReader.cpp" line="58"/>
+        <location filename="../OPFReader.cpp" line="59"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
         <translation>无法读取 OPF文件。
 行：%1 列%2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="376"/>
+        <location filename="../Utility.cpp" line="374"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>无法读取文件%1：
 %2。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="491"/>
+        <location filename="../Utility.cpp" line="489"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>PageEdit 遇到问题。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="492"/>
+        <location filename="../Utility.cpp" line="490"/>
         <source>PageEdit may need to close.</source>
         <translation>PageEdit 可能需要关闭。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="794"/>
+        <location filename="../Utility.cpp" line="792"/>
         <source>About PageEdit</source>
-        <translation type="unfinished"/>
+        <translation>关于PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="799"/>
+        <location filename="../Utility.cpp" line="797"/>
         <source>Version</source>
         <translation>版本</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="800"/>
+        <location filename="../Utility.cpp" line="798"/>
         <source>Build Date</source>
-        <translation type="unfinished"/>
+        <translation>创建日期</translation>
+    </message>
+    <message>
+        <location filename="../Utility.cpp" line="799"/>
+        <source>Build Time</source>
+        <translation>创建时间</translation>
+    </message>
+    <message>
+        <location filename="../Utility.cpp" line="800"/>
+        <source>Qt Runtime Version</source>
+        <translation>Qt运行时版本</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="801"/>
-        <source>Build Time</source>
-        <translation type="unfinished"/>
+        <source>Qt Compiled Version</source>
+        <translation>Qt编译版本</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="802"/>
-        <source>Qt Runtime Version</source>
-        <translation type="unfinished"/>
+        <source>System</source>
+        <translation>系统</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="803"/>
-        <source>Qt Compiled Version</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../Utility.cpp" line="804"/>
-        <source>System</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../Utility.cpp" line="805"/>
         <source>Architecture</source>
-        <translation type="unfinished"/>
+        <translation>架构</translation>
     </message>
 </context>
 <context>
@@ -1422,22 +1377,22 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation type="unfinished"/>
+        <translation>搜索:</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation type="unfinished"/>
+        <translation>搜索...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation type="unfinished"/>
+        <translation>大小写匹配(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../SearchToolbar.cpp" line="140"/>
+        <location filename="../SearchToolbar.cpp" line="141"/>
         <source>No results found.</source>
-        <translation type="unfinished"/>
+        <translation>没有发现任何结果。</translation>
     </message>
 </context>
 <context>
@@ -1493,7 +1448,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectFiles.cpp" line="159"/>
         <source>Media Files In the Book</source>
-        <translation type="unfinished"/>
+        <translation>书中的媒体文件</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="162"/>
@@ -1542,7 +1497,8 @@ Line: %1 Column %2 - %3</source>
         <location filename="../SelectHyperlink.ui" line="58"/>
         <source>Enter the target URL for this hyperlink.  You can select or 
 double click on existing destinations in your book from the list above.</source>
-        <translation type="unfinished"/>
+        <translation>输入此超链接的目标URL。您可以从上面的列表中选择
+或双击图书中的现有目的位置。</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="62"/>
@@ -1574,7 +1530,11 @@ double click on existing destinations in your book from the list above.</source>
 The dropdown box shows existing ID names in the current file.
 
 ID names must be unique and start with a letter.</source>
-        <translation type="unfinished"/>
+        <translation>输入要用作超链接、注释和目录条目的目的位置的ID名称。
+
+下拉框显示当前文件中的现有ID名称。
+
+ID名称必须是唯一的，并且以字母开头。</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="29"/>
@@ -1585,12 +1545,12 @@ ID names must be unique and start with a letter.</source>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="587"/>
+        <location filename="../Utility.cpp" line="585"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="588"/>
+        <location filename="../Utility.cpp" line="586"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -1604,17 +1564,17 @@ Continue using the requested filename?</source>
     <message>
         <location filename="../WebViewEdit.cpp" line="167"/>
         <source>No suggestions</source>
-        <translation type="unfinished"/>
+        <translation>没有建议</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Check Spelling</source>
-        <translation type="unfinished"/>
+        <translation>检查拼写</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="188"/>
         <source>Select Language</source>
-        <translation type="unfinished"/>
+        <translation>选择语言</translation>
     </message>
 </context>
 </TS>
