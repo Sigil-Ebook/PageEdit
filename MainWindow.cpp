@@ -98,6 +98,7 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_Filepath(QString()),
     m_GoToRequestPending(false),
     m_headingMapper(new QSignalMapper(this)),
+    m_casingChangeMapper(new QSignalMapper(this)),
     m_preserveHeadingAttributes(false),
     m_SelectCharacter(new SelectCharacter(this)),
     m_slZoomSlider(NULL),
@@ -572,6 +573,12 @@ void MainWindow::SetupView()
     ui.actionStrikethrough->setEnabled(true);
     ui.actionSubscript    ->setEnabled(true);
     ui.actionSuperscript  ->setEnabled(true);
+
+    ui.actionCasingLowercase  ->setEnabled(true);
+    ui.actionCasingUppercase  ->setEnabled(true);
+    ui.actionCasingTitlecase ->setEnabled(true);
+    ui.actionCasingCapitalize ->setEnabled(true);
+
     ui.actionAlignLeft   ->setEnabled(true);
     ui.actionAlignCenter ->setEnabled(true);
     ui.actionAlignRight  ->setEnabled(true);
@@ -610,6 +617,12 @@ void MainWindow::UpdateActionState() {
         ui.actionUnderline->setChecked(false);
         ui.actionSubscript->setChecked(false);
         ui.actionSuperscript->setChecked(false);
+
+        ui.actionCasingLowercase->setEnabled(false);
+        ui.actionCasingUppercase->setEnabled(false);
+        ui.actionCasingTitlecase->setEnabled(false);
+        ui.actionCasingCapitalize->setEnabled(false);
+
         ui.actionHeading1->setChecked(false);
         ui.actionHeading2->setChecked(false);
         ui.actionHeading3->setChecked(false);
@@ -624,10 +637,44 @@ void MainWindow::UpdateActionState() {
         ui.actionUnderline->setChecked(m_WebView->QueryCommandState("underline"));
         ui.actionSubscript->setChecked(m_WebView->QueryCommandState("subscript"));
         ui.actionSuperscript->setChecked(m_WebView->QueryCommandState("superscript"));
+
+        ui.actionCasingLowercase->setEnabled(true);
+        ui.actionCasingUppercase->setEnabled(true);
+        ui.actionCasingTitlecase->setEnabled(true);
+        ui.actionCasingCapitalize->setEnabled(true);
+
         CheckHeadingLevel(m_WebView->GetCaretElementName());
     }
     m_updateActionStatePending = false;
 }
+
+
+void MainWindow::ChangeCasing(int casing_mode)
+{
+    Utility::Casing casing;
+    switch (casing_mode) {
+        case Utility::Casing_Lowercase: {
+            casing = Utility::Casing_Lowercase;
+            break;
+            }
+        case Utility::Casing_Uppercase: {
+            casing = Utility::Casing_Uppercase;
+            break;
+            }
+        case Utility::Casing_Titlecase: {
+            casing = Utility::Casing_Titlecase;
+            break;
+            }
+        case Utility::Casing_Capitalize: {
+            casing = Utility::Casing_Capitalize;
+            break;
+            }
+        default:
+            return;
+    }
+    m_WebView->ApplyCaseChangeToSelection(casing);
+}
+
 
 void MainWindow::CheckHeadingLevel(const QString &element_name)
 {
@@ -1980,6 +2027,22 @@ void MainWindow::ExtendIconSizes()
     icon.addFile(QString::fromUtf8(":/icons/format-text-superscript_22px.png"));
     ui.actionSuperscript->setIcon(icon);
 
+    icon = ui.actionCasingLowercase->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-case-lowercase_22px.png"));
+    ui.actionCasingLowercase->setIcon(icon);
+
+    icon = ui.actionCasingUppercase->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-case-uppercase_22px.png"));
+    ui.actionCasingUppercase->setIcon(icon);
+
+    icon = ui.actionCasingTitlecase->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-case-titlecase_22px.png"));
+    ui.actionCasingTitlecase->setIcon(icon);
+
+    icon = ui.actionCasingCapitalize->icon();
+    icon.addFile(QString::fromUtf8(":/icons/format-case-capitalize_22px.png"));
+    ui.actionCasingCapitalize->setIcon(icon);
+
     icon = ui.actionInsertNumberedList->icon();
     icon.addFile(QString::fromUtf8(":/icons/insert-numbered-list_22px.png"));
     ui.actionInsertNumberedList->setIcon(icon);
@@ -2158,6 +2221,17 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionAlignJustify,    SIGNAL(triggered()),  this,   SLOT(AlignJustify()));
     connect(ui.actionDecreaseIndent,  SIGNAL(triggered()),  this,   SLOT(DecreaseIndent()));
     connect(ui.actionIncreaseIndent,  SIGNAL(triggered()),  this,   SLOT(IncreaseIndent()));
+
+    // Change case
+    connect(ui.actionCasingLowercase,  SIGNAL(triggered()), m_casingChangeMapper, SLOT(map()));
+    connect(ui.actionCasingUppercase,  SIGNAL(triggered()), m_casingChangeMapper, SLOT(map()));
+    connect(ui.actionCasingTitlecase, SIGNAL(triggered()), m_casingChangeMapper, SLOT(map()));
+    connect(ui.actionCasingCapitalize, SIGNAL(triggered()), m_casingChangeMapper, SLOT(map()));
+    m_casingChangeMapper->setMapping(ui.actionCasingLowercase,  Utility::Casing_Lowercase);
+    m_casingChangeMapper->setMapping(ui.actionCasingUppercase,  Utility::Casing_Uppercase);
+    m_casingChangeMapper->setMapping(ui.actionCasingTitlecase, Utility::Casing_Titlecase);
+    m_casingChangeMapper->setMapping(ui.actionCasingCapitalize, Utility::Casing_Capitalize);
+    connect(m_casingChangeMapper, SIGNAL(mapped(int)), this, SLOT(ChangeCasing(int)));
 
     // View/Zoom Related
     connect(ui.actionZoomIn,     SIGNAL(triggered()),       this, SLOT(ZoomIn()));

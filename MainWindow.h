@@ -156,6 +156,7 @@ public slots:
     void DecreaseIndent();
     void IncreaseIndent();
     void UpdateActionState();
+    void ChangeCasing(int casing_mode);
     // void ToggleSpellCheck();
 
     void ApplicationPaletteChanged();
@@ -203,6 +204,7 @@ private:
     QString m_usercssurl;
 
     QSignalMapper *m_headingMapper;
+    QSignalMapper *m_casingChangeMapper;
     bool m_preserveHeadingAttributes;
     QString m_CurrentFilePath;
     SelectCharacter* m_SelectCharacter;

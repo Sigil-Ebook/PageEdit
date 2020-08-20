@@ -123,7 +123,17 @@
      <addaction name="separator"/>
      <addaction name="actionHeadingPreserveAttributes"/>
     </widget>
-    
+
+    <widget class="QMenu" name="menuChangeCase">
+     <property name="title">
+      <string>C&amp;hange Case</string>
+     </property>
+     <addaction name="actionCasingLowercase"/>
+     <addaction name="actionCasingUppercase"/>
+     <addaction name="actionCasingTitlecase"/>
+     <addaction name="actionCasingCapitalize"/>
+    </widget>
+
     <addaction name="menuHeadings"/>
     <addaction name="separator"/>
     <addaction name="actionBold"/>
@@ -132,6 +142,8 @@
     <addaction name="actionStrikethrough"/>
     <addaction name="actionSubscript"/>
     <addaction name="actionSuperscript"/>
+    <addaction name="separator"/>
+    <addaction name="menuChangeCase"/>
     <addaction name="separator"/>
     <addaction name="actionAlignLeft"/>
     <addaction name="actionAlignCenter"/>
@@ -283,6 +295,22 @@
     <addaction name="actionHeading6"/>
     <addaction name="actionHeadingNormal"/>
    </widget>
+  </widget>
+
+  <widget class="QToolBar" name="toolBarChangeCase">
+   <property name="windowTitle">
+    <string>Change Case</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCasingLowercase"/>
+   <addaction name="actionCasingUppercase"/>
+   <addaction name="actionCasingTitlecase"/>
+   <addaction name="actionCasingCapitalize"/>
   </widget>
   
   <widget class="QToolBar" name="toolBarTextFormats">
@@ -579,7 +607,6 @@
    </property>
   </action>
   
-  
   <action name="actionUnderline">
    <property name="checkable">
     <bool>true</bool>
@@ -596,6 +623,64 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+U</string>
+   </property>
+  </action>
+
+  <action name="actionCasingLowercase">
+   <property name="icon">
+    <iconset resource="../icons/icons.qrc">
+     <normaloff>:/icons/format-case-lowercase_48px.png</normaloff>:/icons/format-case-lowercase_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Lowercase</string>
+   </property>
+   <property name="toolTip">
+    <string>Set selected text to lowercase.</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+L</string>
+   </property>
+  </action>
+
+  <action name="actionCasingUppercase">
+   <property name="icon">
+    <iconset resource="../icons/icons.qrc">
+     <normaloff>:/icons/format-case-uppercase_48px.png</normaloff>:/icons/format-case-uppercase_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Uppercase</string>
+   </property>
+   <property name="toolTip">
+    <string>Set selected text to uppercase.</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+U</string>
+   </property>
+  </action>
+  
+  <action name="actionCasingTitlecase">
+   <property name="icon">
+    <iconset resource="../icons/icons.qrc">
+     <normaloff>:/icons/format-case-titlecase_48px.png</normaloff>:/icons/format-case-titlecase_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Titlecase</string>
+   </property>
+   <property name="toolTip">
+    <string>Capitalize the first letter of each word selected.</string>
+   </property>
+  </action>
+  
+  <action name="actionCasingCapitalize">
+   <property name="icon">
+    <iconset resource="../icons/icons.qrc">
+     <normaloff>:/icons/format-case-capitalize_48px.png</normaloff>:/icons/format-case-capitalize_48px.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Capitalize</string>
+   </property>
+   <property name="toolTip">
+    <string>Capitalize only the first word of the selected text.</string>
    </property>
   </action>
 

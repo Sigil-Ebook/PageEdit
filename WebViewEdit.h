@@ -26,6 +26,7 @@
 #include <QEvent>
 #include <QContextMenuEvent>
 #include <QtWebEngineWidgets/QWebEngineView>
+#include "Utility.h"
 #include "WebPageEdit.h"
 #include "Viewer.h"
 
@@ -75,6 +76,9 @@ public:
      */
     void ScrollToFragment(const QString &fragment);
 
+
+    void SelectPreviousChar();
+
     /**
      *  Workaround for a crappy setFocus implementation in QtWebKit.
      */
@@ -123,6 +127,7 @@ public slots:
      void PasteText(const QString &text);
      QString GetHtml() const;
      QString GetSelectedText();
+     void ApplyCaseChangeToSelection(const Utility::Casing &casing);
      bool InsertHtml(const QString &html);
      bool InsertId(const QString &id);
      bool InsertHyperlink(const QString &href);

@@ -342,6 +342,14 @@ void WebViewEdit::ScrollToFragmentInternal(const QString &fragment)
     DoJavascript(script);
 }
 
+void WebViewEdit::SelectPreviousChar()
+{
+    QString script = "var selection = window.getSelection();"
+                     "selection.modify('extend', 'backward', 'character');";
+    DoJavascript(script);
+}
+
+
 void WebViewEdit::LoadingStarted()
 {
     DBG qDebug() << "Loading a page started";
@@ -390,6 +398,56 @@ QString WebViewEdit::GetSelectedText()
     return EvaluateJavascript(javascript).toString();
 }
 
+
+void WebViewEdit::ApplyCaseChangeToSelection(const Utility::Casing &casing)
+{
+    //  Users can actually select too much here including tags
+    //  Pasting over the tags then loses content (such as anchor links)
+    //  So we detect if the user selected more than just text, and if so
+    //  simply return
+
+    // javascript to get html of window selection
+    QString javascript = "var xml = '';"
+                         "if (window.getSelection) {"
+                         "  var selection = window.getSelection();"
+                         "  if (selection.rangeCount > 0) {"
+                         "    var range = selection.getRangeAt(0);"
+                         "    var clonedSelection = range.cloneContents();"
+                         "    var div = document.createElement('div');"
+                         "    div.appendChild(clonedSelection);"
+                         "    xml = div.innerHTML;"
+                         "  }"
+                         "}"
+      "xml;";
+
+      QString selected_html  = EvaluateJavascript(javascript).toString();
+
+      QString selected_text = GetSelectedText();
+
+      // if you selected more than just text simply return
+      if (selected_text != selected_html) {
+        return;
+      }
+
+      QString new_text = Utility::ChangeCase(selected_text, casing);
+
+      // if nothing changed, simply return
+      if (new_text == selected_text) {
+          return;
+      }
+      // QApplication::clipboard()->setText(new_text);
+      // triggerPageAction(QWebEnginePage::Paste);
+      InsertHtml(new_text);
+
+      // We will have lost our selection from the paste operation.
+      for (int i = 0; i < new_text.length(); i++) {
+          SelectPreviousChar();
+      }
+      return;
+}
+
+
+
 void WebViewEdit::PasteText(const QString &text)
 {
     InsertHtml(text);
@@ -435,12 +493,10 @@ bool WebViewEdit::InsertTagAttribute(const QString &element_name, const QString 
 	                  attribute_value + "\">" + selected_text + "</" + element_name + ">";
     bool insert_ok = InsertHtml(html);
 
-#if 0
     // We will have lost our selection from the insert - viewable text hasn't changed
     for (int i = 0; i < selected_text.length(); i++) {
-        page()->triggerAction(QWebPage::SelectPreviousChar);
+        SelectPreviousChar();
     }
-#endif
 
     return insert_ok;
 }
