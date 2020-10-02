@@ -1,6 +1,6 @@
 /************************************************************************
  **
- **  Copyright (C) 2019  Kevin B. Hendricks, Stratford Ontario Canada
+ **  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
  **
  **  This file is part of PageEdit.
  **
@@ -48,16 +48,12 @@ SearchToolbar::SearchToolbar(WebViewEdit* view, QWidget* parent)
 {
     ui->setupUi(this);
 
-    QIcon icon(QString::fromUtf8(":/icons/widget-close_48px.png"));
-    icon.addFile(QString::fromUtf8(":/icons/widget-close_22px.png"));
-    ui->closeButton->setIcon(icon);
+    ui->closeButton->setIcon(QIcon(QString::fromUtf8(":/icons/widget-close.svg")));
 
-    icon.addFile(QString::fromUtf8(":/icons/find-next_16px.png"));
-    ui->next->setIcon(icon);
+    ui->next->setIcon(QIcon(QString::fromUtf8(":/icons/find-next.svg")));
     ui->next->setShortcut(QKeySequence("Ctrl+G"));
 
-    icon.addFile(QString::fromUtf8(":/icons/find-previous_16px.png"));
-    ui->previous->setIcon(icon);
+    ui->previous->setIcon(QIcon(QString::fromUtf8(":/icons/find-previous.svg")));
     ui->previous->setShortcut(QKeySequence("Ctrl+Shift+G"));
 
     connect(ui->closeButton, SIGNAL(clicked()), this, SLOT(close()));

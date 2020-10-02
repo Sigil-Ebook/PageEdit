@@ -123,7 +123,7 @@
           <widget class="QToolButton" name="ThumbnailDecrease">
            <property name="icon">
             <iconset>
-             <normaloff>:/icons/list-remove_48px.png</normaloff>:/icons/list-remove_48px.png</iconset>
+             <normaloff>:/icons/list-remove.svg</normaloff>:/icons/list-remove.svg</iconset>
            </property>
           </widget>
          </item>
@@ -131,7 +131,7 @@
           <widget class="QToolButton" name="ThumbnailIncrease">
            <property name="icon">
             <iconset>
-             <normaloff>:/icons/list-add_48px.png</normaloff>:/icons/list-add_48px.png</iconset>
+             <normaloff>:/icons/list-add.svg</normaloff>:/icons/list-add.svg</iconset>
            </property>
           </widget>
          </item>

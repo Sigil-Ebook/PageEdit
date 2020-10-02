@@ -282,7 +282,7 @@
    <widget class="QToolButton" name="tbHeadings">
     <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/heading-all_48px.png</normaloff>:/icons/heading-all_48px.png</iconset>
+     <normaloff>:/icons/heading-all.svg</normaloff>:/icons/heading-all.svg</iconset>
    </property>
     <property name="toolTip">
       <string>set Heading Level of Selected Text</string>
@@ -386,7 +386,7 @@
   <action name="actionSave">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/document-save_48px.png</normaloff>:/icons/document-save_48px.png</iconset>
+     <normaloff>:/icons/document-save.svg</normaloff>:/icons/document-save.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Save</string>
@@ -414,7 +414,7 @@
   <action name="actionCut">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/edit-cut_48px.png</normaloff>:/icons/edit-cut_48px.png</iconset>
+     <normaloff>:/icons/edit-cut.svg</normaloff>:/icons/edit-cut.svg</iconset>
    </property>
    <property name="text">
     <string>Cu&amp;t</string>
@@ -427,7 +427,7 @@
   <action name="actionPaste">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/edit-paste_48px.png</normaloff>:/icons/edit-paste_48px.png</iconset>
+     <normaloff>:/icons/edit-paste.svg</normaloff>:/icons/edit-paste.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Paste</string>
@@ -440,7 +440,7 @@
   <action name="actionUndo">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/edit-undo_48px.png</normaloff>:/icons/edit-undo_48px.png</iconset>
+     <normaloff>:/icons/edit-undo.svg</normaloff>:/icons/edit-undo.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Undo</string>
@@ -456,7 +456,7 @@
   <action name="actionRedo">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/edit-redo_48px.png</normaloff>:/icons/edit-redo_48px.png</iconset>
+     <normaloff>:/icons/edit-redo.svg</normaloff>:/icons/edit-redo.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Redo</string>
@@ -472,7 +472,7 @@
   <action name="actionCopy">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/edit-copy_48px.png</normaloff>:/icons/edit-copy_48px.png</iconset>
+     <normaloff>:/icons/edit-copy.svg</normaloff>:/icons/edit-copy.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Copy</string>
@@ -488,7 +488,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-justify-left_48px.png</normaloff>:/icons/format-justify-left_48px.png</iconset>
+     <normaloff>:/icons/format-justify-left.svg</normaloff>:/icons/format-justify-left.svg</iconset>
    </property>
    <property name="text">
     <string>Align &amp;Left</string>
@@ -505,7 +505,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-justify-right_48px.png</normaloff>:/icons/format-justify-right_48px.png</iconset>
+     <normaloff>:/icons/format-justify-right.svg</normaloff>:/icons/format-justify-right.svg</iconset>
    </property>
    <property name="text">
     <string>Align &amp;Right</string>
@@ -521,7 +521,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-justify-center_48px.png</normaloff>:/icons/format-justify-center_48px.png</iconset>
+     <normaloff>:/icons/format-justify-center.svg</normaloff>:/icons/format-justify-center.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Center</string>
@@ -540,7 +540,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-justify-fill_48px.png</normaloff>:/icons/format-justify-fill_48px.png</iconset>
+     <normaloff>:/icons/format-justify-fill.svg</normaloff>:/icons/format-justify-fill.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Justify</string>
@@ -559,7 +559,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-text-bold_48px.png</normaloff>:/icons/format-text-bold_48px.png</iconset>
+     <normaloff>:/icons/format-text-bold.svg</normaloff>:/icons/format-text-bold.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Bold</string>
@@ -578,7 +578,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-text-italic_48px.png</normaloff>:/icons/format-text-italic_48px.png</iconset>
+     <normaloff>:/icons/format-text-italic.svg</normaloff>:/icons/format-text-italic.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Italic</string>
@@ -594,7 +594,7 @@
   <action name="actionOpen">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/document-open_48px.png</normaloff>:/icons/document-open_48px.png</iconset>
+     <normaloff>:/icons/document-open.svg</normaloff>:/icons/document-open.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Open...</string>
@@ -613,7 +613,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-text-underline_48px.png</normaloff>:/icons/format-text-underline_48px.png</iconset>
+     <normaloff>:/icons/format-text-underline.svg</normaloff>:/icons/format-text-underline.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Underline</string>
@@ -629,7 +629,7 @@
   <action name="actionCasingLowercase">
    <property name="icon">
     <iconset resource="../icons/icons.qrc">
-     <normaloff>:/icons/format-case-lowercase_48px.png</normaloff>:/icons/format-case-lowercase_48px.png</iconset>
+     <normaloff>:/icons/format-case-lowercase.svg</normaloff>:/icons/format-case-lowercase.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Lowercase</string>
@@ -645,7 +645,7 @@
   <action name="actionCasingUppercase">
    <property name="icon">
     <iconset resource="../icons/icons.qrc">
-     <normaloff>:/icons/format-case-uppercase_48px.png</normaloff>:/icons/format-case-uppercase_48px.png</iconset>
+     <normaloff>:/icons/format-case-uppercase.svg</normaloff>:/icons/format-case-uppercase.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Uppercase</string>
@@ -661,7 +661,7 @@
   <action name="actionCasingTitlecase">
    <property name="icon">
     <iconset resource="../icons/icons.qrc">
-     <normaloff>:/icons/format-case-titlecase_48px.png</normaloff>:/icons/format-case-titlecase_48px.png</iconset>
+     <normaloff>:/icons/format-case-titlecase.svg</normaloff>:/icons/format-case-titlecase.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Titlecase</string>
@@ -674,7 +674,7 @@
   <action name="actionCasingCapitalize">
    <property name="icon">
     <iconset resource="../icons/icons.qrc">
-     <normaloff>:/icons/format-case-capitalize_48px.png</normaloff>:/icons/format-case-capitalize_48px.png</iconset>
+     <normaloff>:/icons/format-case-capitalize.svg</normaloff>:/icons/format-case-capitalize.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Capitalize</string>
@@ -687,7 +687,7 @@
   <action name="actionExit">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/process-stop_48px.png</normaloff>:/icons/process-stop_48px.png</iconset>
+     <normaloff>:/icons/process-stop.svg</normaloff>:/icons/process-stop.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Quit</string>
@@ -703,7 +703,7 @@
   <action name="actionInsertSpecialCharacter">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/insert-special-character_48px.png</normaloff>:/icons/insert-special-character_48px.png</iconset>
+     <normaloff>:/icons/insert-special-character.svg</normaloff>:/icons/insert-special-character.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Special Character...</string>
@@ -719,7 +719,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/insert-numbered-list_48px.png</normaloff>:/icons/insert-numbered-list_48px.png</iconset>
+     <normaloff>:/icons/insert-numbered-list.svg</normaloff>:/icons/insert-numbered-list.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Numbered List</string>
@@ -735,7 +735,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/insert-bullet-list_48px.png</normaloff>:/icons/insert-bullet-list_48px.png</iconset>
+     <normaloff>:/icons/insert-bullet-list.svg</normaloff>:/icons/insert-bullet-list.svg</iconset>
    </property>
    <property name="text">
     <string>Bulle&amp;ted List</string>
@@ -754,7 +754,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-text-strikethrough_48px.png</normaloff>:/icons/format-text-strikethrough_48px.png</iconset>
+     <normaloff>:/icons/format-text-strikethrough.svg</normaloff>:/icons/format-text-strikethrough.svg</iconset>
    </property>
    <property name="text">
     <string>Stri&amp;kethrough</string>
@@ -770,7 +770,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-text-subscript_48px.png</normaloff>:/icons/format-text-subscript_48px.png</iconset>
+     <normaloff>:/icons/format-text-subscript.svg</normaloff>:/icons/format-text-subscript.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Subscript</string>
@@ -786,7 +786,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-text-superscript_48px.png</normaloff>:/icons/format-text-superscript_48px.png</iconset>
+     <normaloff>:/icons/format-text-superscript.svg</normaloff>:/icons/format-text-superscript.svg</iconset>
    </property>
    <property name="text">
     <string>Su&amp;perscript</string>
@@ -800,7 +800,7 @@
   <action name="actionZoomIn">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/list-add_48px.png</normaloff>:/icons/list-add_48px.png</iconset>
+     <normaloff>:/icons/list-add.svg</normaloff>:/icons/list-add.svg</iconset>
    </property>
    <property name="text">
     <string>Zoom &amp;In</string>
@@ -817,7 +817,7 @@
   <action name="actionZoomOut">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/list-remove_48px.png</normaloff>:/icons/list-remove_48px.png</iconset>
+     <normaloff>:/icons/list-remove.svg</normaloff>:/icons/list-remove.svg</iconset>
    </property>
    <property name="text">
     <string>Zoom &amp;Out</string>
@@ -834,7 +834,7 @@
   <action name="actionIncreaseIndent">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-indent-more_48px.png</normaloff>:/icons/format-indent-more_48px.png</iconset>
+     <normaloff>:/icons/format-indent-more.svg</normaloff>:/icons/format-indent-more.svg</iconset>
    </property>
    <property name="text">
     <string>Incre&amp;ase Indent</string>
@@ -850,7 +850,7 @@
   <action name="actionDecreaseIndent">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/format-indent-less_48px.png</normaloff>:/icons/format-indent-less_48px.png</iconset>
+     <normaloff>:/icons/format-indent-less.svg</normaloff>:/icons/format-indent-less.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Decrease Indent</string>
@@ -866,7 +866,7 @@
   <action name="actionInsertSGFSectionMarker">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/split-section_48px.png</normaloff>:/icons/split-section_48px.png</iconset>
+     <normaloff>:/icons/split-section.svg</normaloff>:/icons/split-section.svg</iconset>
    </property>
    <property name="text">
     <string>Split &amp;Marker</string>
@@ -906,7 +906,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/heading-1_48px.png</normaloff>:/icons/heading-1_43px.png</iconset>
+     <normaloff>:/icons/heading-1.svg</normaloff>:/icons/heading-1.svg</iconset>
    </property>
    <property name="text">
     <string>Heading &amp;1</string>
@@ -925,7 +925,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/heading-2_48px.png</normaloff>:/icons/heading-2_48px.png</iconset>
+     <normaloff>:/icons/heading-2.svg</normaloff>:/icons/heading-2.svg</iconset>
    </property>
    <property name="text">
     <string>Heading &amp;2</string>
@@ -944,7 +944,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/heading-3_48px.png</normaloff>:/icons/heading-3_48px.png</iconset>
+     <normaloff>:/icons/heading-3.svg</normaloff>:/icons/heading-3.svg</iconset>
    </property>
    <property name="text">
     <string>Heading &amp;3</string>
@@ -964,7 +964,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/heading-4_48px.png</normaloff>:/icons/heading-4_48px.png</iconset>
+     <normaloff>:/icons/heading-4.svg</normaloff>:/icons/heading-4.svg</iconset>
    </property>
    <property name="text">
     <string>Heading &amp;4</string>
@@ -983,7 +983,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/heading-5_48px.png</normaloff>:/icons/heading-5_48px.png</iconset>
+     <normaloff>:/icons/heading-5.svg</normaloff>:/icons/heading-5.svg</iconset>
    </property>
    <property name="text">
     <string>Heading &amp;5</string>
@@ -1002,7 +1002,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/heading-6_48px.png</normaloff>:/icons/heading-6_48px.png</iconset>
+     <normaloff>:/icons/heading-6.svg</normaloff>:/icons/heading-6.svg</iconset>
    </property>
    <property name="text">
     <string>Heading &amp;6</string>
@@ -1022,7 +1022,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/heading-normal_48px.png</normaloff>:/icons/heading-normal_48px.png</iconset>
+     <normaloff>:/icons/heading-normal.svg</normaloff>:/icons/heading-normal.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Normal</string>
@@ -1051,7 +1051,7 @@
   <action name="actionSelectAll">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/edit-select-all_48px.png</normaloff>:/icons/edit-select-all_48px.png</iconset>
+     <normaloff>:/icons/edit-select-all.svg</normaloff>:/icons/edit-select-all.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Select All</string>
@@ -1067,7 +1067,7 @@
   <action name="actionInspect">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/inspect_48px.png</normaloff>:/icons/inspect_48px.png</iconset>
+     <normaloff>:/icons/inspect.svg</normaloff>:/icons/inspect.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Inspector</string>
@@ -1083,7 +1083,7 @@
   <action name="actionFind">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/edit-find_48px.png</normaloff>:/icons/edit-find_48px.png</iconset>
+     <normaloff>:/icons/edit-find.svg</normaloff>:/icons/edit-find.svg</iconset>
    </property>
    <property name="text">
     <string>Find</string>
@@ -1102,7 +1102,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/arrow-right_48px.png</normaloff>:/icons/arrow-right_48px.png</iconset>
+     <normaloff>:/icons/arrow-right.svg</normaloff>:/icons/arrow-right.svg</iconset>
    </property>
    <property name="text">
     <string>Next XHtml File</string>
@@ -1118,7 +1118,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/arrow-left_48px.png</normaloff>:/icons/arrow-left_48px.png</iconset>
+     <normaloff>:/icons/arrow-left.svg</normaloff>:/icons/arrow-left.svg</iconset>
    </property>
    <property name="text">
     <string>Previous XHtml File</string>
@@ -1134,7 +1134,7 @@
    </property>
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/mode-preview_48px.png</normaloff>:/icons/mode-edit_48px.png</iconset>
+     <normaloff>:/icons/mode-preview.svg</normaloff>:/icons/mode-edit.svg</iconset>
    </property>
    <property name="text">
     <string>Mode</string>
@@ -1147,7 +1147,7 @@
   <action name="actionAbout">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/help-browser_48px.png</normaloff>:/main/help-browser_48px.png</iconset>
+     <normaloff>:/icons/help-browser.svg</normaloff>:/main/help-browser.svg</iconset>
    </property>
    <property name="text">
     <string>About...</string>
@@ -1160,7 +1160,7 @@
   <action name="actionLinkReturn">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/back-link_48px.png</normaloff>:/icons/back-link_48px.png</iconset>
+     <normaloff>:/icons/back-link.svg</normaloff>:/icons/back-link.svg</iconset>
    </property>
    <property name="text">
     <string>Back to Last Link</string>
@@ -1173,7 +1173,7 @@
   <action name="actionInsertId">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/insert-id_48px.png</normaloff>:/icons/insert-id_48px.png</iconset>
+     <normaloff>:/icons/insert-id.svg</normaloff>:/icons/insert-id.svg</iconset>
    </property>
    <property name="text">
     <string>I&amp;D...</string>
@@ -1186,7 +1186,7 @@
   <action name="actionInsertHyperlink">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/insert-hyperlink_48px.png</normaloff>:/icons/insert-hyperlink_48px.png</iconset>
+     <normaloff>:/icons/insert-hyperlink.svg</normaloff>:/icons/insert-hyperlink.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Link...</string>
@@ -1199,7 +1199,7 @@
   <action name="actionInsertFile">
    <property name="icon">
     <iconset resource="./icons/icons.qrc">
-     <normaloff>:/icons/insert-image_48px.png</normaloff>:/icons/insert-image_48px.png</iconset>
+     <normaloff>:/icons/insert-image.svg</normaloff>:/icons/insert-image.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;File...</string>
