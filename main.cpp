@@ -205,8 +205,8 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion(QString(PAGEEDIT_VERSION));
 #ifndef Q_OS_MAC
     setupHighDPI();
-    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
 #endif
+    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
     MainApplication app(argc, argv);
