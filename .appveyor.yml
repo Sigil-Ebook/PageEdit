@@ -61,7 +61,7 @@ before_build:
     echo 'PATH = %PATH%'
     cd %APPVEYOR_BUILD_FOLDER%\build
     curl.exe -L -o gdrive.exe %GDRIVE%
-    c:\project\pageedit\build\gdrive.exe version
+    %APPVEYOR_BUILD_FOLDER%\build\gdrive.exe version
     call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" %PLATFORM% -vcvars_ver=14.1
     cmake .. -G "Ninja" -DWIN_INSTALLER_USE_64BIT_CRT=1 -DDEPLOY_SFX=1 -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5
 
