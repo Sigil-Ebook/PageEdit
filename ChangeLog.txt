@@ -1,5 +1,13 @@
 Change Log
 ==========
+PageEdit-1.4.0
+  New Features
+    - Add Case Change tool/icons
+    - Move to all SVG based icons courtesy of BeckyEbook (Thank you!)
+  Bug Fixes
+    - Fix incorrect Find next and previous search icons
+    - Uses Qt::AA+UseHighDpiPixmaps on all platforms to rpevent pixelated icons
+
 PageEdit-1.3.0
   New Features
     - Windows/macOS release build updated to Qt 5.12.9 with added bug fixes
