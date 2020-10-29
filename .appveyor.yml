@@ -5,10 +5,9 @@ branches:
   - master
   - /\d+\.\d+\.\d+(-\d+)?/
   
-clone_folder: c:\project\pageedit
-
 image:
 - Visual Studio 2019
+- Ubuntu1804
 
 configuration: Release
 
@@ -16,26 +15,26 @@ platform:
 - x64
 
 init:
-  - set /p RedistVersion=<"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\Microsoft.VCRedistVersion.default.txt"
-  - ps: $commit = $env:appveyor_repo_commit.SubString(0,7)
-  - ps: $timestamp = $env:appveyor_repo_commit_timestamp.SubString(0,10)
-  - ps: Update-AppveyorBuild -Version ("{0}-{1}-{2}" -f $env:appveyor_repo_branch, $commit, $timestamp)
+  - cmd: set /p RedistVersion=<"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\Microsoft.VCRedistVersion.default.txt"
+  - ps: $commit = $env:APPVEYOR_REPO_COMMIT.SubString(0,7)
+  - ps: $timestamp = $env:APPVEYOR_REPO_COMMIT_TIMESTAMP.SubString(0,10)
+  - ps: Update-AppveyorBuild -Version ("{0}-{1}-{2}" -f $env:APPVEYOR_REPO_BRANCH, $commit, $timestamp)
 
 clone_script:
 - ps: >-
-    if(-not $env:appveyor_pull_request_number) {
-      git clone -q --depth=1 --branch=$env:appveyor_repo_branch https://github.com/$env:appveyor_repo_name.git $env:appveyor_build_folder
-      git checkout -qf $env:appveyor_repo_commit
+    if(-not $env:APPVEYOR_PULL_REQUEST_NUMBER) {
+      git clone -q --depth=1 --branch=$env:APPVEYOR_REPO_BRANCH https://github.com/$env:APPVEYOR_REPO_NAME.git $env:APPVEYOR_BUILD_FOLDER
+      git checkout -qf $env:APPVEYOR_REPO_COMMIT
     } else {
-      git clone -q --depth=1 https://github.com/$env:appveyor_repo_name.git $env:appveyor_build_folder 
-      git fetch -q origin +refs/pull/$env:appveyor_pull_request_number/merge:
+      git clone -q --depth=1 https://github.com/$env:APPVEYOR_REPO_NAME.git $env:APPVEYOR_BUILD_FOLDER
+      git fetch -q origin +refs/pull/$env:APPVEYOR_PULL_REQUEST_NUMBER/merge:
       git checkout -qf FETCH_HEAD
     }
     
-    Set-Location $env:appveyor_build_folder
+    Set-Location $env:APPVEYOR_BUILD_FOLDER
 
 install:
-  - choco install ninja
+  - cmd: choco install ninja
 
 environment:
   global:
@@ -48,28 +47,39 @@ environment:
         secure: +J2q/4lkiBXik5Ttvt06vpNiWBjNIXx+jFnYw1rOR9sLkyksyXGj+NeNKQB8kPwE
       GDRIVE_DIR:
         secure: igOA10tmVbccXE8T92NCKPGcsixGGzyu69QmsBGw6seBOqcQ8+XXm0vjkoLMtrLF
-      PYTHON: C:\Python37
+      PYTHON: C:\Python38-x64
 
 
 before_build:
+- mkdir build
 - cmd: |-
     cp '%REDIST%' installer/
-    mkdir build
     cd ..\..
     curl.exe -L -o webkit.7z %DOWNLOAD%
     7z x webkit.7z -y
     set PATH=%PYTHON%;%PYTHON%\Scripts;%QT%\bin;%INNO%;%PATH%
     echo 'PATH = %PATH%'
-    cd project\pageedit\build
+    cd %APPVEYOR_BUILD_FOLDER%\build
     curl.exe -L -o gdrive.exe %GDRIVE%
-    c:\project\pageedit\build\gdrive.exe version
+    %APPVEYOR_BUILD_FOLDER%\build\gdrive.exe version
     call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" %PLATFORM% -vcvars_ver=14.1
     cmake .. -G "Ninja" -DWIN_INSTALLER_USE_64BIT_CRT=1 -DDEPLOY_SFX=1 -DCMAKE_BUILD_TYPE=%configuration% -DQt5_DIR=%QT%\lib\cmake\Qt5
+
+- sh: |-
+    sudo apt-get update && apt-get install -y pkg-config cmake cmake-data zlib1g-dev build-essential ninja
+    sudo apt-get install -y qtbase5-dev qttools5-dev qttools5-dev-tools qtwebengine5-dev qt5-default qtchooser
+    cd $APPVEYOR_BUILD_FOLDER/build
+    which qmake
+    qmake -v
+    gcc --version
+    cmake .. -DCMAKE_BUILD_TYPE=RELEASE
 
     
 build_script:
 - cmd: |-
     ninja -j4
+- sh: |-
+    make -j4
 
 after_build:
 - cmd: |-
@@ -77,9 +87,8 @@ after_build:
 
 deploy_script:
 - ps: >-
-    if(-not $env:appveyor_pull_request_number) {
+    if($isWindows -and (-not $env:APPVEYOR_PULL_REQUEST_NUMBER)) {
         python --version
-        c:\project\pageedit\build\gdrive.exe version
         python ..\ci_scripts\gddeploy.py
     }
  
