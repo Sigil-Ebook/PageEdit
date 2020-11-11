@@ -124,6 +124,7 @@ public:
      * @param path The path to encode.
      * @return The encoded path string.
      */
+    static bool NeedToPercentEncode(uint32_t cp);
     static QString URLEncodePath(const QString &path);
 
     /**
