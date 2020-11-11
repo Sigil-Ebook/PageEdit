@@ -7,6 +7,7 @@ PageEdit-1.4.0
   Bug Fixes
     - Fix incorrect Find next and previous search icons
     - Uses Qt::AA+UseHighDpiPixmaps on all platforms to rpevent pixelated icons
+    - Update GumboInterface to Sync with Sigil and handle PercentEncoding as IRI
 
 PageEdit-1.3.0
   New Features

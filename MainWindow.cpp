@@ -1794,6 +1794,7 @@ void MainWindow::InsertFiles(const QStringList &selected_files)
         if (!fi.exists()) continue;
             
         QString relative_link = Utility::buildRelativePath(currentpath, mediapath);
+	relative_link = Utility::URLEncodePath(relative_link);
 
         // extract just the filename without extension to create a text label
         QString filename = fi.fileName();
