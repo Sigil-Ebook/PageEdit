@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2015-2019  Kevin B. Hendricks, Stratford Ontario
+**  Copyright (C) 2015-2020  Kevin B. Hendricks, Stratford Ontario
 **
 **  This file is part of PageEdit.
 **
@@ -35,59 +35,59 @@
 
 
 static std::unordered_set<std::string> nonbreaking_inline  = { 
-  "a","abbr","acronym","b","bdo","big","br","button","cite","code","del",
-  "dfn","em","font","i","image","img","input","ins","kbd","label","map",
-  "mark", "nobr","object","q","ruby","rt","s","samp","select","small",
-  "span","strike","strong","sub","sup","textarea","tt","u","var",
-  "wbr", "mbp:nu"
+    "a","abbr","acronym","b","bdo","big","br","button","cite","code","del",
+    "dfn","em","font","i","image","img","input","ins","kbd","label","map",
+    "mark", "nobr","object","q","ruby","rt","s","samp","select","small",
+    "span","strike","strong","sub","sup","textarea","tt","u","var",
+    "wbr", "mbp:nu"
 };
 
 
 static std::unordered_set<std::string> preserve_whitespace = {
-    "code","pre","textarea","script","style"
+    "code", "pre","textarea","script","style"
 };
 
 
 static std::unordered_set<std::string> special_handling    = { 
-  "html","body"
+    "html","body"
 };
 
 
 static std::unordered_set<std::string> no_entity_sub       = {
-  "script","style"
+    "script","style"
 };
 
 
 static std::unordered_set<std::string> void_tags          = {
-  "area","base","basefont","bgsound","br","col","command","embed",
-  "event-source","frame","hr","img","input","keygen","link",
-  "meta","param","source","spacer","track","wbr", 
-  "mbp:pagebreak", "mglyph", "mspace", "mprescripts", "none",
-  "maligngroup", "malignmark", "msline"
+    "area","base","basefont","bgsound","br","col","command","embed",
+    "event-source","frame","hr","img","input","keygen","link",
+    "meta","param","source","spacer","track","wbr", 
+    "mbp:pagebreak", "mglyph", "mspace", "mprescripts", "none",
+    "maligngroup", "malignmark", "msline"
 };
 
 
 static std::unordered_set<std::string> structural_tags     = {
-  "article","aside","blockquote","body","canvas","colgroup","div","dl",
-  "figure","footer","head","header","hr","html","ol","section",
-  "table","tbody","tfoot","thead","td","th","tr","ul"
+    "article","aside","blockquote","body","canvas","colgroup","div","dl",
+    "figure","footer","head","header","hr","html","ol","section",
+    "table","tbody","tfoot","thead","td","th","tr","ul"
 };
 
 
 static std::unordered_set<std::string> other_text_holders = {
-  "address","caption","dd","div","dt","h1","h2","h3","h4","h5","h6",
-  "legend","li","option","p","td","th","title"
+    "address","caption","dd","div","dt","h1","h2","h3","h4","h5","h6",
+    "legend","li","option","p","td","th","title"
 };
 
 
 static std::unordered_set<std::string> manifest_properties = {
-  "math","nav","script","svg","epub:switch"
+    "math","nav","script","svg","epub:switch"
 };
 
 
 static std::unordered_set<std::string> href_src_tags       = {
-  "a","area","audio","base","embed","font-face-uri","frame","iframe",
-  "image","img","input","link","object","script","source","track","video"
+    "a","area","audio","base","embed","font-face-uri","frame","iframe",
+    "image","img","input","link","object","script","source","track","video"
 };
 
 
@@ -118,9 +118,11 @@ GumboInterface::GumboInterface(const QString &source, const QString &version)
           m_utf8src(""),
           m_sourceupdates(EmptyHash),
           m_newcsslinks(""),
+          m_currentbkpath(""),
           m_currentdir(""),
           m_newbody(""),
-          m_version(version)
+          m_version(version),
+          m_newbookpath("")
 {
 }
 
@@ -131,9 +133,11 @@ GumboInterface::GumboInterface(const QString &source, const QString &version, co
           m_utf8src(""),
           m_sourceupdates(source_updates),
           m_newcsslinks(""),
+          m_currentbkpath(""),
           m_currentdir(""),
           m_newbody(""),
-          m_version(version)
+          m_version(version),
+          m_newbookpath("")
 {
 }
 
@@ -170,7 +174,7 @@ void GumboInterface::parse()
         myoptions.tab_stop = 4;
         myoptions.use_xhtml_rules = true;
         myoptions.stop_on_first_error = false;
-	myoptions.max_tree_depth = 400;
+        myoptions.max_tree_depth = 400;
         myoptions.max_errors = 50;
 
         // GumboInterface::m_mutex.lock();
@@ -187,8 +191,8 @@ void GumboInterface::parse_fragment()
         // In case we ever have to revert to earlier versions, please note the following
         // additional initialization is needed because Microsoft Visual Studio 2013 (and earlier?)
         // do not properly initialize myoptions from the static const kGumboDefaultOptions defined
-        // in the gumbo library.  Instead whatever was in memory at the time is used causing random 
-        // issues later on so if reverting remember to keep these specific changes as the bug 
+        // in the gumbo library.  Instead whatever was in memory at the time is used causing random
+        // issues later on so if reverting remember to keep these specific changes as the bug
         // they work around took a long long time to track down
         GumboOptions myoptions = kGumboDefaultOptions;
         myoptions.tab_stop = 4;
@@ -199,7 +203,7 @@ void GumboInterface::parse_fragment()
 
         m_utf8src = m_source.toStdString();
         m_output = gumbo_parse_fragment(&myoptions, m_utf8src.data(), m_utf8src.length(),
-					GUMBO_TAG_BODY, GUMBO_NAMESPACE_HTML);
+                                        GUMBO_TAG_BODY, GUMBO_NAMESPACE_HTML);
 
         m_output = gumbo_parse_with_options(&myoptions, m_utf8src.data(), m_utf8src.length());
     }
@@ -220,6 +224,7 @@ QString GumboInterface::repair()
     return result;
 }
 
+
 QString GumboInterface::get_fragment_xhtml()
 {
     QString result = "";
@@ -233,6 +238,7 @@ QString GumboInterface::get_fragment_xhtml()
     }
     return result;
 }
+
 
 QString GumboInterface::getxhtml()
 {
@@ -278,9 +284,12 @@ QStringList GumboInterface::get_all_properties()
 }
 
 
-QString GumboInterface::perform_source_updates(const QString& my_current_book_relpath)
+QString GumboInterface::perform_source_updates(const QString& my_current_book_relpath,
+                                               const QString& newbookpath)
 {
-    m_currentdir = QFileInfo(my_current_book_relpath).dir().path();
+    m_currentbkpath = my_current_book_relpath;
+    m_currentdir = QFileInfo(m_currentbkpath).dir().path();
+    m_newbookpath = newbookpath;
     QString result = "";
     if (!m_source.isEmpty()) {
         if (m_output == NULL) {
@@ -295,9 +304,13 @@ QString GumboInterface::perform_source_updates(const QString& my_current_book_re
 }
 
 
-QString GumboInterface::perform_style_updates(const QString& my_current_book_relpath)
+QString GumboInterface::perform_style_updates(const QString& my_current_book_relpath,
+                                              const QString& newbookpath)
 {
-    m_currentdir = QFileInfo(my_current_book_relpath).dir().path();
+    m_currentbkpath = my_current_book_relpath;
+    m_currentdir = QFileInfo(m_currentbkpath).dir().path();
+    m_newbookpath = newbookpath;
+    
     QString result = "";
     if (!m_source.isEmpty()) {
         if (m_output == NULL) {
@@ -328,7 +341,8 @@ QString GumboInterface::perform_link_updates(const QString& newcsslinks)
     return result;
 }
 
-GumboNode * GumboInterface::get_document_node() 
+
+GumboNode * GumboInterface::get_document_node()
 {
     if (!m_source.isEmpty()) {
         if (m_output == NULL) {
@@ -338,8 +352,8 @@ GumboNode * GumboInterface::get_document_node()
     return m_output->document;
 }
 
-GumboNode * GumboInterface::get_root_node()
-{
+
+GumboNode * GumboInterface::get_root_node() {
     if (!m_source.isEmpty()) {
         if (m_output == NULL) {
             parse();
@@ -363,6 +377,7 @@ GumboNode * GumboInterface::get_body_node()
     }
     return nodes.at(0);
 }
+
 
 QString GumboInterface::get_body_contents() 
 {
@@ -471,7 +486,7 @@ GumboNode* GumboInterface::get_node_from_qwebpath(QString webpath)
                 // It also requires document.normalize() to be done to merge adjacent text pieces
                 // but doing so will remove the cursor/highlight if it is on a text node merged away
                 // so restrict this to something same in that same parent element
-	        if (index >= (int)(children->length)) index = children->length - 1;
+                if (index >= (int)(children->length)) index = children->length - 1;
                 if (index < 0) index = 0;
                 next_node = static_cast<GumboNode*>(children->data[index]);
             } else {
@@ -611,6 +626,7 @@ QList<GumboWellFormedError> GumboInterface::error_check()
     return errlist;
 }
 
+
 QList<GumboWellFormedError> GumboInterface::fragment_error_check()
 {
     QList<GumboWellFormedError> errlist;
@@ -632,7 +648,7 @@ QList<GumboWellFormedError> GumboInterface::fragment_error_check()
 
         m_utf8src = m_source.toStdString();
         m_output = gumbo_parse_fragment(&myoptions, m_utf8src.data(), m_utf8src.length(),
-					GUMBO_TAG_BODY, GUMBO_NAMESPACE_HTML);
+                                        GUMBO_TAG_BODY, GUMBO_NAMESPACE_HTML);
     }
     const GumboVector* errors  = &m_output->errors;
     for (unsigned int i=0; i< errors->length; ++i) {
@@ -652,6 +668,7 @@ QList<GumboWellFormedError> GumboInterface::fragment_error_check()
     return errlist;
 }
 
+
 QList<GumboNode*> GumboInterface::get_nodes_with_comments(GumboNode * node)
 {
     QList<GumboNode*> nodes;
@@ -668,6 +685,7 @@ QList<GumboNode*> GumboInterface::get_nodes_with_comments(GumboNode * node)
     }
     return nodes;
 }
+
 
 QList<GumboNode*> GumboInterface::get_element_nodes_with_prefix(GumboNode * node, const std::string& prefix)
 {
@@ -686,6 +704,7 @@ QList<GumboNode*> GumboInterface::get_element_nodes_with_prefix(GumboNode * node
     return nodes;
 }
 
+
 QList<GumboNode*> GumboInterface::get_all_nodes_with_attribute(const QString& attname)
 {
     QList<GumboNode*> nodes;
@@ -701,19 +720,19 @@ QList<GumboNode*> GumboInterface::get_all_nodes_with_attribute(const QString& at
 
 QList<GumboNode*> GumboInterface::get_nodes_with_attribute(GumboNode* node, const char * attname)
 {
-    QList<GumboNode*> nodes;
-    if (node->type != GUMBO_NODE_ELEMENT) {
-        return nodes;
-    }
-    GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, attname);
-    if (attr) {
-        nodes.append(node);
-    }
-    GumboVector* children = &node->v.element.children;
-    for (unsigned int i = 0; i < children->length; ++i) {
-        nodes.append(get_nodes_with_attribute(static_cast<GumboNode*>(children->data[i]), attname));
-    }
-    return nodes;
+  if (node->type != GUMBO_NODE_ELEMENT) {
+    return QList<GumboNode*>();
+  }
+  QList<GumboNode*> nodes;
+  GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, attname);
+  if (attr) {
+      nodes.append(node);
+  }
+  GumboVector* children = &node->v.element.children;
+  for (unsigned int i = 0; i < children->length; ++i) {
+      nodes.append(get_nodes_with_attribute(static_cast<GumboNode*>(children->data[i]), attname));
+  }
+  return nodes;
 }
 
 
@@ -822,25 +841,25 @@ QList<GumboNode*> GumboInterface::get_all_nodes_with_tags(const QList<GumboTag> 
 
 QList<GumboNode*>  GumboInterface::get_nodes_with_tags(GumboNode* node, const QList<GumboTag> & tags) 
 {
-    QList<GumboNode*> nodes;
-    if (node->type != GUMBO_NODE_ELEMENT) {
-        return nodes;
-    }
-    GumboTag tag = node ->v.element.tag;
-    if (tags.contains(tag)) {
-        nodes.append(node);
-    }
-    GumboVector* children = &node->v.element.children;
-    for (unsigned int i = 0; i < children->length; ++i) {
-        nodes.append(get_nodes_with_tags(static_cast<GumboNode*>(children->data[i]), tags));
-    }
-    return nodes;
+  if (node->type != GUMBO_NODE_ELEMENT) {
+    return QList<GumboNode*>();
+  }
+  QList<GumboNode*> nodes;
+  GumboTag tag = node ->v.element.tag;
+  if (tags.contains(tag)) {
+    nodes.append(node);
+  }
+  GumboVector* children = &node->v.element.children;
+  for (unsigned int i = 0; i < children->length; ++i) {
+    nodes.append(get_nodes_with_tags(static_cast<GumboNode*>(children->data[i]), tags));
+  }
+  return nodes;
 }
 
 
 bool GumboInterface::in_set(std::unordered_set<std::string> &s, std::string &key)
 {
-    return s.find(key) != s.end();
+  return s.find(key) != s.end();
 }
 
 
@@ -907,25 +926,42 @@ void GumboInterface::replace_all(std::string &s, const char * s1, const char * s
 
 std::string GumboInterface::update_attribute_value(const std::string &attvalue)
 {
-    std::string result = attvalue; 
-    QString attpath = Utility::URLDecodePath(QString::fromStdString(attvalue));
-    int fragpos = attpath.lastIndexOf(POUND_SIGN);
-    bool has_fragment = fragpos != -1;
-    QString fragment = "";
+    std::string result = attvalue;
+    if (attvalue.find(":") != std::string::npos) return result;
+    bool has_fragment = attvalue.find("#") != std::string::npos;
+    QUrl href(QString::fromStdString(attvalue));
+    QString attpath = href.path();
+    // handle purely local hrefs here as they do not need to be updated at all
+    if (attpath.isEmpty() && has_fragment) return result;
+    QString fragment;
     if (has_fragment) {
-        fragment = attpath.mid(fragpos, -1);
-        attpath = attpath.mid(0, fragpos);
+        fragment = href.fragment();
+    }    
+
+    QString dest_oldbkpath;
+    if (attpath.isEmpty()) {
+        dest_oldbkpath = m_currentbkpath;
+    } else {
+        dest_oldbkpath = Utility::buildBookPath(attpath, m_currentdir);
     }
-    QString search_key = QDir::cleanPath(m_currentdir + FORWARD_SLASH + attpath);
-    QString new_href;
-    if (m_sourceupdates.contains(search_key)) {
-        new_href = m_sourceupdates.value(search_key);
-    }
-    if (!new_href.isEmpty()) {
-        new_href += fragment;
-        new_href = Utility::URLEncodePath(new_href);
+    
+    // note destination may not have moved but we still need to update
+    // the link since we may have moved
+    QString dest_newbkpath = m_sourceupdates.value(dest_oldbkpath, dest_oldbkpath);
+    if (!dest_newbkpath.isEmpty() && !m_newbookpath.isEmpty()) {
+        QString new_path = Utility::buildRelativePath(m_newbookpath, dest_newbkpath);
+        QString new_href(Utility::URLEncodePath(new_path));
+        if (has_fragment) {
+            new_href.append("#");
+            new_href.append(QUrl::toPercentEncoding(fragment));
+        }
+
+        // if empty then internal link to the top (which is best here?)                                
+        if (new_href.isEmpty()) new_href = QFileInfo(dest_newbkpath).fileName();
+        // if (new_href.isEmpty()) new_href="#";                                                          
+
         result =  new_href.toStdString();
-    } 
+    }
     return result;
 }
 
@@ -949,18 +985,25 @@ std::string GumboInterface::update_style_urls(const std::string &source)
             if (mo.captured(i).trimmed().isEmpty()) {
                 continue;
             }
+            if (mo.captured(i).indexOf(":") != -1) continue;
             QString apath = Utility::URLDecodePath(mo.captured(i));
-            QString search_key = QDir::cleanPath(m_currentdir + FORWARD_SLASH + apath);
-            QString new_href;
-            if (m_sourceupdates.contains(search_key)) {
-                new_href = m_sourceupdates.value(search_key);
+            QString dest_oldbkpath;
+            if (apath.isEmpty()) {
+              dest_oldbkpath = m_currentbkpath;
+            } else {
+              dest_oldbkpath = Utility::buildBookPath(apath, m_currentdir);
             }
-            if (!new_href.isEmpty()) {
+            // note destination may not have moved but we still need to update
+            // the link
+            QString dest_newbkpath = m_sourceupdates.value(dest_oldbkpath, dest_oldbkpath);
+            if (!dest_newbkpath.isEmpty() && !m_newbookpath.isEmpty()) {
+                QString new_href = Utility::buildRelativePath(m_newbookpath, dest_newbkpath);
+                if (new_href.isEmpty()) new_href = QFileInfo(dest_newbkpath).fileName();
                 new_href = Utility::URLEncodePath(new_href);
                 result.replace(mo.capturedStart(i), mo.capturedLength(i), new_href);
             }
         }
-        start_index += mo.capturedLength();
+        start_index = mo.capturedEnd();
         mo = reference.match(result, start_index);
     } while (mo.hasMatch());
 
@@ -1566,5 +1609,3 @@ QString GumboInterface::fix_self_closing_tags(const QString &source)
     return newsource;
 }
 #endif
-
-
