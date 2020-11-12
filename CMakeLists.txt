@@ -175,10 +175,6 @@ set( LINUX_DESKTOP_FILE
     platform/linux/freedesktop/pageedit.desktop
     )
 
-set( LINUX_DESKTOP_ICON_FILE
-    icons/app_icon_48.png
-   )
-
 #############################################################################
 
 # Runs UIC on specified files
@@ -340,7 +336,6 @@ if( UNIX AND NOT APPLE )
     # Standard Linux 'make install'
     install( TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR} )
     install( FILES ${LINUX_DESKTOP_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/applications/ )
-    install( FILES ${LINUX_DESKTOP_ICON_FILE} DESTINATION ${SHARE_INSTALL_PREFIX}/share/pixmaps RENAME pageedit.png )
     set( ICON_SIZE 32 48 128 256)
     foreach( SIZE ${ICON_SIZE} )
         install( FILES ${PROJECT_SOURCE_DIR}/icons/app_icon_${SIZE}.png DESTINATION
