@@ -27,6 +27,7 @@ PrivilegesRequired=admin
 PrivilegesRequiredOverridesAllowed=dialog
 OutputBaseFilename={#AppName}-${PAGEEDIT_FULL_VERSION}-Windows${ISS_SETUP_FILENAME_PLATFORM}-Setup
 ;ChangesAssociations=yes
+;SetupLogging=yes
 
 ; "ArchitecturesAllowed=x64" specifies that Setup cannot run on
 ; anything but x64.
@@ -124,8 +125,53 @@ begin
   end;
 end;
 
+function VCinstalled(const regKey: string): Boolean;
+{ Function for Inno Setup Compiler }
+{ Returns True if same or later Microsoft Visual C++ 2015 Redistributable is installed, otherwise False. }
+var
+  major: Cardinal;
+  minor: Cardinal;
+  bld: Cardinal;
+  rbld: Cardinal;
+  installed_ver, min_ver: String;
+
+begin
+  Result := False;
+  { Mimimum version of the VC++ Redistributable needed (currently 14.26.28 and later) }
+  min_ver := '14.26.28000.0';
+  Log('Minimum VC++ 2015-2019 Redist version is: ' + min_ver);
+
+  if RegQueryDWordValue(HKEY_LOCAL_MACHINE, regKey, 'Major', major) then begin
+    if RegQueryDWordValue(HKEY_LOCAL_MACHINE, regKey, 'Minor', minor) then begin
+      if RegQueryDWordValue(HKEY_LOCAL_MACHINE, regKey, 'Bld', bld) then begin
+        if RegQueryDWordValue(HKEY_LOCAL_MACHINE, regKey, 'RBld', rbld) then begin
+            installed_ver := IntToStr(major) + '.' + IntToStr(minor) + '.' + IntToStr(bld) + '.' + IntToStr(rbld);
+            Log('VC++ 2015-2019 Redist version is: ' + installed_ver);
+            { Version info was found. Return true if later or equal to our min_ver redistributable }
+            // Note brackets required because of weird operator precendence
+            //Result := (major >= 14) and (minor >= 23) and (bld >= 27820) and (rbld >= 0)
+            //Log('Installed Version ' + installed_ver + ' >= Minimum Version ' + min_ver + Format(': %d', [IntToStr((CompareVersion(installed_ver, min_ver) >= 0))]));
+            Result := (CompareVersion(installed_ver, min_ver) >= 0)
+        end;
+      end;
+    end;
+  end;
+end;
 
 function NeedsVCRedistInstall: Boolean;
+begin
+  if NOT IsWin64 then
+    { 32-bit OS, 32-bit installer }
+    Result := not (VCinstalled('SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\X86'))
+  else if Is64BitInstallMode then
+    { 64-bit OS, 64-bit installer }
+    Result := not (VCinstalled('SOFTWARE\WOW6432Node\Microsoft\VisualStudio\14.0\VC\Runtimes\x64'))
+  else
+    { 64-bit OS, 32-bit installer }
+    Result := not (VCinstalled('SOFTWARE\WOW6432Node\Microsoft\VisualStudio\14.0\VC\Runtimes\x86'));  
+end;
+
+(* function NeedsVCRedistInstall: Boolean;
 // Return True if VC++ redist included with PageEdit Installer should be installed.
 var
   reg_key, installed_ver, min_ver: String;
@@ -154,7 +200,7 @@ begin
       if R >= 0 then
         Result := False;
     end
- end;
+ end; *)
 
 // Disable ability to install VS runtime in "for current user only" mode
 procedure CurPageChanged(CurPageID: Integer);
