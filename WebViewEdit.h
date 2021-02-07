@@ -135,6 +135,7 @@ public slots:
      bool ExecCommand(const QString &command, const QString &parameter);
      bool QueryCommandState(const QString &command);
      QString GetHoverUrl();
+     void print();
 
 signals:
     /**
@@ -195,7 +196,7 @@ private slots:
 private:
 
 
-
+    void printDocument(QPrinter *printer);
 
 
     /**

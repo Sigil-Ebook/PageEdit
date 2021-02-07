@@ -66,6 +66,7 @@
     <addaction name="actionSaveAs"/>
     <addaction name="actionExit"/>
     <addaction name="actionPreferences"/>
+    <addaction name="actionPrint"/>
     <addaction name="actionAbout"/>
    </widget>
    
@@ -396,6 +397,22 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
+   </property>
+  </action>
+
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="./icons/icons.qrc">
+     <normaloff>:/icons/document-print.svg</normaloff>:/icons/document-print.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Print</string>
+   </property>
+   <property name="toolTip">
+    <string>Print the current Page.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
    </property>
   </action>
 

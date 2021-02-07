@@ -545,6 +545,7 @@ void MainWindow::SetupView()
 
     ui.actionOpen->setEnabled(true);
     ui.actionSave->setEnabled(true);
+    ui.actionPrint->setEnabled(true);
     ui.actionExit->setEnabled(true);
     
     ui.actionUndo->setEnabled(true);
@@ -1977,6 +1978,7 @@ void MainWindow::ConnectSignalsToSlots()
     // File Related
     connect(ui.actionOpen,         SIGNAL(triggered()), this, SLOT(Open()));
     connect(ui.actionSave,         SIGNAL(triggered()), this, SLOT(Save()));
+    connect(ui.actionPrint,        SIGNAL(triggered()), m_WebView, SLOT(print()));
     connect(ui.actionSaveAs,       SIGNAL(triggered()), this, SLOT(SaveAs()));
     connect(ui.actionExit,         SIGNAL(triggered()), this, SLOT(Exit()));
     connect(ui.actionPreferences,  SIGNAL(triggered()), this, SLOT(PreferencesDialog()));
