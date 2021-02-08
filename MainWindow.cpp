@@ -29,6 +29,7 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLabel>
+#include <QCheckBox>
 #include <QToolBar>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QtWebEngineWidgets/QWebEngineSettings>
@@ -116,6 +117,7 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_MediaList(QStringList()),
     m_MediaKind(QStringList()),
     m_MediaBase(QString()),
+    m_skipPrintWarnings(false),
     m_LastPtr(-1)
 {
     ui.setupUi(this);
@@ -1102,6 +1104,7 @@ void MainWindow::moveEvent(QMoveEvent *event)
 void MainWindow::LoadSettings()
 {
     SettingsStore settings;
+    m_skipPrintWarnings = settings.skipPrintWarnings();
     settings.beginGroup(SETTINGS_GROUP);
     // The size of the window and its full screen status
     // Due to the 4.8 bug, we restore its "normal" window size and then maximize
@@ -1194,6 +1197,7 @@ void MainWindow::LoadSettings()
 void MainWindow::SaveSettings()
 {
     SettingsStore settings;
+    settings.setSkipPrintWarnings(m_skipPrintWarnings);
     settings.beginGroup(SETTINGS_GROUP);
     // The size of the window and it's full screen status                                                       
     // This is a workaround for this bug:                                                                       
@@ -1548,6 +1552,36 @@ bool MainWindow::Save()
     }
     if (save_result) m_source = GetSource();
     return save_result;
+}
+
+void MainWindow::printRendered()
+{
+    if (!m_skipPrintWarnings) {
+        QCheckBox *cb = new QCheckBox(tr("Do not show this warning again"), this);
+        QString text = tr("This file will print exactly as you see it rendered.");
+        QString detailed_text = tr("Dark backgrounds and colored text will print exactly as you see them.");
+        detailed_text = detailed_text + " " + tr("Use caution as this can result in a lot of ink being used!");
+        QMessageBox msgbox;
+        msgbox.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
+        msgbox.setModal(true);
+        msgbox.setWindowTitle("PageEdit");
+        msgbox.setText("<h3>" + text + "</h3><br/>");
+        msgbox.setIcon(QMessageBox::Icon::Warning);
+        msgbox.setTextFormat(Qt::RichText);
+
+        if (!detailed_text.isEmpty()) {
+            msgbox.setDetailedText(detailed_text);
+        }
+        msgbox.setStandardButtons(QMessageBox::Close);
+        msgbox.setCheckBox(cb);
+        connect(cb, &QCheckBox::stateChanged, [this](int state) {
+            if (static_cast<Qt::CheckState>(state) == Qt::CheckState::Checked) {
+                m_skipPrintWarnings = true;    
+            }
+        });
+        msgbox.exec();
+    }
+    m_WebView->print();
 }
 
 void MainWindow::Open()
@@ -1978,7 +2012,7 @@ void MainWindow::ConnectSignalsToSlots()
     // File Related
     connect(ui.actionOpen,         SIGNAL(triggered()), this, SLOT(Open()));
     connect(ui.actionSave,         SIGNAL(triggered()), this, SLOT(Save()));
-    connect(ui.actionPrint,        SIGNAL(triggered()), m_WebView, SLOT(print()));
+    connect(ui.actionPrint,        SIGNAL(triggered()), this, SLOT(printRendered()));
     connect(ui.actionSaveAs,       SIGNAL(triggered()), this, SLOT(SaveAs()));
     connect(ui.actionExit,         SIGNAL(triggered()), this, SLOT(Exit()));
     connect(ui.actionPreferences,  SIGNAL(triggered()), this, SLOT(PreferencesDialog()));

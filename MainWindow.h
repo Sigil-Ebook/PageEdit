@@ -157,6 +157,7 @@ public slots:
     void IncreaseIndent();
     void UpdateActionState();
     void ChangeCasing(int casing_mode);
+    void printRendered();
     // void ToggleSpellCheck();
 
     void ApplicationPaletteChanged();
@@ -213,6 +214,7 @@ private:
     bool m_updateActionStatePending;
     QByteArray m_LastWindowSize;
     QString m_LastFolderOpen;
+    bool m_skipPrintWarnings;
     bool m_using_wsprewrap;
     SearchToolbar * m_search;
     QVBoxLayout * m_layout;

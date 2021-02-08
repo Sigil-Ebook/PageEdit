@@ -121,6 +121,8 @@ public:
 
     int useWSPreWrap();
 
+    bool skipPrintWarnings();
+
 public slots:
 
     /**
@@ -177,6 +179,8 @@ public slots:
     void setUsePrettify(int on);
 
     void setUseWSPreWrap(int on);
+
+    void setSkipPrintWarnings(bool skip);
 
 private:
     /**
