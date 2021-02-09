@@ -65,6 +65,10 @@ only_commits:
     - .appveyor.yml
     - installer/PageEdit.iss
     - ci_scripts/
+    - javascript/
+    - '"**/*.cpp'
+    - '"**/*.h'
+    - '"**/*.ui'
 
 for:
   # Windows

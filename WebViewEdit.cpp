@@ -453,6 +453,7 @@ void WebViewEdit::print()
 {
     QPrinter printer(QPrinter::HighResolution);
     QPrintDialog dialog(&printer, m_ViewWebPage->view());
+    // dialog.setOptions(QAbstractPrintDialog::None);
     if (dialog.exec() != QDialog::Accepted)
         return;
     printDocument(&printer);

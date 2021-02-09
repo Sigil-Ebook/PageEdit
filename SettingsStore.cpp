@@ -351,6 +351,7 @@ void SettingsStore::clearAppearanceSettings()
     remove(KEY_SPECIAL_CHARACTER_FONT_FAMILY);
     remove(KEY_SPECIAL_CHARACTER_FONT_SIZE);
     remove(KEY_MAIN_MENU_ICON_SIZE);
+    remove(KEY_SKIP_PRINT_WARNINGS);
 }
 
 void SettingsStore::clearSettingsGroup()
