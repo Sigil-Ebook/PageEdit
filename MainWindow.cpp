@@ -1579,12 +1579,9 @@ void MainWindow::printRendered()
         });
         msgbox.exec();
     }
-    // m_WebView->print();
-    qDebug() << m_WebView->url();
     WebViewPrinter wvprint;
     wvprint.setPage(m_WebView->url());
-    //wvprint.printPreview();
-    //wvprint.printPreview();
+    wvprint.printPreview();
 }
 
 void MainWindow::Open()

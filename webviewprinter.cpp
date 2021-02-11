@@ -46,10 +46,8 @@ void WebViewPrinter::setPage(QUrl url)
 {
     Q_ASSERT(!m_page);
     m_page->setUrl(url);
-    //m_view->setAttribute(Qt::WA_DontShowOnScreen);
     m_view->setPage(m_page);
-    printPreview();
-    //connect(m_page, &QWebEnginePage::loadFinished, this, &WebViewPrinter::printPreview);
+    connect(m_page, &QWebEnginePage::printRequested, this, &WebViewPrinter::printPreview);
 }
 
 void WebViewPrinter::print()
@@ -94,7 +92,7 @@ void WebViewPrinter::printPreview()
     QString path = QDir(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)).filePath(filename);
     QPrinter printer;
     printer.setOutputFileName(path);
-    printer.setOutputFormat(QPrinter::NativeFormat);
+    //printer.setOutputFormat(QPrinter::NativeFormat);
     QPrintPreviewDialog preview(&printer, m_page->view());
     connect(&preview, &QPrintPreviewDialog::paintRequested,
             this, &WebViewPrinter::printDocument);
