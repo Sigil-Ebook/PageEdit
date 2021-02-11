@@ -46,7 +46,7 @@ void WebViewPrinter::setPage(QUrl url)
 {
     Q_ASSERT(!m_page);
     m_page->setUrl(url);
-    m_view->setAttribute(Qt::WA_DontShowOnScreen);
+    //m_view->setAttribute(Qt::WA_DontShowOnScreen);
     m_view->setPage(m_page);
     printPreview();
     //connect(m_page, &QWebEnginePage::loadFinished, this, &WebViewPrinter::printPreview);
