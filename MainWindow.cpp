@@ -62,6 +62,7 @@
 #include "OPFReader.h"
 #include "MainApplication.h"
 #include "MainWindow.h"
+#include "webviewprinter.h"
 
 #define DBG if(1)
 
@@ -1568,10 +1569,7 @@ void MainWindow::printRendered()
         msgbox.setText("<h3>" + text + "</h3><br/>");
         msgbox.setIcon(QMessageBox::Icon::Warning);
         msgbox.setTextFormat(Qt::RichText);
-
-        if (!detailed_text.isEmpty()) {
-            msgbox.setDetailedText(detailed_text);
-        }
+        msgbox.setDetailedText(detailed_text);
         msgbox.setStandardButtons(QMessageBox::Close);
         msgbox.setCheckBox(cb);
         connect(cb, &QCheckBox::stateChanged, [this](int state) {
@@ -1581,7 +1579,12 @@ void MainWindow::printRendered()
         });
         msgbox.exec();
     }
-    m_WebView->print();
+    // m_WebView->print();
+    qDebug() << m_WebView->url();
+    WebViewPrinter wvprint;
+    wvprint.setPage(m_WebView->url());
+    //wvprint.printPreview();
+    //wvprint.printPreview();
 }
 
 void MainWindow::Open()
