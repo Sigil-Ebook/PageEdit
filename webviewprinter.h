@@ -39,7 +39,7 @@ public:
     ~WebViewPrinter();
 
     void setPage(QUrl url);
-    void run();
+    //void run();
 
 private slots:
     void printPage();

@@ -35,6 +35,8 @@ WebViewPrinter::WebViewPrinter(QObject *parent)
     , m_page(new QWebEnginePage(this))
     , m_view(new QWebEngineView())
 {
+    connect(m_view, &QWebEngineView::loadFinished, this, &WebViewPrinter::loadComplete);
+    connect(m_page, &QWebEnginePage::pdfPrintingFinished, this, &WebViewPrinter::pdfComplete);
 
 }
 
@@ -51,20 +53,22 @@ WebViewPrinter::~WebViewPrinter()
 void WebViewPrinter::setPage(QUrl url)
 {
     m_url = url;
-    connect(m_view, &QWebEngineView::loadFinished, this, &WebViewPrinter::loadComplete);
-    connect(m_page, &QWebEnginePage::pdfPrintingFinished, this, &WebViewPrinter::pdfComplete);
     qDebug() << "setPage " << url;
+    m_page->setUrl(m_url);
+    //m_view->setAttribute(Qt::WA_DontShowOnScreen);
+    m_view->setPage(m_page);
+    //m_view->show();
 
 }
 
-void WebViewPrinter::run()
+/*void WebViewPrinter::run()
 {
     qDebug() << "run";
     m_page->setUrl(m_url);
     //m_view->setAttribute(Qt::WA_DontShowOnScreen);
     m_view->setPage(m_page);
     //m_view->show();
-}
+}*/
 
 void WebViewPrinter::printPage()
 {

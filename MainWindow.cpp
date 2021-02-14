@@ -62,7 +62,6 @@
 #include "OPFReader.h"
 #include "MainApplication.h"
 #include "MainWindow.h"
-#include "webviewprinter.h"
 
 #define DBG if(1)
 
@@ -119,6 +118,7 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_MediaKind(QStringList()),
     m_MediaBase(QString()),
     m_skipPrintWarnings(false),
+    m_WebViewPrinter(new WebViewPrinter(this)),
     m_LastPtr(-1)
 {
     ui.setupUi(this);
@@ -1579,12 +1579,8 @@ void MainWindow::printRendered()
         });
         msgbox.exec();
     }
-    WebViewPrinter wvprint;
-    // wvprint->loadUrl(m_WebView->url());
-    wvprint.setPage(m_WebView->url());
-    wvprint.run();
-    //wvprint.setPage(m_WebView->url());
-    //wvprint.print();
+    m_WebViewPrinter.setPage(m_WebView->url());
+    //m_WebViewPrinter.run();
 }
 
 void MainWindow::Open()
