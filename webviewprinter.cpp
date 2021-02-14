@@ -71,7 +71,7 @@ void WebViewPrinter::printPage()
     qDebug() << "printToPdf";
     qDebug() << m_page->url();
     QFileInfo fi = QFileInfo(m_page->url().fileName());
-    qDebug() << fi;
+    qDebug() << fi.fileName();
     QString filename = fi.baseName() + ".pdf";
     QString path = QDir(QStandardPaths::writableLocation(QStandardPaths::TempLocation)).filePath(filename);
     qDebug() << path;
