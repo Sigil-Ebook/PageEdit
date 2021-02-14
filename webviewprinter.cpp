@@ -22,80 +22,77 @@
 
 
 #include "webviewprinter.h"
-#include <QEventLoop>
-#include <QPrintDialog>
-#include <QPrinter>
-#include <QPainter>
 #include <QFileInfo>
 #include <QDir>
-#include <QPrintPreviewDialog>
+#include <QDesktopServices>
+#include <QStandardPaths>
 #include <QWebEngineView>
 #include <QWebEnginePage>
-#include <QStandardPaths>
 #include <QDebug>
 
 WebViewPrinter::WebViewPrinter(QObject *parent)
-    : QObject(parent),
-      m_view(new QWebEngineView()),
-      m_page(new QWebEnginePage(this))
+    : QObject(parent)
+    , m_page(new QWebEnginePage(this))
+    , m_view(new QWebEngineView())
 {
 
+}
+
+WebViewPrinter::~WebViewPrinter()
+{
+    if (m_page != NULL) {
+        delete m_page;
+    }
+    if (m_view != NULL) {
+        delete m_view;
+    }
 }
 
 void WebViewPrinter::setPage(QUrl url)
 {
-    Q_ASSERT(!m_page);
-    m_page->setUrl(url);
+    m_url = url;
+    connect(m_view, &QWebEngineView::loadFinished, this, &WebViewPrinter::loadComplete);
+    connect(m_page, &QWebEnginePage::pdfPrintingFinished, this, &WebViewPrinter::pdfComplete);
+    qDebug() << "setPage " << url;
+
+}
+
+void WebViewPrinter::run()
+{
+    qDebug() << "run";
+    m_page->setUrl(m_url);
+    //m_view->setAttribute(Qt::WA_DontShowOnScreen);
     m_view->setPage(m_page);
-    connect(m_page, &QWebEnginePage::printRequested, this, &WebViewPrinter::printPreview);
+    //m_view->show();
 }
 
-void WebViewPrinter::print()
+void WebViewPrinter::printPage()
 {
-    QPrinter printer(QPrinter::HighResolution);
-    QPrintDialog dialog(&printer, m_view);
-    if (dialog.exec() != QDialog::Accepted)
-        return;
-    printDocument(&printer);
-}
-
-void WebViewPrinter::printDocument(QPrinter *printer)
-{
-    QEventLoop loop;
-    bool result;
-    auto printPreview = [&](bool success) { result = success; loop.quit(); };
-    m_page->print(printer, std::move(printPreview));
-    loop.exec();
-    if (!result) {
-        QPainter painter;
-        if (painter.begin(printer)) {
-            QFont font = painter.font();
-            font.setPixelSize(20);
-            painter.setFont(font);
-            painter.drawText(QPointF(10,25),
-                             QStringLiteral("Could not generate print preview."));
-
-            painter.end();
-        }
-    }
-}
-
-void WebViewPrinter::printPreview()
-{
-    if (!m_page)
-        return;
-    if (m_inPrintPreview)
-        return;
-    m_inPrintPreview = true;
+    qDebug() << "printToPdf";
+    qDebug() << m_page->url();
     QFileInfo fi = QFileInfo(m_page->url().fileName());
+    qDebug() << fi;
     QString filename = fi.baseName() + ".pdf";
-    QString path = QDir(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)).filePath(filename);
-    QPrinter printer;
-    printer.setOutputFileName(path);
-    //printer.setOutputFormat(QPrinter::NativeFormat);
-    QPrintPreviewDialog preview(&printer, m_page->view());
-    connect(&preview, &QPrintPreviewDialog::paintRequested,
-            this, &WebViewPrinter::printDocument);
-    preview.exec();
-    m_inPrintPreview = false;
+    QString path = QDir(QStandardPaths::writableLocation(QStandardPaths::TempLocation)).filePath(filename);
+    qDebug() << path;
+    m_page->printToPdf(path);
+}
+
+void WebViewPrinter::loadComplete(bool ok)
+{
+    if (!ok) {
+        qDebug() << "loadComplete: failed to load page";
+    }
+    qDebug() << "loadComplete: page loaded ok";
+    WebViewPrinter::printPage();
+}
+
+void WebViewPrinter::pdfComplete(const QString &filePath, bool success)
+{
+    qDebug() << "pdfPrintingFinished";
+    if (!success) {
+         qDebug() << "Failed to write pdf";
+    }
+    qDebug() << filePath;
+    QDesktopServices::openUrl(QUrl::fromLocalFile(filePath));
 }

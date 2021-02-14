@@ -1580,8 +1580,11 @@ void MainWindow::printRendered()
         msgbox.exec();
     }
     WebViewPrinter wvprint;
+    // wvprint->loadUrl(m_WebView->url());
     wvprint.setPage(m_WebView->url());
-    wvprint.printPreview();
+    wvprint.run();
+    //wvprint.setPage(m_WebView->url());
+    //wvprint.print();
 }
 
 void MainWindow::Open()

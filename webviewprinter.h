@@ -25,28 +25,31 @@
 #define WEBVIEWPRINTER_H
 
 #include <QObject>
+#include <QUrl>
 
-class QPainter;
-class QPrinter;
 class QWebEnginePage;
 class QWebEngineView;
+//class QUrl;
 
 class WebViewPrinter: public QObject
 {
     Q_OBJECT
 public:
     WebViewPrinter(QObject *parent = nullptr);
-    void setPage(QUrl url);
+    ~WebViewPrinter();
 
-public slots:
-    void print();
-    void printPreview();
-    void printDocument(QPrinter *printer);
+    void setPage(QUrl url);
+    void run();
+
+private slots:
+    void printPage();
+    void loadComplete(bool ok);
+    void pdfComplete(const QString &filePath, bool success);
 
 private:
-    QWebEngineView *m_view = nullptr;
-    QWebEnginePage *m_page = nullptr;
-    bool m_inPrintPreview = false;
+    QWebEnginePage *m_page;
+    QWebEngineView *m_view;
+    QUrl m_url;
 };
 
 #endif // WEBVIEWPRINTER_H
