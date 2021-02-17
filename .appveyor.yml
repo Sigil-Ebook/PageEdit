@@ -66,9 +66,9 @@ only_commits:
     - installer/PageEdit.iss
     - ci_scripts/
     - javascript/
-    - '"**/*.cpp'
-    - '"**/*.h'
-    - '"**/*.ui'
+    - '**/*.cpp'
+    - '**/*.h'
+    - '**/*.ui'
 
 for:
   # Windows
