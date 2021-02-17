@@ -28,8 +28,6 @@
 #include <QDir>
 #include <QMenu>
 #include <QContextMenuEvent>
-#include <QPrinter>
-#include <QPrintDialog>
 #include <QtWebEngineWidgets/QWebEngineSettings>
 #include <QtWebEngineWidgets/QWebEngineProfile>
 #include <QtWebEngineWidgets/QWebEnginePage>
@@ -446,38 +444,6 @@ void WebViewEdit::ApplyCaseChangeToSelection(const Utility::Casing &casing)
           SelectPreviousChar();
       }
       return;
-}
-
-
-void WebViewEdit::print()
-{
-    QPrinter printer(QPrinter::HighResolution);
-    QPrintDialog dialog(&printer, m_ViewWebPage->view());
-    // dialog.setOptions(QAbstractPrintDialog::None);
-    if (dialog.exec() != QDialog::Accepted)
-        return;
-    printDocument(&printer);
-}
-
-void WebViewEdit::printDocument(QPrinter *printer)
-{
-    QEventLoop loop;
-    bool result;
-    auto printCallBack = [&](bool success) { result = success; loop.quit(); };
-    m_ViewWebPage->print(printer, std::move(printCallBack));
-    loop.exec();
-    if (!result) {
-        QPainter painter;
-        if (painter.begin(printer)) {
-            QFont font = painter.font();
-            font.setPixelSize(20);
-            painter.setFont(font);
-            painter.drawText(QPointF(10,25),
-                             QStringLiteral("Could not generate print preview."));
-
-            painter.end();
-        }
-    }
 }
 
 void WebViewEdit::PasteText(const QString &text)

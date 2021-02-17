@@ -229,7 +229,7 @@ private:
     QString m_MediaBase;
     QString m_SandBoxPath;
     bool m_skipPrintWarnings;
-    WebViewPrinter m_WebViewPrinter;
+    WebViewPrinter *m_WebViewPrinter;
 
     QList<ElementIndex> m_LastLocation;
     int m_LastPtr;

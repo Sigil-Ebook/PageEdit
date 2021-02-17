@@ -1559,9 +1559,11 @@ void MainWindow::printRendered()
 {
     if (!m_skipPrintWarnings) {
         QCheckBox *cb = new QCheckBox(tr("Do not show this warning again"), this);
-        QString text = tr("This file will print exactly as you see it rendered.");
-        QString detailed_text = tr("Dark backgrounds and colored text will print exactly as you see them.");
+        QString text = tr("This file may not print the way you expect it to.");
+        QString detailed_text = tr("Dark backgrounds and colored text applied with an EPUB's CSS may print.");
         detailed_text = detailed_text + " " + tr("Use caution as this can result in a lot of ink being used!");
+        detailed_text = detailed_text + " " + tr("Use the following Print Preview to see how this file will print.");
+        detailed_text = detailed_text + " " + tr("Check the box if you don't wish to see this warning in the future.");
         QMessageBox msgbox;
         msgbox.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
         msgbox.setModal(true);
@@ -1579,8 +1581,8 @@ void MainWindow::printRendered()
         });
         msgbox.exec();
     }
-    m_WebViewPrinter.setPage(m_WebView->url());
-    //m_WebViewPrinter.run();
+
+    m_WebViewPrinter->setPage(m_WebView->url());
 }
 
 void MainWindow::Open()
