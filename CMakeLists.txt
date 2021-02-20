@@ -99,6 +99,7 @@ set( SOURCE_FILES
     HTMLEncodingResolver.cpp
     OPFReader.cpp
     PEDarkStyle.cpp
+    webviewprinter.cpp
     )
 
 set( HEADER_FILES
@@ -133,6 +134,7 @@ set( HEADER_FILES
     HTMLEncodingResolver.h
     OPFReader.h
     PEDarkStyle.h
+    webviewprinter.h
     )
 
 set( FORM_FILES

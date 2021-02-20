@@ -36,6 +36,7 @@
 #include <Inspector.h>
 
 #include "ElementIndex.h"
+#include "webviewprinter.h"
 
 class WebViewEdit;
 class Inspector;
@@ -214,7 +215,6 @@ private:
     bool m_updateActionStatePending;
     QByteArray m_LastWindowSize;
     QString m_LastFolderOpen;
-    bool m_skipPrintWarnings;
     bool m_using_wsprewrap;
     SearchToolbar * m_search;
     QVBoxLayout * m_layout;
@@ -228,6 +228,9 @@ private:
     QStringList m_MediaKind;
     QString m_MediaBase;
     QString m_SandBoxPath;
+    bool m_skipPrintWarnings;
+    bool m_skipPrintPreview;
+    WebViewPrinter *m_WebViewPrinter;
 
     QList<ElementIndex> m_LastLocation;
     int m_LastPtr;

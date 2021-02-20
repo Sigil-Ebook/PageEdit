@@ -118,6 +118,8 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     m_MediaKind(QStringList()),
     m_MediaBase(QString()),
     m_skipPrintWarnings(false),
+    m_skipPrintPreview(false),
+    m_WebViewPrinter(new WebViewPrinter(this)),
     m_LastPtr(-1)
 {
     ui.setupUi(this);
@@ -1105,6 +1107,7 @@ void MainWindow::LoadSettings()
 {
     SettingsStore settings;
     m_skipPrintWarnings = settings.skipPrintWarnings();
+    m_skipPrintPreview = settings.skipPrintPreview();
     settings.beginGroup(SETTINGS_GROUP);
     // The size of the window and its full screen status
     // Due to the 4.8 bug, we restore its "normal" window size and then maximize
@@ -1198,6 +1201,7 @@ void MainWindow::SaveSettings()
 {
     SettingsStore settings;
     settings.setSkipPrintWarnings(m_skipPrintWarnings);
+    settings.setSkipPrintPreview(m_skipPrintPreview);
     settings.beginGroup(SETTINGS_GROUP);
     // The size of the window and it's full screen status                                                       
     // This is a workaround for this bug:                                                                       
@@ -1556,11 +1560,18 @@ bool MainWindow::Save()
 
 void MainWindow::printRendered()
 {
+    // Refresh skipflags from Prefs
+    SettingsStore settings;
+    m_skipPrintWarnings = settings.skipPrintWarnings();
+    m_skipPrintPreview = settings.skipPrintPreview();
+
     if (!m_skipPrintWarnings) {
         QCheckBox *cb = new QCheckBox(tr("Do not show this warning again"), this);
-        QString text = tr("This file will print exactly as you see it rendered.");
-        QString detailed_text = tr("Dark backgrounds and colored text will print exactly as you see them.");
+        QString text = tr("This file may not print the way you expect it to.");
+        QString detailed_text = tr("Dark backgrounds and colored text applied with an EPUB's CSS will print.");
         detailed_text = detailed_text + " " + tr("Use caution as this can result in a lot of ink being used!");
+        detailed_text = detailed_text + " " + tr("Use the following Print Preview to see how this file will print.");
+        detailed_text = detailed_text + " " + tr("Check the box if you don't wish to see this warning in the future.");
         QMessageBox msgbox;
         msgbox.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
         msgbox.setModal(true);
@@ -1568,10 +1579,7 @@ void MainWindow::printRendered()
         msgbox.setText("<h3>" + text + "</h3><br/>");
         msgbox.setIcon(QMessageBox::Icon::Warning);
         msgbox.setTextFormat(Qt::RichText);
-
-        if (!detailed_text.isEmpty()) {
-            msgbox.setDetailedText(detailed_text);
-        }
+        msgbox.setDetailedText(detailed_text);
         msgbox.setStandardButtons(QMessageBox::Close);
         msgbox.setCheckBox(cb);
         connect(cb, &QCheckBox::stateChanged, [this](int state) {
@@ -1581,7 +1589,9 @@ void MainWindow::printRendered()
         });
         msgbox.exec();
     }
-    m_WebView->print();
+    settings.setSkipPrintWarnings(m_skipPrintWarnings);
+
+    m_WebViewPrinter->setPage(m_WebView->url(), m_skipPrintPreview);
 }
 
 void MainWindow::Open()

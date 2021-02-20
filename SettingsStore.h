@@ -123,6 +123,8 @@ public:
 
     bool skipPrintWarnings();
 
+    bool skipPrintPreview();
+
 public slots:
 
     /**
@@ -181,6 +183,8 @@ public slots:
     void setUseWSPreWrap(int on);
 
     void setSkipPrintWarnings(bool skip);
+
+    void setSkipPrintPreview(bool skip);
 
 private:
     /**

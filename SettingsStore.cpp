@@ -59,6 +59,7 @@ static QString KEY_REMOTE_ON = SETTINGS_GROUP + "/" + "remote_on";
 static QString KEY_USE_PRETTIFY = SETTINGS_GROUP + "/" + "use_prettify";
 static QString KEY_USE_WSPREWRAP = SETTINGS_GROUP + "/" + "use_white_space_pre_wrap";
 static QString KEY_SKIP_PRINT_WARNINGS = SETTINGS_GROUP + "/" + "skipprintwarnings";
+static QString KEY_SKIP_PRINT_PREVIEW = SETTINGS_GROUP + "/" + "skipprintpreview";
 
 
 SettingsStore::SettingsStore()
@@ -210,6 +211,12 @@ bool SettingsStore::skipPrintWarnings()
   return value(KEY_SKIP_PRINT_WARNINGS, false).toBool();
 }
 
+bool SettingsStore::skipPrintPreview()
+{
+  clearSettingsGroup();
+  return value(KEY_SKIP_PRINT_PREVIEW, false).toBool();
+}
+
 void SettingsStore::setUILanguage(const QString &language_code)
 {
     clearSettingsGroup();
@@ -339,6 +346,12 @@ void SettingsStore::setSkipPrintWarnings(bool skip)
 {
   clearSettingsGroup();
   return setValue(KEY_SKIP_PRINT_WARNINGS, skip);
+}
+
+void SettingsStore::setSkipPrintPreview(bool skip)
+{
+  clearSettingsGroup();
+  return setValue(KEY_SKIP_PRINT_PREVIEW, skip);
 }
 
 void SettingsStore::clearAppearanceSettings()
