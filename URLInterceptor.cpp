@@ -1,6 +1,6 @@
 /************************************************************************
  **
- **  Copyright (C) 2020 Kevin B. Hendricks, Stratford, Ontario, Canada
+ **  Copyright (C) 2020-2021 Kevin B. Hendricks, Stratford, Ontario, Canada
  **
  **  This file is part of PageEdit.
  **
@@ -20,6 +20,8 @@
  *************************************************************************/
 #include <QString>
 #include <QUrl>
+#include <QApplication>
+#include <QWidgetList>
 #include <QDebug>
 
 #include "Utility.h"
@@ -44,6 +46,7 @@ void URLInterceptor::interceptRequest(QWebEngineUrlRequestInfo &info)
     qDebug() << "request" << info.requestUrl();
     qDebug() << "navtype: " << info.navigationType();
     qDebug() << "restype: " << info.resourceType();
+    qDebug() << "ActiveWindow: " << qApp->activeWindow();
 #endif
 
     if (info.requestMethod() != "GET") {
@@ -53,19 +56,39 @@ void URLInterceptor::interceptRequest(QWebEngineUrlRequestInfo &info)
     }
     
     QUrl destination(info.requestUrl());
+    QUrl sourceurl(info.firstPartyUrl());
+
+    // Finally let the navigation type determine what to verify against:
+    // Use firstPartyURL when NavigationTypeLink or NavigationTypeOther (ie. a true source url)
+    // Otherwise if we Typed it in it is from us
+    if (info.navigationType() == QWebEngineUrlRequestInfo::NavigationTypeTyped) {
+        sourceurl = destination;
+    }
 
     // verify all url file schemes before allowing
     if (destination.scheme() == "file") {
         QString bookfolder;
-        QString usercssfolder;
-        MainWindow * mainwin = qobject_cast<MainWindow*>(Utility::GetMainWindow());
-        if (mainwin) {
-            bookfolder = mainwin->GetSandBoxPath();
-            usercssfolder = Utility::DefinePrefsDir() + "/";
+        QString usercssfolder = Utility::DefinePrefsDir() + "/";;
+        QString sourcefolder = sourceurl.toLocalFile();
+        // it is possible for multiple main windows to exist
+        const QWidgetList topwidgets = qApp->topLevelWidgets();
+        foreach(QWidget* widget, topwidgets) {
+            MainWindow * mw = qobject_cast<MainWindow *>(widget);
+            if (mw) {
+                QString sandbox = mw->GetSandBoxPath();
+                if (!sandbox.isEmpty() && sourcefolder.startsWith(sandbox)) {
+                    // found the correct main window
+                    bookfolder = sandbox;
 #if INTERCEPTDEBUG
-            qDebug() << "book: " << bookfolder;
-            qDebug() << "usercss: " << usercssfolder;
+                    qDebug() << "mainwin: " <<  mw;
+                    qDebug() << "book: " << bookfolder;
+                    qDebug() << "usercss: " << usercssfolder;
+                    qDebug() << "party: " << info.firstPartyUrl();
+                    qDebug() << "source: " << sourcefolder;
 #endif
+                    break;
+                }
+            }
         }
         // if can not determine book folder block it
         if (bookfolder.isEmpty()) {
@@ -73,13 +96,13 @@ void URLInterceptor::interceptRequest(QWebEngineUrlRequestInfo &info)
             qDebug() << "Error: URLInterceptor can not determine book folder so all file: requests blocked";
             return;
         }
-        // path must be inside of bookfolder, Nore it is legal for it not to exist
+        // path must be inside of bookfolder, Note it is legal for it not to exist
         QString destpath = destination.toLocalFile();
         if (destpath.startsWith(bookfolder)) {
             info.block(false);
             return;
         }
-        // or path must be inside the Sigil user's preferences directory
+        // or path must be inside the PageEdit's user preferences directory
         if (destpath.startsWith(usercssfolder)) {
             info.block(false);
             return;
