@@ -63,7 +63,7 @@
 #include "MainApplication.h"
 #include "MainWindow.h"
 
-#define DBG if(1)
+#define DBG if(0)
 
 static const QString SETTINGS_GROUP = "mainwindow";
 

@@ -1,4 +1,3 @@
-
 /****************************************************************************
 **
 **  Copyright (C) 2021  Doug Massay
@@ -35,7 +34,7 @@
 #include <QStandardPaths>
 #include <QDebug>
 
-#define DBG if(1)
+#define DBG if(0)
 
 WebViewPrinter::WebViewPrinter(QObject *parent)
     : QObject(parent)
