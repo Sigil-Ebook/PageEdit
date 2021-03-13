@@ -100,18 +100,18 @@ void WebViewPrinter::printDocument(QPrinter *printer)
 {
     QEventLoop loop;
     bool result;
-    auto printPreview = [&](bool success) { result = success; loop.quit(); };
-    m_view->page()->print(printer, std::move(printPreview));
+    auto printCallback = [&](bool success) { result = success; loop.quit(); };
+    m_view->page()->print(printer, std::move(printCallback));
     loop.exec();
     if (!result) {
-        DBG qDebug() << "Could not generate print preview.";
+        DBG qDebug() << "Could not print document.";
         QPainter painter;
         if (painter.begin(printer)) {
             QFont font = painter.font();
             font.setPixelSize(20);
             painter.setFont(font);
             painter.drawText(QPointF(10,25),
-                             QStringLiteral("Could not generate print preview."));
+                             QStringLiteral("Could not print document."));
 
             painter.end();
         }

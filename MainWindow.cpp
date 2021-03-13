@@ -1560,6 +1560,7 @@ bool MainWindow::Save()
 
 void MainWindow::printRendered()
 {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
     // Refresh skipflags from Prefs
     SettingsStore settings;
     m_skipPrintWarnings = settings.skipPrintWarnings();
@@ -1592,6 +1593,18 @@ void MainWindow::printRendered()
     settings.setSkipPrintWarnings(m_skipPrintWarnings);
 
     m_WebViewPrinter->setPage(m_WebView->url(), m_skipPrintPreview);
+#else
+    QMessageBox msgbox;
+    QString text = tr("Feature not available before Qt5.12.x");
+    msgbox.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
+    msgbox.setModal(true);
+    msgbox.setWindowTitle("PageEdit");
+    msgbox.setText("<h3>" + text + "</h3><br/>");
+    msgbox.setIcon(QMessageBox::Icon::Warning);
+    msgbox.setStandardButtons(QMessageBox::Close);
+    msgbox.exec();
+#endif
+
 }
 
 void MainWindow::Open()
