@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="da_DK" version="2.1">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Utseende</translation>
+        <translation>Udseende</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="25"/>
@@ -15,32 +15,32 @@
         <location filename="../PAppearanceWidget.ui" line="31"/>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Fonts:</source>
-        <translation>Teckensnitt:</translation>
+        <translation>Skrifttyper:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>Om inget teckensnitt anges i CSS för din sida, kommer följande teckensnitt att användas för att visa inom PageEdit. Dessa teckensnitt kommer inte att användas i din faktiska e-bok.</translation>
+        <translation>Er ingen skrifttyper angivet i den tilhørende CSS-fil, vil følgende skrifttype blive brugt til at vise teksten i &apos;PageEdit&apos;. Skrifterne vil ikke blive anvendt i den endelige bog.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation>Standard teckenstorlek ska användas för PageEdit
-om ingen teckenstorlek anges i din CSS</translation>
+        <translation>Standardskriftstørrelse, der skal bruges til PageEdit
+hvis der ikke er angivet nogen skriftstørrelse i CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
         <location filename="../PAppearanceWidget.ui" line="323"/>
         <source>Font Size:</source>
-        <translation>Teckenstorlek:</translation>
+        <translation>Skriftstørrelse:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation>Standardteckensnittsfamilj ska användas för PageEdit
-om ingen teckensnittsfamilj anges i din CSS</translation>
+        <translation>Standardskrifttypefamilie, der skal bruges til PageEdit
+hvis der ikke er angivet nogen skrifttypefamilie i CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
@@ -51,8 +51,8 @@ om ingen teckensnittsfamilj anges i din CSS</translation>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation>Standardteckensnittsfamilj ska användas för PageEdit
-om en serif-teckensnittsfamilj anges i din CSS</translation>
+        <translation>Standardskrifttypefamilie, der skal bruges til PageEdit
+hvis der er angivet en serif-skrifttypefamilie i CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
@@ -63,8 +63,8 @@ om en serif-teckensnittsfamilj anges i din CSS</translation>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation>Standardteckensnittsfamilj ska användas för PageEdit
-om en sans-serif-teckensnittsfamilj anges i din CSS</translation>
+        <translation>Standardskrifttypefamilie, der skal bruges til PageEdit
+hvis der er angivet en sans-serif-skrifttypefamilie i CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
@@ -74,125 +74,125 @@ om en sans-serif-teckensnittsfamilj anges i din CSS</translation>
     <message>
         <location filename="../PAppearanceWidget.ui" line="156"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation>Gör att PageEdit simulera ett mörkt utseende i mörkt läge</translation>
+        <translation>Lad PageEdit simulere mørkt udseende i mørk tilstand</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="181"/>
         <source>Main UI</source>
-        <translation>Huvudanvändargränssnitt</translation>
+        <translation>Primær UI</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="187"/>
         <source>Main Menu Icon Size:</source>
-        <translation>Ikonstorlek i huvudmeny:</translation>
+        <translation>Størrelse på hovedmenuikon:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="193"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Justera storleken på ikonerna i huvudmenyn.</translation>
+        <translation>Tilpas størrelsen på ikoner i hovedmenuen.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="231"/>
         <source>High DPI Setting:</source>
-        <translation>Hög DPI-inställning:</translation>
+        <translation>Indstillinger højkvalitetsopløsning:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="240"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation>(Kräver att PageEdit startas om)</translation>
+        <translation>(Kræver genstart af PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>UI Font:</source>
-        <translation>Teckensnitt för användargränsnittet:</translation>
+        <translation>UI skrifttype:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="279"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation>Ändra teckensnittet som används av PageEdit menyer, knappar, o.s.v...</translation>
+        <translation>Skift skrifttype for PageEdits menuer, knapper osv. …</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="282"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation>Ändra teckensnitt (kräver att PageEdit startas om)</translation>
+        <translation>Skift skrifttype (Kræver genstart af PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="306"/>
         <source>Insert Special Characters:</source>
-        <translation>Infoga specialtecken:</translation>
+        <translation>Indsæt specialtegn:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="320"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Teckenstorlek som ska användas i fönstret Infoga specialtecken</translation>
+        <translation>Skriftstørrelse, der skal anvendes ved Indsæt specialtegnsvinduet</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="353"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Teckensnittsfamilj som ska användas i fönstret Infoga specialtecken</translation>
+        <translation>Skrifttype, der skal anvendes ved Indsæt specialtegnsvinduet</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="356"/>
         <source>Standard Font:</source>
-        <translation>Standard teckensnitt:</translation>
+        <translation>Standardskrifttype:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="423"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Återställ alla teckensnitt och färger till standardvärdena</translation>
+        <translation>Nulstil alle skrifttyper og farver til standardværdierne</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="426"/>
         <source>Reset All</source>
-        <translation>Återställ alla</translation>
+        <translation>Nulstil alt</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect</source>
-        <translation>Upptäck</translation>
+        <translation>Undersøg</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>On</source>
-        <translation>På</translation>
+        <translation>Valgt</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Off</source>
-        <translation>Av</translation>
+        <translation>Fra</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect whether any high dpi scaling should take place.</source>
-        <translation>Upptäck om någon hög DPI-skalning ska ske.</translation>
+        <translation>Undersøg om der skal foretages optimering af høj opløsninger.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="51"/>
         <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation>Använder mot alla Qt-miljövariabler som är inställda på att styra högt DPI-beteende.</translation>
+        <translation>Brug alle Qt-miljøvariabler, som er sat til at kontrollere High-DPI opførsel.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation>Slår på hög DPI-skalning och ignorerar alla Qt-miljövariabler</translation>
+        <translation>Brug High-DPI skalering og ignorer Qt-miljøvariabler</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>that are set controlling high dpi behavior.</source>
-        <translation>som är inställda styr hög DPI-beteende.</translation>
+        <translation>som er sat til at styre High-DPI opførsel.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation>Stänger av hög DPI-skalning oavsett om någon Qt-miljö</translation>
+        <translation>Slå High-DPI skalering fra, uanset om der er sat</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>variables controlling high dpi behavior are set.</source>
-        <translation>variabler som styr hög DPI-beteende är inställda.</translation>
+        <translation>nogen Qt-miljøvariabler til styring af High-DPI opførsel.</translation>
     </message>
 </context>
 <context>
@@ -200,121 +200,121 @@ om en sans-serif-teckensnittsfamilj anges i din CSS</translation>
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>Allmänna inställningar</translation>
+        <translation>Generelle indstillinger</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>Du måste starta om PageEdit efter att ha ändrat Användargränssnittets språk.
+        <translation>Du skal genstarte PageEdit efter at have skiftet brugefladesprog.
 
-Om en översättning för ett visst ord eller en viss fras inte är tillgänglig visas den på engelska.</translation>
+Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist på engelsk.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>Användargränssnittets språk:</translation>
+        <translation>Brugergrænsefladesprog:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Välj från installerade stavningskontrollens ordböcker.</translation>
+        <translation>Vælg mellem installerede stavekontrol-ordbøger.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Stavningskontrollens ordbok:</translation>
+        <translation>Ordbog til stavekontrol:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Bestäm om html-filer får komma åt icke-multimedia fjärrresurser.</translation>
+        <translation>Vælg, om html-filer har lov til at tilgå ikke-multimedia eksterne ressourcer.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation> Kontrollera åtkomst av html-filer till icke-multimedia fjärrresurser.</translation>
+        <translation> Kontroller adgang for html-filer til ikke-multimedia eksterne ressourcer.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Kontrollera om du vill tillåta html-filer att komma åt icke-multimedia fjärrresurser.</translation>
+        <translation>Afmærk for at tillade html-filer at tilgå ikke-multimedia eksterne ressourcer.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Html-filer kan komma åt alla fjärrresurstyper.</translation>
+        <translation>Html-filer kan tilgå alle eksterne ressource-typer.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Bestäm om javascript får användas av html-filer</translation>
+        <translation>Vælg, om html-filer kan anvende javascript</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation> Kontrollera användningen av javascript av html-filer.</translation>
+        <translation> Kontroller brug af javascript i html-filer.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Kontrollera att html-filer kan använda javascript.</translation>
+        <translation>Afmærk for at tillade html-filer at bruge javascript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Html-filer kan använda javascript.</translation>
+        <translation>Html-filer kan bruge javascript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Välj hur du vill att PageEdit ska hantera användningen av flera vita mellanslagstecken under redigering.</translation>
+        <translation>Vælg, hvordan PageEdit skal håndtere flere sammenhængende blanktegn.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Hantera flera vitt mellanslag layout med:</translation>
+        <translation>Håndter flere blanktegn ved at:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Använd CSS-mellanslag: förpacka</translation>
+        <translation>Bruge CSS &apos;white-space: pre-wrap&apos;</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation>css-mellanslag: förpacka</translation>
+        <translation>css white-space: pre-wrap</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Använd icke-brytande mellanslag efter behov</translation>
+        <translation>Brug non-breaking spaces efter behov</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>icke-brytande mellanslag efter behov</translation>
+        <translation>non-breaking spaces efter behov</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Bestäm om Försköna används när du sparar</translation>
+        <translation>Vælg, om Prettify skal benyttes, når der gemmes</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation>Använd Försköna för att formatera om XHTML när du sparar.</translation>
+        <translation> Benyt Prettify til opsætning af xhtml-kode, når der gemmes.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Kontrollera att formatera med Försköna när du sparar XHTML-filer.</translation>
+        <translation>Afmærk for at benytte Prettify, når der gemmes xhtml-filer.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Använd Försköna att formatera XHTML när du sparar.</translation>
+        <translation>Benyt Prettify til opsætning af xhtml-kode, når der gemmes.</translation>
     </message>
 </context>
 <context>
@@ -322,12 +322,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../Inspector.cpp" line="74"/>
         <source>Inspect Page or Element</source>
-        <translation>Inspektera sida eller element</translation>
+        <translation>undersøg side eller element</translation>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="156"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>Inspektörens funktionalitet stöds inte innan Qt 5.11</translation>
+        <translation>Inspector-funktionen understøttes først fra Qt 5.11</translation>
     </message>
 </context>
 <context>
@@ -350,22 +350,22 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;Arkiv</translation>
+        <translation>&amp;Filer</translation>
     </message>
     <message>
         <location filename="../main.ui" line="75"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Redigera</translation>
+        <translation>&amp;Rediger</translation>
     </message>
     <message>
         <location filename="../main.ui" line="88"/>
         <source>&amp;Find</source>
-        <translation>&amp;Hitta</translation>
+        <translation>&amp;Find</translation>
     </message>
     <message>
         <location filename="../main.ui" line="95"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Infoga</translation>
+        <translation>&amp;Indsæt</translation>
     </message>
     <message>
         <location filename="../main.ui" line="110"/>
@@ -375,22 +375,22 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="115"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Rubrik</translation>
+        <translation>&amp;Overskrift</translation>
     </message>
     <message>
         <location filename="../main.ui" line="130"/>
         <source>C&amp;hange Case</source>
-        <translation>Ä&amp;ndra stor/liten inledande bokstav</translation>
+        <translation>&amp;Skift mellem store og små bogstaver</translation>
     </message>
     <message>
         <location filename="../main.ui" line="160"/>
         <source>&amp;View</source>
-        <translation>&amp;Visa</translation>
+        <translation>&amp;Vis</translation>
     </message>
     <message>
         <location filename="../main.ui" line="169"/>
         <source>Inspector</source>
-        <translation>Inspektör</translation>
+        <translation>Inspector</translation>
     </message>
     <message>
         <location filename="../main.ui" line="185"/>
@@ -400,44 +400,44 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="199"/>
         <source>Edit</source>
-        <translation>Redigera</translation>
+        <translation>Redigér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="217"/>
         <location filename="../main.ui" line="1157"/>
         <source>Mode</source>
-        <translation>Läge</translation>
+        <translation>Tilstand</translation>
     </message>
     <message>
         <location filename="../main.ui" line="230"/>
         <source>Insert</source>
-        <translation>Infoga</translation>
+        <translation>Indsæt</translation>
     </message>
     <message>
         <location filename="../main.ui" line="249"/>
         <source>Inspect</source>
-        <translation>Inspektera</translation>
+        <translation>Undersøg</translation>
     </message>
     <message>
         <location filename="../main.ui" line="262"/>
         <location filename="../main.ui" line="1106"/>
         <source>Find</source>
-        <translation>Hitta</translation>
+        <translation>Søg</translation>
     </message>
     <message>
         <location filename="../main.ui" line="275"/>
         <source>Heading</source>
-        <translation>Rubrik</translation>
+        <translation>Overskrift</translation>
     </message>
     <message>
         <location filename="../main.ui" line="289"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>Ange rubriknivå för markerad text</translation>
+        <translation>Angiv overskriftsniveau for valgt tekst</translation>
     </message>
     <message>
         <location filename="../main.ui" line="303"/>
         <source>Change Case</source>
-        <translation>Ändra stor/liten inledande bokstav</translation>
+        <translation>Skift mellem store og små bogstaver</translation>
     </message>
     <message>
         <location filename="../main.ui" line="319"/>
@@ -447,32 +447,32 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="337"/>
         <source>Align</source>
-        <translation>Justera</translation>
+        <translation>Justér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="353"/>
         <source>Indent</source>
-        <translation>Stycke</translation>
+        <translation>Indryk</translation>
     </message>
     <message>
         <location filename="../main.ui" line="367"/>
         <source>Navigate</source>
-        <translation>Navigera</translation>
+        <translation>Navigér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="377"/>
         <source>Navigation List</source>
-        <translation>Navigeringslista</translation>
+        <translation>Navigations-liste</translation>
     </message>
     <message>
         <location filename="../main.ui" line="393"/>
         <source>&amp;Save</source>
-        <translation>&amp;Spara</translation>
+        <translation>&amp;Gem</translation>
     </message>
     <message>
         <location filename="../main.ui" line="396"/>
         <source>Save the current file.</source>
-        <translation>Spara den aktuella filen.</translation>
+        <translation>Gem aktuel fil.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="399"/>
@@ -497,12 +497,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="421"/>
         <source>Save &amp;As...</source>
-        <translation>Spara &amp;som...</translation>
+        <translation>Ge&amp;m som …</translation>
     </message>
     <message>
         <location filename="../main.ui" line="424"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Spara den aktuella filen med ett annat filnamn.</translation>
+        <translation>Gem aktuel fil med et andet filnavn.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="427"/>
@@ -512,32 +512,32 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="437"/>
         <source>Cu&amp;t</source>
-        <translation>Klipp u&amp;t</translation>
+        <translation>&amp;Klip</translation>
     </message>
     <message>
         <location filename="../main.ui" line="440"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Klipper ut den markerade texten från dokumentet och lägger den i urklipp.</translation>
+        <translation>Klipper den valgte tekst fra dokumentet og indsætter det i udklipsholderen.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="450"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Klistra in</translation>
+        <translation>Sæt i&amp;nd</translation>
     </message>
     <message>
         <location filename="../main.ui" line="453"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Klistrar in innehållet från urklipp i filen.</translation>
+        <translation>Indsætter indholdet af udklipsholder i filen.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="463"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Ångra</translation>
+        <translation>Fortr&amp;yd</translation>
     </message>
     <message>
         <location filename="../main.ui" line="466"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Återställer ändringarna i föregående operation.</translation>
+        <translation>Fortryder den seneste ændring.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="469"/>
@@ -547,12 +547,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="479"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Gör om</translation>
+        <translation>G&amp;endan</translation>
     </message>
     <message>
         <location filename="../main.ui" line="482"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Återställer ändringarna som återställts av föregående Ångra-åtgärd.</translation>
+        <translation>Gendanner de ændringer, der blev slettet ved sidste Fortryd-handling.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="485"/>
@@ -562,42 +562,42 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="495"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Kopiera</translation>
+        <translation>K&amp;opiér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="498"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Kopierar den markerade texten och lägger den i urklipp.</translation>
+        <translation>Kopierer den valgte tekst og indsætter den i udklipsholderen.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="511"/>
         <source>Align &amp;Left</source>
-        <translation>&amp;Vänsterjustera</translation>
+        <translation>Justér til &amp;venstre</translation>
     </message>
     <message>
         <location filename="../main.ui" line="514"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Justera stycket till vänster.</translation>
+        <translation>Venstrejuster aktuelt afsnit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="528"/>
         <source>Align &amp;Right</source>
-        <translation>&amp;Högerjustera</translation>
+        <translation>Justér til &amp;højre</translation>
     </message>
     <message>
         <location filename="../main.ui" line="531"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Justera stycket till höger.</translation>
+        <translation>Højrejuster aktuelt afsnit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="544"/>
         <source>&amp;Center</source>
-        <translation>&amp;Centrera</translation>
+        <translation>&amp;Centrér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="547"/>
         <source>Center the paragraph.</source>
-        <translation>Centrera stycket.</translation>
+        <translation>Centrer aktuelt afsnit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="550"/>
@@ -607,12 +607,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="563"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Justera</translation>
+        <translation>&amp;Lige margen</translation>
     </message>
     <message>
         <location filename="../main.ui" line="566"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Justera stycket till både vänster och höger marginaler.</translation>
+        <translation>Juster aktuelt afsnit med lige margener.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="569"/>
@@ -622,12 +622,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="582"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Fet</translation>
+        <translation>&amp;Fed</translation>
     </message>
     <message>
         <location filename="../main.ui" line="585"/>
         <source>Make the selected text bold.</source>
-        <translation>Gör den markerade texten fet.</translation>
+        <translation>Gør markeret tekst fed.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="588"/>
@@ -642,7 +642,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="604"/>
         <source>Make the selected text italic.</source>
-        <translation>Gör den markerade texten kursiv.</translation>
+        <translation>Gør markeret tekst kursiv.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="607"/>
@@ -652,12 +652,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="617"/>
         <source>&amp;Open...</source>
-        <translation>&amp;Öppna...</translation>
+        <translation>Å&amp;bn …</translation>
     </message>
     <message>
         <location filename="../main.ui" line="620"/>
         <source>Open a file from disk.</source>
-        <translation>Öppna en fil från disk.</translation>
+        <translation>Åbn en fil.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="623"/>
@@ -667,12 +667,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="636"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Understryk</translation>
+        <translation>&amp;Understreget</translation>
     </message>
     <message>
         <location filename="../main.ui" line="639"/>
         <source>Underline the selected text.</source>
-        <translation>Stryk under den markerade texten.</translation>
+        <translation>Understreg den valgte tekst.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="642"/>
@@ -682,7 +682,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="652"/>
         <source>&amp;Lowercase</source>
-        <translation>&amp;Gemener</translation>
+        <translation>S&amp;må bogstaver</translation>
     </message>
     <message>
         <location filename="../main.ui" line="655"/>
@@ -697,7 +697,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="668"/>
         <source>&amp;Uppercase</source>
-        <translation>&amp;Versaler</translation>
+        <translation>S&amp;tore bogstaver</translation>
     </message>
     <message>
         <location filename="../main.ui" line="671"/>
@@ -712,7 +712,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="684"/>
         <source>&amp;Titlecase</source>
-        <translation>&amp;Inledande versal</translation>
+        <translation>&amp;Titlecase</translation>
     </message>
     <message>
         <location filename="../main.ui" line="687"/>
@@ -722,7 +722,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="697"/>
         <source>&amp;Capitalize</source>
-        <translation>&amp;Kapitalisera</translation>
+        <translation>&amp;Skriv med stort</translation>
     </message>
     <message>
         <location filename="../main.ui" line="700"/>
@@ -732,12 +732,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="710"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Avsluta</translation>
+        <translation>&amp;Afslut</translation>
     </message>
     <message>
         <location filename="../main.ui" line="713"/>
         <source>Quit</source>
-        <translation>Avsluta</translation>
+        <translation>Afslut</translation>
     </message>
     <message>
         <location filename="../main.ui" line="716"/>
@@ -747,32 +747,32 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="726"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Specialtecknet...</translation>
+        <translation>&amp;Specialtegn …</translation>
     </message>
     <message>
         <location filename="../main.ui" line="729"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Välj ett tecken att infoga i din text.</translation>
+        <translation>Vælg et tegn til at indsætte i din tekst.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="742"/>
         <source>&amp;Numbered List</source>
-        <translation>&amp;Numrerad lista</translation>
+        <translation>&amp;Talopstilling</translation>
     </message>
     <message>
         <location filename="../main.ui" line="745"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Skapa en numrerad lista från markeringen.</translation>
+        <translation>Opret en talopstilling fra den valgte tekst.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="758"/>
         <source>Bulle&amp;ted List</source>
-        <translation>&amp;Punktlista</translation>
+        <translation>&amp;Punktopstilling</translation>
     </message>
     <message>
         <location filename="../main.ui" line="761"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Skapa en punktlista från markeringen.</translation>
+        <translation>Opret en punktopstilling fra den valgte tekst.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="764"/>
@@ -782,42 +782,42 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="777"/>
         <source>Stri&amp;kethrough</source>
-        <translation>&amp;Genomstruken</translation>
+        <translation>&amp;Gennemstreget</translation>
     </message>
     <message>
         <location filename="../main.ui" line="780"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Rita en linje genom den markerade texten.</translation>
+        <translation>Gennemstreg den valgte tekst.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="793"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Nedsänkt</translation>
+        <translation>&amp;Sænket skrift</translation>
     </message>
     <message>
         <location filename="../main.ui" line="796"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Ställ in den markerade texten något mindre och under den normala raden.</translation>
+        <translation>Gør den valgte tekst lidt mindre og sænket under den normale linje.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="809"/>
         <source>Su&amp;perscript</source>
-        <translation>&amp;Upphöjt</translation>
+        <translation>H&amp;ævet skrift</translation>
     </message>
     <message>
         <location filename="../main.ui" line="812"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Ställ in den markerade texten något mindre och över den normala raden.</translation>
+        <translation>Gør den valgte tekst lidt mindre og hævet over den normale linje.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="823"/>
         <source>Zoom &amp;In</source>
-        <translation>Zooma &amp;in</translation>
+        <translation>Zoom &amp;ind</translation>
     </message>
     <message>
         <location filename="../main.ui" line="826"/>
         <source>Zoom In</source>
-        <translation>Zooma in</translation>
+        <translation>Zoom ind</translation>
     </message>
     <message>
         <location filename="../main.ui" line="829"/>
@@ -827,12 +827,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="840"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zooma &amp;ut</translation>
+        <translation>Zoom &amp;ud</translation>
     </message>
     <message>
         <location filename="../main.ui" line="843"/>
         <source>Zoom Out</source>
-        <translation>Zooma ut</translation>
+        <translation>Zoom ud</translation>
     </message>
     <message>
         <location filename="../main.ui" line="846"/>
@@ -842,12 +842,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="857"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>Ök&amp;a indrag</translation>
+        <translation>For&amp;øg indrykning</translation>
     </message>
     <message>
         <location filename="../main.ui" line="860"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Öka indragsnivån i stycket.</translation>
+        <translation>Forøg aktuelt afsnits indrykning.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="863"/>
@@ -857,12 +857,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="873"/>
         <source>&amp;Decrease Indent</source>
-        <translation>&amp;Minska indrag</translation>
+        <translation>For&amp;mindsk indrykning</translation>
     </message>
     <message>
         <location filename="../main.ui" line="876"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Minska indragsnivån i stycket.</translation>
+        <translation>Formindsk aktuelt afsnits indrykning.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="879"/>
@@ -872,22 +872,22 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="889"/>
         <source>Split &amp;Marker</source>
-        <translation>Del&amp;markör</translation>
+        <translation>Opdelings&amp;markør</translation>
     </message>
     <message>
         <location filename="../main.ui" line="892"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Infoga Sigil dela fil markör</translation>
+        <translation>Indsæt Sigil-opdelingsmarkør</translation>
     </message>
     <message>
         <location filename="../main.ui" line="895"/>
         <source>Ctrl+Shift+Return</source>
-        <translation>Ctrl+Shift+Return</translation>
+        <translation>Ctrl+Shift+Enter</translation>
     </message>
     <message>
         <location filename="../main.ui" line="901"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Inställningar...</translation>
+        <translation>&amp;Indstillinger …</translation>
     </message>
     <message>
         <location filename="../main.ui" line="904"/>
@@ -897,12 +897,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="910"/>
         <source>&amp;Zoom Reset</source>
-        <translation>&amp;Zoom-återställning</translation>
+        <translation>Nulstil &amp;zoom</translation>
     </message>
     <message>
         <location filename="../main.ui" line="913"/>
         <source>Zoom Reset</source>
-        <translation>Zoomåterställning</translation>
+        <translation>Nulstil zoom</translation>
     </message>
     <message>
         <location filename="../main.ui" line="916"/>
@@ -912,12 +912,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="929"/>
         <source>Heading &amp;1</source>
-        <translation>Rubrik &amp;1</translation>
+        <translation>Overskrift &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="932"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Formatera stycket som en nivå 1 rubrik.</translation>
+        <translation>Formatter aktuelt afsnit som niveau 1-overskrift.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="935"/>
@@ -927,12 +927,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="948"/>
         <source>Heading &amp;2</source>
-        <translation>Rubrik &amp;2</translation>
+        <translation>Overskrift &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="951"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Formatera stycket som en nivå 2 rubrik.</translation>
+        <translation>Formatter aktuelt afsnit som niveau 2-overskrift.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="954"/>
@@ -942,12 +942,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="967"/>
         <source>Heading &amp;3</source>
-        <translation>Rubrik &amp;3</translation>
+        <translation>Overskrift &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="970"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Formatera stycket som en nivå 3 rubrik.</translation>
+        <translation>Formatter aktuelt afsnit som niveau 3-overskrift.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="973"/>
@@ -957,12 +957,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="987"/>
         <source>Heading &amp;4</source>
-        <translation>Rubrik &amp;4</translation>
+        <translation>Overskrift &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="990"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Formatera stycket som en nivå 4 rubrik.</translation>
+        <translation>Formatter aktuelt afsnit som niveau 4-overskrift.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="993"/>
@@ -972,12 +972,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="1006"/>
         <source>Heading &amp;5</source>
-        <translation>Rubrik &amp;5</translation>
+        <translation>Overskrift &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1009"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Formatera stycket som en nivå 5 rubrik.</translation>
+        <translation>Formatter aktuelt afsnit som niveau 5-overskrift.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1012"/>
@@ -987,12 +987,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="1025"/>
         <source>Heading &amp;6</source>
-        <translation>Rubrik &amp;6</translation>
+        <translation>Overskrift &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1028"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Formatera stycket som en nivå 6 rubrik.</translation>
+        <translation>Formatter aktuelt afsnit som niveau 6-overskrift.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1031"/>
@@ -1007,7 +1007,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="1048"/>
         <source>ormat paragraph as a normal paragraph.</source>
-        <translation>formatera stycke som ett normalt stycke.</translation>
+        <translation>Formatter afsnit som almindeligt afsnit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
@@ -1017,22 +1017,22 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="1061"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Bevara befintliga attribut</translation>
+        <translation>&amp;Bevar eksisterende attributter</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1064"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>När du använder denna stil, bevara alla befintliga attribut på taggen</translation>
+        <translation>Ved anvendelse af denne typografi, skal alle eksisterende attributter på tagget bevares</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1074"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Markera alla</translation>
+        <translation>&amp;Vælg alt</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1077"/>
         <source>Select all text in the document.</source>
-        <translation>Markera all text i dokumentet.</translation>
+        <translation>Vælg al tekst i dokumentet.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1080"/>
@@ -1042,12 +1042,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="1090"/>
         <source>&amp;Inspector</source>
-        <translation>&amp;Inspektör</translation>
+        <translation>&amp;Inspector</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1093"/>
         <source>Inspect the page.</source>
-        <translation>Inspektera sidan.</translation>
+        <translation>Undersøg siden.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1096"/>
@@ -1057,7 +1057,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="1109"/>
         <source>Find text in the page</source>
-        <translation>Hitta text på sidan</translation>
+        <translation>Find tekst på siden</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1112"/>
@@ -1067,77 +1067,77 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="1125"/>
         <source>Next XHtml File</source>
-        <translation>Nästa XHtml-fil</translation>
+        <translation>Næste xhtml-fil</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1128"/>
         <source>Next file in navigation list</source>
-        <translation>Nästa fil i navigeringslistan</translation>
+        <translation>Næste fil i navigationslisten</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1141"/>
         <source>Previous XHtml File</source>
-        <translation>Föregående XHTML-fil</translation>
+        <translation>Forrige xhtml-fil</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1144"/>
         <source>Previous file in navigation list</source>
-        <translation>Föregående fil i navigeringslistan</translation>
+        <translation>Forrige fil i navigationslisten</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1160"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Växla mellan Redigera och Förhandsgranska lägen.</translation>
+        <translation>Skift mellem Rediger og Forhåndsvisning.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1170"/>
         <source>About...</source>
-        <translation>Om...</translation>
+        <translation>Om …</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1173"/>
         <source>Show information about PageEdit.</source>
-        <translation>Visa information om PageEdit.</translation>
+        <translation>Vis oplysninger om PageEdit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1183"/>
         <source>Back to Last Link</source>
-        <translation>Tillbaka till senaste länken</translation>
+        <translation>Tilbage til det sidste Link</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1186"/>
         <source>Return from the last link taken</source>
-        <translation>Återgå från den sista länken tagen</translation>
+        <translation>Tilbage fra det sidst fulgte link</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1196"/>
         <source>I&amp;D...</source>
-        <translation>I&amp;D...</translation>
+        <translation>&amp;ID …</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1199"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation>Infoga eller redigera ett ankare med ett ID-namn som ska användas som länkmål.</translation>
+        <translation>Indsæt eller rediger et anker med et ID-navn til brug som mål for et hyperlink.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1209"/>
         <source>&amp;Link...</source>
-        <translation>&amp;Länk...</translation>
+        <translation>&amp;Link …</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1212"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation>Infoga eller redigera ett ankare med en hyperlänk till ett mål.</translation>
+        <translation>Indsæt eller rediger et anker med et hyperlink til et mål.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1222"/>
         <source>&amp;File...</source>
-        <translation>&amp;Fil...</translation>
+        <translation>&amp;Fil …</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1225"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation>Välj befintliga bild-, video- eller ljudfiler från din bok för att infoga i texten.</translation>
+        <translation>Vælg eksisterende billede, video- eller lydfil fra din bog og indsæt den i teksten.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1228"/>
@@ -1147,41 +1147,41 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../MainWindow.cpp" line="750"/>
         <source>File load failed</source>
-        <translation>Det gick inte att läsa in fil</translation>
+        <translation>Fejl ved indlæsning af fil</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="751"/>
         <source>File Load Failed</source>
-        <translation>Det gick inte att läsa in fil</translation>
+        <translation>Fejl ved indlæsning af fil</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="846"/>
         <source>mode: Preview</source>
-        <translation>läge: Förhandsgranska</translation>
+        <translation>tilstand: Forhåndsvisning</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="848"/>
         <source>mode: Edit</source>
-        <translation>läge: Redigera</translation>
+        <translation>tilstand: Rediger</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1012"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Är du säker på att du vill öppna den här länken i din webbläsare?
+        <translation>Er du sikker på, at du vil åbne dette link i din browser?
 
 %1</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1074"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Vill du spara dina ändringar innan du lämnar?</translation>
+        <translation>Vil du gemme dine ændringer, før du forlader programmet?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1091"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit stänger...</translation>
+        <translation>PageEdit lukker …</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1223"/>
@@ -1201,12 +1201,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../MainWindow.cpp" line="1227"/>
         <source>All files (*.*)</source>
-        <translation>Alla filer (*.*)</translation>
+        <translation>Alle filer (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1466"/>
         <source>Save File</source>
-        <translation>Spara fil</translation>
+        <translation>Gem fil</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1501"/>
@@ -1214,18 +1214,18 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
         <location filename="../MainWindow.cpp" line="1514"/>
         <location filename="../MainWindow.cpp" line="1515"/>
         <source>File Save-As Failed!</source>
-        <translation>Spara fil som misslyckades!</translation>
+        <translation>Fil Gem som fejlede!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1501"/>
         <source>is not writeable</source>
-        <translation>är inte skrivbar</translation>
+        <translation>er ikke skrivbar</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1510"/>
         <location filename="../MainWindow.cpp" line="1549"/>
         <source>File Saved</source>
-        <translation>Filen sparad</translation>
+        <translation>Filen er gemt</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1540"/>
@@ -1233,12 +1233,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
         <location filename="../MainWindow.cpp" line="1553"/>
         <location filename="../MainWindow.cpp" line="1554"/>
         <source>File Save Failed!</source>
-        <translation>Spara fil misslyckades!</translation>
+        <translation>Fil Gem som fejlede!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1541"/>
         <source>does not exist or is not writeable</source>
-        <translation>finns inte eller är inte skrivbar</translation>
+        <translation>findes ikke eller kan ikke overskrives</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
@@ -1278,67 +1278,67 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>
         <source>File Opened</source>
-        <translation>Filen öppnades</translation>
+        <translation>Fil åbnet</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1664"/>
         <source>File Open Failed!</source>
-        <translation>Öppna fil misslyckades!</translation>
+        <translation>Fejl ved åbning af fil!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1687"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Urklipp innehåller HTML-formatering</translation>
+        <translation>Klippebordet indeholder HTML formateret kode</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1688"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Vill du klistra in urklippsdata som vanlig text?</translation>
+        <translation>Vil du indsætte klippebords data som almindelig tekst?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1764"/>
         <source>You must select text before inserting a new id.</source>
-        <translation>Du måste välja text innan du infogar ett nytt id.</translation>
+        <translation>Du skal vælge en tekst før du indsætter et nyt id.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1777"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
-        <translation>ID är ogiltigt - måste börja med en bokstav, följt av bokstavsnummer _ : - eller .</translation>
+        <translation>ID er ugyldigt - skal starte med et bogstav, efterfulgt af bogstav nummer _ : - eller .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1783"/>
         <source>You cannot insert an id at this position.</source>
-        <translation>Du kan inte infoga ett id i denna position.</translation>
+        <translation>Du kan ikke indsætte et ID ved denne placering.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1797"/>
         <source>You must select text before inserting a new link.</source>
-        <translation>Du måste välja text innan du infogar en ny länk.</translation>
+        <translation>Du skal vælge en tekst før di indsætter et nyt link.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1810"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
-        <translation>Länken är ogiltig - kan inte innehålla &quot;&lt;&quot; eller &quot;&gt;&quot;</translation>
+        <translation>Link er ugyldig - kan ikke indeholde &apos;&lt;&apos; eller &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1818"/>
         <source>You cannot insert a link at this position.</source>
-        <translation>Du kan inte infoga en länk i denna position.</translation>
+        <translation>Du kan ikke indsætte et link ved denne placering.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1829"/>
         <source>Insert File</source>
-        <translation>Infoga fil</translation>
+        <translation>Indsæt fil</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1873"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation>Du kan inte infoga en mediefil på den här positionen.</translation>
+        <translation>Du kan ikke indsætte en mediefil på denne placering.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1961"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Vill du spara några ändringar innan du skriver över den här filen?</translation>
+        <translation>Vil du gemme evt. ændringer, før du overskriver denne fil?</translation>
     </message>
 </context>
 <context>
@@ -1346,7 +1346,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Inställningar</translation>
+        <translation>Indstillinger</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="90"/>
@@ -1356,12 +1356,12 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../Preferences.cpp" line="90"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Ändringar träder i kraft när du startar om PageEdit.</translation>
+        <translation>Ændringer vil træde i kraft, når du genstarter PageEdit.</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="152"/>
         <source>Open Preferences Location</source>
-        <translation>Öppna platsen för Inställningar</translation>
+        <translation>Åben placering for indstillinger</translation>
     </message>
 </context>
 <context>
@@ -1370,25 +1370,25 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
         <location filename="../OPFReader.cpp" line="59"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Det går inte att läsa OPF-filen.
-Rad: %1 Kolumn %2 - %3</translation>
+        <translation>Kunne ikke læse OPF-fil.
+Linje: %1 Kolonne %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="379"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Det går inte att läsa filen %1:
+        <translation>Kan ikke indlæse filen %1:
 %2.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="560"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit har stött på ett problem.</translation>
+        <translation>PageEdit er stødt på et problem.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="561"/>
         <source>PageEdit may need to close.</source>
-        <translation>PageEdit kan behöva stängas.</translation>
+        <translation>PageEdit vil muligvis lukke ned.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="863"/>
@@ -1403,22 +1403,22 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="869"/>
         <source>Build Date</source>
-        <translation>Byggdatum</translation>
+        <translation>Build Date</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="870"/>
         <source>Build Time</source>
-        <translation>Byggtid</translation>
+        <translation>Build Time</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="871"/>
         <source>Qt Runtime Version</source>
-        <translation>Qt Runtime version</translation>
+        <translation>Qt Runtime Version</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="872"/>
         <source>Qt Compiled Version</source>
-        <translation>Qt Compiled version</translation>
+        <translation>Qt Compiled Version</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="873"/>
@@ -1428,7 +1428,7 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../Utility.cpp" line="874"/>
         <source>Architecture</source>
-        <translation>Arkitektur</translation>
+        <translation>Architecture</translation>
     </message>
 </context>
 <context>
@@ -1436,22 +1436,22 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Sök: </translation>
+        <translation>Søg: </translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Sök...</translation>
+        <translation>Søg …</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>&amp;Matcha skiftläge</translation>
+        <translation>Forskel på STORE/s&amp;må bogstaver</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="137"/>
         <source>No results found.</source>
-        <translation>Inga resultat hittades.</translation>
+        <translation>Intet fundet.</translation>
     </message>
 </context>
 <context>
@@ -1459,7 +1459,7 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Infoga specialtecken</translation>
+        <translation>Indsæt specialtegn</translation>
     </message>
 </context>
 <context>
@@ -1467,12 +1467,12 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.ui" line="14"/>
         <source>Insert File</source>
-        <translation>Infoga fil</translation>
+        <translation>Indsæt fil</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="46"/>
         <source>List only the file names which contain the text you enter.</source>
-        <translation>Lista endast de filnamn som innehåller texten du anger.</translation>
+        <translation>Anfør kun de filnavne, som indeholder den tekst, du indtaster.</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="49"/>
@@ -1482,17 +1482,17 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.ui" line="118"/>
         <source>Thumbnail size:</source>
-        <translation>Miniatyrbildsstorlek:</translation>
+        <translation>Miniaturestørrelse:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="113"/>
         <source>All</source>
-        <translation>Alla</translation>
+        <translation>Alle</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="114"/>
         <source>Images</source>
-        <translation>Bilder</translation>
+        <translation>Billeder</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="115"/>
@@ -1502,27 +1502,27 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.cpp" line="116"/>
         <source>Audio</source>
-        <translation>Ljud</translation>
+        <translation>Lyd</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="159"/>
         <source>Media Files In the Book</source>
-        <translation>Mediefiler i boken</translation>
+        <translation>Mediefiler i bogen</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="162"/>
         <source>Thumbnails</source>
-        <translation>Miniatyrbilder</translation>
+        <translation>Miniaturer</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="325"/>
         <source>shades</source>
-        <translation>nyanser</translation>
+        <translation>nuancer</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="325"/>
         <source>colors</source>
-        <translation>färger</translation>
+        <translation>farver</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="326"/>
@@ -1532,7 +1532,7 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.cpp" line="326"/>
         <source>Color</source>
-        <translation>Färg</translation>
+        <translation>Farve</translation>
     </message>
 </context>
 <context>
@@ -1540,12 +1540,12 @@ Rad: %1 Kolumn %2 - %3</translation>
     <message>
         <location filename="../SelectHyperlink.ui" line="14"/>
         <source>Select Target</source>
-        <translation>Välj mål</translation>
+        <translation>Vælg mål</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="22"/>
         <source>List only the entries that match the text you enter.</source>
-        <translation>Lista endast de poster som matchar texten du anger.</translation>
+        <translation>Vis kun angivelserne, der matcher den tekst, du indtaster.</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="25"/>
@@ -1556,8 +1556,8 @@ Rad: %1 Kolumn %2 - %3</translation>
         <location filename="../SelectHyperlink.ui" line="58"/>
         <source>Enter the target URL for this hyperlink.  You can select or 
 double click on existing destinations in your book from the list above.</source>
-        <translation>Ange målwebbadressen för denna hyperlänk. Du kan markera eller 
-dubbelklicka på befintliga destinationer i din bok från listan ovan.</translation>
+        <translation>Indtast mål-URL&apos;et for dette hyperlink.  Du kan vælge eller
+dobbeltklikke på eksisterende destinationer i din bog fra listen ovenfor.</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="62"/>
@@ -1567,12 +1567,12 @@ dubbelklicka på befintliga destinationer i din bok från listan ovan.</translat
     <message>
         <location filename="../SelectHyperlink.cpp" line="94"/>
         <source>Targets in the Book</source>
-        <translation>Mål i boken</translation>
+        <translation>Mål i bogen</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="95"/>
         <source>Text</source>
-        <translation>Text</translation>
+        <translation>Tekst</translation>
     </message>
 </context>
 <context>
@@ -1580,7 +1580,7 @@ dubbelklicka på befintliga destinationer i din bok från listan ovan.</translat
     <message>
         <location filename="../SelectId.ui" line="14"/>
         <source>Insert ID </source>
-        <translation>Infoga ID</translation>
+        <translation>Indsæt ID </translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="22"/>
@@ -1589,11 +1589,11 @@ dubbelklicka på befintliga destinationer i din bok från listan ovan.</translat
 The dropdown box shows existing ID names in the current file.
 
 ID names must be unique and start with a letter.</source>
-        <translation>Ange ett ID-namn som ska användas som destination för hyperlänkar, anteckningar och innehållsförteckningsposter.
+        <translation>Indtast et ID-navn til at bruge som en destination for hyperlinks, noter og indholdsfortegnelsesindtastninger.
 
-Rullgardinsmenyn visar befintliga ID-namn i den aktuella filen.
+Rullemenuboksen viser eksisterende ID-navne i den aktuelle fil.
 
-ID-namn måste vara unika och börja med en bokstav.</translation>
+ID skal være unikke og starte med et bogstav.</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="29"/>
@@ -1613,9 +1613,9 @@ ID-namn måste vara unika och börja med en bokstav.</translation>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>Det begärda filnamnet innehåller icke-ASCII-tecken. Du bör endast använda ASCII-tecken i filnamn. Att använda icke-ASCII-tecken kan förhindra att EPUB:n att fungera med vissa läsenheter.
+        <translation>Det ønskede filnavn indeholder ikke-ASCII-tegn. Du bør kun bruge ASCII-tegn i filnavne. Brug af ikke-ASCII-tegn kan forhindre EPUB i at fungere på nogle læsere.
 
-Fortsätt använda det begärda filnamnet?</translation>
+Fortsæt med at bruge det ønskede filnavn?</translation>
     </message>
 </context>
 <context>
@@ -1623,17 +1623,17 @@ Fortsätt använda det begärda filnamnet?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="167"/>
         <source>No suggestions</source>
-        <translation>Inga förslag</translation>
+        <translation>Ingen forslag</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Check Spelling</source>
-        <translation>Kontrollera stavning</translation>
+        <translation>Kontroller stavning</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="188"/>
         <source>Select Language</source>
-        <translation>Välj språk</translation>
+        <translation>Vælg sprog</translation>
     </message>
 </context>
 </TS>
