@@ -143,8 +143,8 @@ MainWindow::~MainWindow()
     if (m_Inspector) {
         if (m_Inspector->isVisible()) {
             m_Inspector->StopInspection();
-	    m_Inspector->close();
-	}
+            m_Inspector->close();
+        }
         delete m_Inspector;
         m_Inspector = nullptr;
     }
@@ -174,55 +174,58 @@ void MainWindow::SetupFileList(const QString &filepath)
         QStringList spine_files = opfrdr.GetSpineFilePathList();
         m_Base = Utility::longestCommonPath(spine_files, "/");
         foreach(QString sf, spine_files) {
-	    m_SpineList << sf.right(sf.length()-m_Base.length());
+            m_SpineList << sf.right(sf.length()-m_Base.length());
         }
         // now collect a list of media file and kind
         QStringList media_list;
         m_MediaKind.clear();
-	QStringList audiolist = opfrdr.GetAudioFilePathList();
+        QStringList audiolist = opfrdr.GetAudioFilePathList();
         foreach(QString filepath, audiolist) {
             media_list << filepath;
             m_MediaKind << "audio";
-	}
-	QStringList videolist = opfrdr.GetVideoFilePathList();
+        }
+        QStringList videolist = opfrdr.GetVideoFilePathList();
         foreach(QString filepath, videolist) {
             media_list << filepath;
             m_MediaKind << "video";
-	}
-	QStringList imagelist = opfrdr.GetImageFilePathList();
+        }
+        QStringList imagelist = opfrdr.GetImageFilePathList();
         foreach(QString filepath, imagelist) {
             media_list << filepath;
             m_MediaKind << "image";
-	}
-	QStringList svglist = opfrdr.GetSVGFilePathList();
+        }
+        QStringList svglist = opfrdr.GetSVGFilePathList();
         foreach(QString filepath, svglist) {
             media_list << filepath;
             m_MediaKind << "svgimage";
-	}
+        }
         m_MediaBase = Utility::longestCommonPath(media_list, "/");
         m_MediaList.clear();
         foreach(QString mf, media_list) {
-	    m_MediaList << mf.right(mf.length()-m_MediaBase.length());
+            m_MediaList << mf.right(mf.length()-m_MediaBase.length());
         }
         // finally determine the sandbox to play in
-	QStringList manifestlist = opfrdr.GetManifestFilePathList();
+        QStringList manifestlist = opfrdr.GetManifestFilePathList();
         m_SandBoxPath = Utility::longestCommonPath(manifestlist, "/");
-	if (m_SandBoxPath == "/") m_SandBoxPath = m_Base;
+        if (m_SandBoxPath == "/") m_SandBoxPath = m_Base;
 
     } else {
+
         // note longestCommonPath always ends with "/" but fi.absolutePath() does not
         m_Base = fi.absolutePath()+ "/";
         m_SpineList << fi.fileName();
-	// FIXME: how should we determine an appropriate sandbox for this case?
-	// For Now: limit to the directory holding this file and its parent if not root
-	m_SandBoxPath = m_Base;
-	QDir sb(m_Base);
-	if (sb.cdUp()) {
-	    if (!sb.isRoot()) {
-		m_SandBoxPath = sb.absolutePath();
-	    }
-	}
+        // FIXME: how should we determine an appropriate sandbox for this case?
+        // For Now: limit to the directory holding this file and its parent if not root
+        m_SandBoxPath = m_Base;
+        QDir sb(m_Base);
+        if (sb.cdUp()) {
+            if (!sb.isRoot()) {
+                m_SandBoxPath = sb.absolutePath();
+            }
+        }
     }
+    // enable or disable InsertFile based on if Media are present
+    ui.actionInsertFile->setEnabled(!m_MediaList.isEmpty());
     m_ListPtr = 0;
     m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
     if (m_SpineList.length() > 1) {
@@ -244,7 +247,7 @@ void MainWindow::CBNavigateActivated(int index)
 {
     if (m_UpdatePageInProgress) {
         ui.cbNavigate->setCurrentIndex(m_ListPtr);
-	return;
+        return;
     }
     
     if ((index > -1) && (index != m_ListPtr)) { 
@@ -263,9 +266,9 @@ void MainWindow::EditNext()
         AllowSaveIfModified();
         m_ListPtr++;
         if (m_ListPtr >= n) m_ListPtr = 0;
-	m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-	ui.cbNavigate->setCurrentIndex(m_ListPtr);
-	UpdatePage(m_CurrentFilePath);
+        m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+        ui.cbNavigate->setCurrentIndex(m_ListPtr);
+        UpdatePage(m_CurrentFilePath);
     }
 }
 
@@ -277,9 +280,9 @@ void MainWindow::EditPrev()
         AllowSaveIfModified();
         m_ListPtr--;
         if (m_ListPtr < 0) m_ListPtr = n - 1;
-	m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-	ui.cbNavigate->setCurrentIndex(m_ListPtr);
-	UpdatePage(m_CurrentFilePath);
+        m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+        ui.cbNavigate->setCurrentIndex(m_ListPtr);
+        UpdatePage(m_CurrentFilePath);
     }
 }
 
@@ -287,7 +290,7 @@ QString MainWindow::GetCurrentFilePath()
 {
     QString res;
     if (m_ListPtr != -1) {
-	res = m_SpineList.at(m_ListPtr);
+        res = m_SpineList.at(m_ListPtr);
     }
     return res;
 }
@@ -298,8 +301,8 @@ QStringList MainWindow::GetAllFilePaths(int skip)
     int i = 0;
     foreach(QString apath, m_SpineList) {
         if (skip != i) {
-	    res << apath;
-	}
+            res << apath;
+        }
         i++;
     }
     return res;
@@ -454,7 +457,7 @@ void MainWindow::hideEvent(QHideEvent * event)
 {
     if (m_Inspector) {
         m_Inspector->StopInspection();
-	m_Inspector->close();
+        m_Inspector->close();
     }
 
     if ((m_WebView) && m_WebView->isVisible()) {
@@ -565,7 +568,7 @@ void MainWindow::SetupView()
     ui.actionInsertNumberedList ->setEnabled(true);
     ui.actionInsertId->setEnabled(true);
     ui.actionInsertHyperlink->setEnabled(true);
-    ui.actionInsertFile->setEnabled(true);
+    ui.actionInsertFile->setEnabled(!m_MediaList.isEmpty());
 
     ui.actionHeading1->setEnabled(true);
     ui.actionHeading2->setEnabled(true);
@@ -699,17 +702,17 @@ void MainWindow::CheckHeadingLevel(const QString &element_name)
             QString heading_name = QString(element_name[ 1 ]);
 
             if (heading_name == "1") {
-	        ui.actionHeading1->setChecked(true);
+                ui.actionHeading1->setChecked(true);
             } else if (heading_name == "2") {
-	        ui.actionHeading2->setChecked(true);
+                ui.actionHeading2->setChecked(true);
             } else if (heading_name == "3") {
-	        ui.actionHeading3->setChecked(true);
+                ui.actionHeading3->setChecked(true);
             } else if (heading_name == "4") {
-	        ui.actionHeading4->setChecked(true);
+                ui.actionHeading4->setChecked(true);
             } else if (heading_name == "5") {
-	        ui.actionHeading5->setChecked(true);
+                ui.actionHeading5->setChecked(true);
             } else if (heading_name == "6") {
-	        ui.actionHeading6->setChecked(true);
+                ui.actionHeading6->setChecked(true);
             }
         } else {
             ui.actionHeadingNormal->setChecked(true);
@@ -722,7 +725,7 @@ void MainWindow::DoUpdatePage()
   if (!m_CurrentFilePath.isEmpty()) {
       QFileInfo fi(m_CurrentFilePath);
       if (fi.exists() && fi.isReadable()) {
-	  ui.actionMode->setChecked(true);
+          ui.actionMode->setChecked(true);
           UpdatePage(m_CurrentFilePath);
       }
   }
@@ -734,23 +737,23 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
     QString text;
     QString file_path = filename_url;
     if (!source.isEmpty()) {
-	text = source;
+        text = source;
     } else { 
         try {
             // This will read in the data and properly convert to unicode
-	    // from whatever encoding it is in now
-	    text = HTMLEncodingResolver::ReadHTMLFile(filename_url);
+            // from whatever encoding it is in now
+            text = HTMLEncodingResolver::ReadHTMLFile(filename_url);
 
-	    // This will convert all html to xhtml and remove any 
-	    // improper xml header and add the proper xml header
-	    GumboInterface gi(text, "any_version");
-	    text = gi.getxhtml();
+            // This will convert all html to xhtml and remove any 
+            // improper xml header and add the proper xml header
+            GumboInterface gi(text, "any_version");
+            text = gi.getxhtml();
 
         } catch (std::exception &e) {
             Utility::DisplayStdErrorDialog(tr("File load failed"), e.what());
-	    text = "<html><head><title></title></head><body><h1>" + tr("File Load Failed") + "</h1></body></html>";
-	    file_path = "";
-	    m_CurrentFilePath = "";
+            text = "<html><head><title></title></head><body><h1>" + tr("File Load Failed") + "</h1></body></html>";
+            file_path = "";
+            m_CurrentFilePath = "";
         }
     }
 
@@ -763,14 +766,14 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
 
     SettingsStore ss;
     // to prevent the WebEngine from inserting extraneous non-breaking space characters
-    //  during editing, the official editing api says we should set white-space:pre-wrap
+    // during editing, the official editing api says we should set white-space:pre-wrap
     // on the elements we want to edit.  In our case this is just about everything
     m_using_wsprewrap = ss.useWSPreWrap();
     if (ss.useWSPreWrap()) {
         int endheadpos = text.indexOf("</head>");
         if (endheadpos > 1) {
-	    QString inject_editstyle = "<style type=\"text/css\">" + EDIT_WITH_PRE_WRAP + "</style>"; 
-	    text.insert(endheadpos, inject_editstyle);
+            QString inject_editstyle = "<style type=\"text/css\">" + EDIT_WITH_PRE_WRAP + "</style>"; 
+            text.insert(endheadpos, inject_editstyle);
         }
     }
 
@@ -780,8 +783,8 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
         if (endheadpos > 1) {
             QString inject_userstyles = 
               "<link rel=\"stylesheet\" type=\"text/css\" "
-	      "href=\"" + m_usercssurl + "\" />";
-	    DBG qDebug() << "WebView injecting stylesheet: " << inject_userstyles;
+              "href=\"" + m_usercssurl + "\" />";
+            DBG qDebug() << "WebView injecting stylesheet: " << inject_userstyles;
             text.insert(endheadpos, inject_userstyles);
         }
     }
@@ -844,9 +847,9 @@ void MainWindow::UpdateWindowTitle()
         int height = m_WebView->height();
         int width = m_WebView->width();
         QString mode = "-- " + tr("mode: Preview") + " --";
-	if (ui.actionMode->isChecked()) {
-	    mode = "-- " + tr("mode: Edit") + " --";
-	}
+        if (ui.actionMode->isChecked()) {
+            mode = "-- " + tr("mode: Edit") + " --";
+        }
         setWindowTitle("PageEdit " + mode + " (" + QString::number(width) + "x" + QString::number(height) + ")");
     }
 }
@@ -875,72 +878,71 @@ void MainWindow::EmitGoToPreviewLocationRequest()
 
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
 {
-  switch (event->type()) {
-    case QEvent::ChildAdded:
-      if (object == m_WebView) {
-	  DBG qDebug() << "child add event";
-	  const QChildEvent *childEvent(static_cast<QChildEvent*>(event));
-	  if (childEvent->child()) {
-	      childEvent->child()->installEventFilter(this);
-	  }
-      }
-      break;
-    case QEvent::MouseButtonPress:
-      {
-	  DBG qDebug() << "Preview mouse button press event " << object;
-	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
-	  if (mouseEvent) {
-	      if (mouseEvent->button() == Qt::LeftButton) {
-		  DBG qDebug() << "Detected Left Mouse Button Press Event";
-		  QString hoverurl = m_WebView->GetHoverUrl();
-		  DBG qDebug() << "hover url is: " << hoverurl;
-		  if (!hoverurl.isEmpty() && !ui.actionMode->isChecked()) {
-		      // we are taking a link so save the current location
-		      m_LastPtr = m_ListPtr;
-		      m_LastLocation = m_WebView->GetCaretLocation();
-		  }
-	      }
-	      if (mouseEvent->button() == Qt::RightButton) {
-		  DBG qDebug() << "Detected Right Mouse Button Press Event";
-	      }
-
-	  }
-      }
-      break;
-    case QEvent::MouseButtonRelease:
-      {
-	  DBG qDebug() << "Preview mouse button release event " << object;
-	  const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
-	  if (mouseEvent) {
-	      if (mouseEvent->button() == Qt::LeftButton) {
-		  DBG qDebug() << "Detected Left Mouse Button Release Event";
-	      }
-	      if (mouseEvent->button() == Qt::RightButton) {
-		  DBG qDebug() << "Detected Right Mouse Button Release Event";
-	      }
-	  }
-      }
-      break;
-    case QEvent::Resize:
-      {
+    switch (event->type()) {
+      case QEvent::ChildAdded:
+          if (object == m_WebView) {
+              DBG qDebug() << "child add event";
+              const QChildEvent *childEvent(static_cast<QChildEvent*>(event));
+              if (childEvent->child()) {
+                  childEvent->child()->installEventFilter(this);
+              }
+          }
+          break;
+      case QEvent::MouseButtonPress:
+        {
+          DBG qDebug() << "Preview mouse button press event " << object;
+          const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
+          if (mouseEvent) {
+              if (mouseEvent->button() == Qt::LeftButton) {
+                  DBG qDebug() << "Detected Left Mouse Button Press Event";
+                  QString hoverurl = m_WebView->GetHoverUrl();
+                  DBG qDebug() << "hover url is: " << hoverurl;
+                  if (!hoverurl.isEmpty() && !ui.actionMode->isChecked()) {
+                      // we are taking a link so save the current location
+                      m_LastPtr = m_ListPtr;
+                      m_LastLocation = m_WebView->GetCaretLocation();
+                  }
+              }
+              if (mouseEvent->button() == Qt::RightButton) {
+                  DBG qDebug() << "Detected Right Mouse Button Press Event";
+              }
+          }
+        }
+        break;
+      case QEvent::MouseButtonRelease:
+        {
+          DBG qDebug() << "Preview mouse button release event " << object;
+          const QMouseEvent *mouseEvent(static_cast<QMouseEvent*>(event));
+          if (mouseEvent) {
+              if (mouseEvent->button() == Qt::LeftButton) {
+                  DBG qDebug() << "Detected Left Mouse Button Release Event";
+              }
+              if (mouseEvent->button() == Qt::RightButton) {
+                  DBG qDebug() << "Detected Right Mouse Button Release Event";
+              }
+          }
+        }
+        break;
+      case QEvent::Resize:
+        {
           if (object == m_WebView) {
               const QResizeEvent *resizeEvent(static_cast<QResizeEvent*>(event));
-	      if (resizeEvent) {
-	          DBG qDebug() << "Detected ResizeEvent: " << resizeEvent->oldSize() << resizeEvent->size();
-	          QTimer::singleShot(100, this, SLOT(UpdateWindowTitle()));
-	      }
-	  }
-      }
-      break;
-    case QEvent::KeyPress:
-      {
-	  // Assume any key presses are directed at WebEngineView via the delegate
-      }
-      break;
-    default:
-      break;
-  }
-  return QObject::eventFilter(object, event);
+              if (resizeEvent) {
+                  DBG qDebug() << "Detected ResizeEvent: " << resizeEvent->oldSize() << resizeEvent->size();
+                  QTimer::singleShot(100, this, SLOT(UpdateWindowTitle()));
+              }
+          }
+        }
+        break;
+      case QEvent::KeyPress:
+        {
+            // Assume any key presses are directed at WebEngineView via the delegate
+        }
+        break;
+      default:
+        break;
+    }
+    return QObject::eventFilter(object, event);
 }
 
 void MainWindow::LinkReturn()
@@ -952,12 +954,12 @@ void MainWindow::LinkReturn()
     if ((m_LastPtr != -1) && !m_LastLocation.isEmpty()) {
         if (m_LastPtr != m_ListPtr) {
             AllowSaveIfModified();
-	    m_ListPtr = m_LastPtr;
-	    ui.cbNavigate->setCurrentIndex(m_ListPtr);
-	    m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-	    UpdatePage(m_CurrentFilePath);
-	}
-	ScrollTo(m_LastLocation);
+            m_ListPtr = m_LastPtr;
+            ui.cbNavigate->setCurrentIndex(m_ListPtr);
+            m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+            UpdatePage(m_CurrentFilePath);
+        }
+        ScrollTo(m_LastLocation);
     }
     m_LastPtr = -1;
     m_LastLocation.clear();
@@ -987,26 +989,26 @@ void MainWindow::LinkClicked(const QUrl &url)
 
     if (toUrl.scheme() == "file") {
         QString filepath = toUrl.toLocalFile();
-	QString fragment = toUrl.fragment();
+        QString fragment = toUrl.fragment();
         DBG qDebug() << "in Link Clicked: " << filepath << fragment;
 
         if (filepath.startsWith(m_Base)) {
             filepath = filepath.right(filepath.length() - m_Base.length());
-	    if (m_SpineList.contains(filepath)) {
-	        int index = m_SpineList.indexOf(filepath);
-	        if ((index > -1) && (index != m_ListPtr)) {
-		    AllowSaveIfModified();
-		    m_ListPtr = index;
-		    ui.cbNavigate->setCurrentIndex(m_ListPtr);
-		    m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-		    UpdatePage(m_CurrentFilePath);
-	        }
-	        if (!fragment.isEmpty()) {
-	            m_WebView->ScrollToFragment(fragment);
-	        }
-	        return;
-	    }
-	}
+            if (m_SpineList.contains(filepath)) {
+                int index = m_SpineList.indexOf(filepath);
+                if ((index > -1) && (index != m_ListPtr)) {
+                    AllowSaveIfModified();
+                    m_ListPtr = index;
+                    ui.cbNavigate->setCurrentIndex(m_ListPtr);
+                    m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+                    UpdatePage(m_CurrentFilePath);
+                }
+                if (!fragment.isEmpty()) {
+                    m_WebView->ScrollToFragment(fragment);
+                }
+                return;
+            }
+        }
     }
     QMessageBox::StandardButton button_pressed;
     button_pressed = QMessageBox::warning(this, tr("PageEdit"), tr("Are you sure you want to open this link in your browser?\n\n%1").arg(toUrl.toString()), QMessageBox::Ok | QMessageBox::Cancel);
@@ -1064,23 +1066,23 @@ void MainWindow::AllowSaveIfModified()
         if (m_source.length() != source.length()) {
             modified = true;
         } else if (m_source != source) {
-	    modified = true;
-	}
+            modified = true;
+        }
     }
     if (modified) {
         QMessageBox::StandardButton button_pressed;
         button_pressed = QMessageBox::warning(this,
-					      tr("PageEdit"),
-					      tr("Do you want to save your changes before leaving?"),
-					      QMessageBox::Save | QMessageBox::Discard
-					     );
+                          tr("PageEdit"),
+                          tr("Do you want to save your changes before leaving?"),
+                          QMessageBox::Save | QMessageBox::Discard
+                         );
         if (button_pressed == QMessageBox::Save) {
             bool save_result = Save();
             int cnt = 0;
-	    while(!save_result && (cnt < 3)) {
-	        cnt++;
-	        save_result = SaveAs();
-	    }
+            while(!save_result && (cnt < 3)) {
+                cnt++;
+                save_result = SaveAs();
+            }
         }
     }
 }
@@ -1186,7 +1188,7 @@ void MainWindow::LoadSettings()
         CustomWebViewStylesheetInfo.isFile() &&
         CustomWebViewStylesheetInfo.isReadable()) {
         QString usercssurl = QUrl::fromLocalFile(CustomWebViewStylesheetInfo.absoluteFilePath()).toString();
-	setUserCSSURL(usercssurl);
+        setUserCSSURL(usercssurl);
     }
 
     // Finally set up for spellchecking in the WebEngineView
@@ -1252,19 +1254,19 @@ void MainWindow::ApplyHeadingToSelection(const QString &heading_type)
     } else if (heading_type[0].isDigit()) {
         QString heading = "h" + heading_type;
         m_WebView->FormatBlock(heading, m_preserveHeadingAttributes);
-	if (heading_type == "1") {
-	    ui.actionHeading1->setChecked(true);
+        if (heading_type == "1") {
+            ui.actionHeading1->setChecked(true);
         } else if (heading_type == "2") {
-	    ui.actionHeading2->setChecked(true);
-	} else if (heading_type == "3") {
-	    ui.actionHeading3->setChecked(true);
-	} else if (heading_type == "4") {
-	    ui.actionHeading4->setChecked(true);
-	} else if (heading_type == "5") {
-	    ui.actionHeading5->setChecked(true);
+            ui.actionHeading2->setChecked(true);
+        } else if (heading_type == "3") {
+            ui.actionHeading3->setChecked(true);
+        } else if (heading_type == "4") {
+            ui.actionHeading4->setChecked(true);
+        } else if (heading_type == "5") {
+            ui.actionHeading5->setChecked(true);
         } else if (heading_type == "6") {
-	    ui.actionHeading6->setChecked(true);
-	}
+            ui.actionHeading6->setChecked(true);
+        }
     }
 }
 
@@ -1284,8 +1286,8 @@ QString MainWindow::GetSource()
     foreach(GumboNode * node, nodes) {
         GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "contenteditable");
         if (attr) {
-	    GumboElement* element = &node->v.element;
-	    gumbo_element_remove_attribute(element, attr);
+            GumboElement* element = &node->v.element;
+            gumbo_element_remove_attribute(element, attr);
         }
     }
     text = gi.getxhtml();
@@ -1309,8 +1311,8 @@ QString MainWindow::GetCleanHtml()
     foreach(GumboNode * node, nodes) {
         GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "contenteditable");
         if (attr) {
-	    GumboElement* element = &node->v.element;
-	    gumbo_element_remove_attribute(element, attr);
+            GumboElement* element = &node->v.element;
+            gumbo_element_remove_attribute(element, attr);
         }
     }
 
@@ -1322,8 +1324,8 @@ QString MainWindow::GetCleanHtml()
     foreach(GumboNode * node, nodes) {
         GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "is");
         if (attr && QString::fromUtf8(attr->value) == "http://www.w3.org/1999/xhtml") {
-	    GumboElement* element = &node->v.element;
-	    gumbo_element_remove_attribute(element, attr);
+            GumboElement* element = &node->v.element;
+            gumbo_element_remove_attribute(element, attr);
         }
     }
 
@@ -1368,11 +1370,11 @@ QString MainWindow::GetCleanHtml()
         tags = QList<GumboTag>() << GUMBO_TAG_STYLE;
         nodes = gi.get_all_nodes_with_tags(tags);
         foreach(GumboNode * node, nodes) {
-	    QString styleinfo = gi.get_local_text_of_node(node);
-	    if (styleinfo == EDIT_WITH_PRE_WRAP) {
-		gumbo_remove_from_parent(node);
-		gumbo_destroy_node(node);
-		break;
+            QString styleinfo = gi.get_local_text_of_node(node);
+            if (styleinfo == EDIT_WITH_PRE_WRAP) {
+                gumbo_remove_from_parent(node);
+                gumbo_destroy_node(node);
+                break;
             }
         }
     }
@@ -1384,9 +1386,9 @@ QString MainWindow::GetCleanHtml()
         GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "id");
         if (attr && QString::fromUtf8(attr->value) == "PageEdit_Injected") {
             // qDebug() << "removing PageEdit_Injected dark style";
-	    gumbo_remove_from_parent(node);
-	    gumbo_destroy_node(node);
-	    break;
+            gumbo_remove_from_parent(node);
+            gumbo_destroy_node(node);
+            break;
         }
     }
     // then the associated scrollbar stylesheet link
@@ -1395,13 +1397,13 @@ QString MainWindow::GetCleanHtml()
     foreach(GumboNode * node, nodes) {
         GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "href");
         if (attr) {
-	    QString attrval = QString::fromUtf8(attr->value);
+            QString attrval = QString::fromUtf8(attr->value);
             if (DARKCSSLINKS.contains(attrval) ) {
                 // qDebug() << "removing dark css links";
-		gumbo_remove_from_parent(node);
-		gumbo_destroy_node(node);
-		break;
-	    }
+                gumbo_remove_from_parent(node);
+                gumbo_destroy_node(node);
+                break;
+            }
         }
     }
 
@@ -1413,12 +1415,12 @@ QString MainWindow::GetCleanHtml()
         foreach(GumboNode * node, nodes) {
             GumboAttribute* attr = gumbo_get_attribute(&node->v.element.attributes, "href");
             if (attr) {
-	        QString attrval = QString::fromUtf8(attr->value);
-		if (attrval.contains(m_usercssurl)) {
-		    gumbo_remove_from_parent(node);
-		    gumbo_destroy_node(node);
-		    break;
-		}
+                QString attrval = QString::fromUtf8(attr->value);
+                if (attrval.contains(m_usercssurl)) {
+                    gumbo_remove_from_parent(node);
+                    gumbo_destroy_node(node);
+                    break;
+                }
             }
         }
     }
@@ -1463,16 +1465,16 @@ bool MainWindow::SaveAs()
     }
 
     QString filename = QFileDialog::getSaveFileName(this,
-						    tr("Save File"),
-						    save_path,
-						    filter_string,
+                            tr("Save File"),
+                            save_path,
+                            filter_string,
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
-						    & default_filter,
-						    QFileDialog::DontUseNativeDialog
+                            & default_filter,
+                            QFileDialog::DontUseNativeDialog
 #else
-                                                    & default_filter
+                            & default_filter
 #endif
-						    );
+                            );
 
     // QFileDialog cancelled
     if (filename.isEmpty()) {
@@ -1500,21 +1502,21 @@ bool MainWindow::SaveAs()
     if (fi.exists() && !fi.isWritable()) {
         Utility::DisplayStdErrorDialog(tr("File Save-As Failed!"), m_CurrentFilePath + " " + tr("is not writeable"));
         ShowMessageOnStatusBar(tr("File Save-As Failed!"));
-	m_CurrentFilePath.clear();
-	return false;
+        m_CurrentFilePath.clear();
+        return false;
     }
 
     bool save_result = false;
     try {
- 	Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);
+        Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);
         ShowMessageOnStatusBar(tr("File Saved"));
         m_LastFolderOpen = fi.absolutePath();
-	save_result = true;
+        save_result = true;
     } catch (std::exception &e) {
-	Utility::DisplayStdErrorDialog(tr("File Save-As Failed!"), e.what());
+        Utility::DisplayStdErrorDialog(tr("File Save-As Failed!"), e.what());
         ShowMessageOnStatusBar(tr("File Save-As Failed!"));
-	m_CurrentFilePath.clear();
-	save_result = false;
+        m_CurrentFilePath.clear();
+        save_result = false;
     }
     if (save_result) m_source = GetSource();
     return save_result;
@@ -1538,21 +1540,21 @@ bool MainWindow::Save()
 
     if (!fi.exists() || !fi.isWritable()) {
         Utility::DisplayStdErrorDialog(tr("File Save Failed!"), 
-				       m_CurrentFilePath + " " + tr("does not exist or is not writeable"));
+                       m_CurrentFilePath + " " + tr("does not exist or is not writeable"));
         ShowMessageOnStatusBar(tr("File Save Failed!"));
         return false;
     }
 
     bool save_result = false;
     try {
- 	Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);
+        Utility::WriteUnicodeTextFile(text, m_CurrentFilePath);
         ShowMessageOnStatusBar(tr("File Saved"));
         m_LastFolderOpen = fi.absolutePath();
-	save_result = true;
+        save_result = true;
     } catch (std::exception &e) {
-	Utility::DisplayStdErrorDialog(tr("File Save Failed!"),e.what());
+        Utility::DisplayStdErrorDialog(tr("File Save Failed!"),e.what());
         ShowMessageOnStatusBar(tr("File Save Failed!"));
-	save_result = false;;
+        save_result = false;;
     }
     if (save_result) m_source = GetSource();
     return save_result;
@@ -1618,7 +1620,7 @@ void MainWindow::Open()
     QString source = GetSource();
     bool modified = false;
     if (!m_source.isEmpty()) {
-	if (m_source.length() != source.length()) {
+        if (m_source.length() != source.length()) {
             modified = true;
         } else if (m_source != source) {
             modified = true;
@@ -1638,31 +1640,30 @@ void MainWindow::Open()
         QString default_filter = load_filters.value("xhtml");
         QString filename = QFileDialog::getOpenFileName(0,
                            "Open File",
-		           m_LastFolderOpen,
+                           m_LastFolderOpen,
                            filter_string,
                            &default_filter);
 
         if (!filename.isEmpty()) {
-
             QFileInfo fi(filename);
             if (fi.exists() && fi.isReadable()) {
 #ifdef Q_OS_MAC
-	        MainWindow * new_window = new MainWindow(filename);
-	        new_window->show();
-		return;
+                MainWindow * new_window = new MainWindow(filename);
+                new_window->show();
+                return;
 #else
-		m_ListPtr = -1;
-		m_SpineList.clear();
-		m_Base = QString();
-		SetupFileList(filename);
-		SetupNavigationComboBox();
-    	        UpdatePage(m_CurrentFilePath);
+                m_ListPtr = -1;
+                m_SpineList.clear();
+                m_Base = QString();
+                SetupFileList(filename);
+                SetupNavigationComboBox();
+                UpdatePage(m_CurrentFilePath);
                 ShowMessageOnStatusBar(tr("File Opened"));
-	        return;
+                return;
 #endif
-	    }
+            }
             ShowMessageOnStatusBar(tr("File Open Failed!"));
-	}
+        }
     }
 }
 
@@ -1684,9 +1685,9 @@ void MainWindow::Paste()
 
     if (clipboard->mimeData()->hasHtml()) {
         QMessageBox msgBox(QMessageBox::Question,
-		       tr("Clipboard contains HTML formatting"),
-		       tr("Do you want to paste clipboard data as plain text?"),
-		       QMessageBox::Yes|QMessageBox::No|QMessageBox::Cancel);
+               tr("Clipboard contains HTML formatting"),
+               tr("Do you want to paste clipboard data as plain text?"),
+               QMessageBox::Yes|QMessageBox::No|QMessageBox::Cancel);
         msgBox.setDefaultButton(QMessageBox::Yes);
 
         // populate the detailed text window - by HTML not by the text
@@ -1761,7 +1762,7 @@ void MainWindow::InsertId()
 
     // Prevent adding a hidden anchor id in PageEdit.
     if (id.isEmpty() && m_WebView->GetSelectedText().isEmpty()) {
-	QMessageBox::warning(this, tr("PageEdit"), tr("You must select text before inserting a new id."));
+        QMessageBox::warning(this, tr("PageEdit"), tr("You must select text before inserting a new id."));
         return;
     }
 
@@ -1774,13 +1775,13 @@ void MainWindow::InsertId()
         QRegularExpressionMatch mo = invalid_id.match(selected_id);
 
         if (mo.hasMatch()) {
-	    QMessageBox::warning(this, tr("PageEdit"), tr("ID is invalid - must start with a letter, followed by letter\
+            QMessageBox::warning(this, tr("PageEdit"), tr("ID is invalid - must start with a letter, followed by letter\
  number _ : - or ."));
             return;
         };
 
         if (!m_WebView->InsertId(select_id.GetId())) {
-	    QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert an id at this position."));
+            QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert an id at this position."));
         }
     }
 }
@@ -1794,7 +1795,7 @@ void MainWindow::InsertHyperlink()
 
     // Prevent adding a hidden anchor link in PageEdit.
     if (href.isEmpty() && m_WebView->GetSelectedText().isEmpty()) {
-	QMessageBox::warning(this, tr("PageEdit"), tr("You must select text before inserting a new link."));
+        QMessageBox::warning(this, tr("PageEdit"), tr("You must select text before inserting a new link."));
         return;
     }
 
@@ -1807,15 +1808,15 @@ void MainWindow::InsertHyperlink()
     if (select_hyperlink.exec() == QDialog::Accepted) {
         QString target = select_hyperlink.GetTarget();
         if (target.contains("<") || target.contains(">")) {
-	    QMessageBox::warning(this, tr("PageEdit"), tr("Link is invalid - cannot contain '<' or '>'"));
+            QMessageBox::warning(this, tr("PageEdit"), tr("Link is invalid - cannot contain '<' or '>'"));
             return;
         };
         // convert target to relative link from the current file
-	std::pair<QString, QString> parts = Utility::parseHREF(target);
+        std::pair<QString, QString> parts = Utility::parseHREF(target);
         QString relative_link = Utility::buildRelativePath(m_Base + currentpath, m_Base + parts.first);
         relative_link = relative_link + parts.second;
         if (!m_WebView->InsertHyperlink(relative_link)) {
-	    QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert a link at this position."));
+            QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert a link at this position."));
         }
     }
 }
@@ -1852,7 +1853,7 @@ void MainWindow::InsertFiles(const QStringList &selected_files)
         if (!fi.exists()) continue;
             
         QString relative_link = Utility::buildRelativePath(currentpath, mediapath);
-	relative_link = Utility::URLEncodePath(relative_link);
+        relative_link = Utility::URLEncodePath(relative_link);
 
         // extract just the filename without extension to create a text label
         QString filename = fi.fileName();
@@ -1870,7 +1871,7 @@ void MainWindow::InsertFiles(const QStringList &selected_files)
             html = QString("<audio controls=\"controls\" src=\"%1\">%2</audio>").arg(relative_link).arg(filename);
         }
         if (!m_WebView->InsertHtml(html)) {
-	    QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert a media file at this position."));
+            QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert a media file at this position."));
         }
     }
 }
@@ -1957,10 +1958,10 @@ bool MainWindow::MaybeSaveDialogSaysProceed(bool modified)
 
     QMessageBox::StandardButton button_pressed;
     button_pressed = QMessageBox::warning(this,
-					tr("PageEdit"),
-					tr("Do you want to save any changes before overwriting this file?"),
-					QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel
-					);
+                    tr("PageEdit"),
+                    tr("Do you want to save any changes before overwriting this file?"),
+                    QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel
+                    );
     if (button_pressed == QMessageBox::Save) {
         return Save();
     } else if (button_pressed == QMessageBox::Cancel) {
