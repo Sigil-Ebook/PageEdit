@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin Hendricks, Doug Massay
+**  Copyright (C) 2019-2021 Kevin Hendricks, Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -91,7 +91,7 @@ static const int ZOOM_SLIDER_MIDDLE = 500;
 static const int ZOOM_SLIDER_WIDTH  = 140;
 
 
-MainWindow::MainWindow(QString filepath, QWidget *parent)
+MainWindow::MainWindow(QString filepath, QString spineno, QWidget *parent)
     :
     QMainWindow(parent),
     m_WebView(new WebViewEdit(this)),
@@ -128,7 +128,7 @@ MainWindow::MainWindow(QString filepath, QWidget *parent)
     ui.actionMode->setChecked(true);
     LoadSettings();
     ConnectSignalsToSlots();
-    SetupFileList(filepath);
+    SetupFileList(filepath, spineno);
     SetupNavigationComboBox();
     QTimer::singleShot(200, this, SLOT(DoUpdatePage()));
 }
@@ -160,18 +160,25 @@ void MainWindow::ApplicationPaletteChanged()
 
 // initializes m_Base, m_SpineList, m_ListPtr, and m_CurrentFilePath
 // Also sets m_SandBoxPath to limit file: urls
-void MainWindow::SetupFileList(const QString &filepath)
+void MainWindow::SetupFileList(const QString &filepath, const QString &spineno)
 {
     m_CurrentFilePath = "";
     ui.actionNext->setEnabled(false);
     ui.actionPrev->setEnabled(false);
     if (filepath.isEmpty()) return;
     QFileInfo fi(filepath);
-    if (!fi.exists() || !fi.isReadable()) return;   
+    if (!fi.exists() || !fi.isReadable()) return;
+    m_ListPtr = -1;
     if (fi.suffix() == "opf") {
+        m_ListPtr = 0;
         OPFReader opfrdr;
         opfrdr.parseOPF(filepath);
         QStringList spine_files = opfrdr.GetSpineFilePathList();
+        if (!spineno.isEmpty()) {
+            bool okay;
+            int val = spineno.toInt(&okay);
+            if ((val >= 0) && (val < spine_files.size())) m_ListPtr = val;
+        }
         m_Base = Utility::longestCommonPath(spine_files, "/");
         foreach(QString sf, spine_files) {
             m_SpineList << sf.right(sf.length()-m_Base.length());
@@ -210,10 +217,10 @@ void MainWindow::SetupFileList(const QString &filepath)
         if (m_SandBoxPath == "/") m_SandBoxPath = m_Base;
 
     } else {
-
         // note longestCommonPath always ends with "/" but fi.absolutePath() does not
         m_Base = fi.absolutePath()+ "/";
         m_SpineList << fi.fileName();
+        m_ListPtr = 0;
         // FIXME: how should we determine an appropriate sandbox for this case?
         // For Now: limit to the directory holding this file and its parent if not root
         m_SandBoxPath = m_Base;
@@ -226,7 +233,6 @@ void MainWindow::SetupFileList(const QString &filepath)
     }
     // enable or disable InsertFile based on if Media are present
     ui.actionInsertFile->setEnabled(!m_MediaList.isEmpty());
-    m_ListPtr = 0;
     m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
     if (m_SpineList.length() > 1) {
         ui.actionNext->setEnabled(true);

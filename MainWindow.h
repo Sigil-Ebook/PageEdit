@@ -55,7 +55,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QString filepath, QWidget *parent = 0);
+    MainWindow(QString filepath, QString spineno = "", QWidget *parent = 0);
     ~MainWindow();
     QList<ElementIndex> GetCaretLocation();
     bool IsVisible();
@@ -189,7 +189,7 @@ protected:
 
 private:
     void SetupView();
-    void SetupFileList(const QString& filepath);
+    void SetupFileList(const QString& filepath, const QString& spineno = "");
     void SetupNavigationComboBox();
     void LoadSettings();
     void SaveSettings();

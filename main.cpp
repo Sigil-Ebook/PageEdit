@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020  Kevin B. Hendricks, Stratford, Ontario, Canada
-**  Copyright (C) 2019-2020  Doug Massay
+**  Copyright (C) 2019-2021  Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2021  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -62,10 +62,15 @@ static MainWindow *GetMainWindow(const QStringList &arguments)
 {
     // We use the first argument as the file to load after starting
     QString filepath;
+    QString spineno;
     if (arguments.size() > 1 && Utility::IsFileReadable(arguments.at(1))) {
         filepath = arguments.at(1);
     }
-    return new MainWindow(filepath);
+    if (arguments.size() > 2) {
+        spineno = arguments.at(2);
+    }
+    
+    return new MainWindow(filepath, spineno);
 }
 
 
@@ -360,7 +365,7 @@ int main(int argc, char *argv[])
     }
 
     if (filepath.isEmpty()) filter->setInitialFilePath(QString("placeholder"));
-
+    
     // Work around QTBUG-62193 and QTBUG-65245 and others where menubar
     // menu items are lost under File and PageEdit menus and where
     // Quit menu gets lost when deleting other windows first
