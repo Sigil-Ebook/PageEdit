@@ -482,12 +482,12 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../main.ui" line="409"/>
         <source>&amp;Print</source>
-        <translation type="unfinished"/>
+        <translation>Af&amp;drukken</translation>
     </message>
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>De huidige pagina afdrukken.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -687,7 +687,7 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>De geselecteerde tekst wijzigen in kleine letters.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
@@ -702,7 +702,7 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>De geselecteerde tekst wijzigen in hoofdletters.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
@@ -717,7 +717,7 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>De eerste letter van elk geselecteerd woord wijzigen in een hoofdletter.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -727,7 +727,7 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Alleen de eerste letter van de geselecteerde tekst wijzigen in een hoofdletter.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1243,37 +1243,37 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>Deze waarschuwing niet opnieuw weergeven</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>Dit bestand wordt mogelijk niet afgedrukt zoals u verwacht.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>Donkere achtergronden en gekleurde tekst die veroorzaakt zijn door de CSS van een epub worden ook zo afgedrukt. </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1573"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>Wees voorzichtig, want dit kan leiden tot een hoog inktverbruik!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>Gebruik het volgende afdrukvoorbeeld om te zien hoe dit bestand wordt afgedrukt.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>Schakel het selectievakje in als u deze waarschuwing voortaan niet meer wilt zien.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>Functie niet beschikbaar vóór Qt5.12.x</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>

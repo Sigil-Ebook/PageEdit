@@ -476,12 +476,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="409"/>
         <source>&amp;Print</source>
-        <translation type="unfinished"/>
+        <translation>&amp;인쇄</translation>
     </message>
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>현재 페이지 인쇄</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -681,7 +681,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>선택한 텍스트를 소문자로 설정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
@@ -696,7 +696,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>선택한 텍스트를 대문자로 설정합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
@@ -711,7 +711,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>선택한 각 단어의 첫 글자를 대문자로 표시합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -721,7 +721,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>선택한 텍스트의 첫 번째 단어 만 대문자로 표시합니다.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1238,37 +1238,37 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>이 경고를 다시 표시하지 않음</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>이 파일은 예상대로 인쇄되지 않을 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>EPUB의 CSS로 적용된 어두운 배경과 컬러 텍스트가 인쇄됩니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1573"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>잉크를 많이 사용할 수 있으므로주의하십시오!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>인쇄 미리보기를 사용하여이 파일이 어떻게 인쇄되는지 확인합니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>앞으로 이 경고를 보지 않으려면 체크 박스를 선택하세요.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>Qt5.12.x 이전에는 사용할 수 없었던 기능</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>

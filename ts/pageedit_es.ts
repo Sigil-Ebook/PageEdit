@@ -487,7 +487,7 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>Imprimir la página actual.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -687,7 +687,7 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>Poner el texto seleccionado en minúsculas.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
@@ -702,7 +702,7 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>Poner el texto seleccionado en mayúsculas.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
@@ -717,7 +717,7 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>Poner la primera letra de cada palabra seleccionada en mayúscula.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -727,7 +727,7 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Poner en mayúscula la primera palabra del texto seleccionado.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1243,37 +1243,37 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>No mostrar de nuevo esta advertencia</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>Este archivo puede que no se imprima como espera.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>Los fondos oscuros y colores de texto aplicados con el CSS de un EPUB se imprimirán.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1573"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>Tenga prudencia, ¡esto puede gastar mucha tinta!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>Use la siguiente vista previa de impresión para ver cómo se imprimirá el archivo.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>Marque esta casilla si no desea ver esta advertencia en el futuro.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>Esta función no está disponible antes de Qt5.12.x</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>

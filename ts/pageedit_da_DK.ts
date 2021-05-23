@@ -482,12 +482,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="409"/>
         <source>&amp;Print</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Udskriv</translation>
     </message>
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>Udskriv denne side.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -687,7 +687,7 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>Gør valgt tekst til små bogstaver.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
@@ -702,7 +702,7 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>Gør valgt tekst til versaler.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
@@ -717,7 +717,7 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>Gør det første bogstav i de valgte ord til en versal.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -727,7 +727,7 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Gør det første ord i den valgte tekst til versaler.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1243,37 +1243,37 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>Vis ikke denne advarsel igen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>Denne fil udskrives muligvis ikke som forventet.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>Mørk baggrund og farvet tekst anvendt med en EPUB&apos;s CSS udskrives.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1573"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>Vær forsigtig, da dette kan medføre, at der bruges meget blæk!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>Brug følgende udskriftseksempel for at se, hvordan denne fil udskrives.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>Marker afkrydsningsfeltet, hvis du ikke ønsker at se denne advarsel i fremtiden.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>Funktion en er ikke tilgængelig før Qt5.12.x</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>

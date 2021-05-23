@@ -487,7 +487,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>اطبع الصفحة الحالية.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -687,12 +687,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>اجعل النص المحدد بحروف صغيرة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
         <source>Alt+L</source>
-        <translation type="unfinished"/>
+        <translation>Alt+L</translation>
     </message>
     <message>
         <location filename="../main.ui" line="668"/>
@@ -702,12 +702,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>اجعل النص المحدد بحروف كبيرة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
         <source>Alt+U</source>
-        <translation type="unfinished"/>
+        <translation>Alt+U</translation>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
@@ -717,7 +717,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>اجعل الحرف الأول من كلمة محددة كبيرا.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -727,7 +727,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>اجعل الحرف الأول فقط من النص المحدد كبيرا.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1243,37 +1243,37 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>لا تُظهر هذا التحذير مرة أخرى.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>قد لا يُطبع هذا الملف بالطريقة التي تتوقعها.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>ستُطبَع الخلفيات والنصوص الملونة المطبَّقة بألواح طُرُز كتاب الكتروني.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1573"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>توخّ الحذر حيث أنّ هذا يمكن أن ينتج عنه الكثير من استخدام الحبر!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>استخدم معاينة الطباعة التالية لترى كيف سيُطبَع هذا الملف.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>أشّر المربع إذا لم ترغب في مشاهدة هذا التحذير مستقبلا.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>الميزة غير متاحة لما قبل Qt5.12.x</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>

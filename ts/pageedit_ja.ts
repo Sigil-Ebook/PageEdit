@@ -489,7 +489,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>現在のページを印刷します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -689,7 +689,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>選択されたテキストを小文字に設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
@@ -704,7 +704,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>選択されたテキストを大文字に設定します。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
@@ -719,7 +719,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>選択された各単語の最初の文字を大文字にします。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -729,7 +729,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>選択されたテキストの最初の単語のみ大文字にします。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1245,37 +1245,37 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>この警告を再度表示しない</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>このファイルは、期待どおりに印刷されない場合があります。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>EPUBのCSS適用された暗い背景と色付きテキストが印刷されます。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1573"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>多くのインクが使用される可能性があるため、注意してください！</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>次の印刷プレビューを使用して、このファイルがどのように印刷されるか確認してください。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>今後この警告を表示したくない場合は、このチェックボックスをオンにしてください。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>Qt 5.12.x より前の機能は利用できません。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>
