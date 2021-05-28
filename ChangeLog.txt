@@ -3,7 +3,7 @@ Change Log
 PageEdit-1.6.0
   New Features
     - add ability to allow a spine position paramter to be passed along with opf path
-      to match changes in Sigiul-1.6.0
+      to match changes in Sigil-1.6.0 to simplify interface with Sigil
 
   Bug Fixes
     - bring SelectCharacter to be in sync with its Sigil counterpart
