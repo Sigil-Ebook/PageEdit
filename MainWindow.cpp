@@ -1817,12 +1817,18 @@ void MainWindow::InsertHyperlink()
             QMessageBox::warning(this, tr("PageEdit"), tr("Link is invalid - cannot contain '<' or '>'"));
             return;
         };
+        // handle external links
+        if (target.indexOf(':') != -1) {
+            if (!m_WebView->InsertHyperlink(target)) {
+                QMessageBox::warning(this, tr("PageEdit"), tr("Error inserting external link target."));
+            }
+        }
         // convert target to relative link from the current file
         std::pair<QString, QString> parts = Utility::parseHREF(target);
         QString relative_link = Utility::buildRelativePath(m_Base + currentpath, m_Base + parts.first);
         relative_link = relative_link + parts.second;
         if (!m_WebView->InsertHyperlink(relative_link)) {
-            QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert a link at this position."));
+            QMessageBox::warning(this, tr("PageEdit"), tr("Error inserting a link at this position."));
         }
     }
 }
