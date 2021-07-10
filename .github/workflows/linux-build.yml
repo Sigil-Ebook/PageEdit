@@ -1,0 +1,80 @@
+name: Build PageEdit on Linux
+
+on:
+  push:
+    branches: [ master ]
+    tags-ignore:
+      - '**'
+    paths-ignore:
+    - 'docs/**'
+    - 'installer/win_installer_note.txt'
+    - 'ChangeLog.txt'
+    - 'COPYING.txt'
+    - 'version.xml'
+    - 'appveyor.yml'
+    - '.retired_travis.yml'
+    - '.retired_appveyor.yml'
+    - '**.md'
+    - '**/reset-**-caches.txt'
+
+  pull_request:
+    branches: [ master ]
+    tags-ignore:
+      - '**'
+    paths-ignore:
+    - 'docs/**'
+    - 'installer/win_installer_note.txt'
+    - 'ChangeLog.txt'
+    - 'COPYING.txt'
+    - 'version.xml'
+    - 'appveyor.yml'
+    - '.retired_travis.yml'
+    - '.retired_appveyor.yml'
+    - '**.md'
+    - '**/reset-**-caches.txt'
+
+env:
+  BUILD_TYPE: Debug
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Cache Qt
+      id: cache-qt
+      uses: actions/cache@v2
+      with:
+        path: ${{runner.workspace}}/Qt
+        key: ${{ runner.os }}-qtdeps-${{ hashFiles('**/reset-lin-caches.txt') }}
+  
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v2
+      with:
+        version: '5.9.5'
+        dir: ${{runner.workspace}}/Qt
+        modules: 'qtwebengine'
+        setup-python: 'false'
+        cached: ${{ steps.cache-qt.outputs.cache-hit }}
+
+    - uses: lukka/get-cmake@latest
+
+    - name: Install dependencies
+      run: |
+        sudo apt install mesa-common-dev libglu1-mesa-dev
+        mkdir ${{runner.workspace}}/build
+        cmake --version
+        ninja --version
+        qmake -v
+        gcc --version
+
+    - name: Build PageEdit
+      working-directory: ${{runner.workspace}}/build
+      run: |
+        cmake $GITHUB_WORKSPACE \
+        -G "Ninja" \
+        -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
+        ninja -j$(getconf _NPROCESSORS_ONLN)
