@@ -47,6 +47,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
     - name: Cache Custom Qt
       uses: actions/cache@v2
       with:
@@ -77,7 +82,7 @@ jobs:
       shell: cmd
       working-directory: ${{runner.workspace}}\build
       run: |
-        set PATH=C:\%PYTHON%;${{runner.workspace}}\%QT%\bin;%PATH%
+        set PATH=${{runner.workspace}}\%QT%\bin;%PATH%
         call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.1
         echo %PATH%
         cmake %GITHUB_WORKSPACE% ^
@@ -92,7 +97,7 @@ jobs:
       working-directory: ${{runner.workspace}}\build
       if: "contains(github.event.head_commit.message, '[deploy]')"
       run: |
-        set PATH=C:\%PYTHON%;%INNO%;${{runner.workspace}}\%QT%\bin;%PATH%
+        set PATH=%INNO%;${{runner.workspace}}\%QT%\bin;%PATH%
         set /p RedistVersion=<"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\Microsoft.VCRedistVersion.default.txt"
         set REDIST=C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Redist\MSVC\%RedistVersion%\vcredist_x64.exe
         echo "%REDIST%"
@@ -105,7 +110,7 @@ jobs:
       working-directory: ${{runner.workspace}}\build
       if: "contains(github.event.head_commit.message, '[deploy]') && github.event_name != 'pull_request'"
       run: |
-        set PATH=C:\%PYTHON%;${{runner.workspace}}\build;%PATH%
+        set PATH=${{runner.workspace}}\build;%PATH%
         python %GITHUB_WORKSPACE%\ci_scripts\newgddeploy.py
 
     - uses: actions/upload-artifact@v2

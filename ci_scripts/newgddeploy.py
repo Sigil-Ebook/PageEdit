@@ -18,11 +18,11 @@ if sys.platform.lower().startswith('darwin'):
     origfilename = './bin/PageEdit.tar.xz'
     newfilename = './bin/PageEdit-{}-{}-build_num-{}.tar.xz'.format(branch.split('/')[-1], commit[:7], build_number)
 else:
-    names = glob.glob('.\\installer\\PageEdit-*-Setup.exe')
+    names = glob.glob('.\\deploy\\PageEdit-*-Setup.exe')
     if not names:
         exit(1)
     origfilename = names[0]
-    newfilename = '.\\installer\\PageEdit-{}-{}-build_num-{}-Setup.exe'.format(branch.split('/')[-1], commit[:7], build_number)
+    newfilename = '.\\deploy\\PageEdit-{}-{}-build_num-{}-Setup.exe'.format(branch.split('/')[-1], commit[:7], build_number)
 
 shutil.copy2(origfilename, newfilename)
 
