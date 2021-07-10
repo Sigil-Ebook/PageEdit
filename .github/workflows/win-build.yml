@@ -117,5 +117,5 @@ jobs:
       if: "contains(github.event.head_commit.message, '[deploy]')"
       with:
         name: pageedit-installer
-        path: ${{runner.workspace}}\build\installer\*.exe
+        path: ${{runner.workspace}}\build\deploy\*.exe
         retention-days: 3
