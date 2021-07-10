@@ -76,5 +76,5 @@ jobs:
       run: |
         cmake $GITHUB_WORKSPACE \
         -G "Ninja" \
-        -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
+        -DCMAKE_BUILD_TYPE=$BUILD_TYPE
         ninja -j$(getconf _NPROCESSORS_ONLN)
