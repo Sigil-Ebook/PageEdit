@@ -57,7 +57,7 @@ jobs:
         version: '5.9.5'
         dir: ${{runner.workspace}}/Qt
         modules: 'qtwebengine'
-        setup-python: 'false'
+        setup-python: 'true'
         cached: ${{ steps.cache-qt.outputs.cache-hit }}
 
     - uses: lukka/get-cmake@latest
