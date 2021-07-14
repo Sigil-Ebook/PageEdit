@@ -356,6 +356,10 @@ int main(int argc, char *argv[])
     // now process main app events so that any startup 
     // FileOpen event will be processed for macOS
     QCoreApplication::processEvents();
+    QCoreApplication::processEvents();
+    QCoreApplication::processEvents();
+    QCoreApplication::processEvents();
+    QCoreApplication::processEvents();
 
     QString filepath = filter->getInitialFilePath();
 
