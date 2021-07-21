@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="hu_HU" version="2.1">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Apparence</translation>
+        <translation>Megjelenés</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="25"/>
@@ -15,184 +15,183 @@
         <location filename="../PAppearanceWidget.ui" line="31"/>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Fonts:</source>
-        <translation>Polices :</translation>
+        <translation>Betűtípusok:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>Si aucune police n&apos;est spécifiée dans le CSS de votre page, la police suivante sera utilisée pour s&apos;afficher dans PageEdit. Ces polices ne seront pas utilisées dans votre livre numérique actuel.</translation>
+        <translation>Ha az oldalhoz kapcsolódó CSS-ben nincs megadva betűtípus, akkor a következő betűtípust kell használni a PageEdit alkalmazásban. Ezeket a betűtípusokat az aktuális E-book nem használja.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation>Taille de police par défaut à utiliser pour PageEdit
-si aucune taille de police n&apos;est spécifiée dans votre CSS</translation>
+        <translation>A PageEdit által használt alapértelmezett betűméret
+ha a kapcsolódó CSS-ben nincs megadva</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
         <location filename="../PAppearanceWidget.ui" line="323"/>
         <source>Font Size:</source>
-        <translation>Taille de police :</translation>
+        <translation>Betűméret:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation>Famille de polices par défaut à utiliser pour PageEdit
-si aucune famille de polices n&apos;est spécifiée dans votre CSS</translation>
+        <translation>A PageEdit által használt alapértelmezett betűtípus
+ha a kapcsolódó CSS-ben nincs megadva</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
         <source>Standard:</source>
-        <translation>Standard :</translation>
+        <translation>Alapértelmezett:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation>Famille de polices par défaut à utiliser pour PageEdit
-si aucune famille de polices Serif n&apos;est spécifiée dans votre CSS</translation>
+        <translation>A PageEdit által használt alapértelmezett betűtípus
+ha a kapcsolódó CSS-ben nincs megadva</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
         <source>Serif:</source>
-        <translation>Serif :</translation>
+        <translation>Serif:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation>Famille de polices par défaut à utiliser pour PageEdit
-si aucune famille de polices Sans-serif n&apos;est spécifiée dans votre CSS</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
         <source>Sans-Serif:</source>
-        <translation>Sans-serif :</translation>
+        <translation>Sans-Serif:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="156"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation>Faire en sorte que PageEdit simule une apparence sombre en mode sombre</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="181"/>
         <source>Main UI</source>
-        <translation>UI principal</translation>
+        <translation>Fő felület</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="187"/>
         <source>Main Menu Icon Size:</source>
-        <translation>Taille des icônes du menu principal :</translation>
+        <translation>Főmenü ikonméret:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="193"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Ajuster la taille des icônes dans le menu principal</translation>
+        <translation>A főmenü ikon méretének állítása.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="231"/>
         <source>High DPI Setting:</source>
-        <translation>Réglage haute résolution :</translation>
+        <translation>Magas DPI beállítások:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="240"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation>(Nécessite le redémarrage de PageEdit)</translation>
+        <translation>(A PageEdit újraindítása szükséges)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>UI Font:</source>
-        <translation>Police UI :</translation>
+        <translation>Felület betűtípusa:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="279"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation>Changer la police utilisée par PageEdit pour les menus, boutons, etc. .</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="282"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation>Changer la Police (nécessite le redémarrage de PageEdit)</translation>
+        <translation>Betűtípus módosítása (a PageEdit újraindítása szükséges)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="306"/>
         <source>Insert Special Characters:</source>
-        <translation>Insérer un caractère spécial :</translation>
+        <translation>Speciális karakterek beszúrása:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="320"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Taille de police à utiliser pour la fenêtre d&apos;insertion de caractères spéciaux</translation>
+        <translation>A Speciális karakterek beszúrása ablakban használt betűméret</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="353"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Famille de police à utiliser pour la fenêtre d&apos;insertion de caractères spéciaux</translation>
+        <translation>A Speciális karakterek beszúrása ablakban használt betűtípus</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="356"/>
         <source>Standard Font:</source>
-        <translation>Police standard :</translation>
+        <translation>Alapértelmezett betűtípus:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="423"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Remettre toutes les polices et les couleurs aux valeurs par défaut</translation>
+        <translation>Minden betűtípus és szín visszaállítása alapértékre</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="426"/>
         <source>Reset All</source>
-        <translation>Tout réinitialiser</translation>
+        <translation>Minden visszaállítása alaphelyzetbe</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect</source>
-        <translation>Détecter</translation>
+        <translation>Felismerés</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>On</source>
-        <translation>On</translation>
+        <translation>Be</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Off</source>
-        <translation>Off</translation>
+        <translation>Ki</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <source>Detect whether any high dpi scaling should take place.</source>
-        <translation>Détecter s&apos;il y a besoin d&apos;effectuer un mise à l&apos;échelle à haute résolution.</translation>
+        <translation>Annak felismerése, hogy nagyfelbontású méretezést kell-e végrehajtani.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="51"/>
         <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation>Défère à toutes les variables d&apos;environnement Qt qui sont réglées pour contrôler un comportement à haute résolution.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation>Activation de la mise à l&apos;échelle à haute résolution et ignorance des variables d&apos;environnement Qt</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>that are set controlling high dpi behavior.</source>
-        <translation>qui sont réglés pour contrôler un comportement à haute résolution.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation>Désactivation de la mise à l&apos;échelle haute résolution, quel que soit l&apos;environnement Qt</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>variables controlling high dpi behavior are set.</source>
-        <translation>Les variables contrôlant le comportement à haute résolution sont définies.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -200,121 +199,119 @@ si aucune famille de polices Sans-serif n&apos;est spécifiée dans votre CSS</t
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>Paramètres généraux</translation>
+        <translation>Általános beállítások</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>Vous devez redémarrer PageEdit après avoir changé la langue de l&apos;interface utilisateur.
-
-Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponible, elle sera affichée en anglais.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>Langue de l&apos;interface utilisateur :</translation>
+        <translation>Felület nyelve:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Sélectionner des dictionnaires d&apos;orthographe installés</translation>
+        <translation>Válasszon a telepített helyesírásellenőrző szótárak közül.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Dictionnaire de vérification d&apos;orthographe</translation>
+        <translation>Helyesírásellenőrző szótár:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Déterminez si les fichiers HTML sont autorisés à accéder aux ressources distantes non multimédias.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation>Contrôler l&apos;accès des fichiers HTML aux ressources distantes non multimédias.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Cochez cette case pour permettre aux fichiers HTML d&apos;accéder aux ressources distantes non multimédias.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Les fichiers HTML peuvent accéder à tous les types de ressources distantes.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Déterminer si JavaScript peut être utilisé par les fichiers HTML</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation>Contrôle de l&apos;utilisation de JavaScript par les fichiers HTML.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Cochez cette case pour permettre aux fichiers HTML d&apos;utiliser JavaScript.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Les fichiers HTML peuvent utiliser JavaScript.</translation>
+        <translation>A HTML fájlok használhatnak javascriptet.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Choisissez la façon dont vous souhaitez que PageEdit gère l&apos;utilisation de plusieurs espaces blancs pendant l&apos;édition.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Gérer la disposition de plusieurs espaces blancs à l&apos;aide de :</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Utiliser l&apos;espace blanc CSS : pre-wrap</translation>
+        <translation>CSS white-space: pre-wrap használata</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation>CSS white-space: pre-wrap</translation>
+        <translation>css white-space: pre-wrap</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Utilisez des espaces incassables au besoin.</translation>
+        <translation>Szükség szerint használjon &apos;nem törhető szóközöket&apos;</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>espaces incassables selon les besoins</translation>
+        <translation>szükség szerint &apos;nem törhető szóközök&apos;</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Déterminez si Prettify est utilisé lors de l&apos;enregistrement.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation>Utilisez Prettify pour reformater le XHTML lors de l&apos;enregistrement.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Cochez cette case pour reformater avec Prettify lors de l&apos;enregistrement de fichiers XHTML.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Utilisez Prettify pour reformater XHTML lors de l&apos;enregistrement.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -322,12 +319,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../Inspector.cpp" line="74"/>
         <source>Inspect Page or Element</source>
-        <translation>Inspecter la Page ou un Élément</translation>
+        <translation>Az oldal vagy elem vizsgálata</translation>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="156"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>La fonctionnalité « Inspecteur » n&apos;est pas supportée avant Qt 5.11</translation>
+        <translation>A vizsgáló funkció nem támogatott Qt 5.11 előtti verziókon</translation>
     </message>
 </context>
 <context>
@@ -350,129 +347,129 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;Fichier</translation>
+        <translation>&amp;Fájl</translation>
     </message>
     <message>
         <location filename="../main.ui" line="75"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Édition</translation>
+        <translation>S&amp;zerkesztés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="88"/>
         <source>&amp;Find</source>
-        <translation>&amp;Chercher</translation>
+        <translation>Keresés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="95"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Insérer</translation>
+        <translation>&amp;Beszúrás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="110"/>
         <source>For&amp;mat</source>
-        <translation>For&amp;mat</translation>
+        <translation>F&amp;ormátum</translation>
     </message>
     <message>
         <location filename="../main.ui" line="115"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Rubrique</translation>
+        <translation>Fejléc</translation>
     </message>
     <message>
         <location filename="../main.ui" line="130"/>
         <source>C&amp;hange Case</source>
-        <translation>Chan&amp;ger la casse</translation>
+        <translation>Betű&amp;hatás váltása (Case)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="160"/>
         <source>&amp;View</source>
-        <translation>&amp;Affichage</translation>
+        <translation>&amp;Nézet</translation>
     </message>
     <message>
         <location filename="../main.ui" line="169"/>
         <source>Inspector</source>
-        <translation>Inspecteur</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="185"/>
         <source>File</source>
-        <translation>Fichier</translation>
+        <translation>Fájl</translation>
     </message>
     <message>
         <location filename="../main.ui" line="199"/>
         <source>Edit</source>
-        <translation>Édition</translation>
+        <translation>Szerkesztés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="217"/>
         <location filename="../main.ui" line="1157"/>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation>Üzemmód</translation>
     </message>
     <message>
         <location filename="../main.ui" line="230"/>
         <source>Insert</source>
-        <translation>Insérer</translation>
+        <translation>Beszúr</translation>
     </message>
     <message>
         <location filename="../main.ui" line="249"/>
         <source>Inspect</source>
-        <translation>Inspecter</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="262"/>
         <location filename="../main.ui" line="1106"/>
         <source>Find</source>
-        <translation>Chercher</translation>
+        <translation>Keresés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="275"/>
         <source>Heading</source>
-        <translation>Titre</translation>
+        <translation>Címsor</translation>
     </message>
     <message>
         <location filename="../main.ui" line="289"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>Définir le niveau d&apos;en-tête du texte sélectionné</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="303"/>
         <source>Change Case</source>
-        <translation>Changer la casse</translation>
+        <translation>Betűhatás váltása (Case)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="319"/>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation>Formátum</translation>
     </message>
     <message>
         <location filename="../main.ui" line="337"/>
         <source>Align</source>
-        <translation>Alignement</translation>
+        <translation>Igazítás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="353"/>
         <source>Indent</source>
-        <translation>Retrait</translation>
+        <translation>Behúzás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="367"/>
         <source>Navigate</source>
-        <translation>Naviguer</translation>
+        <translation>Navigálás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="377"/>
         <source>Navigation List</source>
-        <translation>Liste de navigation</translation>
+        <translation>Navigációs lista</translation>
     </message>
     <message>
         <location filename="../main.ui" line="393"/>
         <source>&amp;Save</source>
-        <translation>&amp;Enregistrer</translation>
+        <translation>Menté&amp;s</translation>
     </message>
     <message>
         <location filename="../main.ui" line="396"/>
         <source>Save the current file.</source>
-        <translation>Sauvegarder le fichier actuel.</translation>
+        <translation>Az aktuális fájl mentése.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="399"/>
@@ -482,12 +479,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="409"/>
         <source>&amp;Print</source>
-        <translation>&amp;Imprimer</translation>
+        <translation>Nyomtatás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation>Imprimer la page actuel.</translation>
+        <translation>Az aktuális oldal nyomtatása.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -497,47 +494,47 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="421"/>
         <source>Save &amp;As...</source>
-        <translation>Enregistrer &amp;sous...</translation>
+        <translation>Mentés másként...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="424"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Sauvegarder le fichier actuel sous un nom différent.</translation>
+        <translation>Az aktuális fájl mentése más fájlnévvel.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="427"/>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl+Maj+S</translation>
+        <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
         <location filename="../main.ui" line="437"/>
         <source>Cu&amp;t</source>
-        <translation>Cou&amp;per</translation>
+        <translation>Kivágás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="440"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Couper le texte sélectionné et le mettre dans le presse-papier.</translation>
+        <translation>A kijelölt szöveg kivágása a dokumentumból, majd vágólapra helyezése.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="450"/>
         <source>&amp;Paste</source>
-        <translation>Co&amp;ller</translation>
+        <translation>Beillesztés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="453"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Colle le contenue du presse-papier dans le fichier.</translation>
+        <translation>A vágólap tartalmának beillesztése a fájlba.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="463"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Annuler</translation>
+        <translation>Visszavonás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="466"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Annule les modifications de l&apos;opération précédente.</translation>
+        <translation>Visszaállítja az előbbi művelet módosításait.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="469"/>
@@ -547,12 +544,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="479"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Rétablir</translation>
+        <translation>Ismét</translation>
     </message>
     <message>
         <location filename="../main.ui" line="482"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Restaure les modifications annulées par l&apos;action « Annuler » précédente.</translation>
+        <translation>Visszaállítja az előző Visszavonás művelet által visszaállított változásokat.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="485"/>
@@ -562,42 +559,42 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="495"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Copier</translation>
+        <translation>Másolás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="498"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Copier le texte sélectionné et le mettre dans le presse-papier.</translation>
+        <translation>A kijelölt szöveget a vágólapra másolja.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="511"/>
         <source>Align &amp;Left</source>
-        <translation>Aligner à &amp;gauche</translation>
+        <translation>Ba&amp;lra igazítás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="514"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Aligne le paragraphe sur la gauche.</translation>
+        <translation>A bekezdést balra igazítja.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="528"/>
         <source>Align &amp;Right</source>
-        <translation>Aligner à &amp;droite</translation>
+        <translation>Jobb&amp;ra igazítás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="531"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Aligne le paragraphe sur la droite.</translation>
+        <translation>A bekezdést jobbra igazítja.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="544"/>
         <source>&amp;Center</source>
-        <translation>&amp;Centrer</translation>
+        <translation>Középre igazítás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="547"/>
         <source>Center the paragraph.</source>
-        <translation>Centre le paragraphe.</translation>
+        <translation>A bekezdést középre igazítja.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="550"/>
@@ -607,12 +604,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="563"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Justifier</translation>
+        <translation>Sorkizárás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="566"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Aligne le paragraphe sur les marges gauche et droite.</translation>
+        <translation>A bekezdést a bal és a jobb margókhoz igazítja.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="569"/>
@@ -622,12 +619,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="582"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Gras</translation>
+        <translation>Kövér</translation>
     </message>
     <message>
         <location filename="../main.ui" line="585"/>
         <source>Make the selected text bold.</source>
-        <translation>Mettre le texte sélectionné en gras.</translation>
+        <translation>Félkövérre módosítja a kijelölt szöveget.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="588"/>
@@ -637,12 +634,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="601"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Italique</translation>
+        <translation>Dőlt</translation>
     </message>
     <message>
         <location filename="../main.ui" line="604"/>
         <source>Make the selected text italic.</source>
-        <translation>Mettre le texte sélectionné en italique.</translation>
+        <translation>Dőltre módosítja a kijelölt szöveget.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="607"/>
@@ -652,12 +649,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="617"/>
         <source>&amp;Open...</source>
-        <translation>&amp;Ouvrir...</translation>
+        <translation>Megnyitás...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="620"/>
         <source>Open a file from disk.</source>
-        <translation>Ouvrir un fichier sur le disque.</translation>
+        <translation>Fájl megnyitása adattárolóról.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="623"/>
@@ -667,12 +664,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="636"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Souligner</translation>
+        <translation>Aláhúzott</translation>
     </message>
     <message>
         <location filename="../main.ui" line="639"/>
         <source>Underline the selected text.</source>
-        <translation>Souligner le texte sélectionné.</translation>
+        <translation>Aláhúzottra módosítja a kijelölt szöveget.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="642"/>
@@ -682,12 +679,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="652"/>
         <source>&amp;Lowercase</source>
-        <translation>Mi&amp;nuscules</translation>
+        <translation>Kisbetűk</translation>
     </message>
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation>Mettre le texte sélectionné en minuscules.</translation>
+        <translation>Kisbetűsre módosítja a kijelölt szöveget.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
@@ -697,12 +694,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="668"/>
         <source>&amp;Uppercase</source>
-        <translation>&amp;Majuscules</translation>
+        <translation>Nagybetűs</translation>
     </message>
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation>Mettre le texte sélectionné en majuscules.</translation>
+        <translation>Nagybetűsre módosítja a kijelölt szöveget.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
@@ -712,32 +709,32 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="684"/>
         <source>&amp;Titlecase</source>
-        <translation>Majuscule à &amp;chaque mot</translation>
+        <translation>Nagy szókezdőbe&amp;tűk</translation>
     </message>
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation>Mettre en majuscule la première lettre de chaque mot sélectionné.</translation>
+        <translation>Nagybetűsre módosítja a kiválasztott szavak első betűjét.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
         <source>&amp;Capitalize</source>
-        <translation>Majuscule &amp;initiale</translation>
+        <translation>Nagy kezdőbetű</translation>
     </message>
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation>Mettre en majuscule uniquement la première lettre du texte sélectionné.</translation>
+        <translation>A kiválasztott szöveg első szavát nagy kezdőbetűsre módosítja.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Quitter</translation>
+        <translation>Kilépés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="713"/>
         <source>Quit</source>
-        <translation>Quitter</translation>
+        <translation>Kilépés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="716"/>
@@ -747,32 +744,32 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="726"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Caractère spécial...</translation>
+        <translation>&amp;Speciális karakter...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="729"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Sélectionnez un caractère à insérer dans le texte.</translation>
+        <translation>Egy karakter kiválasztása, amelyet be kíván illeszteni a szövegbe.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="742"/>
         <source>&amp;Numbered List</source>
-        <translation>Liste &amp;numérotée</translation>
+        <translation>Sorszámozott lista</translation>
     </message>
     <message>
         <location filename="../main.ui" line="745"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Créer une liste numérotée a partir de la sélection.</translation>
+        <translation>Sorszámozott lista létrehozása a kiválasztott szövegből.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="758"/>
         <source>Bulle&amp;ted List</source>
-        <translation>Liste à &amp;puces</translation>
+        <translation>Felsorolás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="761"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Créer une liste à puces a partir de la sélection.</translation>
+        <translation>Felsorolás létrehozása a kiválasztott szövegből.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="764"/>
@@ -782,42 +779,42 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="777"/>
         <source>Stri&amp;kethrough</source>
-        <translation>&amp;Barré</translation>
+        <translation>Áthúzott</translation>
     </message>
     <message>
         <location filename="../main.ui" line="780"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Tracez une ligne en travers du texte sélectionné.</translation>
+        <translation>Egy vonalat húz keresztbe a kijelölt szövegen.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="793"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Indice</translation>
+        <translation>Alsó index</translation>
     </message>
     <message>
         <location filename="../main.ui" line="796"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Définir le texte sélectionné comme légèrement plus petit et en-dessous de la ligne normale.</translation>
+        <translation>A kijelölt szöveget valamivel kisebbre módosítja és a normál vonal alá süllyeszti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="809"/>
         <source>Su&amp;perscript</source>
-        <translation>&amp;Exposant</translation>
+        <translation>Felső index</translation>
     </message>
     <message>
         <location filename="../main.ui" line="812"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Définir le texte sélectionné comme légèrement plus petit et au-dessus de la ligne normale.</translation>
+        <translation>A kijelölt szöveget valamivel kisebbre módosítja és a normál vonal fölé emeli.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="823"/>
         <source>Zoom &amp;In</source>
-        <translation>Zoom a&amp;vant</translation>
+        <translation>Nagyítás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="826"/>
         <source>Zoom In</source>
-        <translation>Zoom avant</translation>
+        <translation>Nagyítás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="829"/>
@@ -827,12 +824,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="840"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zoom a&amp;rrière</translation>
+        <translation>Kicsinyítés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="843"/>
         <source>Zoom Out</source>
-        <translation>Zoom arrière</translation>
+        <translation>Kicsinyítés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="846"/>
@@ -842,12 +839,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="857"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>Au&amp;gmenter le retrait</translation>
+        <translation>Behúzás növelése</translation>
     </message>
     <message>
         <location filename="../main.ui" line="860"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Augmenter le niveau d’indentation du paragraphe.</translation>
+        <translation>Megnöveli a bekezdés behúzást.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="863"/>
@@ -857,12 +854,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="873"/>
         <source>&amp;Decrease Indent</source>
-        <translation>Di&amp;minuer le retrait</translation>
+        <translation>Behúzás csökkentése</translation>
     </message>
     <message>
         <location filename="../main.ui" line="876"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Diminuer le niveau d’indentation du paragraphe.</translation>
+        <translation>Csökkenti a bekezdés behúzást.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="879"/>
@@ -872,22 +869,22 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="889"/>
         <source>Split &amp;Marker</source>
-        <translation>&amp;Marqueur de séparation</translation>
+        <translation>Szétvágás jelölő</translation>
     </message>
     <message>
         <location filename="../main.ui" line="892"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Insérer un marqueur de subdivision de Sigil</translation>
+        <translation>Szétvágás jelölő beillesztése</translation>
     </message>
     <message>
         <location filename="../main.ui" line="895"/>
         <source>Ctrl+Shift+Return</source>
-        <translation>Ctrl+Maj+Retour</translation>
+        <translation>Ctrl+Shift+Return</translation>
     </message>
     <message>
         <location filename="../main.ui" line="901"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Préférences...</translation>
+        <translation>Beállítások...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="904"/>
@@ -897,12 +894,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="910"/>
         <source>&amp;Zoom Reset</source>
-        <translation>Réinitialisation du &amp;zoom</translation>
+        <translation>Alap nagyítás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="913"/>
         <source>Zoom Reset</source>
-        <translation>Réinitialiser Zoom</translation>
+        <translation>Alap nagyítás</translation>
     </message>
     <message>
         <location filename="../main.ui" line="916"/>
@@ -912,12 +909,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="929"/>
         <source>Heading &amp;1</source>
-        <translation>Titre &amp;1</translation>
+        <translation>Címsor &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="932"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 1.</translation>
+        <translation>Bekezdés formázása 1. szintű fejlécként.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="935"/>
@@ -927,12 +924,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="948"/>
         <source>Heading &amp;2</source>
-        <translation>Titre &amp;2</translation>
+        <translation>Címsor &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="951"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 2.</translation>
+        <translation>Bekezdés formázása 2. szintű fejlécként.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="954"/>
@@ -942,12 +939,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="967"/>
         <source>Heading &amp;3</source>
-        <translation>Titre &amp;3</translation>
+        <translation>Címsor &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="970"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 3.</translation>
+        <translation>Bekezdés formázása 3. szintű fejlécként.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="973"/>
@@ -957,12 +954,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="987"/>
         <source>Heading &amp;4</source>
-        <translation>Titre &amp;4</translation>
+        <translation>Címsor &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="990"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 4.</translation>
+        <translation>Bekezdés formázása 4. szintű fejlécként.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="993"/>
@@ -972,12 +969,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1006"/>
         <source>Heading &amp;5</source>
-        <translation>Titre &amp;5</translation>
+        <translation>Címsor &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1009"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 5.</translation>
+        <translation>Bekezdés formázása 5. szintű fejlécként.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1012"/>
@@ -987,12 +984,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1025"/>
         <source>Heading &amp;6</source>
-        <translation>Titre &amp;6</translation>
+        <translation>Címsor &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1028"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 6.</translation>
+        <translation>Bekezdés formázása 6. szintű fejlécként.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1031"/>
@@ -1002,12 +999,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1045"/>
         <source>&amp;Normal</source>
-        <translation>&amp;Normal</translation>
+        <translation>&amp;Normál</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1048"/>
         <source>ormat paragraph as a normal paragraph.</source>
-        <translation>Formater le paragraphe comme un paragraphe normal.</translation>
+        <translation>Bekezdés formázása normál bekezdésként.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
@@ -1017,22 +1014,22 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1061"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Préserver les attributs existants</translation>
+        <translation>Meglévő tulajdonságok megőrzése</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1064"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>Lors de l&apos;application de ce style, conserver tous les attributs dans la balise</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1074"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Sélectionner tout</translation>
+        <translation>Ö&amp;sszes kijelölése</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1077"/>
         <source>Select all text in the document.</source>
-        <translation>Sélectionne tout le texte du document.</translation>
+        <translation>Jelölje ki a dokumentum teljes szövegét.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1080"/>
@@ -1042,12 +1039,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1090"/>
         <source>&amp;Inspector</source>
-        <translation>&amp;Inspecteur</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1093"/>
         <source>Inspect the page.</source>
-        <translation>Inspecter la page</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1096"/>
@@ -1057,7 +1054,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1109"/>
         <source>Find text in the page</source>
-        <translation>Chercher du texte dans la page</translation>
+        <translation>Szöveg keresése az oldalon</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1112"/>
@@ -1067,121 +1064,119 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="1125"/>
         <source>Next XHtml File</source>
-        <translation>Fichier XHTML suivant</translation>
+        <translation>Következő XHtml fájl</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1128"/>
         <source>Next file in navigation list</source>
-        <translation>Fichier XHTML suivant dans la liste de navigation</translation>
+        <translation>Következő fájl a navigációs listában</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1141"/>
         <source>Previous XHtml File</source>
-        <translation>Fichier XHTML précédent</translation>
+        <translation>Előző XHtml fájl</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1144"/>
         <source>Previous file in navigation list</source>
-        <translation>Fichier XHTML précédent dans la liste de navigation</translation>
+        <translation>Előző fájl a navigációs listában</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1160"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Basculer entre les modes Édition et Aperçu.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1170"/>
         <source>About...</source>
-        <translation>A propos…</translation>
+        <translation>A programról...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1173"/>
         <source>Show information about PageEdit.</source>
-        <translation>Afficher les informations a propos PageEdit.</translation>
+        <translation>Információk megjelenítése a PageEdit-ről.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1183"/>
         <source>Back to Last Link</source>
-        <translation>Retourner au dernier lien</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1186"/>
         <source>Return from the last link taken</source>
-        <translation>Revenir au dernier lien pris</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1196"/>
         <source>I&amp;D...</source>
-        <translation>&amp;ID...</translation>
+        <translation>I&amp;D...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1199"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation>Insérez ou modifiez une ancre avec un ID à utiliser comme cible de lien.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1209"/>
         <source>&amp;Link...</source>
-        <translation>&amp;Lien...</translation>
+        <translation>&amp;Hivatkozás...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1212"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation>Insérer ou éditer une ancre avec un hyperlien vers une cible.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1222"/>
         <source>&amp;File...</source>
-        <translation>&amp;Fichier...</translation>
+        <translation>&amp;Fájl...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1225"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation>Sélectionnez le fichier image, vidéo ou audio existant dans votre livre à insérer dans le texte.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1228"/>
         <source>Ctrl+Shift+I</source>
-        <translation>Ctrl+Maj+I</translation>
+        <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="750"/>
         <source>File load failed</source>
-        <translation>Échec du chargement du fichier</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="751"/>
         <source>File Load Failed</source>
-        <translation>Échec du chargement du fichier</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="846"/>
         <source>mode: Preview</source>
-        <translation>Mode : Aperçu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="848"/>
         <source>mode: Edit</source>
-        <translation>Mode : Édition</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1012"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Êtes-vous sûr de vouloir ouvrir ce lien dans votre navigateur ?
-
-%1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1074"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Voulez-vous sauvegarder vos modifications avant de partir ?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1091"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit se ferme…</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1223"/>
@@ -1191,22 +1186,22 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../MainWindow.cpp" line="1235"/>
         <location filename="../MainWindow.cpp" line="1236"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>Fichiers XHTML (*.htm *.html *.xhtml)</translation>
+        <translation>HTML fájlok (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1226"/>
         <source>OPF files (*.opf)</source>
-        <translation>Fichier OPF (*.opf)</translation>
+        <translation>OPF fájlok (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1227"/>
         <source>All files (*.*)</source>
-        <translation>Tous les fichiers (*.*)</translation>
+        <translation>Összes fájl (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1466"/>
         <source>Save File</source>
-        <translation>Enregistrer le fichier</translation>
+        <translation>Fájl mentése</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1501"/>
@@ -1214,18 +1209,18 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../MainWindow.cpp" line="1514"/>
         <location filename="../MainWindow.cpp" line="1515"/>
         <source>File Save-As Failed!</source>
-        <translation>La sauvegarde du fichier a échoué !</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1501"/>
         <source>is not writeable</source>
-        <translation>n&apos;est pas écrivable</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1510"/>
         <location filename="../MainWindow.cpp" line="1549"/>
         <source>File Saved</source>
-        <translation>Fichier sauvegardé</translation>
+        <translation>Fájl elmentve</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1540"/>
@@ -1233,112 +1228,112 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../MainWindow.cpp" line="1553"/>
         <location filename="../MainWindow.cpp" line="1554"/>
         <source>File Save Failed!</source>
-        <translation>Échec de la sauvegarde du fichier !</translation>
+        <translation>Fájl mentési hiba!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1541"/>
         <source>does not exist or is not writeable</source>
-        <translation>n&apos;existe pas ou n&apos;est pas écrivable</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation>Ne plus afficher cet avertissement</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation>Ce fichier peut ne pas s&apos;imprimer comme vous l&apos;attendez.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation>Les fonds sombres et les textes colorés appliqués avec le CSS d&apos;un ePub seront imprimé.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1573"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation>Faites attention, car cela peut entraîner l&apos;utilisation de beaucoup d&apos;encre !</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation>Utilisez l&apos;aperçu avant impression qui suit pour voir comment ce fichier s&apos;imprimera.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation>Cochez la case si vous ne souhaitez pas voir cet avertissement à l&apos;avenir.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation>Fonctionnalité non disponible avant Qt5.12.x</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>
         <source>File Opened</source>
-        <translation>Fichier ouvert</translation>
+        <translation>Fájl megnyitva</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1664"/>
         <source>File Open Failed!</source>
-        <translation>Échec de l&apos;ouverture du fichier !</translation>
+        <translation>Fájlmegnyitási hiba!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1687"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Le presse-papiers contient de la mise en forme HTML</translation>
+        <translation>A vágólap HTML formázást tartalmaz</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1688"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Voulez-vous coller les données du presse-papiers en tant que texte brut ?</translation>
+        <translation>Sima szövegként szeretné beilleszteni a vágólap tartalmát?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1764"/>
         <source>You must select text before inserting a new id.</source>
-        <translation>Vous devez sélectionner le texte avant d&apos;insérer un nouvel ID.</translation>
+        <translation>Ki kell választani a szöveget egy új ID beszúrása előtt.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1777"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
-        <translation>L&apos;ID n&apos;est pas valide – doit commencer par une lettre, suivie suivi du numéro de la lettre _ : - ou .</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1783"/>
         <source>You cannot insert an id at this position.</source>
-        <translation>Impossible d&apos;insérer un id à cet endroit.</translation>
+        <translation>Ezen a helyen nem lehet ID-t beszúrni.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1797"/>
         <source>You must select text before inserting a new link.</source>
-        <translation>Vous devez sélectionner le texte avant d&apos;insérer un nouveau lien.</translation>
+        <translation>Új hivatkozás beszúrása előtt ki kell választani a szöveget.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1810"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
-        <translation>Le lien n&apos;est pas valide – il ne peut contenir “&lt;” ou “&gt;”</translation>
+        <translation>A hivatkozás érvénytelen - nem tartalmazhat &apos;&lt;&apos; vagy &apos;&gt;&apos; jelet. </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1818"/>
         <source>You cannot insert a link at this position.</source>
-        <translation>Impossible d&apos;insérer un lien à cet endroit.</translation>
+        <translation>Ezen a helyen nem lehet hivatkozást beszúrni.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1829"/>
         <source>Insert File</source>
-        <translation>Insérer le fichier</translation>
+        <translation>Fájl beszúrása</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1873"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation>Vous ne pouvez pas insérer un fichier média à cette position.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1961"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Voulez-vous enregistrer des modifications avant d&apos;écraser ce fichier ?</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1346,7 +1341,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Préférences</translation>
+        <translation>Beállítások</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="90"/>
@@ -1356,12 +1351,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../Preferences.cpp" line="90"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Les modifications prendront effet lorsque vous redémarrerez PageEdit.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="152"/>
         <source>Open Preferences Location</source>
-        <translation>Ouvrir l&apos;emplacement des Préférences</translation>
+        <translation>Beállítások mappa megnyitása</translation>
     </message>
 </context>
 <context>
@@ -1370,65 +1365,65 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../OPFReader.cpp" line="59"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Impossible de lire le fichier OPF.
-Ligne : %1 Colonne %2 - %3</translation>
+        <translation>Unable to read OPF file.
+Line: %1 Column %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="379"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Impossible de lire le fichier %1 :
-%2</translation>
+        <translation>Nem olvasható fájl %1:
+%2.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="560"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit a rencontré un problème.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="561"/>
         <source>PageEdit may need to close.</source>
-        <translation>PageEdit peut avoir besoin de se fermer.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="863"/>
         <source>About PageEdit</source>
-        <translation>A propos PageEdit</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../Utility.cpp" line="868"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Verzió</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="869"/>
         <source>Build Date</source>
-        <translation>Date de construction</translation>
+        <translation>Készítés dátuma</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="870"/>
         <source>Build Time</source>
-        <translation>Durée de construction</translation>
+        <translation>Készítés időpontja</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="871"/>
         <source>Qt Runtime Version</source>
-        <translation>Version d&apos;exécution Qt</translation>
+        <translation>Qt Runtime verzió</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="872"/>
         <source>Qt Compiled Version</source>
-        <translation>Version compilé de Qt</translation>
+        <translation>Qt Compiled verzió</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="873"/>
         <source>System</source>
-        <translation>Systeme</translation>
+        <translation>Rendszer</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="874"/>
         <source>Architecture</source>
-        <translation>Architecture</translation>
+        <translation>Architektúra</translation>
     </message>
 </context>
 <context>
@@ -1436,22 +1431,22 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Recherche :</translation>
+        <translation>Keresés:</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Recherche...</translation>
+        <translation>Keresés...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>&amp;Sensible a la Case</translation>
+        <translation>Pontos egyezés</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="137"/>
         <source>No results found.</source>
-        <translation>Aucun résultat trouvé.</translation>
+        <translation>Nincs találat.</translation>
     </message>
 </context>
 <context>
@@ -1459,7 +1454,7 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Insérer un caractère spécial</translation>
+        <translation>Speciális karakter beszúrása</translation>
     </message>
 </context>
 <context>
@@ -1467,72 +1462,72 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.ui" line="14"/>
         <source>Insert File</source>
-        <translation>Insérer le fichier</translation>
+        <translation>Fájl beszúrása</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="46"/>
         <source>List only the file names which contain the text you enter.</source>
-        <translation>Affiche uniquement le nom des fichiers contenant le texte que vous avez tapé.</translation>
+        <translation>Csak azokat a fájlneveket listázza amelyek tartalmazzák a megadott szöveget.</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="49"/>
         <source>Filter:</source>
-        <translation>Filtre :</translation>
+        <translation>Szűrő:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="118"/>
         <source>Thumbnail size:</source>
-        <translation>Taille de la vignette :</translation>
+        <translation>Bélyegkép méret:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="113"/>
         <source>All</source>
-        <translation>Tout</translation>
+        <translation>Összes</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="114"/>
         <source>Images</source>
-        <translation>Images</translation>
+        <translation>Képek</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="115"/>
         <source>Video</source>
-        <translation>Vidéo</translation>
+        <translation>Videó</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="116"/>
         <source>Audio</source>
-        <translation>Audio</translation>
+        <translation>Hang</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="159"/>
         <source>Media Files In the Book</source>
-        <translation>Fichiers média dans le livre</translation>
+        <translation>Médiafájlok a könyvben</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="162"/>
         <source>Thumbnails</source>
-        <translation>Vignettes</translation>
+        <translation>Bélyegképek</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="325"/>
         <source>shades</source>
-        <translation>Nuances</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="325"/>
         <source>colors</source>
-        <translation>Couleurs</translation>
+        <translation>színek</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="326"/>
         <source>Grayscale</source>
-        <translation>Niveaux de gris</translation>
+        <translation>Szürkeskála</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="326"/>
         <source>Color</source>
-        <translation>Couleur</translation>
+        <translation>Szín</translation>
     </message>
 </context>
 <context>
@@ -1540,40 +1535,38 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SelectHyperlink.ui" line="14"/>
         <source>Select Target</source>
-        <translation>Choisir la cible</translation>
+        <translation>Cél kiválasztása</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="22"/>
         <source>List only the entries that match the text you enter.</source>
-        <translation>Affiche uniquement les entrées qui correspondent au texte tapé.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="25"/>
         <source>Filter:</source>
-        <translation>Filtre :</translation>
+        <translation>Szűrő:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="58"/>
         <source>Enter the target URL for this hyperlink.  You can select or 
 double click on existing destinations in your book from the list above.</source>
-        <translation>Tapé la cible de l&apos;URL pour cet hyperlien. Vous pouvez sélectionner
-ou double-cliquer sur des destinations existantes dans votre livre en
-utilisant la liste ci-dessus.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="62"/>
         <source>Target:</source>
-        <translation>Cible :</translation>
+        <translation>Cél:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="94"/>
         <source>Targets in the Book</source>
-        <translation>Cibles dans le Livre</translation>
+        <translation>Célpont a könyben</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="95"/>
         <source>Text</source>
-        <translation>Texte</translation>
+        <translation>Szöveg</translation>
     </message>
 </context>
 <context>
@@ -1581,7 +1574,7 @@ utilisant la liste ci-dessus.</translation>
     <message>
         <location filename="../SelectId.ui" line="14"/>
         <source>Insert ID </source>
-        <translation>Insérer un ID</translation>
+        <translation>ID beszúrása</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="22"/>
@@ -1590,16 +1583,12 @@ utilisant la liste ci-dessus.</translation>
 The dropdown box shows existing ID names in the current file.
 
 ID names must be unique and start with a letter.</source>
-        <translation>Entrez un nom d&apos;ID pour servir de cible d&apos;hyperliens, de note, et d&apos;entrée de table des matières.
-
-La fenêtre d&apos;affichage montre les ID existants dans le fichier en cours.
-
-Le noms des ID doivent être uniques et commencer par une lettre. </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectId.ui" line="29"/>
         <source>ID:</source>
-        <translation>ID :</translation>
+        <translation>ID:</translation>
     </message>
 </context>
 <context>
@@ -1614,9 +1603,9 @@ Le noms des ID doivent être uniques et commencer par une lettre. </translation>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>Le nom du fichier demandé contient des caractères non-ASCII. Vous ne devriez utiliser que les caractères ASCII pour les noms de fichiers. L&apos;utilisation de caractères non-ASCII peut empêcher l&apos;utilisation du ePub avec certaines liseuses.
+        <translation>A megadott fájlnév nem-ASCII karaktereket tartalmaz. A fájlnévben csak ASCII karaktereket érdemes használni. A nem-ASCII karakterek használata megakadályozhatja az EPUB megnyitását egyes olvasók esetében.
 
-Voulez-vous toujours utiliser ce nom de fichier ?</translation>
+Továbbra is a megadott fájlnevet szeretné használni?</translation>
     </message>
 </context>
 <context>
@@ -1624,17 +1613,17 @@ Voulez-vous toujours utiliser ce nom de fichier ?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="167"/>
         <source>No suggestions</source>
-        <translation>Aucune suggestion</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Check Spelling</source>
-        <translation>Vérifier l&apos;orthographe</translation>
+        <translation>Nyelvhelyesség ellenőrzése</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="188"/>
         <source>Select Language</source>
-        <translation>Choisir la langue</translation>
+        <translation>Nyelv kiválasztása</translation>
     </message>
 </context>
 </TS>

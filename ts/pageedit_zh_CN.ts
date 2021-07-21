@@ -487,7 +487,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>打印当前页面。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -687,7 +687,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>将选定文本设置为小写。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
@@ -702,7 +702,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>将选定文本设置为大写。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
@@ -717,7 +717,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>将所选每个单词的首字母大写。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -727,7 +727,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>仅将所选文本的第一个单词大写。</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1243,37 +1243,37 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>不再显示此警告</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>此文件可能无法按您预期的方式打印。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>深色背景和彩色文本应用了EPUB的CSS将打印出来。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1573"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>小心使用，因为这可能会导致大量墨水被使用！</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>使用以下打印预览查看此文件的打印方式。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>如果您不希望以后再看到此警告，请选中该框。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>Qt5.12.x之前的版本无法使用该功能</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>

@@ -1,5 +1,12 @@
 Change Log
 ==========
+PageEdit-1.7.0
+  Bug Fixes
+   - Add workaround to prevent 2 windows from opening on macOS from FileOpen event
+   - Fix bug in SelectHyperlink that failed with specific external links
+   - prevent PageEdit_injected id from appearing as a possible link target
+
+
 PageEdit-1.6.0
   New Features
     - add ability to allow a spine position paramter to be passed along with opf path
