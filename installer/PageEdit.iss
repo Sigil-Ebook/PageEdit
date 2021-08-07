@@ -24,7 +24,7 @@ LicenseFile=${LICENSE_LOCATION}
 ; Win 7sp1 is the lowest supported version
 MinVersion=0,6.1.7601
 PrivilegesRequired=admin
-PrivilegesRequiredOverridesAllowed=dialog
+PrivilegesRequiredOverridesAllowed=commandline dialog
 OutputBaseFilename={#AppName}-${PAGEEDIT_FULL_VERSION}-Windows${ISS_SETUP_FILENAME_PLATFORM}-Setup
 ;ChangesAssociations=yes
 ;SetupLogging=yes
@@ -202,11 +202,24 @@ begin
     end
  end; *)
 
+function CmdLineParamExists(const Value: string): Boolean;
+var
+  I: Integer;
+begin
+  Result := False;
+  for I := 1 to ParamCount do
+    if CompareText(Uppercase(ParamStr(I)), Value) = 0 then
+    begin
+      Result := True;
+      Exit;
+    end;
+end;
+
 // Disable ability to install VS runtime in "for current user only" mode
 procedure CurPageChanged(CurPageID: Integer);
 begin
   if CurPageID = wpSelectComponents then
-    if not IsAdminInstallMode then
+    if (not IsAdminInstallMode) and ((not CmdLineParamExists('/SILENT')) and (not CmdLineParamExists('/VERYSILENT'))) then
     begin
       WizardForm.ComponentsList.Checked[2] := False;
       //WizardForm.ComponentsList.ItemEnabled[2] := False;
@@ -232,9 +245,9 @@ begin
   if CurPageID = wpSelectComponents then begin
     if IsAdminInstallMode then begin
       if (not WizardIsComponentSelected('vcruntimeadmin')) then
-        Result := MsgBox( msg, mbInformation, MB_YESNO) = IDYES
+        Result := SuppressibleMsgBox(msg, mbInformation, MB_YESNO, IDYES) = IDYES
     end else
       if (not WizardIsComponentSelected('vcruntimeuser')) then
-        Result := MsgBox( msg, mbInformation, MB_YESNO) = IDYES;
+        Result := SuppressibleMsgBox(msg, mbInformation, MB_YESNO, IDYES) = IDYES;
   end;
 end;
