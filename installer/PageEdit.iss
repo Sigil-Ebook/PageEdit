@@ -7,6 +7,7 @@
 [Setup]
 AppName={#AppName}
 AppVerName={#AppName} ${PAGEEDIT_FULL_VERSION}
+AppVersion=${PAGEEDIT_FULL_VERSION}
 VersionInfoVersion=${PAGEEDIT_FULL_VERSION}
 DefaultDirName={autopf}\{#AppName}
 AllowNoIcons=yes
