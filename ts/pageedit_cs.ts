@@ -487,7 +487,7 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>Vytisknout nynější stranu.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -687,7 +687,7 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>Nastavit vybraný text na malá písmena.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
@@ -702,7 +702,7 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>Nastavit vybraný text na velká písmena.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
@@ -717,7 +717,7 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>Převést první písmeno každého vybraného slova s velkým počátečním písmenem.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -727,7 +727,7 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Převést na velká písmena pouze první slovo vybraného textu.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1244,7 +1244,7 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     <message>
         <location filename="../MainWindow.cpp" line="1570"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>Neukazovat znovu toto upozornění</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>

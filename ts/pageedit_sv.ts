@@ -482,7 +482,7 @@ Om en översättning för ett visst ord eller en viss fras inte är tillgänglig
     <message>
         <location filename="../main.ui" line="409"/>
         <source>&amp;Print</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Skriv ut</translation>
     </message>
     <message>
         <location filename="../main.ui" line="412"/>

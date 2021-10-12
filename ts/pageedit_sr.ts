@@ -229,37 +229,37 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Одредите да ли је html датотекама дозвољено да приступају не-мултимедијалним удаљеним ресурсима.</translation>
+        <translation>Одредите да ли је html фајловима дозвољено да приступају не-мултимедијалним удаљеним ресурсима.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation>Контрола приступа html датотекама не-мултимедијалним удаљеним ресурсима.</translation>
+        <translation>Контрола приступа не-мултимедијалним удаљеним ресурсима за html фајлове.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Штиклирајте како бисте html датотекама дозволили приступ не-мултимедијалним удаљеним ресурсима.</translation>
+        <translation>Штиклирајте ако html фајловима желите да дозволите приступ не-мултимедијалним удаљеним ресурсима.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Html датотеке могу да приступе свим типовима удаљених ресурса.</translation>
+        <translation>Html фајлови могу да приступе свим типовима удаљених ресурса.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Одредите да ли html датотеке могу да користе јаваскрипт</translation>
+        <translation>Одредите да ли html фајлови могу да користе јаваскрипт</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation>Контрола коришћења јаваскрипта у html датотекама</translation>
+        <translation>Контрола коришћења јаваскрипта у html фајловима</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Штиклирајте да дозволите html датотекама коришћење јаваскрипта</translation>
+        <translation>Штиклирајте ако желите да у html фајловима дозволите употребу јаваскрипта</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
@@ -309,7 +309,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Штиклирајте да се уради реформатирање помоћу Prettify када се чувају xhtml датотеке.</translation>
+        <translation>Штиклирајте ако желите да се приликом чувања xhtml фајла уради реформатирање помоћу Prettify.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
@@ -350,7 +350,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;Датотека</translation>
+        <translation>&amp;Фајл</translation>
     </message>
     <message>
         <location filename="../main.ui" line="75"/>
@@ -395,7 +395,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="185"/>
         <source>File</source>
-        <translation>Датотека</translation>
+        <translation>Фајл</translation>
     </message>
     <message>
         <location filename="../main.ui" line="199"/>
@@ -472,7 +472,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="396"/>
         <source>Save the current file.</source>
-        <translation>Сачувај текућу датотеку.</translation>
+        <translation>Сачувај текући фајл.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="399"/>
@@ -502,7 +502,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="424"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Сачувај текућу датотеку под другим именом.</translation>
+        <translation>Сачувај текући фајл под другим именом.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="427"/>
@@ -527,7 +527,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="453"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Налепљује садржај клипборда у датотеку.</translation>
+        <translation>Налепљује садржај клипборда у фајл.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="463"/>
@@ -657,7 +657,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="620"/>
         <source>Open a file from disk.</source>
-        <translation>Отвара датотеку са диска.</translation>
+        <translation>Отвара фајл са диска.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="623"/>
@@ -872,12 +872,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="889"/>
         <source>Split &amp;Marker</source>
-        <translation>&amp;Маркер за раздвајање датотеке</translation>
+        <translation>&amp;Маркер за раздвајање фајла</translation>
     </message>
     <message>
         <location filename="../main.ui" line="892"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Уметни Сигил маркер за раздвајање датотеке</translation>
+        <translation>Уметни Сигил маркер за раздвајање фајла</translation>
     </message>
     <message>
         <location filename="../main.ui" line="895"/>
@@ -1067,22 +1067,22 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1125"/>
         <source>Next XHtml File</source>
-        <translation>Следећа XHtml датотека</translation>
+        <translation>Следећи xhtml фајл</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1128"/>
         <source>Next file in navigation list</source>
-        <translation>Следећа датотека у листи за навигацију</translation>
+        <translation>Следећи фајл у листи за навигацију</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1141"/>
         <source>Previous XHtml File</source>
-        <translation>Претходна XHtml датотека</translation>
+        <translation>Претходни xhtml фајл</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1144"/>
         <source>Previous file in navigation list</source>
-        <translation>Претходна датотека у листи за навигацију</translation>
+        <translation>Претходни фајл у листи за навигацију</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1160"/>
@@ -1132,12 +1132,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1222"/>
         <source>&amp;File...</source>
-        <translation>&amp;Датотека...</translation>
+        <translation>&amp;Фајл...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1225"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation>Одаберите постојеће датотеке слика, видеа или звука из ваше књиге који треба да се уметну у текст.</translation>
+        <translation>Одаберите постојеће фајлове слика, видеа или звука из ваше књиге који треба да се уметну у текст.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1228"/>
@@ -1147,12 +1147,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="750"/>
         <source>File load failed</source>
-        <translation>Учитавање датотеке није било успешно</translation>
+        <translation>Учитавање фајла није успело</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="751"/>
         <source>File Load Failed</source>
-        <translation>Неуспешно учитавање датотеке</translation>
+        <translation>Неуспешно учитавање фајла</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="846"/>
@@ -1191,22 +1191,22 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1235"/>
         <location filename="../MainWindow.cpp" line="1236"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>HTML датотеке (*.htm *.html *.xhtml)</translation>
+        <translation>HTML фајлови (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1226"/>
         <source>OPF files (*.opf)</source>
-        <translation>OPF датотеке (*.opf)</translation>
+        <translation>OPF фајлови (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1227"/>
         <source>All files (*.*)</source>
-        <translation>Сви датотеке (*.*)</translation>
+        <translation>Сви фајлови (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1466"/>
         <source>Save File</source>
-        <translation>Сачувај датотеку</translation>
+        <translation>Сачувај фајл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1501"/>
@@ -1214,7 +1214,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1514"/>
         <location filename="../MainWindow.cpp" line="1515"/>
         <source>File Save-As Failed!</source>
-        <translation>Чување датотеке није успело!</translation>
+        <translation>Чување фајла није успело!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1501"/>
@@ -1225,7 +1225,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1510"/>
         <location filename="../MainWindow.cpp" line="1549"/>
         <source>File Saved</source>
-        <translation>Датотека је сачувана</translation>
+        <translation>Фајл је сачуван</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1540"/>
@@ -1233,7 +1233,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1553"/>
         <location filename="../MainWindow.cpp" line="1554"/>
         <source>File Save Failed!</source>
-        <translation>Чување датотеке није успело!</translation>
+        <translation>Чување фајла није успело!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1541"/>
@@ -1248,7 +1248,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1571"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation>Ова датотека се можда неће одштампати онако како очекујете.</translation>
+        <translation>Овј фајл се можда неће одштампати онако како очекујете.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1572"/>
@@ -1263,7 +1263,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation>Употребите следећи Преглед штампе да сазнате како ће изгледати отисак ове датотеке.</translation>
+        <translation>Употребите следећи Преглед штампе да сазнате како ће изгледати отисак овог фајла</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1575"/>
@@ -1278,12 +1278,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1660"/>
         <source>File Opened</source>
-        <translation>Датотека отворена</translation>
+        <translation>Фајл је отворен</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1664"/>
         <source>File Open Failed!</source>
-        <translation>Отварање датотеке није успело!</translation>
+        <translation>Отварање фајла није успело!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1687"/>
@@ -1328,12 +1328,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1829"/>
         <source>Insert File</source>
-        <translation>Уметни датотеку</translation>
+        <translation>Уметни фајл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1873"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation>На ову позицију не можете да уметнете датотеку медија.</translation>
+        <translation>На ову позицију не можете да уметнете фајл медија.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1961"/>
@@ -1370,14 +1370,14 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../OPFReader.cpp" line="59"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Није могуће читање OPF датотеке.
+        <translation>Није могуће читање OPF фајла.
 Линија: %1 Колона %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="379"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Није могуће читање датотеке %1:
+        <translation>Није могуће читање фајла %1:
 %2.</translation>
     </message>
     <message>
@@ -1467,12 +1467,12 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectFiles.ui" line="14"/>
         <source>Insert File</source>
-        <translation>Уметни датотеку</translation>
+        <translation>Уметни фајл</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="46"/>
         <source>List only the file names which contain the text you enter.</source>
-        <translation>Прикажи само имена датотека која садрже текст који унесете.</translation>
+        <translation>Прикажи само имена фајлова који садрже текст који унесете.</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="49"/>
@@ -1507,7 +1507,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectFiles.cpp" line="159"/>
         <source>Media Files In the Book</source>
-        <translation>Датотеке медија у књизи</translation>
+        <translation>Фајлови медија у књизи</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="162"/>
@@ -1591,7 +1591,7 @@ The dropdown box shows existing ID names in the current file.
 ID names must be unique and start with a letter.</source>
         <translation>Унесите ID име које ће да се користи као циљ за хиперлинкове, белешке и ставке Садржаја.
 
-Падајућа листа приказује постојећа ID имена у текућој датотеци.
+Падајућа листа приказује постојећа ID имена у текућем фајлу.
 
 ID имена морају бити јединствена и морају да почињу словом.</translation>
     </message>
@@ -1613,9 +1613,9 @@ ID имена морају бити јединствена и морају да 
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>Тражено име датотеке садржи не-ASCII карактере. У именима датотека би требало да користите само ASCII карактере. У супротном EPUB можда неће радити на свим читачима.
+        <translation>Тражено име фајла садржи не-ASCII карактере. У именима фајлова би требало да користите само ASCII карактере. У супротном EPUB можда неће радити на свим читачима.
 
-Да наставим да користим тражено име датотеке?</translation>
+Да ли да наставим са употребом траженог имена фајла?</translation>
     </message>
 </context>
 <context>
