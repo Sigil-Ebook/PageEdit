@@ -25,7 +25,7 @@
 #ifndef SELECTID_H
 #define SELECTID_H
 
-#include <QtWidgets/QDialog>
+#include <QDialog>
 
 #include "ui_SelectId.h"
 

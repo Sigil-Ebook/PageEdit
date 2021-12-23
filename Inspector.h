@@ -28,7 +28,8 @@
 #include <QSize>
 #include <QVBoxLayout>
 #include <QShortcut>
-#include <QtWebEngineWidgets/QWebEngineView>
+#include <QtWebEngineWidgets>
+#include <QWebEngineView>
 
 class QWebEnginePage;
 

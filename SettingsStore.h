@@ -25,8 +25,8 @@
 #ifndef SETTINGSSTORE_H
 #define SETTINGSSTORE_H
 
-#include <QtCore/QSettings>
-#include <QtCore/QString>
+#include <QSettings>
+#include <QString>
 #include <utility>
 
 /**

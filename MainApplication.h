@@ -28,7 +28,7 @@
 
 #include <QEvent>
 #include <QPalette>
-#include <QtWidgets/QApplication>
+#include <QApplication>
 
 class QStyle;
 

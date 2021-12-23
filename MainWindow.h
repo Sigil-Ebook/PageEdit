@@ -25,16 +25,18 @@
 
 #include "ui_main.h"
 
-#include <QtCore/QSignalMapper>
+#include <QSignalMapper>
 #include <QMap>
-#include <QtWebEngineWidgets/QWebEngineView>
+#include <QtWebEngineWidgets>
+#include <QWebEngineView>
 #include <QMainWindow>
 #include <QMoveEvent>
 #include <QCloseEvent>
 #include <QResizeEvent>
-#include <Viewer.h>
-#include <Inspector.h>
 
+
+#include "Viewer.h"
+#include "Inspector.h"
 #include "ElementIndex.h"
 #include "webviewprinter.h"
 

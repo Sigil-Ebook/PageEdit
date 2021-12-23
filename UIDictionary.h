@@ -23,8 +23,8 @@
 #ifndef UIDICTIONARY_H
 #define UIDICTIONARY_H
 
+#include <QStringList>
 class QString;
-class QStringList;
 
 class UIDictionary
 {

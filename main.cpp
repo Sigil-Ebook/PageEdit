@@ -33,7 +33,9 @@
 #include <QMessageBox>
 #include <QFileInfo>
 #include <QTimer>
-#include <QtWebEngineWidgets/QWebEngineProfile>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
+#include <QWebEngineProfile>
 #include <QDebug>
 
 #ifdef Q_OS_MAC
@@ -114,7 +116,7 @@ static QIcon GetApplicationIcon()
 }
 #endif
 
-
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 void setupHighDPI()
 {
     bool has_env_setting = false;
@@ -142,7 +144,7 @@ void setupHighDPI()
         }
     }
 }
-
+#endif
 
 // The message handler installed to handle Qt messages
 void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QString &message)
@@ -209,7 +211,9 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("pageedit");
     QCoreApplication::setApplicationVersion(QString(PAGEEDIT_VERSION));
 #ifndef Q_OS_MAC
+  #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     setupHighDPI();
+  #endif
 #endif
     QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);

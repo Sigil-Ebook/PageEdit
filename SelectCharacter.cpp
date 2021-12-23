@@ -21,11 +21,11 @@
 **
 *************************************************************************/
 
-#include <QtWidgets/QCompleter>
-#include <QtWidgets/QLineEdit>
-#include <QtWidgets/QToolButton>
-#include <QtWidgets/QApplication>
-#include <QtCore/QSignalMapper>
+#include <QCompleter>
+#include <QLineEdit>
+#include <QToolButton>
+#include <QApplication>
+#include <QSignalMapper>
 #include <QScrollArea>
 #include <QVBoxLayout>
 
@@ -437,5 +437,9 @@ void SelectCharacter::WriteSettings()
 
 void SelectCharacter::connectSignalsSlots()
 {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     connect(m_buttonMapper, SIGNAL(mapped(const QString &)), this, SLOT(SetSelectedCharacter(const QString &)));
+#else
+    connect(m_buttonMapper, SIGNAL(mappedString(const QString &)), this, SLOT(SetSelectedCharacter(const QString &)));
+#endif
 }

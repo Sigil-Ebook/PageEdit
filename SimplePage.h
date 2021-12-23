@@ -25,7 +25,9 @@
 
 #include <QObject>
 #include <QUrl>
-#include <QtWebEngineWidgets/QWebEnginePage>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
+#include <QWebEnginePage>
 
 class SimplePage : public QWebEnginePage
 {
@@ -37,4 +39,3 @@ public:
 };
 
 #endif // SIMPLEPAGE_H
-

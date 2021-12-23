@@ -20,11 +20,11 @@
 **
 *************************************************************************/
 
-#include <QtCore/QDir>
-#include <QtCore/QUrl>
-#include <QtGui/QDesktopServices>
-#include <QtWidgets/QMessageBox>
-#include <QtWidgets/QScrollArea>
+#include <QDir>
+#include <QUrl>
+#include <QDesktopServices>
+#include <QMessageBox>
+#include <QScrollArea>
 #include <QWidget>
 
 #include "Preferences.h"

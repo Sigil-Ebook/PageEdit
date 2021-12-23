@@ -25,8 +25,8 @@
 #ifndef SELECTHYPERLINK_H
 #define SELECTHYPERLINK_H
 
-#include <QtWidgets/QDialog>
-#include <QtGui/QStandardItemModel>
+#include <QDialog>
+#include <QStandardItemModel>
 
 #include "ui_SelectHyperlink.h"
 

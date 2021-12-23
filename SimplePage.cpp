@@ -18,7 +18,9 @@
 **  along with Sigil.  If not, see <http://www.gnu.org/licenses/>.
 **
 *************************************************************************/
-#include <QtWebEngineWidgets/QWebEnginePage>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
+#include <QWebEnginePage>
 #include <QUrl>
 #include <QDebug>
 #include "Utility.h"
@@ -29,6 +31,7 @@ SimplePage::SimplePage(QObject *parent)
     : QWebEnginePage(parent)
 {
     setBackgroundColor(Utility::WebViewBackgroundColor());
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     setUrl(QUrl("about:blank"));
+#endif
 }
-

@@ -33,6 +33,11 @@
 #include "string_buffer.h"
 #include "error.h"
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    #define QT_ENUM_SKIPEMPTYPARTS Qt::SkipEmptyParts
+#else
+    #define QT_ENUM_SKIPEMPTYPARTS QString::SkipEmptyParts
+#endif
 
 static std::unordered_set<std::string> nonbreaking_inline  = { 
     "a","abbr","acronym","b","bdo","big","br","button","cite","code","del",
@@ -470,7 +475,7 @@ QString GumboInterface::get_qwebpath_to_node(GumboNode* node)
 
 GumboNode* GumboInterface::get_node_from_qwebpath(QString webpath) 
 {
-    QStringList path_pieces = webpath.split(",", QString::SkipEmptyParts);
+    QStringList path_pieces = webpath.split(",", QT_ENUM_SKIPEMPTYPARTS);
     GumboNode* node = get_root_node();
     GumboNode* end_node = node;
     for (int i=0; i < path_pieces.count() - 1 ; ++i) {

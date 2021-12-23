@@ -20,7 +20,7 @@
 **
 *************************************************************************/
 
-#include <QtGui/QFileOpenEvent>
+#include <QFileOpenEvent>
 
 #include "MainWindow.h"
 #include "AppEventFilter.h"

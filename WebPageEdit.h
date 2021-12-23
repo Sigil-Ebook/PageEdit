@@ -25,7 +25,9 @@
 
 #include <QObject>
 #include <QUrl>
-#include <QtWebEngineWidgets/QWebEnginePage>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
+#include <QWebEnginePage>
 
 class WebPageEdit : public QWebEnginePage
 {

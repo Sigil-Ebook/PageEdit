@@ -31,7 +31,9 @@
 #include <QKeyEvent>
 #include <QShortcut>
 #include <QPointer>
-#include <QtWebEngineWidgets/QWebEngineScript>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
+#include <QWebEngineScript>
 
 #include "SearchToolbar.h"
 #include "WebViewEdit.h"

@@ -24,7 +24,7 @@
 #ifndef APPEVENTFILTER_H
 #define APPEVENTFILTER_H
 
-#include <QtCore/QObject>
+#include <QObject>
 #include <QString>
 
 class QEvent;

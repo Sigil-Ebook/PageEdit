@@ -31,9 +31,11 @@
 #include <QLabel>
 #include <QCheckBox>
 #include <QToolBar>
-#include <QtWebEngineWidgets/QWebEngineView>
-#include <QtWebEngineWidgets/QWebEngineSettings>
-#include <QtWebEngineWidgets/QWebEngineProfile>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
+#include <QWebEngineView>
+#include <QWebEngineSettings>
+#include <QWebEngineProfile>
 #include <QDir>
 #include <QFileDialog>
 #include <QMessageBox>
@@ -1149,7 +1151,11 @@ void MainWindow::LoadSettings()
     settings.endGroup();
 
     SettingsStore::WebViewAppearance WVAppearance = settings.webViewAppearance();
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QWebEngineSettings *web_settings = QWebEngineSettings::defaultSettings();
+#else
+    QWebEngineSettings *web_settings = QWebEngineProfile::defaultProfile()->settings();
+#endif
 
     // QWebEngine security settings to help prevent rogue epub3 javascripts
     // enable javascript in mainworld for epub3 but then lock it down to the extent we can
@@ -2035,7 +2041,11 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionHeadingNormal, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeadingNormal, "Normal");
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     connect(m_headingMapper, SIGNAL(mapped(const QString &)), this, SLOT(ApplyHeadingToSelection(const QString &)));
+#else
+    connect(m_headingMapper, SIGNAL(mappedString(const QString &)), this, SLOT(ApplyHeadingToSelection(const QString &)));
+#endif
 
     connect(ui.actionHeadingPreserveAttributes,SIGNAL(triggered(bool)),this,SLOT(SetPreserveHeadingAttributes(bool)));
 
@@ -2098,7 +2108,11 @@ void MainWindow::ConnectSignalsToSlots()
     m_casingChangeMapper->setMapping(ui.actionCasingUppercase,  Utility::Casing_Uppercase);
     m_casingChangeMapper->setMapping(ui.actionCasingTitlecase, Utility::Casing_Titlecase);
     m_casingChangeMapper->setMapping(ui.actionCasingCapitalize, Utility::Casing_Capitalize);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     connect(m_casingChangeMapper, SIGNAL(mapped(int)), this, SLOT(ChangeCasing(int)));
+#else
+    connect(m_casingChangeMapper, SIGNAL(mappedInt(int)), this, SLOT(ChangeCasing(int)));
+#endif
 
     // View/Zoom Related
     connect(ui.actionZoomIn,     SIGNAL(triggered()),       this, SLOT(ZoomIn()));

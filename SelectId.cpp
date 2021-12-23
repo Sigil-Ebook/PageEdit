@@ -21,8 +21,8 @@
 **
 *************************************************************************/
 
-#include <QtWidgets/QCompleter>
-#include <QtWidgets/QLineEdit>
+#include <QCompleter>
+#include <QLineEdit>
 
 #include "SettingsStore.h"
 #include "Utility.h"

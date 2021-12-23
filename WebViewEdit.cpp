@@ -28,12 +28,14 @@
 #include <QDir>
 #include <QMenu>
 #include <QContextMenuEvent>
-#include <QtWebEngineWidgets/QWebEngineSettings>
-#include <QtWebEngineWidgets/QWebEngineProfile>
-#include <QtWebEngineWidgets/QWebEnginePage>
-#include <QtWebEngineWidgets/QWebEngineView>
-#include <QtWebEngineWidgets/QWebEngineScript>
-#include <QtWebEngineWidgets/QWebEngineContextMenuData>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
+#include <QWebEngineSettings>
+#include <QWebEngineProfile>
+#include <QWebEnginePage>
+#include <QWebEngineView>
+#include <QWebEngineScript>
+#include <QWebEngineContextMenuData>
 #include <QDebug>
 
 #include "Utility.h"
@@ -42,6 +44,13 @@
 
 #include "WebPageEdit.h"
 #include "WebViewEdit.h"
+
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    #define QT_ENUM_SKIPEMPTYPARTS Qt::SkipEmptyParts
+#else
+    #define QT_ENUM_SKIPEMPTYPARTS QString::SkipEmptyParts
+#endif
+
 
 #define DBG if(0)
 
@@ -704,7 +713,7 @@ QList<ElementIndex> WebViewEdit::ConvertQWebPathToHierarchy(const QString & webp
 {
     // The location element hierarchy encoded in a string
     QString location_string = webpath;
-    QStringList elements    = location_string.split(",", QString::SkipEmptyParts);
+    QStringList elements    = location_string.split(",", QT_ENUM_SKIPEMPTYPARTS);
     QList<ElementIndex> location;
     foreach(QString element, elements) {
         ElementIndex new_element;

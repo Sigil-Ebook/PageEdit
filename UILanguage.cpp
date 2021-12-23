@@ -20,10 +20,10 @@
 **
 *************************************************************************/
 
-#include <QtCore/QDir>
-#include <QtCore/QCoreApplication>
-#include <QtCore/QLibraryInfo>
-#include <QtCore/QString>
+#include <QDir>
+#include <QCoreApplication>
+#include <QLibraryInfo>
+#include <QString>
 #include "UILanguage.h"
 #include "pageedit_constants.h"
 

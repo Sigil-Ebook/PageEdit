@@ -20,7 +20,8 @@
 **
 *************************************************************************/
 #include <QTimer>
-#include <QtWebEngineWidgets/QWebEnginePage>
+#include <QtWebEngineCore>
+#include <QWebEnginePage>
 #include <QDebug>
 #include "Utility.h"
 #include "WebPageEdit.h"
@@ -43,7 +44,9 @@ WebPageEdit::WebPageEdit(QObject *parent)
     // in the future unless Qt is fixed
     setHtml(BASIC_HTML.arg(backgroundColor().name()));
 #else
+  #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     setUrl(QUrl("about:blank"));
+  #endif
 #endif
 }
 

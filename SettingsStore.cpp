@@ -21,8 +21,8 @@
 **
 *************************************************************************/
 
-#include <QtCore/QLocale>
-#include <QtCore/QCoreApplication>
+#include <QLocale>
+#include <QCoreApplication>
 #include <QFile>
 #include <QDir>
 

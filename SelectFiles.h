@@ -26,13 +26,13 @@
 #ifndef SELECTFILES_H
 #define SELECTFILES_H
 
-#include <QtWidgets/QDialog>
-#include <QtGui/QStandardItemModel>
+#include <QDialog>
+#include <QStandardItemModel>
+#include <QStringList>
 
 #include "ui_SelectFiles.h"
 
 class QString;
-class QStringList;
 class QWebEngineView;
 
 class SelectFiles : public QDialog

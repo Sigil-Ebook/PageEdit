@@ -22,13 +22,15 @@
 *************************************************************************/
 
 #include <QApplication>
-#include <QtCore/QFileInfo>
+#include <QFileInfo>
 #include <QEventLoop>
 #include <QImage>
 #include <QPixmap>
 #include <QtWidgets/QLayout>
-#include <QtWebEngineWidgets/QWebEngineView>
-#include <QtWebEngineWidgets/QWebEngineSettings>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
+#include <QWebEngineView>
+#include <QWebEngineSettings>
 
 #include "Utility.h"
 #include "SimplePage.h"

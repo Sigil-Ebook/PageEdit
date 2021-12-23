@@ -23,11 +23,12 @@
 *************************************************************************/
 
 #include <QString>
-#include <QtWidgets/QColorDialog>
-#include <QtWidgets/QListWidget>
-#include <QtGui/QPainter>
-#include <QtWidgets/QStyledItemDelegate>
-#include <QtWebEngineWidgets/QWebEngineSettings>
+#include <QColorDialog>
+#include <QListWidget>
+#include <QPainter>
+#include <QStyledItemDelegate>
+#include <QtWebEngineWidgets>
+#include <QWebEngineSettings>
 #include <QFontDialog>
 
 #include "AppearanceWidget.h"
@@ -90,7 +91,11 @@ PreferencesWidget::ResultActions AppearanceWidget::saveSettings()
     settings.setMainMenuIconSize(double(ui.iconSizeSlider->value())/10);
 
     // WV settings can be globally changed and will take effect immediately
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QWebEngineSettings *web_settings = QWebEngineSettings::defaultSettings();
+#else
+    QWebEngineSettings *web_settings = QWebEngineProfile::defaultProfile()->settings();
+#endif
     web_settings->setFontSize(QWebEngineSettings::DefaultFontSize,   WVAppearance.font_size);
     web_settings->setFontFamily(QWebEngineSettings::StandardFont,    WVAppearance.font_family_standard);
     web_settings->setFontFamily(QWebEngineSettings::SerifFont,       WVAppearance.font_family_serif);

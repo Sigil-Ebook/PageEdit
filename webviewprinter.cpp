@@ -29,6 +29,8 @@
 #include <QDir>
 #include <QUrl>
 #include <QPrintPreviewDialog>
+#include <QtWebEngineWidgets>
+#include <QtWebEngineCore>
 #include <QWebEngineView>
 #include <QWebEnginePage>
 #include <QStandardPaths>

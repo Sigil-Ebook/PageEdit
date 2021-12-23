@@ -25,25 +25,23 @@
 #include <string>
 
 #include <QApplication>
-#include <QtCore/QDir>
-#include <QtCore/QFile>
-#include <QtCore/QFileInfo>
-#include <QtCore/QProcess>
-#include <QtCore/QStandardPaths>
-#include <QtCore/QStringList>
-#include <QtCore/QStringRef>
-#include <QtCore/QTextStream>
-#include <QtCore/QtGlobal>
-#include <QtCore/QUrl>
-#include <QtCore/QUuid>
-#include <QtWidgets/QMainWindow>
+#include <QDir>
+#include <QFile>
+#include <QFileInfo>
+#include <QProcess>
+#include <QStandardPaths>
+#include <QStringList>
+#include <QStringRef>
+#include <QTextStream>
+#include <QtGlobal>
+#include <QUrl>
+#include <QUuid>
+#include <QMainWindow>
 #include <QSettings>
 #include <QTextEdit>
 #include <QMessageBox>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
-#include <QFile>
-#include <QFileInfo>
 #include <QPixmap>
 #include <QVector>
 #include <QDebug>
@@ -60,6 +58,12 @@
 #endif
 // This is the same read buffer size used by Java and Perl.
 #define BUFF_SIZE 8192
+
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    #define QT_ENUM_KEEPEMPTYPARTS Qt::KeepEmptyParts
+#else
+    #define QT_ENUM_KEEPEMPTYPARTS QString::KeepEmptyParts
+#endif
 
 // Subclass QMessageBox for our StdWarningDialog to make any Details Resizable
 class PageEditMessageBox: public QMessageBox
@@ -96,7 +100,11 @@ static const QString DARK_STYLE =
 // Define the user preferences location to be used
 QString Utility::DefinePrefsDir()
 {
-    return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+        return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+#else
+        return QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation);
+#endif
 }
 
 
@@ -201,8 +209,13 @@ QString Utility::Substring(int start_index, int end_index, const QString &string
 // [ start_index, end_index >
 QStringRef Utility::SubstringRef(int start_index, int end_index, const QString &string)
 {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     return string.midRef(start_index, end_index - start_index);
+#else
+    return QStringRef(&string, start_index, end_index - start_index);
+#endif
 }
+
 // Replace the first occurrence of string "before"
 // with string "after" in string "string"
 QString Utility::ReplaceFirst(const QString &before, const QString &after, const QString &string)
@@ -405,7 +418,9 @@ QString Utility::ReadUnicodeTextFile(const QString &fullfilepath)
 
     QTextStream in(&file);
     // Input should be UTF-8
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     in.setCodec("UTF-8");
+#endif
     // This will automatically switch reading from
     // UTF-8 to UTF-16 if a BOM is detected
     in.setAutoDetectUnicode(true);
@@ -430,7 +445,9 @@ void Utility::WriteUnicodeTextFile(const QString &text, const QString &fullfilep
 
     QTextStream out(&file);
     // We ALWAYS output in UTF-8
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     out.setCodec("UTF-8");
+#endif
     out << text;
 }
 
@@ -804,8 +821,8 @@ QString Utility::relativePath(const QString & destination, const QString & start
     while (dest.endsWith(sep)) dest.chop(1);
     while (start.endsWith(sep)) start.chop(1);
 
-    QStringList dsegs = dest.split(sep, QString::KeepEmptyParts);
-    QStringList ssegs = start.split(sep, QString::KeepEmptyParts);
+    QStringList dsegs = dest.split(sep, QT_ENUM_KEEPEMPTYPARTS);
+    QStringList ssegs = start.split(sep, QT_ENUM_KEEPEMPTYPARTS);
     QStringList res;
     int i = 0;
     int nd = dsegs.size();

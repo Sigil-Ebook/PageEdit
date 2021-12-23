@@ -25,10 +25,10 @@
 #define UTILITY_H
 
 #include <QCoreApplication>
-#include <QtCore/QString>
+#include <QString>
+#include <QStringList>
+#include <QStringRef>
 
-class QStringList;
-class QStringRef;
 class QWidget;
 
 struct ExceptionBase;
