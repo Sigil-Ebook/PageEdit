@@ -35,7 +35,11 @@
 #include <QWebEnginePage>
 #include <QWebEngineView>
 #include <QWebEngineScript>
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+#include <QWebEngineContextMenuRequest>
+#else
 #include <QWebEngineContextMenuData>
+#endif
 #include <QDebug>
 
 #include "Utility.h"
@@ -148,29 +152,45 @@ WebViewEdit::~WebViewEdit()
 
 void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
 {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     const QWebEngineContextMenuData &data = page()->contextMenuData();
     Q_ASSERT(data.isValid());
+#else
+    const QWebEngineContextMenuRequest* request = lastContextMenuRequest();
+#endif
 
     QWebEngineProfile *profile = page()->profile();
     m_menu->clear();
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     if (data.isContentEditable()) {
-
+#else
+    if (request->isContentEditable()) {
+#endif        
+        
         // Used for edit mode
         const QStringList &dictionaries = profile->spellCheckLanguages();
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
         if (!data.misspelledWord().isEmpty()) {
+#else
+        if (!request->misspelledWord().isEmpty()) {
+#endif
             QFont boldFont = m_menu->font();
             boldFont.setBold(true);
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
             for (const QString &suggestion : data.spellCheckerSuggestions()) {
-	        QAction *action = m_menu->addAction(suggestion);
-	        action->setFont(boldFont);
+#else
+            for (const QString &suggestion : request->spellCheckerSuggestions()) {
+#endif
+	            QAction *action = m_menu->addAction(suggestion);
+	            action->setFont(boldFont);
 
-	        connect(action, &QAction::triggered, this, [=]() {
-	            page()->replaceMisspelledWord(suggestion);
-	          });
-             }
+	            connect(action, &QAction::triggered, this, [=]() {
+	                page()->replaceMisspelledWord(suggestion);
+	            });
+            }
 
             if (m_menu->actions().isEmpty()) {
 	        m_menu->addAction(tr("No suggestions"))->setEnabled(false);
@@ -181,7 +201,7 @@ void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
         m_menu->addAction(pageAction(QWebEnginePage::Cut));
         m_menu->addAction(pageAction(QWebEnginePage::Copy));
         m_menu->addAction(pageAction(QWebEnginePage::Paste));
-	m_menu->addAction(pageAction(QWebEnginePage::SelectAll));
+        m_menu->addAction(pageAction(QWebEnginePage::SelectAll));
 
         m_menu->addSeparator();
 

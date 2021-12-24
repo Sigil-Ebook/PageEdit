@@ -1,6 +1,6 @@
 /************************************************************************
  **
- **  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+ **  Copyright (C) 2019-2021 Kevin B. Hendricks, Stratford Ontario Canada
  **
  **  This file is part of PageEdit.
  **
@@ -35,6 +35,11 @@
 #include <QtWebEngineCore>
 #include <QWebEngineScript>
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+#include <QWebEngineFindTextResult>
+#endif
+
+
 #include "SearchToolbar.h"
 #include "WebViewEdit.h"
 #include "WebPageEdit.h"
@@ -46,7 +51,7 @@ SearchToolbar::SearchToolbar(WebViewEdit* view, QWidget* parent)
     : QWidget(parent)
     , ui(new Ui::SearchToolbar)
     , m_view(view)
-    , m_findFlags(0)
+    , m_findFlags(QWebEnginePage::FindFlags())
 {
     ui->setupUi(this);
 
@@ -88,7 +93,7 @@ void SearchToolbar::close()
 
 void SearchToolbar::findNext()
 {
-    m_findFlags = 0;
+    m_findFlags = QWebEnginePage::FindFlags();
     updateFindFlags();
 
     searchText(ui->lineEdit->text());
@@ -125,10 +130,16 @@ void SearchToolbar::setText(const QString &text)
     ui->lineEdit->setText(text);
 }
 
+
 void SearchToolbar::searchText(const QString &text)
 {
     QPointer<SearchToolbar> guard = this;
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     m_view->findText(text, m_findFlags, [=](bool found) {
+#else
+    m_view->findText(text, m_findFlags, [=](const QWebEngineFindTextResult& result) {
+    bool found = result.numberOfMatches() > 0;
+#endif
         if (!guard) {
             return;
         }

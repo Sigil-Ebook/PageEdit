@@ -2,9 +2,10 @@
 #include <QStringList>
 #include <QMap>
 #include <QUrl>
-#include <QDebug>
 #include <QXmlStreamReader>
 #include <QTextStream>
+#include <QLatin1String>
+#include <QDebug>
 
 
 #include "Utility.h"
@@ -48,10 +49,10 @@ void OPFReader::parseOPF(const QString& opfpath)
         if (!opf_reader.isStartElement()) {
             continue;
         }
-        else if (opf_reader.name() == "item") {
+        else if (opf_reader.name().compare(QLatin1String("item")) == 0) {
             ReadManifestItemElement(&opf_reader);
         }
-        else if (opf_reader.name() == "itemref") {
+        else if (opf_reader.name().compare(QLatin1String("itemref")) == 0) {
             ReadSpineItemRef(&opf_reader);
         }
     }

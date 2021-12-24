@@ -187,7 +187,11 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
         QFile outFile(pageedit_log_file);
         outFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text);
         QTextStream ts(&outFile);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
         ts << qt_log_entry << endl;
+#else
+        ts << qt_log_entry << Qt::endl;
+#endif
     }
 }
 
@@ -195,11 +199,14 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
 // Application entry point
 int main(int argc, char *argv[])
 {
-#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+  #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
     QT_REQUIRE_VERSION(argc, argv, "5.9.0");
-#else
+  #else
     QT_REQUIRE_VERSION(argc, argv, "5.12.3");
+  #endif
 #endif
+    
 
 #ifndef QT_DEBUG
     qInstallMessageHandler(MessageHandler);
@@ -213,9 +220,9 @@ int main(int argc, char *argv[])
 #ifndef Q_OS_MAC
   #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     setupHighDPI();
+    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
   #endif
 #endif
-    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
     MainApplication app(argc, argv);

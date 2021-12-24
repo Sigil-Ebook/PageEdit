@@ -42,8 +42,13 @@ QStringList UILanguage::GetPossibleTranslationPaths()
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
     possible_qm_locations.append(pageedit_share_root + "/translations/");
 #endif
-
+    
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     possible_qm_locations.append(QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+#else
+    possible_qm_locations.append(QLibraryInfo::path(QLibraryInfo::TranslationsPath));
+#endif
+    
 
 #ifdef Q_OS_MAC
     possible_qm_locations.append(QCoreApplication::applicationDirPath() + "/../translations");

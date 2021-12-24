@@ -866,7 +866,9 @@ QList<ElementIndex> MainWindow::GetCaretLocation()
 {
     DBG qDebug() << "WebView in GetCaretLocation";
     QList<ElementIndex> hierarchy = m_WebView->GetCaretLocation();
-    DBG foreach(ElementIndex ei, hierarchy) qDebug() << "name: " << ei.name << " index: " << ei.index;
+    // foreach(ElementIndex ei, hierarchy) {
+    //     qDebug() << "name: " << ei.name << " index: " << ei.index;
+    // }    
     return hierarchy;
 }
 
