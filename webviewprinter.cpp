@@ -102,15 +102,14 @@ void WebViewPrinter::printDocument(QPrinter *printer)
 {
     QEventLoop loop;
     bool result;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     auto printCallback = [&](bool success) { result = success; loop.quit(); };
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     m_view->page()->print(printer, std::move(printCallback));
-    loop.exec();
 #else
-    // FIXME - should we be using rintToPdf directly to a file here 
-    // m_view->printToPdf(blah...) here;
-    result = true;
+    connect(m_view, &QWebEngineView::printFinished, std::move(printCallback)); 
+    m_view->print(printer);
 #endif    
+    loop.exec();
     if (!result) {
         DBG qDebug() << "Could not print document.";
         QPainter painter;

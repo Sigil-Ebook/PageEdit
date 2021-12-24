@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2021 Kevin B. Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2012      John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012      Grant Drake
 **  Copyright (C) 2012      Dave Heiland
@@ -39,7 +39,11 @@ MainApplication::MainApplication(int &argc, char **argv)
 #ifdef Q_OS_MAC
     // on macOS the application palette actual text colors never seem to change when DarkMode is enabled
     // so use a mac style standardPalette
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     m_Style = QStyleFactory::create("macintosh");
+#else
+    m_Style = QStyleFactory::create("macos");
+#endif
     QPalette app_palette = m_Style->standardPalette();
     m_isDark = app_palette.color(QPalette::Active,QPalette::WindowText).lightness() > 128;
     fixMacDarkModePalette(app_palette);
