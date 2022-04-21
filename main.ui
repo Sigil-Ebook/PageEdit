@@ -1127,6 +1127,9 @@
    <property name="toolTip">
     <string>Next file in navigation list</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+PgDown</string>
+   </property>
   </action>
 
   <action name="actionPrev">
@@ -1142,6 +1145,9 @@
    </property>
    <property name="toolTip">
     <string>Previous file in navigation list</string>
+   </property>
+   <property name="shortcut">
+     <string>Ctrl+PgUp</string>
    </property>
   </action>
 
