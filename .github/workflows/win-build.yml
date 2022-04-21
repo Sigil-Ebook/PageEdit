@@ -42,7 +42,7 @@ env:
 jobs:
   build:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
     - uses: actions/checkout@v2
@@ -83,7 +83,7 @@ jobs:
       working-directory: ${{runner.workspace}}\build
       run: |
         set PATH=${{runner.workspace}}\%QT%\bin;%PATH%
-        call "C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.2
+        call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.1
         echo %PATH%
         cmake %GITHUB_WORKSPACE% ^
         -G "Ninja" ^
@@ -98,11 +98,11 @@ jobs:
       if: "contains(github.event.head_commit.message, '[deploy]')"
       run: |
         set PATH=%INNO%;${{runner.workspace}}\%QT%\bin;%PATH%
-        set /p RedistVersion=<"C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\Microsoft.VCRedistVersion.default.txt"
-        set REDIST=C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\VC\Redist\MSVC\%RedistVersion%\vcredist_x64.exe
+        set /p RedistVersion=<"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\Microsoft.VCRedistVersion.default.txt"
+        set REDIST=C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Redist\MSVC\%RedistVersion%\vcredist_x64.exe
         echo "%REDIST%"
         cp '%REDIST%' %GITHUB_WORKSPACE%\installer\
-        call "C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.2
+        call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.1
         ninja -j2 deployinstaller
 
     - name: Upload to gdrive
