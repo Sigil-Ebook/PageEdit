@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2016-2020 Kevin B. Hendricks, Stratford, ON
+**  Copyright (C) 2016-2022 Kevin B. Hendricks, Stratford, ON
 **  Copyright (C) 2011-2013 John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012-2013 Dave Heiland
 **
@@ -27,9 +27,10 @@
 #include <QDir>
 
 #include "SettingsStore.h"
+#include "pageedit_constants.h"
 #include "Utility.h"
 
-static const float ZOOM_NORMAL = 1.0f;
+const float ZOOM_NORMAL = 1.0f;
 static QString SETTINGS_GROUP = "user_preferences";
 static QString KEY_UI_LANGUAGE = SETTINGS_GROUP + "/" + "ui_language";
 static QString KEY_UI_DICTIONARY = SETTINGS_GROUP + "/" + "ui_dictionary";
@@ -61,9 +62,14 @@ static QString KEY_USE_WSPREWRAP = SETTINGS_GROUP + "/" + "use_white_space_pre_w
 static QString KEY_SKIP_PRINT_WARNINGS = SETTINGS_GROUP + "/" + "skipprintwarnings";
 static QString KEY_SKIP_PRINT_PREVIEW = SETTINGS_GROUP + "/" + "skipprintpreview";
 
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
+static const QString SETTINGS_FILE = PAGEEDIT_SETTINGS_FILE;
+#else
+static const QString SETTINGS_FILE = PAGEEDIT_V6_SETTINGS_FILE;
+#endif
 
 SettingsStore::SettingsStore()
-    : QSettings(Utility::DefinePrefsDir() + "/pageedit.ini", QSettings::IniFormat)
+    : QSettings(Utility::DefinePrefsDir() + "/" + SETTINGS_FILE, QSettings::IniFormat)
 {  
     // See QTBUG-40796 and QTBUG-54510 as using UTF-8 as a codec for ini files is very broken
     // setIniCodec("UTF-8");

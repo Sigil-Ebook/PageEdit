@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020  Kevin B. Hendricks, Stratford Ontario Canada
-**  Copyright (C) 2019-2020  Doug Massay
+**  Copyright (C) 2019-2022  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2022  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -25,6 +25,9 @@
 #define PE_CONSTANTS_H
 
 class QString;
+
+extern const QString PAGEEDIT_SETTINGS_FILE;
+extern const QString PAGEEDIT_V6_SETTINGS_FILE;
 
 extern const float ZOOM_STEP;
 extern const float ZOOM_MIN;

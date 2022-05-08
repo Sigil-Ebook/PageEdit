@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2021  Kevin B. Hendricks, Stratford, Ontario, Canada
-**  Copyright (C) 2019-2021  Doug Massay
+**  Copyright (C) 2019-2022  Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2022  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -32,6 +32,7 @@
 #include <QTranslator>
 #include <QMessageBox>
 #include <QFileInfo>
+#include <QFile>
 #include <QTimer>
 #include <QtWebEngineWidgets>
 #include <QtWebEngineCore>
@@ -195,6 +196,16 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
     }
 }
 
+// utility routine for performing centralized ini versioning based on Qt version
+void update_ini_file_if_needed(const QString oldfile, const QString newfile)
+{
+    QFileInfo nf(newfile);
+    if (!nf.exists()) {
+        QFileInfo of(oldfile);
+        if (of.exists() && of.isFile()) QFile::copy(oldfile, newfile);
+    }
+}
+
 
 // Application entry point
 int main(int argc, char *argv[])
@@ -217,6 +228,14 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("sigil-ebook.com");
     QCoreApplication::setApplicationName("pageedit");
     QCoreApplication::setApplicationVersion(QString(PAGEEDIT_VERSION));
+
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    // Qt6 forced move to utf-8 settings values but Qt5 settings are broken for utf-8 codec
+    // See QTBUG-40796 and QTBUG-54510 which never got fixed
+    update_ini_file_if_needed(Utility::DefinePrefsDir() + "/" + PAGEEDIT_SETTINGS_FILE,
+                              Utility::DefinePrefsDir() + "/" + PAGEEDIT_V6_SETTINGS_FILE);
+#endif
+
 #ifndef Q_OS_MAC
   #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     setupHighDPI();
