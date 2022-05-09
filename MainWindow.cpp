@@ -1964,6 +1964,9 @@ void MainWindow::sizeMenuIcons() {
     QList<QToolBar *> all_toolbars = findChildren<QToolBar *>();
     foreach(QToolBar * toolbar, all_toolbars) {
         toolbar->setIconSize(QSize(iconsize,iconsize));
+        // Kvantum themes on Linux will only show QToolBar "handles" when the movable
+        // property is explicitly set to true (even though true is the Qt Default)
+        toolbar->setMovable(true);
     }
 }
 
