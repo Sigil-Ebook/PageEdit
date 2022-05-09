@@ -1,5 +1,18 @@
 Change Log
 ==========
+
+PageEdit-1.9.10
+  New Features
+   - support building with Qt6
+   - make Qt6 versions use their own ini file for settings
+   - add Ctrl+PgUp/PgDown shortcuts to Prev and Next actions
+
+  Bug Fixes
+   - harden URLInterceptor to dead QWidget bugs in Qt
+   - setMovable true on QToolbars to work around broken linux theme issues
+   - update sigil gumbo version with upstream fixes
+
+
 PageEdit-1.7.0
   Bug Fixes
    - Add workaround to prevent 2 windows from opening on macOS from FileOpen event
