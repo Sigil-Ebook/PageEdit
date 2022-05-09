@@ -340,7 +340,7 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1831"/>
         <location filename="../MainWindow.cpp" line="1839"/>
         <location filename="../MainWindow.cpp" line="1894"/>
-        <location filename="../MainWindow.cpp" line="1981"/>
+        <location filename="../MainWindow.cpp" line="1984"/>
         <source>PageEdit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1346,7 +1346,7 @@ If a translation for specific word or phrase is not available it will be display
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1982"/>
+        <location filename="../MainWindow.cpp" line="1985"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation type="unfinished"></translation>
     </message>
