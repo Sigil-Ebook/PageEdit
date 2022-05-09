@@ -5,6 +5,8 @@ It uses WebEngine instead of WebKit.
 
 This app is working and fundamentally complete.
 
+![PageEdit](screencaps/PageEdit.png?raw=true) PageEdit Visual WYSIWYG XHtml Editor
+    
 It prefers Qt 5.12.6 or later.
 
 To build after cloning the repo
