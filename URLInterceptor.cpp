@@ -70,23 +70,27 @@ void URLInterceptor::interceptRequest(QWebEngineUrlRequestInfo &info)
         QString bookfolder;
         QString usercssfolder = Utility::DefinePrefsDir() + "/";;
         QString sourcefolder = sourceurl.toLocalFile();
-        // it is possible for multiple main windows to exist
-        const QWidgetList topwidgets = qApp->topLevelWidgets();
-        foreach(QWidget* widget, topwidgets) {
-            MainWindow * mw = qobject_cast<MainWindow *>(widget);
-            if (mw) {
-                QString sandbox = mw->GetSandBoxPath();
-                if (!sandbox.isEmpty() && sourcefolder.startsWith(sandbox)) {
-                    // found the correct main window
-                    bookfolder = sandbox;
+        // possible for multiple main windows to exist
+        // create a topLevelWidget equivalent to screen out stale
+        // QWidget more safely
+        const QWidgetList all_widgets = QApplication::allWidgets();
+        foreach(QWidget* w, all_widgets) {
+            if (w && w->isWindow() && w->windowType() != Qt::Desktop) {
+                MainWindow * mw = qobject_cast<MainWindow *>(w);
+                if (mw) {
+                    QString sandbox = mw->GetSandBoxPath();
+                    if (!sandbox.isEmpty() && sourcefolder.startsWith(sandbox)) {
+                        // found the correct main window
+                        bookfolder = sandbox;
 #if INTERCEPTDEBUG
-                    qDebug() << "mainwin: " <<  mw;
-                    qDebug() << "book: " << bookfolder;
-                    qDebug() << "usercss: " << usercssfolder;
-                    qDebug() << "party: " << info.firstPartyUrl();
-                    qDebug() << "source: " << sourcefolder;
+                        qDebug() << "mainwin: " <<  mw;
+                        qDebug() << "book: " << bookfolder;
+                        qDebug() << "usercss: " << usercssfolder;
+                        qDebug() << "party: " << info.firstPartyUrl();
+                        qDebug() << "source: " << sourcefolder;
 #endif
-                    break;
+                        break;
+                    }
                 }
             }
         }
