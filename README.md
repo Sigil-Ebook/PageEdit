@@ -5,8 +5,18 @@ It uses WebEngine instead of WebKit.
 
 This app is working and fundamentally complete.
 
-![PageEdit](screencaps/PageEdit.png?raw=true) PageEdit Visual WYSIWYG XHtml Editor
-    
+![PageEdit](screencaps/pageedit.png?raw=true) PageEdit Visual WYSIWYG XHtml Editor
+
+![PageEdit](screencaps/dark-mode.png?raw=true) PageEdit in Dark Mode
+
+![PageEdit](screencaps/inspector.png?raw=true) Using the Inspector
+
+![PageEdit](screencaps/insert-image.png?raw=true) Insert Images
+
+![PageEdit](screencaps/insert-special-chars.png?raw=true) Insert Special Characters
+
+![PageEdit](screencaps/add-links.png?raw=true) Add Links
+
 It prefers Qt 5.12.6 or later.
 
 To build after cloning the repo
