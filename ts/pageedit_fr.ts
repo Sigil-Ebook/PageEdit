@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fr">
 <context>
     <name>AppearanceWidget</name>
     <message>
@@ -147,50 +147,50 @@ si aucune famille de polices Sans-serif n&apos;est spécifiée dans votre CSS</t
         <translation>Tout réinitialiser</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="49"/>
         <location filename="../AppearanceWidget.cpp" line="50"/>
+        <location filename="../AppearanceWidget.cpp" line="51"/>
         <source>Detect</source>
         <translation>Détecter</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="49"/>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>On</source>
         <translation>On</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="49"/>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>Off</source>
         <translation>Off</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="50"/>
+        <location filename="../AppearanceWidget.cpp" line="51"/>
         <source>Detect whether any high dpi scaling should take place.</source>
         <translation>Détecter s&apos;il y a besoin d&apos;effectuer un mise à l&apos;échelle à haute résolution.</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="51"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
         <translation>Défère à toutes les variables d&apos;environnement Qt qui sont réglées pour contrôler un comportement à haute résolution.</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
         <translation>Activation de la mise à l&apos;échelle à haute résolution et ignorance des variables d&apos;environnement Qt</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>that are set controlling high dpi behavior.</source>
         <translation>qui sont réglés pour contrôler un comportement à haute résolution.</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>Turns off high dpi scaling regardless if any Qt environment</source>
         <translation>Désactivation de la mise à l&apos;échelle haute résolution, quel que soit l&apos;environnement Qt</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
+        <location filename="../AppearanceWidget.cpp" line="56"/>
         <source>variables controlling high dpi behavior are set.</source>
         <translation>Les variables contrôlant le comportement à haute résolution sont définies.</translation>
     </message>
@@ -320,12 +320,12 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
 <context>
     <name>Inspector</name>
     <message>
-        <location filename="../Inspector.cpp" line="74"/>
+        <location filename="../Inspector.cpp" line="76"/>
         <source>Inspect Page or Element</source>
         <translation>Inspecter la Page ou un Élément</translation>
     </message>
     <message>
-        <location filename="../Inspector.cpp" line="156"/>
+        <location filename="../Inspector.cpp" line="158"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
         <translation>La fonctionnalité « Inspecteur » n&apos;est pas supportée avant Qt 5.11</translation>
     </message>
@@ -334,16 +334,17 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="1012"/>
-        <location filename="../MainWindow.cpp" line="1073"/>
-        <location filename="../MainWindow.cpp" line="1764"/>
-        <location filename="../MainWindow.cpp" line="1777"/>
-        <location filename="../MainWindow.cpp" line="1783"/>
-        <location filename="../MainWindow.cpp" line="1797"/>
-        <location filename="../MainWindow.cpp" line="1810"/>
-        <location filename="../MainWindow.cpp" line="1818"/>
-        <location filename="../MainWindow.cpp" line="1873"/>
-        <location filename="../MainWindow.cpp" line="1960"/>
+        <location filename="../MainWindow.cpp" line="1024"/>
+        <location filename="../MainWindow.cpp" line="1085"/>
+        <location filename="../MainWindow.cpp" line="1779"/>
+        <location filename="../MainWindow.cpp" line="1792"/>
+        <location filename="../MainWindow.cpp" line="1798"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1839"/>
+        <location filename="../MainWindow.cpp" line="1894"/>
+        <location filename="../MainWindow.cpp" line="1984"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -404,7 +405,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     </message>
     <message>
         <location filename="../main.ui" line="217"/>
-        <location filename="../main.ui" line="1157"/>
+        <location filename="../main.ui" line="1163"/>
         <source>Mode</source>
         <translation>Mode</translation>
     </message>
@@ -1075,97 +1076,107 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <translation>Fichier XHTML suivant dans la liste de navigation</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1141"/>
+        <location filename="../main.ui" line="1131"/>
+        <source>Ctrl+PgDown</source>
+        <translation>Ctrl+PgSuiv</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1144"/>
         <source>Previous XHtml File</source>
         <translation>Fichier XHTML précédent</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1144"/>
+        <location filename="../main.ui" line="1147"/>
         <source>Previous file in navigation list</source>
         <translation>Fichier XHTML précédent dans la liste de navigation</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1160"/>
+        <location filename="../main.ui" line="1150"/>
+        <source>Ctrl+PgUp</source>
+        <translation>Ctrl+PgPréc</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1166"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation>Basculer entre les modes Édition et Aperçu.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1170"/>
+        <location filename="../main.ui" line="1176"/>
         <source>About...</source>
         <translation>A propos…</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1173"/>
+        <location filename="../main.ui" line="1179"/>
         <source>Show information about PageEdit.</source>
         <translation>Afficher les informations a propos PageEdit.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1183"/>
+        <location filename="../main.ui" line="1189"/>
         <source>Back to Last Link</source>
         <translation>Retourner au dernier lien</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1186"/>
+        <location filename="../main.ui" line="1192"/>
         <source>Return from the last link taken</source>
         <translation>Revenir au dernier lien pris</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1196"/>
+        <location filename="../main.ui" line="1202"/>
         <source>I&amp;D...</source>
         <translation>&amp;ID...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1199"/>
+        <location filename="../main.ui" line="1205"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
         <translation>Insérez ou modifiez une ancre avec un ID à utiliser comme cible de lien.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1209"/>
+        <location filename="../main.ui" line="1215"/>
         <source>&amp;Link...</source>
         <translation>&amp;Lien...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1212"/>
+        <location filename="../main.ui" line="1218"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
         <translation>Insérer ou éditer une ancre avec un hyperlien vers une cible.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1222"/>
+        <location filename="../main.ui" line="1228"/>
         <source>&amp;File...</source>
         <translation>&amp;Fichier...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1225"/>
+        <location filename="../main.ui" line="1231"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
         <translation>Sélectionnez le fichier image, vidéo ou audio existant dans votre livre à insérer dans le texte.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1228"/>
+        <location filename="../main.ui" line="1234"/>
         <source>Ctrl+Shift+I</source>
         <translation>Ctrl+Maj+I</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="750"/>
+        <location filename="../MainWindow.cpp" line="761"/>
         <source>File load failed</source>
         <translation>Échec du chargement du fichier</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="751"/>
+        <location filename="../MainWindow.cpp" line="762"/>
         <source>File Load Failed</source>
         <translation>Échec du chargement du fichier</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="846"/>
+        <location filename="../MainWindow.cpp" line="857"/>
         <source>mode: Preview</source>
         <translation>Mode : Aperçu</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="848"/>
+        <location filename="../MainWindow.cpp" line="859"/>
         <source>mode: Edit</source>
         <translation>Mode : Édition</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1012"/>
+        <location filename="../MainWindow.cpp" line="1024"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1174,169 +1185,174 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1074"/>
+        <location filename="../MainWindow.cpp" line="1086"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Voulez-vous sauvegarder vos modifications avant de partir ?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1091"/>
+        <location filename="../MainWindow.cpp" line="1103"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit se ferme…</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1223"/>
-        <location filename="../MainWindow.cpp" line="1224"/>
-        <location filename="../MainWindow.cpp" line="1225"/>
-        <location filename="../MainWindow.cpp" line="1234"/>
-        <location filename="../MainWindow.cpp" line="1235"/>
-        <location filename="../MainWindow.cpp" line="1236"/>
+        <location filename="../MainWindow.cpp" line="1239"/>
+        <location filename="../MainWindow.cpp" line="1240"/>
+        <location filename="../MainWindow.cpp" line="1241"/>
+        <location filename="../MainWindow.cpp" line="1250"/>
+        <location filename="../MainWindow.cpp" line="1251"/>
+        <location filename="../MainWindow.cpp" line="1252"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Fichiers XHTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1226"/>
+        <location filename="../MainWindow.cpp" line="1242"/>
         <source>OPF files (*.opf)</source>
         <translation>Fichier OPF (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1227"/>
+        <location filename="../MainWindow.cpp" line="1243"/>
         <source>All files (*.*)</source>
         <translation>Tous les fichiers (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1466"/>
+        <location filename="../MainWindow.cpp" line="1482"/>
         <source>Save File</source>
         <translation>Enregistrer le fichier</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1501"/>
-        <location filename="../MainWindow.cpp" line="1502"/>
-        <location filename="../MainWindow.cpp" line="1514"/>
-        <location filename="../MainWindow.cpp" line="1515"/>
+        <location filename="../MainWindow.cpp" line="1517"/>
+        <location filename="../MainWindow.cpp" line="1518"/>
+        <location filename="../MainWindow.cpp" line="1530"/>
+        <location filename="../MainWindow.cpp" line="1531"/>
         <source>File Save-As Failed!</source>
         <translation>La sauvegarde du fichier a échoué !</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1501"/>
+        <location filename="../MainWindow.cpp" line="1517"/>
         <source>is not writeable</source>
         <translation>n&apos;est pas écrivable</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1510"/>
-        <location filename="../MainWindow.cpp" line="1549"/>
+        <location filename="../MainWindow.cpp" line="1526"/>
+        <location filename="../MainWindow.cpp" line="1565"/>
         <source>File Saved</source>
         <translation>Fichier sauvegardé</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1540"/>
-        <location filename="../MainWindow.cpp" line="1542"/>
-        <location filename="../MainWindow.cpp" line="1553"/>
-        <location filename="../MainWindow.cpp" line="1554"/>
+        <location filename="../MainWindow.cpp" line="1556"/>
+        <location filename="../MainWindow.cpp" line="1558"/>
+        <location filename="../MainWindow.cpp" line="1569"/>
+        <location filename="../MainWindow.cpp" line="1570"/>
         <source>File Save Failed!</source>
         <translation>Échec de la sauvegarde du fichier !</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1541"/>
+        <location filename="../MainWindow.cpp" line="1557"/>
         <source>does not exist or is not writeable</source>
         <translation>n&apos;existe pas ou n&apos;est pas écrivable</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1570"/>
+        <location filename="../MainWindow.cpp" line="1586"/>
         <source>Do not show this warning again</source>
         <translation>Ne plus afficher cet avertissement</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1571"/>
+        <location filename="../MainWindow.cpp" line="1587"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Ce fichier peut ne pas s&apos;imprimer comme vous l&apos;attendez.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1572"/>
+        <location filename="../MainWindow.cpp" line="1588"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Les fonds sombres et les textes colorés appliqués avec le CSS d&apos;un ePub seront imprimé.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1573"/>
+        <location filename="../MainWindow.cpp" line="1589"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Faites attention, car cela peut entraîner l&apos;utilisation de beaucoup d&apos;encre !</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1574"/>
+        <location filename="../MainWindow.cpp" line="1590"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Utilisez l&apos;aperçu avant impression qui suit pour voir comment ce fichier s&apos;imprimera.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1575"/>
+        <location filename="../MainWindow.cpp" line="1591"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Cochez la case si vous ne souhaitez pas voir cet avertissement à l&apos;avenir.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1598"/>
+        <location filename="../MainWindow.cpp" line="1614"/>
         <source>Feature not available before Qt5.12.x</source>
         <translation>Fonctionnalité non disponible avant Qt5.12.x</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1660"/>
+        <location filename="../MainWindow.cpp" line="1675"/>
         <source>File Opened</source>
         <translation>Fichier ouvert</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1664"/>
+        <location filename="../MainWindow.cpp" line="1679"/>
         <source>File Open Failed!</source>
         <translation>Échec de l&apos;ouverture du fichier !</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1687"/>
+        <location filename="../MainWindow.cpp" line="1702"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Le presse-papiers contient de la mise en forme HTML</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1688"/>
+        <location filename="../MainWindow.cpp" line="1703"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Voulez-vous coller les données du presse-papiers en tant que texte brut ?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1764"/>
+        <location filename="../MainWindow.cpp" line="1779"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Vous devez sélectionner le texte avant d&apos;insérer un nouvel ID.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1777"/>
+        <location filename="../MainWindow.cpp" line="1792"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>L&apos;ID n&apos;est pas valide – doit commencer par une lettre, suivie suivi du numéro de la lettre _ : - ou .</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1783"/>
+        <location filename="../MainWindow.cpp" line="1798"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Impossible d&apos;insérer un id à cet endroit.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1797"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Vous devez sélectionner le texte avant d&apos;insérer un nouveau lien.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1810"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Le lien n&apos;est pas valide – il ne peut contenir “&lt;” ou “&gt;”</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1818"/>
-        <source>You cannot insert a link at this position.</source>
-        <translation>Impossible d&apos;insérer un lien à cet endroit.</translation>
+        <location filename="../MainWindow.cpp" line="1831"/>
+        <source>Error inserting external link target.</source>
+        <translation>Erreur d&apos;insertion de la cible du lien externe.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1829"/>
+        <location filename="../MainWindow.cpp" line="1839"/>
+        <source>Error inserting a link at this position.</source>
+        <translation>Erreur d&apos;insertion d&apos;un lien à cet endroit.</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="1850"/>
         <source>Insert File</source>
         <translation>Insérer le fichier</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1894"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Vous ne pouvez pas insérer un fichier média à cette position.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1961"/>
+        <location filename="../MainWindow.cpp" line="1985"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Voulez-vous enregistrer des modifications avant d&apos;écraser ce fichier ?</translation>
     </message>
@@ -1367,66 +1383,66 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../OPFReader.cpp" line="59"/>
+        <location filename="../OPFReader.cpp" line="60"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
         <translation>Impossible de lire le fichier OPF.
 Ligne : %1 Colonne %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="379"/>
+        <location filename="../Utility.cpp" line="392"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Impossible de lire le fichier %1 :
 %2</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="560"/>
+        <location filename="../Utility.cpp" line="581"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>PageEdit a rencontré un problème.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="561"/>
+        <location filename="../Utility.cpp" line="582"/>
         <source>PageEdit may need to close.</source>
         <translation>PageEdit peut avoir besoin de se fermer.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="863"/>
+        <location filename="../Utility.cpp" line="884"/>
         <source>About PageEdit</source>
         <translation>A propos PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="868"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="869"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Build Date</source>
         <translation>Date de construction</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="870"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>Build Time</source>
         <translation>Durée de construction</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="871"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Qt Runtime Version</source>
         <translation>Version d&apos;exécution Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="872"/>
+        <location filename="../Utility.cpp" line="893"/>
         <source>Qt Compiled Version</source>
         <translation>Version compilé de Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="873"/>
+        <location filename="../Utility.cpp" line="894"/>
         <source>System</source>
         <translation>Systeme</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="874"/>
+        <location filename="../Utility.cpp" line="895"/>
         <source>Architecture</source>
         <translation>Architecture</translation>
     </message>
@@ -1449,7 +1465,7 @@ Ligne : %1 Colonne %2 - %3</translation>
         <translation>&amp;Sensible a la Case</translation>
     </message>
     <message>
-        <location filename="../SearchToolbar.cpp" line="137"/>
+        <location filename="../SearchToolbar.cpp" line="150"/>
         <source>No results found.</source>
         <translation>Aucun résultat trouvé.</translation>
     </message>
@@ -1460,6 +1476,1251 @@ Ligne : %1 Colonne %2 - %3</translation>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
         <translation>Insérer un caractère spécial</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="85"/>
+        <source>non-breaking space</source>
+        <translation>espace insécable</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="86"/>
+        <source>en space</source>
+        <translation>espace demi-cadratin</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="87"/>
+        <source>em space</source>
+        <translation>espace cadratin</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="88"/>
+        <source>thin space</source>
+        <translation>espace fin</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="89"/>
+        <source>soft hyphen</source>
+        <translation>tiret conditionnel</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="90"/>
+        <source>narrow non-breaking space</source>
+        <translation>espace insécable</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="94"/>
+        <source>left single quote</source>
+        <translation>guillemet simple gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="95"/>
+        <source>right single quote</source>
+        <translation>guillemet simple droit</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="96"/>
+        <source>left double quote</source>
+        <translation>guillemet double gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="97"/>
+        <source>right double quote</source>
+        <translation>guillemet double droit</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="98"/>
+        <source>left-pointing single angle quote</source>
+        <translation>guillemets français simple à gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="99"/>
+        <source>right-pointing single angle quote</source>
+        <translation>guillemets français simple à droite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="100"/>
+        <source>left-pointing double angle quote</source>
+        <translation>guillemets français à gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="101"/>
+        <source>right-pointing double angle quote</source>
+        <translation>guillemets français à droite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="102"/>
+        <source>apostrophe</source>
+        <translation>apostrophe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="103"/>
+        <source>double quote</source>
+        <translation>guillemet</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="104"/>
+        <source>single low-9 quote</source>
+        <translation>guillemet-virgule inférieur</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="105"/>
+        <source>double low-9 quote</source>
+        <translation>guillemet-virgule double inférieur</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="106"/>
+        <source>em dash</source>
+        <translation>tiret cadratin</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="107"/>
+        <source>en dash</source>
+        <translation>tiret demi-cadratin</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="108"/>
+        <source>section sign</source>
+        <translation>signe de section</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="109"/>
+        <source>pilcrow - paragraph sign</source>
+        <translation>pied-de-mouche - signe de paragraphe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="110"/>
+        <source>dagger</source>
+        <translation>dague</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="111"/>
+        <source>double dagger</source>
+        <translation>double dague</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="112"/>
+        <source>ampersand</source>
+        <translation>esperluette</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="113"/>
+        <source>less-than sign</source>
+        <translation>signe moins que</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="114"/>
+        <source>greater-than sign</source>
+        <translation>signe plus gand que</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="115"/>
+        <source>copyright</source>
+        <translation>copyright</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="116"/>
+        <source>registered sign</source>
+        <translation>symbole marque déposée</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="117"/>
+        <source>trademark symbol</source>
+        <translation>symbole de marque de commerce</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="118"/>
+        <source>left arrow</source>
+        <translation>flèche gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="119"/>
+        <source>right arrow</source>
+        <translation>flèche droite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="120"/>
+        <source>bullet</source>
+        <translation>puce</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="121"/>
+        <source>middle dot</source>
+        <translation>point milieu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="122"/>
+        <source>degree sign</source>
+        <translation>signe de degré</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="123"/>
+        <source>plus minus sign</source>
+        <translation>signe plus-ou-moins</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="124"/>
+        <source>minus sign</source>
+        <translation>signe moins</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="125"/>
+        <source>multiplication sign</source>
+        <translation>signe de multiplication</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="126"/>
+        <source>division sign</source>
+        <translation>signe de la division</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="127"/>
+        <source>fraction 1/4</source>
+        <translation>fraction 1/4</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="128"/>
+        <source>fraction 1/2</source>
+        <translation>fraction 1/2</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="129"/>
+        <source>fraction 3/4</source>
+        <translation>fraction 3/4</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="130"/>
+        <source>fraction 1/3</source>
+        <translation>fraction 1/3</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="131"/>
+        <source>fraction 2/3</source>
+        <translation>fraction 2/3</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="132"/>
+        <source>fraction 1/8</source>
+        <translation>fraction 1/8</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="133"/>
+        <source>fraction 3/8</source>
+        <translation>fraction 3/8</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="134"/>
+        <source>fraction 5/8</source>
+        <translation>fraction 5/8</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="135"/>
+        <source>fraction 7/8</source>
+        <translation>fraction 7/8</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="136"/>
+        <source>horizontal ellipsis</source>
+        <translation>ellipse horizontale</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="137"/>
+        <source>micron</source>
+        <translation>micron</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="138"/>
+        <source>cent sign</source>
+        <translation>signe des centimes</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="139"/>
+        <source>pound sign</source>
+        <translation>symbole de la livre sterling</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="140"/>
+        <source>euro sign</source>
+        <translation>symbole de l&apos;euro</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="141"/>
+        <source>inverted question mark</source>
+        <translation>point d&apos;interrogation inversé</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="142"/>
+        <source>inverted exclamation mark</source>
+        <translation>point d&apos;exclamation inversé</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="143"/>
+        <source>diaeresis</source>
+        <translation>tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="144"/>
+        <source>acute accent</source>
+        <translation>accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="145"/>
+        <source>cedilla</source>
+        <translation>cédille</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="146"/>
+        <source>circumflex accent</source>
+        <translation>accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="147"/>
+        <source>small tilde</source>
+        <translation>petit tilde</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="148"/>
+        <source>capital A with grave</source>
+        <translation>majuscule A avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="149"/>
+        <source>capital A with acute</source>
+        <translation>majuscule A avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="150"/>
+        <source>capital A with circumflex</source>
+        <translation>majuscule A avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="151"/>
+        <source>capital A with tilde</source>
+        <translation>majuscule A avec tilde</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="152"/>
+        <source>capital A with diaeresis</source>
+        <translation>majuscule A avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="153"/>
+        <source>capital A with ring above</source>
+        <translation>majuscule A rond en chef</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="154"/>
+        <source>capital AE</source>
+        <translation>majuscule ligature AE</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="155"/>
+        <source>capital C with cedilla</source>
+        <translation>majuscule C avec cédille</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="156"/>
+        <source>capital E with grave</source>
+        <translation>majuscule E avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="157"/>
+        <source>capital E with acute</source>
+        <translation>majuscule E avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="158"/>
+        <source>capital E with circumflex</source>
+        <translation>majuscule E avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="159"/>
+        <source>capital E with diaeresis</source>
+        <translation>majuscule E avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="160"/>
+        <source>capital I with grave</source>
+        <translation>majuscule I avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="161"/>
+        <source>capital I with acute</source>
+        <translation>majuscule I avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="162"/>
+        <source>capital I with circumflex</source>
+        <translation>majuscule I avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="163"/>
+        <source>capital I with diaeresis</source>
+        <translation>majuscule I avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="164"/>
+        <source>capital eth</source>
+        <translation>majuscule Eth</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="165"/>
+        <source>capital N with tilde</source>
+        <translation>majuscule N avec tilde</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="166"/>
+        <source>capital O with grave</source>
+        <translation>majuscule O avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="167"/>
+        <source>capital O with acute</source>
+        <translation>majuscule O avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="168"/>
+        <source>capital O with circumflex</source>
+        <translation>majuscule O avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="169"/>
+        <source>capital O with tilde</source>
+        <translation>majuscule O avec tilde</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="170"/>
+        <source>capital O with diaeresis</source>
+        <translation>majuscule O avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="171"/>
+        <source>capital O with stroke</source>
+        <translation>majuscule O barré</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="172"/>
+        <source>capital ligature OE</source>
+        <translation>majuscule ligature OE</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="173"/>
+        <source>capital S with caron</source>
+        <translation>majuscule S avec caron</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="174"/>
+        <source>capital U with grave</source>
+        <translation>majuscule U avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="175"/>
+        <source>capital U with acute</source>
+        <translation>majuscule U avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="176"/>
+        <source>capital U with circumflex</source>
+        <translation>majuscule U avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="177"/>
+        <source>capital U with diaeresis</source>
+        <translation>majuscule U avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="178"/>
+        <source>capital Y with acute</source>
+        <translation>majuscule Y avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="179"/>
+        <source>capital Y with diaeresis</source>
+        <translation>majuscule Y avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="180"/>
+        <source>capital THORN</source>
+        <translation>majuscule Thorn</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="181"/>
+        <source>small sharp s</source>
+        <translation>minuscule s dur</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="182"/>
+        <source>small a with grave</source>
+        <translation>minuscule a avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="183"/>
+        <source>small a with acute</source>
+        <translation>minuscule a avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="184"/>
+        <source>small a with circumflex</source>
+        <translation>minuscule a avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="185"/>
+        <source>small a with tilde</source>
+        <translation>minuscule a avec tilde</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="186"/>
+        <source>small a with diaeresis</source>
+        <translation>minuscule a avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="187"/>
+        <source>small a with ring above</source>
+        <translation>majuscule a rond en chef</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="188"/>
+        <source>small ae</source>
+        <translation>minuscule ligature ae</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="189"/>
+        <source>small c with cedilia</source>
+        <translation>minuscule c avec cédille</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="190"/>
+        <source>small e with grave</source>
+        <translation>minuscule e avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="191"/>
+        <source>small e with acute</source>
+        <translation>minuscule e avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="192"/>
+        <source>small e with circumflex</source>
+        <translation>minuscule e avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="193"/>
+        <source>small e with diaeresis</source>
+        <translation>minuscule e avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="194"/>
+        <source>small i with grave</source>
+        <translation>minuscule i avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="195"/>
+        <source>small i with acute</source>
+        <translation>minuscule i avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="196"/>
+        <source>small i with circumflex</source>
+        <translation>minuscule i avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="197"/>
+        <source>small i with diaeresis</source>
+        <translation>minuscule i avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="198"/>
+        <source>small eth</source>
+        <translation>minuscule Eth</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="199"/>
+        <source>small n with tilde</source>
+        <translation>minuscule n avec tilde</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="200"/>
+        <source>small o with grave</source>
+        <translation>minuscule o avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="201"/>
+        <source>small o with acute</source>
+        <translation>minuscule o avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="202"/>
+        <source>small o with circumflex</source>
+        <translation>minuscule o avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="203"/>
+        <source>small o with tilde</source>
+        <translation>minuscule o avec tilde</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="204"/>
+        <source>small o with diaeresis</source>
+        <translation>minuscule o avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="205"/>
+        <source>small o with stroke</source>
+        <translation>minuscule o barré</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="206"/>
+        <source>small ligature oe</source>
+        <translation>minuscule ligature oe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="207"/>
+        <source>small s with caron</source>
+        <translation>minuscule s avec caron</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="208"/>
+        <source>small u with grave</source>
+        <translation>minuscule u avec accent grave</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="209"/>
+        <source>small u with acute</source>
+        <translation>minuscule u avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="210"/>
+        <source>small u with circumflex</source>
+        <translation>minuscule u avec accent circonflexe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="211"/>
+        <source>small u with diaeresis</source>
+        <translation>minuscule u avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="212"/>
+        <source>small y with acute</source>
+        <translation>minuscule y avec accent aigu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="213"/>
+        <source>small y with diaeresis</source>
+        <translation>minuscule y avec tréma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="214"/>
+        <source>small thorn</source>
+        <translation>minuscule Thorn</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="215"/>
+        <source>feminine ordinal indicator</source>
+        <translation>indicateur ordinal féminin</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="216"/>
+        <source>masculine ordinal indicator</source>
+        <translation>indicateur ordinal masculin</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="217"/>
+        <source>infinity</source>
+        <translation>infini</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="221"/>
+        <source>Greek capital letter Alpha</source>
+        <translation>Lettre capitale grecque Alpha</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="222"/>
+        <source>Greek lower letter alpha</source>
+        <translation>Lettre minuscule grecque alpha</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="223"/>
+        <source>Greek capital letter Beta</source>
+        <translation>Lettre capitale grecque Beta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="224"/>
+        <source>Greek lower letter beta</source>
+        <translation>Lettre minuscule grecque beta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="225"/>
+        <source>Greek capital letter Chi</source>
+        <translation>Lettre capitale grecque Chi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="226"/>
+        <source>Greek lower letter chi</source>
+        <translation>Lettre minuscule grecque chi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="227"/>
+        <source>Greek capital letter Delta</source>
+        <translation>Lettre capitale grecque Delta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="228"/>
+        <source>Greek lower letter delta</source>
+        <translation>Lettre minuscule grecque delta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="229"/>
+        <source>Greek capital letter Epsilon</source>
+        <translation>Lettre capitale grecque Epsilon</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="230"/>
+        <source>Greek lower letter epsilon</source>
+        <translation>Lettre minuscule grecque epsilon</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="231"/>
+        <source>Greek capital letter Eta</source>
+        <translation>Lettre capitale grecque Eta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="232"/>
+        <source>Greek lower letter eta</source>
+        <translation>Lettre minuscule grecque eta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="233"/>
+        <source>Greek capital letter Gamma</source>
+        <translation>Lettre capitale grecque Gamma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="234"/>
+        <source>Greek lower letter gamma</source>
+        <translation>Lettre minuscule grecque gamma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="235"/>
+        <source>Greek capital letter Iota</source>
+        <translation>Lettre capitale grecque Iota</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="236"/>
+        <source>Greek lower letter iota</source>
+        <translation>Lettre minuscule grecque iota</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="237"/>
+        <source>Greek capital letter Kappa</source>
+        <translation>Lettre capitale grecque Kappa</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="238"/>
+        <source>Greek lower letter kappa</source>
+        <translation>Lettre minuscule grecque kappa</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="239"/>
+        <source>Greek capital letter Lambda</source>
+        <translation>Lettre capitale grecque Lambda</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="240"/>
+        <source>Greek lower letter lambda</source>
+        <translation>Lettre minuscule grecque lambda</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="241"/>
+        <source>Greek capital letter Mu</source>
+        <translation>Lettre capitale grecque Mu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="242"/>
+        <source>Greek lower letter mu</source>
+        <translation>Lettre minuscule grecque mu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="243"/>
+        <source>Greek capital letter Nu</source>
+        <translation>Lettre capitale grecque Nu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="244"/>
+        <source>Greek lower letter nu</source>
+        <translation>Lettre minuscule grecque nu</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="245"/>
+        <source>Greek capital letter Omega</source>
+        <translation>Lettre capitale grecque Omega</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="246"/>
+        <source>Greek lower letter omega</source>
+        <translation>Lettre minuscule grecque omega</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="247"/>
+        <source>Greek capital letter Omicron</source>
+        <translation>Lettre capitale grecque Omicron</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="248"/>
+        <source>Greek lower letter omicron</source>
+        <translation>Lettre minuscule grecque omicron</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="249"/>
+        <source>Greek capital letter Phi</source>
+        <translation>Lettre capitale grecque Phi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="250"/>
+        <source>Greek lower letter phi</source>
+        <translation>Lettre minuscule grecque phi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="251"/>
+        <source>Greek capital letter Pi</source>
+        <translation>Lettre capitale grecque Pi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="252"/>
+        <source>Greek lower letter pi</source>
+        <translation>Lettre minuscule grecque pi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="253"/>
+        <source>Greek double prime</source>
+        <translation>guillemet grecque</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="254"/>
+        <source>Greek single prime</source>
+        <translation>apostrophe grecque</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="255"/>
+        <source>Greek capital letter Psi</source>
+        <translation>Lettre capitale grecque Psi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="256"/>
+        <source>Greek lower letter psi</source>
+        <translation>Lettre minuscule grecque psi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="257"/>
+        <source>Greek capital letter Rho</source>
+        <translation>Lettre capitale grecque Rho</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="258"/>
+        <source>Greek lower letter rho</source>
+        <translation>Lettre minuscule grecque rho</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="259"/>
+        <source>Greek capital letter Sigma</source>
+        <translation>Lettre capitale grecque Sigma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="260"/>
+        <source>Greek lower letter sigma</source>
+        <translation>Lettre minuscule grecque sigma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="261"/>
+        <source>Greek capital letter Tau</source>
+        <translation>Lettre capitale grecque Tau</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="262"/>
+        <source>Greek lower letter tau</source>
+        <translation>Lettre minuscule grecque tau</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="263"/>
+        <source>Greek capital letter Theta</source>
+        <translation>Lettre capitale grecque Theta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="264"/>
+        <source>Greek lower letter theta</source>
+        <translation>Lettre minuscule grecque theta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="265"/>
+        <source>Greek capital letter Upsilon</source>
+        <translation>Lettre capitale grecque Upsilon</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="266"/>
+        <source>Greek lower letter upsilon</source>
+        <translation>Lettre minuscule grecque upsilon</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="267"/>
+        <source>Greek capital letter Xi</source>
+        <translation>Lettre capitale grecque Xi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="268"/>
+        <source>Greek lower letter xi</source>
+        <translation>Lettre minuscule grecque xi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="269"/>
+        <source>Greek capital letter Zeta</source>
+        <translation>Lettre capitale grecque Zeta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="270"/>
+        <source>Greek lower letter zeta</source>
+        <translation>Lettre minuscule grecque zeta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="274"/>
+        <source>alef symbol</source>
+        <translation>symbol aleph</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="275"/>
+        <source>logical and</source>
+        <translation>et logique</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="276"/>
+        <source>logical or</source>
+        <translation>ou logique</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="277"/>
+        <source>intersection</source>
+        <translation>intersection</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="278"/>
+        <source>union</source>
+        <translation>union</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="279"/>
+        <source>congruent to</source>
+        <translation>congruent à</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="280"/>
+        <source>downwards arrow with corner leftwards</source>
+        <translation>flèche vers le bas avec coin vers la gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="281"/>
+        <source>currency sign</source>
+        <translation>symbole de monnaie</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="282"/>
+        <source>downwards double arrow</source>
+        <translation>double flèche vers le bas</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="283"/>
+        <source>upwards double arrow</source>
+        <translation>double flèche vers le haut</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="284"/>
+        <source>downwards arrow</source>
+        <translation>flèche bas</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="285"/>
+        <source>upwards arrow</source>
+        <translation>flèche haut</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="286"/>
+        <source>empty set</source>
+        <translation>ensemble vide</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="287"/>
+        <source>identical to</source>
+        <translation>identique à</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="288"/>
+        <source>there exists</source>
+        <translation>il existe</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="289"/>
+        <source>Latin small letter f with hook</source>
+        <translation>Lettre minuscule latine f hameçon</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="290"/>
+        <source>for all</source>
+        <translation>pour tout</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="291"/>
+        <source>fraction slash</source>
+        <translation>trait de fraction</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="292"/>
+        <source>left right double arrow</source>
+        <translation>double flèche gauche-droite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="293"/>
+        <source>left right single arrow</source>
+        <translation>flèche gauche-droite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="294"/>
+        <source>black-letter capital I</source>
+        <translation>Lettre gothique capital I</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="295"/>
+        <source>integral</source>
+        <translation>intégral</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="296"/>
+        <source>element of</source>
+        <translation>élément de</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="297"/>
+        <source>leftwards double arrow</source>
+        <translation>double flèche vers la gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="298"/>
+        <source>double right arrow</source>
+        <translation>flèche gauche-droite double</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="299"/>
+        <source>left-pointing angle bracket</source>
+        <translation>chevron vers la gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="300"/>
+        <source>right-pointing angle bracket</source>
+        <translation>chevron vers la droite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="301"/>
+        <source>left ceiling</source>
+        <translation>cellule de gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="302"/>
+        <source>right ceiling</source>
+        <translation>cellule de droite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="303"/>
+        <source>less-than or equal to</source>
+        <translation>plus petit ou égal à</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="304"/>
+        <source>greater-than or equal to</source>
+        <translation>plus grand ou égale à</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="305"/>
+        <source>left floor</source>
+        <translation>plancher à gauche</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="306"/>
+        <source>right floor</source>
+        <translation>plancher à droite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="307"/>
+        <source>asterisk operator</source>
+        <translation>opérateur astérisque</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="308"/>
+        <source>lozenge</source>
+        <translation>losange</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="309"/>
+        <source>macron</source>
+        <translation>macron</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="310"/>
+        <source>nabla</source>
+        <translation>nabla</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="311"/>
+        <source>not equal to</source>
+        <translation>différent de</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="312"/>
+        <source>contains as member</source>
+        <translation>contient comme membre</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="313"/>
+        <source>not sign</source>
+        <translation>signe non</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="314"/>
+        <source>not an element of</source>
+        <translation>pas un élément de</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="315"/>
+        <source>not a subset of</source>
+        <translation>pas un sous-ensemble de</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="316"/>
+        <source>overline</source>
+        <translation>surlignée</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="317"/>
+        <source>circled plus</source>
+        <translation>plus entouré</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="318"/>
+        <source>circled times</source>
+        <translation>croix entourée</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="319"/>
+        <source>partial differential</source>
+        <translation>dérivée partielle</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="320"/>
+        <source>per mille sign</source>
+        <translation>symbole pour mille</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="321"/>
+        <source>up tack</source>
+        <translation>taquet vers le haut</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="322"/>
+        <source>Greek pi symbol</source>
+        <translation>Symbole grec pour pi</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="323"/>
+        <source>n-ary product</source>
+        <translation>signe produit</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="324"/>
+        <source>proportional to</source>
+        <translation>proportionnel à</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="325"/>
+        <source>square root</source>
+        <translation>racine carrée</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="326"/>
+        <source>black-letter capital R</source>
+        <translation>Lettre gothique capital R</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="327"/>
+        <source>dot operator</source>
+        <translation>opérateur point</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="328"/>
+        <source>Greek small letter final sigma</source>
+        <translation>Lettre minuscule grecque sigma</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="329"/>
+        <source>tilde operator</source>
+        <translation>opérateur tilde</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="330"/>
+        <source>subset of</source>
+        <translation>sous-ensemble de</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="331"/>
+        <source>superset of</source>
+        <translation>sur-ensemble de</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="332"/>
+        <source>subset of or equal to</source>
+        <translation>sous-ensemble de ou égal à</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="333"/>
+        <source>superset of or equal to</source>
+        <translation>sur-ensemble de ou égal à</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="334"/>
+        <source>n-ary summation</source>
+        <translation>signe somme</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="335"/>
+        <source>superscript one</source>
+        <translation>exposant un</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="336"/>
+        <source>superscript two</source>
+        <translation>exposant deux</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="337"/>
+        <source>superscript three</source>
+        <translation>exposant trois</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="338"/>
+        <source>therefore sign</source>
+        <translation>symbole par conséquent</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="339"/>
+        <source>Greek theta symbol</source>
+        <translation>Symbole grec theta</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="340"/>
+        <source>Greek Upsilon with hook symbol</source>
+        <translation>Symbole grec pour epsilon crochet</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="341"/>
+        <source>script capital P</source>
+        <translation>capitale P manuscrite</translation>
+    </message>
+    <message>
+        <location filename="../SelectCharacter.cpp" line="342"/>
+        <source>yen sign</source>
+        <translation>symbole du yen</translation>
     </message>
 </context>
 <context>
@@ -1485,52 +2746,52 @@ Ligne : %1 Colonne %2 - %3</translation>
         <translation>Taille de la vignette :</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="113"/>
+        <location filename="../SelectFiles.cpp" line="115"/>
         <source>All</source>
         <translation>Tout</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="114"/>
+        <location filename="../SelectFiles.cpp" line="116"/>
         <source>Images</source>
         <translation>Images</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="115"/>
+        <location filename="../SelectFiles.cpp" line="117"/>
         <source>Video</source>
         <translation>Vidéo</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="116"/>
+        <location filename="../SelectFiles.cpp" line="118"/>
         <source>Audio</source>
         <translation>Audio</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="159"/>
+        <location filename="../SelectFiles.cpp" line="161"/>
         <source>Media Files In the Book</source>
         <translation>Fichiers média dans le livre</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="162"/>
+        <location filename="../SelectFiles.cpp" line="164"/>
         <source>Thumbnails</source>
         <translation>Vignettes</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="325"/>
+        <location filename="../SelectFiles.cpp" line="327"/>
         <source>shades</source>
         <translation>Nuances</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="325"/>
+        <location filename="../SelectFiles.cpp" line="327"/>
         <source>colors</source>
         <translation>Couleurs</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="326"/>
+        <location filename="../SelectFiles.cpp" line="328"/>
         <source>Grayscale</source>
         <translation>Niveaux de gris</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="326"/>
+        <location filename="../SelectFiles.cpp" line="328"/>
         <source>Color</source>
         <translation>Couleur</translation>
     </message>
@@ -1566,12 +2827,12 @@ utilisant la liste ci-dessus.</translation>
         <translation>Cible :</translation>
     </message>
     <message>
-        <location filename="../SelectHyperlink.cpp" line="94"/>
+        <location filename="../SelectHyperlink.cpp" line="96"/>
         <source>Targets in the Book</source>
         <translation>Cibles dans le Livre</translation>
     </message>
     <message>
-        <location filename="../SelectHyperlink.cpp" line="95"/>
+        <location filename="../SelectHyperlink.cpp" line="97"/>
         <source>Text</source>
         <translation>Texte</translation>
     </message>
@@ -1605,12 +2866,12 @@ Le noms des ID doivent être uniques et commencer par une lettre. </translation>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="656"/>
+        <location filename="../Utility.cpp" line="677"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="657"/>
+        <location filename="../Utility.cpp" line="678"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -1622,17 +2883,17 @@ Voulez-vous toujours utiliser ce nom de fichier ?</translation>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="167"/>
+        <location filename="../WebViewEdit.cpp" line="196"/>
         <source>No suggestions</source>
         <translation>Aucune suggestion</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="179"/>
+        <location filename="../WebViewEdit.cpp" line="208"/>
         <source>Check Spelling</source>
         <translation>Vérifier l&apos;orthographe</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="188"/>
+        <location filename="../WebViewEdit.cpp" line="217"/>
         <source>Select Language</source>
         <translation>Choisir la langue</translation>
     </message>
