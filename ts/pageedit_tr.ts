@@ -1334,12 +1334,12 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
     <message>
         <location filename="../MainWindow.cpp" line="1831"/>
         <source>Error inserting external link target.</source>
-        <translation type="unfinished"/>
+        <translation>Harici bağlantı hedefi eklenirken hata oluştu.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
         <source>Error inserting a link at this position.</source>
-        <translation type="unfinished"/>
+        <translation>Bu konumda bir bağlantı eklenirken hata oluştu.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>

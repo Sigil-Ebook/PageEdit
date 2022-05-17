@@ -1339,7 +1339,7 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
         <source>Error inserting a link at this position.</source>
-        <translation>Error insetando un enlace en esta posición.</translation>
+        <translation>Error al insertar un enlace en esta posición.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>

@@ -1334,12 +1334,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="1831"/>
         <source>Error inserting external link target.</source>
-        <translation type="unfinished"/>
+        <translation>插入外部链接目标时出错。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
         <source>Error inserting a link at this position.</source>
-        <translation type="unfinished"/>
+        <translation>在此位置插入链接时出错。</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>

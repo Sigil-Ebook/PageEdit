@@ -1078,7 +1078,7 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
     <message>
         <location filename="../main.ui" line="1131"/>
         <source>Ctrl+PgDown</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+PgDown</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1144"/>
@@ -1093,7 +1093,7 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
     <message>
         <location filename="../main.ui" line="1150"/>
         <source>Ctrl+PgUp</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+PgUp</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1166"/>
@@ -1335,12 +1335,12 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
     <message>
         <location filename="../MainWindow.cpp" line="1831"/>
         <source>Error inserting external link target.</source>
-        <translation type="unfinished"/>
+        <translation>Fehler beim Einfügen eines externen Verknüpfungsziels.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
         <source>Error inserting a link at this position.</source>
-        <translation type="unfinished"/>
+        <translation>Fehler beim Einfügen einer Verknüpfung an dieser Position.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>

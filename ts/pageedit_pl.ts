@@ -1334,12 +1334,12 @@ Jeżeli tłumaczenie niektórych słów i fraz jest niedostępne, zostaną one w
     <message>
         <location filename="../MainWindow.cpp" line="1831"/>
         <source>Error inserting external link target.</source>
-        <translation type="unfinished"/>
+        <translation>Błąd podczas wstawiania zewnętrznego linku docelowego.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
         <source>Error inserting a link at this position.</source>
-        <translation type="unfinished"/>
+        <translation>Błąd podczas wstawiania linku w tym miejscu.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>
