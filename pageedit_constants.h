@@ -26,8 +26,10 @@
 
 class QString;
 
-extern const QString PAGEEDIT_SETTINGS_FILE;
-extern const QString PAGEEDIT_V6_SETTINGS_FILE;
+// Workaround LTO issues with static initializers when initailized
+// from const qstrings from a different compilation unit
+#define PAGEEDIT_SETTINGS_FILE    "pageedit.ini"
+#define PAGEEDIT_V6_SETTINGS_FILE "pageedit_v6.ini"
 
 extern const float ZOOM_STEP;
 extern const float ZOOM_MIN;

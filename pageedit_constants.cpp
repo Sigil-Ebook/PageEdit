@@ -2,9 +2,6 @@
 #include <QStringList>
 #include "pageedit_constants.h"
 
-const QString PAGEEDIT_SETTINGS_FILE = "pageedit.ini";
-const QString PAGEEDIT_V6_SETTINGS_FILE = "pageedit_v6.ini";
-
 #if _WIN32
 #include <QProcessEnvironment>
 // Windows barks about getenv or _wgetenv. This elicits no warnings and works with unicode paths
