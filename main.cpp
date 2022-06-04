@@ -218,7 +218,19 @@ int main(int argc, char *argv[])
   #endif
 #endif
     
-
+#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
+    // Unset platform theme plugins/styles environment variables immediately
+    // when forcing Sigil's own darkmode palette on Linux
+    if (!force_sigil_darkmode_palette.isEmpty() ||
+	!force_pageedit_darkmode_palette.isEmpty()) {
+        QStringList env_vars = {"QT_QPA_PLATFORMTHEME", "QT_STYLE_OVERRIDE"};
+        foreach(QString v, env_vars) {
+            bool irrel = qunsetenv(v.toUtf8().constData());
+        Q_UNUSED(irrel);
+        }
+    }
+#endif
+    
 #ifndef QT_DEBUG
     qInstallMessageHandler(MessageHandler);
 #endif
@@ -296,7 +308,11 @@ int main(int argc, char *argv[])
     if (!force_pageedit_darkmode_palette.isEmpty() || !force_sigil_darkmode_palette.isEmpty()) {
         // Apply custom dark style
         app.setStyle(new PEDarkStyle);
+#if QT_VERSION == QT_VERSION_CHECK(5, 15, 0)
+        // Qt keeps breaking my custom dark theme.
+        // This was apparently only necessary for Qt5.15.0!!
         app.setPalette(QApplication::style()->standardPalette());
+#endif
     }
 #else
     if (Utility::WindowsShouldUseDarkMode()) {
