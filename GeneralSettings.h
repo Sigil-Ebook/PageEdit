@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2022 Kevin B. Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2011      John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
@@ -42,6 +42,7 @@ private:
 
     QString m_UILanguage;
 
+    bool m_disable_gpu;
     Ui::GeneralSettings ui;
 };
 

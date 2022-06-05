@@ -59,6 +59,8 @@ public:
 
     int highDPI();
 
+    bool disableGPU();
+
     int previewDark();
 
 
@@ -142,6 +144,8 @@ public slots:
 
     void setHighDPI(int value);
 
+    void setDisableGPU(bool value);
+    
     void setPreviewDark(int enabled);
 
     // void setSpellCheck(bool enabled);

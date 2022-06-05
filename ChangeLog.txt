@@ -1,6 +1,13 @@
 Change Log
 ==========
+pre-1.9.20
+  New Features
+    - add Preferences settings to disable gpu acceleration
 
+  Bug Fixes
+    - workaround linux g++/gcc issues with -flto
+
+    
 PageEdit-1.9.10
   New Features
    - support building with Qt6

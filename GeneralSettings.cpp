@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2022 Kevin B. Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2011      John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
@@ -28,7 +28,8 @@
 #include <QString>
 #include <QStringList>
 
-GeneralSettings::GeneralSettings()
+GeneralSettings::GeneralSettings():
+    m_disable_gpu(false)
 {
 
     ui.setupUi(this);
@@ -86,6 +87,12 @@ PreferencesWidget::ResultActions GeneralSettings::saveSettings()
     }
     settings.setRemoteOn(new_remote_on_level);
 
+    bool new_disable_gpu = false;
+    if (ui.DisableGPU->isChecked()) {
+        new_disable_gpu = true;
+    }
+    settings.setDisableGPU(new_disable_gpu);
+    
     int new_javascript_on_level = 0;
     if (ui.AllowJavascript->isChecked()) {
         new_javascript_on_level = 1;
@@ -97,9 +104,16 @@ PreferencesWidget::ResultActions GeneralSettings::saveSettings()
     settings.setUILanguage(ui.cbUILanguage->currentText().replace("-", "_"));
 
     PreferencesWidget::ResultActions results = PreferencesWidget::ResultAction_None;
+    
     if (ui.cbUILanguage->currentText() != m_UILanguage) {
         results = results | PreferencesWidget::ResultAction_RestartPageEdit;
     }
+
+    // if you change disable_gpu setting you need to restart PageEdit to see the change
+    if (new_disable_gpu != m_disable_gpu) {
+        results = results | PreferencesWidget::ResultAction_RestartPageEdit;
+    }
+
     results = results & PreferencesWidget::ResultAction_Mask;
     return results;
 }
@@ -147,4 +161,7 @@ void GeneralSettings::readSettings()
     int useWSPreWrap = settings.useWSPreWrap();
     ui.UseWSPreWrap->setChecked(useWSPreWrap);
     ui.UseNBSp->setChecked(1-useWSPreWrap);
+
+    m_disable_gpu = settings.disableGPU();
+    ui.DisableGPU->setChecked(m_disable_gpu);
 }

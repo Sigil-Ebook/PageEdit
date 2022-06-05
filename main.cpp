@@ -256,6 +256,20 @@ int main(int argc, char *argv[])
 #endif
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
+    // enable disabling of gpu acceleration for QtWebEngine.
+    // append to current environment variable contents as numerous chromium 
+    // switches exist that may be useful
+    SettingsStore nss;
+    if (nss.disableGPU()) {
+        QString current_flags = Utility::GetEnvironmentVar("QTWEBENGINE_CHROMIUM_FLAGS");
+        if (current_flags.isEmpty()) {
+            current_flags = "--disable-gpu";
+        } else if (!current_flags.contains("--disable-gpu")) {
+            current_flags += " --disable-gpu";
+        }
+        qputenv("QTWEBENGINE_CHROMIUM_FLAGS", current_flags.toUtf8());
+    }
+
     MainApplication app(argc, argv);
 
 #ifdef Q_OS_MAC
