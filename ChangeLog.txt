@@ -6,6 +6,7 @@ pre-1.9.20
 
   Bug Fixes
     - workaround linux g++/gcc issues with -flto
+    - make keyboard shortcuts for Upper and Lower casing intl keyboard friendly 
 
     
 PageEdit-1.9.10

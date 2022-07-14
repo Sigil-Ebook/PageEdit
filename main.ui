@@ -655,7 +655,7 @@
     <string>Set selected text to lowercase.</string>
    </property>
    <property name="shortcut">
-    <string>Alt+L</string>
+    <string>Ctrl+Alt+L</string>
    </property>
   </action>
 
@@ -671,7 +671,7 @@
     <string>Set selected text to uppercase.</string>
    </property>
    <property name="shortcut">
-    <string>Alt+U</string>
+    <string>Ctrl+Alt+U</string>
    </property>
   </action>
   
@@ -1045,7 +1045,7 @@
     <string>&amp;Normal</string>
    </property>
    <property name="toolTip">
-    <string>ormat paragraph as a normal paragraph.</string>
+    <string>Format paragraph as a normal paragraph.</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+7</string>
