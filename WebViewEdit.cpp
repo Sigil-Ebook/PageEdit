@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2022  Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -515,9 +515,14 @@ bool WebViewEdit::InsertTagAttribute(const QString &element_name, const QString 
         selected_text = attribute_value;
     }
 
+    QString safe_text(selected_text);
+    safe_text.replace("&","&amp;");
+    safe_text.replace("<", "&lt;");
+    safe_text.replace(">", "&gt;");
+
     // Just prepend and append the tag pairs to the text
     const QString html = "<" + element_name + " " + attribute_name + "=\"" + 
-	                  attribute_value + "\">" + selected_text + "</" + element_name + ">";
+	                  attribute_value + "\">" + safe_text + "</" + element_name + ">";
     bool insert_ok = InsertHtml(html);
 
     // We will have lost our selection from the insert - viewable text hasn't changed
