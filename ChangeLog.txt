@@ -7,7 +7,10 @@ pre-1.9.20
   Bug Fixes
     - workaround linux g++/gcc issues with -flto
     - make keyboard shortcuts for Upper and Lower casing intl keyboard friendly 
-
+    - more fixes for building and running under Qt6
+    - fix issues with inserting links when anchor text contains characters
+        that need to be xml escaped
+    
     
 PageEdit-1.9.10
   New Features
