@@ -1,6 +1,6 @@
 Change Log
 ==========
-pre-1.9.20
+PageEdit-1.9.20
   New Features
     - add Preferences settings to disable gpu acceleration
 
@@ -10,7 +10,7 @@ pre-1.9.20
     - more fixes for building and running under Qt6
     - fix issues with inserting links when anchor text contains characters
         that need to be xml escaped
-    
+
     
 PageEdit-1.9.10
   New Features
