@@ -315,6 +315,22 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <source>Use Prettify to reformat xhtml when saving.</source>
         <translation>Use o Embelezamento para reformatar xhtml ao salvar.</translation>
     </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="300"/>
+        <source>Disable GPU Acceleration in PageEdit/QtWebEngine</source>
+        <translation>Desabilitar Aceleração GPU em PageEdit/QtWebEngine</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="303"/>
+        <source> Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
+        <translation>Desabilitar Aceleração GPU em PageEdit/QtWebEngine.</translation>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="318"/>
+        <location filename="../PGeneralSettings.ui" line="321"/>
+        <source>Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
+        <translation>Desabilitar Aceleração GPU em PageEdit/QtWebEngine.</translation>
+    </message>
 </context>
 <context>
     <name>Inspector</name>
@@ -344,6 +360,17 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1839"/>
         <location filename="../MainWindow.cpp" line="1894"/>
         <location filename="../MainWindow.cpp" line="1984"/>
+        <location filename="../MainWindow.cpp~" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1085"/>
+        <location filename="../MainWindow.cpp~" line="1779"/>
+        <location filename="../MainWindow.cpp~" line="1792"/>
+        <location filename="../MainWindow.cpp~" line="1798"/>
+        <location filename="../MainWindow.cpp~" line="1816"/>
+        <location filename="../MainWindow.cpp~" line="1829"/>
+        <location filename="../MainWindow.cpp~" line="1835"/>
+        <location filename="../MainWindow.cpp~" line="1843"/>
+        <location filename="../MainWindow.cpp~" line="1898"/>
+        <location filename="../MainWindow.cpp~" line="1988"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -691,8 +718,8 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
-        <source>Alt+L</source>
-        <translation>Alt+L</translation>
+        <source>Ctrl+Alt+L</source>
+        <translation>Ctrl+Alt+L</translation>
     </message>
     <message>
         <location filename="../main.ui" line="668"/>
@@ -706,8 +733,8 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
-        <source>Alt+U</source>
-        <translation>Alt+U</translation>
+        <source>Ctrl+Alt+U</source>
+        <translation>Ctrl+Alt+U</translation>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
@@ -1006,8 +1033,8 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../main.ui" line="1048"/>
-        <source>ormat paragraph as a normal paragraph.</source>
-        <translation>Retorna o texto ao nível comum de parágrafo.</translation>
+        <source>Format paragraph as a normal paragraph.</source>
+        <translation>Formatar parágrafo como um parágrafo normal.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
@@ -1156,26 +1183,31 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="761"/>
+        <location filename="../MainWindow.cpp~" line="761"/>
         <source>File load failed</source>
         <translation>Falha no carregamento do aquivo</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="762"/>
+        <location filename="../MainWindow.cpp~" line="762"/>
         <source>File Load Failed</source>
         <translation>Falha no Carregamento do Arquivo</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="857"/>
+        <location filename="../MainWindow.cpp~" line="857"/>
         <source>mode: Preview</source>
         <translation>modo: Pré-visualização</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="859"/>
+        <location filename="../MainWindow.cpp~" line="859"/>
         <source>mode: Edit</source>
         <translation>modo:Edição</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1024"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1185,11 +1217,13 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1086"/>
+        <location filename="../MainWindow.cpp~" line="1086"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Deseja salvar suas alterações antes de sair?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1103"/>
+        <location filename="../MainWindow.cpp~" line="1103"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit está fechando...</translation>
     </message>
@@ -1200,21 +1234,30 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1250"/>
         <location filename="../MainWindow.cpp" line="1251"/>
         <location filename="../MainWindow.cpp" line="1252"/>
+        <location filename="../MainWindow.cpp~" line="1239"/>
+        <location filename="../MainWindow.cpp~" line="1240"/>
+        <location filename="../MainWindow.cpp~" line="1241"/>
+        <location filename="../MainWindow.cpp~" line="1250"/>
+        <location filename="../MainWindow.cpp~" line="1251"/>
+        <location filename="../MainWindow.cpp~" line="1252"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Arquivo HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1242"/>
+        <location filename="../MainWindow.cpp~" line="1242"/>
         <source>OPF files (*.opf)</source>
         <translation>Arquivos OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1243"/>
+        <location filename="../MainWindow.cpp~" line="1243"/>
         <source>All files (*.*)</source>
         <translation>Todos os arquivos (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1482"/>
+        <location filename="../MainWindow.cpp~" line="1482"/>
         <source>Save File</source>
         <translation>Salvar arquivo</translation>
     </message>
@@ -1223,17 +1266,24 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1518"/>
         <location filename="../MainWindow.cpp" line="1530"/>
         <location filename="../MainWindow.cpp" line="1531"/>
+        <location filename="../MainWindow.cpp~" line="1517"/>
+        <location filename="../MainWindow.cpp~" line="1518"/>
+        <location filename="../MainWindow.cpp~" line="1530"/>
+        <location filename="../MainWindow.cpp~" line="1531"/>
         <source>File Save-As Failed!</source>
         <translation>Não foi possível salvar o arquivo com esse nome! Verifique se possui espaço suficiente em disco e os privilégios de escrita no diretório de destino.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1517"/>
+        <location filename="../MainWindow.cpp~" line="1517"/>
         <source>is not writeable</source>
         <translation>O destino não possui permissões de escrita/gravação. Escolha outra pasta.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1526"/>
         <location filename="../MainWindow.cpp" line="1565"/>
+        <location filename="../MainWindow.cpp~" line="1526"/>
+        <location filename="../MainWindow.cpp~" line="1565"/>
         <source>File Saved</source>
         <translation>Arquivo Salvo</translation>
     </message>
@@ -1242,116 +1292,142 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1558"/>
         <location filename="../MainWindow.cpp" line="1569"/>
         <location filename="../MainWindow.cpp" line="1570"/>
+        <location filename="../MainWindow.cpp~" line="1556"/>
+        <location filename="../MainWindow.cpp~" line="1558"/>
+        <location filename="../MainWindow.cpp~" line="1569"/>
+        <location filename="../MainWindow.cpp~" line="1570"/>
         <source>File Save Failed!</source>
         <translation>Não foi possível salvar o arquivo! Verifique se possui espaço suficiente em disco e os privilégios de escrita no diretório de destino.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1557"/>
+        <location filename="../MainWindow.cpp~" line="1557"/>
         <source>does not exist or is not writeable</source>
         <translation>Destino inexistente. Verifique os privilégios de escrita/gravação no diretório.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1586"/>
+        <location filename="../MainWindow.cpp~" line="1586"/>
         <source>Do not show this warning again</source>
         <translation>Não exiba este aviso novamente</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1587"/>
+        <location filename="../MainWindow.cpp~" line="1587"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Este arquivo pode não ser impresso da maneira que você imagina.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1588"/>
+        <location filename="../MainWindow.cpp~" line="1588"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Fundos escuros e textos coloridos especificados no CSS de um Epub serão impressos assim.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1589"/>
+        <location filename="../MainWindow.cpp~" line="1589"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Tenha cuidado, já que isto pode resultar na utilização de muita tinta!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1590"/>
+        <location filename="../MainWindow.cpp~" line="1590"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Utilize a Pré visualização de Impressão para ver como ficará a impressão.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1591"/>
+        <location filename="../MainWindow.cpp~" line="1591"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Marque a caixa se você não quiser ver este aviso no futuro.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1614"/>
+        <location filename="../MainWindow.cpp~" line="1614"/>
         <source>Feature not available before Qt5.12.x</source>
         <translation>Recurso não disponível antes da versão Qt5.12.x</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1675"/>
+        <location filename="../MainWindow.cpp~" line="1675"/>
         <source>File Opened</source>
         <translation>Carregamento do arquivo concluído.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1679"/>
+        <location filename="../MainWindow.cpp~" line="1679"/>
         <source>File Open Failed!</source>
         <translation>Falha ao abrir arquivo.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp~" line="1702"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Área de Transferência contem formatação HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1703"/>
+        <location filename="../MainWindow.cpp~" line="1703"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Deseja colar os dados da área de transferência como texto puro?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1779"/>
+        <location filename="../MainWindow.cpp~" line="1779"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Você deve selecionar o texto antes de inserir um novo id.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1792"/>
+        <location filename="../MainWindow.cpp~" line="1792"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID inválida - deve iniciar com letra, seguida de número _ : - ou .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1798"/>
+        <location filename="../MainWindow.cpp~" line="1798"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Você não pode inserir um id nesta posição</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp~" line="1816"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Você deve selecionar o texto antes de inserir um novo link.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp~" line="1829"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>O link é inválido - não pode conter &apos;&lt;&apos; ou &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp~" line="1835"/>
         <source>Error inserting external link target.</source>
         <translation>Erro na inserção de uma URL externa de destino.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
+        <location filename="../MainWindow.cpp~" line="1843"/>
         <source>Error inserting a link at this position.</source>
         <translation>Erro na inserção de um link neste local.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>
+        <location filename="../MainWindow.cpp~" line="1854"/>
         <source>Insert File</source>
         <translation>Inserir arquivo</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1894"/>
+        <location filename="../MainWindow.cpp~" line="1898"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Você pode inserir um arquivo de mídia aqui.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1985"/>
+        <location filename="../MainWindow.cpp~" line="1989"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Deseja salvar alterações antes de sobreescrever este arquivo?</translation>
     </message>
@@ -2881,16 +2957,19 @@ Continue using the requested filename?</source>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="196"/>
+        <location filename="../WebViewEdit.cpp~" line="196"/>
         <source>No suggestions</source>
         <translation>Sem sugestões</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="208"/>
+        <location filename="../WebViewEdit.cpp~" line="208"/>
         <source>Check Spelling</source>
         <translation>Checar Ortografia</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="217"/>
+        <location filename="../WebViewEdit.cpp~" line="217"/>
         <source>Select Language</source>
         <translation>Selecione Idioma</translation>
     </message>

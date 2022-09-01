@@ -316,6 +316,22 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
         <source>Use Prettify to reformat xhtml when saving.</source>
         <translation>Použít Prettify při ukládání na přeformátování XHTML.</translation>
     </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="300"/>
+        <source>Disable GPU Acceleration in PageEdit/QtWebEngine</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="303"/>
+        <source> Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="318"/>
+        <location filename="../PGeneralSettings.ui" line="321"/>
+        <source>Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>Inspector</name>
@@ -345,6 +361,17 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
         <location filename="../MainWindow.cpp" line="1839"/>
         <location filename="../MainWindow.cpp" line="1894"/>
         <location filename="../MainWindow.cpp" line="1984"/>
+        <location filename="../MainWindow.cpp~" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1085"/>
+        <location filename="../MainWindow.cpp~" line="1779"/>
+        <location filename="../MainWindow.cpp~" line="1792"/>
+        <location filename="../MainWindow.cpp~" line="1798"/>
+        <location filename="../MainWindow.cpp~" line="1816"/>
+        <location filename="../MainWindow.cpp~" line="1829"/>
+        <location filename="../MainWindow.cpp~" line="1835"/>
+        <location filename="../MainWindow.cpp~" line="1843"/>
+        <location filename="../MainWindow.cpp~" line="1898"/>
+        <location filename="../MainWindow.cpp~" line="1988"/>
         <source>PageEdit</source>
         <translation>Úprava strany</translation>
     </message>
@@ -692,8 +719,8 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
-        <source>Alt+L</source>
-        <translation>Alt+L</translation>
+        <source>Ctrl+Alt+L</source>
+        <translation>Ctrl+Alt+L</translation>
     </message>
     <message>
         <location filename="../main.ui" line="668"/>
@@ -707,8 +734,8 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
-        <source>Alt+U</source>
-        <translation>Alt+U</translation>
+        <source>Ctrl+Alt+U</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
@@ -1007,8 +1034,8 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     </message>
     <message>
         <location filename="../main.ui" line="1048"/>
-        <source>ormat paragraph as a normal paragraph.</source>
-        <translation>Formátovat odstavec jako normální odstavec.</translation>
+        <source>Format paragraph as a normal paragraph.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
@@ -1157,26 +1184,31 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="761"/>
+        <location filename="../MainWindow.cpp~" line="761"/>
         <source>File load failed</source>
         <translation>Soubor se nepodařilo nahrát</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="762"/>
+        <location filename="../MainWindow.cpp~" line="762"/>
         <source>File Load Failed</source>
         <translation>Soubor se nepodařilo nahrát</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="857"/>
+        <location filename="../MainWindow.cpp~" line="857"/>
         <source>mode: Preview</source>
         <translation>Režim: Náhled</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="859"/>
+        <location filename="../MainWindow.cpp~" line="859"/>
         <source>mode: Edit</source>
         <translation>Režim: Úpravy</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1024"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1187,11 +1219,13 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1086"/>
+        <location filename="../MainWindow.cpp~" line="1086"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Chcete před odejitím uložit změny?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1103"/>
+        <location filename="../MainWindow.cpp~" line="1103"/>
         <source>PageEdit is closing...</source>
         <translation>Úprava strany se zavírá...</translation>
     </message>
@@ -1202,21 +1236,30 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
         <location filename="../MainWindow.cpp" line="1250"/>
         <location filename="../MainWindow.cpp" line="1251"/>
         <location filename="../MainWindow.cpp" line="1252"/>
+        <location filename="../MainWindow.cpp~" line="1239"/>
+        <location filename="../MainWindow.cpp~" line="1240"/>
+        <location filename="../MainWindow.cpp~" line="1241"/>
+        <location filename="../MainWindow.cpp~" line="1250"/>
+        <location filename="../MainWindow.cpp~" line="1251"/>
+        <location filename="../MainWindow.cpp~" line="1252"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Soubory HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1242"/>
+        <location filename="../MainWindow.cpp~" line="1242"/>
         <source>OPF files (*.opf)</source>
         <translation>Soubory OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1243"/>
+        <location filename="../MainWindow.cpp~" line="1243"/>
         <source>All files (*.*)</source>
         <translation>Všechny soubory (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1482"/>
+        <location filename="../MainWindow.cpp~" line="1482"/>
         <source>Save File</source>
         <translation>Uložit soubor</translation>
     </message>
@@ -1225,17 +1268,24 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
         <location filename="../MainWindow.cpp" line="1518"/>
         <location filename="../MainWindow.cpp" line="1530"/>
         <location filename="../MainWindow.cpp" line="1531"/>
+        <location filename="../MainWindow.cpp~" line="1517"/>
+        <location filename="../MainWindow.cpp~" line="1518"/>
+        <location filename="../MainWindow.cpp~" line="1530"/>
+        <location filename="../MainWindow.cpp~" line="1531"/>
         <source>File Save-As Failed!</source>
         <translation>Soubor se nepodařilo uložit jako...!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1517"/>
+        <location filename="../MainWindow.cpp~" line="1517"/>
         <source>is not writeable</source>
         <translation>není zapisovatelný</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1526"/>
         <location filename="../MainWindow.cpp" line="1565"/>
+        <location filename="../MainWindow.cpp~" line="1526"/>
+        <location filename="../MainWindow.cpp~" line="1565"/>
         <source>File Saved</source>
         <translation>Soubor uložen</translation>
     </message>
@@ -1244,116 +1294,142 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
         <location filename="../MainWindow.cpp" line="1558"/>
         <location filename="../MainWindow.cpp" line="1569"/>
         <location filename="../MainWindow.cpp" line="1570"/>
+        <location filename="../MainWindow.cpp~" line="1556"/>
+        <location filename="../MainWindow.cpp~" line="1558"/>
+        <location filename="../MainWindow.cpp~" line="1569"/>
+        <location filename="../MainWindow.cpp~" line="1570"/>
         <source>File Save Failed!</source>
         <translation>Soubor se nepodařilo uložit!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1557"/>
+        <location filename="../MainWindow.cpp~" line="1557"/>
         <source>does not exist or is not writeable</source>
         <translation>neexistuje nebo není zapisovatelný</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1586"/>
+        <location filename="../MainWindow.cpp~" line="1586"/>
         <source>Do not show this warning again</source>
         <translation>Neukazovat znovu toto upozornění</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1587"/>
+        <location filename="../MainWindow.cpp~" line="1587"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>Tento soubor se nemusí vytisknout tak, jak očekáváte.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1588"/>
+        <location filename="../MainWindow.cpp~" line="1588"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>Vytiskne se tmavé pozadí a barevný text aplikovaný pomocí CSS EPUB.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1589"/>
+        <location filename="../MainWindow.cpp~" line="1589"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>Buďte opatrní, protože se při tom může spotřebovat velké množství inkoustu!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1590"/>
+        <location filename="../MainWindow.cpp~" line="1590"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>Pomocí následujícího náhledu tisku zjistíte, jak se tento soubor vytiskne.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1591"/>
+        <location filename="../MainWindow.cpp~" line="1591"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>Pokud si nepřejete, aby se toto upozornění v budoucnu zobrazovalo, zaškrtněte toto políčko.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1614"/>
+        <location filename="../MainWindow.cpp~" line="1614"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>Funkce není dostupná před verzí Qt5.12.x</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1675"/>
+        <location filename="../MainWindow.cpp~" line="1675"/>
         <source>File Opened</source>
         <translation>Soubor otevřen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1679"/>
+        <location filename="../MainWindow.cpp~" line="1679"/>
         <source>File Open Failed!</source>
         <translation>Soubor se nepodařilo otevřít!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp~" line="1702"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Schránka obsahuje formátování HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1703"/>
+        <location filename="../MainWindow.cpp~" line="1703"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Chcete vložit data ve schránce jako prostý text?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1779"/>
+        <location filename="../MainWindow.cpp~" line="1779"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Před vložením nového ID musíte vybrat text.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1792"/>
+        <location filename="../MainWindow.cpp~" line="1792"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID je neplatné - musí začínat písmenem, následováno číslem písmene _ : - nebo .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1798"/>
+        <location filename="../MainWindow.cpp~" line="1798"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Nemůžete vložit ID v této poloze.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp~" line="1816"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Před vložením nového odkazu musíte vybrat text.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp~" line="1829"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Odkaz je neplatný - nemůže obsahovat &apos;&lt;&apos; nebo &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp~" line="1835"/>
         <source>Error inserting external link target.</source>
-        <translation type="unfinished"/>
+        <translation>Chyba při vkládání cíle vnějšího odkazu.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
+        <location filename="../MainWindow.cpp~" line="1843"/>
         <source>Error inserting a link at this position.</source>
-        <translation type="unfinished"/>
+        <translation>Chyba při vkládání odkazu na toto místo.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>
+        <location filename="../MainWindow.cpp~" line="1854"/>
         <source>Insert File</source>
         <translation>Vložit soubor</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1894"/>
+        <location filename="../MainWindow.cpp~" line="1898"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Nemůžete vložit multimediální soubor v této poloze.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1985"/>
+        <location filename="../MainWindow.cpp~" line="1989"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Chcete před přepsáním tohoto souboru uložit změny?</translation>
     </message>
@@ -1481,7 +1557,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="85"/>
         <source>non-breaking space</source>
-        <translation type="unfinished"/>
+        <translation>Nezalomitelná mezera</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="86"/>
@@ -1506,47 +1582,47 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="90"/>
         <source>narrow non-breaking space</source>
-        <translation type="unfinished"/>
+        <translation>Úzká nezalomitelná mezera</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="94"/>
         <source>left single quote</source>
-        <translation type="unfinished"/>
+        <translation>jednoduchá levá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="95"/>
         <source>right single quote</source>
-        <translation type="unfinished"/>
+        <translation>jednoduchá pravá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="96"/>
         <source>left double quote</source>
-        <translation type="unfinished"/>
+        <translation>dvojitá levá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="97"/>
         <source>right double quote</source>
-        <translation type="unfinished"/>
+        <translation>dvojitá pravá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="98"/>
         <source>left-pointing single angle quote</source>
-        <translation type="unfinished"/>
+        <translation>Vlevo směřující jednoduchá špičatá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="99"/>
         <source>right-pointing single angle quote</source>
-        <translation type="unfinished"/>
+        <translation>Vpravo směřující jednoduchá špičatá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="100"/>
         <source>left-pointing double angle quote</source>
-        <translation type="unfinished"/>
+        <translation>Vlevo směřující dvojitá špičatá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="101"/>
         <source>right-pointing double angle quote</source>
-        <translation type="unfinished"/>
+        <translation>Vpravo směřující dvojitá špičatá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="102"/>
@@ -1556,7 +1632,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="103"/>
         <source>double quote</source>
-        <translation type="unfinished"/>
+        <translation>dvojitá uvozovka</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="104"/>
@@ -1586,7 +1662,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="109"/>
         <source>pilcrow - paragraph sign</source>
-        <translation type="unfinished"/>
+        <translation>Značka odstavce</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="110"/>
@@ -1616,7 +1692,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="115"/>
         <source>copyright</source>
-        <translation type="unfinished"/>
+        <translation>Kopírovací právo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="116"/>
@@ -2885,16 +2961,19 @@ Pokračovat a použít požadovaný název souboru?</translation>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="196"/>
+        <location filename="../WebViewEdit.cpp~" line="196"/>
         <source>No suggestions</source>
         <translation>Žádné návrhy</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="208"/>
+        <location filename="../WebViewEdit.cpp~" line="208"/>
         <source>Check Spelling</source>
         <translation>Ověření pravopisu</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="217"/>
+        <location filename="../WebViewEdit.cpp~" line="217"/>
         <source>Select Language</source>
         <translation>Vybrat jazyk</translation>
     </message>

@@ -314,6 +314,22 @@ If a translation for specific word or phrase is not available it will be display
         <source>Use Prettify to reformat xhtml when saving.</source>
         <translation>Використовуйте Prettify щоб переформатувати xhtml при збереженні.</translation>
     </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="300"/>
+        <source>Disable GPU Acceleration in PageEdit/QtWebEngine</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="303"/>
+        <source> Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PGeneralSettings.ui" line="318"/>
+        <location filename="../PGeneralSettings.ui" line="321"/>
+        <source>Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>Inspector</name>
@@ -343,6 +359,17 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1839"/>
         <location filename="../MainWindow.cpp" line="1894"/>
         <location filename="../MainWindow.cpp" line="1984"/>
+        <location filename="../MainWindow.cpp~" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1085"/>
+        <location filename="../MainWindow.cpp~" line="1779"/>
+        <location filename="../MainWindow.cpp~" line="1792"/>
+        <location filename="../MainWindow.cpp~" line="1798"/>
+        <location filename="../MainWindow.cpp~" line="1816"/>
+        <location filename="../MainWindow.cpp~" line="1829"/>
+        <location filename="../MainWindow.cpp~" line="1835"/>
+        <location filename="../MainWindow.cpp~" line="1843"/>
+        <location filename="../MainWindow.cpp~" line="1898"/>
+        <location filename="../MainWindow.cpp~" line="1988"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -486,7 +513,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="412"/>
         <source>Print the current Page.</source>
-        <translation type="unfinished"/>
+        <translation>Роздрукувати поточну сторінку.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="415"/>
@@ -686,12 +713,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="655"/>
         <source>Set selected text to lowercase.</source>
-        <translation type="unfinished"/>
+        <translation>Перевести виділений текст у нижній регістр.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="658"/>
-        <source>Alt+L</source>
-        <translation>Alt+L</translation>
+        <source>Ctrl+Alt+L</source>
+        <translation>Ctrl+Alt+L</translation>
     </message>
     <message>
         <location filename="../main.ui" line="668"/>
@@ -701,12 +728,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="671"/>
         <source>Set selected text to uppercase.</source>
-        <translation type="unfinished"/>
+        <translation>Перевести виділений текст у верхній регістр.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="674"/>
-        <source>Alt+U</source>
-        <translation>Alt+U</translation>
+        <source>Ctrl+Alt+U</source>
+        <translation>Ctrl+Alt+U</translation>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
@@ -716,7 +743,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="687"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation type="unfinished"/>
+        <translation>Написати першу літеру кожного вибраного слова з великої літери.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
@@ -726,7 +753,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation type="unfinished"/>
+        <translation>Написати з великої літери лише перше слово виділеного тексту.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
@@ -1005,8 +1032,8 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="1048"/>
-        <source>ormat paragraph as a normal paragraph.</source>
-        <translation>Форматувати абзац як звичайний текст.</translation>
+        <source>Format paragraph as a normal paragraph.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
@@ -1155,26 +1182,31 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="761"/>
+        <location filename="../MainWindow.cpp~" line="761"/>
         <source>File load failed</source>
         <translation>Не вдалося загрузити файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="762"/>
+        <location filename="../MainWindow.cpp~" line="762"/>
         <source>File Load Failed</source>
         <translation>Не вдалося загрузити файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="857"/>
+        <location filename="../MainWindow.cpp~" line="857"/>
         <source>mode: Preview</source>
         <translation>режим: Попередній перегляд</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="859"/>
+        <location filename="../MainWindow.cpp~" line="859"/>
         <source>mode: Edit</source>
         <translation>режим: Редагування</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1024"/>
+        <location filename="../MainWindow.cpp~" line="1024"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1184,11 +1216,13 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1086"/>
+        <location filename="../MainWindow.cpp~" line="1086"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Зберегти зроблені зміни перед подальшими діями?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1103"/>
+        <location filename="../MainWindow.cpp~" line="1103"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit закривається...</translation>
     </message>
@@ -1199,21 +1233,30 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1250"/>
         <location filename="../MainWindow.cpp" line="1251"/>
         <location filename="../MainWindow.cpp" line="1252"/>
+        <location filename="../MainWindow.cpp~" line="1239"/>
+        <location filename="../MainWindow.cpp~" line="1240"/>
+        <location filename="../MainWindow.cpp~" line="1241"/>
+        <location filename="../MainWindow.cpp~" line="1250"/>
+        <location filename="../MainWindow.cpp~" line="1251"/>
+        <location filename="../MainWindow.cpp~" line="1252"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Файли HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1242"/>
+        <location filename="../MainWindow.cpp~" line="1242"/>
         <source>OPF files (*.opf)</source>
         <translation>Файли OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1243"/>
+        <location filename="../MainWindow.cpp~" line="1243"/>
         <source>All files (*.*)</source>
         <translation>Усі файли (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1482"/>
+        <location filename="../MainWindow.cpp~" line="1482"/>
         <source>Save File</source>
         <translation>Зберегти файл</translation>
     </message>
@@ -1222,17 +1265,24 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1518"/>
         <location filename="../MainWindow.cpp" line="1530"/>
         <location filename="../MainWindow.cpp" line="1531"/>
+        <location filename="../MainWindow.cpp~" line="1517"/>
+        <location filename="../MainWindow.cpp~" line="1518"/>
+        <location filename="../MainWindow.cpp~" line="1530"/>
+        <location filename="../MainWindow.cpp~" line="1531"/>
         <source>File Save-As Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1517"/>
+        <location filename="../MainWindow.cpp~" line="1517"/>
         <source>is not writeable</source>
         <translation>недоступно для запису</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1526"/>
         <location filename="../MainWindow.cpp" line="1565"/>
+        <location filename="../MainWindow.cpp~" line="1526"/>
+        <location filename="../MainWindow.cpp~" line="1565"/>
         <source>File Saved</source>
         <translation>Файл збережено</translation>
     </message>
@@ -1241,116 +1291,142 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1558"/>
         <location filename="../MainWindow.cpp" line="1569"/>
         <location filename="../MainWindow.cpp" line="1570"/>
+        <location filename="../MainWindow.cpp~" line="1556"/>
+        <location filename="../MainWindow.cpp~" line="1558"/>
+        <location filename="../MainWindow.cpp~" line="1569"/>
+        <location filename="../MainWindow.cpp~" line="1570"/>
         <source>File Save Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1557"/>
+        <location filename="../MainWindow.cpp~" line="1557"/>
         <source>does not exist or is not writeable</source>
         <translation>не існує або недоступно для запису </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1586"/>
+        <location filename="../MainWindow.cpp~" line="1586"/>
         <source>Do not show this warning again</source>
-        <translation type="unfinished"/>
+        <translation>Не показувати це попередження в подальшому</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1587"/>
+        <location filename="../MainWindow.cpp~" line="1587"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation type="unfinished"/>
+        <translation>Цей файл може бути надрукований не так, як Ви очікуєте.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1588"/>
+        <location filename="../MainWindow.cpp~" line="1588"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation type="unfinished"/>
+        <translation>Буде надруковано темний фон і кольоровий текст, застосований за допомогою CSS EPUB.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1589"/>
+        <location filename="../MainWindow.cpp~" line="1589"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation type="unfinished"/>
+        <translation>Будьте обережні, так як це може привести до витрачання великої кількості чорнила!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1590"/>
+        <location filename="../MainWindow.cpp~" line="1590"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation type="unfinished"/>
+        <translation>Використовуйте попередній перегляд, щоб побачити, як буде виглядати файл після друку.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1591"/>
+        <location filename="../MainWindow.cpp~" line="1591"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation type="unfinished"/>
+        <translation>Поставте прапорець, якщо Ви не хочете бачити це попередження в майбутньому.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1614"/>
+        <location filename="../MainWindow.cpp~" line="1614"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation type="unfinished"/>
+        <translation>Функція недоступна до Qt5.12.x</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1675"/>
+        <location filename="../MainWindow.cpp~" line="1675"/>
         <source>File Opened</source>
         <translation>Файл відкрито</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1679"/>
+        <location filename="../MainWindow.cpp~" line="1679"/>
         <source>File Open Failed!</source>
         <translation>Не вдалося відкрити файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp~" line="1702"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Буфер обміну містить форматований HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1703"/>
+        <location filename="../MainWindow.cpp~" line="1703"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Ви хочете вставити дані з буферу обміну як звичайний текст?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1779"/>
+        <location filename="../MainWindow.cpp~" line="1779"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Ви повинні виділити текст перед тим, як вставити новий ідентифікатор.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1792"/>
+        <location filename="../MainWindow.cpp~" line="1792"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID недійсний — повинен починатися з літери, після чого можуть додаватися букви, цифри, знаки  &quot;-&quot;, &quot;_&quot;, &quot;:&quot;, або &quot;.&quot;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1798"/>
+        <location filename="../MainWindow.cpp~" line="1798"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Ви не можете вставити ідентифікатор у цю позицію.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp~" line="1816"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Ви повинні виділити текст перед тим, як вставити нове посилання.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp~" line="1829"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Посилання недійсне — не може містити &apos;&lt;&apos; або &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp~" line="1835"/>
         <source>Error inserting external link target.</source>
-        <translation type="unfinished"/>
+        <translation>Помилка при вставці цілі зовнішнього посилання.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
+        <location filename="../MainWindow.cpp~" line="1843"/>
         <source>Error inserting a link at this position.</source>
-        <translation type="unfinished"/>
+        <translation>Помилка при вставці посилання в цій позиції.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>
+        <location filename="../MainWindow.cpp~" line="1854"/>
         <source>Insert File</source>
         <translation>Вставити Файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1894"/>
+        <location filename="../MainWindow.cpp~" line="1898"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Ви не можете вставити медіафайл у цій позиції.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1985"/>
+        <location filename="../MainWindow.cpp~" line="1989"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Зберегти зроблені зміни перед перезаписом цього файлу?</translation>
     </message>
@@ -1478,7 +1554,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="85"/>
         <source>non-breaking space</source>
-        <translation type="unfinished"/>
+        <translation>нерозривний пробіл</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="86"/>
@@ -1503,47 +1579,47 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="90"/>
         <source>narrow non-breaking space</source>
-        <translation type="unfinished"/>
+        <translation>вузький нерозривний пробіл</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="94"/>
         <source>left single quote</source>
-        <translation type="unfinished"/>
+        <translation>ліва одинарна лапка</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="95"/>
         <source>right single quote</source>
-        <translation type="unfinished"/>
+        <translation>права одинарна лапка</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="96"/>
         <source>left double quote</source>
-        <translation type="unfinished"/>
+        <translation>ліва подвійна лапка</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="97"/>
         <source>right double quote</source>
-        <translation type="unfinished"/>
+        <translation>права подвійна лапка</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="98"/>
         <source>left-pointing single angle quote</source>
-        <translation type="unfinished"/>
+        <translation>напрямлені вліво одинарні кутові лапки</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="99"/>
         <source>right-pointing single angle quote</source>
-        <translation type="unfinished"/>
+        <translation>напрямлені вправо одинарні кутові лапки</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="100"/>
         <source>left-pointing double angle quote</source>
-        <translation type="unfinished"/>
+        <translation>напрямлені вліво подвійні кутові лапки</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="101"/>
         <source>right-pointing double angle quote</source>
-        <translation type="unfinished"/>
+        <translation>напрямлені вправо подвійні кутові лапки</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="102"/>
@@ -1553,17 +1629,17 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="103"/>
         <source>double quote</source>
-        <translation type="unfinished"/>
+        <translation>подвійні лапки</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="104"/>
         <source>single low-9 quote</source>
-        <translation type="unfinished"/>
+        <translation>нижня одинарна відкриваюча лапка</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="105"/>
         <source>double low-9 quote</source>
-        <translation type="unfinished"/>
+        <translation>нижня подвійна відкриваюча лапка</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="106"/>
@@ -1583,17 +1659,17 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="109"/>
         <source>pilcrow - paragraph sign</source>
-        <translation type="unfinished"/>
+        <translation>знак абзацу</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="110"/>
         <source>dagger</source>
-        <translation type="unfinished"/>
+        <translation>друкарський хрестик</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="111"/>
         <source>double dagger</source>
-        <translation type="unfinished"/>
+        <translation>подві́йний хрестик</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="112"/>
@@ -1613,7 +1689,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="115"/>
         <source>copyright</source>
-        <translation type="unfinished"/>
+        <translation>авторське право</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="116"/>
@@ -1628,12 +1704,12 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="118"/>
         <source>left arrow</source>
-        <translation type="unfinished"/>
+        <translation>стрілка вліво</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="119"/>
         <source>right arrow</source>
-        <translation type="unfinished"/>
+        <translation>стрілка вправо</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="120"/>
@@ -1648,12 +1724,12 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="122"/>
         <source>degree sign</source>
-        <translation type="unfinished"/>
+        <translation>знак градусу</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="123"/>
         <source>plus minus sign</source>
-        <translation type="unfinished"/>
+        <translation>знак плюс-мінус</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="124"/>
@@ -1673,57 +1749,57 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="127"/>
         <source>fraction 1/4</source>
-        <translation type="unfinished"/>
+        <translation>дріб 1/4</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="128"/>
         <source>fraction 1/2</source>
-        <translation type="unfinished"/>
+        <translation>дріб 1/2</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="129"/>
         <source>fraction 3/4</source>
-        <translation type="unfinished"/>
+        <translation>дріб 3/4</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="130"/>
         <source>fraction 1/3</source>
-        <translation type="unfinished"/>
+        <translation>дріб 1/3</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="131"/>
         <source>fraction 2/3</source>
-        <translation type="unfinished"/>
+        <translation>дріб 2/3</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="132"/>
         <source>fraction 1/8</source>
-        <translation type="unfinished"/>
+        <translation>дріб 1/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="133"/>
         <source>fraction 3/8</source>
-        <translation type="unfinished"/>
+        <translation>дріб 3/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="134"/>
         <source>fraction 5/8</source>
-        <translation type="unfinished"/>
+        <translation>дріб 5/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="135"/>
         <source>fraction 7/8</source>
-        <translation type="unfinished"/>
+        <translation>дріб 7/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="136"/>
         <source>horizontal ellipsis</source>
-        <translation type="unfinished"/>
+        <translation>горизонтальні три крапки</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="137"/>
         <source>micron</source>
-        <translation type="unfinished"/>
+        <translation>мікрон</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="138"/>
@@ -1768,357 +1844,357 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="146"/>
         <source>circumflex accent</source>
-        <translation type="unfinished"/>
+        <translation>циркумфлексний наголос</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="147"/>
         <source>small tilde</source>
-        <translation type="unfinished"/>
+        <translation>мала тильда</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="148"/>
         <source>capital A with grave</source>
-        <translation type="unfinished"/>
+        <translation>велика A з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="149"/>
         <source>capital A with acute</source>
-        <translation type="unfinished"/>
+        <translation>велика A з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="150"/>
         <source>capital A with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>велика A з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="151"/>
         <source>capital A with tilde</source>
-        <translation type="unfinished"/>
+        <translation>велика A з тильдою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="152"/>
         <source>capital A with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>велика A з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="153"/>
         <source>capital A with ring above</source>
-        <translation type="unfinished"/>
+        <translation>велика A з кільцем зверху</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="154"/>
         <source>capital AE</source>
-        <translation type="unfinished"/>
+        <translation>велика AE</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="155"/>
         <source>capital C with cedilla</source>
-        <translation type="unfinished"/>
+        <translation>велика C з седилею</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="156"/>
         <source>capital E with grave</source>
-        <translation type="unfinished"/>
+        <translation>велика E з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="157"/>
         <source>capital E with acute</source>
-        <translation type="unfinished"/>
+        <translation>велика E з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="158"/>
         <source>capital E with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>велика E з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="159"/>
         <source>capital E with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>велика E з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="160"/>
         <source>capital I with grave</source>
-        <translation type="unfinished"/>
+        <translation>велика I з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="161"/>
         <source>capital I with acute</source>
-        <translation type="unfinished"/>
+        <translation>велика I з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="162"/>
         <source>capital I with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>велика I з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="163"/>
         <source>capital I with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>велика I з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="164"/>
         <source>capital eth</source>
-        <translation type="unfinished"/>
+        <translation>велика eth</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="165"/>
         <source>capital N with tilde</source>
-        <translation type="unfinished"/>
+        <translation>велика N з тильдою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="166"/>
         <source>capital O with grave</source>
-        <translation type="unfinished"/>
+        <translation>велика O з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="167"/>
         <source>capital O with acute</source>
-        <translation type="unfinished"/>
+        <translation>велика O з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="168"/>
         <source>capital O with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>велика O з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="169"/>
         <source>capital O with tilde</source>
-        <translation type="unfinished"/>
+        <translation>велика O з тильдою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="170"/>
         <source>capital O with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>велика O з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="171"/>
         <source>capital O with stroke</source>
-        <translation type="unfinished"/>
+        <translation>велика O діагонально перекреслена</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="172"/>
         <source>capital ligature OE</source>
-        <translation type="unfinished"/>
+        <translation>велика лігатура OE</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="173"/>
         <source>capital S with caron</source>
-        <translation type="unfinished"/>
+        <translation>велика S з гачеком</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="174"/>
         <source>capital U with grave</source>
-        <translation type="unfinished"/>
+        <translation>велика U з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="175"/>
         <source>capital U with acute</source>
-        <translation type="unfinished"/>
+        <translation>велика U з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="176"/>
         <source>capital U with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>велика U з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="177"/>
         <source>capital U with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>велика U з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="178"/>
         <source>capital Y with acute</source>
-        <translation type="unfinished"/>
+        <translation>велика Y з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="179"/>
         <source>capital Y with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>велика Y з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="180"/>
         <source>capital THORN</source>
-        <translation type="unfinished"/>
+        <translation>велика THORN</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="181"/>
         <source>small sharp s</source>
-        <translation type="unfinished"/>
+        <translation>есцет</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="182"/>
         <source>small a with grave</source>
-        <translation type="unfinished"/>
+        <translation>мала а з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="183"/>
         <source>small a with acute</source>
-        <translation type="unfinished"/>
+        <translation>мала а з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="184"/>
         <source>small a with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>мала а з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="185"/>
         <source>small a with tilde</source>
-        <translation type="unfinished"/>
+        <translation>мала а з тильдою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="186"/>
         <source>small a with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>мала а з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="187"/>
         <source>small a with ring above</source>
-        <translation type="unfinished"/>
+        <translation>мала а з кільцем зверху</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="188"/>
         <source>small ae</source>
-        <translation type="unfinished"/>
+        <translation>мала ae</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="189"/>
         <source>small c with cedilia</source>
-        <translation type="unfinished"/>
+        <translation>мала с з седилею</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="190"/>
         <source>small e with grave</source>
-        <translation type="unfinished"/>
+        <translation>мала e з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="191"/>
         <source>small e with acute</source>
-        <translation type="unfinished"/>
+        <translation>мала e з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="192"/>
         <source>small e with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>мала e з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="193"/>
         <source>small e with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>мала e з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="194"/>
         <source>small i with grave</source>
-        <translation type="unfinished"/>
+        <translation>мала i з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="195"/>
         <source>small i with acute</source>
-        <translation type="unfinished"/>
+        <translation>мала i з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="196"/>
         <source>small i with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>мала i з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="197"/>
         <source>small i with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>мала i з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="198"/>
         <source>small eth</source>
-        <translation type="unfinished"/>
+        <translation>мала eth</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="199"/>
         <source>small n with tilde</source>
-        <translation type="unfinished"/>
+        <translation>мала n з тильдою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="200"/>
         <source>small o with grave</source>
-        <translation type="unfinished"/>
+        <translation>мала o з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="201"/>
         <source>small o with acute</source>
-        <translation type="unfinished"/>
+        <translation>мала o з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="202"/>
         <source>small o with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>мала o з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="203"/>
         <source>small o with tilde</source>
-        <translation type="unfinished"/>
+        <translation>мала o з тильдою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="204"/>
         <source>small o with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>мала o з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="205"/>
         <source>small o with stroke</source>
-        <translation type="unfinished"/>
+        <translation>мала o діагонально перекреслена</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="206"/>
         <source>small ligature oe</source>
-        <translation type="unfinished"/>
+        <translation>мала лігатура ае</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="207"/>
         <source>small s with caron</source>
-        <translation type="unfinished"/>
+        <translation>мала s з гачеком</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="208"/>
         <source>small u with grave</source>
-        <translation type="unfinished"/>
+        <translation>мала u з гравісом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="209"/>
         <source>small u with acute</source>
-        <translation type="unfinished"/>
+        <translation>мала u з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="210"/>
         <source>small u with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>мала u з циркумфлексом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="211"/>
         <source>small u with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>мала u з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="212"/>
         <source>small y with acute</source>
-        <translation type="unfinished"/>
+        <translation>мала y з акутом</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="213"/>
         <source>small y with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>мала y з тремою</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="214"/>
         <source>small thorn</source>
-        <translation type="unfinished"/>
+        <translation>мала thorn</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="215"/>
         <source>feminine ordinal indicator</source>
-        <translation type="unfinished"/>
+        <translation>жіночий порядковий індикатор</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="216"/>
         <source>masculine ordinal indicator</source>
-        <translation type="unfinished"/>
+        <translation>чоловічий порядковий індикатор</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="217"/>
@@ -2133,7 +2209,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="222"/>
         <source>Greek lower letter alpha</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера альфа</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="223"/>
@@ -2143,7 +2219,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="224"/>
         <source>Greek lower letter beta</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера бета</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="225"/>
@@ -2153,7 +2229,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="226"/>
         <source>Greek lower letter chi</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера хі</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="227"/>
@@ -2163,7 +2239,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="228"/>
         <source>Greek lower letter delta</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера дельта</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="229"/>
@@ -2173,7 +2249,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="230"/>
         <source>Greek lower letter epsilon</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера епсілон</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="231"/>
@@ -2183,7 +2259,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="232"/>
         <source>Greek lower letter eta</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера ета</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="233"/>
@@ -2193,7 +2269,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="234"/>
         <source>Greek lower letter gamma</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера гамма</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="235"/>
@@ -2203,7 +2279,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="236"/>
         <source>Greek lower letter iota</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера йота</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="237"/>
@@ -2213,7 +2289,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="238"/>
         <source>Greek lower letter kappa</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера каппа</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="239"/>
@@ -2223,7 +2299,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="240"/>
         <source>Greek lower letter lambda</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера лямбда</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="241"/>
@@ -2233,7 +2309,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="242"/>
         <source>Greek lower letter mu</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера мю</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="243"/>
@@ -2243,7 +2319,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="244"/>
         <source>Greek lower letter nu</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера ню</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="245"/>
@@ -2253,7 +2329,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="246"/>
         <source>Greek lower letter omega</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера омега</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="247"/>
@@ -2263,7 +2339,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="248"/>
         <source>Greek lower letter omicron</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера омікрон</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="249"/>
@@ -2273,7 +2349,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="250"/>
         <source>Greek lower letter phi</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера фі</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="251"/>
@@ -2283,17 +2359,17 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="252"/>
         <source>Greek lower letter pi</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера пі</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="253"/>
         <source>Greek double prime</source>
-        <translation type="unfinished"/>
+        <translation>подвійний штрих</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="254"/>
         <source>Greek single prime</source>
-        <translation type="unfinished"/>
+        <translation>одинарний штрих</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="255"/>
@@ -2303,7 +2379,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="256"/>
         <source>Greek lower letter psi</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера псі</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="257"/>
@@ -2313,7 +2389,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="258"/>
         <source>Greek lower letter rho</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера ро</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="259"/>
@@ -2323,7 +2399,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="260"/>
         <source>Greek lower letter sigma</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера сигма</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="261"/>
@@ -2333,7 +2409,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="262"/>
         <source>Greek lower letter tau</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера тау</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="263"/>
@@ -2343,7 +2419,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="264"/>
         <source>Greek lower letter theta</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера тета</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="265"/>
@@ -2353,7 +2429,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="266"/>
         <source>Greek lower letter upsilon</source>
-        <translation type="unfinished"/>
+        <translation>Грецька маленька літера упсилон</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="267"/>
@@ -2363,7 +2439,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="268"/>
         <source>Greek lower letter xi</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера ксі</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="269"/>
@@ -2373,7 +2449,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="270"/>
         <source>Greek lower letter zeta</source>
-        <translation type="unfinished"/>
+        <translation>Грецька мала літера дзета</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="274"/>
@@ -2473,7 +2549,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="293"/>
         <source>left right single arrow</source>
-        <translation type="unfinished"/>
+        <translation>одинарна стрілка вліво-вправо</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="294"/>
@@ -2498,7 +2574,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="298"/>
         <source>double right arrow</source>
-        <translation type="unfinished"/>
+        <translation>подвійна стрілка вправо</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="299"/>
@@ -2881,16 +2957,19 @@ Continue using the requested filename?</source>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="196"/>
+        <location filename="../WebViewEdit.cpp~" line="196"/>
         <source>No suggestions</source>
         <translation>Варіанти відсутні</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="208"/>
+        <location filename="../WebViewEdit.cpp~" line="208"/>
         <source>Check Spelling</source>
         <translation>Перевірити орфографію</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="217"/>
+        <location filename="../WebViewEdit.cpp~" line="217"/>
         <source>Select Language</source>
         <translation>Оберіть мову</translation>
     </message>
