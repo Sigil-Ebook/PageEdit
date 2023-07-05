@@ -107,7 +107,7 @@ struct SetToHTMLResultFunctor {
 WebViewEdit::WebViewEdit(QWidget *parent)
     : QWebEngineView(parent),
       m_ViewWebPage(new WebPageEdit(this)),
-      c_jQuery(Utility::ReadUnicodeTextFile(":/javascript/jquery-2.2.4.min.js")),
+      c_jQuery(Utility::ReadUnicodeTextFile(":/javascript/jquery-3.6.4.min.js")),
       c_jQueryScrollTo(Utility::ReadUnicodeTextFile(":/javascript/jquery.scrollTo-2.1.2-min.js")),
       c_GetCaretLocation(Utility::ReadUnicodeTextFile(":/javascript/book_view_current_location.js")),
       c_GetBlock(Utility::ReadUnicodeTextFile(":/javascript/get_block.js")),
