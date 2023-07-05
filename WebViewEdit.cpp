@@ -49,7 +49,7 @@
 #include "WebPageEdit.h"
 #include "WebViewEdit.h"
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
     #define QT_ENUM_SKIPEMPTYPARTS Qt::SkipEmptyParts
 #else
     #define QT_ENUM_SKIPEMPTYPARTS QString::SkipEmptyParts

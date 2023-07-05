@@ -188,7 +188,7 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
         QFile outFile(pageedit_log_file);
         outFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text);
         QTextStream ts(&outFile);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
         ts << qt_log_entry << endl;
 #else
         ts << qt_log_entry << Qt::endl;

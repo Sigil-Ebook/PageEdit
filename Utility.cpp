@@ -59,7 +59,7 @@
 // This is the same read buffer size used by Java and Perl.
 #define BUFF_SIZE 8192
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
     #define QT_ENUM_KEEPEMPTYPARTS Qt::KeepEmptyParts
 #else
     #define QT_ENUM_KEEPEMPTYPARTS QString::KeepEmptyParts
