@@ -43,9 +43,12 @@ if ( NOT GUMBO_IS_SUBTREE )
     # Copy python scripts to build directory
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND cmake -E copy_directory
 				${CMAKE_SOURCE_DIR}/python ${TOP_BUILD_LEVEL}/python)
+    # Copy testdata to build directory
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND cmake -E copy_directory
+				${CMAKE_SOURCE_DIR}/testdata ${TOP_BUILD_LEVEL}/testdata)
     # Copy python module setup.py to build directory
-    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND cmake -E copy 
-				${CMAKE_SOURCE_DIR}/setup.py ${TOP_BUILD_LEVEL})
+    # add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND cmake -E copy 
+	# 		${CMAKE_SOURCE_DIR}/setup.py ${TOP_BUILD_LEVEL})
 endif()
 
 if ( MSVC AND NOT GUMBO_STATIC_LIB )
@@ -74,6 +77,6 @@ if(MSVC)
     set(CMAKE_STATIC_LINKER_FLAGS_RELEASE "${CMAKE_STATIC_LINKER_FLAGS} /LTCG")
 endif()
 
-if( UNIX AND NOT APPLE )
+if( UNIX )
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 endif()
