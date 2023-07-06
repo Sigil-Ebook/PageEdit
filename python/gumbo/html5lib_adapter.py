@@ -98,6 +98,8 @@ class HTMLParser(object):
     self.tree = tree
 
   def parse(self, text_or_file, **kwargs):
+    # need to tell sigil gumbo to use html parsing rules not xhtml parsing rules
+    kwargs["use_xhtml_rules"] = False
     try:
       text = text_or_file.read()
     except AttributeError:
@@ -116,6 +118,8 @@ class HTMLParser(object):
       return self.tree.getDocument()
 
   def parseFragment(self, text_or_file, container, **kwargs):
+    # need to tell sigil gumbo to use html parsing rules not xhtml parsing rules
+    kwargs["use_xhtml_rules"] = False
     try:
       text = text_or_file.read()
     except AttributeError:

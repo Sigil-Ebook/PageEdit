@@ -1,0 +1,29 @@
+List of Changes since the Fork 
+==============================
+In reverse chronological order:
+
+- change update foreign attributes to remove xml:base and add xlink:arcrole to follow whatwg spec
+- fixed minor memory leaks
+- correctly handle text in form elements
+- support for new tags including search and to better follow the latest whatwg parsing spec
+- fix for handling </p> and </br> in foreign contexts
+- Fix multiple warnings including cast to enum from void pointer
+- Re-implement adjust_foreign_attributes() with a gperf hash
+- Remove special handling of <menuitem> tag
+- Remove special handling of <isindex> tag
+- Use realloc(3) instead of malloc(3) in enlarge_vector_if_full()
+- Use realloc(3) instead of malloc(3) in maybe_resize_string_buffer()
+- Make destroy_node() function non-recursive
+- Fix signedness of some format specifiers
+- Add maximum element nesting limit
+- Remove custom allocator support
+- Fix recording of source positions for </form> end tags
+- Fix TAGSET_INCLUDES macro to work properly with multiple bit flags
+- Re-implement gumbo_normalize_svg_tagname() with a gperf hash
+- Replace linear array search in adjust_svg_attributes() with a gperf hash
+- Fix duplicate TagSet initializer being ignored in is_special_node()
+- Add support for <dialog> tag
+- Add missing static qualifiers to hide symbols that shouldn't be extern
+- Replace use of locale-dependant ctype.h functions with custom, ASCII-only equiv
+- add ability and interface to modify/edit the dom tree after parsing completes
+- allow support for xhtml parsing rules controllable via GumboOptions use_xhtml_rules flag

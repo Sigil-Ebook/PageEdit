@@ -18,7 +18,8 @@ import collections
 import glob
 import os
 import re
-import StringIO
+import io
+    
 import unittest
 import warnings
 
@@ -75,7 +76,7 @@ class TestData(object):
 
   def normaliseOutput(self, data):
     # Remove trailing newlines
-    for key, value in data.iteritems():
+    for key, value in data.items():
       if value.endswith("\n"):
         data[key] = value[:-1]
     return data
@@ -125,9 +126,9 @@ class Html5libAdapterTest(unittest.TestCase):
 
     if inner_html:
       document = p.parseFragment(
-          StringIO.StringIO(input), inner_html.replace('math ', 'mathml '))
+          io.StringIO(input), inner_html.replace('math ', 'mathml '))
     else:
-      document = p.parse(StringIO.StringIO(input))
+      document = p.parse(io.StringIO(input))
 
     with warnings.catch_warnings():
       # Etree serializer in html5lib uses a deprecated getchildren() API.
@@ -143,8 +144,8 @@ class Html5libAdapterTest(unittest.TestCase):
 
     error_msg = '\n'.join(['\n\nInput:', input, '\nExpected:', expected,
                            '\nReceived:', output])
-    self.assertEquals(expected, output,
-                      error_msg.encode('ascii', 'xmlcharrefreplace') + '\n')
+    self.assertEqual(expected, output,
+                      error_msg.encode('ascii', 'xmlcharrefreplace') + b'\n')
     # TODO(jdtang): Check error messages, when there's full error support.
 
 

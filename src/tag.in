@@ -194,6 +194,7 @@ p
 param
 path
 pattern
+picture
 plaintext
 polygon
 polyline
@@ -210,10 +211,12 @@ ruby
 s
 samp
 script
+search
 section
 select
 semantics
 set
+slot
 small
 source
 spacer

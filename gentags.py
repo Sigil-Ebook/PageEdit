@@ -22,18 +22,18 @@ def generate_tag_headers():
             open("src/tag_sizes.h", "wb") as tag_sizes, \
             open("python/gumbo/gumboc_tags.py", "wb") as tag_py, \
             open('src/tag.in', 'rb') as tagfile:
-        tag_py.write('TagNames = [\n')
+        tag_py.write('TagNames = [\n'.encode('utf-8'))
         for f in (tag_strings, tag_enum, tag_sizes):
             f.write(HEADER.format('tag').encode('utf-8'))
         for tag in tagfile:
             tag = tag.decode('utf-8').strip()
             tag_upper = tag.upper().replace('-', '_')
-            tag_py.write('\t"%s",\n' % tag_upper)
+            tag_py.write(('\t"%s",\n' % tag_upper).encode('utf-8'))
             tag_strings.write(('"%s",\n' % tag).encode('utf-8'))
             tag_enum.write(('GUMBO_TAG_%s,\n' % tag_upper).encode('utf-8'))
             tag_sizes.write(('%d, ' % len(tag)).encode('utf-8'))
             tag_sizes.write(b'\n')
-        tag_py.write(']\n')
+        tag_py.write(']\n'.encode('utf-8'))
 
 def generate_tag_perfect_hash(repetitions=200):
     raw = subprocess.check_output(

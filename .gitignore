@@ -1,85 +1,74 @@
-# Compilation artifacts
-*.o
-*.lo
-*.la
+# Backup files left behind by the Emacs editor.
+*~
 
-# Editor swap files
-*.swp
-*.swo
-*.swn
+# Lock files used by the Emacs editor.
+.\#*
 
-#emacs editor leftovers
-*.*~
+# emacs auto recovery files from aborted edits
+\#*\#
 
-#diff leftovers
+#use ful for stashing files
 *.orig
+*.keep
 
-# gtest pieces
-gtest
-gtest-1.7.0
-third_party.tar.gz
-testdata.tar.gz
-.tar.gz
-.zip
+# Temporary files used by the vim editor.
+.*.swp
+.swp
 
-# Other build artifacts
-/Debug
-/visualc/Debug
-/visualc/Release
-/visualc/gumbo.sdf
-/visualc/gumbo.opensdf
-/build
-.log
-.sdf
-.opensdf
-.deps
-.dirstamp
-.libs
-Makefile
-Makefile.in
-aclocal.m4
-autom4te.cache
-compile
-config.guess
-config.log
-config.status
-config.sub
-configure
-core
-depcomp
-gtest/
-gumbo.pc
-gumbo_test
-gumbo_test.log
-gumbo_test.trs
-install-sh
-libtool
-ltmain.sh
-m4/
-missing
-test-driver
-test-suite.log
+# A hidden file created by the Mac OS X Finder.
+.DS_Store
 
-# gyp android artifacts
-gumbo_parser.target.mk
+# Image thumbnail database created by windows
+Thumbs.db
 
-# `make dist` artifacts
-/gumbo-[0-9].[0-9].tar.gz
-/gumbo-[0-9].[0-9]/
+# Various files created by Visual Studio
+*.sln
+*.suo
+*.vcproj
+*.user*
+#*.rc
+*.ncb
+*.pch
+*.dep
+*.idb
+*.exp
+*.res
+*.manifest
+*.ilk
+*.pdb
+*.def
+Release
+Debug
+BuildLog.htm
 
-# Python dist artifacts
+# Various files and folders created by CMake
+CMakeFiles
+CMakeScripts
+CMakeCache.txt
+*.dir
+ALL_BUILD*
+
+
+# Misc files
+*.svn
+*.a
+*.o
+*.obj
+*.lib
+*.exe
+*.dll
+*.a
+*.app
+*.xcodeproj
+*.pbxbtree
+*.pbxindex
+*.build
+*.smp
+*.pl
 *.pyc
-dist
+*.pyo
+*.orig
+*.bak
+*.rar
 build
-python/gumbo.egg-info
-python/gumbo/libgumbo.so
 
-# Example binaries
-benchmark
-clean_text
-find_links
-get_title
-positions_of_class
-prettyprint
-serialize
-well_formed
