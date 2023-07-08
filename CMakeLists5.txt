@@ -120,6 +120,8 @@ if (APPLE)
 endif()
 
 file( GLOB TS_FILES ts/pageedit_*.ts )
+file( GLOB EXAMPLE_FILES examples/* )
+
 
 set( DICTIONARY_FILES
      de_DE
@@ -196,6 +198,7 @@ if( APPLE )
     foreach( DICT ${DICTIONARY_FILES} )
         exec_program("qwebengine_convert_dict ${PROJECT_SOURCE_DIR}/dictionaries/${DICT}.dic ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/Resources/qtwebengine_dictionaries/${DICT}.bdic")
     endforeach( DICT )
+    exec_program("mkdir -p ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/PageEdit.app/Contents/examples")
 
 endif()
 
@@ -306,6 +309,7 @@ if( UNIX AND NOT APPLE )
     if ( INSTALL_BUNDLED_DICTS )
         install( DIRECTORY ${CONVERTED_DICTS_DEST} DESTINATION ${QT_INSTALL_DATA_DIR} )
     endif()
+    install( FILES ${EXAMPLE_FILES} DESTINATION ${PAGEEDIT_SHARE_ROOT}/examples/ )
 endif()
 
 # For Mac, add frameworks and make a DMG
@@ -345,6 +349,7 @@ if( APPLE )
     endforeach( QM )
     # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/../lib/*.dylib ${WORK_DIR}/PageEdit.app/Contents/lib/ )
     # add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND install_name_tool -rpath ${CMAKE_BINARY_DIR}/lib "@executable_path/../lib" ${WORK_DIR}/PageEdit.app/Contents/MacOS/PageEdit )
+    add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${CMAKE_SOURCE_DIR}/examples/* ${WORK_DIR}/PageEdit.app/Contents/examples )
 endif()
 
 if ( MSVC )
@@ -478,6 +483,9 @@ if ( MSVC )
         add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD
         COMMAND ${CONVERTDICT} ${PROJECT_SOURCE_DIR}/dictionaries/${DICT}.dic ${MAIN_PACKAGE_DIR}/qtwebengine_dictionaries/${DICT}.bdic )
     endforeach( DICT )
+    foreach( EXAMPLE ${EXAMPLE_FILES} )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND cmake -E copy ${EXAMPLE} ${MAIN_PACKAGE_DIR}/examples/ )
+    endforeach( EXAMPLE )
 
     # Remove the temp directory used for building the installer
     add_custom_command( TARGET deployzip POST_BUILD
@@ -486,4 +494,5 @@ if ( MSVC )
     add_custom_command( TARGET deployinstaller POST_BUILD
                         COMMAND ${CMAKE_COMMAND} -E remove_directory ${TEMP_PACKAGE_DIR}
                         COMMENT "Removing temporary directory..." )
+
 endif( MSVC )
