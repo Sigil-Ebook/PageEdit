@@ -31,6 +31,7 @@
 
 #include "ClipEditorModel.h"
 #include "Utility.h"
+#include "pageedit_constants.h"
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
     #define QT_ENUM_SKIPEMPTYPARTS Qt::SkipEmptyParts
@@ -502,11 +503,11 @@ void ClipEditorModel::AddExampleEntries()
     examples_dir = QCoreApplication::applicationDirPath() + "/examples/";
 #else
     // all flavours of linux / unix
-    // user supplied environment variable to 'share/sigil' directory will override everything
-    if (!sigil_extra_root.isEmpty()) {
-        examples_dir = sigil_extra_root + "/examples/";
+    // user supplied environment variable to 'share/pageedit' directory will override everything
+    if (!pageedit_extra_root.isEmpty()) {
+        examples_dir = pageedit_extra_root + "/examples/";
     } else {
-        examples_dir = sigil_share_root + "/examples/";
+        examples_dir = pageedit_share_root + "/examples/";
     }
 #endif
     LoadData(examples_dir + CLIP_EXAMPLES_FILE);
