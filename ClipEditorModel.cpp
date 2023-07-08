@@ -504,9 +504,7 @@ void ClipEditorModel::AddExampleEntries()
 #else
     // all flavours of linux / unix
     // user supplied environment variable to 'share/pageedit' directory will override everything
-    if (!pageedit_extra_root.isEmpty()) {
-        examples_dir = pageedit_extra_root + "/examples/";
-    } else {
+    if (!pageedit_share_root.isEmpty()) {
         examples_dir = pageedit_share_root + "/examples/";
     }
 #endif

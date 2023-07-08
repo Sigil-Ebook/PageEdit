@@ -41,7 +41,6 @@ extern const QString PATH_LIST_DELIM;
 
 
 #if !defined(_WIN32) && !defined(__APPLE__)
-extern const QString pageedit_extra_root;
 extern const QString pageedit_share_root;
 extern const QString force_sigil_darkmode_palette;
 extern const QString force_pageedit_darkmode_palette;
