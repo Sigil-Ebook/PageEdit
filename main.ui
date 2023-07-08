@@ -171,6 +171,14 @@
     <addaction name="actionInspect" />
    </widget>
 
+   <widget class="QMenu" name="menuClips">
+     <property name="title">
+       <string>Clips</string>
+     </property>
+     <addaction name="actionClips"/>
+     <addaction name="actionClipEdit"/>
+   </widget>
+     
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuFind"/>
@@ -178,6 +186,7 @@
    <addaction name="menuFormat"/>
    <addaction name="menuView"/>
    <addaction name="menuInspect"/>
+   <addaction name="menuClips"/>
   </widget>
 
   <widget class="QToolBar" name="toolBarFileActions">
@@ -1094,6 +1103,30 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+F5</string>
+   </property>
+  </action>
+
+  <action name="actionClips">
+   <property name="text">
+    <string>Clips</string>
+   </property>
+   <property name="toolTip">
+    <string>Apply clips to page.</string>
+   </property>
+   <property name="shortcut">
+    <string></string>
+   </property>
+  </action>
+
+  <action name="actionClipEdit">
+   <property name="text">
+    <string>ClipEditor ...</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit and Create Clips.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+C</string>
    </property>
   </action>
 

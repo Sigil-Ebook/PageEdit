@@ -38,8 +38,12 @@
 #include "Viewer.h"
 #include "Inspector.h"
 #include "ElementIndex.h"
+#include "ClipEditorModel.h"
 #include "webviewprinter.h"
 
+
+class ClipsWindow;
+class ClipEditor;
 class WebViewEdit;
 class Inspector;
 class QWebEngineView;
@@ -96,11 +100,14 @@ public slots:
     void SetZoomFactor(float factor);
     void EmitGoToPreviewLocationRequest();
     void InspectPreviewPage();
+    void EditClips();
+    void OpenClipsWindow();
     void SelectAllPreview();
     void CopyPreview();
     void ReloadPreview();
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
     void AboutPageEdit();
+    void PasteClipEntriesIntoTarget(QList<ClipEditorModel::clipEntry *>clips);
 
     // Navigation Slots
     void EditNext();
@@ -235,6 +242,8 @@ private:
     WebViewPrinter *m_WebViewPrinter;
 
     QList<ElementIndex> m_LastLocation;
+    ClipsWindow* m_Clips;
+    ClipEditor*  m_ClipEditor;
     int m_LastPtr;
 
     Ui::MainWindow ui;

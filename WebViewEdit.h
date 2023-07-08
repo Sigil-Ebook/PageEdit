@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin B. Hendricks Stratford, Ontario, Canada 
+**  Copyright (C) 2019-2023 Kevin B. Hendricks Stratford, Ontario, Canada 
 **
 **  This file is part of PageEdit.
 **
@@ -28,6 +28,7 @@
 #include <QtWebEngineWidgets>
 #include <QWebEngineView>
 #include "Utility.h"
+#include "ClipEditorModel.h"
 #include "WebPageEdit.h"
 #include "Viewer.h"
 
@@ -136,7 +137,10 @@ public slots:
      bool ExecCommand(const QString &command, const QString &parameter);
      bool QueryCommandState(const QString &command);
      QString GetHoverUrl();
+     bool PasteClipEntries(const QList<ClipEditorModel::clipEntry*> &clips);
+     bool PasteClipEntry(ClipEditorModel::clipEntry* clip);
 
+    
 signals:
     /**
      * Emitted whenever the zoom factor changes.

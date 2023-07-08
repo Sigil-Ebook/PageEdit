@@ -54,6 +54,10 @@ set( SOURCE_FILES
     OPFReader.cpp
     PEDarkStyle.cpp
     webviewprinter.cpp
+    ClipEditor.cpp
+    ClipEditorModel.cpp
+    ClipEditorTreeView.cpp
+    ClipsWindow.cpp
     )
 
 set( HEADER_FILES
@@ -89,6 +93,10 @@ set( HEADER_FILES
     OPFReader.h
     PEDarkStyle.h
     webviewprinter.h
+    ClipEditor.h
+    ClipEditorModel.h
+    ClipEditorTreeeView.h
+    ClipsWindow.h
     )
 
 set( FORM_FILES
@@ -101,6 +109,7 @@ set( FORM_FILES
     PAppearanceWidget.ui
     PGeneralSettings.ui
     SearchToolbar.ui
+    ClipEditor.ui
     )
 
 set( RESOURCE_FILES

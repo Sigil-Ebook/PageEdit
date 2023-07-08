@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2022  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2023  Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -817,6 +817,31 @@ bool WebViewEdit::ExecuteCaretUpdate(const QString &caret_update)
 
     return false;
 }
+
+
+bool WebViewEdit::PasteClipEntries(const QList<ClipEditorModel::clipEntry *> &clips)
+{
+    bool applied = false;
+    foreach(ClipEditorModel::clipEntry * clip, clips) {
+        applied = applied || PasteClipEntry(clip);
+    }
+    return applied;
+}
+
+bool WebViewEdit::PasteClipEntry(ClipEditorModel::clipEntry *clip)
+{
+    if (!clip || clip->text.isEmpty()) {
+        return false;
+    }
+    QString text = clip->text;
+
+    if (text.contains("\\1")) {
+        text.replace("\\1", GetSelectedText());
+    }
+    InsertHtml(text);
+    return true;
+}
+
 
 void WebViewEdit::ConnectSignalsToSlots()
 {

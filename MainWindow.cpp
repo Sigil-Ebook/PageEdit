@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2021 Kevin Hendricks, Doug Massay
+**  Copyright (C) 2019-2023 Kevin Hendricks, Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -52,6 +52,8 @@
 #include "Inspector.h"
 #include "SettingsStore.h"
 #include "Utility.h"
+#include "ClipEditor.h"
+#include "ClipsWindow.h"
 #include "WebViewEdit.h"
 #include "SelectCharacter.h"
 #include "SelectFiles.h"
@@ -122,6 +124,8 @@ MainWindow::MainWindow(QString filepath, QString spineno, QWidget *parent)
     m_skipPrintWarnings(false),
     m_skipPrintPreview(false),
     m_WebViewPrinter(new WebViewPrinter(this)),
+    m_Clips(nullptr),
+    m_ClipEditor(new ClipEditor(this)),
     m_LastPtr(-1)
 {
     ui.setupUi(this);
@@ -522,6 +526,10 @@ void MainWindow::SetupView()
     m_Inspector->setObjectName("Inspector");
     addDockWidget(Qt::RightDockWidgetArea, m_Inspector);
     m_Inspector->hide();
+    m_Clips = new ClipsWindow(this);
+    m_Clips->setObjectName("ClipsWindow");
+    addDockWidget(Qt::LeftDockWidgetArea, m_Clips);
+    m_Clips->hide();
 
     // Creating the zoom controls in the status bar
     m_slZoomSlider = new QSlider(Qt::Horizontal, statusBar());
@@ -1044,6 +1052,26 @@ void MainWindow::InspectPreviewPage()
         m_Inspector->StopInspection();
         m_Inspector->close();
         // if needed resulting m_WebView resize event will UpdateWindowTitle();
+    }
+}
+
+void MainWindow::EditClips()
+{
+    if (!m_ClipEditor->isVisible()) {
+        m_ClipEditor->show();
+        m_ClipEditor->raise();
+        m_ClipEditor->activateWindow();
+    } else {
+        m_ClipEditor->close();
+    }
+}
+
+void MainWindow::OpenClipsWindow()
+{
+    if (!m_Clips->isVisible()) {
+        m_Clips->show();
+    } else {
+        m_Clips->hide();
     }
 }
 
@@ -2010,6 +2038,23 @@ void MainWindow::AboutPageEdit()
 }
 
 
+// How to deal with this as each clipEntry struct created with new and passed via
+// emit signal to here?  Where and how should their memory be freed.
+// Perhaps we need to make clipEntry a QObject instead of just a struct or use
+// smart pointers
+void MainWindow::PasteClipEntriesIntoTarget(QList<ClipEditorModel::clipEntry *> clips)
+{
+    // target will always be the WebViewEdit    
+    if (m_WebView && m_WebView->PasteClipEntries(clips)) {
+        m_WebView->setFocus();
+        ShowMessageOnStatusBar();
+    }
+    foreach(ClipEditorModel::clipEntry * entry, clips) {
+        if (entry) delete entry;
+    }
+}
+
+
 void MainWindow::ConnectSignalsToSlots()
 {
     MainApplication *mainApplication = qobject_cast<MainApplication *>(qApp);
@@ -2021,6 +2066,8 @@ void MainWindow::ConnectSignalsToSlots()
     connect(m_WebView,   SIGNAL(selectionChanged()),        this, SLOT(SelectionChanged()));
 
     connect(ui.actionInspect,   SIGNAL(triggered()),                       this, SLOT(InspectPreviewPage()));
+    connect(ui.actionClips,     SIGNAL(triggered()),                       this, SLOT(OpenClipsWindow()));
+    connect(ui.actionClipEdit,  SIGNAL(triggered()),                       this, SLOT(EditClips()));
     connect(m_SelectCharacter,  SIGNAL(SelectedCharacter(const QString&)), this, SLOT(PasteText(const QString &)));
     connect(ui.actionAbout,     SIGNAL(triggered()),                       this, SLOT(AboutPageEdit()));
 
@@ -2125,4 +2172,14 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionZoomReset,  SIGNAL(triggered()),       this, SLOT(ZoomReset()));
     connect(m_slZoomSlider,      SIGNAL(valueChanged(int)), this, SLOT(SliderZoom(int)));
     connect(m_slZoomSlider,      SIGNAL(sliderMoved(int)),  this, SLOT(UpdateZoomLabel(int)));
+
+    // Clips related
+    connect(m_Clips,        SIGNAL(PasteClips(QList<ClipEditorModel::clipEntry *>)),
+            this,            SLOT(PasteClipEntriesIntoTarget(QList<ClipEditorModel::clipEntry *>)));
+    
+    connect(m_ClipEditor, SIGNAL(PasteSelectedClipRequest(QList<ClipEditorModel::clipEntry *>)),
+            this,           SLOT(PasteClipEntriesIntoTarget(QList<ClipEditorModel::clipEntry *>)));
+    
+    connect(m_ClipEditor,   SIGNAL(ShowStatusMessageRequest(const QString &)),
+            this,            SLOT(ShowMessageOnStatusBar(const QString &)));
 }
