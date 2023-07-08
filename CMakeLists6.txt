@@ -58,6 +58,7 @@ set( SOURCE_FILES
     ClipEditorModel.cpp
     ClipEditorTreeView.cpp
     ClipsWindow.cpp
+    ClassInfo.cpp
     )
 
 set( HEADER_FILES
@@ -97,6 +98,7 @@ set( HEADER_FILES
     ClipEditorModel.h
     ClipEditorTreeeView.h
     ClipsWindow.h
+    ClassInfo.h
     )
 
 set( FORM_FILES

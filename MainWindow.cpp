@@ -136,6 +136,7 @@ MainWindow::MainWindow(QString filepath, QString spineno, QWidget *parent)
     ConnectSignalsToSlots();
     SetupFileList(filepath, spineno);
     SetupNavigationComboBox();
+    m_ClipEditor->SetCSSList(m_CSSList);
     QTimer::singleShot(200, this, SLOT(DoUpdatePage()));
 }
 
@@ -212,6 +213,7 @@ void MainWindow::SetupFileList(const QString &filepath, const QString &spineno)
             media_list << filepath;
             m_MediaKind << "svgimage";
         }
+        m_CSSList = opfrdr.GetCSSFilePathList();
         m_MediaBase = Utility::longestCommonPath(media_list, "/");
         m_MediaList.clear();
         foreach(QString mf, media_list) {

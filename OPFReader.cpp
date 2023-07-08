@@ -109,7 +109,7 @@ QStringList OPFReader::GetAudioFilePathList()
         QString mtype = m_FileMimeTypes.value(id, "");
         if (AUDIO_MIMETYPES.contains(mtype)) {
             res << m_IDMap[id];
-	}
+        }
     }
     return res;
 }
@@ -121,7 +121,7 @@ QStringList OPFReader::GetVideoFilePathList()
         QString mtype = m_FileMimeTypes.value(id, "");
         if (VIDEO_MIMETYPES.contains(mtype)) {
             res << m_IDMap[id];
-	}
+        }
     }
     return res;
 }
@@ -133,7 +133,7 @@ QStringList OPFReader::GetImageFilePathList()
         QString mtype = m_FileMimeTypes.value(id, "");
         if (IMAGE_MIMETYPES.contains(mtype)) {
             res << m_IDMap[id];
-	}
+        }
     }
     return res;
 }
@@ -145,7 +145,19 @@ QStringList OPFReader::GetSVGFilePathList()
         QString mtype = m_FileMimeTypes.value(id, "");
         if (SVG_MIMETYPES.contains(mtype)) {
             res << m_IDMap[id];
-	}
+        }
+    }
+    return res;
+}
+
+QStringList OPFReader::GetCSSFilePathList()
+{
+    QStringList res;
+    foreach(QString id, m_IDMap.keys()) {
+        QString mtype = m_FileMimeTypes.value(id, "");
+        if (mtype == "text/css") {
+            res << m_IDMap[id];
+        }
     }
     return res;
 }

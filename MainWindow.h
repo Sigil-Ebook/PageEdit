@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -233,6 +233,7 @@ private:
     QString m_Base;
     int m_ListPtr;
     bool m_UpdatePageInProgress;
+    QStringList m_CSSList;
     QStringList m_MediaList;
     QStringList m_MediaKind;
     QString m_MediaBase;

@@ -46,7 +46,7 @@ class ClipEditor : public QDialog
 public:
     ClipEditor(QWidget *parent);
     void ForceClose();
-    // void SetBook();
+    void SetCSSList(const QStringList&);
 
 public slots:
     QStandardItem *AddEntry(bool is_group = false, ClipEditorModel::clipEntry *clip_entry = NULL, bool insert_after = true);
@@ -76,7 +76,7 @@ private slots:
     void ExportAll();
     void CollapseAll();
     void ExpandAll();
-    // void AutoFill();
+    void AutoFill();
 
     void Apply();
     bool Save();
@@ -138,17 +138,17 @@ private:
     QAction *m_ExportAll;
     QAction *m_CollapseAll;
     QAction *m_ExpandAll;
-    // QAction *m_AutoFill;
+    QAction *m_AutoFill;
 
     ClipEditorModel *m_ClipEditorModel;
-
-    // QSharedPointer<Book> m_Book;
 
     QString m_LastFolderOpen;
 
     QPointer<QMenu> m_ContextMenu;
 
     QList<ClipEditorModel::clipEntry *> m_SavedClipEntries;
+
+    QStringList m_CSSList;
 
     Ui::ClipEditor ui;
 };

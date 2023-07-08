@@ -30,9 +30,10 @@
 #include <QMessageBox>
 #include <QPushButton>
 #include <QRegularExpression>
+#include <QDebug>
 
 #include "ClipEditor.h"
-// #include "Parsers/CSSInfo.h"
+#include "ClassInfo.h"
 #include "Utility.h"
 
 static const QString SETTINGS_GROUP = "clips";
@@ -53,6 +54,14 @@ ClipEditor::ClipEditor(QWidget *parent)
     ExpandAll();
 }
 
+
+void ClipEditor::SetCSSList(const QStringList& css_files)
+{
+    m_CSSList.clear();
+    foreach(QString afile, css_files) {
+        m_CSSList << afile;
+    }
+}
 
 void ClipEditor::SetupClipEditorTree()
 {
@@ -484,7 +493,7 @@ void ClipEditor::ExpandAll()
     ui.ClipEditorTree->expandAll();
 }
 
-#if 0
+
 void ClipEditor::AutoFill()
 {
     if (SelectedRowsCount() > 1) {
@@ -493,20 +502,19 @@ void ClipEditor::AutoFill()
 
     QStringList css_list;
 
-    QList<CSSResource *> css_resources = m_Book->GetFolderKeeper()->GetResourceTypeList<CSSResource>(false);
-
-    foreach(CSSResource * css_resource, css_resources) {
-        CSSInfo css_info(css_resource->GetText());
-        QList<CSSInfo::CSSSelector *> selectors = css_info.getClassSelectors();
-        foreach(CSSInfo::CSSSelector *selector, selectors) {
+    foreach(QString afile, m_CSSList) {
+        QString csstext = Utility::ReadUnicodeTextFile(afile);
+        ClassInfo cl_info(csstext);
+        QList<ClassInfo::CSSSelector *> selectors = cl_info.getClassSelectors();
+        foreach(ClassInfo::CSSSelector *selector, selectors) {
             QString text = selector->text;
             if (!text.contains(".")) {
                 continue;
             }
             if (text.startsWith(".")) {
-                css_list.append("p" % text);
-                css_list.append("span" % text);
-                css_list.append("div" % text);
+                css_list.append("p" + text);
+                css_list.append("span" + text);
+                css_list.append("div" + text);
             } else {
                 css_list.append(text);
             }
@@ -532,7 +540,6 @@ void ClipEditor::AutoFill()
 
     QMessageBox::information(this, tr("Clip Editor"), tr("CSS entries added: %n", "",css_list.count()));
 }
-#endif
 
 bool ClipEditor::FilterEntries(const QString &text, QStandardItem *item)
 {
@@ -654,7 +661,7 @@ void ClipEditor::CreateContextMenuActions()
     m_ExportAll =   new QAction(tr("Export All") + "...", this);
     m_CollapseAll = new QAction(tr("Collapse All"),       this);
     m_ExpandAll =   new QAction(tr("Expand All"),         this);
-    // m_AutoFill  =   new QAction(tr("Autofill"),           this);
+    m_AutoFill  =   new QAction(tr("Autofill"),           this);
     m_AddEntry->setShortcut(QKeySequence(Qt::ControlModifier | Qt::Key_E));
     m_AddGroup->setShortcut(QKeySequence(Qt::ControlModifier | Qt::Key_G));
     m_Edit->setShortcut(QKeySequence(Qt::Key_F2));
@@ -692,7 +699,7 @@ void ClipEditor::OpenContextMenu(const QPoint &point)
         m_ExportAll->setEnabled(true);
         m_CollapseAll->setEnabled(true);
         m_ExpandAll->setEnabled(true);
-        // m_AutoFill->setEnabled(true);
+        m_AutoFill->setEnabled(true);
     }
 }
 
@@ -722,7 +729,7 @@ void ClipEditor::SetupContextMenu(const QPoint &point)
     m_Export->setEnabled(selected_rows_count > 0);
     m_ContextMenu->addAction(m_ExportAll);
     m_ContextMenu->addSeparator();
-    // m_ContextMenu->addAction(m_AutoFill);
+    m_ContextMenu->addAction(m_AutoFill);
     m_ContextMenu->addSeparator();
     m_ContextMenu->addAction(m_CollapseAll);
     m_ContextMenu->addAction(m_ExpandAll);
@@ -993,7 +1000,7 @@ void ClipEditor::ConnectSignalsSlots()
     connect(m_ExportAll,   SIGNAL(triggered()), this, SLOT(ExportAll()));
     connect(m_CollapseAll, SIGNAL(triggered()), this, SLOT(CollapseAll()));
     connect(m_ExpandAll,   SIGNAL(triggered()), this, SLOT(ExpandAll()));
-    // connect(m_AutoFill,    SIGNAL(triggered()), this, SLOT(AutoFill()));
+    connect(m_AutoFill,    SIGNAL(triggered()), this, SLOT(AutoFill()));
     connect(m_ClipEditorModel, SIGNAL(SettingsFileUpdated()), this, SLOT(SettingsFileModelUpdated()));
     connect(m_ClipEditorModel, SIGNAL(ItemDropped(const QModelIndex &)), this, SLOT(ModelItemDropped(const QModelIndex &)));
     connect(m_ClipEditorModel, SIGNAL(ClipsUpdated()), this, SIGNAL(ClipsUpdated()));
