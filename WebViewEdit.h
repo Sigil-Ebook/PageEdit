@@ -137,6 +137,7 @@ public slots:
      bool ExecCommand(const QString &command, const QString &parameter);
      bool QueryCommandState(const QString &command);
      QString GetHoverUrl();
+     bool PasteClipNumber(int clip_number);
      bool PasteClipEntries(const QList<ClipEditorModel::clipEntry*> &clips);
      bool PasteClipEntry(ClipEditorModel::clipEntry* clip);
 

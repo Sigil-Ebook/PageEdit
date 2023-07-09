@@ -129,6 +129,16 @@ MainWindow::MainWindow(QString filepath, QString spineno, QWidget *parent)
     m_LastPtr(-1)
 {
     ui.setupUi(this);
+    // initialize the toolbar UI clip actions
+    foreach(QAction* clipaction, ui.toolBarClips->actions()) {
+        if (!clipaction->isSeparator()) {
+            QString strIndex = clipaction->objectName();
+            strIndex.replace(QString("actionClip"), QString(""));
+            clipaction->setData(strIndex.toInt());
+            m_clactions.append(clipaction);
+        }
+    }
+    UpdateClipsUI();
     SetupView();
     // start up in edit mode unless the user changes it
     ui.actionMode->setChecked(true);
@@ -1066,6 +1076,18 @@ void MainWindow::EditClips()
     } else {
         m_ClipEditor->close();
     }
+}
+
+void MainWindow::ToggleClipToolbar()
+{
+    // ui.toolBarClips->toggleViewAction();
+#if 1
+    if (!ui.toolBarClips->isVisible()) {
+        ui.toolBarClips->setVisible(true);
+    } else {
+        ui.toolBarClips->setVisible(false);
+    }
+#endif
 }
 
 void MainWindow::OpenClipsWindow()
@@ -2056,6 +2078,46 @@ void MainWindow::PasteClipEntriesIntoTarget(QList<ClipEditorModel::clipEntry *> 
     }
 }
 
+void MainWindow::PasteClipNumberIntoTarget(int clip_number)
+{
+    // target will always be the WebViewEdit
+    bool applied = false;
+    if (m_WebView) {
+        applied = m_WebView->PasteClipNumber(clip_number);
+    }
+    if (applied) {
+        ShowMessageOnStatusBar(tr("Pasted clip entry %1.").arg(clip_number));
+    }
+}
+
+void MainWindow::UpdateClipButton(QAction *ui_action)
+{
+    // clipEntry is a simple struct created by GetEntry with new,
+    // no reference counting or smart pointers so they must be cleaned up appropriately
+    int clip_number = ui_action->data().toInt();
+    ClipEditorModel::clipEntry *clip_entry = ClipEditorModel::instance()->GetEntryFromNumber(clip_number);
+    if (clip_entry) {
+        ui_action->setText(clip_entry->name);
+        QString clip_text = clip_entry->text;
+        clip_text.replace('&', "&amp;").replace('<', "&lt;").replace('>', "&gt;");
+        ui_action->setToolTip(clip_text);
+        ui_action->setVisible(true);
+        // prevent memory leak
+        delete clip_entry;
+    } else {
+        ui_action->setText("");
+        ui_action->setToolTip("");
+        ui_action->setVisible(false);
+    }
+}
+
+void MainWindow::UpdateClipsUI()
+{
+    foreach(QAction * clipaction, m_clactions) {
+        UpdateClipButton(clipaction);
+    }
+}
+
 
 void MainWindow::ConnectSignalsToSlots()
 {
@@ -2070,6 +2132,7 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionInspect,   SIGNAL(triggered()),                       this, SLOT(InspectPreviewPage()));
     connect(ui.actionClips,     SIGNAL(triggered()),                       this, SLOT(OpenClipsWindow()));
     connect(ui.actionClipEdit,  SIGNAL(triggered()),                       this, SLOT(EditClips()));
+    connect(ui.actionClipBar,   SIGNAL(triggered()),                       this, SLOT(ToggleClipToolbar()));
     connect(m_SelectCharacter,  SIGNAL(SelectedCharacter(const QString&)), this, SLOT(PasteText(const QString &)));
     connect(ui.actionAbout,     SIGNAL(triggered()),                       this, SLOT(AboutPageEdit()));
 
@@ -2184,4 +2247,17 @@ void MainWindow::ConnectSignalsToSlots()
     
     connect(m_ClipEditor,   SIGNAL(ShowStatusMessageRequest(const QString &)),
             this,            SLOT(ShowMessageOnStatusBar(const QString &)));
+
+    connect(m_ClipEditor,   SIGNAL(ClipsUpdated()),
+            this,            SLOT(UpdateClipsUI()));
+    
+    foreach(QAction* clipaction, m_clactions) {
+        // Use the new signal/slot syntax and use a lambda to
+        // eliminate the need for the obsoleted QSignalMapper.
+        // [captured variables]() {...anonymous processing to do...;}
+        int i = clipaction->data().toInt();
+        connect(clipaction, &QAction::triggered, this, [this,i]() {
+                MainWindow::PasteClipNumberIntoTarget(i);
+        });
+    }
 }

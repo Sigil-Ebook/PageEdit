@@ -102,12 +102,16 @@ public slots:
     void InspectPreviewPage();
     void EditClips();
     void OpenClipsWindow();
+    void ToggleClipToolbar();
     void SelectAllPreview();
     void CopyPreview();
     void ReloadPreview();
     void ShowMessageOnStatusBar(const QString &message = "", int millisecond_duration = STATUSBAR_MSG_DISPLAY_TIME);
     void AboutPageEdit();
     void PasteClipEntriesIntoTarget(QList<ClipEditorModel::clipEntry *>clips);
+    void PasteClipNumberIntoTarget(int clip_number);
+    void UpdateClipsUI();
+    
 
     // Navigation Slots
     void EditNext();
@@ -203,6 +207,7 @@ private:
     void LoadSettings();
     void SaveSettings();
     void AllowSaveIfModified();
+    void UpdateClipButton(QAction *ui_action);
     void ConnectSignalsToSlots();
 
     WebViewEdit *m_WebView;
@@ -245,6 +250,7 @@ private:
     QList<ElementIndex> m_LastLocation;
     ClipsWindow* m_Clips;
     ClipEditor*  m_ClipEditor;
+    QList<QAction*> m_clactions;
     int m_LastPtr;
 
     Ui::MainWindow ui;
