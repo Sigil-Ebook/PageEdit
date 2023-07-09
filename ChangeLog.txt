@@ -1,5 +1,17 @@
 Change Log
 ==========
+
+pre-1.9.40
+  New Features
+    - added ability to create and apply Clips
+    - updated to use Qt 5.15.X and or Qt 6.5.1
+
+  Bug Fixes:
+    - updated to jquery 3.6.4 for security fixes
+    - updated to the latest sigil-gumbo for bug fixes and to add new tags
+    - fixed all/most compiler warnings depending on platfrom/compiler
+    
+
 PageEdit-1.9.20
   New Features
     - add Preferences settings to disable gpu acceleration
