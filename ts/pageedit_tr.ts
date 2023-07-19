@@ -196,6 +196,319 @@ CSS&apos;nizde bir sans-serif yazı tipi ailesi belirtilmişse</translation>
     </message>
 </context>
 <context>
+    <name>ClipEditor</name>
+    <message>
+        <location filename="../ClipEditor.ui" line="14"/>
+        <location filename="../ClipEditor.cpp" line="541"/>
+        <location filename="../ClipEditor.cpp~" line="545"/>
+        <source>Clip Editor</source>
+        <translation>Klip Düzenleyici</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="23"/>
+        <source>Filter Name:</source>
+        <translation>Filtre Adı:</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="28"/>
+        <source>Filter All:</source>
+        <translation>Tümünü Filtrele:</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="36"/>
+        <source>List only the entries containing the text you enter.</source>
+        <translation>Yalnızca girdiğiniz metni içeren girişleri listeleyin.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="65"/>
+        <source>Paste the selected entry into the active window.</source>
+        <translation>Seçilen girişi aktif pencereye yapıştırın.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="68"/>
+        <source>Paste Clip</source>
+        <translation>Klibi Yapıştır</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="91"/>
+        <location filename="../ClipEditor.cpp" line="651"/>
+        <location filename="../ClipEditor.cpp~" line="655"/>
+        <source>Add Entry</source>
+        <translation>Giriş Ekle</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="98"/>
+        <location filename="../ClipEditor.cpp" line="652"/>
+        <location filename="../ClipEditor.cpp~" line="656"/>
+        <source>Add Group</source>
+        <translation>Grup ekle</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="123"/>
+        <source>Move an entry up one entry in the same group.</source>
+        <translation>Bir girişi aynı grupta bir giriş yukarı taşır.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="126"/>
+        <location filename="../ClipEditor.ui" line="156"/>
+        <location filename="../ClipEditor.ui" line="185"/>
+        <location filename="../ClipEditor.ui" line="215"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="153"/>
+        <source>Move an entry to the level of its parent.</source>
+        <translation>Bir girişi üst düzeyine taşıma.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="182"/>
+        <source>You must select an item immediately under a group to move it into the group.</source>
+        <translation>Gruba taşımak için bir grubun hemen altındaki bir öğeyi seçmelisiniz.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.ui" line="212"/>
+        <source>Move an entry down one in the group.</source>
+        <translation>Gruptaki bir girişi bir aşağı taşıyın.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="75"/>
+        <location filename="../ClipEditor.cpp~" line="75"/>
+        <source>Right click on an entry to see a context menu of actions.</source>
+        <translation>Eylemlerin bağlam menüsünü görmek için bir girişi sağ tıklayın.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="76"/>
+        <location filename="../ClipEditor.cpp~" line="76"/>
+        <source>You can also right click in your document to select an entry.</source>
+        <translation>Ayrıca bir girdi seçmek için belgenize sağ tıklayabilirsiniz.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="78"/>
+        <location filename="../ClipEditor.cpp~" line="78"/>
+        <source>Name</source>
+        <translation>Ad</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="78"/>
+        <location filename="../ClipEditor.cpp~" line="78"/>
+        <source>Name of your entry or group.</source>
+        <translation>Girişinizin veya grubunuzun adı.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="79"/>
+        <location filename="../ClipEditor.cpp~" line="79"/>
+        <source>Text</source>
+        <translation>Metin</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="79"/>
+        <location filename="../ClipEditor.cpp~" line="79"/>
+        <source>The text to insert. The text is treated like a Regex replacement expression so \1 can be used to insert the text selected in Code View when you paste the clip.</source>
+        <translation>Eklenecek metin. Metin bir Regex değiştirme ifadesi gibi değerlendirilir, böylece \1 klibi yapıştırdığınızda Kod Görünümü&apos;nde seçilen metni eklemek için kullanılabilir.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="83"/>
+        <location filename="../ClipEditor.cpp~" line="83"/>
+        <source>Save</source>
+        <translation>Kaydet</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="83"/>
+        <location filename="../ClipEditor.cpp~" line="83"/>
+        <source>Save your changes.</source>
+        <translation>Değişikliklerinizi kaydedin.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="83"/>
+        <location filename="../ClipEditor.cpp~" line="83"/>
+        <source>If any other instances of Sigil are running they will be automatically updated with your changes.</source>
+        <translation>Sigil&apos;in diğer örnekleri çalışıyorsa, değişikliklerinizle otomatik olarak güncellenecektir.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="93"/>
+        <location filename="../ClipEditor.cpp~" line="93"/>
+        <source>Cannot save entries.</source>
+        <translation>Girişler kaydedilemez.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="137"/>
+        <location filename="../ClipEditor.cpp~" line="137"/>
+        <source>Clip entries loaded from file.</source>
+        <translation>Dosyadan yüklenen klip girişleri.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="200"/>
+        <location filename="../ClipEditor.cpp~" line="200"/>
+        <source>You cannot select an entry and a group containing the entry.</source>
+        <translation>Bir girişi ve girişi içeren bir grubu seçemezsiniz.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="287"/>
+        <location filename="../ClipEditor.cpp~" line="287"/>
+        <source>You cannot Copy or Cut groups - use drag-and-drop.</source>
+        <translation>Grupları Kopyalayamaz veya Kesemezsiniz - sürükle ve bırak özelliğini kullanın.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="359"/>
+        <location filename="../ClipEditor.cpp~" line="359"/>
+        <source>Sigil</source>
+        <translation>Sigil</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="359"/>
+        <location filename="../ClipEditor.cpp~" line="359"/>
+        <source>Are you sure you want to reload all entries?  This will overwrite any unsaved changes.</source>
+        <translation>Tüm girişleri yeniden yüklemek istediğinizden emin misiniz?  Bu, kaydedilmemiş değişikliklerin üzerine yazacaktır.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="380"/>
+        <location filename="../ClipEditor.cpp~" line="380"/>
+        <source>Import Entries</source>
+        <translation>Girişleri İçe Aktar</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="460"/>
+        <location filename="../ClipEditor.cpp~" line="460"/>
+        <source>Export Selected Entries</source>
+        <translation>Seçili Girişleri Dışa Aktar</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../ClipEditor.cpp" line="541"/>
+        <location filename="../ClipEditor.cpp~" line="545"/>
+        <source>CSS entries added: %n</source>
+        <translation><numerusform>CSS girişleri eklendi: %n</numerusform><numerusform>CSS girişleri eklendi: %n</numerusform></translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="653"/>
+        <location filename="../ClipEditor.cpp~" line="657"/>
+        <source>Edit</source>
+        <translation>Düzenle</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="654"/>
+        <location filename="../ClipEditor.cpp~" line="658"/>
+        <source>Cut</source>
+        <translation>Kes</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="655"/>
+        <location filename="../ClipEditor.cpp~" line="659"/>
+        <source>Copy</source>
+        <translation>Kopyala</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="656"/>
+        <location filename="../ClipEditor.cpp~" line="660"/>
+        <source>Paste</source>
+        <translation>Yapıştır</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="657"/>
+        <location filename="../ClipEditor.cpp~" line="661"/>
+        <source>Delete</source>
+        <translation>Sil</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="658"/>
+        <location filename="../ClipEditor.cpp~" line="662"/>
+        <source>Import</source>
+        <translation>İçe Aktar</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="659"/>
+        <location filename="../ClipEditor.cpp~" line="663"/>
+        <source>Reload</source>
+        <translation>Yeniden Yükle</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="660"/>
+        <location filename="../ClipEditor.cpp~" line="664"/>
+        <source>Export</source>
+        <translation>Dışarı Aktar</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="661"/>
+        <location filename="../ClipEditor.cpp~" line="665"/>
+        <source>Export All</source>
+        <translation>Tümünü Dışa Aktar</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="662"/>
+        <location filename="../ClipEditor.cpp~" line="666"/>
+        <source>Collapse All</source>
+        <translation>Hepsini Daralt</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="663"/>
+        <location filename="../ClipEditor.cpp~" line="667"/>
+        <source>Expand All</source>
+        <translation>Tümünü Genişlet</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="664"/>
+        <location filename="../ClipEditor.cpp~" line="668"/>
+        <source>Autofill</source>
+        <translation>Otomatik doldur</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="746"/>
+        <location filename="../ClipEditor.cpp~" line="750"/>
+        <source>Clip entries saved.</source>
+        <translation>Klip girişleri kaydedildi.</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="775"/>
+        <location filename="../ClipEditor.cpp~" line="779"/>
+        <source>Sigil: Clip Editor</source>
+        <translation>Sigil: Klip Düzenleyici</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditor.cpp" line="776"/>
+        <location filename="../ClipEditor.cpp~" line="780"/>
+        <source>The Clip entries may have been modified.
+Do you want to save your changes?</source>
+        <translation>Klip girişleri değiştirilmiş olabilir.
+Değişikliklerinizi kaydetmek istiyor musunuz?</translation>
+    </message>
+</context>
+<context>
+    <name>ClipEditorModel</name>
+    <message>
+        <location filename="../ClipEditorModel.cpp" line="75"/>
+        <source>Name</source>
+        <translation>Ad</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditorModel.cpp" line="76"/>
+        <source>Text</source>
+        <translation>Metin</translation>
+    </message>
+    <message>
+        <location filename="../ClipEditorModel.cpp" line="672"/>
+        <source>Unable to create file %1</source>
+        <translation>%1 dosyası oluşturulamıyor</translation>
+    </message>
+</context>
+<context>
+    <name>ClipsWindow</name>
+    <message>
+        <location filename="../ClipsWindow.cpp" line="37"/>
+        <source>Clips</source>
+        <translation>Klipler</translation>
+    </message>
+    <message>
+        <location filename="../ClipsWindow.cpp" line="102"/>
+        <source>Collapse All</source>
+        <translation>Hepsini Daralt</translation>
+    </message>
+    <message>
+        <location filename="../ClipsWindow.cpp" line="103"/>
+        <source>Expand All</source>
+        <translation>Tümünü Genişlet</translation>
+    </message>
+</context>
+<context>
     <name>GeneralSettings</name>
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
@@ -319,18 +632,18 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
     <message>
         <location filename="../PGeneralSettings.ui" line="300"/>
         <source>Disable GPU Acceleration in PageEdit/QtWebEngine</source>
-        <translation type="unfinished"/>
+        <translation>PageEdit/QtWebEngine&apos;de GPU Hızlandırmayı Devre Dışı Bırak</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="303"/>
         <source> Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
-        <translation type="unfinished"/>
+        <translation>PageEdit/QtWebEngine&apos;de GPU Hızlandırmayı devre dışı bırakın.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="318"/>
         <location filename="../PGeneralSettings.ui" line="321"/>
         <source>Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
-        <translation type="unfinished"/>
+        <translation>PageEdit/QtWebEngine&apos;de GPU Hızlandırmayı devre dışı bırakın.</translation>
     </message>
 </context>
 <context>
@@ -350,28 +663,28 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="1024"/>
-        <location filename="../MainWindow.cpp" line="1085"/>
-        <location filename="../MainWindow.cpp" line="1779"/>
-        <location filename="../MainWindow.cpp" line="1792"/>
-        <location filename="../MainWindow.cpp" line="1798"/>
-        <location filename="../MainWindow.cpp" line="1812"/>
-        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1044"/>
+        <location filename="../MainWindow.cpp" line="1137"/>
         <location filename="../MainWindow.cpp" line="1831"/>
-        <location filename="../MainWindow.cpp" line="1839"/>
-        <location filename="../MainWindow.cpp" line="1894"/>
-        <location filename="../MainWindow.cpp" line="1984"/>
-        <location filename="../MainWindow.cpp~" line="1024"/>
-        <location filename="../MainWindow.cpp~" line="1085"/>
-        <location filename="../MainWindow.cpp~" line="1779"/>
-        <location filename="../MainWindow.cpp~" line="1792"/>
-        <location filename="../MainWindow.cpp~" line="1798"/>
-        <location filename="../MainWindow.cpp~" line="1816"/>
-        <location filename="../MainWindow.cpp~" line="1829"/>
-        <location filename="../MainWindow.cpp~" line="1835"/>
-        <location filename="../MainWindow.cpp~" line="1843"/>
-        <location filename="../MainWindow.cpp~" line="1898"/>
-        <location filename="../MainWindow.cpp~" line="1988"/>
+        <location filename="../MainWindow.cpp" line="1844"/>
+        <location filename="../MainWindow.cpp" line="1850"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1877"/>
+        <location filename="../MainWindow.cpp" line="1883"/>
+        <location filename="../MainWindow.cpp" line="1891"/>
+        <location filename="../MainWindow.cpp" line="1946"/>
+        <location filename="../MainWindow.cpp" line="2036"/>
+        <location filename="../MainWindow.cpp~" line="1044"/>
+        <location filename="../MainWindow.cpp~" line="1137"/>
+        <location filename="../MainWindow.cpp~" line="1831"/>
+        <location filename="../MainWindow.cpp~" line="1844"/>
+        <location filename="../MainWindow.cpp~" line="1850"/>
+        <location filename="../MainWindow.cpp~" line="1864"/>
+        <location filename="../MainWindow.cpp~" line="1877"/>
+        <location filename="../MainWindow.cpp~" line="1883"/>
+        <location filename="../MainWindow.cpp~" line="1891"/>
+        <location filename="../MainWindow.cpp~" line="1946"/>
+        <location filename="../MainWindow.cpp~" line="2036"/>
         <source>PageEdit</source>
         <translation>SayfaDüzen</translation>
     </message>
@@ -421,794 +734,1085 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
         <translation>Denetçi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="185"/>
+        <location filename="../main.ui" line="176"/>
+        <location filename="../main.ui" line="1144"/>
+        <source>Clips</source>
+        <translation>Klipler</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="195"/>
         <source>File</source>
         <translation>Dosya</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="199"/>
+        <location filename="../main.ui" line="209"/>
         <source>Edit</source>
         <translation>Düzenle</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="217"/>
-        <location filename="../main.ui" line="1163"/>
+        <location filename="../main.ui" line="227"/>
+        <location filename="../main.ui" line="1241"/>
         <source>Mode</source>
         <translation>Kip</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="230"/>
+        <location filename="../main.ui" line="240"/>
         <source>Insert</source>
         <translation>Ekle</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="249"/>
+        <location filename="../main.ui" line="259"/>
         <source>Inspect</source>
         <translation>Denetle</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="262"/>
-        <location filename="../main.ui" line="1106"/>
+        <location filename="../main.ui" line="272"/>
+        <source>Clip Bar</source>
+        <translation>Klip Çubuğu</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="304"/>
+        <location filename="../main.ui" line="1184"/>
         <source>Find</source>
         <translation>Bul</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="275"/>
+        <location filename="../main.ui" line="317"/>
         <source>Heading</source>
         <translation>Başlık</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="289"/>
+        <location filename="../main.ui" line="331"/>
         <source>set Heading Level of Selected Text</source>
         <translation>seçilen Metnin Başlık Düzeyini Ayarla</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="303"/>
+        <location filename="../main.ui" line="345"/>
         <source>Change Case</source>
         <translation>BÜYÜK/küçük Harf Dönüştür</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="319"/>
+        <location filename="../main.ui" line="361"/>
         <source>Format</source>
         <translation>Biçim</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="337"/>
+        <location filename="../main.ui" line="379"/>
         <source>Align</source>
         <translation>Hizala</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="353"/>
+        <location filename="../main.ui" line="395"/>
         <source>Indent</source>
         <translation>Girinti</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="367"/>
+        <location filename="../main.ui" line="409"/>
         <source>Navigate</source>
         <translation>Gezinme</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="377"/>
+        <location filename="../main.ui" line="419"/>
         <source>Navigation List</source>
         <translation>Gezinme Listesi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="393"/>
+        <location filename="../main.ui" line="435"/>
         <source>&amp;Save</source>
         <translation>&amp;Kaydet</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="396"/>
+        <location filename="../main.ui" line="438"/>
         <source>Save the current file.</source>
         <translation>Geçerli dosyayı kaydet.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="399"/>
+        <location filename="../main.ui" line="441"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="409"/>
+        <location filename="../main.ui" line="451"/>
         <source>&amp;Print</source>
         <translation>&amp;Yazdır</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="412"/>
+        <location filename="../main.ui" line="454"/>
         <source>Print the current Page.</source>
         <translation>Mevcut Sayfayı yazdırın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="415"/>
+        <location filename="../main.ui" line="457"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="421"/>
+        <location filename="../main.ui" line="463"/>
         <source>Save &amp;As...</source>
         <translation>&amp;Farklı Kaydet...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="424"/>
+        <location filename="../main.ui" line="466"/>
         <source>Save the current file with a different filename.</source>
         <translation>Geçerli dosyayı farklı bir dosya adıyla kaydedin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="427"/>
+        <location filename="../main.ui" line="469"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="437"/>
+        <location filename="../main.ui" line="479"/>
         <source>Cu&amp;t</source>
         <translation>Ke&amp;s</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="440"/>
+        <location filename="../main.ui" line="482"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
         <translation>Seçili metni belgeden keser ve panoya koyar.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="450"/>
+        <location filename="../main.ui" line="492"/>
         <source>&amp;Paste</source>
         <translation>&amp;Yapıştır</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="453"/>
+        <location filename="../main.ui" line="495"/>
         <source>Pastes the content from the clipboard into the file.</source>
         <translation>Panodaki içeriği dosyaya yapıştırır.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="463"/>
+        <location filename="../main.ui" line="505"/>
         <source>&amp;Undo</source>
         <translation>&amp;Geri Al</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="466"/>
+        <location filename="../main.ui" line="508"/>
         <source>Reverts the changes of the previous operation.</source>
         <translation>Önceki işlemdeki değişiklikleri geri döndürür.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="469"/>
+        <location filename="../main.ui" line="511"/>
         <source>Ctrl+Z</source>
         <translation>Ctrl+Z</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="479"/>
+        <location filename="../main.ui" line="521"/>
         <source>&amp;Redo</source>
         <translation>&amp;Yinele</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="482"/>
+        <location filename="../main.ui" line="524"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
         <translation>Önceki Geri Al eyleminin geri döndürdüğü değişiklikleri geri yükler.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="485"/>
+        <location filename="../main.ui" line="527"/>
         <source>Ctrl+Y</source>
         <translation>Ctrl+Y</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="495"/>
+        <location filename="../main.ui" line="537"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopyala</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="498"/>
+        <location filename="../main.ui" line="540"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
         <translation>Seçili metni kopyalar ve panoya koyar.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="511"/>
+        <location filename="../main.ui" line="553"/>
         <source>Align &amp;Left</source>
         <translation>&amp;Sola Hizala</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="514"/>
+        <location filename="../main.ui" line="556"/>
         <source>Align the paragraph to the left.</source>
         <translation>Paragrafı sola yasla.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="528"/>
+        <location filename="../main.ui" line="570"/>
         <source>Align &amp;Right</source>
         <translation>&amp;Sağa Hizala</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="531"/>
+        <location filename="../main.ui" line="573"/>
         <source>Align the paragraph to the right.</source>
         <translation>Paragrafı sağa yasla.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="544"/>
+        <location filename="../main.ui" line="586"/>
         <source>&amp;Center</source>
         <translation>&amp;Ortala</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="547"/>
+        <location filename="../main.ui" line="589"/>
         <source>Center the paragraph.</source>
         <translation>Paragrafı ortala.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="550"/>
+        <location filename="../main.ui" line="592"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="563"/>
+        <location filename="../main.ui" line="605"/>
         <source>&amp;Justify</source>
         <translation>&amp;İki Yana Yasla</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="566"/>
+        <location filename="../main.ui" line="608"/>
         <source>Align the paragraph to both the left and right margins.</source>
         <translation>Paragrafı hem sol hem de sağ kenar boşluklarına hizalayın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="569"/>
+        <location filename="../main.ui" line="611"/>
         <source>Ctrl+J</source>
         <translation>Ctrl+J</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="582"/>
+        <location filename="../main.ui" line="624"/>
         <source>&amp;Bold</source>
         <translation>&amp;Kalın</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="585"/>
+        <location filename="../main.ui" line="627"/>
         <source>Make the selected text bold.</source>
         <translation>Seçili metni kalın yap.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="588"/>
+        <location filename="../main.ui" line="630"/>
         <source>Ctrl+B</source>
         <translation>Ctrl+B</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="601"/>
+        <location filename="../main.ui" line="643"/>
         <source>&amp;Italic</source>
         <translation>&amp;Eğik</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="604"/>
+        <location filename="../main.ui" line="646"/>
         <source>Make the selected text italic.</source>
         <translation>Seçili metni italik yap.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="607"/>
+        <location filename="../main.ui" line="649"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="617"/>
+        <location filename="../main.ui" line="659"/>
         <source>&amp;Open...</source>
         <translation>&amp;Aç...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="620"/>
+        <location filename="../main.ui" line="662"/>
         <source>Open a file from disk.</source>
         <translation>Diskten bir dosya açın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="623"/>
+        <location filename="../main.ui" line="665"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="636"/>
+        <location filename="../main.ui" line="678"/>
         <source>&amp;Underline</source>
         <translation>Altı &amp;Çizili</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="639"/>
+        <location filename="../main.ui" line="681"/>
         <source>Underline the selected text.</source>
         <translation>Seçili metnin altını çiz.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="642"/>
+        <location filename="../main.ui" line="684"/>
         <source>Ctrl+U</source>
         <translation>Ctrl+U</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="652"/>
+        <location filename="../main.ui" line="694"/>
         <source>&amp;Lowercase</source>
         <translation>&amp;Küçük harf</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="655"/>
+        <location filename="../main.ui" line="697"/>
         <source>Set selected text to lowercase.</source>
         <translation>Seçili metni küçük harfe ayarlayın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="658"/>
+        <location filename="../main.ui" line="700"/>
         <source>Ctrl+Alt+L</source>
         <translation>Ctrl+Alt+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="668"/>
+        <location filename="../main.ui" line="710"/>
         <source>&amp;Uppercase</source>
         <translation>&amp;Büyük harf</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="671"/>
+        <location filename="../main.ui" line="713"/>
         <source>Set selected text to uppercase.</source>
         <translation>Seçili metni büyük harfe ayarlayın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="674"/>
+        <location filename="../main.ui" line="716"/>
         <source>Ctrl+Alt+U</source>
         <translation>Ctrl+Alt+U</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="684"/>
+        <location filename="../main.ui" line="726"/>
         <source>&amp;Titlecase</source>
         <translation>&amp;Başlık kutusu</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="687"/>
+        <location filename="../main.ui" line="729"/>
         <source>Capitalize the first letter of each word selected.</source>
         <translation>Seçilen her kelimenin ilk harfini büyük yazın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="697"/>
+        <location filename="../main.ui" line="739"/>
         <source>&amp;Capitalize</source>
         <translation>&amp;Büyük harfle yaz</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="700"/>
+        <location filename="../main.ui" line="742"/>
         <source>Capitalize only the first word of the selected text.</source>
         <translation>Seçili metnin yalnızca ilk kelimesini büyük harfle yazın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="710"/>
+        <location filename="../main.ui" line="752"/>
         <source>&amp;Quit</source>
         <translation>&amp;Çıkış</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="713"/>
+        <location filename="../main.ui" line="755"/>
         <source>Quit</source>
         <translation>Çık</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="716"/>
+        <location filename="../main.ui" line="758"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="726"/>
+        <location filename="../main.ui" line="768"/>
         <source>&amp;Special Character...</source>
         <translation>&amp;Özel Karakter...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="729"/>
+        <location filename="../main.ui" line="771"/>
         <source>Select a character to insert into your text.</source>
         <translation>Metninize eklemek için bir karakter seçin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="742"/>
+        <location filename="../main.ui" line="784"/>
         <source>&amp;Numbered List</source>
         <translation>&amp;Numaralandırılmış Liste</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="745"/>
+        <location filename="../main.ui" line="787"/>
         <source>Create a numbered list from selection.</source>
         <translation>Seçimden numaralı bir liste oluşturun.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="758"/>
+        <location filename="../main.ui" line="800"/>
         <source>Bulle&amp;ted List</source>
         <translation>Madd&amp;eli liste</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="761"/>
+        <location filename="../main.ui" line="803"/>
         <source>Create a bulleted list from selection.</source>
         <translation>Seçimden maddeli bir liste oluşturun.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="764"/>
+        <location filename="../main.ui" line="806"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="777"/>
+        <location filename="../main.ui" line="819"/>
         <source>Stri&amp;kethrough</source>
         <translation>Üstü&amp;Çizili</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="780"/>
+        <location filename="../main.ui" line="822"/>
         <source>Draw a line through the selected text.</source>
         <translation>Seçilen metnin içine bir çizgi çizin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="793"/>
+        <location filename="../main.ui" line="835"/>
         <source>&amp;Subscript</source>
         <translation>&amp;Alt simge</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="796"/>
+        <location filename="../main.ui" line="838"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
         <translation>Seçilen metni biraz daha küçük ve normal çizginin altına ayarlayın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="809"/>
+        <location filename="../main.ui" line="851"/>
         <source>Su&amp;perscript</source>
         <translation>Ü&amp;st simge</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="812"/>
+        <location filename="../main.ui" line="854"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
         <translation>Seçilen metni biraz daha küçük ve normal çizginin üzerine ayarlayın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="823"/>
+        <location filename="../main.ui" line="865"/>
         <source>Zoom &amp;In</source>
         <translation>&amp;Yakınlaş</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="826"/>
+        <location filename="../main.ui" line="868"/>
         <source>Zoom In</source>
         <translation>Yakınlaş</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="829"/>
+        <location filename="../main.ui" line="871"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="840"/>
+        <location filename="../main.ui" line="882"/>
         <source>Zoom &amp;Out</source>
         <translation>&amp;Uzaklaş</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="843"/>
+        <location filename="../main.ui" line="885"/>
         <source>Zoom Out</source>
         <translation>Uzaklaş</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="846"/>
+        <location filename="../main.ui" line="888"/>
         <source>Ctrl+-</source>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="857"/>
+        <location filename="../main.ui" line="899"/>
         <source>Incre&amp;ase Indent</source>
         <translation>Girinti&amp;yi Arttır</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="860"/>
+        <location filename="../main.ui" line="902"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>Paragrafın girinti seviyesini arttırın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="863"/>
+        <location filename="../main.ui" line="905"/>
         <source>Ctrl+Alt+M</source>
         <translation>Ctrl+Alt+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="873"/>
+        <location filename="../main.ui" line="915"/>
         <source>&amp;Decrease Indent</source>
         <translation>&amp;Girintiyi Azalt</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="876"/>
+        <location filename="../main.ui" line="918"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>Paragrafın girinti seviyesini azaltın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="879"/>
+        <location filename="../main.ui" line="921"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="889"/>
+        <location filename="../main.ui" line="931"/>
         <source>Split &amp;Marker</source>
         <translation>Böl &amp;İşaretleyici</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="892"/>
+        <location filename="../main.ui" line="934"/>
         <source>Insert Sigil split file marker</source>
         <translation>Sigil&apos;e bölünmüş dosya işaretleyicisi ekle</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="895"/>
+        <location filename="../main.ui" line="937"/>
         <source>Ctrl+Shift+Return</source>
         <translation>Ctrl+Shift+Geri Tuşu</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="901"/>
+        <location filename="../main.ui" line="943"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Tercihler...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="904"/>
+        <location filename="../main.ui" line="946"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="910"/>
+        <location filename="../main.ui" line="952"/>
         <source>&amp;Zoom Reset</source>
         <translation>&amp;Yakınlaştırmayı Sıfırla</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="913"/>
+        <location filename="../main.ui" line="955"/>
         <source>Zoom Reset</source>
         <translation>Yakınlaştırmayı Sıfırla</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="916"/>
+        <location filename="../main.ui" line="958"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="929"/>
+        <location filename="../main.ui" line="971"/>
         <source>Heading &amp;1</source>
         <translation>Başlık &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="932"/>
+        <location filename="../main.ui" line="974"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation>Paragrafı seviye 1 başlığı olarak biçimlendirin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="935"/>
+        <location filename="../main.ui" line="977"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="948"/>
+        <location filename="../main.ui" line="990"/>
         <source>Heading &amp;2</source>
         <translation>Başlık &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="951"/>
+        <location filename="../main.ui" line="993"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation>Paragrafı seviye 2 başlığı olarak biçimlendirin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="954"/>
+        <location filename="../main.ui" line="996"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="967"/>
+        <location filename="../main.ui" line="1009"/>
         <source>Heading &amp;3</source>
         <translation>Başlık &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="970"/>
+        <location filename="../main.ui" line="1012"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation>Paragrafı seviye 3 başlığı olarak biçimlendirin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="973"/>
+        <location filename="../main.ui" line="1015"/>
         <source>Ctrl+3</source>
         <translation>Ctrl+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="987"/>
+        <location filename="../main.ui" line="1029"/>
         <source>Heading &amp;4</source>
         <translation>Başlık &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="990"/>
+        <location filename="../main.ui" line="1032"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation>Paragrafı seviye 4 başlığı olarak biçimlendirin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="993"/>
+        <location filename="../main.ui" line="1035"/>
         <source>Ctrl+4</source>
         <translation>Ctrl+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1006"/>
+        <location filename="../main.ui" line="1048"/>
         <source>Heading &amp;5</source>
         <translation>Başlık &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1009"/>
+        <location filename="../main.ui" line="1051"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation>Paragrafı seviye 5 başlığı olarak biçimlendirin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1012"/>
+        <location filename="../main.ui" line="1054"/>
         <source>Ctrl+5</source>
         <translation>Ctrl+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1025"/>
+        <location filename="../main.ui" line="1067"/>
         <source>Heading &amp;6</source>
         <translation>Başlık &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1028"/>
+        <location filename="../main.ui" line="1070"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation>Paragrafı seviye 6 başlığı olarak biçimlendirin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1031"/>
+        <location filename="../main.ui" line="1073"/>
         <source>Ctrl+6</source>
         <translation>Ctrl+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1045"/>
+        <location filename="../main.ui" line="1087"/>
         <source>&amp;Normal</source>
         <translation>&amp;Normal</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1048"/>
+        <location filename="../main.ui" line="1090"/>
         <source>Format paragraph as a normal paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Paragrafı normal bir paragraf olarak biçimlendirin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1051"/>
+        <location filename="../main.ui" line="1093"/>
         <source>Ctrl+7</source>
         <translation>Ctrl+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1061"/>
+        <location filename="../main.ui" line="1103"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>&amp;Mevcut Nitelikleri Koru</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1064"/>
+        <location filename="../main.ui" line="1106"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>Bu stili uygularken, etiketteki mevcut özellikleri koruyun</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1074"/>
+        <location filename="../main.ui" line="1116"/>
         <source>&amp;Select All</source>
         <translation>&amp;Tümünü Seç</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1077"/>
+        <location filename="../main.ui" line="1119"/>
         <source>Select all text in the document.</source>
         <translation>Belgedeki tüm metni seçin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1080"/>
+        <location filename="../main.ui" line="1122"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1090"/>
+        <location filename="../main.ui" line="1132"/>
         <source>&amp;Inspector</source>
         <translation>&amp;Denetçi</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1093"/>
+        <location filename="../main.ui" line="1135"/>
         <source>Inspect the page.</source>
         <translation>Sayfayı denetleyin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1096"/>
+        <location filename="../main.ui" line="1138"/>
         <source>Ctrl+F5</source>
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1109"/>
+        <location filename="../main.ui" line="1147"/>
+        <source>Apply clips to page.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1156"/>
+        <source>ClipEditor ...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1159"/>
+        <source>Edit and Create Clips.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1162"/>
+        <source>Ctrl+Alt+C</source>
+        <translation>Ctrl+Alt+C</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1168"/>
+        <source>ClipBar Show/Hide</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1171"/>
+        <source>Show and Hide the Clip Toolbar.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1187"/>
         <source>Find text in the page</source>
         <translation>Sayfada metin bulun</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1112"/>
+        <location filename="../main.ui" line="1190"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1125"/>
+        <location filename="../main.ui" line="1203"/>
         <source>Next XHtml File</source>
         <translation>Sonraki XHtml Dosyası</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1128"/>
+        <location filename="../main.ui" line="1206"/>
         <source>Next file in navigation list</source>
         <translation>Gezinme listesindeki sonraki dosya</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1131"/>
+        <location filename="../main.ui" line="1209"/>
         <source>Ctrl+PgDown</source>
         <translation>Ctrl+SayAşağı</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1144"/>
+        <location filename="../main.ui" line="1222"/>
         <source>Previous XHtml File</source>
         <translation>Önceki XHtml Dosyası</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1147"/>
+        <location filename="../main.ui" line="1225"/>
         <source>Previous file in navigation list</source>
         <translation>Gezinme listesindeki önceki dosya</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1150"/>
+        <location filename="../main.ui" line="1228"/>
         <source>Ctrl+PgUp</source>
         <translation>Ctrl+SayYukarı</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1166"/>
+        <location filename="../main.ui" line="1244"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation>Düzenleme ve Önizleme Modları arasında geçiş yapın.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1176"/>
+        <location filename="../main.ui" line="1254"/>
         <source>About...</source>
         <translation>Hakkında...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1179"/>
+        <location filename="../main.ui" line="1257"/>
         <source>Show information about PageEdit.</source>
         <translation>PageEdit hakkında bilgi göster.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1189"/>
+        <location filename="../main.ui" line="1267"/>
         <source>Back to Last Link</source>
         <translation>Son Bağlantıya Dön</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1192"/>
+        <location filename="../main.ui" line="1270"/>
         <source>Return from the last link taken</source>
         <translation>Alınan son bağlantıdan dön</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1202"/>
+        <location filename="../main.ui" line="1280"/>
         <source>I&amp;D...</source>
         <translation>K&amp;imlik...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1205"/>
+        <location filename="../main.ui" line="1283"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
         <translation>Bağlantı hedefi olarak kullanmak için bir kimlik adına sahip bir bağlantı ekleyin veya düzenleyin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1215"/>
+        <location filename="../main.ui" line="1293"/>
         <source>&amp;Link...</source>
         <translation>&amp;Bağlantı...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1218"/>
+        <location filename="../main.ui" line="1296"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
         <translation>Bir hedefe köprü içeren bir çapa ekleyin veya düzenleyin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1228"/>
+        <location filename="../main.ui" line="1306"/>
         <source>&amp;File...</source>
         <translation>&amp;Dosya...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1231"/>
+        <location filename="../main.ui" line="1309"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
         <translation>Metne eklemek için kitabınızdan mevcut resim, video veya ses dosyalarını seçin.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1234"/>
+        <location filename="../main.ui" line="1312"/>
         <source>Ctrl+Shift+I</source>
         <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="761"/>
-        <location filename="../MainWindow.cpp~" line="761"/>
+        <location filename="../main.ui" line="1318"/>
+        <source>Clip &amp;1</source>
+        <translation>Klip &amp;1</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1321"/>
+        <source>Insert Clip 1</source>
+        <translation>Klip 1 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1324"/>
+        <source>Ctrl+Alt+1</source>
+        <translation>Ctrl+Alt+1</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1330"/>
+        <source>Clip &amp;2</source>
+        <translation>Klip &amp;2</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1333"/>
+        <source>Insert Clip 2</source>
+        <translation>Klip 2 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1336"/>
+        <source>Ctrl+Alt+2</source>
+        <translation>Ctrl+Alt+2</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1342"/>
+        <source>Clip &amp;3</source>
+        <translation>Klip &amp;3</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1345"/>
+        <source>Insert Clip 3</source>
+        <translation>Klip 3 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1348"/>
+        <source>Ctrl+Alt+3</source>
+        <translation>Ctrl+Alt+3</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1354"/>
+        <source>Clip &amp;4</source>
+        <translation>Klip &amp;4</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1357"/>
+        <source>Insert Clip 4</source>
+        <translation>Klip 4 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1360"/>
+        <source>Ctrl+Alt+4</source>
+        <translation>Ctrl+Alt+4</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1366"/>
+        <source>Clip &amp;5</source>
+        <translation>Klip &amp;5</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1369"/>
+        <source>Insert Clip 5</source>
+        <translation>Klip 5 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1372"/>
+        <source>Ctrl+Alt+5</source>
+        <translation>Ctrl+Alt+5</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1378"/>
+        <source>Clip &amp;6</source>
+        <translation>Klip &amp;6</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1381"/>
+        <source>Insert Clip 6</source>
+        <translation>Klip 6 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1384"/>
+        <source>Ctrl+Alt+6</source>
+        <translation>Ctrl+Alt+6</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1390"/>
+        <source>Clip &amp;7</source>
+        <translation>Klip &amp;7</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1393"/>
+        <source>Insert Clip 7</source>
+        <translation>Klip 7 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1396"/>
+        <source>Ctrl+Alt+7</source>
+        <translation>Ctrl+Alt+7</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1402"/>
+        <source>Clip &amp;8</source>
+        <translation>Klip &amp;8</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1405"/>
+        <source>Insert Clip 8</source>
+        <translation>Klip 8 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1408"/>
+        <source>Ctrl+Alt+8</source>
+        <translation>Ctrl+Alt+8</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1414"/>
+        <source>Clip &amp;9</source>
+        <translation>Klip &amp;9</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1417"/>
+        <source>Insert Clip 9</source>
+        <translation>Klip 9 Ekle</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1420"/>
+        <source>Ctrl+Alt+9</source>
+        <translation>Ctrl+Alt+9</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1426"/>
+        <source>Clip 1&amp;0</source>
+        <translation>Klip 1&amp;0</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1429"/>
+        <source>Insert Clip 10</source>
+        <translation>Klip Ekle 10</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1432"/>
+        <source>Ctrl+Alt+0</source>
+        <translation>Ctrl+Alt+0</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1438"/>
+        <source>Clip 11</source>
+        <translation>Klip 11</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1441"/>
+        <source>Insert Clip 11</source>
+        <translation>Klip Ekle 11</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1447"/>
+        <source>Clip 12</source>
+        <translation>Klip 12</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1450"/>
+        <source>Insert Clip 12</source>
+        <translation>Klip Ekle 12</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1456"/>
+        <source>Clip 13</source>
+        <translation>Klip 13</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1459"/>
+        <source>Insert Clip 13</source>
+        <translation>Klip Ekle 13</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1465"/>
+        <source>Clip 14</source>
+        <translation>Klip 14</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1468"/>
+        <source>Insert Clip 14</source>
+        <translation>Klip Ekle 14</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1474"/>
+        <source>Clip 15</source>
+        <translation>Klip 15</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1477"/>
+        <source>Insert Clip 15</source>
+        <translation>Klip Ekle 15</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1483"/>
+        <source>Clip 16</source>
+        <translation>Klip 16</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1486"/>
+        <source>Insert Clip 16</source>
+        <translation>Klip Ekle 16</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1492"/>
+        <source>Clip 17</source>
+        <translation>Klip 17</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1495"/>
+        <source>Insert Clip 17</source>
+        <translation>Klip Ekle 17</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1501"/>
+        <source>Clip 18</source>
+        <translation>Klip 18</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1504"/>
+        <source>Insert Clip 18</source>
+        <translation>Klip Ekle 18</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1510"/>
+        <source>Clip 19</source>
+        <translation>Klip 19</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1513"/>
+        <source>Insert Clip 19</source>
+        <translation>Klip Ekle 19</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1519"/>
+        <source>Clip 20</source>
+        <translation>Klip 20</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1522"/>
+        <source>Insert Clip 20</source>
+        <translation>Klip Ekle 20</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="781"/>
+        <location filename="../MainWindow.cpp~" line="781"/>
         <source>File load failed</source>
         <translation>Dosya yükleme başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="762"/>
-        <location filename="../MainWindow.cpp~" line="762"/>
+        <location filename="../MainWindow.cpp" line="782"/>
+        <location filename="../MainWindow.cpp~" line="782"/>
         <source>File Load Failed</source>
         <translation>Dosya Yüklenemedi</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="857"/>
-        <location filename="../MainWindow.cpp~" line="857"/>
+        <location filename="../MainWindow.cpp" line="877"/>
+        <location filename="../MainWindow.cpp~" line="877"/>
         <source>mode: Preview</source>
         <translation>kip: Önizleme</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="859"/>
-        <location filename="../MainWindow.cpp~" line="859"/>
+        <location filename="../MainWindow.cpp" line="879"/>
+        <location filename="../MainWindow.cpp~" line="879"/>
         <source>mode: Edit</source>
         <translation>kip: Düzenle</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1024"/>
-        <location filename="../MainWindow.cpp~" line="1024"/>
+        <location filename="../MainWindow.cpp" line="1044"/>
+        <location filename="../MainWindow.cpp~" line="1044"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1217,220 +1821,226 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1086"/>
-        <location filename="../MainWindow.cpp~" line="1086"/>
+        <location filename="../MainWindow.cpp" line="1138"/>
+        <location filename="../MainWindow.cpp~" line="1138"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Ayrılmadan önce değişikliklerinizi kaydetmek ister misiniz?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1103"/>
-        <location filename="../MainWindow.cpp~" line="1103"/>
+        <location filename="../MainWindow.cpp" line="1155"/>
+        <location filename="../MainWindow.cpp~" line="1155"/>
         <source>PageEdit is closing...</source>
         <translation>SayfaDüzen kapanıyor...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1239"/>
-        <location filename="../MainWindow.cpp" line="1240"/>
-        <location filename="../MainWindow.cpp" line="1241"/>
-        <location filename="../MainWindow.cpp" line="1250"/>
-        <location filename="../MainWindow.cpp" line="1251"/>
-        <location filename="../MainWindow.cpp" line="1252"/>
-        <location filename="../MainWindow.cpp~" line="1239"/>
-        <location filename="../MainWindow.cpp~" line="1240"/>
-        <location filename="../MainWindow.cpp~" line="1241"/>
-        <location filename="../MainWindow.cpp~" line="1250"/>
-        <location filename="../MainWindow.cpp~" line="1251"/>
-        <location filename="../MainWindow.cpp~" line="1252"/>
+        <location filename="../MainWindow.cpp" line="1291"/>
+        <location filename="../MainWindow.cpp" line="1292"/>
+        <location filename="../MainWindow.cpp" line="1293"/>
+        <location filename="../MainWindow.cpp" line="1302"/>
+        <location filename="../MainWindow.cpp" line="1303"/>
+        <location filename="../MainWindow.cpp" line="1304"/>
+        <location filename="../MainWindow.cpp~" line="1291"/>
+        <location filename="../MainWindow.cpp~" line="1292"/>
+        <location filename="../MainWindow.cpp~" line="1293"/>
+        <location filename="../MainWindow.cpp~" line="1302"/>
+        <location filename="../MainWindow.cpp~" line="1303"/>
+        <location filename="../MainWindow.cpp~" line="1304"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML dosyaları (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1242"/>
-        <location filename="../MainWindow.cpp~" line="1242"/>
+        <location filename="../MainWindow.cpp" line="1294"/>
+        <location filename="../MainWindow.cpp~" line="1294"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF dosyalar (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1243"/>
-        <location filename="../MainWindow.cpp~" line="1243"/>
+        <location filename="../MainWindow.cpp" line="1295"/>
+        <location filename="../MainWindow.cpp~" line="1295"/>
         <source>All files (*.*)</source>
         <translation>Tüm dosyalar (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1482"/>
-        <location filename="../MainWindow.cpp~" line="1482"/>
+        <location filename="../MainWindow.cpp" line="1534"/>
+        <location filename="../MainWindow.cpp~" line="1534"/>
         <source>Save File</source>
         <translation>Dosyayı Kaydet</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1517"/>
-        <location filename="../MainWindow.cpp" line="1518"/>
-        <location filename="../MainWindow.cpp" line="1530"/>
-        <location filename="../MainWindow.cpp" line="1531"/>
-        <location filename="../MainWindow.cpp~" line="1517"/>
-        <location filename="../MainWindow.cpp~" line="1518"/>
-        <location filename="../MainWindow.cpp~" line="1530"/>
-        <location filename="../MainWindow.cpp~" line="1531"/>
+        <location filename="../MainWindow.cpp" line="1569"/>
+        <location filename="../MainWindow.cpp" line="1570"/>
+        <location filename="../MainWindow.cpp" line="1582"/>
+        <location filename="../MainWindow.cpp" line="1583"/>
+        <location filename="../MainWindow.cpp~" line="1569"/>
+        <location filename="../MainWindow.cpp~" line="1570"/>
+        <location filename="../MainWindow.cpp~" line="1582"/>
+        <location filename="../MainWindow.cpp~" line="1583"/>
         <source>File Save-As Failed!</source>
         <translation>Dosya Farklı Kaydedilemedi!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1517"/>
-        <location filename="../MainWindow.cpp~" line="1517"/>
+        <location filename="../MainWindow.cpp" line="1569"/>
+        <location filename="../MainWindow.cpp~" line="1569"/>
         <source>is not writeable</source>
         <translation>yazılabilir değil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1526"/>
-        <location filename="../MainWindow.cpp" line="1565"/>
-        <location filename="../MainWindow.cpp~" line="1526"/>
-        <location filename="../MainWindow.cpp~" line="1565"/>
+        <location filename="../MainWindow.cpp" line="1578"/>
+        <location filename="../MainWindow.cpp" line="1617"/>
+        <location filename="../MainWindow.cpp~" line="1578"/>
+        <location filename="../MainWindow.cpp~" line="1617"/>
         <source>File Saved</source>
         <translation>Dosya Kaydedildi</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1556"/>
-        <location filename="../MainWindow.cpp" line="1558"/>
-        <location filename="../MainWindow.cpp" line="1569"/>
-        <location filename="../MainWindow.cpp" line="1570"/>
-        <location filename="../MainWindow.cpp~" line="1556"/>
-        <location filename="../MainWindow.cpp~" line="1558"/>
-        <location filename="../MainWindow.cpp~" line="1569"/>
-        <location filename="../MainWindow.cpp~" line="1570"/>
+        <location filename="../MainWindow.cpp" line="1608"/>
+        <location filename="../MainWindow.cpp" line="1610"/>
+        <location filename="../MainWindow.cpp" line="1621"/>
+        <location filename="../MainWindow.cpp" line="1622"/>
+        <location filename="../MainWindow.cpp~" line="1608"/>
+        <location filename="../MainWindow.cpp~" line="1610"/>
+        <location filename="../MainWindow.cpp~" line="1621"/>
+        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>File Save Failed!</source>
         <translation>Dosya Kaydedilemedi!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1557"/>
-        <location filename="../MainWindow.cpp~" line="1557"/>
+        <location filename="../MainWindow.cpp" line="1609"/>
+        <location filename="../MainWindow.cpp~" line="1609"/>
         <source>does not exist or is not writeable</source>
         <translation>yok veya yazılabilir değil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1586"/>
-        <location filename="../MainWindow.cpp~" line="1586"/>
+        <location filename="../MainWindow.cpp" line="1638"/>
+        <location filename="../MainWindow.cpp~" line="1638"/>
         <source>Do not show this warning again</source>
         <translation>Bu uyarı bir daha görüntülenmesin</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1587"/>
-        <location filename="../MainWindow.cpp~" line="1587"/>
+        <location filename="../MainWindow.cpp" line="1639"/>
+        <location filename="../MainWindow.cpp~" line="1639"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Bu dosya beklediğiniz şekilde yazdırılamayabilir.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1588"/>
-        <location filename="../MainWindow.cpp~" line="1588"/>
+        <location filename="../MainWindow.cpp" line="1640"/>
+        <location filename="../MainWindow.cpp~" line="1640"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>EPUB&apos;ın CSS&apos;si ile uygulanan koyu arka planlar ve renkli metin yazdırılır.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1589"/>
-        <location filename="../MainWindow.cpp~" line="1589"/>
+        <location filename="../MainWindow.cpp" line="1641"/>
+        <location filename="../MainWindow.cpp~" line="1641"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Çok fazla mürekkep kullanılmasına neden olabileceğinden dikkatli olun!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1590"/>
-        <location filename="../MainWindow.cpp~" line="1590"/>
+        <location filename="../MainWindow.cpp" line="1642"/>
+        <location filename="../MainWindow.cpp~" line="1642"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Bu dosyanın nasıl yazdırılacağını görmek için aşağıdaki Baskı Önizlemeyi kullanın.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1591"/>
-        <location filename="../MainWindow.cpp~" line="1591"/>
+        <location filename="../MainWindow.cpp" line="1643"/>
+        <location filename="../MainWindow.cpp~" line="1643"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Gelecekte bu uyarıyı görmek istemiyorsanız kutuyu işaretleyin.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1614"/>
-        <location filename="../MainWindow.cpp~" line="1614"/>
+        <location filename="../MainWindow.cpp" line="1666"/>
+        <location filename="../MainWindow.cpp~" line="1666"/>
         <source>Feature not available before Qt5.12.x</source>
         <translation>Qt5.12.x&apos;ten önce özellik mevcut değil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1675"/>
-        <location filename="../MainWindow.cpp~" line="1675"/>
+        <location filename="../MainWindow.cpp" line="1727"/>
+        <location filename="../MainWindow.cpp~" line="1727"/>
         <source>File Opened</source>
         <translation>Dosya Açıldı</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1679"/>
-        <location filename="../MainWindow.cpp~" line="1679"/>
+        <location filename="../MainWindow.cpp" line="1731"/>
+        <location filename="../MainWindow.cpp~" line="1731"/>
         <source>File Open Failed!</source>
         <translation>Dosya Açılamadı!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1702"/>
-        <location filename="../MainWindow.cpp~" line="1702"/>
+        <location filename="../MainWindow.cpp" line="1754"/>
+        <location filename="../MainWindow.cpp~" line="1754"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Pano HTML biçimlendirmesi içeriyor</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1703"/>
-        <location filename="../MainWindow.cpp~" line="1703"/>
+        <location filename="../MainWindow.cpp" line="1755"/>
+        <location filename="../MainWindow.cpp~" line="1755"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Panodaki veriyi düz metin olarak yapıştırmak istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1779"/>
-        <location filename="../MainWindow.cpp~" line="1779"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp~" line="1831"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Yeni bir kimlik eklemeden önce metin seçmelisiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1792"/>
-        <location filename="../MainWindow.cpp~" line="1792"/>
+        <location filename="../MainWindow.cpp" line="1844"/>
+        <location filename="../MainWindow.cpp~" line="1844"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Kimlik geçersiz - bir harfle başlamalı ve ardından _: - veya harf numarası gelmelidir.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1798"/>
-        <location filename="../MainWindow.cpp~" line="1798"/>
+        <location filename="../MainWindow.cpp" line="1850"/>
+        <location filename="../MainWindow.cpp~" line="1850"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Bu konuma bir kimlik ekleyemezsiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1812"/>
-        <location filename="../MainWindow.cpp~" line="1816"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp~" line="1864"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Yeni bir bağlantı eklemeden önce metin seçmelisiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1825"/>
-        <location filename="../MainWindow.cpp~" line="1829"/>
+        <location filename="../MainWindow.cpp" line="1877"/>
+        <location filename="../MainWindow.cpp~" line="1877"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Bağlantı geçersiz - &apos;&lt;&apos; veya &apos;&gt;&apos; içeremez</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1831"/>
-        <location filename="../MainWindow.cpp~" line="1835"/>
+        <location filename="../MainWindow.cpp" line="1883"/>
+        <location filename="../MainWindow.cpp~" line="1883"/>
         <source>Error inserting external link target.</source>
         <translation>Harici bağlantı hedefi eklenirken hata oluştu.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1839"/>
-        <location filename="../MainWindow.cpp~" line="1843"/>
+        <location filename="../MainWindow.cpp" line="1891"/>
+        <location filename="../MainWindow.cpp~" line="1891"/>
         <source>Error inserting a link at this position.</source>
         <translation>Bu konumda bir bağlantı eklenirken hata oluştu.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1850"/>
-        <location filename="../MainWindow.cpp~" line="1854"/>
+        <location filename="../MainWindow.cpp" line="1902"/>
+        <location filename="../MainWindow.cpp~" line="1902"/>
         <source>Insert File</source>
         <translation>Dosya Ekle</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1894"/>
-        <location filename="../MainWindow.cpp~" line="1898"/>
+        <location filename="../MainWindow.cpp" line="1946"/>
+        <location filename="../MainWindow.cpp~" line="1946"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Bu konuma bir medya dosyası ekleyemezsiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1985"/>
-        <location filename="../MainWindow.cpp~" line="1989"/>
+        <location filename="../MainWindow.cpp" line="2037"/>
+        <location filename="../MainWindow.cpp~" line="2037"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Bu dosyanın üzerine yazmadan önce herhangi bir değişikliği kaydetmek ister misiniz?</translation>
+    </message>
+    <message>
+        <location filename="../MainWindow.cpp" line="2089"/>
+        <location filename="../MainWindow.cpp~" line="2089"/>
+        <source>Pasted clip entry %1.</source>
+        <translation>%1 klibi girişi yapıştırıldı.</translation>
     </message>
 </context>
 <context>
@@ -1460,6 +2070,7 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
     <name>QObject</name>
     <message>
         <location filename="../OPFReader.cpp" line="60"/>
+        <location filename="../OPFReader.cpp~" line="60"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
         <translation>OPF dosyası okunamıyor.

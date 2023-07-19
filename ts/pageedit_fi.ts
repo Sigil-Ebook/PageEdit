@@ -1,198 +1,198 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pt_BR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fi">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Aparência</translation>
+        <translation>Ulkoasu</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="25"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>Muokkaustila</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
         <location filename="../PAppearanceWidget.ui" line="263"/>
         <source>Fonts:</source>
-        <translation>Fontes</translation>
+        <translation>Fontit:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>Se nenhuma fonte estiver especificada no CSS da sua página, essa fonte será utilizada para exibição no PageEdit. Porém essas fontes não serão utilizadas em seu e-book atual.</translation>
+        <translation>Jos e-kirjasi CSS-koodissa ei aseteta fonttia, Sigil käyttää muokkaustilassa seuraavaa fonttia. Nämä fonttiasetukset eivät vaikuta fonttien käyttöön lopullisessa e-kirjassa.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation>Tamanho de fonte a ser usado pelo PageEdit
-quando não estiver especificado no CSS</translation>
+        <translation>Sivun muokkauksessa käytettävä oletuskirjasinkoko
+jos CSS:ssä ei ole määritetty fonttikokoa</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
         <location filename="../PAppearanceWidget.ui" line="323"/>
         <source>Font Size:</source>
-        <translation>Tamanho da Fonte:</translation>
+        <translation>Fonttikoko:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation>Família de fonte a ser usada pelo PageEdit
-quando não estiver especificada no CSS</translation>
+        <translation>Sivun muokkauksessa käytettävä oletusfonttiperhe
+jos CSS:ssäsi ei ole määritetty fonttikirjaintyyppiä.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
         <source>Standard:</source>
-        <translation>Padrão:</translation>
+        <translation>Vakio:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation>Família de fonte a ser usada pelo PageEdit
-quando uma família de fonte com serifa estiver especificada no CSS</translation>
+        <translation>Sivun muokkauksessa käytettävä oletusfonttiperhe
+jos CSS:ssäsi on määritetty serif-kirjasintyyppi.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
         <source>Serif:</source>
-        <translation>Fonte com serifa</translation>
+        <translation>Serif:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation>Família de fonte a ser usada pelo PageEdit
-quando uma família de fonte sem serifa estiver especificada no CSS</translation>
+        <translation>Sivun muokkauksessa käytettävä oletusfonttiperhe
+jos CSS:ssäsi on määritetty sans-serif-kirjasintyyppi.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
         <source>Sans-Serif:</source>
-        <translation>Fonte sem serifa:</translation>
+        <translation>Sans-Serif:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="156"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation>Fazer o PageEdit simular um aparência escura no modo escuro</translation>
+        <translation>Sivun muokkaus simuloi tummaa ulkoasua pimeässä tilassa</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="181"/>
         <source>Main UI</source>
-        <translation>Interface principal</translation>
+        <translation>Pääkäyttöliittymä</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="187"/>
         <source>Main Menu Icon Size:</source>
-        <translation>Tamanho do ícone no Menu principal</translation>
+        <translation>Päävalikon kuvakekoko:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="193"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Ajuste o tamanho dos ícones do Menu Principal.</translation>
+        <translation>Säädä päävalikossa olevien kuvakkeiden koko.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="231"/>
         <source>High DPI Setting:</source>
-        <translation>Configuração de High DPI</translation>
+        <translation>Suuren DPI:n asetus:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="240"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation>(Precisa Reiniciar o PageEdit)</translation>
+        <translation>(Tarvitsee Sivun muokkauksen uudelleenkäynnistyksen)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="269"/>
         <source>UI Font:</source>
-        <translation>Fonte da interface</translation>
+        <translation>Käyttöliittymäfontti:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="279"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation>Mudar a fonte usada pelo PageEdit nos menus, botões, etc...</translation>
+        <translation>Vaihda Sivun muokkauksen valikoissa, painikkeissa jne. käytettävää fonttia....</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="282"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation>Mudar Fonte (Precisa Reiniciar o PageEdit)</translation>
+        <translation>Vaihda fontti (vaatii Sivun muokkauksen uudelleenkäynnistyksen)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="306"/>
         <source>Insert Special Characters:</source>
-        <translation>Inserir Caracteres Especiais:</translation>
+        <translation>Erikoismerkkien lisääminen:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="320"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Tamanho da fonte para ser utilizada na janela Inserir Caracteres Especiais</translation>
+        <translation>Lisää erikoismerkki -ikkunassa käytettävä fonttikoko</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="353"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Família de fonte a ser utilizada na janela Inserir Caracteres Especiais</translation>
+        <translation>Lisää erikoismerkki -ikkunassa käytettävä fonttiperhe</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="356"/>
         <source>Standard Font:</source>
-        <translation>Fonte Padrão:</translation>
+        <translation>Perusfontti:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="423"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Redefinir todas as fontes e cores ao valor padrão</translation>
+        <translation>Aseta kaikki fontit ja värit alkuarvoihin</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="426"/>
         <source>Reset All</source>
-        <translation>Redefinir tudo</translation>
+        <translation>Palauta kaikki</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <location filename="../AppearanceWidget.cpp" line="51"/>
         <source>Detect</source>
-        <translation>Detectar</translation>
+        <translation>Tunnista</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>On</source>
-        <translation>Ativar</translation>
+        <translation>On</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="50"/>
         <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>Off</source>
-        <translation>Desl.</translation>
+        <translation>Ei</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="51"/>
         <source>Detect whether any high dpi scaling should take place.</source>
-        <translation>Detectar se houver alteração na escala de high dpi</translation>
+        <translation>Tunnista, pitäisikö korkean dpi:n skaalaus suorittaa.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="52"/>
         <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation>Adia qualquer variável de ambiente Qt configurada para controlar o comportamento de high DPI</translation>
+        <translation>Ohittaa kaikki Qt-ympäristömuuttujat, jotka on asetettu ohjaamaan korkean dpi:n käyttäytymistä.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation>Ativa escalonamento de high DPI e ignora qualquer variável de ambiente Qt</translation>
+        <translation>Ottaa käyttöön suuren dpi:n skaalauksen ja jättää huomiotta kaikki Qt-ympäristömuuttujat.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>that are set controlling high dpi behavior.</source>
-        <translation>existem comportamentos high DPI configurados</translation>
+        <translation>jotka on asetettu ohjaamaan korkean dpi:n käyttäytymistä.</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation>Desativa escalonamento High DPI independentemente de haver ambiente Qt</translation>
+        <translation>Poistaa korkean dpi:n skaalauksen käytöstä riippumatta Qt-ympäristöstä</translation>
     </message>
     <message>
         <location filename="../AppearanceWidget.cpp" line="56"/>
         <source>variables controlling high dpi behavior are set.</source>
-        <translation>variáveis de controle high DPI estão configuradas.</translation>
+        <translation>suuren dpi:n käyttäytymistä ohjaavat muuttujat on asetettu.</translation>
     </message>
 </context>
 <context>
@@ -202,51 +202,51 @@ quando uma família de fonte sem serifa estiver especificada no CSS</translation
         <location filename="../ClipEditor.cpp" line="541"/>
         <location filename="../ClipEditor.cpp~" line="545"/>
         <source>Clip Editor</source>
-        <translation>Editor de recortes</translation>
+        <translation>Leike-editori</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="23"/>
         <source>Filter Name:</source>
-        <translation>Filtrar Nome:</translation>
+        <translation>Suodattimen nimi:</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="28"/>
         <source>Filter All:</source>
-        <translation>Filtrar tudo:</translation>
+        <translation>Suodata kaikki:</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="36"/>
         <source>List only the entries containing the text you enter.</source>
-        <translation>Exibir somente registros contendo o texto inserido por você.</translation>
+        <translation>Listaa vain ne kohdat, jotka sisältävät annetun tekstin.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="65"/>
         <source>Paste the selected entry into the active window.</source>
-        <translation>Cola a entrada selecionada na janela ativa.</translation>
+        <translation>Liitä valittu kohta aktiiviseen ikkunaan.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="68"/>
         <source>Paste Clip</source>
-        <translation>Colar Recorte</translation>
+        <translation>Liitä leike</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="91"/>
         <location filename="../ClipEditor.cpp" line="651"/>
         <location filename="../ClipEditor.cpp~" line="655"/>
         <source>Add Entry</source>
-        <translation>Adicionar entrada</translation>
+        <translation>Lisää kohta</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="98"/>
         <location filename="../ClipEditor.cpp" line="652"/>
         <location filename="../ClipEditor.cpp~" line="656"/>
         <source>Add Group</source>
-        <translation>Adicionar grupo</translation>
+        <translation>Lisää ryhmä</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="123"/>
         <source>Move an entry up one entry in the same group.</source>
-        <translation>Mover a entrada acima dentro do mesmo grupo.</translation>
+        <translation>Siirrä kohta yksi kohta ylemmäs samassa ryhmässä.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="126"/>
@@ -259,95 +259,95 @@ quando uma família de fonte sem serifa estiver especificada no CSS</translation
     <message>
         <location filename="../ClipEditor.ui" line="153"/>
         <source>Move an entry to the level of its parent.</source>
-        <translation>Move uma entrada para o nível de seus pais.</translation>
+        <translation>Siirrä kohta sen isäkohdan tasolle.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="182"/>
         <source>You must select an item immediately under a group to move it into the group.</source>
-        <translation>Um item deve ser selecionado imediatamente abaixo de um grupo para movê-lo para dentro do grupo.</translation>
+        <translation>Sinun on valittava kohta, joka on välittömästi jonkin ryhmän alla, siirtääksesi kohdan ryhmään.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="212"/>
         <source>Move an entry down one in the group.</source>
-        <translation>Move uma entrada para baixo no grupo.</translation>
+        <translation>Siirrä kohta yksi kohta alemmas ryhmässä.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="75"/>
         <location filename="../ClipEditor.cpp~" line="75"/>
         <source>Right click on an entry to see a context menu of actions.</source>
-        <translation>Clique com botão direito para ver menu de contexto de ações.</translation>
+        <translation>Napsauta kohtaa hiiren kakkospainikkeella, niin näet tilannekohtaisen toimintavalikon.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="76"/>
         <location filename="../ClipEditor.cpp~" line="76"/>
         <source>You can also right click in your document to select an entry.</source>
-        <translation>Você também pode clicar com o botão direito no seu documento e selecionar uma entrada.</translation>
+        <translation>Voit myös napsauttaa kirjaasi hiiren kakkospainikkeella valitaksesi kohdan.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
         <location filename="../ClipEditor.cpp~" line="78"/>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation>Nimi</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
         <location filename="../ClipEditor.cpp~" line="78"/>
         <source>Name of your entry or group.</source>
-        <translation>Nome de seu registro ou grupo.</translation>
+        <translation>Kohdan tai ryhmän nimi.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
         <location filename="../ClipEditor.cpp~" line="79"/>
         <source>Text</source>
-        <translation>Texto</translation>
+        <translation>Teksti</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
         <location filename="../ClipEditor.cpp~" line="79"/>
         <source>The text to insert. The text is treated like a Regex replacement expression so \1 can be used to insert the text selected in Code View when you paste the clip.</source>
-        <translation>O texto a ser inserido. O texto é tratado como uma expressão de substituição Regex. \1 pode ser usado para inserir o texto selecionado na Visualização de Código quando você cola o recorte.</translation>
+        <translation>Lisättävä teksti. Tekstiä käsitellään korvaavana säännöllisenä lausekkeena, joten merkintää \1 voidaan käyttää lisäämään se teksti, joka on valittuna kooditilassa, kun leike liitetään kirjaan.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <location filename="../ClipEditor.cpp~" line="83"/>
         <source>Save</source>
-        <translation>Salvar</translation>
+        <translation>Tallenna</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <location filename="../ClipEditor.cpp~" line="83"/>
         <source>Save your changes.</source>
-        <translation>Salvar suas alterações.</translation>
+        <translation>Tallenna muutokset</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <location filename="../ClipEditor.cpp~" line="83"/>
         <source>If any other instances of Sigil are running they will be automatically updated with your changes.</source>
-        <translation>Se qualquer das outras instâncias de Sigil estiver em execução elas serão automaticamente atualizadas com suas alterações.</translation>
+        <translation>Jos Sigil-ohjelman muita ilmentymiä on käynnissä koneessa, muutoksesi päivittyvät automaattisesti niihinkin.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="93"/>
         <location filename="../ClipEditor.cpp~" line="93"/>
         <source>Cannot save entries.</source>
-        <translation>Não foi possível salvar registros.</translation>
+        <translation>Merkintöjä ei voi tallentaa.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="137"/>
         <location filename="../ClipEditor.cpp~" line="137"/>
         <source>Clip entries loaded from file.</source>
-        <translation>Recorta entradas carregadas do arquivo.</translation>
+        <translation>Tiedostosta ladatut leikkeet.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="200"/>
         <location filename="../ClipEditor.cpp~" line="200"/>
         <source>You cannot select an entry and a group containing the entry.</source>
-        <translation>Não é possível selecionar uma entrada e um grupo contendo a entrada.</translation>
+        <translation>Et voi valita kohtaa ja ryhmää, joka sisältää sen.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="287"/>
         <location filename="../ClipEditor.cpp~" line="287"/>
         <source>You cannot Copy or Cut groups - use drag-and-drop.</source>
-        <translation>Não é possível copiar ou recortar grupos. Utilize o movimento arrastar-e-soltar.</translation>
+        <translation>Et voi kopioida etkä leikata ryhmiä – käytä hiirellä vetämistä ja pudottamista.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
@@ -359,117 +359,117 @@ quando uma família de fonte sem serifa estiver especificada no CSS</translation
         <location filename="../ClipEditor.cpp" line="359"/>
         <location filename="../ClipEditor.cpp~" line="359"/>
         <source>Are you sure you want to reload all entries?  This will overwrite any unsaved changes.</source>
-        <translation>Tem certeza que deseja recarregar todas as entradas? Esta ação irá substituir qualquer alteração não salva.</translation>
+        <translation>Oletko varma, että haluat ladata kaikki kohteet uudestaan? Tämä kirjoittaa tallentamattomien muutosten päälle.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="380"/>
         <location filename="../ClipEditor.cpp~" line="380"/>
         <source>Import Entries</source>
-        <translation>Importar entradas</translation>
+        <translation>Tuo merkintöjä</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="460"/>
         <location filename="../ClipEditor.cpp~" line="460"/>
         <source>Export Selected Entries</source>
-        <translation>Exportar entradas selecionadas</translation>
+        <translation>Vie valitut kohdat</translation>
     </message>
     <message numerus="yes">
         <location filename="../ClipEditor.cpp" line="541"/>
         <location filename="../ClipEditor.cpp~" line="545"/>
         <source>CSS entries added: %n</source>
-        <translation><numerusform>CSS entries added: %n</numerusform><numerusform>Entradas CSS adicionadas: %n</numerusform><numerusform>Entradas CSS adicionadas: %n</numerusform></translation>
+        <translation><numerusform>CSS-ohjeita lisätty: %1</numerusform><numerusform>CSS-ohjeita lisätty: %1</numerusform></translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="653"/>
         <location filename="../ClipEditor.cpp~" line="657"/>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>Muokkaa</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="654"/>
         <location filename="../ClipEditor.cpp~" line="658"/>
         <source>Cut</source>
-        <translation>Recortar</translation>
+        <translation>Leikkaa</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="655"/>
         <location filename="../ClipEditor.cpp~" line="659"/>
         <source>Copy</source>
-        <translation>Copiar</translation>
+        <translation>Kopioi</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="656"/>
         <location filename="../ClipEditor.cpp~" line="660"/>
         <source>Paste</source>
-        <translation>Colar</translation>
+        <translation>Liitä</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="657"/>
         <location filename="../ClipEditor.cpp~" line="661"/>
         <source>Delete</source>
-        <translation>Excluir</translation>
+        <translation>Poista</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="658"/>
         <location filename="../ClipEditor.cpp~" line="662"/>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Tuo</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="659"/>
         <location filename="../ClipEditor.cpp~" line="663"/>
         <source>Reload</source>
-        <translation>Recarregar</translation>
+        <translation>Lataa uudestaan</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="660"/>
         <location filename="../ClipEditor.cpp~" line="664"/>
         <source>Export</source>
-        <translation>Exportar</translation>
+        <translation>Vie</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="661"/>
         <location filename="../ClipEditor.cpp~" line="665"/>
         <source>Export All</source>
-        <translation>Exportar Tudo</translation>
+        <translation>Vie kaikki</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="662"/>
         <location filename="../ClipEditor.cpp~" line="666"/>
         <source>Collapse All</source>
-        <translation>Fechar todos</translation>
+        <translation>Supista kaikki</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="663"/>
         <location filename="../ClipEditor.cpp~" line="667"/>
         <source>Expand All</source>
-        <translation>Expandir Tudo</translation>
+        <translation>Lavenna kaikki</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="664"/>
         <location filename="../ClipEditor.cpp~" line="668"/>
         <source>Autofill</source>
-        <translation>Autocompletar</translation>
+        <translation>Automaattinen täyttö</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="746"/>
         <location filename="../ClipEditor.cpp~" line="750"/>
         <source>Clip entries saved.</source>
-        <translation>Entradas recortadas salvas.</translation>
+        <translation>Leikkeet tallennettu.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="775"/>
         <location filename="../ClipEditor.cpp~" line="779"/>
         <source>Sigil: Clip Editor</source>
-        <translation>Sigil: Editor de Recortes</translation>
+        <translation>Sigilin leike-editori</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="776"/>
         <location filename="../ClipEditor.cpp~" line="780"/>
         <source>The Clip entries may have been modified.
 Do you want to save your changes?</source>
-        <translation>As entradas recortadas podem ter sido modificadas.
-Deseja salvar as alterações?</translation>
+        <translation>Leikkeitä on voitu muuttaa.
+Haluatko tallentaa muutokset?</translation>
     </message>
 </context>
 <context>
@@ -477,17 +477,17 @@ Deseja salvar as alterações?</translation>
     <message>
         <location filename="../ClipEditorModel.cpp" line="75"/>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation>Nimi</translation>
     </message>
     <message>
         <location filename="../ClipEditorModel.cpp" line="76"/>
         <source>Text</source>
-        <translation>Texto</translation>
+        <translation>Teksti</translation>
     </message>
     <message>
         <location filename="../ClipEditorModel.cpp" line="672"/>
         <source>Unable to create file %1</source>
-        <translation>Não é possível criar arquivo %1</translation>
+        <translation>Tiedostoa %1 ei voi luoda</translation>
     </message>
 </context>
 <context>
@@ -495,17 +495,17 @@ Deseja salvar as alterações?</translation>
     <message>
         <location filename="../ClipsWindow.cpp" line="37"/>
         <source>Clips</source>
-        <translation>Recortes</translation>
+        <translation>Leikkeet</translation>
     </message>
     <message>
         <location filename="../ClipsWindow.cpp" line="102"/>
         <source>Collapse All</source>
-        <translation>Fechar Todos</translation>
+        <translation>Supista kaikki</translation>
     </message>
     <message>
         <location filename="../ClipsWindow.cpp" line="103"/>
         <source>Expand All</source>
-        <translation>Expandir todos</translation>
+        <translation>Lavenna kaikki</translation>
     </message>
 </context>
 <context>
@@ -513,136 +513,137 @@ Deseja salvar as alterações?</translation>
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>Configurações Gerais</translation>
+        <translation>Yleiset asetukset</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>Você deve reiniciar o PageEdit após alterar o idioma da interface do usuário.
-Se a tradução para uma palavra ou frase não está disponível, ela será exibida em Inglês.</translation>
+        <translation>Muokkaustila on käynnistettävä uudelleen käyttöliittymän kielen muuttamisen jälkeen.
+
+Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninkielisenä.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>Linguagem de Interface com o Usuário</translation>
+        <translation>Käyttöliittymän kieli:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Selecione dos dicionários ortográficos instalados.</translation>
+        <translation>Valitse asennetuista oikolukusanakirjoista.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Dicionário Ortográfico:</translation>
+        <translation>Oikolukusanakirja:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Determine se arquivos html tem permissão de acessar recursos remotos não multimídia.</translation>
+        <translation>Selvitä, saavatko html-tiedostot käyttää muita kuin multimedia-etäresursseja.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation>Controle acesso de arquivos html para recursos remotos não multimídia.</translation>
+        <translation>Hallitse html-tiedostojen pääsyä muihin kuin multimedia-etäresursseihin.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Marque para permitir que arquivos html possam acessar recursos remotos não multimídia.</translation>
+        <translation>Valitse tämä, jos haluat sallia html-tiedostojen käyttää muita kuin multimedia-etäresursseja.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Arquivos Html podem acessar recursos remotos de todos os tipos.</translation>
+        <translation>Html-tiedostot voivat käyttää kaikkia etäresurssityyppejä.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Determine se javascript é permitido para ser usado por arquivos html.</translation>
+        <translation>Selvitä, saavatko html-tiedostot käyttää javascriptiä</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation>Controle o uso de javascript por arquivos html.</translation>
+        <translation>Hallitse javascriptin käyttöä html-tiedostoilla.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Marque para permitir que arquivos html usem javascript.</translation>
+        <translation>Valitse tämä, jos haluat sallia html-tiedostojen käyttää JavaScriptiä.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Arquivos Html podem usar javascript.</translation>
+        <translation>Html-tiedostot voivat käyttää javascriptiä.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Escolha como você prefere que o PageEdit trate o uso de múltiplos espaços em branco durante a edição.</translation>
+        <translation>Valitse, kuinka haluat Sivun muokkauksen käsittelevän useiden välilyöntien käyttöä muokkauksen aikana.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Tratamento de múltiplos espaços em branco usando:</translation>
+        <translation>Käsittele useita valkoisen tilan asetteluja käyttämällä:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Use a configuração de espaço em branco do CSS: pre-wrap - preservadas</translation>
+        <translation>Käytä CSS:n valkotilaa: esivaihto (pre-wrap)</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation>configuração de espaço em branco do CSS: pre-wrap - preservadas</translation>
+        <translation>css valkotila: esivaihto (pre-wrap)</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Use espaços em branco  sem quebra conforme necessário</translation>
+        <translation>Käytä tarvittaessa katkaisemattomia välilyöntejä</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>espaços em branco sem quebra conforme necessário</translation>
+        <translation>tarvittaessa katkaisemattomat välilyönnit</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Determine se o Embelezamento é usado ao salvar</translation>
+        <translation>Määritä, käytetäänkö Prettify-toimintoa tallennettaessa</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation>Use Embelezamento para reformatar o xhtml ao salvar.</translation>
+        <translation>Käytä Prettify-toimintoa xhtml-tiedoston muotoilemiseksi uudelleen tallennuksen yhteydessä.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Marque para reformatar com o Embelezamento ao salvar arquivos xhtml</translation>
+        <translation>Tarkista, voitko muotoilla uudelleen Prettifyn avulla, kun tallennat xhtml-tiedostoja.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Use o Embelezamento para reformatar xhtml ao salvar.</translation>
+        <translation>Käytä Prettify-toimintoa xhtml-muodon muuttamiseen tallennuksen yhteydessä.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="300"/>
         <source>Disable GPU Acceleration in PageEdit/QtWebEngine</source>
-        <translation>Desabilitar Aceleração GPU em PageEdit/QtWebEngine</translation>
+        <translation>GPU-kiihdytyksen poistaminen käytöstä Sivun muokkaus/QtWebEngine-ohjelmassa</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="303"/>
         <source> Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
-        <translation>Desabilitar Aceleração GPU em PageEdit/QtWebEngine.</translation>
+        <translation>Poista GPU-kiihdytys käytöstä PageEdit/QtWebEngine-ohjelmassa.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="318"/>
         <location filename="../PGeneralSettings.ui" line="321"/>
         <source>Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
-        <translation>Desabilitar Aceleração GPU em PageEdit/QtWebEngine.</translation>
+        <translation>Poista GPU-kiihdytys käytöstä PageEdit/QtWebEngine-ohjelmassa.</translation>
     </message>
 </context>
 <context>
@@ -650,12 +651,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../Inspector.cpp" line="76"/>
         <source>Inspect Page or Element</source>
-        <translation>Inspecionar página ou elemento</translation>
+        <translation>Tutki sivua tai elementtiä</translation>
     </message>
     <message>
         <location filename="../Inspector.cpp" line="158"/>
         <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>O Inspetor não está disponível nas versões que utilizam a interface Qt anterior à versão 5.11</translation>
+        <translation>Tutkintatoimintoa ei ole ennen versiota Qt 5.11</translation>
     </message>
 </context>
 <context>
@@ -685,145 +686,145 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp~" line="1946"/>
         <location filename="../MainWindow.cpp~" line="2036"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>Muokkaustila</translation>
     </message>
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;Arquivo</translation>
+        <translation>&amp;Tiedosto</translation>
     </message>
     <message>
         <location filename="../main.ui" line="75"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Editar</translation>
+        <translation>&amp;Muokkaa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="88"/>
         <source>&amp;Find</source>
-        <translation>&amp;Pesquisar</translation>
+        <translation>&amp;Etsi</translation>
     </message>
     <message>
         <location filename="../main.ui" line="95"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Inserir</translation>
+        <translation>L&amp;isää</translation>
     </message>
     <message>
         <location filename="../main.ui" line="110"/>
         <source>For&amp;mat</source>
-        <translation>For&amp;matar</translation>
+        <translation>&amp;Muotoile</translation>
     </message>
     <message>
         <location filename="../main.ui" line="115"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Título</translation>
+        <translation>&amp;Otsikko</translation>
     </message>
     <message>
         <location filename="../main.ui" line="130"/>
         <source>C&amp;hange Case</source>
-        <translation>Alterar &amp;Maiúsculas e Minúsculas</translation>
+        <translation>Vai&amp;hda kirjainkoko</translation>
     </message>
     <message>
         <location filename="../main.ui" line="160"/>
         <source>&amp;View</source>
-        <translation>&amp;Visualizar</translation>
+        <translation>&amp;Näytä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="169"/>
         <source>Inspector</source>
-        <translation>Inspetor</translation>
+        <translation>Tutkinta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="176"/>
         <location filename="../main.ui" line="1144"/>
         <source>Clips</source>
-        <translation>Recortes</translation>
+        <translation>Leikkeet</translation>
     </message>
     <message>
         <location filename="../main.ui" line="195"/>
         <source>File</source>
-        <translation>Arquivo</translation>
+        <translation>Tiedosto</translation>
     </message>
     <message>
         <location filename="../main.ui" line="209"/>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>Muokkaa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="227"/>
         <location filename="../main.ui" line="1241"/>
         <source>Mode</source>
-        <translation>Modo</translation>
+        <translation>Tila</translation>
     </message>
     <message>
         <location filename="../main.ui" line="240"/>
         <source>Insert</source>
-        <translation>Inserir</translation>
+        <translation>Lisää</translation>
     </message>
     <message>
         <location filename="../main.ui" line="259"/>
         <source>Inspect</source>
-        <translation>Inspecionar</translation>
+        <translation>Tutki</translation>
     </message>
     <message>
         <location filename="../main.ui" line="272"/>
         <source>Clip Bar</source>
-        <translation>Barra de recortes</translation>
+        <translation>Leikepalkki</translation>
     </message>
     <message>
         <location filename="../main.ui" line="304"/>
         <location filename="../main.ui" line="1184"/>
         <source>Find</source>
-        <translation>Localizar</translation>
+        <translation>Etsi</translation>
     </message>
     <message>
         <location filename="../main.ui" line="317"/>
         <source>Heading</source>
-        <translation>Título</translation>
+        <translation>Otsikko</translation>
     </message>
     <message>
         <location filename="../main.ui" line="331"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>Definir Nível de título do texto selecionado</translation>
+        <translation>aseta valitun tekstin otsikkotaso</translation>
     </message>
     <message>
         <location filename="../main.ui" line="345"/>
         <source>Change Case</source>
-        <translation>Alterar Maiúsculas e Minúsculas</translation>
+        <translation>Vaihda kirjaintaso</translation>
     </message>
     <message>
         <location filename="../main.ui" line="361"/>
         <source>Format</source>
-        <translation>Formatar</translation>
+        <translation>Muoto</translation>
     </message>
     <message>
         <location filename="../main.ui" line="379"/>
         <source>Align</source>
-        <translation>Alinhar</translation>
+        <translation>Tasaa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="395"/>
         <source>Indent</source>
-        <translation>Recuo</translation>
+        <translation>Sisennä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="409"/>
         <source>Navigate</source>
-        <translation>Navegar</translation>
+        <translation>Navigointi</translation>
     </message>
     <message>
         <location filename="../main.ui" line="419"/>
         <source>Navigation List</source>
-        <translation>Lista de navegação</translation>
+        <translation>Navigointiluettelo</translation>
     </message>
     <message>
         <location filename="../main.ui" line="435"/>
         <source>&amp;Save</source>
-        <translation>&amp;Salvar</translation>
+        <translation>&amp;Tallenna</translation>
     </message>
     <message>
         <location filename="../main.ui" line="438"/>
         <source>Save the current file.</source>
-        <translation>Salva o Arquivo Atual</translation>
+        <translation>Tallenna nykyinen tiedosto</translation>
     </message>
     <message>
         <location filename="../main.ui" line="441"/>
@@ -833,12 +834,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="451"/>
         <source>&amp;Print</source>
-        <translation>&amp;Imprimir</translation>
+        <translation>&amp;Tulosta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="454"/>
         <source>Print the current Page.</source>
-        <translation>Imprimir a Página atual.</translation>
+        <translation>Tulosta nykyinen sivu.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="457"/>
@@ -848,47 +849,47 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="463"/>
         <source>Save &amp;As...</source>
-        <translation>Salvar &amp;como...</translation>
+        <translation>T&amp;allenna nimellä...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="466"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Salva o arquivo atual com outro nome</translation>
+        <translation>Tallenna nykyinen tiedosto eri nimellä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="469"/>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl+Shift+S</translation>
+        <translation>Ctrl+Vaihto+S</translation>
     </message>
     <message>
         <location filename="../main.ui" line="479"/>
         <source>Cu&amp;t</source>
-        <translation>Recor&amp;tar</translation>
+        <translation>Leik&amp;kaa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="482"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Recorta o texto selecionado do documento e o armazena na área de transferência.</translation>
+        <translation>Leikkaa valitun tekstin dokumentista ja sijoittaa sen leikepoydälle</translation>
     </message>
     <message>
         <location filename="../main.ui" line="492"/>
         <source>&amp;Paste</source>
-        <translation>&amp;Colar</translation>
+        <translation>&amp;Liitä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="495"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Cola o conteúdo da área de transferência no arquivo.</translation>
+        <translation>Liittää sisällön leikepöydältä tiedostoon</translation>
     </message>
     <message>
         <location filename="../main.ui" line="505"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Desfazer</translation>
+        <translation>K&amp;umoa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="508"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Desfaz as alterações da operação anterior.</translation>
+        <translation>Peruuttaa aiemman toimenpiteen tekemät muutokset.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="511"/>
@@ -898,12 +899,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="521"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Refazer</translation>
+        <translation>Tee &amp;uudestaan</translation>
     </message>
     <message>
         <location filename="../main.ui" line="524"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Restaura as alterações que foram desfeitas pelo comando Desfazer.</translation>
+        <translation>Palauttaa edellisen peruutustoiminnon peruuttamat muutokset.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="527"/>
@@ -913,42 +914,42 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="537"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Copiar</translation>
+        <translation>&amp;Kopioi</translation>
     </message>
     <message>
         <location filename="../main.ui" line="540"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Copia o texto selecionado e o armazena na área de transferência.</translation>
+        <translation>Kopioi valitun tekstin ja laittaa sen leikepöydälle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="553"/>
         <source>Align &amp;Left</source>
-        <translation>Alinhar &amp;Esquerda</translation>
+        <translation>Tasaa &amp;vasemmalle</translation>
     </message>
     <message>
         <location filename="../main.ui" line="556"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Alinha o parágrafo à esquerda.</translation>
+        <translation>Tasaa kappale vasemmalle</translation>
     </message>
     <message>
         <location filename="../main.ui" line="570"/>
         <source>Align &amp;Right</source>
-        <translation>Alinhar &amp;Direita</translation>
+        <translation>Tasaa &amp;oikealle</translation>
     </message>
     <message>
         <location filename="../main.ui" line="573"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Alinha o parágrafo à direita.</translation>
+        <translation>Tasaa kappale oikealle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="586"/>
         <source>&amp;Center</source>
-        <translation>&amp;Centralizar</translation>
+        <translation>Ke&amp;skitä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="589"/>
         <source>Center the paragraph.</source>
-        <translation>Centraliza o parágrafo.</translation>
+        <translation>Keskitä kappale.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="592"/>
@@ -958,12 +959,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="605"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Justificar</translation>
+        <translation>T&amp;asaa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="608"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Justifica o texto do parágrafo.</translation>
+        <translation>Tasaa kappaleen sekä vasemmalle että oikealle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="611"/>
@@ -973,12 +974,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="624"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Negrito</translation>
+        <translation>Li&amp;havoi</translation>
     </message>
     <message>
         <location filename="../main.ui" line="627"/>
         <source>Make the selected text bold.</source>
-        <translation>Transforma o texto selecionado em negrito.</translation>
+        <translation>Lihavoi valittu teksti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="630"/>
@@ -988,12 +989,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="643"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Itálico</translation>
+        <translation>Kurs&amp;ivoi</translation>
     </message>
     <message>
         <location filename="../main.ui" line="646"/>
         <source>Make the selected text italic.</source>
-        <translation>Transforma o texto selecionado em itálico.</translation>
+        <translation>Kursivoi valittu teksti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="649"/>
@@ -1003,12 +1004,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="659"/>
         <source>&amp;Open...</source>
-        <translation>A&amp;brir...</translation>
+        <translation>&amp;Avaa...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="662"/>
         <source>Open a file from disk.</source>
-        <translation>Abre um arquivo a partir do disco.</translation>
+        <translation>Avaa tiedosto levyltä.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="665"/>
@@ -1018,12 +1019,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="678"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Sublinhado</translation>
+        <translation>Alle&amp;viivaa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="681"/>
         <source>Underline the selected text.</source>
-        <translation>Sublinha o texto selecionado.</translation>
+        <translation>Alleviivaa valittu teksti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
@@ -1033,12 +1034,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="694"/>
         <source>&amp;Lowercase</source>
-        <translation>&amp;Minúsculas</translation>
+        <translation>&amp;Gemena</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
         <source>Set selected text to lowercase.</source>
-        <translation>Converta o texto selecionado para minúsculo.</translation>
+        <translation>Aseta valittu teksti pienikirjaimisiksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="700"/>
@@ -1048,12 +1049,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="710"/>
         <source>&amp;Uppercase</source>
-        <translation>&amp;Maiúsculas</translation>
+        <translation>&amp;Versaali</translation>
     </message>
     <message>
         <location filename="../main.ui" line="713"/>
         <source>Set selected text to uppercase.</source>
-        <translation>Converta o texto selecionado para maiúsculo.</translation>
+        <translation>Aseta valittu teksti isokirjaimisiksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="716"/>
@@ -1063,32 +1064,32 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="726"/>
         <source>&amp;Titlecase</source>
-        <translation>&amp;Primeiras Maiúsculas</translation>
+        <translation>O&amp;tsikkokoko</translation>
     </message>
     <message>
         <location filename="../main.ui" line="729"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation>Converta a primeira letra de cada palavra selecionada para maiúsculo.</translation>
+        <translation>Kirjoita jokaisen valitun sanan ensimmäinen kirjain isolla alkukirjaimella.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="739"/>
         <source>&amp;Capitalize</source>
-        <translation>&amp;Capitular</translation>
+        <translation>Iso alkukirjain</translation>
     </message>
     <message>
         <location filename="../main.ui" line="742"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation>Converta apenas a primeira letra da primeira palavra selecionada para maiúsculo.</translation>
+        <translation>Kirjoita vain valitun tekstin ensimmäinen sana isolla alkukirjaimella.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="752"/>
         <source>&amp;Quit</source>
-        <translation>S&amp;air</translation>
+        <translation>&amp;Lopeta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="755"/>
         <source>Quit</source>
-        <translation>Sair</translation>
+        <translation>Lopeta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="758"/>
@@ -1098,77 +1099,77 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="768"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Caractere Especial...</translation>
+        <translation>Erikoi&amp;smerkki...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="771"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Seleciona um caractere para inserir no texto.</translation>
+        <translation>Valitse tekstiin lisättävä merkki.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="784"/>
         <source>&amp;Numbered List</source>
-        <translation>Lista &amp;numerada</translation>
+        <translation>&amp;Numeroitu luettelo</translation>
     </message>
     <message>
         <location filename="../main.ui" line="787"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Cria uma lista numerada a partir do texto selecionado.</translation>
+        <translation>Tee valinnasta numeroitu luettelo.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="800"/>
         <source>Bulle&amp;ted List</source>
-        <translation>Lista com &amp;marcadores</translation>
+        <translation>Lue&amp;ttelomerkit</translation>
     </message>
     <message>
         <location filename="../main.ui" line="803"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Cria uma lista comum a partir do texto selecionado.</translation>
+        <translation>Tee valinnasta luetelma, jossa on luetelmapallot.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="806"/>
         <source>Ctrl+Shift+L</source>
-        <translation>Ctrl+Shift+L</translation>
+        <translation>Ctrl+Vaihto+L</translation>
     </message>
     <message>
         <location filename="../main.ui" line="819"/>
         <source>Stri&amp;kethrough</source>
-        <translation>&amp;Tachar</translation>
+        <translation>Yli&amp;viivaa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="822"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Risca o texto selecionado.</translation>
+        <translation>Yliviivaa valittu teksti.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="835"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Subscrever</translation>
+        <translation>Alaindek&amp;si</translation>
     </message>
     <message>
         <location filename="../main.ui" line="838"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Coloca o texto selecionado abaixo da altura padrão da linha e reduz o tamanho da fonte do texto selecionado.</translation>
+        <translation>Muuta valittu teksti hiukan pienemmäksi ja normaalin linjan alapuolelle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="851"/>
         <source>Su&amp;perscript</source>
-        <translation>Sobr&amp;escrever</translation>
+        <translation>Ylä&amp;indeksi</translation>
     </message>
     <message>
         <location filename="../main.ui" line="854"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Coloca o texto selecionado acima da altura padrão da linha e reduz o tamanho da fonte do texto selecionado.</translation>
+        <translation>Muuta valittu teksti hiukan pienemmäksi ja normaalin linjan yläpuolelle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="865"/>
         <source>Zoom &amp;In</source>
-        <translation>Zoom &amp;Ampliar</translation>
+        <translation>Lähe&amp;nnä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="868"/>
         <source>Zoom In</source>
-        <translation>Zoom ampliar</translation>
+        <translation>Suurenna fonttikokoa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="871"/>
@@ -1178,12 +1179,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="882"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zoom &amp;Reduzir</translation>
+        <translation>L&amp;oitonna</translation>
     </message>
     <message>
         <location filename="../main.ui" line="885"/>
         <source>Zoom Out</source>
-        <translation>Zoom reduzir</translation>
+        <translation>Pienennä fonttikokoa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="888"/>
@@ -1193,52 +1194,52 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="899"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>&amp;Aumentar Indentação</translation>
+        <translation>Suurenn&amp;a sisennystä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="902"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Aumenta o nível de recuo do parágrafo.</translation>
+        <translation>Lisää kappaleen sisennystasoa.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="905"/>
         <source>Ctrl+Alt+M</source>
-        <translation>Ctrl+Alt+M</translation>
+        <translation>AltGr+M</translation>
     </message>
     <message>
         <location filename="../main.ui" line="915"/>
         <source>&amp;Decrease Indent</source>
-        <translation>Re&amp;duzir Indentação</translation>
+        <translation>&amp;Pienennä sisennystä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="918"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Reduz o nível de recuo do parágrafo.</translation>
+        <translation>Pienennäkappaleen sisennystasoa.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="921"/>
         <source>Ctrl+Shift+M</source>
-        <translation>Ctrl+Shift+M</translation>
+        <translation>Ctrl+Vaihto+M</translation>
     </message>
     <message>
         <location filename="../main.ui" line="931"/>
         <source>Split &amp;Marker</source>
-        <translation>Dividir &amp;Marcador</translation>
+        <translation>Jako&amp;merkki</translation>
     </message>
     <message>
         <location filename="../main.ui" line="934"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Inserir o marcador de Divisão do Sigil</translation>
+        <translation>Lisää jakokohtamerkki tiedostoiksi jakamista varten</translation>
     </message>
     <message>
         <location filename="../main.ui" line="937"/>
         <source>Ctrl+Shift+Return</source>
-        <translation>Ctrl+Shift+Return</translation>
+        <translation>Ctrl+Vaihto+Enter</translation>
     </message>
     <message>
         <location filename="../main.ui" line="943"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Preferências...</translation>
+        <translation>Ase&amp;tukset...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="946"/>
@@ -1248,12 +1249,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="952"/>
         <source>&amp;Zoom Reset</source>
-        <translation>Restaurar &amp;Zoom</translation>
+        <translation>&amp;Zoomin palautus</translation>
     </message>
     <message>
         <location filename="../main.ui" line="955"/>
         <source>Zoom Reset</source>
-        <translation>Restaurar Zoom</translation>
+        <translation>Palauta fonttikoko</translation>
     </message>
     <message>
         <location filename="../main.ui" line="958"/>
@@ -1263,12 +1264,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="971"/>
         <source>Heading &amp;1</source>
-        <translation>Título &amp;1</translation>
+        <translation>Otsikko &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="974"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Formatar o parágrafo como um título de nível 1.</translation>
+        <translation>Muotoile kappale 1. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="977"/>
@@ -1278,12 +1279,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="990"/>
         <source>Heading &amp;2</source>
-        <translation>Título &amp;2</translation>
+        <translation>Otsikko &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="993"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Formatar o parágrafo como um título de nível 2.</translation>
+        <translation>Muotoile kappale 2. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="996"/>
@@ -1293,12 +1294,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1009"/>
         <source>Heading &amp;3</source>
-        <translation>Título &amp;3</translation>
+        <translation>Otsikko &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1012"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Formatar o parágrafo como um título de nível 3.</translation>
+        <translation>Muotoile kappale 3. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1015"/>
@@ -1308,12 +1309,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1029"/>
         <source>Heading &amp;4</source>
-        <translation>Título &amp;4</translation>
+        <translation>Otsikko &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1032"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Formatar o parágrafo como um título de nível 4.</translation>
+        <translation>Muotoile kappale 4. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1035"/>
@@ -1323,12 +1324,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1048"/>
         <source>Heading &amp;5</source>
-        <translation>Título &amp;5</translation>
+        <translation>Otsikko &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Formatar o parágrafo como um título de nível 5.</translation>
+        <translation>Muotoile kappale 5. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1054"/>
@@ -1338,12 +1339,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1067"/>
         <source>Heading &amp;6</source>
-        <translation>Título &amp;6</translation>
+        <translation>Otsikko &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1070"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Formatar o parágrafo como um título de nível 6.</translation>
+        <translation>Muotoile kappale 6. tason otsikoksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1073"/>
@@ -1353,12 +1354,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1087"/>
         <source>&amp;Normal</source>
-        <translation>&amp;Normal</translation>
+        <translation>&amp;Normaali</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1090"/>
         <source>Format paragraph as a normal paragraph.</source>
-        <translation>Formatar parágrafo como um parágrafo normal.</translation>
+        <translation>Muotoile kappale normaaliksi kappaleeksi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1093"/>
@@ -1368,22 +1369,22 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1103"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Preservar Atributos Existentes</translation>
+        <translation>Säilytä &amp;olevat määritteet</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1106"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>Quando aplica este estilo, preserva quaisquer atributos existentes na tag</translation>
+        <translation>Säilytä tagiin liittyvät määritteet soveltaessasi tätä tyyliä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1116"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Selecionar Tudo</translation>
+        <translation>Valit&amp;se kaikki</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1119"/>
         <source>Select all text in the document.</source>
-        <translation>Seleciona todo o texto no documento.</translation>
+        <translation>Valitse dokumentin koko teksti</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1122"/>
@@ -1393,12 +1394,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1132"/>
         <source>&amp;Inspector</source>
-        <translation>&amp;Inspetor</translation>
+        <translation>&amp;Tutkinta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1135"/>
         <source>Inspect the page.</source>
-        <translation>Inspecionar a página</translation>
+        <translation>Tutki sivua.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1138"/>
@@ -1408,17 +1409,17 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1147"/>
         <source>Apply clips to page.</source>
-        <translation>Aplicar recortes na página.</translation>
+        <translation>Sovita leikkeitä sivulle.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1156"/>
         <source>ClipEditor ...</source>
-        <translation>Editor de Recortes ...</translation>
+        <translation>Leike-editori ...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1159"/>
         <source>Edit and Create Clips.</source>
-        <translation>Editar e Criar Recortes.</translation>
+        <translation>Muokkaa ja luo leikkeitä.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1162"/>
@@ -1428,17 +1429,17 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1168"/>
         <source>ClipBar Show/Hide</source>
-        <translation>Mostrar/Ocultar Barra de Recortes</translation>
+        <translation>Leikepalkki - Näytä/Piilota</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1171"/>
         <source>Show and Hide the Clip Toolbar.</source>
-        <translation>Mostrar e Ocultar a Barra de Recortes</translation>
+        <translation>Näytä ja piilota leiketyökalurivi.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1187"/>
         <source>Find text in the page</source>
-        <translation>Pesquise o texto na página</translation>
+        <translation>Etsi tekstiä sivulta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1190"/>
@@ -1448,102 +1449,102 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1203"/>
         <source>Next XHtml File</source>
-        <translation>Próximo arquivo XHtml</translation>
+        <translation>Seuraava XHtml-tiedosto</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1206"/>
         <source>Next file in navigation list</source>
-        <translation>Próximo arquivo na lista de navegação</translation>
+        <translation>Seuraava tiedosto navigointiluettelossa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1209"/>
         <source>Ctrl+PgDown</source>
-        <translation>Ctrl+PgDown</translation>
+        <translation>Ctrl+PageDown</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1222"/>
         <source>Previous XHtml File</source>
-        <translation>Arquivo XHtml anterior</translation>
+        <translation>Edellinen XHtml-tiedosto</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1225"/>
         <source>Previous file in navigation list</source>
-        <translation>Arquivo anterior na lista de navegação</translation>
+        <translation>Edellinen tiedosto navigointiluettelossa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1228"/>
         <source>Ctrl+PgUp</source>
-        <translation>Ctrl+PgUp</translation>
+        <translation>Ctrl+PageUp</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1244"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Alterne entre modos Edição e Previsualização</translation>
+        <translation>Vaihda muokkaus- ja esikatselutilojen välillä.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1254"/>
         <source>About...</source>
-        <translation>Sobre...</translation>
+        <translation>Tietoja...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1257"/>
         <source>Show information about PageEdit.</source>
-        <translation>Exiba informações sobre o PageEdit</translation>
+        <translation>Näytä tietoa Sivun muokkauksesta.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1267"/>
         <source>Back to Last Link</source>
-        <translation>Voltar ao último link</translation>
+        <translation>Takaisin viimeiseen linkkiin</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1270"/>
         <source>Return from the last link taken</source>
-        <translation>Volte do último link utilizado</translation>
+        <translation>Palaa edellisestä linkistä</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1280"/>
         <source>I&amp;D...</source>
-        <translation>I&amp;D...</translation>
+        <translation>Tunnis&amp;te</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1283"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation>Insira ou edite uma âncora com um nome identificador para usar o link como alvo.</translation>
+        <translation>Lisää tai muokkaa ankkuria, jolla on ID-nimi ja jota käytetään linkin kohteena.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1293"/>
         <source>&amp;Link...</source>
-        <translation>&amp;Link...</translation>
+        <translation>&amp;Linkki...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1296"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation>Insira ou edite uma âncora com um hiperlink para um alvo.</translation>
+        <translation>Lisää tai muokkaa ankkuria, jossa on hyperlinkki kohteeseen.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1306"/>
         <source>&amp;File...</source>
-        <translation>&amp;Arquivo...</translation>
+        <translation>&amp;Tiedosto...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1309"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation>Selecione um arquivo de imagem, vídeo ou áudio existente do seu livro para inserir no texto.</translation>
+        <translation>Valitse olemassa olevia kuva-, video- tai äänitiedostoja kirjastasi lisättäväksi tekstiin.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1312"/>
         <source>Ctrl+Shift+I</source>
-        <translation>Ctrl+Shift+I</translation>
+        <translation>Ctrl+Vaihto+I</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1318"/>
         <source>Clip &amp;1</source>
-        <translation>Recorte &amp;1</translation>
+        <translation>Leike &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1321"/>
         <source>Insert Clip 1</source>
-        <translation>Inserir Recorte 1</translation>
+        <translation>Liitä leike 1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1324"/>
@@ -1553,12 +1554,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1330"/>
         <source>Clip &amp;2</source>
-        <translation>Recorte &amp;2</translation>
+        <translation>Leike &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1333"/>
         <source>Insert Clip 2</source>
-        <translation>Inserir recorte 2</translation>
+        <translation>Liitä leike 2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1336"/>
@@ -1568,12 +1569,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1342"/>
         <source>Clip &amp;3</source>
-        <translation>Recorte &amp;3</translation>
+        <translation>Leike &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1345"/>
         <source>Insert Clip 3</source>
-        <translation>Inserir recorte 3</translation>
+        <translation>Liitä leike 3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1348"/>
@@ -1583,12 +1584,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1354"/>
         <source>Clip &amp;4</source>
-        <translation>Recorte &amp;4</translation>
+        <translation>Leike &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1357"/>
         <source>Insert Clip 4</source>
-        <translation>Inserir recorte 4</translation>
+        <translation>Liitä leike 4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1360"/>
@@ -1598,12 +1599,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1366"/>
         <source>Clip &amp;5</source>
-        <translation>Recorte &amp;5</translation>
+        <translation>Leike &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1369"/>
         <source>Insert Clip 5</source>
-        <translation>Inserir recorte 5</translation>
+        <translation>Liitä leike 5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1372"/>
@@ -1613,12 +1614,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1378"/>
         <source>Clip &amp;6</source>
-        <translation>Recorte &amp;6</translation>
+        <translation>Leike &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1381"/>
         <source>Insert Clip 6</source>
-        <translation>Inserir recorte 6</translation>
+        <translation>Liitä leike 6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1384"/>
@@ -1628,12 +1629,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1390"/>
         <source>Clip &amp;7</source>
-        <translation>Recorte &amp;7</translation>
+        <translation>Leike &amp;7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1393"/>
         <source>Insert Clip 7</source>
-        <translation>Inserir recorte 7</translation>
+        <translation>Liitä leike 7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1396"/>
@@ -1643,12 +1644,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1402"/>
         <source>Clip &amp;8</source>
-        <translation>Recorte &amp;8</translation>
+        <translation>Leike &amp;8</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1405"/>
         <source>Insert Clip 8</source>
-        <translation>Inserir recorte 8</translation>
+        <translation>Liitä leike 8</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1408"/>
@@ -1658,12 +1659,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1414"/>
         <source>Clip &amp;9</source>
-        <translation>Recorte &amp;9</translation>
+        <translation>Leike &amp;9</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1417"/>
         <source>Insert Clip 9</source>
-        <translation>Inserir recorte 9</translation>
+        <translation>Liitä leike 9</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1420"/>
@@ -1673,12 +1674,12 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1426"/>
         <source>Clip 1&amp;0</source>
-        <translation>Recorte 1&amp;0</translation>
+        <translation>Leike 1&amp;0</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1429"/>
         <source>Insert Clip 10</source>
-        <translation>Inserir recorte 10</translation>
+        <translation>Liitä leike 10</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1432"/>
@@ -1688,126 +1689,126 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../main.ui" line="1438"/>
         <source>Clip 11</source>
-        <translation>Recorte 11</translation>
+        <translation>Leike 11</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1441"/>
         <source>Insert Clip 11</source>
-        <translation>Inserir recorte 11</translation>
+        <translation>Liitä leike 11</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1447"/>
         <source>Clip 12</source>
-        <translation>Recorte 12</translation>
+        <translation>Leike 12</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1450"/>
         <source>Insert Clip 12</source>
-        <translation>Inserir recorte 12</translation>
+        <translation>Liitä leike 12</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1456"/>
         <source>Clip 13</source>
-        <translation>Recorte 13</translation>
+        <translation>Leike 13</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1459"/>
         <source>Insert Clip 13</source>
-        <translation>Inserir recorte 13</translation>
+        <translation>Liitä leike 13</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1465"/>
         <source>Clip 14</source>
-        <translation>Recorte 14</translation>
+        <translation>Leike 14</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1468"/>
         <source>Insert Clip 14</source>
-        <translation>Inserir recorte 14</translation>
+        <translation>Liitä leike 14</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1474"/>
         <source>Clip 15</source>
-        <translation>Recorte 15</translation>
+        <translation>Leike 15</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1477"/>
         <source>Insert Clip 15</source>
-        <translation>Inserir recorte 15</translation>
+        <translation>Liitä leike 15</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1483"/>
         <source>Clip 16</source>
-        <translation>Recorte 16</translation>
+        <translation>Leike 16</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1486"/>
         <source>Insert Clip 16</source>
-        <translation>Inserir recorte 16</translation>
+        <translation>Liitä leike 16</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1492"/>
         <source>Clip 17</source>
-        <translation>Recorte 17</translation>
+        <translation>Leike 17</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1495"/>
         <source>Insert Clip 17</source>
-        <translation>Inserir recorte 17</translation>
+        <translation>Liitä leike 17</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1501"/>
         <source>Clip 18</source>
-        <translation>Recorte 18</translation>
+        <translation>Leike 18</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1504"/>
         <source>Insert Clip 18</source>
-        <translation>Inserir recorte 18</translation>
+        <translation>Liitä leike 18</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1510"/>
         <source>Clip 19</source>
-        <translation>Recorte 19</translation>
+        <translation>Leike 19</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1513"/>
         <source>Insert Clip 19</source>
-        <translation>Inserir recorte 19</translation>
+        <translation>Liitä leike 19</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1519"/>
         <source>Clip 20</source>
-        <translation>Recorte 20</translation>
+        <translation>Leike 20</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1522"/>
         <source>Insert Clip 20</source>
-        <translation>Inserir recorte 20</translation>
+        <translation>Liitä leike 20</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="781"/>
         <location filename="../MainWindow.cpp~" line="781"/>
         <source>File load failed</source>
-        <translation>Falha no carregamento do aquivo</translation>
+        <translation>Tiedoston lataus epäonnistui</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="782"/>
         <location filename="../MainWindow.cpp~" line="782"/>
         <source>File Load Failed</source>
-        <translation>Falha no Carregamento do Arquivo</translation>
+        <translation>Tiedoston lataus epäonnistui</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="877"/>
         <location filename="../MainWindow.cpp~" line="877"/>
         <source>mode: Preview</source>
-        <translation>modo: Pré-visualização</translation>
+        <translation>tila: Esikatselu</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="879"/>
         <location filename="../MainWindow.cpp~" line="879"/>
         <source>mode: Edit</source>
-        <translation>modo:Edição</translation>
+        <translation>tila: Muokkaus</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1044"/>
@@ -1815,7 +1816,7 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Tem certeza de que deseja abrir este link no seu navegador?
+        <translation>Haluatko varmasti avata tämän linkin selaimessasi?
 
 %1</translation>
     </message>
@@ -1823,13 +1824,13 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1138"/>
         <location filename="../MainWindow.cpp~" line="1138"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Deseja salvar suas alterações antes de sair?</translation>
+        <translation>Haluatko tallentaa muutokset ennen lähtöasi?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1155"/>
         <location filename="../MainWindow.cpp~" line="1155"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit está fechando...</translation>
+        <translation>Muokkaustilan lopetus...</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1291"/>
@@ -1845,25 +1846,25 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp~" line="1303"/>
         <location filename="../MainWindow.cpp~" line="1304"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>Arquivo HTML (*.htm *.html *.xhtml)</translation>
+        <translation>HTML-tiedostot (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1294"/>
         <location filename="../MainWindow.cpp~" line="1294"/>
         <source>OPF files (*.opf)</source>
-        <translation>Arquivos OPF (*.opf)</translation>
+        <translation>OPF-tiedostot (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1295"/>
         <location filename="../MainWindow.cpp~" line="1295"/>
         <source>All files (*.*)</source>
-        <translation>Todos os arquivos (*.*)</translation>
+        <translation>Kaikki tiedostot (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1534"/>
         <location filename="../MainWindow.cpp~" line="1534"/>
         <source>Save File</source>
-        <translation>Salvar arquivo</translation>
+        <translation>Tallenna tiedosto</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1569"/>
@@ -1875,13 +1876,13 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp~" line="1582"/>
         <location filename="../MainWindow.cpp~" line="1583"/>
         <source>File Save-As Failed!</source>
-        <translation>Não foi possível salvar o arquivo com esse nome! Verifique se possui espaço suficiente em disco e os privilégios de escrita no diretório de destino.</translation>
+        <translation>Tallenna nimellä -toiminto epäonnistui!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1569"/>
         <location filename="../MainWindow.cpp~" line="1569"/>
         <source>is not writeable</source>
-        <translation>O destino não possui permissões de escrita/gravação. Escolha outra pasta.</translation>
+        <translation>ei ole kirjoitettavissa</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1578"/>
@@ -1889,7 +1890,7 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp~" line="1578"/>
         <location filename="../MainWindow.cpp~" line="1617"/>
         <source>File Saved</source>
-        <translation>Arquivo Salvo</translation>
+        <translation>Tiedosto tallentui</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1608"/>
@@ -1901,145 +1902,145 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp~" line="1621"/>
         <location filename="../MainWindow.cpp~" line="1622"/>
         <source>File Save Failed!</source>
-        <translation>Não foi possível salvar o arquivo! Verifique se possui espaço suficiente em disco e os privilégios de escrita no diretório de destino.</translation>
+        <translation>Tiedoston tallennus epäonnistui!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1609"/>
         <location filename="../MainWindow.cpp~" line="1609"/>
         <source>does not exist or is not writeable</source>
-        <translation>Destino inexistente. Verifique os privilégios de escrita/gravação no diretório.</translation>
+        <translation>ei ole olemassa tai ei ole kirjoitettavissa</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1638"/>
         <location filename="../MainWindow.cpp~" line="1638"/>
         <source>Do not show this warning again</source>
-        <translation>Não exiba este aviso novamente</translation>
+        <translation>Älä näytä tätä varoitusta uudelleen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1639"/>
         <location filename="../MainWindow.cpp~" line="1639"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation>Este arquivo pode não ser impresso da maneira que você imagina.</translation>
+        <translation>Tämä tiedosto ei ehkä tulostu odotetulla tavalla.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1640"/>
         <location filename="../MainWindow.cpp~" line="1640"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation>Fundos escuros e textos coloridos especificados no CSS de um Epub serão impressos assim.</translation>
+        <translation>EPUB:n CSS:llä käytetyt tummat taustat ja värillinen teksti tulostuvat.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1641"/>
         <location filename="../MainWindow.cpp~" line="1641"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation>Tenha cuidado, já que isto pode resultar na utilização de muita tinta!</translation>
+        <translation>Ole varovainen, sillä tämä voi johtaa siihen, että mustetta kuluu paljon!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1642"/>
         <location filename="../MainWindow.cpp~" line="1642"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation>Utilize a Pré visualização de Impressão para ver como ficará a impressão.</translation>
+        <translation>Käytä seuraavaa tulostuksen esikatselua nähdäksesi, miten tämä tiedosto tulostuu.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1643"/>
         <location filename="../MainWindow.cpp~" line="1643"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation>Marque a caixa se você não quiser ver este aviso no futuro.</translation>
+        <translation>Rastita ruutu, jos et halua nähdä tätä varoitusta tulevaisuudessa.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1666"/>
         <location filename="../MainWindow.cpp~" line="1666"/>
         <source>Feature not available before Qt5.12.x</source>
-        <translation>Recurso não disponível antes da versão Qt5.12.x</translation>
+        <translation>Ominaisuus ei ole käytettävissä ennen Qt5.12.x:ää.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1727"/>
         <location filename="../MainWindow.cpp~" line="1727"/>
         <source>File Opened</source>
-        <translation>Carregamento do arquivo concluído.</translation>
+        <translation>Tiedosto avautui</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1731"/>
         <location filename="../MainWindow.cpp~" line="1731"/>
         <source>File Open Failed!</source>
-        <translation>Falha ao abrir arquivo.</translation>
+        <translation>Tiedoston avaus epäonnistui!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1754"/>
         <location filename="../MainWindow.cpp~" line="1754"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Área de Transferência contem formatação HTML</translation>
+        <translation>Leikepöytä sisältää HTML-muotoilua</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1755"/>
         <location filename="../MainWindow.cpp~" line="1755"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Deseja colar os dados da área de transferência como texto puro?</translation>
+        <translation>Haluatko liittää leikepöydältä sisältöä pelkkänä tekstinä?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1831"/>
         <location filename="../MainWindow.cpp~" line="1831"/>
         <source>You must select text before inserting a new id.</source>
-        <translation>Você deve selecionar o texto antes de inserir um novo id.</translation>
+        <translation>Valitse teksti ennen uuden tunnisteen määrittelemistä.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1844"/>
         <location filename="../MainWindow.cpp~" line="1844"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
-        <translation>ID inválida - deve iniciar com letra, seguida de número _ : - ou .</translation>
+        <translation>Tunniste on virheellinen. Tunnisteen pitää alkaa kirjaimella, ja siinä saa olla kirjaimia, numeroita ja merkkejä ”_:-.”.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1850"/>
         <location filename="../MainWindow.cpp~" line="1850"/>
         <source>You cannot insert an id at this position.</source>
-        <translation>Você não pode inserir um id nesta posição</translation>
+        <translation>Et voi lisätä tähän paikkaan tunnistetta</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1864"/>
         <location filename="../MainWindow.cpp~" line="1864"/>
         <source>You must select text before inserting a new link.</source>
-        <translation>Você deve selecionar o texto antes de inserir um novo link.</translation>
+        <translation>Valitse teksti ennen uuden linkin luomista.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1877"/>
         <location filename="../MainWindow.cpp~" line="1877"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
-        <translation>O link é inválido - não pode conter &apos;&lt;&apos; ou &apos;&gt;&apos;</translation>
+        <translation>Linkki on virheellinen – ei voi sisältää merkkiä ”&lt;” tai ”&gt;”.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1883"/>
         <location filename="../MainWindow.cpp~" line="1883"/>
         <source>Error inserting external link target.</source>
-        <translation>Erro na inserção de uma URL externa de destino.</translation>
+        <translation>Virhe ulkoisen linkkikohteen lisäämisessä.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1891"/>
         <location filename="../MainWindow.cpp~" line="1891"/>
         <source>Error inserting a link at this position.</source>
-        <translation>Erro na inserção de um link neste local.</translation>
+        <translation>Virhe linkin lisäämisessä tähän kohtaan.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1902"/>
         <location filename="../MainWindow.cpp~" line="1902"/>
         <source>Insert File</source>
-        <translation>Inserir arquivo</translation>
+        <translation>Lisää tiedosto</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1946"/>
         <location filename="../MainWindow.cpp~" line="1946"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation>Você pode inserir um arquivo de mídia aqui.</translation>
+        <translation>Et voi lisätä mediatiedostoa tähän kohtaan.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2037"/>
         <location filename="../MainWindow.cpp~" line="2037"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Deseja salvar alterações antes de sobreescrever este arquivo?</translation>
+        <translation>Haluatko tallentaa muutokset ennen tämän tiedoston päälle kirjoittamista?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2089"/>
         <location filename="../MainWindow.cpp~" line="2089"/>
         <source>Pasted clip entry %1.</source>
-        <translation>Entrada recorte de %1 colada.</translation>
+        <translation>Liitettiin leike %1.</translation>
     </message>
 </context>
 <context>
@@ -2047,22 +2048,22 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Preferências</translation>
+        <translation>Asetukset</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="90"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>Muokkaustila</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="90"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Alterações terão efeito quando você reiniciar PageEdit.</translation>
+        <translation>Muutokset tulevat voimaan muokkaustilan käynnistämisen jälkeen.</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="152"/>
         <source>Open Preferences Location</source>
-        <translation>Abrir Localização de Preferências</translation>
+        <translation>Avaa asetusten kansio</translation>
     </message>
 </context>
 <context>
@@ -2072,65 +2073,65 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../OPFReader.cpp~" line="60"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Não foi possível ler o arquivo OPF.
-Linha: %1 Coluna %2 - %3</translation>
+        <translation>OPF-tiedostoa ei voi lukea.
+Rivi: %1 Sarake %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="392"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Não pode ler o arquivo %1:
+        <translation>Ei voi lukea tiedostoa %1:
 %2.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="581"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit encontrou um problema</translation>
+        <translation>Sivun muokkauksessa on syntynyt ongelma.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="582"/>
         <source>PageEdit may need to close.</source>
-        <translation>Pode ser necessário fechar PageEdit.</translation>
+        <translation>Sivunmuokkaustoiminto joutuu sulkemaan itsensä.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="884"/>
         <source>About PageEdit</source>
-        <translation>Sobre o PageEdit</translation>
+        <translation>Tietoa Sivun muokkauksesta</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="889"/>
         <source>Version</source>
-        <translation>Versão</translation>
+        <translation>Versio</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="890"/>
         <source>Build Date</source>
-        <translation>Data de construção</translation>
+        <translation>Valmistumispäivä</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="891"/>
         <source>Build Time</source>
-        <translation>Hora de construção</translation>
+        <translation>Valmistumisaika</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="892"/>
         <source>Qt Runtime Version</source>
-        <translation>Versão do Runtime do Qt</translation>
+        <translation>Qt-ajoaikaversio</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="893"/>
         <source>Qt Compiled Version</source>
-        <translation>Versão de Compilação do Qt</translation>
+        <translation>Qt:n käännetty versio</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="894"/>
         <source>System</source>
-        <translation>Sistema</translation>
+        <translation>Järjestelmä</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="895"/>
         <source>Architecture</source>
-        <translation>Arquitetura</translation>
+        <translation>Arkkitehtuuri</translation>
     </message>
 </context>
 <context>
@@ -2138,22 +2139,22 @@ Linha: %1 Coluna %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Pesquisa:</translation>
+        <translation>Etsi: </translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Pesquisa...</translation>
+        <translation>Etsi...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>Diferencie &amp;Maiúsculas de Minúsculas</translation>
+        <translation>&amp;Sama kirjainkoko</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="150"/>
         <source>No results found.</source>
-        <translation>Nenhum resultado encontrado.</translation>
+        <translation>Tuloksia ei löytynyt.</translation>
     </message>
 </context>
 <context>
@@ -2161,1252 +2162,1252 @@ Linha: %1 Coluna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Inserir Caractere Especial</translation>
+        <translation>Lisää erikoismerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="85"/>
         <source>non-breaking space</source>
-        <translation>espaço fixo</translation>
+        <translation>katkaisematon välilyönti</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="86"/>
         <source>en space</source>
-        <translation>espaço médio</translation>
+        <translation>n-väli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="87"/>
         <source>em space</source>
-        <translation>espaço grande</translation>
+        <translation>m-väli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="88"/>
         <source>thin space</source>
-        <translation>espaço pequeno</translation>
+        <translation>ohuke</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="89"/>
         <source>soft hyphen</source>
-        <translation>hífen suave</translation>
+        <translation>pehmeä tavuviiva</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="90"/>
         <source>narrow non-breaking space</source>
-        <translation>espaço fixo pequeno</translation>
+        <translation>kapea katkaisematon välilyönti</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="94"/>
         <source>left single quote</source>
-        <translation>abre aspas simples</translation>
+        <translation>vasen yksittäinen lainausmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="95"/>
         <source>right single quote</source>
-        <translation>fecha aspas simples</translation>
+        <translation>oikea yksittäinen lainausmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="96"/>
         <source>left double quote</source>
-        <translation>abre aspas duplas</translation>
+        <translation>vasen kaksinkertainen lainausmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="97"/>
         <source>right double quote</source>
-        <translation>fecha aspas duplas</translation>
+        <translation>oikea kaksinkertainen lainausmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="98"/>
         <source>left-pointing single angle quote</source>
-        <translation>marca de aspas de ângulo esquerdo único</translation>
+        <translation>vasemmalle osoittava yhden kulman lainaus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="99"/>
         <source>right-pointing single angle quote</source>
-        <translation>marca de aspas de ângulo direito único</translation>
+        <translation>oikealle osoittava yhden kulman lainaus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="100"/>
         <source>left-pointing double angle quote</source>
-        <translation>marca de aspas de ângulo duplo de direção esquerda</translation>
+        <translation>vasemmalle osoittava kaksoiskulmalainaus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="101"/>
         <source>right-pointing double angle quote</source>
-        <translation>marca de aspas de ângulo duplo de direção direita</translation>
+        <translation>oikealle osoittava kaksoiskulmalainaus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="102"/>
         <source>apostrophe</source>
-        <translation>apóstrofe</translation>
+        <translation>heittomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="103"/>
         <source>double quote</source>
-        <translation>aspas duplas</translation>
+        <translation>kaksoislainausmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="104"/>
         <source>single low-9 quote</source>
-        <translation>baixa aspas simples</translation>
+        <translation>yksittäinen matala-9 lainaus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="105"/>
         <source>double low-9 quote</source>
-        <translation>marca de vírgula dupla baixa</translation>
+        <translation>kaksois matala-9 lainaus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="106"/>
         <source>em dash</source>
-        <translation>travessão grande</translation>
+        <translation>pitkä ajatusviiva</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="107"/>
         <source>en dash</source>
-        <translation>travessão médio</translation>
+        <translation>ajatusviiva</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="108"/>
         <source>section sign</source>
-        <translation>Sinal de parágrafo</translation>
+        <translation>pykälämerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="109"/>
         <source>pilcrow - paragraph sign</source>
-        <translation>pilcrow - sinal de parágrafo</translation>
+        <translation>pilcrow - kappale merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="110"/>
         <source>dagger</source>
-        <translation>adaga</translation>
+        <translation>dagger</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="111"/>
         <source>double dagger</source>
-        <translation>adaga dupla</translation>
+        <translation>kaksois-dagger</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="112"/>
         <source>ampersand</source>
-        <translation>e comercial</translation>
+        <translation>et-merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="113"/>
         <source>less-than sign</source>
-        <translation>sinal menor que</translation>
+        <translation>pienempi kuin -merkk</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="114"/>
         <source>greater-than sign</source>
-        <translation>sinal maior que</translation>
+        <translation>suurempi kuin -merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="115"/>
         <source>copyright</source>
-        <translation>direitos autorais</translation>
+        <translation>tekijänoikeus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="116"/>
         <source>registered sign</source>
-        <translation>símbolo registrado</translation>
+        <translation>rekisteröidyn tavaramerkin merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="117"/>
         <source>trademark symbol</source>
-        <translation>Símbolo de marca registrada</translation>
+        <translation>tavaramerkin symboli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="118"/>
         <source>left arrow</source>
-        <translation>seta à esquerda</translation>
+        <translation>vasen nuoli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="119"/>
         <source>right arrow</source>
-        <translation>seta à direita</translation>
+        <translation>oikea nuoli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="120"/>
         <source>bullet</source>
-        <translation>bala</translation>
+        <translation>luetelmapallo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="121"/>
         <source>middle dot</source>
-        <translation>Ponto mediano</translation>
+        <translation>rivinkeskinen piste</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="122"/>
         <source>degree sign</source>
-        <translation>sinal do grau</translation>
+        <translation>asteen merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="123"/>
         <source>plus minus sign</source>
-        <translation>sinal mais ou menos</translation>
+        <translation>plus miinus-merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="124"/>
         <source>minus sign</source>
-        <translation>sinal de subtração</translation>
+        <translation>miinusmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="125"/>
         <source>multiplication sign</source>
-        <translation>sinal de multiplicação</translation>
+        <translation>kertomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="126"/>
         <source>division sign</source>
-        <translation>sinal de divisão</translation>
+        <translation>jakomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="127"/>
         <source>fraction 1/4</source>
-        <translation>fração 1/4</translation>
+        <translation>murto-osa 1/4</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="128"/>
         <source>fraction 1/2</source>
-        <translation>fração 1/2</translation>
+        <translation>murto-osa 1/2</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="129"/>
         <source>fraction 3/4</source>
-        <translation>fração 3/4</translation>
+        <translation>murto-osa 3/4</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="130"/>
         <source>fraction 1/3</source>
-        <translation>fração 1/3</translation>
+        <translation>murto-osa 1/3</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="131"/>
         <source>fraction 2/3</source>
-        <translation>fração 2/3</translation>
+        <translation>murto-osa 2/3</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="132"/>
         <source>fraction 1/8</source>
-        <translation>fração 1/8</translation>
+        <translation>murto-osa 1/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="133"/>
         <source>fraction 3/8</source>
-        <translation>fração 3/8</translation>
+        <translation>murto-osa 3/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="134"/>
         <source>fraction 5/8</source>
-        <translation>fração 5/8</translation>
+        <translation>fraktio 5/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="135"/>
         <source>fraction 7/8</source>
-        <translation>fração 7/8</translation>
+        <translation>murto-osa 7/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="136"/>
         <source>horizontal ellipsis</source>
-        <translation>elipses horizontais</translation>
+        <translation>vaakasuora ellipsi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="137"/>
         <source>micron</source>
-        <translation>sinal de micro</translation>
+        <translation>mikroni</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="138"/>
         <source>cent sign</source>
-        <translation>símbolo de centavo</translation>
+        <translation>sentin merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="139"/>
         <source>pound sign</source>
-        <translation>sinal de Libra</translation>
+        <translation>punnan merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="140"/>
         <source>euro sign</source>
-        <translation>símbolo euro</translation>
+        <translation>euron merkk</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="141"/>
         <source>inverted question mark</source>
-        <translation>interrogação invertido</translation>
+        <translation>käänteinen huutomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="142"/>
         <source>inverted exclamation mark</source>
-        <translation>marca de exclamação invertida</translation>
+        <translation>käänteinen huutomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="143"/>
         <source>diaeresis</source>
-        <translation>trema</translation>
+        <translation>treema</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="144"/>
         <source>acute accent</source>
-        <translation>acento agudo</translation>
+        <translation>akuutti</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="145"/>
         <source>cedilla</source>
-        <translation>cedilha</translation>
+        <translation>sedilji</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="146"/>
         <source>circumflex accent</source>
-        <translation>acento circunflexo</translation>
+        <translation>circumflex aksentti</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="147"/>
         <source>small tilde</source>
-        <translation>pequeno til</translation>
+        <translation>pieni tilde</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="148"/>
         <source>capital A with grave</source>
-        <translation>Letra A maiúscula com acento grave</translation>
+        <translation>capital A with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="149"/>
         <source>capital A with acute</source>
-        <translation>Letra A maiúscula com acento agudo</translation>
+        <translation>capital A with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="150"/>
         <source>capital A with circumflex</source>
-        <translation>Letra A maiúscula com acento circunflexo</translation>
+        <translation>capital A with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="151"/>
         <source>capital A with tilde</source>
-        <translation>Letra A maiúscula com til</translation>
+        <translation>capital A with tilde</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="152"/>
         <source>capital A with diaeresis</source>
-        <translation>Letra A maiúscula com trema</translation>
+        <translation>capital A with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="153"/>
         <source>capital A with ring above</source>
-        <translation>letra A maiúscula com anel acima</translation>
+        <translation>capital A with ring above</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="154"/>
         <source>capital AE</source>
-        <translation>Letra latina AE maiúscula</translation>
+        <translation>capital AE</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="155"/>
         <source>capital C with cedilla</source>
-        <translation>Letra C maiúscula com cedilha</translation>
+        <translation>capital C with cedilla</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="156"/>
         <source>capital E with grave</source>
-        <translation>Letra E maiúscula com acento grave</translation>
+        <translation>capital E with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="157"/>
         <source>capital E with acute</source>
-        <translation>Letra E maiúscula com acento agudo</translation>
+        <translation>capital E with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="158"/>
         <source>capital E with circumflex</source>
-        <translation>Letra E maiúscula com acento circunflexo</translation>
+        <translation>capital E with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="159"/>
         <source>capital E with diaeresis</source>
-        <translation>Letra E maiúscula com trema</translation>
+        <translation>capital E with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="160"/>
         <source>capital I with grave</source>
-        <translation>Letra I maiúscula com acento grave</translation>
+        <translation>capital I with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="161"/>
         <source>capital I with acute</source>
-        <translation>Letra I maiúscula com acento agudo</translation>
+        <translation>capital I with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="162"/>
         <source>capital I with circumflex</source>
-        <translation>Letra I maiúscula com acento circunflexo</translation>
+        <translation>capital I with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="163"/>
         <source>capital I with diaeresis</source>
-        <translation>Letra I maiúscula com trema</translation>
+        <translation>capital I with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="164"/>
         <source>capital eth</source>
-        <translation>Letra latina Eth maiúscula</translation>
+        <translation>capital eth</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="165"/>
         <source>capital N with tilde</source>
-        <translation>Letra N maiúscula com til</translation>
+        <translation>capital N with tilde</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="166"/>
         <source>capital O with grave</source>
-        <translation>Letra O maiúscula com acento grave</translation>
+        <translation>capital O with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="167"/>
         <source>capital O with acute</source>
-        <translation>Letra O maiúscula com acento agudo</translation>
+        <translation>capital O with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="168"/>
         <source>capital O with circumflex</source>
-        <translation>Letra O maiúscula com acento circunflexo</translation>
+        <translation>capital O with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="169"/>
         <source>capital O with tilde</source>
-        <translation>Letra O maiúscula com til</translation>
+        <translation>capital O with tilde</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="170"/>
         <source>capital O with diaeresis</source>
-        <translation>Letra O maiúscula com trema</translation>
+        <translation>capital O with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="171"/>
         <source>capital O with stroke</source>
-        <translation>Letra O maiúscula com barra normal</translation>
+        <translation>capital O with stroke</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="172"/>
         <source>capital ligature OE</source>
-        <translation>Letra latina maiúscula OE ligado</translation>
+        <translation>capital ligature OE</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="173"/>
         <source>capital S with caron</source>
-        <translation>Letra S maiúscula com caron</translation>
+        <translation>capital S with caron</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="174"/>
         <source>capital U with grave</source>
-        <translation>Letra U maiúscula com acento grave</translation>
+        <translation>capital U with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="175"/>
         <source>capital U with acute</source>
-        <translation>Letra U maiúscula com acento agudo</translation>
+        <translation>capital U with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="176"/>
         <source>capital U with circumflex</source>
-        <translation>Letra U maiúscula com acento circunflexo</translation>
+        <translation>capital U with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="177"/>
         <source>capital U with diaeresis</source>
-        <translation>Letra U maiúscula com trema</translation>
+        <translation>capital U with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="178"/>
         <source>capital Y with acute</source>
-        <translation>Letra Y maiúscula com acento agudo</translation>
+        <translation>capital Y with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="179"/>
         <source>capital Y with diaeresis</source>
-        <translation>Letra Y maiúscula com trema</translation>
+        <translation>capital Y with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="180"/>
         <source>capital THORN</source>
-        <translation>Letra latina THORN maiúscula</translation>
+        <translation>capital THORN</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="181"/>
         <source>small sharp s</source>
-        <translation>Letra minúscula latina afiada s - eszett</translation>
+        <translation>small sharp s</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="182"/>
         <source>small a with grave</source>
-        <translation>Letra a minúscula com acento grave</translation>
+        <translation>small a with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="183"/>
         <source>small a with acute</source>
-        <translation>Letra a minúscula com acento agudo</translation>
+        <translation>small a with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="184"/>
         <source>small a with circumflex</source>
-        <translation>Letra a minúscula com acento circunflexo</translation>
+        <translation>small a with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="185"/>
         <source>small a with tilde</source>
-        <translation>Letra a minúscula com til</translation>
+        <translation>small a with tilde</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="186"/>
         <source>small a with diaeresis</source>
-        <translation>Letra a minúscula com trema</translation>
+        <translation>small a with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="187"/>
         <source>small a with ring above</source>
-        <translation>letra A minúscula com anel acima</translation>
+        <translation>small a with ring above</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="188"/>
         <source>small ae</source>
-        <translation>Letra latina ae minúscula</translation>
+        <translation>small ae</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="189"/>
         <source>small c with cedilia</source>
-        <translation>Letra c minúscula com cedilha</translation>
+        <translation>small c with cedilia</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="190"/>
         <source>small e with grave</source>
-        <translation>Letra e minúscula com acento grave</translation>
+        <translation>small e with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="191"/>
         <source>small e with acute</source>
-        <translation>Letra e minúscula com acento agudo</translation>
+        <translation>small e with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="192"/>
         <source>small e with circumflex</source>
-        <translation>Letra e minúscula com acento circunflexo</translation>
+        <translation>small e with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="193"/>
         <source>small e with diaeresis</source>
-        <translation>Letra e minúscula com trema</translation>
+        <translation>small e with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="194"/>
         <source>small i with grave</source>
-        <translation>Letra i minúscula com acento grave</translation>
+        <translation>small i with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="195"/>
         <source>small i with acute</source>
-        <translation>Letra i minúscula com acento agudo</translation>
+        <translation>small i with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="196"/>
         <source>small i with circumflex</source>
-        <translation>Letra i minúscula com acento circunflexo</translation>
+        <translation>small i with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="197"/>
         <source>small i with diaeresis</source>
-        <translation>Letra I minúscula com trema</translation>
+        <translation>small i with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="198"/>
         <source>small eth</source>
-        <translation>Letra latina eth minúscula</translation>
+        <translation>small eth</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="199"/>
         <source>small n with tilde</source>
-        <translation>Letra n minúscula com til</translation>
+        <translation>small n with tilde</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="200"/>
         <source>small o with grave</source>
-        <translation>Letra o minúscula com acento grave</translation>
+        <translation>small o with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="201"/>
         <source>small o with acute</source>
-        <translation>Letra o minúscula com acento agudo</translation>
+        <translation>small o with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="202"/>
         <source>small o with circumflex</source>
-        <translation>Letra o minúscula com acento circunflexo</translation>
+        <translation>small o with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="203"/>
         <source>small o with tilde</source>
-        <translation>Letra o minúscula com til</translation>
+        <translation>small o with tilde</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="204"/>
         <source>small o with diaeresis</source>
-        <translation>Letra o minúscula com trema</translation>
+        <translation>small o with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="205"/>
         <source>small o with stroke</source>
-        <translation>Letra o minúscula com barra normal</translation>
+        <translation>small o with stroke</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="206"/>
         <source>small ligature oe</source>
-        <translation>Letra latina minúscula oe ligado</translation>
+        <translation>small ligature oe</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="207"/>
         <source>small s with caron</source>
-        <translation>Letra s minúscula com caron</translation>
+        <translation>small s with caron</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="208"/>
         <source>small u with grave</source>
-        <translation>Letra u minúscula com acento grave</translation>
+        <translation>small u with grave</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="209"/>
         <source>small u with acute</source>
-        <translation>Letra u minúscula com acento agudo</translation>
+        <translation>small u with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="210"/>
         <source>small u with circumflex</source>
-        <translation>Letra u minúscula com acento circunflexo</translation>
+        <translation>small u with circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="211"/>
         <source>small u with diaeresis</source>
-        <translation>Letra u minúscula com trema</translation>
+        <translation>small u with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="212"/>
         <source>small y with acute</source>
-        <translation>Letra y minúscula com acento agudo</translation>
+        <translation>small y with acute</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="213"/>
         <source>small y with diaeresis</source>
-        <translation>Letra y minúscula com trema</translation>
+        <translation>small y with diaeresis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="214"/>
         <source>small thorn</source>
-        <translation>Letra latina THORN minúscula</translation>
+        <translation>small thorn</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="215"/>
         <source>feminine ordinal indicator</source>
-        <translation>indicador ordinal feminino</translation>
+        <translation>feminine ordinal indicator</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="216"/>
         <source>masculine ordinal indicator</source>
-        <translation>indicador ordinal masculino</translation>
+        <translation>maskuliininen järjestysluku</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="217"/>
         <source>infinity</source>
-        <translation>infinito</translation>
+        <translation>äärettömän merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="221"/>
         <source>Greek capital letter Alpha</source>
-        <translation>Letra grega Alpha maiúscula</translation>
+        <translation>versaali alfa</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="222"/>
         <source>Greek lower letter alpha</source>
-        <translation>Letra grega alpha minúscula</translation>
+        <translation>Greek lower letter alpha</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="223"/>
         <source>Greek capital letter Beta</source>
-        <translation>Letra grega Beta maiúscula</translation>
+        <translation>versaali beeta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="224"/>
         <source>Greek lower letter beta</source>
-        <translation>Letra grega beta minúscula</translation>
+        <translation>Greek lower letter beta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="225"/>
         <source>Greek capital letter Chi</source>
-        <translation>Letra grega Chi maiúscula</translation>
+        <translation>versaali khii</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="226"/>
         <source>Greek lower letter chi</source>
-        <translation>Letra grega chi minúscula</translation>
+        <translation>Greek lower letter chi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="227"/>
         <source>Greek capital letter Delta</source>
-        <translation>Letra grega Delta maiúscula</translation>
+        <translation>versaali delta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="228"/>
         <source>Greek lower letter delta</source>
-        <translation>Letra grega delta minúscula</translation>
+        <translation>Greek lower letter delta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="229"/>
         <source>Greek capital letter Epsilon</source>
-        <translation>Letra grega Epsilon maiúscula</translation>
+        <translation>versaali epsilon</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="230"/>
         <source>Greek lower letter epsilon</source>
-        <translation>Letra grega epsilon minúscula</translation>
+        <translation>Greek lower letter epsilon</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="231"/>
         <source>Greek capital letter Eta</source>
-        <translation>Letra grega Eta maiúscula</translation>
+        <translation>versaali eeta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="232"/>
         <source>Greek lower letter eta</source>
-        <translation>Letra grega eta minúscula</translation>
+        <translation>Greek lower letter eta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="233"/>
         <source>Greek capital letter Gamma</source>
-        <translation>Letra grega Gama maiúscula</translation>
+        <translation>versaali gamma</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="234"/>
         <source>Greek lower letter gamma</source>
-        <translation>Letra grega gama minúscula</translation>
+        <translation>Greek lower letter gamma</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="235"/>
         <source>Greek capital letter Iota</source>
-        <translation>Letra grega Iota maiúscula</translation>
+        <translation>versaali ioota</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="236"/>
         <source>Greek lower letter iota</source>
-        <translation>Letra grega iota minúscula</translation>
+        <translation>Greek lower letter iota</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="237"/>
         <source>Greek capital letter Kappa</source>
-        <translation>Letra grega Kapa maiúscula</translation>
+        <translation>versaali kappa</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="238"/>
         <source>Greek lower letter kappa</source>
-        <translation>Letra grega kapa minúscula</translation>
+        <translation>Greek lower letter kappa</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="239"/>
         <source>Greek capital letter Lambda</source>
-        <translation>Letra grega Lambda maiúscula</translation>
+        <translation>versaali lambda</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="240"/>
         <source>Greek lower letter lambda</source>
-        <translation>Letra grega lambda minúscula</translation>
+        <translation>Greek lower letter lambda</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="241"/>
         <source>Greek capital letter Mu</source>
-        <translation>Letra grega Mu maiúscula</translation>
+        <translation>versaali myy</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="242"/>
         <source>Greek lower letter mu</source>
-        <translation>Letra grega mu minúscula</translation>
+        <translation>Greek lower letter mu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="243"/>
         <source>Greek capital letter Nu</source>
-        <translation>Letra grega Nu maiúscula</translation>
+        <translation>versaali nyy</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="244"/>
         <source>Greek lower letter nu</source>
-        <translation>Letra grega minúscula nu</translation>
+        <translation>Greek lower letter nu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="245"/>
         <source>Greek capital letter Omega</source>
-        <translation>Letra grega Omega maiúscula</translation>
+        <translation>kreikkalainen versaalikirjain oomega</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="246"/>
         <source>Greek lower letter omega</source>
-        <translation>Letra grega omega minúscula</translation>
+        <translation>Greek lower letter omega</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="247"/>
         <source>Greek capital letter Omicron</source>
-        <translation>Letra grega Omicron maiúscula</translation>
+        <translation>versaali omikron</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="248"/>
         <source>Greek lower letter omicron</source>
-        <translation>Letra grega omicron minúscula</translation>
+        <translation>Greek lower letter omicron</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="249"/>
         <source>Greek capital letter Phi</source>
-        <translation>Letra grega Phi maiúscula</translation>
+        <translation>versaali fi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="250"/>
         <source>Greek lower letter phi</source>
-        <translation>Letra grega phi minúscula</translation>
+        <translation>Greek lower letter phi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="251"/>
         <source>Greek capital letter Pi</source>
-        <translation>Letra grega Pi maiúscula</translation>
+        <translation>versaali pii</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="252"/>
         <source>Greek lower letter pi</source>
-        <translation>Letra grega pi minúscula</translation>
+        <translation>Greek lower letter pi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="253"/>
         <source>Greek double prime</source>
-        <translation>Caractere grego Prime duplo</translation>
+        <translation>Greek double prime</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="254"/>
         <source>Greek single prime</source>
-        <translation>Caractere grego Prime simples</translation>
+        <translation>Greek single prime</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="255"/>
         <source>Greek capital letter Psi</source>
-        <translation>Letra grega Psi maiúscula</translation>
+        <translation>versaali psii</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="256"/>
         <source>Greek lower letter psi</source>
-        <translation>Letra grega psi minúscula</translation>
+        <translation>Greek lower letter psi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="257"/>
         <source>Greek capital letter Rho</source>
-        <translation>Letra grega Rho maiúscula</translation>
+        <translation>versaali roo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="258"/>
         <source>Greek lower letter rho</source>
-        <translation>Letra grega rho minúscula</translation>
+        <translation>Greek lower letter rho</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="259"/>
         <source>Greek capital letter Sigma</source>
-        <translation>Letra grega Sigma maiúscula</translation>
+        <translation>versaali sigma</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="260"/>
         <source>Greek lower letter sigma</source>
-        <translation>Letra grega sigma minúscula</translation>
+        <translation>Greek lower letter sigma</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="261"/>
         <source>Greek capital letter Tau</source>
-        <translation>Letra grega Tau maiúscula</translation>
+        <translation>versaali tau</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="262"/>
         <source>Greek lower letter tau</source>
-        <translation>Letra grega tau minúscula</translation>
+        <translation>Greek lower letter tau</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="263"/>
         <source>Greek capital letter Theta</source>
-        <translation>Letra grega Theta maiúscula</translation>
+        <translation>versaali theeta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="264"/>
         <source>Greek lower letter theta</source>
-        <translation>Letra grega theta minúscula</translation>
+        <translation>Greek lower letter theta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="265"/>
         <source>Greek capital letter Upsilon</source>
-        <translation>Letra grega Upsilon maiúscula</translation>
+        <translation>versaali ypsilon</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="266"/>
         <source>Greek lower letter upsilon</source>
-        <translation>Letra grega upsilon minúscula</translation>
+        <translation>Greek lower letter upsilon</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="267"/>
         <source>Greek capital letter Xi</source>
-        <translation>Letra grega Xi maiúscula</translation>
+        <translation>versaali ksii</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="268"/>
         <source>Greek lower letter xi</source>
-        <translation>Letra grega xi minúscula</translation>
+        <translation>Greek lower letter xi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="269"/>
         <source>Greek capital letter Zeta</source>
-        <translation>Letra grega Zeta maiúscula</translation>
+        <translation>versaali zeeta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="270"/>
         <source>Greek lower letter zeta</source>
-        <translation>Letra grega zeta minúscula</translation>
+        <translation>Greek lower letter zeta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="274"/>
         <source>alef symbol</source>
-        <translation>Símbolo Aleph</translation>
+        <translation>alef-symboli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="275"/>
         <source>logical and</source>
-        <translation>lógico e</translation>
+        <translation>looginen ja-merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="276"/>
         <source>logical or</source>
-        <translation>lógico ou</translation>
+        <translation>looginen tai-merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="277"/>
         <source>intersection</source>
-        <translation>intersecção</translation>
+        <translation>leikkaus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="278"/>
         <source>union</source>
-        <translation>união</translation>
+        <translation>yhdisteen merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="279"/>
         <source>congruent to</source>
-        <translation>congruente a</translation>
+        <translation>isomorfiamerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="280"/>
         <source>downwards arrow with corner leftwards</source>
-        <translation>seta para baixo com curva à esquerda</translation>
+        <translation>nuoli alas ja vasemmalle</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="281"/>
         <source>currency sign</source>
-        <translation>símbolo de moeda</translation>
+        <translation>valuuttamerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="282"/>
         <source>downwards double arrow</source>
-        <translation>seta dupla para baixo</translation>
+        <translation>kaksoisnuoli alas</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="283"/>
         <source>upwards double arrow</source>
-        <translation>seta dupla para cima</translation>
+        <translation>kaksoisnuoli ylös</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="284"/>
         <source>downwards arrow</source>
-        <translation>seta para baixo</translation>
+        <translation>nuoli alas</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="285"/>
         <source>upwards arrow</source>
-        <translation>seta para cima</translation>
+        <translation>nuoli ylös</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="286"/>
         <source>empty set</source>
-        <translation>conjunto vazio</translation>
+        <translation>tyhjä joukko</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="287"/>
         <source>identical to</source>
-        <translation>idêntico a</translation>
+        <translation>identtisyysmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="288"/>
         <source>there exists</source>
-        <translation>há</translation>
+        <translation>olemassaolokvanttori</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="289"/>
         <source>Latin small letter f with hook</source>
-        <translation>Letra f minúscula pequena com gancho</translation>
+        <translation>koukullinen gemena-s. guldenin merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="290"/>
         <source>for all</source>
-        <translation>para todos</translation>
+        <translation>kaikkikvanttori</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="291"/>
         <source>fraction slash</source>
-        <translation>barra de fração</translation>
+        <translation>murtoluvun vinoviiva</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="292"/>
         <source>left right double arrow</source>
-        <translation>seta dupla à esquerda</translation>
+        <translation>kaksoisnuoli vasemmalle ja oikealle</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="293"/>
         <source>left right single arrow</source>
-        <translation>seta esquerda direita</translation>
+        <translation>vasen oikea yksittäinen nuoli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="294"/>
         <source>black-letter capital I</source>
-        <translation>letra maiúscula I</translation>
+        <translation>fraktuuran versaali-i</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="295"/>
         <source>integral</source>
-        <translation>integral</translation>
+        <translation>integraalimerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="296"/>
         <source>element of</source>
-        <translation>elemento de</translation>
+        <translation>joukkoon kuulumisen merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="297"/>
         <source>leftwards double arrow</source>
-        <translation>seta dupla para a esquerda</translation>
+        <translation>kaksoisnuoli vasemmalle</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="298"/>
         <source>double right arrow</source>
-        <translation>seta dupla para a direita</translation>
+        <translation>kaksinkertainen oikea nuoli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="299"/>
         <source>left-pointing angle bracket</source>
-        <translation>seta à esquerda angulada</translation>
+        <translation>vasemmalle osoittava kulmasulje</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="300"/>
         <source>right-pointing angle bracket</source>
-        <translation>seta à direita angulada</translation>
+        <translation>oikealle osoittava kulmasulje</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="301"/>
         <source>left ceiling</source>
-        <translation>teto esquerdo</translation>
+        <translation>vasen katto</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="302"/>
         <source>right ceiling</source>
-        <translation>teto direito</translation>
+        <translation>oikea katto</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="303"/>
         <source>less-than or equal to</source>
-        <translation>menor que ou igual a</translation>
+        <translation>pienempi tai yhtä suuri kuin -merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="304"/>
         <source>greater-than or equal to</source>
-        <translation>maior que ou igual a</translation>
+        <translation>suurempi kuin tai yhtä suuri kuin -merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="305"/>
         <source>left floor</source>
-        <translation>piso esquerdo</translation>
+        <translation>vasen lattia</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="306"/>
         <source>right floor</source>
-        <translation>piso direito</translation>
+        <translation>oikea lattia</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="307"/>
         <source>asterisk operator</source>
-        <translation>operador asterisco</translation>
+        <translation>asteriskioperaattori</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="308"/>
         <source>lozenge</source>
-        <translation>losango</translation>
+        <translation>vinoneliö</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="309"/>
         <source>macron</source>
-        <translation>sinal de vogal longa</translation>
+        <translation>pituusmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="310"/>
         <source>nabla</source>
-        <translation>símbolo nabla, operador diferencial</translation>
+        <translation>nabla</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="311"/>
         <source>not equal to</source>
-        <translation>não-igual a</translation>
+        <translation>erisuuruusmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="312"/>
         <source>contains as member</source>
-        <translation>contém como membro</translation>
+        <translation>sisältää alkion -merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="313"/>
         <source>not sign</source>
-        <translation>sinal de não</translation>
+        <translation>negaatiomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="314"/>
         <source>not an element of</source>
-        <translation>não é um elemento de</translation>
+        <translation>joukkoon kuulumattomuuden merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="315"/>
         <source>not a subset of</source>
-        <translation>não é subconjunto de</translation>
+        <translation>osajoukkosuhteen negaati</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="316"/>
         <source>overline</source>
-        <translation>espaçamento overscore</translation>
+        <translation>yläviiva</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="317"/>
         <source>circled plus</source>
-        <translation>circulado mais</translation>
+        <translation>ympyrässä oleva plus</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="318"/>
         <source>circled times</source>
-        <translation>tempos circulados</translation>
+        <translation>ympyrässä oleva kertomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="319"/>
         <source>partial differential</source>
-        <translation>diferencial parcial</translation>
+        <translation>osittaisderivaatta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="320"/>
         <source>per mille sign</source>
-        <translation>por mil</translation>
+        <translation>promillemerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="321"/>
         <source>up tack</source>
-        <translation>até a aderência</translation>
+        <translation>ylös osoittava rasti</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="322"/>
         <source>Greek pi symbol</source>
-        <translation>Símbolo grego pi</translation>
+        <translation>pii-symboli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="323"/>
         <source>n-ary product</source>
-        <translation>sinal de produto</translation>
+        <translation>tulo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="324"/>
         <source>proportional to</source>
-        <translation>proporcional a</translation>
+        <translation>verrannollisuusmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="325"/>
         <source>square root</source>
-        <translation>raiz quadrada</translation>
+        <translation>neliöjuuri</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="326"/>
         <source>black-letter capital R</source>
-        <translation>letra maiúscula R</translation>
+        <translation>fraktuuran versaali-r</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="327"/>
         <source>dot operator</source>
-        <translation>operador ponto</translation>
+        <translation>kertopiste</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="328"/>
         <source>Greek small letter final sigma</source>
-        <translation>Letra grega sigma final minúscula</translation>
+        <translation>gemena sananloppuinen sigma</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="329"/>
         <source>tilde operator</source>
-        <translation>operador til</translation>
+        <translation>tildeoperaattori</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="330"/>
         <source>subset of</source>
-        <translation>subconjunto de</translation>
+        <translation>osajoukkomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="331"/>
         <source>superset of</source>
-        <translation>superconjunto de</translation>
+        <translation>sisältyvyysmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="332"/>
         <source>subset of or equal to</source>
-        <translation>subconjunto de ou igual a</translation>
+        <translation>samuuden salliva osajoukkomerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="333"/>
         <source>superset of or equal to</source>
-        <translation>superconjunto de ou igual a</translation>
+        <translation>samuuden salliva sisältyvyysmerkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="334"/>
         <source>n-ary summation</source>
-        <translation>sinal de somatória</translation>
+        <translation>summa</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="335"/>
         <source>superscript one</source>
-        <translation>um superescrito</translation>
+        <translation>yläindeksi yksi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="336"/>
         <source>superscript two</source>
-        <translation>dois superescrito</translation>
+        <translation>yläindeksi kaksi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="337"/>
         <source>superscript three</source>
-        <translation>três superescrito</translation>
+        <translation>yläindeksi kolme</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="338"/>
         <source>therefore sign</source>
-        <translation>sinal de portanto</translation>
+        <translation>siis-merkki</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="339"/>
         <source>Greek theta symbol</source>
-        <translation>Letra grega theta minúscula</translation>
+        <translation>theeta-symboli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="340"/>
         <source>Greek Upsilon with hook symbol</source>
-        <translation>Letra grega upsilon com símbolo de gancho</translation>
+        <translation>koukullinen ypsilon-symboli</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="341"/>
         <source>script capital P</source>
-        <translation>Símbolo matemático alfanumérico P maiúsculo cursivo negrito</translation>
+        <translation>Weierstraßin p-kirjain</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="342"/>
         <source>yen sign</source>
-        <translation>símbolo iene</translation>
+        <translation>jenin merkki</translation>
     </message>
 </context>
 <context>
@@ -3414,72 +3415,72 @@ Linha: %1 Coluna %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.ui" line="14"/>
         <source>Insert File</source>
-        <translation>Inserir arquivo</translation>
+        <translation>Lisää tiedosto</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="46"/>
         <source>List only the file names which contain the text you enter.</source>
-        <translation>Lista apenas os nomes de arquivos que contêm o texto que você inseriu.</translation>
+        <translation>Näytä vain ne tiedostonimet, jotka sisältävät annetun tekstin.</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="49"/>
         <source>Filter:</source>
-        <translation>Filtro:</translation>
+        <translation>Suodatin:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="118"/>
         <source>Thumbnail size:</source>
-        <translation>Tamanho da miniatura:</translation>
+        <translation>Pienoiskuvan koko:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="115"/>
         <source>All</source>
-        <translation>Tudo</translation>
+        <translation>Kaikki</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="116"/>
         <source>Images</source>
-        <translation>Imagens</translation>
+        <translation>Kuvat</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="117"/>
         <source>Video</source>
-        <translation>Vídeo</translation>
+        <translation>Video</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="118"/>
         <source>Audio</source>
-        <translation>Áudio</translation>
+        <translation>Audio</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="161"/>
         <source>Media Files In the Book</source>
-        <translation>Arquivos de Mídia no Livro</translation>
+        <translation>Mediatiedostot kirjassa</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="164"/>
         <source>Thumbnails</source>
-        <translation>Miniaturas</translation>
+        <translation>Pienoiskuvat</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="327"/>
         <source>shades</source>
-        <translation>sombras</translation>
+        <translation>sävyä</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="327"/>
         <source>colors</source>
-        <translation>cores</translation>
+        <translation>väriä</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="328"/>
         <source>Grayscale</source>
-        <translation>Tons de Cinza</translation>
+        <translation>Harmaasävy</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="328"/>
         <source>Color</source>
-        <translation>Cor</translation>
+        <translation>Väri</translation>
     </message>
 </context>
 <context>
@@ -3487,40 +3488,39 @@ Linha: %1 Coluna %2 - %3</translation>
     <message>
         <location filename="../SelectHyperlink.ui" line="14"/>
         <source>Select Target</source>
-        <translation>Selecionar Alvo</translation>
+        <translation>Valitse kohde</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="22"/>
         <source>List only the entries that match the text you enter.</source>
-        <translation>Lista apenas entradas que correspondem ao texto digitado.</translation>
+        <translation>Listaa vain kohdat, jotka sisältävät annetun tekstin.</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="25"/>
         <source>Filter:</source>
-        <translation>Filtro:</translation>
+        <translation>Suodatin:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="58"/>
         <source>Enter the target URL for this hyperlink.  You can select or 
 double click on existing destinations in your book from the list above.</source>
-        <translation>Entre com uma URL de destino para este hyperlink. 
-Você pode selecionar ou dar um duplo clique 
-em um dos destinos existentes em seu livro que estão listados acima.</translation>
+        <translation>Ilmoita tämän linkin kohde. Voit valita kirjassa olevan kohteen
+napsauttamalla sitä yllä olevassa listassa.</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="62"/>
         <source>Target:</source>
-        <translation>Alvo:</translation>
+        <translation>Kohde:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="96"/>
         <source>Targets in the Book</source>
-        <translation>Alvos no Livro</translation>
+        <translation>Kirjassa olevat kohteet:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="97"/>
         <source>Text</source>
-        <translation>Texto</translation>
+        <translation>Teksti</translation>
     </message>
 </context>
 <context>
@@ -3528,7 +3528,7 @@ em um dos destinos existentes em seu livro que estão listados acima.</translati
     <message>
         <location filename="../SelectId.ui" line="14"/>
         <source>Insert ID </source>
-        <translation>Inserir ID</translation>
+        <translation>Liitä tunniste</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="22"/>
@@ -3537,16 +3537,16 @@ em um dos destinos existentes em seu livro que estão listados acima.</translati
 The dropdown box shows existing ID names in the current file.
 
 ID names must be unique and start with a letter.</source>
-        <translation>Digite um nome de identificador para usar como destino para hiperlinks, notas, e entradas do Sumário.
+        <translation>Kirjoita tunnisteen nimi, jota käytetään kohteena linkeissä ja sisällysluettelossa.
 
-O menu suspenso mostra os identificadores existentes no arquivo atual.
+Pudotusvalikossa näkyvät ne tunnisteiden nimet, jotka jo ovat käytössä nykyisessä tiedostossa.
 
-Nomes de identificadores precisam ser únicos e começar com uma letra.</translation>
+Tunnisteiden nimien tulee olla yksikäsitteisiä, ja niiden pitää alkaa kirjaimella.</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="29"/>
         <source>ID:</source>
-        <translation>ID:</translation>
+        <translation>Tunnus:</translation>
     </message>
 </context>
 <context>
@@ -3554,14 +3554,16 @@ Nomes de identificadores precisam ser únicos e começar com uma letra.</transla
     <message>
         <location filename="../Utility.cpp" line="677"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>Muokkaustila</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="678"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>O nome do arquivo contém caracteres não inclusos na tabela ASCII. É altamente aconselhável utilizar somente caracteres ASCII nos nomes de arquivo, pois certos e-readers podem não conseguir ler o arquivo. Deseja continuar utilizando esse nome?</translation>
+        <translation>Annettu tiedostonimi sisältää muita kuin Ascii-merkkejä. Tiedostonimissä tulisi käyttää vain Ascii-merkkejä. Muiden merkkien käyttö voi estää e-kirjan toiminnan joissakin lukuohjelmissa.
+
+Haluatko jatkaa käyttäen antamaasi tiedostonimeä?</translation>
     </message>
 </context>
 <context>
@@ -3570,19 +3572,19 @@ Continue using the requested filename?</source>
         <location filename="../WebViewEdit.cpp" line="196"/>
         <location filename="../WebViewEdit.cpp~" line="196"/>
         <source>No suggestions</source>
-        <translation>Sem sugestões</translation>
+        <translation>Ehdotuksia ei ole</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="208"/>
         <location filename="../WebViewEdit.cpp~" line="208"/>
         <source>Check Spelling</source>
-        <translation>Checar Ortografia</translation>
+        <translation>Tarkista oikeinkirjoitus</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="217"/>
         <location filename="../WebViewEdit.cpp~" line="217"/>
         <source>Select Language</source>
-        <translation>Selecione Idioma</translation>
+        <translation>Valitse kieli</translation>
     </message>
 </context>
 </TS>
