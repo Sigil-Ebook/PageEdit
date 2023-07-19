@@ -42,17 +42,17 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Cache Qt
       id: cache-qt
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ${{runner.workspace}}/Qt
         key: ${{ runner.os }}-qtdeps-${{ hashFiles('**/reset-lin-caches.txt') }}
   
     - name: Install Qt
-      uses: jurplel/install-qt-action@v2
+      uses: jurplel/install-qt-action@v3
       with:
         version: '5.9.5'
         dir: ${{runner.workspace}}/Qt
