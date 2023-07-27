@@ -1,3 +1,5 @@
+#!/bin/sh
+echo $(pwd)
 install_name_tool -add_rpath @loader_path/../../Frameworks ./bin/PageEdit.app/Contents/PlugIns/iconengines/libqsvgicon.dylib
 install_name_tool -add_rpath @loader_path/../../Frameworks ./bin/PageEdit.app/Contents/PlugIns/imageformats/libqgif.dylib
 install_name_tool -add_rpath @loader_path/../../Frameworks ./bin/PageEdit.app/Contents/PlugIns/imageformats/libqicns.dylib

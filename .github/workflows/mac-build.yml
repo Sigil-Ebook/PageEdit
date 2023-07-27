@@ -95,6 +95,7 @@ jobs:
       run: |
         echo 'Deploying App'
         make addframeworks
+        bash $GITHUB_WORKSPACE/ci_scripts/rpath_adjust.sh
         cd ./bin
         tar -cJf PageEdit.tar.xz PageEdit.app
 
