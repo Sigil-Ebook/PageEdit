@@ -491,6 +491,10 @@ if ( MSVC )
         add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD
         COMMAND ${CONVERTDICT} ${PROJECT_SOURCE_DIR}/dictionaries/${DICT}.dic ${MAIN_PACKAGE_DIR}/qtwebengine_dictionaries/${DICT}.bdic )
     endforeach( DICT )
+
+    if( NOT EXISTS ${MAIN_PACKAGE_DIR}/examples )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory ${MAIN_PACKAGE_DIR}/examples/ )
+    endif()
     foreach( EXAMPLE ${EXAMPLE_FILES} )                                                                                
         add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND cmake -E copy ${EXAMPLE} ${MAIN_PACKAGE_DIR}/examples/ )
     endforeach( EXAMPLE )                                                                                              
