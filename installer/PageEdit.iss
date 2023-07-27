@@ -22,8 +22,8 @@ Compression=lzma2/ultra
 SolidCompression=yes
 OutputDir=${OUTPUT_PACKAGE_DIR}
 LicenseFile=${LICENSE_LOCATION}
-; Win 7sp1 is the lowest supported version
-MinVersion=0,6.1.7601
+; Win 10 (1809) is the lowest supported version
+MinVersion=0,10.0.17763
 PrivilegesRequired=admin
 PrivilegesRequiredOverridesAllowed=commandline dialog
 OutputBaseFilename={#AppName}-${PAGEEDIT_FULL_VERSION}-Windows${ISS_SETUP_FILENAME_PLATFORM}-Setup
