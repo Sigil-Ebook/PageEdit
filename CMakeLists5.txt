@@ -432,7 +432,7 @@ if ( MSVC )
     add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD
                         COMMAND ${CMAKE_COMMAND} -E copy ${EXE_PATH} ${MAIN_PACKAGE_DIR} )
 
-    set( VCREDIST_VER "2017" )
+    set( VCREDIST_VER "2022" )
     # We need to copy the CRT dlls
     # Add -DWIN_INSTALLER_USE_64BIT_CRT=1 to the cmake call if you want to build
     # an installer for the x64 verison of PageEdit. This will make sure that the
@@ -485,6 +485,11 @@ if ( MSVC )
         add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD
         COMMAND ${CONVERTDICT} ${PROJECT_SOURCE_DIR}/dictionaries/${DICT}.dic ${MAIN_PACKAGE_DIR}/qtwebengine_dictionaries/${DICT}.bdic )
     endforeach( DICT )
+
+    # Copy Examples
+    if( NOT EXISTS ${MAIN_PACKAGE_DIR}/examples )
+        add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory ${MAIN_PACKAGE_DIR}/examples/ )
+    endif()
     foreach( EXAMPLE ${EXAMPLE_FILES} )
         add_custom_command( TARGET ${TARGET_FOR_COPY} POST_BUILD COMMAND cmake -E copy ${EXAMPLE} ${MAIN_PACKAGE_DIR}/examples/ )
     endforeach( EXAMPLE )
