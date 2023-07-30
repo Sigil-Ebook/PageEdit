@@ -52,6 +52,7 @@ set( SOURCE_FILES
     ClipEditorTreeView.cpp
     ClipsWindow.cpp
     ClassInfo.cpp
+    WebProfileMgr.cpp
     )
 
 set( HEADER_FILES
@@ -92,6 +93,7 @@ set( HEADER_FILES
     ClipEditorTreeView.h
     ClipsWindow.h
     ClassInfo.h
+    WebProfileMgr.h
     )
 
 set( FORM_FILES

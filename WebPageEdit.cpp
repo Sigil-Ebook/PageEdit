@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2020      Doug Massay
 **
 **  This file is part of PageEdit.
@@ -22,6 +22,7 @@
 #include <QTimer>
 #include <QtWebEngineCore>
 #include <QWebEnginePage>
+#include <QWebEngineProfile>
 #include <QDebug>
 #include "Utility.h"
 #include "WebPageEdit.h"
@@ -32,8 +33,8 @@ static const QString BASIC_HTML =
     "<html><head><title></title></head>"
     "<body style=\"background-color: %1\"></body></html>";
  
-WebPageEdit::WebPageEdit(QObject *parent)
-    : QWebEnginePage(parent)
+WebPageEdit::WebPageEdit(QWebEngineProfile *profile, QObject *parent)
+    : QWebEnginePage(profile, parent)
 {
 
     setBackgroundColor(Utility::WebViewBackgroundColor(true));
@@ -46,7 +47,7 @@ WebPageEdit::WebPageEdit(QObject *parent)
     setHtml(BASIC_HTML.arg(backgroundColor().name()));
   #endif
 #else
-  #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+  #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0) || QT_VERSION >= QT_VERSION_CHECK(6, 4, 0)
     setUrl(QUrl("about:blank"));
   #endif
 #endif
@@ -68,10 +69,25 @@ bool WebPageEdit::acceptNavigationRequest(const QUrl & url, QWebEnginePage::Navi
 {
     if ((type == QWebEnginePage::NavigationTypeLinkClicked) || (type == QWebEnginePage::NavigationTypeOther)) {
         DBG qDebug() << "acceptNavigationRequest " << url.toString() << " , " << type << " , " << isMainFrame;
-        m_url = url;
-	QTimer::singleShot(20,this,SLOT(EmitLinkClicked()));
-        return false;
+        if (isMainFrame) {
+            m_url = url;
+	        QTimer::singleShot(20,this,SLOT(EmitLinkClicked()));
+            return false;
+        }
+        // allow secondary frames such as iframes to be loaded automatically
+        return true;
     }
+    if (type == QWebEnginePage::NavigationTypeTyped) {
+        DBG qDebug() << "acceptNavigationRequest from scheme handler load" << url.toString();
+        return true;
+    }
+#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
+    if (type == QWebEnginePage::NavigationTypeRedirect) {
+        DBG qDebug() << "acceptNavigationRequest from scheme handler redirect" << url.toString();
+        return true;
+    }
+#endif
+    qDebug() << " Unhandled acceptNavigationRequest with type: " << type;
     return true;
 }
 

@@ -50,7 +50,7 @@ extern void removeMacosSpecificMenuItems();
 #include "MainApplication.h"
 #include "MainWindow.h"
 #include "Utility.h"
-#include "URLInterceptor.h"
+#include "WebProfileMgr.h"
 #include "AppEventFilter.h"
 #include "SettingsStore.h"
 #include "UILanguage.h"
@@ -401,14 +401,8 @@ int main(int argc, char *argv[])
 #endif
 #endif
 
-    // Install our own URLInterceptor for QtWebEngine to protect                                                                     
-    // against bad file:: urls                                                                                                       
-    URLInterceptor* urlint = new URLInterceptor();
-#if QT_VERSION >= QT_VERSION_CHECK(5, 13, 0)
-    QWebEngineProfile::defaultProfile()->setUrlRequestInterceptor(urlint);
-#else
-    QWebEngineProfile::defaultProfile()->setRequestInterceptor(urlint);
-#endif
+    // initialize our QWebEngineProfiles and URL Interceptor
+    WebProfileMgr* profile_mgr = WebProfileMgr::instance();
 
     QStringList arguments = QCoreApplication::arguments();
 

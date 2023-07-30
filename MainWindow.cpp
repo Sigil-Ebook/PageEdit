@@ -1204,50 +1204,6 @@ void MainWindow::LoadSettings()
     }
     settings.endGroup();
 
-    SettingsStore::WebViewAppearance WVAppearance = settings.webViewAppearance();
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QWebEngineSettings *web_settings = QWebEngineSettings::defaultSettings();
-#else
-    QWebEngineSettings *web_settings = QWebEngineProfile::defaultProfile()->settings();
-#endif
-
-    // QWebEngine security settings to help prevent rogue epub3 javascripts
-    // enable javascript in mainworld for epub3 but then lock it down to the extent we can
-    web_settings->setAttribute(QWebEngineSettings::AutoLoadImages, true);
-    web_settings->setAttribute(QWebEngineSettings::JavascriptEnabled, (settings.javascriptOn() == 1));
-    web_settings->setAttribute(QWebEngineSettings::JavascriptCanOpenWindows, false);
-    web_settings->setAttribute(QWebEngineSettings::JavascriptCanAccessClipboard, false);
-    web_settings->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, (settings.remoteOn() == 1));
-    web_settings->setAttribute(QWebEngineSettings::LocalContentCanAccessFileUrls, true);
-    web_settings->setAttribute(QWebEngineSettings::PluginsEnabled, false);
-    web_settings->setAttribute(QWebEngineSettings::AutoLoadIconsForPage, false);
-    web_settings->setAttribute(QWebEngineSettings::FocusOnNavigationEnabled, false);
-    web_settings->setAttribute(QWebEngineSettings::AllowRunningInsecureContent, false);
-    web_settings->setAttribute(QWebEngineSettings::XSSAuditingEnabled, true);
-    web_settings->setAttribute(QWebEngineSettings::AllowGeolocationOnInsecureOrigins, false);
-    web_settings->setAttribute(QWebEngineSettings::ScreenCaptureEnabled, false);
-    web_settings->setAttribute(QWebEngineSettings::LocalStorageEnabled, false);
-
-#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
-    web_settings->setAttribute(QWebEngineSettings::AllowWindowActivationFromJavaScript, false);
-#endif
-
-#if QT_VERSION >= QT_VERSION_CHECK(5, 11, 0)
-    web_settings->setUnknownUrlSchemePolicy(QWebEngineSettings::DisallowUnknownUrlSchemes);
-    web_settings->setAttribute(QWebEngineSettings::PlaybackRequiresUserGesture, true);
-    web_settings->setAttribute(QWebEngineSettings::JavascriptCanPaste, false);
-#endif
-
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-    web_settings->setAttribute(QWebEngineSettings::DnsPrefetchEnabled, false);
-#endif
-
-    // Our default fonts for WebView
-    web_settings->setFontSize(QWebEngineSettings::DefaultFontSize, WVAppearance.font_size);
-    web_settings->setFontFamily(QWebEngineSettings::StandardFont, WVAppearance.font_family_standard);
-    web_settings->setFontFamily(QWebEngineSettings::SerifFont, WVAppearance.font_family_serif);
-    web_settings->setFontFamily(QWebEngineSettings::SansSerifFont, WVAppearance.font_family_sans_serif);
-
     // Check for existing custom WebView stylesheet in Prefs dir
     QFileInfo CustomWebViewStylesheetInfo(QDir(Utility::DefinePrefsDir()).filePath(CUSTOM_WEBVIEW_STYLE_FILENAME));
     if (CustomWebViewStylesheetInfo.exists() &&

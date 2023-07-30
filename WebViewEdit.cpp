@@ -44,6 +44,7 @@
 
 #include "Utility.h"
 #include "SettingsStore.h"
+#include "WebProfileMgr.h"
 #include "UIDictionary.h"
 
 #include "WebPageEdit.h"
@@ -106,7 +107,6 @@ struct SetToHTMLResultFunctor {
 
 WebViewEdit::WebViewEdit(QWidget *parent)
     : QWebEngineView(parent),
-      m_ViewWebPage(new WebPageEdit(this)),
       c_jQuery(Utility::ReadUnicodeTextFile(":/javascript/jquery-3.6.4.min.js")),
       c_jQueryScrollTo(Utility::ReadUnicodeTextFile(":/javascript/jquery.scrollTo-2.1.2-min.js")),
       c_GetCaretLocation(Utility::ReadUnicodeTextFile(":/javascript/book_view_current_location.js")),
@@ -122,22 +122,12 @@ WebViewEdit::WebViewEdit(QWidget *parent)
       m_LoadOkay(false),
       m_menu(new QMenu(this))
 {
+    QWebEngineProfile* profile = WebProfileMgr::instance()->GetPreviewProfile();
+    m_ViewWebPage = new WebPageEdit(profile, this);
     setPage(m_ViewWebPage);
     // Set the Zoom factor but be sure no signals are set because of this.
     SettingsStore settings;
     SetCurrentZoomFactor(settings.zoomPreview());
-    page()->settings()->setAttribute(QWebEngineSettings::ErrorPageEnabled, false);
-    page()->settings()->setDefaultTextEncoding("UTF-8");
-    page()->settings()->setAttribute(QWebEngineSettings::JavascriptEnabled, (settings.javascriptOn() == 1));
-    page()->settings()->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, (settings.remoteOn() == 1));
-    // Enable local-storage for epub3
-    page()->settings()->setAttribute(QWebEngineSettings::LocalStorageEnabled, true);
-    QString localStorePath = Utility::DefinePrefsDir() + "/local-storage";
-    QDir storageDir(localStorePath);
-    if (!storageDir.exists()) {
-        storageDir.mkpath(localStorePath);
-    }
-    page()->profile()->setPersistentStoragePath(localStorePath);
     m_dictionaries = UIDictionary::GetUIDictionaries();
     ConnectSignalsToSlots();
 }

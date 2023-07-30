@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019 Kevin B. Hendricks, Stratford, Ontario Canada
+**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford, Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -29,12 +29,14 @@
 #include <QtWebEngineCore>
 #include <QWebEnginePage>
 
+class QWebEngineProfile;
+
 class WebPageEdit : public QWebEnginePage
 {
     Q_OBJECT
 
 public:
-    WebPageEdit(QObject *parent = 0);
+    WebPageEdit(QWebEngineProfile *profile, QObject *parent = 0);
 
     bool acceptNavigationRequest(const QUrl & url, QWebEnginePage::NavigationType ntype, bool isMainFrame);
     void javaScriptConsoleMessage(QWebEnginePage::JavaScriptConsoleMessageLevel level, 
