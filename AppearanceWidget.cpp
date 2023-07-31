@@ -101,6 +101,9 @@ PreferencesWidget::ResultActions AppearanceWidget::saveSettings()
     web_settings->setFontFamily(QWebEngineSettings::SerifFont,       WVAppearance.font_family_serif);
     web_settings->setFontFamily(QWebEngineSettings::SansSerifFont,   WVAppearance.font_family_sans_serif);
 
+    settings.setSkipPrintPreview(ui.chkSkipPrintPreview->isChecked());
+    settings.setPrintDPI(ui.cboPrintDPI->currentText().toInt());
+
     PreferencesWidget::ResultActions results = PreferencesWidget::ResultAction_None;
 
     if (m_PreviewDark != (ui.PreviewDarkInDM->isChecked() ? 1 : 0)) {
@@ -148,6 +151,17 @@ void AppearanceWidget::readSettings()
     updateUIFontDisplay();
     m_PreviewDark = settings.previewDark();
     ui.PreviewDarkInDM->setChecked(settings.previewDark());
+
+    ui.cboPrintDPI->addItems({ "72", "96", "168", "300", "600", "1200" });
+    int index = ui.cboPrintDPI->findText(QString::number(settings.printDPI()));
+    if (index == -1) {
+        index = ui.cboPrintDPI->findText("300");
+        if (index == -1) {
+            index = 0;
+        }
+    }
+    ui.cboPrintDPI->setCurrentIndex(index);
+
 }
 
 void AppearanceWidget::updateUIFontDisplay()

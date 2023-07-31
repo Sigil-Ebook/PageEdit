@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2022 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford, Ontario, Canada
 **  Copyright (C) 2011-2013 John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012-2013 Dave Heiland
 **
@@ -63,7 +63,10 @@ public:
 
     int previewDark();
 
+    int printPreviewDPI();
 
+    int printDPI();
+    
     // bool spellCheck();
 
     /**
@@ -147,6 +150,10 @@ public slots:
     void setDisableGPU(bool value);
     
     void setPreviewDark(int enabled);
+
+    void setPrintPreviewDPI(int dpi);
+
+    void setPrintDPI(int dpi);
 
     // void setSpellCheck(bool enabled);
 

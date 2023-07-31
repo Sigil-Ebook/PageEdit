@@ -150,6 +150,54 @@ if a sans-serif font-family specified in your CSS</string>
          </layout>
         </widget>
        </item>
+      
+       <item>
+        <widget class="QGroupBox" name="groupBox_PreviewPrint">
+         <property name="title">
+          <string>Printer Output Appearance</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QCheckBox" name="chkSkipPrintPreview">
+            <property name="toolTip">
+             <string>Skip Print Preview</string>
+            </property>
+            <property name="text">
+             <string>Skip Print Preview</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="lblPrintDPI">
+              <property name="text">
+               <string>Print DPI:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cboPrintDPI"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+
        <item>
         <widget class="QCheckBox" name="PreviewDarkInDM">
          <property name="text">
@@ -160,6 +208,7 @@ if a sans-serif font-family specified in your CSS</string>
          </property>
         </widget>
        </item>
+
        <item>
         <spacer name="verticalSpacer">
          <property name="orientation">

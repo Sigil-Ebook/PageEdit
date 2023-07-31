@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-**  Copyright (C) 2021  Doug Massay
+**  Copyright (C) 2021-2023  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -21,6 +21,7 @@
 
 
 #include "webviewprinter.h"
+#include "SettingsStore.h"
 #include <QEventLoop>
 #include <QPrintDialog>
 #include <QPrinter>
@@ -82,7 +83,10 @@ QString WebViewPrinter::getPrintToFilePath(QFileInfo &fi) {
 void WebViewPrinter::print()
 {
     DBG qDebug() << "Skipping Print Preview.";
-    QPrinter printer;
+    SettingsStore ss;
+    QPrinter printer(QPrinter::HighResolution);
+    printer.setResolution(ss.printDPI());
+    DBG qDebug() << "Print DPI = " << printer.resolution();
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
     QFileInfo fi = QFileInfo(m_view->page()->url().fileName());
     QString path = getPrintToFilePath(fi);
@@ -133,7 +137,11 @@ void WebViewPrinter::printPreview()
     if (m_inPrintPreview)
         return;
     m_inPrintPreview = true;
-    QPrinter printer;
+
+    SettingsStore ss;
+    QPrinter printer(QPrinter::HighResolution);
+    printer.setResolution(ss.printDPI());
+    DBG qDebug() << "Print Preview DPI = " << printer.resolution();
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
     QFileInfo fi = QFileInfo(m_view->page()->url().fileName());
     QString path = getPrintToFilePath(fi);
