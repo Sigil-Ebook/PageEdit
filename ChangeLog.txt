@@ -6,11 +6,14 @@ PageEdit-2.00
     - updated official releases to use Qt 6.5.2
     - added ability to create and apply Clips
     - updated to jquery 3.6.4 for security fixes
+    - added ability to control print output quality (dpi)
+    - added ability to show embedded pdfs in an epub (ala ADE)
 
   Bug Fixes:
     - updated to the latest sigil-gumbo for bug fixes and to add new tags
     - fixed all/most compiler warnings depending on platfrom/compiler
-    
+    - added WebProfileMgr to fix crashes and better manage QWebEngineProfile and local storage
+
 
 PageEdit-1.9.20
   New Features
