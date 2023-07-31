@@ -15,7 +15,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
-        <location filename="../PAppearanceWidget.ui" line="263"/>
+        <location filename="../PAppearanceWidget.ui" line="312"/>
         <source>Fonts:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -32,7 +32,7 @@ if no font-size specified in your CSS</source>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
-        <location filename="../PAppearanceWidget.ui" line="323"/>
+        <location filename="../PAppearanceWidget.ui" line="372"/>
         <source>Font Size:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -70,77 +70,93 @@ if a sans-serif font-family specified in your CSS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="156"/>
+        <location filename="../PAppearanceWidget.ui" line="157"/>
+        <source>Printer Output Appearance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="163"/>
+        <location filename="../PAppearanceWidget.ui" line="166"/>
+        <source>Skip Print Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="175"/>
+        <source>Print DPI:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="204"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="181"/>
+        <location filename="../PAppearanceWidget.ui" line="230"/>
         <source>Main UI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="187"/>
+        <location filename="../PAppearanceWidget.ui" line="236"/>
         <source>Main Menu Icon Size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="193"/>
+        <location filename="../PAppearanceWidget.ui" line="242"/>
         <source>Adjust the size of the icons in the main menu.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="231"/>
+        <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>High DPI Setting:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="240"/>
+        <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>(Needs PageEdit Restart)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="269"/>
+        <location filename="../PAppearanceWidget.ui" line="318"/>
         <source>UI Font:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="279"/>
+        <location filename="../PAppearanceWidget.ui" line="328"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="282"/>
+        <location filename="../PAppearanceWidget.ui" line="331"/>
         <source>Change Font (Needs PageEdit Restart)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="306"/>
+        <location filename="../PAppearanceWidget.ui" line="355"/>
         <source>Insert Special Characters:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="320"/>
+        <location filename="../PAppearanceWidget.ui" line="369"/>
         <source>Font size to be used for Insert Special Characters window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="353"/>
+        <location filename="../PAppearanceWidget.ui" line="402"/>
         <source>Font family to be used for Insert Special Characters window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="356"/>
+        <location filename="../PAppearanceWidget.ui" line="405"/>
         <source>Standard Font:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="423"/>
+        <location filename="../PAppearanceWidget.ui" line="472"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="426"/>
+        <location filename="../PAppearanceWidget.ui" line="475"/>
         <source>Reset All</source>
         <translation type="unfinished"></translation>
     </message>
@@ -635,17 +651,6 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1847"/>
         <location filename="../MainWindow.cpp" line="1902"/>
         <location filename="../MainWindow.cpp" line="1992"/>
-        <location filename="../MainWindow.cpp~" line="1044"/>
-        <location filename="../MainWindow.cpp~" line="1137"/>
-        <location filename="../MainWindow.cpp~" line="1793"/>
-        <location filename="../MainWindow.cpp~" line="1806"/>
-        <location filename="../MainWindow.cpp~" line="1812"/>
-        <location filename="../MainWindow.cpp~" line="1826"/>
-        <location filename="../MainWindow.cpp~" line="1839"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1853"/>
-        <location filename="../MainWindow.cpp~" line="1908"/>
-        <location filename="../MainWindow.cpp~" line="1998"/>
         <source>PageEdit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1749,31 +1754,26 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="781"/>
-        <location filename="../MainWindow.cpp~" line="781"/>
         <source>File load failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="782"/>
-        <location filename="../MainWindow.cpp~" line="782"/>
         <source>File Load Failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="877"/>
-        <location filename="../MainWindow.cpp~" line="877"/>
         <source>mode: Preview</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="879"/>
-        <location filename="../MainWindow.cpp~" line="879"/>
         <source>mode: Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1044"/>
-        <location filename="../MainWindow.cpp~" line="1044"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1781,13 +1781,11 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1138"/>
-        <location filename="../MainWindow.cpp~" line="1138"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1155"/>
-        <location filename="../MainWindow.cpp~" line="1155"/>
         <source>PageEdit is closing...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1798,30 +1796,21 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1258"/>
         <location filename="../MainWindow.cpp" line="1259"/>
         <location filename="../MainWindow.cpp" line="1260"/>
-        <location filename="../MainWindow.cpp~" line="1253"/>
-        <location filename="../MainWindow.cpp~" line="1254"/>
-        <location filename="../MainWindow.cpp~" line="1255"/>
-        <location filename="../MainWindow.cpp~" line="1264"/>
-        <location filename="../MainWindow.cpp~" line="1265"/>
-        <location filename="../MainWindow.cpp~" line="1266"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1250"/>
-        <location filename="../MainWindow.cpp~" line="1256"/>
         <source>OPF files (*.opf)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1251"/>
-        <location filename="../MainWindow.cpp~" line="1257"/>
         <source>All files (*.*)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1490"/>
-        <location filename="../MainWindow.cpp~" line="1496"/>
         <source>Save File</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1830,24 +1819,17 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1526"/>
         <location filename="../MainWindow.cpp" line="1538"/>
         <location filename="../MainWindow.cpp" line="1539"/>
-        <location filename="../MainWindow.cpp~" line="1531"/>
-        <location filename="../MainWindow.cpp~" line="1532"/>
-        <location filename="../MainWindow.cpp~" line="1544"/>
-        <location filename="../MainWindow.cpp~" line="1545"/>
         <source>File Save-As Failed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1525"/>
-        <location filename="../MainWindow.cpp~" line="1531"/>
         <source>is not writeable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1534"/>
         <location filename="../MainWindow.cpp" line="1573"/>
-        <location filename="../MainWindow.cpp~" line="1540"/>
-        <location filename="../MainWindow.cpp~" line="1579"/>
         <source>File Saved</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1856,148 +1838,121 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1577"/>
         <location filename="../MainWindow.cpp" line="1578"/>
-        <location filename="../MainWindow.cpp~" line="1570"/>
-        <location filename="../MainWindow.cpp~" line="1572"/>
-        <location filename="../MainWindow.cpp~" line="1583"/>
-        <location filename="../MainWindow.cpp~" line="1584"/>
         <source>File Save Failed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1565"/>
-        <location filename="../MainWindow.cpp~" line="1571"/>
         <source>does not exist or is not writeable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1594"/>
-        <location filename="../MainWindow.cpp~" line="1600"/>
         <source>Do not show this warning again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1595"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>This file may not print the way you expect it to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1596"/>
-        <location filename="../MainWindow.cpp~" line="1602"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1597"/>
-        <location filename="../MainWindow.cpp~" line="1603"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
-        <location filename="../MainWindow.cpp~" line="1604"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1599"/>
-        <location filename="../MainWindow.cpp~" line="1605"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
-        <location filename="../MainWindow.cpp~" line="1628"/>
         <source>Feature not available before Qt5.12.x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1683"/>
-        <location filename="../MainWindow.cpp~" line="1689"/>
         <source>File Opened</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1687"/>
-        <location filename="../MainWindow.cpp~" line="1693"/>
         <source>File Open Failed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
-        <location filename="../MainWindow.cpp~" line="1716"/>
         <source>Clipboard contains HTML formatting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1711"/>
-        <location filename="../MainWindow.cpp~" line="1717"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1787"/>
-        <location filename="../MainWindow.cpp~" line="1793"/>
         <source>You must select text before inserting a new id.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1800"/>
-        <location filename="../MainWindow.cpp~" line="1806"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1806"/>
-        <location filename="../MainWindow.cpp~" line="1812"/>
         <source>You cannot insert an id at this position.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1820"/>
-        <location filename="../MainWindow.cpp~" line="1826"/>
         <source>You must select text before inserting a new link.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1833"/>
-        <location filename="../MainWindow.cpp~" line="1839"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1839"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>Error inserting external link target.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1847"/>
-        <location filename="../MainWindow.cpp~" line="1853"/>
         <source>Error inserting a link at this position.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1858"/>
-        <location filename="../MainWindow.cpp~" line="1864"/>
         <source>Insert File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1902"/>
-        <location filename="../MainWindow.cpp~" line="1908"/>
         <source>You cannot insert a media file at this position.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1993"/>
-        <location filename="../MainWindow.cpp~" line="1999"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2045"/>
-        <location filename="../MainWindow.cpp~" line="2051"/>
         <source>Pasted clip entry %1.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3519,19 +3474,16 @@ Continue using the requested filename?</source>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="186"/>
-        <location filename="../WebViewEdit.cpp~" line="186"/>
         <source>No suggestions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="198"/>
-        <location filename="../WebViewEdit.cpp~" line="198"/>
         <source>Check Spelling</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="207"/>
-        <location filename="../WebViewEdit.cpp~" line="207"/>
         <source>Select Language</source>
         <translation type="unfinished"></translation>
     </message>
