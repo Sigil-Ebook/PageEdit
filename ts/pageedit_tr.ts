@@ -13,7 +13,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
-        <location filename="../PAppearanceWidget.ui" line="263"/>
+        <location filename="../PAppearanceWidget.ui" line="312"/>
         <source>Fonts:</source>
         <translation>Yazı tipleri:</translation>
     </message>
@@ -31,7 +31,7 @@ CSS&apos;nizde yazı tipi boyutu belirtilmemişse</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
-        <location filename="../PAppearanceWidget.ui" line="323"/>
+        <location filename="../PAppearanceWidget.ui" line="372"/>
         <source>Font Size:</source>
         <translation>Yazı Tipi Boyutu:</translation>
     </message>
@@ -72,77 +72,93 @@ CSS&apos;nizde bir sans-serif yazı tipi ailesi belirtilmişse</translation>
         <translation>Sans-Serif:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="156"/>
+        <location filename="../PAppearanceWidget.ui" line="157"/>
+        <source>Printer Output Appearance</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="163"/>
+        <location filename="../PAppearanceWidget.ui" line="166"/>
+        <source>Skip Print Preview</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="175"/>
+        <source>Print DPI:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="204"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
         <translation>PageEdit&apos;in karanlık modda karanlık bir görünümü simüle etmesini sağlayın</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="181"/>
+        <location filename="../PAppearanceWidget.ui" line="230"/>
         <source>Main UI</source>
         <translation>Ana kullanıcı arayüzü</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="187"/>
+        <location filename="../PAppearanceWidget.ui" line="236"/>
         <source>Main Menu Icon Size:</source>
         <translation>Ana Menü Simgesi Boyutu:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="193"/>
+        <location filename="../PAppearanceWidget.ui" line="242"/>
         <source>Adjust the size of the icons in the main menu.</source>
         <translation>Ana menüdeki simgelerin boyutunu ayarla.</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="231"/>
+        <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>High DPI Setting:</source>
         <translation>Yüksek DPI Ayarı:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="240"/>
+        <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>(Needs PageEdit Restart)</source>
         <translation>(PageEdit&apos;in Yeniden Başlatılması Gerekiyor)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="269"/>
+        <location filename="../PAppearanceWidget.ui" line="318"/>
         <source>UI Font:</source>
         <translation>Kullanıcı arayüzü Yazı Tipi:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="279"/>
+        <location filename="../PAppearanceWidget.ui" line="328"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
         <translation>PageEdit menüleri, düğmeleri vb. Tarafından kullanılan yazı tipini değiştirin...</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="282"/>
+        <location filename="../PAppearanceWidget.ui" line="331"/>
         <source>Change Font (Needs PageEdit Restart)</source>
         <translation>Yazı Tipini Değiştir (PageEdit&apos;in Yeniden Başlatılması Gerekiyor)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="306"/>
+        <location filename="../PAppearanceWidget.ui" line="355"/>
         <source>Insert Special Characters:</source>
         <translation>Özel Karakter Ekle:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="320"/>
+        <location filename="../PAppearanceWidget.ui" line="369"/>
         <source>Font size to be used for Insert Special Characters window</source>
         <translation>Yazıtipi Özel Karakter Ekle penceresinde kullanılacak</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="353"/>
+        <location filename="../PAppearanceWidget.ui" line="402"/>
         <source>Font family to be used for Insert Special Characters window</source>
         <translation>Yazıtipi Özel Karakterler Ekle penceresinde kullanılacak</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="356"/>
+        <location filename="../PAppearanceWidget.ui" line="405"/>
         <source>Standard Font:</source>
         <translation>Standart Yazıtipi:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="423"/>
+        <location filename="../PAppearanceWidget.ui" line="472"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>Bütün yazıtipi ve renkleri varsayılan değerlere sıfırla</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="426"/>
+        <location filename="../PAppearanceWidget.ui" line="475"/>
         <source>Reset All</source>
         <translation>Tümünü Sıfırla</translation>
     </message>
@@ -200,7 +216,6 @@ CSS&apos;nizde bir sans-serif yazı tipi ailesi belirtilmişse</translation>
     <message>
         <location filename="../ClipEditor.ui" line="14"/>
         <location filename="../ClipEditor.cpp" line="541"/>
-        <location filename="../ClipEditor.cpp~" line="545"/>
         <source>Clip Editor</source>
         <translation>Klip Düzenleyici</translation>
     </message>
@@ -232,14 +247,12 @@ CSS&apos;nizde bir sans-serif yazı tipi ailesi belirtilmişse</translation>
     <message>
         <location filename="../ClipEditor.ui" line="91"/>
         <location filename="../ClipEditor.cpp" line="651"/>
-        <location filename="../ClipEditor.cpp~" line="655"/>
         <source>Add Entry</source>
         <translation>Giriş Ekle</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="98"/>
         <location filename="../ClipEditor.cpp" line="652"/>
-        <location filename="../ClipEditor.cpp~" line="656"/>
         <source>Add Group</source>
         <translation>Grup ekle</translation>
     </message>
@@ -273,199 +286,166 @@ CSS&apos;nizde bir sans-serif yazı tipi ailesi belirtilmişse</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="75"/>
-        <location filename="../ClipEditor.cpp~" line="75"/>
         <source>Right click on an entry to see a context menu of actions.</source>
         <translation>Eylemlerin bağlam menüsünü görmek için bir girişi sağ tıklayın.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="76"/>
-        <location filename="../ClipEditor.cpp~" line="76"/>
         <source>You can also right click in your document to select an entry.</source>
         <translation>Ayrıca bir girdi seçmek için belgenize sağ tıklayabilirsiniz.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
-        <location filename="../ClipEditor.cpp~" line="78"/>
         <source>Name</source>
         <translation>Ad</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
-        <location filename="../ClipEditor.cpp~" line="78"/>
         <source>Name of your entry or group.</source>
         <translation>Girişinizin veya grubunuzun adı.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
-        <location filename="../ClipEditor.cpp~" line="79"/>
         <source>Text</source>
         <translation>Metin</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
-        <location filename="../ClipEditor.cpp~" line="79"/>
         <source>The text to insert. The text is treated like a Regex replacement expression so \1 can be used to insert the text selected in Code View when you paste the clip.</source>
         <translation>Eklenecek metin. Metin bir Regex değiştirme ifadesi gibi değerlendirilir, böylece \1 klibi yapıştırdığınızda Kod Görünümü&apos;nde seçilen metni eklemek için kullanılabilir.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
-        <location filename="../ClipEditor.cpp~" line="83"/>
         <source>Save</source>
         <translation>Kaydet</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
-        <location filename="../ClipEditor.cpp~" line="83"/>
         <source>Save your changes.</source>
         <translation>Değişikliklerinizi kaydedin.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
-        <location filename="../ClipEditor.cpp~" line="83"/>
         <source>If any other instances of Sigil are running they will be automatically updated with your changes.</source>
         <translation>Sigil&apos;in diğer örnekleri çalışıyorsa, değişikliklerinizle otomatik olarak güncellenecektir.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="93"/>
-        <location filename="../ClipEditor.cpp~" line="93"/>
         <source>Cannot save entries.</source>
         <translation>Girişler kaydedilemez.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="137"/>
-        <location filename="../ClipEditor.cpp~" line="137"/>
         <source>Clip entries loaded from file.</source>
         <translation>Dosyadan yüklenen klip girişleri.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="200"/>
-        <location filename="../ClipEditor.cpp~" line="200"/>
         <source>You cannot select an entry and a group containing the entry.</source>
         <translation>Bir girişi ve girişi içeren bir grubu seçemezsiniz.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="287"/>
-        <location filename="../ClipEditor.cpp~" line="287"/>
         <source>You cannot Copy or Cut groups - use drag-and-drop.</source>
         <translation>Grupları Kopyalayamaz veya Kesemezsiniz - sürükle ve bırak özelliğini kullanın.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
-        <location filename="../ClipEditor.cpp~" line="359"/>
         <source>Sigil</source>
         <translation>Sigil</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
-        <location filename="../ClipEditor.cpp~" line="359"/>
         <source>Are you sure you want to reload all entries?  This will overwrite any unsaved changes.</source>
         <translation>Tüm girişleri yeniden yüklemek istediğinizden emin misiniz?  Bu, kaydedilmemiş değişikliklerin üzerine yazacaktır.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="380"/>
-        <location filename="../ClipEditor.cpp~" line="380"/>
         <source>Import Entries</source>
         <translation>Girişleri İçe Aktar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="460"/>
-        <location filename="../ClipEditor.cpp~" line="460"/>
         <source>Export Selected Entries</source>
         <translation>Seçili Girişleri Dışa Aktar</translation>
     </message>
     <message numerus="yes">
         <location filename="../ClipEditor.cpp" line="541"/>
-        <location filename="../ClipEditor.cpp~" line="545"/>
         <source>CSS entries added: %n</source>
         <translation><numerusform>CSS girişleri eklendi: %n</numerusform><numerusform>CSS girişleri eklendi: %n</numerusform></translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="653"/>
-        <location filename="../ClipEditor.cpp~" line="657"/>
         <source>Edit</source>
         <translation>Düzenle</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="654"/>
-        <location filename="../ClipEditor.cpp~" line="658"/>
         <source>Cut</source>
         <translation>Kes</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="655"/>
-        <location filename="../ClipEditor.cpp~" line="659"/>
         <source>Copy</source>
         <translation>Kopyala</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="656"/>
-        <location filename="../ClipEditor.cpp~" line="660"/>
         <source>Paste</source>
         <translation>Yapıştır</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="657"/>
-        <location filename="../ClipEditor.cpp~" line="661"/>
         <source>Delete</source>
         <translation>Sil</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="658"/>
-        <location filename="../ClipEditor.cpp~" line="662"/>
         <source>Import</source>
         <translation>İçe Aktar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="659"/>
-        <location filename="../ClipEditor.cpp~" line="663"/>
         <source>Reload</source>
         <translation>Yeniden Yükle</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="660"/>
-        <location filename="../ClipEditor.cpp~" line="664"/>
         <source>Export</source>
         <translation>Dışarı Aktar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="661"/>
-        <location filename="../ClipEditor.cpp~" line="665"/>
         <source>Export All</source>
         <translation>Tümünü Dışa Aktar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="662"/>
-        <location filename="../ClipEditor.cpp~" line="666"/>
         <source>Collapse All</source>
         <translation>Hepsini Daralt</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="663"/>
-        <location filename="../ClipEditor.cpp~" line="667"/>
         <source>Expand All</source>
         <translation>Tümünü Genişlet</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="664"/>
-        <location filename="../ClipEditor.cpp~" line="668"/>
         <source>Autofill</source>
         <translation>Otomatik doldur</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="746"/>
-        <location filename="../ClipEditor.cpp~" line="750"/>
         <source>Clip entries saved.</source>
         <translation>Klip girişleri kaydedildi.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="775"/>
-        <location filename="../ClipEditor.cpp~" line="779"/>
         <source>Sigil: Clip Editor</source>
         <translation>Sigil: Klip Düzenleyici</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="776"/>
-        <location filename="../ClipEditor.cpp~" line="780"/>
         <source>The Clip entries may have been modified.
 Do you want to save your changes?</source>
         <translation>Klip girişleri değiştirilmiş olabilir.
@@ -665,26 +645,15 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1044"/>
         <location filename="../MainWindow.cpp" line="1137"/>
-        <location filename="../MainWindow.cpp" line="1831"/>
-        <location filename="../MainWindow.cpp" line="1844"/>
-        <location filename="../MainWindow.cpp" line="1850"/>
-        <location filename="../MainWindow.cpp" line="1864"/>
-        <location filename="../MainWindow.cpp" line="1877"/>
-        <location filename="../MainWindow.cpp" line="1883"/>
-        <location filename="../MainWindow.cpp" line="1891"/>
-        <location filename="../MainWindow.cpp" line="1946"/>
-        <location filename="../MainWindow.cpp" line="2036"/>
-        <location filename="../MainWindow.cpp~" line="1044"/>
-        <location filename="../MainWindow.cpp~" line="1137"/>
-        <location filename="../MainWindow.cpp~" line="1831"/>
-        <location filename="../MainWindow.cpp~" line="1844"/>
-        <location filename="../MainWindow.cpp~" line="1850"/>
-        <location filename="../MainWindow.cpp~" line="1864"/>
-        <location filename="../MainWindow.cpp~" line="1877"/>
-        <location filename="../MainWindow.cpp~" line="1883"/>
-        <location filename="../MainWindow.cpp~" line="1891"/>
-        <location filename="../MainWindow.cpp~" line="1946"/>
-        <location filename="../MainWindow.cpp~" line="2036"/>
+        <location filename="../MainWindow.cpp" line="1787"/>
+        <location filename="../MainWindow.cpp" line="1800"/>
+        <location filename="../MainWindow.cpp" line="1806"/>
+        <location filename="../MainWindow.cpp" line="1820"/>
+        <location filename="../MainWindow.cpp" line="1833"/>
+        <location filename="../MainWindow.cpp" line="1839"/>
+        <location filename="../MainWindow.cpp" line="1847"/>
+        <location filename="../MainWindow.cpp" line="1902"/>
+        <location filename="../MainWindow.cpp" line="1992"/>
         <source>PageEdit</source>
         <translation>SayfaDüzen</translation>
     </message>
@@ -1788,31 +1757,26 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="781"/>
-        <location filename="../MainWindow.cpp~" line="781"/>
         <source>File load failed</source>
         <translation>Dosya yükleme başarısız oldu</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="782"/>
-        <location filename="../MainWindow.cpp~" line="782"/>
         <source>File Load Failed</source>
         <translation>Dosya Yüklenemedi</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="877"/>
-        <location filename="../MainWindow.cpp~" line="877"/>
         <source>mode: Preview</source>
         <translation>kip: Önizleme</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="879"/>
-        <location filename="../MainWindow.cpp~" line="879"/>
         <source>mode: Edit</source>
         <translation>kip: Düzenle</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1044"/>
-        <location filename="../MainWindow.cpp~" line="1044"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1822,223 +1786,178 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1138"/>
-        <location filename="../MainWindow.cpp~" line="1138"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Ayrılmadan önce değişikliklerinizi kaydetmek ister misiniz?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1155"/>
-        <location filename="../MainWindow.cpp~" line="1155"/>
         <source>PageEdit is closing...</source>
         <translation>SayfaDüzen kapanıyor...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1291"/>
-        <location filename="../MainWindow.cpp" line="1292"/>
-        <location filename="../MainWindow.cpp" line="1293"/>
-        <location filename="../MainWindow.cpp" line="1302"/>
-        <location filename="../MainWindow.cpp" line="1303"/>
-        <location filename="../MainWindow.cpp" line="1304"/>
-        <location filename="../MainWindow.cpp~" line="1291"/>
-        <location filename="../MainWindow.cpp~" line="1292"/>
-        <location filename="../MainWindow.cpp~" line="1293"/>
-        <location filename="../MainWindow.cpp~" line="1302"/>
-        <location filename="../MainWindow.cpp~" line="1303"/>
-        <location filename="../MainWindow.cpp~" line="1304"/>
+        <location filename="../MainWindow.cpp" line="1247"/>
+        <location filename="../MainWindow.cpp" line="1248"/>
+        <location filename="../MainWindow.cpp" line="1249"/>
+        <location filename="../MainWindow.cpp" line="1258"/>
+        <location filename="../MainWindow.cpp" line="1259"/>
+        <location filename="../MainWindow.cpp" line="1260"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML dosyaları (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1294"/>
-        <location filename="../MainWindow.cpp~" line="1294"/>
+        <location filename="../MainWindow.cpp" line="1250"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF dosyalar (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1295"/>
-        <location filename="../MainWindow.cpp~" line="1295"/>
+        <location filename="../MainWindow.cpp" line="1251"/>
         <source>All files (*.*)</source>
         <translation>Tüm dosyalar (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1534"/>
-        <location filename="../MainWindow.cpp~" line="1534"/>
+        <location filename="../MainWindow.cpp" line="1490"/>
         <source>Save File</source>
         <translation>Dosyayı Kaydet</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1569"/>
-        <location filename="../MainWindow.cpp" line="1570"/>
-        <location filename="../MainWindow.cpp" line="1582"/>
-        <location filename="../MainWindow.cpp" line="1583"/>
-        <location filename="../MainWindow.cpp~" line="1569"/>
-        <location filename="../MainWindow.cpp~" line="1570"/>
-        <location filename="../MainWindow.cpp~" line="1582"/>
-        <location filename="../MainWindow.cpp~" line="1583"/>
+        <location filename="../MainWindow.cpp" line="1525"/>
+        <location filename="../MainWindow.cpp" line="1526"/>
+        <location filename="../MainWindow.cpp" line="1538"/>
+        <location filename="../MainWindow.cpp" line="1539"/>
         <source>File Save-As Failed!</source>
         <translation>Dosya Farklı Kaydedilemedi!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1569"/>
-        <location filename="../MainWindow.cpp~" line="1569"/>
+        <location filename="../MainWindow.cpp" line="1525"/>
         <source>is not writeable</source>
         <translation>yazılabilir değil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1578"/>
-        <location filename="../MainWindow.cpp" line="1617"/>
-        <location filename="../MainWindow.cpp~" line="1578"/>
-        <location filename="../MainWindow.cpp~" line="1617"/>
+        <location filename="../MainWindow.cpp" line="1534"/>
+        <location filename="../MainWindow.cpp" line="1573"/>
         <source>File Saved</source>
         <translation>Dosya Kaydedildi</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1608"/>
-        <location filename="../MainWindow.cpp" line="1610"/>
-        <location filename="../MainWindow.cpp" line="1621"/>
-        <location filename="../MainWindow.cpp" line="1622"/>
-        <location filename="../MainWindow.cpp~" line="1608"/>
-        <location filename="../MainWindow.cpp~" line="1610"/>
-        <location filename="../MainWindow.cpp~" line="1621"/>
-        <location filename="../MainWindow.cpp~" line="1622"/>
+        <location filename="../MainWindow.cpp" line="1564"/>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1577"/>
+        <location filename="../MainWindow.cpp" line="1578"/>
         <source>File Save Failed!</source>
         <translation>Dosya Kaydedilemedi!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1609"/>
-        <location filename="../MainWindow.cpp~" line="1609"/>
+        <location filename="../MainWindow.cpp" line="1565"/>
         <source>does not exist or is not writeable</source>
         <translation>yok veya yazılabilir değil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1638"/>
-        <location filename="../MainWindow.cpp~" line="1638"/>
+        <location filename="../MainWindow.cpp" line="1594"/>
         <source>Do not show this warning again</source>
         <translation>Bu uyarı bir daha görüntülenmesin</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1639"/>
-        <location filename="../MainWindow.cpp~" line="1639"/>
+        <location filename="../MainWindow.cpp" line="1595"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Bu dosya beklediğiniz şekilde yazdırılamayabilir.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1640"/>
-        <location filename="../MainWindow.cpp~" line="1640"/>
+        <location filename="../MainWindow.cpp" line="1596"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>EPUB&apos;ın CSS&apos;si ile uygulanan koyu arka planlar ve renkli metin yazdırılır.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1641"/>
-        <location filename="../MainWindow.cpp~" line="1641"/>
+        <location filename="../MainWindow.cpp" line="1597"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Çok fazla mürekkep kullanılmasına neden olabileceğinden dikkatli olun!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1642"/>
-        <location filename="../MainWindow.cpp~" line="1642"/>
+        <location filename="../MainWindow.cpp" line="1598"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Bu dosyanın nasıl yazdırılacağını görmek için aşağıdaki Baskı Önizlemeyi kullanın.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1643"/>
-        <location filename="../MainWindow.cpp~" line="1643"/>
+        <location filename="../MainWindow.cpp" line="1599"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Gelecekte bu uyarıyı görmek istemiyorsanız kutuyu işaretleyin.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1666"/>
-        <location filename="../MainWindow.cpp~" line="1666"/>
+        <location filename="../MainWindow.cpp" line="1622"/>
         <source>Feature not available before Qt5.12.x</source>
         <translation>Qt5.12.x&apos;ten önce özellik mevcut değil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1727"/>
-        <location filename="../MainWindow.cpp~" line="1727"/>
+        <location filename="../MainWindow.cpp" line="1683"/>
         <source>File Opened</source>
         <translation>Dosya Açıldı</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1731"/>
-        <location filename="../MainWindow.cpp~" line="1731"/>
+        <location filename="../MainWindow.cpp" line="1687"/>
         <source>File Open Failed!</source>
         <translation>Dosya Açılamadı!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1754"/>
-        <location filename="../MainWindow.cpp~" line="1754"/>
+        <location filename="../MainWindow.cpp" line="1710"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Pano HTML biçimlendirmesi içeriyor</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1755"/>
-        <location filename="../MainWindow.cpp~" line="1755"/>
+        <location filename="../MainWindow.cpp" line="1711"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Panodaki veriyi düz metin olarak yapıştırmak istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1831"/>
-        <location filename="../MainWindow.cpp~" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1787"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Yeni bir kimlik eklemeden önce metin seçmelisiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1844"/>
-        <location filename="../MainWindow.cpp~" line="1844"/>
+        <location filename="../MainWindow.cpp" line="1800"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Kimlik geçersiz - bir harfle başlamalı ve ardından _: - veya harf numarası gelmelidir.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1850"/>
-        <location filename="../MainWindow.cpp~" line="1850"/>
+        <location filename="../MainWindow.cpp" line="1806"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Bu konuma bir kimlik ekleyemezsiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1864"/>
-        <location filename="../MainWindow.cpp~" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1820"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Yeni bir bağlantı eklemeden önce metin seçmelisiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1877"/>
-        <location filename="../MainWindow.cpp~" line="1877"/>
+        <location filename="../MainWindow.cpp" line="1833"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Bağlantı geçersiz - &apos;&lt;&apos; veya &apos;&gt;&apos; içeremez</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1883"/>
-        <location filename="../MainWindow.cpp~" line="1883"/>
+        <location filename="../MainWindow.cpp" line="1839"/>
         <source>Error inserting external link target.</source>
         <translation>Harici bağlantı hedefi eklenirken hata oluştu.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1891"/>
-        <location filename="../MainWindow.cpp~" line="1891"/>
+        <location filename="../MainWindow.cpp" line="1847"/>
         <source>Error inserting a link at this position.</source>
         <translation>Bu konumda bir bağlantı eklenirken hata oluştu.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1902"/>
-        <location filename="../MainWindow.cpp~" line="1902"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
         <source>Insert File</source>
         <translation>Dosya Ekle</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1946"/>
-        <location filename="../MainWindow.cpp~" line="1946"/>
+        <location filename="../MainWindow.cpp" line="1902"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Bu konuma bir medya dosyası ekleyemezsiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2037"/>
-        <location filename="../MainWindow.cpp~" line="2037"/>
+        <location filename="../MainWindow.cpp" line="1993"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Bu dosyanın üzerine yazmadan önce herhangi bir değişikliği kaydetmek ister misiniz?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2089"/>
-        <location filename="../MainWindow.cpp~" line="2089"/>
+        <location filename="../MainWindow.cpp" line="2045"/>
         <source>Pasted clip entry %1.</source>
         <translation>%1 klibi girişi yapıştırıldı.</translation>
     </message>
@@ -2070,7 +1989,6 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
     <name>QObject</name>
     <message>
         <location filename="../OPFReader.cpp" line="60"/>
-        <location filename="../OPFReader.cpp~" line="60"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
         <translation>OPF dosyası okunamıyor.
@@ -3433,52 +3351,52 @@ Satır: %1 Sütun %2 - %3</translation>
         <translation>Küçük resim boyutu:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="115"/>
+        <location filename="../SelectFiles.cpp" line="118"/>
         <source>All</source>
         <translation>Tüm</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="116"/>
+        <location filename="../SelectFiles.cpp" line="119"/>
         <source>Images</source>
         <translation>Görüntüler</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="117"/>
+        <location filename="../SelectFiles.cpp" line="120"/>
         <source>Video</source>
         <translation>Video</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="118"/>
+        <location filename="../SelectFiles.cpp" line="121"/>
         <source>Audio</source>
         <translation>Ses</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="161"/>
+        <location filename="../SelectFiles.cpp" line="164"/>
         <source>Media Files In the Book</source>
         <translation>Kitaptaki Medya Dosyaları</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="164"/>
+        <location filename="../SelectFiles.cpp" line="167"/>
         <source>Thumbnails</source>
         <translation>Örneklendirmeler</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="327"/>
+        <location filename="../SelectFiles.cpp" line="330"/>
         <source>shades</source>
         <translation>gölgeler</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="327"/>
+        <location filename="../SelectFiles.cpp" line="330"/>
         <source>colors</source>
         <translation>renkler</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="328"/>
+        <location filename="../SelectFiles.cpp" line="331"/>
         <source>Grayscale</source>
         <translation>Gri Tonlama</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="328"/>
+        <location filename="../SelectFiles.cpp" line="331"/>
         <source>Color</source>
         <translation>Renk</translation>
     </message>
@@ -3569,20 +3487,17 @@ Continue using the requested filename?</source>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="196"/>
-        <location filename="../WebViewEdit.cpp~" line="196"/>
+        <location filename="../WebViewEdit.cpp" line="186"/>
         <source>No suggestions</source>
         <translation>Öneri yok</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="208"/>
-        <location filename="../WebViewEdit.cpp~" line="208"/>
+        <location filename="../WebViewEdit.cpp" line="198"/>
         <source>Check Spelling</source>
         <translation>Yazım denetimi</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="217"/>
-        <location filename="../WebViewEdit.cpp~" line="217"/>
+        <location filename="../WebViewEdit.cpp" line="207"/>
         <source>Select Language</source>
         <translation>Dil Seç</translation>
     </message>

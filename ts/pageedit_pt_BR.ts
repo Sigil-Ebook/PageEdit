@@ -13,7 +13,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
-        <location filename="../PAppearanceWidget.ui" line="263"/>
+        <location filename="../PAppearanceWidget.ui" line="312"/>
         <source>Fonts:</source>
         <translation>Fontes</translation>
     </message>
@@ -31,7 +31,7 @@ quando não estiver especificado no CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
-        <location filename="../PAppearanceWidget.ui" line="323"/>
+        <location filename="../PAppearanceWidget.ui" line="372"/>
         <source>Font Size:</source>
         <translation>Tamanho da Fonte:</translation>
     </message>
@@ -72,77 +72,93 @@ quando uma família de fonte sem serifa estiver especificada no CSS</translation
         <translation>Fonte sem serifa:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="156"/>
+        <location filename="../PAppearanceWidget.ui" line="157"/>
+        <source>Printer Output Appearance</source>
+        <translation>Aparência do Texto Impresso</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="163"/>
+        <location filename="../PAppearanceWidget.ui" line="166"/>
+        <source>Skip Print Preview</source>
+        <translation>Ignorar pré-visualização de Impressão</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="175"/>
+        <source>Print DPI:</source>
+        <translation>Resolução de Impressão:</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="204"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
         <translation>Fazer o PageEdit simular um aparência escura no modo escuro</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="181"/>
+        <location filename="../PAppearanceWidget.ui" line="230"/>
         <source>Main UI</source>
         <translation>Interface principal</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="187"/>
+        <location filename="../PAppearanceWidget.ui" line="236"/>
         <source>Main Menu Icon Size:</source>
         <translation>Tamanho do ícone no Menu principal</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="193"/>
+        <location filename="../PAppearanceWidget.ui" line="242"/>
         <source>Adjust the size of the icons in the main menu.</source>
         <translation>Ajuste o tamanho dos ícones do Menu Principal.</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="231"/>
+        <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>High DPI Setting:</source>
         <translation>Configuração de High DPI</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="240"/>
+        <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>(Needs PageEdit Restart)</source>
         <translation>(Precisa Reiniciar o PageEdit)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="269"/>
+        <location filename="../PAppearanceWidget.ui" line="318"/>
         <source>UI Font:</source>
         <translation>Fonte da interface</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="279"/>
+        <location filename="../PAppearanceWidget.ui" line="328"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
         <translation>Mudar a fonte usada pelo PageEdit nos menus, botões, etc...</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="282"/>
+        <location filename="../PAppearanceWidget.ui" line="331"/>
         <source>Change Font (Needs PageEdit Restart)</source>
         <translation>Mudar Fonte (Precisa Reiniciar o PageEdit)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="306"/>
+        <location filename="../PAppearanceWidget.ui" line="355"/>
         <source>Insert Special Characters:</source>
         <translation>Inserir Caracteres Especiais:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="320"/>
+        <location filename="../PAppearanceWidget.ui" line="369"/>
         <source>Font size to be used for Insert Special Characters window</source>
         <translation>Tamanho da fonte para ser utilizada na janela Inserir Caracteres Especiais</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="353"/>
+        <location filename="../PAppearanceWidget.ui" line="402"/>
         <source>Font family to be used for Insert Special Characters window</source>
         <translation>Família de fonte a ser utilizada na janela Inserir Caracteres Especiais</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="356"/>
+        <location filename="../PAppearanceWidget.ui" line="405"/>
         <source>Standard Font:</source>
         <translation>Fonte Padrão:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="423"/>
+        <location filename="../PAppearanceWidget.ui" line="472"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>Redefinir todas as fontes e cores ao valor padrão</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="426"/>
+        <location filename="../PAppearanceWidget.ui" line="475"/>
         <source>Reset All</source>
         <translation>Redefinir tudo</translation>
     </message>
@@ -200,7 +216,6 @@ quando uma família de fonte sem serifa estiver especificada no CSS</translation
     <message>
         <location filename="../ClipEditor.ui" line="14"/>
         <location filename="../ClipEditor.cpp" line="541"/>
-        <location filename="../ClipEditor.cpp~" line="545"/>
         <source>Clip Editor</source>
         <translation>Editor de recortes</translation>
     </message>
@@ -232,14 +247,12 @@ quando uma família de fonte sem serifa estiver especificada no CSS</translation
     <message>
         <location filename="../ClipEditor.ui" line="91"/>
         <location filename="../ClipEditor.cpp" line="651"/>
-        <location filename="../ClipEditor.cpp~" line="655"/>
         <source>Add Entry</source>
         <translation>Adicionar entrada</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="98"/>
         <location filename="../ClipEditor.cpp" line="652"/>
-        <location filename="../ClipEditor.cpp~" line="656"/>
         <source>Add Group</source>
         <translation>Adicionar grupo</translation>
     </message>
@@ -273,199 +286,166 @@ quando uma família de fonte sem serifa estiver especificada no CSS</translation
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="75"/>
-        <location filename="../ClipEditor.cpp~" line="75"/>
         <source>Right click on an entry to see a context menu of actions.</source>
         <translation>Clique com botão direito para ver menu de contexto de ações.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="76"/>
-        <location filename="../ClipEditor.cpp~" line="76"/>
         <source>You can also right click in your document to select an entry.</source>
         <translation>Você também pode clicar com o botão direito no seu documento e selecionar uma entrada.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
-        <location filename="../ClipEditor.cpp~" line="78"/>
         <source>Name</source>
         <translation>Nome</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
-        <location filename="../ClipEditor.cpp~" line="78"/>
         <source>Name of your entry or group.</source>
         <translation>Nome de seu registro ou grupo.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
-        <location filename="../ClipEditor.cpp~" line="79"/>
         <source>Text</source>
         <translation>Texto</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
-        <location filename="../ClipEditor.cpp~" line="79"/>
         <source>The text to insert. The text is treated like a Regex replacement expression so \1 can be used to insert the text selected in Code View when you paste the clip.</source>
         <translation>O texto a ser inserido. O texto é tratado como uma expressão de substituição Regex. \1 pode ser usado para inserir o texto selecionado na Visualização de Código quando você cola o recorte.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
-        <location filename="../ClipEditor.cpp~" line="83"/>
         <source>Save</source>
         <translation>Salvar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
-        <location filename="../ClipEditor.cpp~" line="83"/>
         <source>Save your changes.</source>
         <translation>Salvar suas alterações.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
-        <location filename="../ClipEditor.cpp~" line="83"/>
         <source>If any other instances of Sigil are running they will be automatically updated with your changes.</source>
         <translation>Se qualquer das outras instâncias de Sigil estiver em execução elas serão automaticamente atualizadas com suas alterações.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="93"/>
-        <location filename="../ClipEditor.cpp~" line="93"/>
         <source>Cannot save entries.</source>
         <translation>Não foi possível salvar registros.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="137"/>
-        <location filename="../ClipEditor.cpp~" line="137"/>
         <source>Clip entries loaded from file.</source>
         <translation>Recorta entradas carregadas do arquivo.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="200"/>
-        <location filename="../ClipEditor.cpp~" line="200"/>
         <source>You cannot select an entry and a group containing the entry.</source>
         <translation>Não é possível selecionar uma entrada e um grupo contendo a entrada.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="287"/>
-        <location filename="../ClipEditor.cpp~" line="287"/>
         <source>You cannot Copy or Cut groups - use drag-and-drop.</source>
         <translation>Não é possível copiar ou recortar grupos. Utilize o movimento arrastar-e-soltar.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
-        <location filename="../ClipEditor.cpp~" line="359"/>
         <source>Sigil</source>
         <translation>Sigil</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
-        <location filename="../ClipEditor.cpp~" line="359"/>
         <source>Are you sure you want to reload all entries?  This will overwrite any unsaved changes.</source>
         <translation>Tem certeza que deseja recarregar todas as entradas? Esta ação irá substituir qualquer alteração não salva.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="380"/>
-        <location filename="../ClipEditor.cpp~" line="380"/>
         <source>Import Entries</source>
         <translation>Importar entradas</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="460"/>
-        <location filename="../ClipEditor.cpp~" line="460"/>
         <source>Export Selected Entries</source>
         <translation>Exportar entradas selecionadas</translation>
     </message>
     <message numerus="yes">
         <location filename="../ClipEditor.cpp" line="541"/>
-        <location filename="../ClipEditor.cpp~" line="545"/>
         <source>CSS entries added: %n</source>
         <translation><numerusform>CSS entries added: %n</numerusform><numerusform>Entradas CSS adicionadas: %n</numerusform><numerusform>Entradas CSS adicionadas: %n</numerusform></translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="653"/>
-        <location filename="../ClipEditor.cpp~" line="657"/>
         <source>Edit</source>
         <translation>Editar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="654"/>
-        <location filename="../ClipEditor.cpp~" line="658"/>
         <source>Cut</source>
         <translation>Recortar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="655"/>
-        <location filename="../ClipEditor.cpp~" line="659"/>
         <source>Copy</source>
         <translation>Copiar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="656"/>
-        <location filename="../ClipEditor.cpp~" line="660"/>
         <source>Paste</source>
         <translation>Colar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="657"/>
-        <location filename="../ClipEditor.cpp~" line="661"/>
         <source>Delete</source>
         <translation>Excluir</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="658"/>
-        <location filename="../ClipEditor.cpp~" line="662"/>
         <source>Import</source>
         <translation>Importar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="659"/>
-        <location filename="../ClipEditor.cpp~" line="663"/>
         <source>Reload</source>
         <translation>Recarregar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="660"/>
-        <location filename="../ClipEditor.cpp~" line="664"/>
         <source>Export</source>
         <translation>Exportar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="661"/>
-        <location filename="../ClipEditor.cpp~" line="665"/>
         <source>Export All</source>
         <translation>Exportar Tudo</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="662"/>
-        <location filename="../ClipEditor.cpp~" line="666"/>
         <source>Collapse All</source>
         <translation>Fechar todos</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="663"/>
-        <location filename="../ClipEditor.cpp~" line="667"/>
         <source>Expand All</source>
         <translation>Expandir Tudo</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="664"/>
-        <location filename="../ClipEditor.cpp~" line="668"/>
         <source>Autofill</source>
         <translation>Autocompletar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="746"/>
-        <location filename="../ClipEditor.cpp~" line="750"/>
         <source>Clip entries saved.</source>
         <translation>Entradas recortadas salvas.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="775"/>
-        <location filename="../ClipEditor.cpp~" line="779"/>
         <source>Sigil: Clip Editor</source>
         <translation>Sigil: Editor de Recortes</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="776"/>
-        <location filename="../ClipEditor.cpp~" line="780"/>
         <source>The Clip entries may have been modified.
 Do you want to save your changes?</source>
         <translation>As entradas recortadas podem ter sido modificadas.
@@ -664,26 +644,15 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1044"/>
         <location filename="../MainWindow.cpp" line="1137"/>
-        <location filename="../MainWindow.cpp" line="1831"/>
-        <location filename="../MainWindow.cpp" line="1844"/>
-        <location filename="../MainWindow.cpp" line="1850"/>
-        <location filename="../MainWindow.cpp" line="1864"/>
-        <location filename="../MainWindow.cpp" line="1877"/>
-        <location filename="../MainWindow.cpp" line="1883"/>
-        <location filename="../MainWindow.cpp" line="1891"/>
-        <location filename="../MainWindow.cpp" line="1946"/>
-        <location filename="../MainWindow.cpp" line="2036"/>
-        <location filename="../MainWindow.cpp~" line="1044"/>
-        <location filename="../MainWindow.cpp~" line="1137"/>
-        <location filename="../MainWindow.cpp~" line="1831"/>
-        <location filename="../MainWindow.cpp~" line="1844"/>
-        <location filename="../MainWindow.cpp~" line="1850"/>
-        <location filename="../MainWindow.cpp~" line="1864"/>
-        <location filename="../MainWindow.cpp~" line="1877"/>
-        <location filename="../MainWindow.cpp~" line="1883"/>
-        <location filename="../MainWindow.cpp~" line="1891"/>
-        <location filename="../MainWindow.cpp~" line="1946"/>
-        <location filename="../MainWindow.cpp~" line="2036"/>
+        <location filename="../MainWindow.cpp" line="1787"/>
+        <location filename="../MainWindow.cpp" line="1800"/>
+        <location filename="../MainWindow.cpp" line="1806"/>
+        <location filename="../MainWindow.cpp" line="1820"/>
+        <location filename="../MainWindow.cpp" line="1833"/>
+        <location filename="../MainWindow.cpp" line="1839"/>
+        <location filename="../MainWindow.cpp" line="1847"/>
+        <location filename="../MainWindow.cpp" line="1902"/>
+        <location filename="../MainWindow.cpp" line="1992"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1787,31 +1756,26 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="781"/>
-        <location filename="../MainWindow.cpp~" line="781"/>
         <source>File load failed</source>
         <translation>Falha no carregamento do aquivo</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="782"/>
-        <location filename="../MainWindow.cpp~" line="782"/>
         <source>File Load Failed</source>
         <translation>Falha no Carregamento do Arquivo</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="877"/>
-        <location filename="../MainWindow.cpp~" line="877"/>
         <source>mode: Preview</source>
         <translation>modo: Pré-visualização</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="879"/>
-        <location filename="../MainWindow.cpp~" line="879"/>
         <source>mode: Edit</source>
         <translation>modo:Edição</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1044"/>
-        <location filename="../MainWindow.cpp~" line="1044"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1821,223 +1785,178 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1138"/>
-        <location filename="../MainWindow.cpp~" line="1138"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Deseja salvar suas alterações antes de sair?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1155"/>
-        <location filename="../MainWindow.cpp~" line="1155"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit está fechando...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1291"/>
-        <location filename="../MainWindow.cpp" line="1292"/>
-        <location filename="../MainWindow.cpp" line="1293"/>
-        <location filename="../MainWindow.cpp" line="1302"/>
-        <location filename="../MainWindow.cpp" line="1303"/>
-        <location filename="../MainWindow.cpp" line="1304"/>
-        <location filename="../MainWindow.cpp~" line="1291"/>
-        <location filename="../MainWindow.cpp~" line="1292"/>
-        <location filename="../MainWindow.cpp~" line="1293"/>
-        <location filename="../MainWindow.cpp~" line="1302"/>
-        <location filename="../MainWindow.cpp~" line="1303"/>
-        <location filename="../MainWindow.cpp~" line="1304"/>
+        <location filename="../MainWindow.cpp" line="1247"/>
+        <location filename="../MainWindow.cpp" line="1248"/>
+        <location filename="../MainWindow.cpp" line="1249"/>
+        <location filename="../MainWindow.cpp" line="1258"/>
+        <location filename="../MainWindow.cpp" line="1259"/>
+        <location filename="../MainWindow.cpp" line="1260"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Arquivo HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1294"/>
-        <location filename="../MainWindow.cpp~" line="1294"/>
+        <location filename="../MainWindow.cpp" line="1250"/>
         <source>OPF files (*.opf)</source>
         <translation>Arquivos OPF (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1295"/>
-        <location filename="../MainWindow.cpp~" line="1295"/>
+        <location filename="../MainWindow.cpp" line="1251"/>
         <source>All files (*.*)</source>
         <translation>Todos os arquivos (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1534"/>
-        <location filename="../MainWindow.cpp~" line="1534"/>
+        <location filename="../MainWindow.cpp" line="1490"/>
         <source>Save File</source>
         <translation>Salvar arquivo</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1569"/>
-        <location filename="../MainWindow.cpp" line="1570"/>
-        <location filename="../MainWindow.cpp" line="1582"/>
-        <location filename="../MainWindow.cpp" line="1583"/>
-        <location filename="../MainWindow.cpp~" line="1569"/>
-        <location filename="../MainWindow.cpp~" line="1570"/>
-        <location filename="../MainWindow.cpp~" line="1582"/>
-        <location filename="../MainWindow.cpp~" line="1583"/>
+        <location filename="../MainWindow.cpp" line="1525"/>
+        <location filename="../MainWindow.cpp" line="1526"/>
+        <location filename="../MainWindow.cpp" line="1538"/>
+        <location filename="../MainWindow.cpp" line="1539"/>
         <source>File Save-As Failed!</source>
         <translation>Não foi possível salvar o arquivo com esse nome! Verifique se possui espaço suficiente em disco e os privilégios de escrita no diretório de destino.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1569"/>
-        <location filename="../MainWindow.cpp~" line="1569"/>
+        <location filename="../MainWindow.cpp" line="1525"/>
         <source>is not writeable</source>
         <translation>O destino não possui permissões de escrita/gravação. Escolha outra pasta.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1578"/>
-        <location filename="../MainWindow.cpp" line="1617"/>
-        <location filename="../MainWindow.cpp~" line="1578"/>
-        <location filename="../MainWindow.cpp~" line="1617"/>
+        <location filename="../MainWindow.cpp" line="1534"/>
+        <location filename="../MainWindow.cpp" line="1573"/>
         <source>File Saved</source>
         <translation>Arquivo Salvo</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1608"/>
-        <location filename="../MainWindow.cpp" line="1610"/>
-        <location filename="../MainWindow.cpp" line="1621"/>
-        <location filename="../MainWindow.cpp" line="1622"/>
-        <location filename="../MainWindow.cpp~" line="1608"/>
-        <location filename="../MainWindow.cpp~" line="1610"/>
-        <location filename="../MainWindow.cpp~" line="1621"/>
-        <location filename="../MainWindow.cpp~" line="1622"/>
+        <location filename="../MainWindow.cpp" line="1564"/>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1577"/>
+        <location filename="../MainWindow.cpp" line="1578"/>
         <source>File Save Failed!</source>
         <translation>Não foi possível salvar o arquivo! Verifique se possui espaço suficiente em disco e os privilégios de escrita no diretório de destino.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1609"/>
-        <location filename="../MainWindow.cpp~" line="1609"/>
+        <location filename="../MainWindow.cpp" line="1565"/>
         <source>does not exist or is not writeable</source>
         <translation>Destino inexistente. Verifique os privilégios de escrita/gravação no diretório.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1638"/>
-        <location filename="../MainWindow.cpp~" line="1638"/>
+        <location filename="../MainWindow.cpp" line="1594"/>
         <source>Do not show this warning again</source>
         <translation>Não exiba este aviso novamente</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1639"/>
-        <location filename="../MainWindow.cpp~" line="1639"/>
+        <location filename="../MainWindow.cpp" line="1595"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Este arquivo pode não ser impresso da maneira que você imagina.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1640"/>
-        <location filename="../MainWindow.cpp~" line="1640"/>
+        <location filename="../MainWindow.cpp" line="1596"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Fundos escuros e textos coloridos especificados no CSS de um Epub serão impressos assim.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1641"/>
-        <location filename="../MainWindow.cpp~" line="1641"/>
+        <location filename="../MainWindow.cpp" line="1597"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Tenha cuidado, já que isto pode resultar na utilização de muita tinta!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1642"/>
-        <location filename="../MainWindow.cpp~" line="1642"/>
+        <location filename="../MainWindow.cpp" line="1598"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Utilize a Pré visualização de Impressão para ver como ficará a impressão.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1643"/>
-        <location filename="../MainWindow.cpp~" line="1643"/>
+        <location filename="../MainWindow.cpp" line="1599"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Marque a caixa se você não quiser ver este aviso no futuro.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1666"/>
-        <location filename="../MainWindow.cpp~" line="1666"/>
+        <location filename="../MainWindow.cpp" line="1622"/>
         <source>Feature not available before Qt5.12.x</source>
         <translation>Recurso não disponível antes da versão Qt5.12.x</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1727"/>
-        <location filename="../MainWindow.cpp~" line="1727"/>
+        <location filename="../MainWindow.cpp" line="1683"/>
         <source>File Opened</source>
         <translation>Carregamento do arquivo concluído.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1731"/>
-        <location filename="../MainWindow.cpp~" line="1731"/>
+        <location filename="../MainWindow.cpp" line="1687"/>
         <source>File Open Failed!</source>
         <translation>Falha ao abrir arquivo.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1754"/>
-        <location filename="../MainWindow.cpp~" line="1754"/>
+        <location filename="../MainWindow.cpp" line="1710"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Área de Transferência contem formatação HTML</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1755"/>
-        <location filename="../MainWindow.cpp~" line="1755"/>
+        <location filename="../MainWindow.cpp" line="1711"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Deseja colar os dados da área de transferência como texto puro?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1831"/>
-        <location filename="../MainWindow.cpp~" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1787"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Você deve selecionar o texto antes de inserir um novo id.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1844"/>
-        <location filename="../MainWindow.cpp~" line="1844"/>
+        <location filename="../MainWindow.cpp" line="1800"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID inválida - deve iniciar com letra, seguida de número _ : - ou .</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1850"/>
-        <location filename="../MainWindow.cpp~" line="1850"/>
+        <location filename="../MainWindow.cpp" line="1806"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Você não pode inserir um id nesta posição</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1864"/>
-        <location filename="../MainWindow.cpp~" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1820"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Você deve selecionar o texto antes de inserir um novo link.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1877"/>
-        <location filename="../MainWindow.cpp~" line="1877"/>
+        <location filename="../MainWindow.cpp" line="1833"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>O link é inválido - não pode conter &apos;&lt;&apos; ou &apos;&gt;&apos;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1883"/>
-        <location filename="../MainWindow.cpp~" line="1883"/>
+        <location filename="../MainWindow.cpp" line="1839"/>
         <source>Error inserting external link target.</source>
         <translation>Erro na inserção de uma URL externa de destino.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1891"/>
-        <location filename="../MainWindow.cpp~" line="1891"/>
+        <location filename="../MainWindow.cpp" line="1847"/>
         <source>Error inserting a link at this position.</source>
         <translation>Erro na inserção de um link neste local.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1902"/>
-        <location filename="../MainWindow.cpp~" line="1902"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
         <source>Insert File</source>
         <translation>Inserir arquivo</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1946"/>
-        <location filename="../MainWindow.cpp~" line="1946"/>
+        <location filename="../MainWindow.cpp" line="1902"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Você pode inserir um arquivo de mídia aqui.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2037"/>
-        <location filename="../MainWindow.cpp~" line="2037"/>
+        <location filename="../MainWindow.cpp" line="1993"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Deseja salvar alterações antes de sobreescrever este arquivo?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2089"/>
-        <location filename="../MainWindow.cpp~" line="2089"/>
+        <location filename="../MainWindow.cpp" line="2045"/>
         <source>Pasted clip entry %1.</source>
         <translation>Entrada recorte de %1 colada.</translation>
     </message>
@@ -2069,7 +1988,6 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     <name>QObject</name>
     <message>
         <location filename="../OPFReader.cpp" line="60"/>
-        <location filename="../OPFReader.cpp~" line="60"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
         <translation>Não foi possível ler o arquivo OPF.
@@ -3432,52 +3350,52 @@ Linha: %1 Coluna %2 - %3</translation>
         <translation>Tamanho da miniatura:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="115"/>
+        <location filename="../SelectFiles.cpp" line="118"/>
         <source>All</source>
         <translation>Tudo</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="116"/>
+        <location filename="../SelectFiles.cpp" line="119"/>
         <source>Images</source>
         <translation>Imagens</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="117"/>
+        <location filename="../SelectFiles.cpp" line="120"/>
         <source>Video</source>
         <translation>Vídeo</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="118"/>
+        <location filename="../SelectFiles.cpp" line="121"/>
         <source>Audio</source>
         <translation>Áudio</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="161"/>
+        <location filename="../SelectFiles.cpp" line="164"/>
         <source>Media Files In the Book</source>
         <translation>Arquivos de Mídia no Livro</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="164"/>
+        <location filename="../SelectFiles.cpp" line="167"/>
         <source>Thumbnails</source>
         <translation>Miniaturas</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="327"/>
+        <location filename="../SelectFiles.cpp" line="330"/>
         <source>shades</source>
         <translation>sombras</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="327"/>
+        <location filename="../SelectFiles.cpp" line="330"/>
         <source>colors</source>
         <translation>cores</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="328"/>
+        <location filename="../SelectFiles.cpp" line="331"/>
         <source>Grayscale</source>
         <translation>Tons de Cinza</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="328"/>
+        <location filename="../SelectFiles.cpp" line="331"/>
         <source>Color</source>
         <translation>Cor</translation>
     </message>
@@ -3567,20 +3485,17 @@ Continue using the requested filename?</source>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="196"/>
-        <location filename="../WebViewEdit.cpp~" line="196"/>
+        <location filename="../WebViewEdit.cpp" line="186"/>
         <source>No suggestions</source>
         <translation>Sem sugestões</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="208"/>
-        <location filename="../WebViewEdit.cpp~" line="208"/>
+        <location filename="../WebViewEdit.cpp" line="198"/>
         <source>Check Spelling</source>
         <translation>Checar Ortografia</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="217"/>
-        <location filename="../WebViewEdit.cpp~" line="217"/>
+        <location filename="../WebViewEdit.cpp" line="207"/>
         <source>Select Language</source>
         <translation>Selecione Idioma</translation>
     </message>
