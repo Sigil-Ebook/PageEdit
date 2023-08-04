@@ -21,6 +21,16 @@ endif()
 
 #############################################################################
 
+# Set Inno minimum Windows version 
+if ( NOT DEFINED BUILD_FOR_WIN7 )
+    # Windows 10 (1809)
+    set( BUILD_FOR_WIN7 0 )
+    set ( WIN_MIN_VERSION 10.0.17763 )
+else()
+    # Windows 7sp1
+    set ( WIN_MIN_VERSION 6.1.7601 )
+endif()
+
 set( CMAKE_DEBUG_POSTFIX "d" )
 # Avoid the whole Release/Debug folder creation with Visual Studio
 if (MSVC_IDE)
