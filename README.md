@@ -90,18 +90,20 @@ To test
 
 __NOTE__: certain features, like Inspector, will require a minimum of Qt5.11.x to function on Linux.
 
+__NOTE__: If you want to build with Qt5, you'll obviously need to drop -DUSE_Qt6=1 and change -DQt6_DIR to -DQt5_DIR and point it to your Qt5 installation.
+
 By default, bundled hunspell dictionaries are converted to webengine spell check dictionaries (with qt tools) and installed to the QT_INSTALL_DATA/qtwebengine_dictionaries location. This location can be found using the qmake binary (of the Qt you're building PageEdit with) with the following command `-qmake -query QT_INSTALL_DATA` . If using the system Qt, this will typically be /usr/share/qt/qtwebengine_dictionaries. To disable the conversion/installation of these bundled dictionaries, use -DNSTALL_BUNDLED_DICTS=0 when configuring PageEdit with cmake. Arch Linux already includes these dictionaries with the corresponding hunspell language dictionaries. So you'll want to skip their conversion/installation on Arch and make sure you have the correct hunspell languages installed instead.
 
 On Windows:
 -----------
 
-Make sure a minimum of Qt5.12.3 (with the WebEngine component) and Visual Studio 2017 are installed. Install the x64 version of Qt5.12.3 for VS2017. Install cmake 3.0+ and make sure its bin directory is added to your path.
+Qt6.5.2 or higher is preferred, but you'll want to maintain a  minimum of Qt5.13.x (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.5.2. Install cmake 3.18+ and make sure its bin directory is added to your path.
 
-Make sure that Qt's bin directory is also added to your PATH. Take note of the path for your Qt's prefix (the directory right above the bin directory). Open an "x64 Native Tools Command Prompt for VS2017" from the Start menu and cd to wherever you want to build.
+Make sure that Qt's bin directory is also added to your PATH. Take note of the path for your Qt's prefix (the directory right above the bin directory). Open an "x64 Native Tools Command Prompt for VS2022" from the Start menu and cd to wherever you want to build.
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake -G "NMake Makefiles" -DQt5_DIR="C:\path\to\your\Qt5\prefix\lib\cmake\Qt5 -DCMAKE_BUILD_TYPE=Release "C:\path\to\PageEdit's\cloned\repository"`<br>
+`cmake -G "NMake Makefiles" -DUSE_Qt6=1 -DQt6_DIR="C:\path\to\your\Qt6\prefix\lib\cmake\Qt5 -DCMAKE_BUILD_TYPE=Release "C:\path\to\PageEdit's\cloned\repository"`<br>
 `nmake`<br>
 
 To test:
@@ -110,11 +112,13 @@ To test:
 
 Use `nmake deploy` to package PageEdit and all of its dependencies into a zip archive (in a newly created 'deploy' folder in the build folder)
 
-Use `nmake deployinstaller` to package PageEdit and all of its dependencies into an Inno Setup installer (must have InnoSetup installed and on the PATH for is to work).
+Use `nmake deployinstaller` to package PageEdit and all of its dependencies into an Inno Setup installer (must have InnoSetup installed and on the PATH for this to work).
 
 __NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deploy` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
-__NOTE__: as of this writing, the Official PageEdit release are built using Qt5.12.6
+__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.5.2
+
+__NOTE__: If you want to build with Qt5, you'll obviously need to drop -DUSE_Qt6=1 and change -DQt6_DIR to -DQt5_DIR and point it to your Qt5 installation.
 
 
 ## For Github repository maintainers (who am I kidding, this is to keep myself from forgetting/messing up):
