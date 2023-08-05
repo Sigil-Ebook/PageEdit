@@ -17,32 +17,27 @@ This app is working and fundamentally complete.
 
 ![PageEdit](screencaps/add-links.png?raw=true) Add Links
 
-It prefers Qt 5.12.6 or later.
+It prefers Qt 6.5.2 or later but can still be built with Qt 5.15.9.
 
-To build after cloning the repo
-
-You will need cmake version 3.0 to build:
-
-Make sure the qt tools and libraries from Qt 5.12.6 are in your path<br>
-`export PATH=~/QT512/bin:${PATH}`
+Building on macOS Ventura
+-------------------------
+You will need cmake version 3.0 or later to build:
 
 You build in a separate directory and not in the source directory.
 
 After checking out the PageEdit github repo into a PageEdit directory
 
-Building on macOS:
-------------------
 
-`export MACOSX_DEPLOYMENT_TARGET=10.12`<br>
-`export MYQTHOME=~/Qt512`<br>
+`export MACOSX_DEPLOYMENT_TARGET=11.0`<br>
+`export MYQTHOME=~/Qt652`<br>
 `export PATH=${PATH}:${MYQTHOME}/bin`<br>
 `mkdir build`<br>
 `cd build`<br>
-`cmake -DCMAKE_OSX_DEPLOYMENT_TARGET=10.12 -DCMAKE_BUILD_TYPE=Release \`<br>
+`cmake -DUSE_QT6=1 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_BUILD_TYPE=Release \`<br>
 `      -DCMAKE_CXX_FLAGS=-Wno-inconsistent-missing-override \`<br>
 `      -DCMAKE_PREFIX_PATH=${MYQTHOME}/lib/cmake \ `<br>
 `      -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/\`<br>
-`                   MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/ ../PageEdit`<br>
+`                   MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/ ../PageEdit`<br>
 `make`<br>
 `make addframeworks`<br>
 `cd bin`<br>
@@ -57,7 +52,7 @@ On Linux
 Make sure a minimum of Qt5.9.4(ish) is installed (with the WebEngine package) as well as cmake.<br>
 You build in a separate directory and not in the source directory.
 
-Qt5.11+ is probably a more realistic minimum to be able enjoy all of PageEdit's features.
+Qt 6.5.X or later is preferred but Qt5.13+ is probably a more realistic minimum to be able enjoy all of PageEdit's features.
 
 Get the PageEdit Source:
 
@@ -69,20 +64,20 @@ __Ubuntu__
 
 `sudo apt-get install build-essential`<br>
 `sudo apt-get install cmake`<br>
-`sudo apt-get install qtwebengine5-dev qttools5-dev qttools5-dev-tools`
+`sudo apt-get install qtwebengine6-dev qttools6-dev qttools6-dev-tools`
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
+`cmake "Unix Makefiles" -DUSE_QT6=1 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
 `make`<br>
 
 __Arch Linux__
 
-sudo pacman -S cmake qt5-webengine qt5-tools<br>
+sudo pacman -S cmake qt6-webengine qt6-tools<br>
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake "Unix Makefiles" -DINSTALL_BUNDLED_DICTS=0 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
+`cmake "Unix Makefiles" -DINSTALL_BUNDLED_DICTS=0 -DUSE_QT6=1 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
 `make`<br>
 
 __All Flavors__:
