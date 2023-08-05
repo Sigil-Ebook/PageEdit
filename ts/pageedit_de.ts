@@ -74,7 +74,7 @@ Sans-Serif-Schriftfamilie in der CSS-Datei angegeben wurde.</translation>
     <message>
         <location filename="../PAppearanceWidget.ui" line="157"/>
         <source>Printer Output Appearance</source>
-        <translation type="unfinished"/>
+        <translation>Druckausgabe-Anzeige</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="163"/>
