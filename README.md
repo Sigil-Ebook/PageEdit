@@ -103,7 +103,7 @@ Make sure that Qt's bin directory is also added to your PATH. Take note of the p
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake -G "NMake Makefiles" -DUSE_Qt6=1 -DQt6_DIR="C:\path\to\your\Qt6\prefix\lib\cmake\Qt5 -DCMAKE_BUILD_TYPE=Release "C:\path\to\PageEdit's\cloned\repository"`<br>
+`cmake -G "NMake Makefiles" -DUSE_Qt6=1 -DQt6_DIR="C:\path\to\your\Qt6\prefix\lib\cmake\Qt6 -DCMAKE_BUILD_TYPE=Release "C:\path\to\PageEdit's\cloned\repository"`<br>
 `nmake`<br>
 
 To test:
