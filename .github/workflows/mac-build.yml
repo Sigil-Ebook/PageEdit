@@ -82,7 +82,6 @@ jobs:
       run: |
         cmake -DCMAKE_OSX_DEPLOYMENT_TARGET=11 \
         -DCMAKE_BUILD_TYPE=Release \
-        -DUSE_QT6=1 \
         -DCMAKE_CXX_FLAGS=-Wno-inconsistent-missing-override \
         -DCMAKE_PREFIX_PATH=${{runner.workspace}}/${{env.QT}}/lib/cmake \
         -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/ $GITHUB_WORKSPACE  
