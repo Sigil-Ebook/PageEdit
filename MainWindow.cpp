@@ -1041,7 +1041,7 @@ void MainWindow::LinkClicked(const QUrl &url)
         }
     }
     QMessageBox::StandardButton button_pressed;
-    button_pressed = QMessageBox::warning(this, tr("PageEdit"), tr("Are you sure you want to open this link in your browser?\n\n%1").arg(toUrl.toString()), QMessageBox::Ok | QMessageBox::Cancel);
+    button_pressed = Utility::warning(this, tr("PageEdit"), tr("Are you sure you want to open this link in your browser?\n\n%1").arg(toUrl.toString()), QMessageBox::Ok | QMessageBox::Cancel);
 
     if (button_pressed == QMessageBox::Ok) {
         QDesktopServices::openUrl(toUrl);
@@ -1133,7 +1133,7 @@ void MainWindow::AllowSaveIfModified()
     }
     if (modified) {
         QMessageBox::StandardButton button_pressed;
-        button_pressed = QMessageBox::warning(this,
+        button_pressed = Utility::warning(this,
                           tr("PageEdit"),
                           tr("Do you want to save your changes before leaving?"),
                           QMessageBox::Save | QMessageBox::Discard
@@ -1784,7 +1784,7 @@ void MainWindow::InsertId()
 
     // Prevent adding a hidden anchor id in PageEdit.
     if (id.isEmpty() && m_WebView->GetSelectedText().isEmpty()) {
-        QMessageBox::warning(this, tr("PageEdit"), tr("You must select text before inserting a new id."));
+        Utility::warning(this, tr("PageEdit"), tr("You must select text before inserting a new id."));
         return;
     }
 
@@ -1797,13 +1797,13 @@ void MainWindow::InsertId()
         QRegularExpressionMatch mo = invalid_id.match(selected_id);
 
         if (mo.hasMatch()) {
-            QMessageBox::warning(this, tr("PageEdit"), tr("ID is invalid - must start with a letter, followed by letter\
+            Utility::warning(this, tr("PageEdit"), tr("ID is invalid - must start with a letter, followed by letter\
  number _ : - or ."));
             return;
         };
 
         if (!m_WebView->InsertId(select_id.GetId())) {
-            QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert an id at this position."));
+            Utility::warning(this, tr("PageEdit"), tr("You cannot insert an id at this position."));
         }
     }
 }
@@ -1817,7 +1817,7 @@ void MainWindow::InsertHyperlink()
 
     // Prevent adding a hidden anchor link in PageEdit.
     if (href.isEmpty() && m_WebView->GetSelectedText().isEmpty()) {
-        QMessageBox::warning(this, tr("PageEdit"), tr("You must select text before inserting a new link."));
+        Utility::warning(this, tr("PageEdit"), tr("You must select text before inserting a new link."));
         return;
     }
 
@@ -1830,13 +1830,13 @@ void MainWindow::InsertHyperlink()
     if (select_hyperlink.exec() == QDialog::Accepted) {
         QString target = select_hyperlink.GetTarget();
         if (target.contains("<") || target.contains(">")) {
-            QMessageBox::warning(this, tr("PageEdit"), tr("Link is invalid - cannot contain '<' or '>'"));
+            Utility::warning(this, tr("PageEdit"), tr("Link is invalid - cannot contain '<' or '>'"));
             return;
         };
         // handle external links
         if (target.indexOf(':') != -1) {
             if (!m_WebView->InsertHyperlink(target)) {
-                QMessageBox::warning(this, tr("PageEdit"), tr("Error inserting external link target."));
+                Utility::warning(this, tr("PageEdit"), tr("Error inserting external link target."));
             }
         }
         // convert target to relative link from the current file
@@ -1844,7 +1844,7 @@ void MainWindow::InsertHyperlink()
         QString relative_link = Utility::buildRelativePath(m_Base + currentpath, m_Base + parts.first);
         relative_link = relative_link + parts.second;
         if (!m_WebView->InsertHyperlink(relative_link)) {
-            QMessageBox::warning(this, tr("PageEdit"), tr("Error inserting a link at this position."));
+            Utility::warning(this, tr("PageEdit"), tr("Error inserting a link at this position."));
         }
     }
 }
@@ -1899,7 +1899,7 @@ void MainWindow::InsertFiles(const QStringList &selected_files)
             html = QString("<audio controls=\"controls\" src=\"%1\">%2</audio>").arg(relative_link).arg(filename);
         }
         if (!m_WebView->InsertHtml(html)) {
-            QMessageBox::warning(this, tr("PageEdit"), tr("You cannot insert a media file at this position."));
+            Utility::warning(this, tr("PageEdit"), tr("You cannot insert a media file at this position."));
         }
     }
 }
@@ -1988,7 +1988,7 @@ bool MainWindow::MaybeSaveDialogSaysProceed(bool modified)
     if (!modified) return true;
 
     QMessageBox::StandardButton button_pressed;
-    button_pressed = QMessageBox::warning(this,
+    button_pressed = Utility::warning(this,
                     tr("PageEdit"),
                     tr("Do you want to save any changes before overwriting this file?"),
                     QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel

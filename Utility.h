@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford, Ontario, Canada
 **  Copyright (C) 2009-2011 Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
 **  This file is part of PageEdit.
@@ -28,6 +28,7 @@
 #include <QString>
 #include <QStringList>
 #include <QStringRef>
+#include <QMessageBox>
 
 class QWidget;
 
@@ -186,6 +187,24 @@ public:
 
     // return the proper background color for QWebEngineView
     static QColor WebViewBackgroundColor(bool followpref = false);
+
+
+     // Added to work around macOS specific QMessageBox issues with reactivating proper window upon return
+    static QMessageBox::StandardButton warning(QWidget *parent, const QString &title, const QString &text,
+                                               QMessageBox::StandardButtons buttons = QMessageBox::Ok,
+                                               QMessageBox::StandardButton defaultButton = QMessageBox::NoButton);
+
+    static QMessageBox::StandardButton question(QWidget *parent, const QString &title, const QString &text,
+                                                QMessageBox::StandardButtons buttons = QMessageBox::Yes | QMessageBox::No,
+                                                QMessageBox::StandardButton defaultButton = QMessageBox::NoButton);
+
+    static QMessageBox::StandardButton information(QWidget *parent, const QString &title, const QString &text,
+                                                   QMessageBox::StandardButtons buttons = QMessageBox::Ok,
+                                                   QMessageBox::StandardButton defaultButton = QMessageBox::NoButton);
+
+    static QMessageBox::StandardButton critical(QWidget *parent, const QString &title, const QString &text,
+                                                QMessageBox::StandardButtons buttons = QMessageBox::Ok,
+                                                QMessageBox::StandardButton defaultButton = QMessageBox::NoButton);
 
 };
 

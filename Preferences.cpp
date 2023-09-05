@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin B, Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2023 Kevin B, Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2011      John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
@@ -87,7 +87,7 @@ void Preferences::saveSettings()
     settings.endGroup();
 
     if (m_restartPageEdit) {
-        QMessageBox::warning(this, tr("PageEdit"), tr("Changes will take effect when you restart PageEdit."));
+        Utility::warning(this, tr("PageEdit"), tr("Changes will take effect when you restart PageEdit."));
     }
 }
 

@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford, Ontario, Canada
 **  Copyright (C) 2009-2011 Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
 **  This file is part of PageEdit.
@@ -572,7 +572,8 @@ QString Utility::URLDecodePath(const QString &path)
 
 void Utility::DisplayExceptionErrorDialog(const QString &error_info)
 {
-    QMessageBox message_box(QApplication::activeWindow());
+    QWidget* parent = QApplication::activeWindow();
+    QMessageBox message_box(parent);
     message_box.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
     message_box.setModal(true);
     message_box.setIcon(QMessageBox::Critical);
@@ -590,12 +591,16 @@ void Utility::DisplayExceptionErrorDialog(const QString &error_info)
                   << "Architecture: " + QSysInfo::currentCpuArchitecture();
     message_box.setDetailedText(detailed_text.join("\n"));
     message_box.exec();
+#ifdef Q_OS_MAC
+    if (parent) parent->activateWindow();
+#endif
 }
 
 
 void Utility::DisplayStdErrorDialog(const QString &error_message, const QString &detailed_text)
 {
-    QMessageBox message_box(QApplication::activeWindow());
+    QWidget* parent = QApplication::activeWindow();
+    QMessageBox message_box(parent);
     message_box.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
     message_box.setModal(true);
     message_box.setIcon(QMessageBox::Critical);
@@ -608,12 +613,16 @@ void Utility::DisplayStdErrorDialog(const QString &error_message, const QString 
 
     message_box.setStandardButtons(QMessageBox::Close);
     message_box.exec();
+#ifdef Q_OS_MAC
+    if (parent) parent->activateWindow();
+#endif
 }
 
 
 void Utility::DisplayStdWarningDialog(const QString &warning_message, const QString &detailed_text)
 {
-    PageEditMessageBox message_box(QApplication::activeWindow());
+    QWidget* parent = QApplication::activeWindow();
+    PageEditMessageBox message_box(parent);
     message_box.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
     message_box.setModal(true);
     message_box.setIcon(QMessageBox::Warning);
@@ -626,6 +635,9 @@ void Utility::DisplayStdWarningDialog(const QString &warning_message, const QStr
     }
     message_box.setStandardButtons(QMessageBox::Close);
     message_box.exec();
+#ifdef Q_OS_MAC
+    if (parent) parent->activateWindow();
+#endif
 }
 
 
@@ -968,4 +980,52 @@ QColor Utility::WebViewBackgroundColor(bool followpref)
         back_color = pal.color(QPalette::Base);
     }
     return back_color; 
+}
+
+
+QMessageBox::StandardButton Utility::warning(QWidget* parent, const QString &title, const QString &text,
+                                             QMessageBox::StandardButtons buttons,
+                                             QMessageBox::StandardButton defaultButton)
+{
+  QMessageBox::StandardButton result = QMessageBox::warning(parent, title, text, buttons, defaultButton);
+#ifdef Q_OS_MAC
+  if (parent) parent->activateWindow();
+#endif
+  return result;
+}
+
+
+QMessageBox::StandardButton Utility::question(QWidget* parent, const QString &title, const QString &text,
+                                              QMessageBox::StandardButtons buttons,
+                                              QMessageBox::StandardButton defaultButton)
+{
+  QMessageBox::StandardButton result = QMessageBox::question(parent, title, text, buttons, defaultButton);
+#ifdef Q_OS_MAC
+  if (parent) parent->activateWindow();
+#endif
+  return result;
+}
+
+
+QMessageBox::StandardButton Utility::information(QWidget* parent, const QString &title, const QString &text,
+                                                 QMessageBox::StandardButtons buttons,
+                                                 QMessageBox::StandardButton defaultButton)
+{
+  QMessageBox::StandardButton result = QMessageBox::information(parent, title, text, buttons, defaultButton);
+#ifdef Q_OS_MAC
+  if (parent) parent->activateWindow();
+#endif
+  return result;
+}
+
+
+QMessageBox::StandardButton Utility::critical(QWidget* parent, const QString &title, const QString &text,
+                                              QMessageBox::StandardButtons buttons,
+                                              QMessageBox::StandardButton defaultButton)
+{
+  QMessageBox::StandardButton result = QMessageBox::critical(parent, title, text, buttons, defaultButton);
+#ifdef Q_OS_MAC
+  if (parent) parent->activateWindow();
+#endif
+  return result;
 }
