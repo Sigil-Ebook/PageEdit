@@ -855,7 +855,7 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
     // now set the mode: edit or preview
     ToggleMode(ui.actionMode->isChecked());
     m_UpdatePageInProgress = false;
-    QTimer::singleShot(50, this, SLOT(SetInitialSource()));
+    QTimer::singleShot(100, this, SLOT(SetInitialSource()));
 }
 
 void MainWindow::SetInitialSource()
