@@ -785,7 +785,6 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
         }
     }
 
-
     //if isDarkMode is set, inject a local style in head
     SettingsStore settings;
     if (Utility::IsDarkMode() && settings.previewDark()) {
@@ -842,7 +841,7 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
 
     // Wait until the preview is loaded before moving cursor.
     while (!m_WebView->IsLoadingFinished()) {
-        qApp->processEvents();
+        qApp->processEvents(QEventLoop::ExcludeUserInputEvents);
     }
     
     if (!m_WebView->WasLoadOkay()) qDebug() << "WV loadFinished with okay set to false!";
@@ -850,13 +849,18 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
     DBG qDebug() << "WebViewWindow UpdatePage load is Finished";
 
     UpdateWindowTitle();
-    m_source = GetSource();
     m_WebView->show();
     m_WebView->GrabFocus();
 
     // now set the mode: edit or preview
     ToggleMode(ui.actionMode->isChecked());
     m_UpdatePageInProgress = false;
+    QTimer::singleShot(50, this, SLOT(SetInitialSource()));
+}
+
+void MainWindow::SetInitialSource()
+{
+    m_source = GetSource();
 }
 
 void MainWindow::ScrollTo(QList<ElementIndex> location)

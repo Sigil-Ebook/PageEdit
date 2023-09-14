@@ -93,6 +93,7 @@ public slots:
 
     // General Slots
     void DoUpdatePage();
+    void SetInitialSource();
     void UpdatePage(const QString &filename, const QString &source="");
     void RefreshPage();
     void UpdateWindowTitle();
