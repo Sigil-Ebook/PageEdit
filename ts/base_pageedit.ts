@@ -371,7 +371,7 @@ if a sans-serif font-family specified in your CSS</source>
         <location filename="../ClipEditor.cpp" line="541"/>
         <source>CSS entries added: %n</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform></numerusform><numerusform></numerusform>
         </translation>
     </message>
     <message>
