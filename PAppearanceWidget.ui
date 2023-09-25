@@ -333,7 +333,7 @@ if a sans-serif font-family specified in your CSS</string>
            </widget>
           </item>
           <item>
-           <spacer name="horizontalSpacer_5">
+           <spacer name="horizontalSpacer_51">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>

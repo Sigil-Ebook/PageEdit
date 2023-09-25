@@ -854,13 +854,13 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
 
     // now set the mode: edit or preview
     ToggleMode(ui.actionMode->isChecked());
-    m_UpdatePageInProgress = false;
     QTimer::singleShot(100, this, SLOT(SetInitialSource()));
 }
 
 void MainWindow::SetInitialSource()
 {
     m_source = GetSource();
+    m_UpdatePageInProgress = false;
 }
 
 void MainWindow::ScrollTo(QList<ElementIndex> location)

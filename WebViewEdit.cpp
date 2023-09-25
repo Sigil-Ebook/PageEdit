@@ -379,16 +379,17 @@ void WebViewEdit::LoadingStarted()
 void WebViewEdit::LoadingProgress(int progress)
 {
     DBG qDebug() << "Loading progress " << progress;
-    if ((progress >= 100) && !m_CustomSetDocumentInProgress) {
-        m_isLoadFinished = true;
-        m_LoadOkay = true;
-    }
+    // this hack was needed before QtWebEngine from Qt 5.15.5
+    // as internal link loads generated no finished signal
+    // if ((progress >= 100) && !m_CustomSetDocumentInProgress) {
+    //     m_isLoadFinished = true;
+    //     m_LoadOkay = true;
+    // }
 }
 
 void WebViewEdit::UpdateFinishedState(bool okay)
 {
-    // AAArrrrggggggghhhhhhhh - Qt 5.12.2 has a bug that returns 
-    // loadFinished with okay set to false when caused by 
+    // Qt 5.12.2 returns loadFinished with okay set to false when caused by 
     // clicking a link that acceptNavigationRequest denies
     // even when there are no apparent errors!
 
@@ -674,6 +675,7 @@ void WebViewEdit::WebPageJavascriptOnLoad()
     page()->runJavaScript(c_jQuery, QWebEngineScript::ApplicationWorld);
     page()->runJavaScript(c_jQueryScrollTo, QWebEngineScript::ApplicationWorld);
     // page()->runJavaScript("document.documentElement.contentEditable = true", QWebEngineScript::ApplicationWorld);
+    // set load finished only when javascript has been loaded and ready to run
     m_isLoadFinished = true;
 
     if (m_CustomSetDocumentInProgress) {

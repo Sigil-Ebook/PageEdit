@@ -1,5 +1,11 @@
 Change Log
 ==========
+PageEdit-2.02
+  Bug Fixes
+    - workaround QtWebEngine load Finished signal not indicating when javascript is ready
+    - remove previous hack for missing loadFinished after loadStarted during internal links
+    - update Qt with patches to fix numerous Accessibility bugs in Qt6.5.2 that caused crashing
+
 
 PageEdit-2.00
   New Features
