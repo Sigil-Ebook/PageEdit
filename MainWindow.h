@@ -207,7 +207,7 @@ private:
     void SetupNavigationComboBox();
     void LoadSettings();
     void SaveSettings();
-    void AllowSaveIfModified();
+    bool AllowSaveIfModified();
     void UpdateClipButton(QAction *ui_action);
     void ConnectSignalsToSlots();
 

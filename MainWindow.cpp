@@ -275,10 +275,11 @@ void MainWindow::CBNavigateActivated(int index)
     }
     
     if ((index > -1) && (index != m_ListPtr)) { 
-        AllowSaveIfModified();
-        m_ListPtr = index;
-        m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-        UpdatePage(m_CurrentFilePath);
+        if (AllowSaveIfModified()) {
+            m_ListPtr = index;
+            m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+            UpdatePage(m_CurrentFilePath);
+        }
     }
 }
 
@@ -287,12 +288,13 @@ void MainWindow::EditNext()
     if (m_UpdatePageInProgress) return;
     int n = m_SpineList.length();
     if (n > 1) {
-        AllowSaveIfModified();
-        m_ListPtr++;
-        if (m_ListPtr >= n) m_ListPtr = 0;
-        m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-        ui.cbNavigate->setCurrentIndex(m_ListPtr);
-        UpdatePage(m_CurrentFilePath);
+        if (AllowSaveIfModified()) {
+            m_ListPtr++;
+            if (m_ListPtr >= n) m_ListPtr = 0;
+            m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+            ui.cbNavigate->setCurrentIndex(m_ListPtr);
+            UpdatePage(m_CurrentFilePath);
+        }
     }
 }
 
@@ -301,12 +303,13 @@ void MainWindow::EditPrev()
     if (m_UpdatePageInProgress) return;
     int n = m_SpineList.length();
     if (n > 1) {
-        AllowSaveIfModified();
-        m_ListPtr--;
-        if (m_ListPtr < 0) m_ListPtr = n - 1;
-        m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-        ui.cbNavigate->setCurrentIndex(m_ListPtr);
-        UpdatePage(m_CurrentFilePath);
+        if (AllowSaveIfModified()) {
+            m_ListPtr--;
+            if (m_ListPtr < 0) m_ListPtr = n - 1;
+            m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+            ui.cbNavigate->setCurrentIndex(m_ListPtr);
+            UpdatePage(m_CurrentFilePath);
+        }
     }
 }
 
@@ -987,11 +990,12 @@ void MainWindow::LinkReturn()
     // return to last location before link
     if ((m_LastPtr != -1) && !m_LastLocation.isEmpty()) {
         if (m_LastPtr != m_ListPtr) {
-            AllowSaveIfModified();
-            m_ListPtr = m_LastPtr;
-            ui.cbNavigate->setCurrentIndex(m_ListPtr);
-            m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-            UpdatePage(m_CurrentFilePath);
+            if (AllowSaveIfModified()) {
+                m_ListPtr = m_LastPtr;
+                ui.cbNavigate->setCurrentIndex(m_ListPtr);
+                m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+                UpdatePage(m_CurrentFilePath);
+            }
         }
         ScrollTo(m_LastLocation);
     }
@@ -1031,11 +1035,12 @@ void MainWindow::LinkClicked(const QUrl &url)
             if (m_SpineList.contains(filepath)) {
                 int index = m_SpineList.indexOf(filepath);
                 if ((index > -1) && (index != m_ListPtr)) {
-                    AllowSaveIfModified();
-                    m_ListPtr = index;
-                    ui.cbNavigate->setCurrentIndex(m_ListPtr);
-                    m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
-                    UpdatePage(m_CurrentFilePath);
+                    if (AllowSaveIfModified()) {
+                        m_ListPtr = index;
+                        ui.cbNavigate->setCurrentIndex(m_ListPtr);
+                        m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+                        UpdatePage(m_CurrentFilePath);
+                    }
                 }
                 if (!fragment.isEmpty()) {
                     m_WebView->ScrollToFragment(fragment);
@@ -1120,7 +1125,8 @@ void MainWindow::ReloadPreview()
     emit RequestPreviewReload();
 }
 
-void MainWindow::AllowSaveIfModified() 
+// returns false if the user wants to cancel the exit
+bool MainWindow::AllowSaveIfModified() 
 {
     // if the page source has been modified since it was loaded or saved
     // allow opportunity to save it
@@ -1140,8 +1146,9 @@ void MainWindow::AllowSaveIfModified()
         button_pressed = Utility::warning(this,
                           tr("PageEdit"),
                           tr("Do you want to save your changes before leaving?"),
-                          QMessageBox::Save | QMessageBox::Discard
+                          QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel
                          );
+        if (button_pressed == QMessageBox::Cancel) return false;
         if (button_pressed == QMessageBox::Save) {
             bool save_result = Save();
             int cnt = 0;
@@ -1151,15 +1158,19 @@ void MainWindow::AllowSaveIfModified()
             }
         }
     }
+    return true;
 }
 
 
 void MainWindow::closeEvent(QCloseEvent *event)
 {
     ShowMessageOnStatusBar(tr("PageEdit is closing..."));
-    SaveSettings();
-    AllowSaveIfModified();
-    event->accept();
+    if (AllowSaveIfModified()) {
+        SaveSettings();
+        event->accept();
+        return;
+    }
+    event->ignore();
 }
 
 void MainWindow::moveEvent(QMoveEvent *event)
