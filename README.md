@@ -29,11 +29,11 @@ After checking out the PageEdit github repo into a PageEdit directory
 
 
 `export MACOSX_DEPLOYMENT_TARGET=11.0`<br>
-`export MYQTHOME=~/Qt652`<br>
+`export MYQTHOME=~/Qt653`<br>
 `export PATH=${PATH}:${MYQTHOME}/bin`<br>
 `mkdir build`<br>
 `cd build`<br>
-`cmake -DUSE_QT6=1 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_BUILD_TYPE=Release \`<br>
+`cmake -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_BUILD_TYPE=Release \`<br>
 `      -DCMAKE_CXX_FLAGS=-Wno-inconsistent-missing-override \`<br>
 `      -DCMAKE_PREFIX_PATH=${MYQTHOME}/lib/cmake \ `<br>
 `      -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/\`<br>
@@ -52,7 +52,7 @@ On Linux
 Make sure a minimum of Qt5.9.4(ish) is installed (with the WebEngine package) as well as cmake.<br>
 You build in a separate directory and not in the source directory.
 
-Qt 6.5.X or later is preferred but Qt5.13+ is probably a more realistic minimum to be able enjoy all of PageEdit's features.
+Qt 6.5.3 or later is preferred but Qt5.13+ is probably a more realistic minimum to be able enjoy all of PageEdit's features.
 
 Get the PageEdit Source:
 
@@ -68,7 +68,7 @@ __Ubuntu__
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake "Unix Makefiles" -DUSE_QT6=1 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
+`cmake "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
 `make`<br>
 
 __Arch Linux__
@@ -77,7 +77,7 @@ sudo pacman -S cmake qt6-webengine qt6-tools<br>
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake "Unix Makefiles" -DINSTALL_BUNDLED_DICTS=0 -DUSE_QT6=1 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
+`cmake "Unix Makefiles" -DINSTALL_BUNDLED_DICTS=0 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
 `make`<br>
 
 __All Flavors__:
@@ -90,20 +90,20 @@ To test
 
 __NOTE__: certain features, like Inspector, will require a minimum of Qt5.11.x to function on Linux.
 
-__NOTE__: If you want to build with Qt5, you'll obviously need to drop -DUSE_Qt6=1 and change -DQt6_DIR to -DQt5_DIR and point it to your Qt5 installation.
+__NOTE__: If you want to build with Qt5, you'll obviously need to add -DUSE_Qt5=1 and change -DQt6_DIR to -DQt5_DIR and point it to your Qt5 installation.
 
 By default, bundled hunspell dictionaries are converted to webengine spell check dictionaries (with qt tools) and installed to the QT_INSTALL_DATA/qtwebengine_dictionaries location. This location can be found using the qmake binary (of the Qt you're building PageEdit with) with the following command `-qmake -query QT_INSTALL_DATA` . If using the system Qt, this will typically be /usr/share/qt/qtwebengine_dictionaries. To disable the conversion/installation of these bundled dictionaries, use -DNSTALL_BUNDLED_DICTS=0 when configuring PageEdit with cmake. Arch Linux already includes these dictionaries with the corresponding hunspell language dictionaries. So you'll want to skip their conversion/installation on Arch and make sure you have the correct hunspell languages installed instead.
 
 On Windows:
 -----------
 
-Qt6.5.2 or higher is preferred, but you'll want to maintain a  minimum of Qt5.13.x (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.5.2. Install cmake 3.18+ and make sure its bin directory is added to your path.
+Qt6.5.3 or higher is preferred, but you'll want to maintain a  minimum of Qt5.13.x (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.5.3. Install cmake 3.18+ and make sure its bin directory is added to your path.
 
 Make sure that Qt's bin directory is also added to your PATH. Take note of the path for your Qt's prefix (the directory right above the bin directory). Open an "x64 Native Tools Command Prompt for VS2022" from the Start menu and cd to wherever you want to build.
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake -G "NMake Makefiles" -DUSE_Qt6=1 -DQt6_DIR="C:\path\to\your\Qt6\prefix\lib\cmake\Qt6 -DCMAKE_BUILD_TYPE=Release "C:\path\to\PageEdit's\cloned\repository"`<br>
+`cmake -G "NMake Makefiles" -DQt6_DIR="C:\path\to\your\Qt6\prefix\lib\cmake\Qt6 -DCMAKE_BUILD_TYPE=Release "C:\path\to\PageEdit's\cloned\repository"`<br>
 `nmake`<br>
 
 To test:
@@ -116,9 +116,9 @@ Use `nmake deployinstaller` to package PageEdit and all of its dependencies into
 
 __NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deploy` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
-__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.5.2
+__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.5.3
 
-__NOTE__: If you want to build with Qt5, you'll obviously need to drop -DUSE_Qt6=1 and change -DQt6_DIR to -DQt5_DIR and point it to your Qt5 installation.
+__NOTE__: If you want to build with Qt5, you'll obviously need to add -DUSE_Qt5=1 and change -DQt6_DIR to -DQt5_DIR and point it to your Qt5 installation.
 
 
 ## For Github repository maintainers (who am I kidding, this is to keep myself from forgetting/messing up):
@@ -142,6 +142,3 @@ Probably safer in the long run to create a git alias specific to the PageEdit re
 `git config alias.gumbo-sub-pull 'subtree pull --prefix gumbo_subtree https://github.com/Sigil-Ebook/sigil-gumbo.git master --squash'`
 
 Use any alias name you like. I chose "gumbo-sub-pull"  Then it's simply a matter of using `git gumbo-sub-pull` in the root of the PageEdit repository.
-
-
-
