@@ -5,7 +5,7 @@
 	<key>CFBundleVersion</key>
 	<string>PEVERSION</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © PageEdit Authors 2010-2019, GNU GPL v3</string>
+	<string>Copyright © PageEdit Authors 2010-2023, GNU GPL v3</string>
 	<key>CFBundleShortVersionString</key>
 	<string>PEVERSION</string>
 	<key>CFBundleGetInfoString</key>
@@ -61,6 +61,6 @@
     <key>LSApplicationCategoryType</key>
     <string>public.app-category.productivity</string>
     <key>LSMinimumSystemVersion</key>
-    <string>10.12.0</string>
+    <string>11.0</string>
 </dict>
 </plist>
