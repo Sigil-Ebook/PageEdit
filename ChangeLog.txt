@@ -7,6 +7,7 @@ PageEdit-2.02
     - update Qt with patches to fix numerous Accessibility bugs in Qt6.5.2 that caused crashing
     - workaround MacOS QMessageBox loss of focus Qt 6.5.X bug without hurting other platforms
     - give user the chance to cancel leaving a page if modified
+    - update macOS Info.plist for macOS min of macOS 11.0
 
 
 PageEdit-2.00
