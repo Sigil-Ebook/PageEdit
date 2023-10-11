@@ -161,50 +161,50 @@ if a sans-serif font-family specified in your CSS</source>
         <translation>Скинути все</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="50"/>
-        <location filename="../AppearanceWidget.cpp" line="51"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>Detect</source>
         <translation>Виявлено</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="50"/>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>On</source>
         <translation>On</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="50"/>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="57"/>
         <source>Off</source>
         <translation>Off</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="51"/>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>Detect whether any high dpi scaling should take place.</source>
         <translation>Визначте, чи має відбуватися масштабування з високою роздільною здатністю dpi.</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
         <translation>Поширюється на будь-які змінні середовища Qt, які встановлені для контролю при високій роздільній здатністі dpi.</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
         <translation>Вмикає масштабування high dpi та ігнорує будь-які змінні середовища Qt,</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <location filename="../AppearanceWidget.cpp" line="56"/>
         <source>that are set controlling high dpi behavior.</source>
         <translation>Вмикає масштабування high dpi та ігнорує будь-які змінні середовища Qt,</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
+        <location filename="../AppearanceWidget.cpp" line="57"/>
         <source>Turns off high dpi scaling regardless if any Qt environment</source>
         <translation>Вимикає масштабування high dpi незалежно від того, встановлені чи ні змінні середовища Qt,</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="56"/>
+        <location filename="../AppearanceWidget.cpp" line="58"/>
         <source>variables controlling high dpi behavior are set.</source>
         <translation>що керують при високій роздільній здатністі dpi.</translation>
     </message>
@@ -641,17 +641,17 @@ If a translation for specific word or phrase is not available it will be display
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="1044"/>
-        <location filename="../MainWindow.cpp" line="1137"/>
-        <location filename="../MainWindow.cpp" line="1787"/>
-        <location filename="../MainWindow.cpp" line="1800"/>
-        <location filename="../MainWindow.cpp" line="1806"/>
-        <location filename="../MainWindow.cpp" line="1820"/>
-        <location filename="../MainWindow.cpp" line="1833"/>
-        <location filename="../MainWindow.cpp" line="1839"/>
-        <location filename="../MainWindow.cpp" line="1847"/>
-        <location filename="../MainWindow.cpp" line="1902"/>
-        <location filename="../MainWindow.cpp" line="1992"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1147"/>
+        <location filename="../MainWindow.cpp" line="1802"/>
+        <location filename="../MainWindow.cpp" line="1815"/>
+        <location filename="../MainWindow.cpp" line="1821"/>
+        <location filename="../MainWindow.cpp" line="1835"/>
+        <location filename="../MainWindow.cpp" line="1848"/>
+        <location filename="../MainWindow.cpp" line="1854"/>
+        <location filename="../MainWindow.cpp" line="1862"/>
+        <location filename="../MainWindow.cpp" line="1917"/>
+        <location filename="../MainWindow.cpp" line="2007"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1754,27 +1754,27 @@ If a translation for specific word or phrase is not available it will be display
         <translation>Вставити Фрагмент 20</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="781"/>
+        <location filename="../MainWindow.cpp" line="784"/>
         <source>File load failed</source>
         <translation>Не вдалося загрузити файл</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="782"/>
+        <location filename="../MainWindow.cpp" line="785"/>
         <source>File Load Failed</source>
         <translation>Не вдалося загрузити файл</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="877"/>
+        <location filename="../MainWindow.cpp" line="884"/>
         <source>mode: Preview</source>
         <translation>режим: Попередній перегляд</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="879"/>
+        <location filename="../MainWindow.cpp" line="886"/>
         <source>mode: Edit</source>
         <translation>режим: Редагування</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1044"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1783,179 +1783,179 @@ If a translation for specific word or phrase is not available it will be display
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1138"/>
+        <location filename="../MainWindow.cpp" line="1148"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Зберегти зроблені зміни перед подальшими діями?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1155"/>
+        <location filename="../MainWindow.cpp" line="1167"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit закривається...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1247"/>
-        <location filename="../MainWindow.cpp" line="1248"/>
-        <location filename="../MainWindow.cpp" line="1249"/>
-        <location filename="../MainWindow.cpp" line="1258"/>
-        <location filename="../MainWindow.cpp" line="1259"/>
-        <location filename="../MainWindow.cpp" line="1260"/>
+        <location filename="../MainWindow.cpp" line="1262"/>
+        <location filename="../MainWindow.cpp" line="1263"/>
+        <location filename="../MainWindow.cpp" line="1264"/>
+        <location filename="../MainWindow.cpp" line="1273"/>
+        <location filename="../MainWindow.cpp" line="1274"/>
+        <location filename="../MainWindow.cpp" line="1275"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Файли HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1250"/>
+        <location filename="../MainWindow.cpp" line="1265"/>
         <source>OPF files (*.opf)</source>
         <translation>Файли OPF (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1251"/>
+        <location filename="../MainWindow.cpp" line="1266"/>
         <source>All files (*.*)</source>
         <translation>Усі файли (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1490"/>
+        <location filename="../MainWindow.cpp" line="1505"/>
         <source>Save File</source>
         <translation>Зберегти файл</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1525"/>
-        <location filename="../MainWindow.cpp" line="1526"/>
-        <location filename="../MainWindow.cpp" line="1538"/>
-        <location filename="../MainWindow.cpp" line="1539"/>
+        <location filename="../MainWindow.cpp" line="1540"/>
+        <location filename="../MainWindow.cpp" line="1541"/>
+        <location filename="../MainWindow.cpp" line="1553"/>
+        <location filename="../MainWindow.cpp" line="1554"/>
         <source>File Save-As Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1525"/>
+        <location filename="../MainWindow.cpp" line="1540"/>
         <source>is not writeable</source>
         <translation>недоступно для запису</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1534"/>
-        <location filename="../MainWindow.cpp" line="1573"/>
+        <location filename="../MainWindow.cpp" line="1549"/>
+        <location filename="../MainWindow.cpp" line="1588"/>
         <source>File Saved</source>
         <translation>Файл збережено</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1564"/>
-        <location filename="../MainWindow.cpp" line="1566"/>
-        <location filename="../MainWindow.cpp" line="1577"/>
-        <location filename="../MainWindow.cpp" line="1578"/>
+        <location filename="../MainWindow.cpp" line="1579"/>
+        <location filename="../MainWindow.cpp" line="1581"/>
+        <location filename="../MainWindow.cpp" line="1592"/>
+        <location filename="../MainWindow.cpp" line="1593"/>
         <source>File Save Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1565"/>
+        <location filename="../MainWindow.cpp" line="1580"/>
         <source>does not exist or is not writeable</source>
         <translation>не існує або недоступно для запису </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1594"/>
+        <location filename="../MainWindow.cpp" line="1609"/>
         <source>Do not show this warning again</source>
         <translation>Не показувати це попередження в подальшому</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1595"/>
+        <location filename="../MainWindow.cpp" line="1610"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Цей файл може бути надрукований не так, як Ви очікуєте.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1596"/>
+        <location filename="../MainWindow.cpp" line="1611"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Буде надруковано темний фон і кольоровий текст, застосований за допомогою CSS EPUB.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1597"/>
+        <location filename="../MainWindow.cpp" line="1612"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Будьте обережні, так як це може привести до витрачання великої кількості чорнила!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1598"/>
+        <location filename="../MainWindow.cpp" line="1613"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Використовуйте попередній перегляд, щоб побачити, як буде виглядати файл після друку.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1599"/>
+        <location filename="../MainWindow.cpp" line="1614"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Поставте прапорець, якщо Ви не хочете бачити це попередження в майбутньому.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1622"/>
+        <location filename="../MainWindow.cpp" line="1637"/>
         <source>Feature not available before Qt5.12.x</source>
         <translation>Функція недоступна до Qt5.12.x</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1683"/>
+        <location filename="../MainWindow.cpp" line="1698"/>
         <source>File Opened</source>
         <translation>Файл відкрито</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1687"/>
+        <location filename="../MainWindow.cpp" line="1702"/>
         <source>File Open Failed!</source>
         <translation>Не вдалося відкрити файл!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp" line="1725"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Буфер обміну містить форматований HTML</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1711"/>
+        <location filename="../MainWindow.cpp" line="1726"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Ви хочете вставити дані з буферу обміну як звичайний текст?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1787"/>
+        <location filename="../MainWindow.cpp" line="1802"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Ви повинні виділити текст перед тим, як вставити новий ідентифікатор.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1800"/>
+        <location filename="../MainWindow.cpp" line="1815"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID недійсний — повинен починатися з літери, після чого можуть додаватися букви, цифри, знаки  &quot;-&quot;, &quot;_&quot;, &quot;:&quot;, або &quot;.&quot;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1806"/>
+        <location filename="../MainWindow.cpp" line="1821"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Ви не можете вставити ідентифікатор у цю позицію.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1820"/>
+        <location filename="../MainWindow.cpp" line="1835"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Ви повинні виділити текст перед тим, як вставити нове посилання.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1833"/>
+        <location filename="../MainWindow.cpp" line="1848"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Посилання недійсне — не може містити &apos;&lt;&apos; або &apos;&gt;&apos;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1839"/>
+        <location filename="../MainWindow.cpp" line="1854"/>
         <source>Error inserting external link target.</source>
         <translation>Помилка при вставці цілі зовнішнього посилання.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1847"/>
+        <location filename="../MainWindow.cpp" line="1862"/>
         <source>Error inserting a link at this position.</source>
         <translation>Помилка при вставці посилання в цій позиції.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1873"/>
         <source>Insert File</source>
         <translation>Вставити Файл</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1902"/>
+        <location filename="../MainWindow.cpp" line="1917"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Ви не можете вставити медіафайл у цій позиції.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1993"/>
+        <location filename="../MainWindow.cpp" line="2008"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Зберегти зроблені зміни перед перезаписом цього файлу?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2045"/>
+        <location filename="../MainWindow.cpp" line="2060"/>
         <source>Pasted clip entry %1.</source>
         <translation>Вставлено елемент фрагменту %1.</translation>
     </message>
@@ -2000,52 +2000,52 @@ Line: %1 Column %2 - %3</source>
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="581"/>
+        <location filename="../Utility.cpp" line="582"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>У PageEdit виникли проблеми.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="582"/>
+        <location filename="../Utility.cpp" line="583"/>
         <source>PageEdit may need to close.</source>
         <translation>PageEdit, має закритися.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="884"/>
+        <location filename="../Utility.cpp" line="896"/>
         <source>About PageEdit</source>
         <translation>Про програму PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="889"/>
+        <location filename="../Utility.cpp" line="901"/>
         <source>Version</source>
         <translation>Версія</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="890"/>
+        <location filename="../Utility.cpp" line="902"/>
         <source>Build Date</source>
         <translation>Дата збірки</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="891"/>
+        <location filename="../Utility.cpp" line="903"/>
         <source>Build Time</source>
         <translation>Час збірки</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="892"/>
+        <location filename="../Utility.cpp" line="904"/>
         <source>Qt Runtime Version</source>
         <translation>Версія Qt Runtime</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="893"/>
+        <location filename="../Utility.cpp" line="905"/>
         <source>Qt Compiled Version</source>
         <translation>Версія компіляції Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="894"/>
+        <location filename="../Utility.cpp" line="906"/>
         <source>System</source>
         <translation>Система</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="895"/>
+        <location filename="../Utility.cpp" line="907"/>
         <source>Architecture</source>
         <translation>Архітектура</translation>
     </message>
@@ -3468,12 +3468,12 @@ ID names must be unique and start with a letter.</source>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="677"/>
+        <location filename="../Utility.cpp" line="689"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="678"/>
+        <location filename="../Utility.cpp" line="690"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>

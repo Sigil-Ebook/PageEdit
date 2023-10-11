@@ -163,50 +163,50 @@ pokud je ve vašem CSS stanovena rodina bezpatkového písma</translation>
         <translation>Obnovit výchozí</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="50"/>
-        <location filename="../AppearanceWidget.cpp" line="51"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>Detect</source>
         <translation>Zjistit</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="50"/>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>On</source>
         <translation>Zapnuto</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="50"/>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
+        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="57"/>
         <source>Off</source>
         <translation>Vypnuto</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="51"/>
+        <location filename="../AppearanceWidget.cpp" line="53"/>
         <source>Detect whether any high dpi scaling should take place.</source>
         <translation>Zjistit, zda má dojít ke změně na měřítko s vysokým rozlišením.</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
+        <location filename="../AppearanceWidget.cpp" line="54"/>
         <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
         <translation>Týká se jakýchkoli proměnných prostředí Qt, které jsou nastaveny na řízení chování s vysokým rozlišením.</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
+        <location filename="../AppearanceWidget.cpp" line="55"/>
         <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
         <translation>Zapne měřítko s vysokým rozlišením a přehlíží všechny proměnné prostředí Qt</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
+        <location filename="../AppearanceWidget.cpp" line="56"/>
         <source>that are set controlling high dpi behavior.</source>
         <translation>které jsou nastaveny na ovládání chování při vysokém rozlišení.</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
+        <location filename="../AppearanceWidget.cpp" line="57"/>
         <source>Turns off high dpi scaling regardless if any Qt environment</source>
         <translation>Vypíná změnu velikosti na vysoké rozlišení bez ohledu na to, zda je prostředí Qt</translation>
     </message>
     <message>
-        <location filename="../AppearanceWidget.cpp" line="56"/>
+        <location filename="../AppearanceWidget.cpp" line="58"/>
         <source>variables controlling high dpi behavior are set.</source>
         <translation>nastaveny proměnné prostředí Qt ovládající chování při vysokém rozlišení.</translation>
     </message>
@@ -644,17 +644,17 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="1044"/>
-        <location filename="../MainWindow.cpp" line="1137"/>
-        <location filename="../MainWindow.cpp" line="1787"/>
-        <location filename="../MainWindow.cpp" line="1800"/>
-        <location filename="../MainWindow.cpp" line="1806"/>
-        <location filename="../MainWindow.cpp" line="1820"/>
-        <location filename="../MainWindow.cpp" line="1833"/>
-        <location filename="../MainWindow.cpp" line="1839"/>
-        <location filename="../MainWindow.cpp" line="1847"/>
-        <location filename="../MainWindow.cpp" line="1902"/>
-        <location filename="../MainWindow.cpp" line="1992"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1147"/>
+        <location filename="../MainWindow.cpp" line="1802"/>
+        <location filename="../MainWindow.cpp" line="1815"/>
+        <location filename="../MainWindow.cpp" line="1821"/>
+        <location filename="../MainWindow.cpp" line="1835"/>
+        <location filename="../MainWindow.cpp" line="1848"/>
+        <location filename="../MainWindow.cpp" line="1854"/>
+        <location filename="../MainWindow.cpp" line="1862"/>
+        <location filename="../MainWindow.cpp" line="1917"/>
+        <location filename="../MainWindow.cpp" line="2007"/>
         <source>PageEdit</source>
         <translation>Úprava strany</translation>
     </message>
@@ -1757,27 +1757,27 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
         <translation>Vložit úryvek 20</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="781"/>
+        <location filename="../MainWindow.cpp" line="784"/>
         <source>File load failed</source>
         <translation>Soubor se nepodařilo nahrát</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="782"/>
+        <location filename="../MainWindow.cpp" line="785"/>
         <source>File Load Failed</source>
         <translation>Soubor se nepodařilo nahrát</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="877"/>
+        <location filename="../MainWindow.cpp" line="884"/>
         <source>mode: Preview</source>
         <translation>Režim: Náhled</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="879"/>
+        <location filename="../MainWindow.cpp" line="886"/>
         <source>mode: Edit</source>
         <translation>Režim: Úpravy</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1044"/>
+        <location filename="../MainWindow.cpp" line="1053"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1787,179 +1787,179 @@ Pokud překlad pro zvláštní slovo není dostupný, bude zobrazeno v angličti
 </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1138"/>
+        <location filename="../MainWindow.cpp" line="1148"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Chcete před odejitím uložit změny?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1155"/>
+        <location filename="../MainWindow.cpp" line="1167"/>
         <source>PageEdit is closing...</source>
         <translation>Úprava strany se zavírá...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1247"/>
-        <location filename="../MainWindow.cpp" line="1248"/>
-        <location filename="../MainWindow.cpp" line="1249"/>
-        <location filename="../MainWindow.cpp" line="1258"/>
-        <location filename="../MainWindow.cpp" line="1259"/>
-        <location filename="../MainWindow.cpp" line="1260"/>
+        <location filename="../MainWindow.cpp" line="1262"/>
+        <location filename="../MainWindow.cpp" line="1263"/>
+        <location filename="../MainWindow.cpp" line="1264"/>
+        <location filename="../MainWindow.cpp" line="1273"/>
+        <location filename="../MainWindow.cpp" line="1274"/>
+        <location filename="../MainWindow.cpp" line="1275"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Soubory HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1250"/>
+        <location filename="../MainWindow.cpp" line="1265"/>
         <source>OPF files (*.opf)</source>
         <translation>Soubory OPF (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1251"/>
+        <location filename="../MainWindow.cpp" line="1266"/>
         <source>All files (*.*)</source>
         <translation>Všechny soubory (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1490"/>
+        <location filename="../MainWindow.cpp" line="1505"/>
         <source>Save File</source>
         <translation>Uložit soubor</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1525"/>
-        <location filename="../MainWindow.cpp" line="1526"/>
-        <location filename="../MainWindow.cpp" line="1538"/>
-        <location filename="../MainWindow.cpp" line="1539"/>
+        <location filename="../MainWindow.cpp" line="1540"/>
+        <location filename="../MainWindow.cpp" line="1541"/>
+        <location filename="../MainWindow.cpp" line="1553"/>
+        <location filename="../MainWindow.cpp" line="1554"/>
         <source>File Save-As Failed!</source>
         <translation>Soubor se nepodařilo uložit jako...!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1525"/>
+        <location filename="../MainWindow.cpp" line="1540"/>
         <source>is not writeable</source>
         <translation>není zapisovatelný</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1534"/>
-        <location filename="../MainWindow.cpp" line="1573"/>
+        <location filename="../MainWindow.cpp" line="1549"/>
+        <location filename="../MainWindow.cpp" line="1588"/>
         <source>File Saved</source>
         <translation>Soubor uložen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1564"/>
-        <location filename="../MainWindow.cpp" line="1566"/>
-        <location filename="../MainWindow.cpp" line="1577"/>
-        <location filename="../MainWindow.cpp" line="1578"/>
+        <location filename="../MainWindow.cpp" line="1579"/>
+        <location filename="../MainWindow.cpp" line="1581"/>
+        <location filename="../MainWindow.cpp" line="1592"/>
+        <location filename="../MainWindow.cpp" line="1593"/>
         <source>File Save Failed!</source>
         <translation>Soubor se nepodařilo uložit!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1565"/>
+        <location filename="../MainWindow.cpp" line="1580"/>
         <source>does not exist or is not writeable</source>
         <translation>neexistuje nebo není zapisovatelný</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1594"/>
+        <location filename="../MainWindow.cpp" line="1609"/>
         <source>Do not show this warning again</source>
         <translation>Neukazovat znovu toto upozornění</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1595"/>
+        <location filename="../MainWindow.cpp" line="1610"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Tento soubor se nemusí vytisknout tak, jak očekáváte.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1596"/>
+        <location filename="../MainWindow.cpp" line="1611"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Vytiskne se tmavé pozadí a barevný text aplikovaný pomocí CSS EPUB.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1597"/>
+        <location filename="../MainWindow.cpp" line="1612"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Buďte opatrní, protože se při tom může spotřebovat velké množství inkoustu!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1598"/>
+        <location filename="../MainWindow.cpp" line="1613"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Pomocí následujícího náhledu tisku zjistíte, jak se tento soubor vytiskne.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1599"/>
+        <location filename="../MainWindow.cpp" line="1614"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Pokud si nepřejete, aby se toto upozornění v budoucnu zobrazovalo, zaškrtněte toto políčko.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1622"/>
+        <location filename="../MainWindow.cpp" line="1637"/>
         <source>Feature not available before Qt5.12.x</source>
         <translation>Funkce není dostupná před verzí Qt5.12.x</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1683"/>
+        <location filename="../MainWindow.cpp" line="1698"/>
         <source>File Opened</source>
         <translation>Soubor otevřen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1687"/>
+        <location filename="../MainWindow.cpp" line="1702"/>
         <source>File Open Failed!</source>
         <translation>Soubor se nepodařilo otevřít!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp" line="1725"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Schránka obsahuje formátování HTML</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1711"/>
+        <location filename="../MainWindow.cpp" line="1726"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Chcete vložit data ve schránce jako prostý text?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1787"/>
+        <location filename="../MainWindow.cpp" line="1802"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Před vložením nového ID musíte vybrat text.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1800"/>
+        <location filename="../MainWindow.cpp" line="1815"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID je neplatné - musí začínat písmenem, následováno číslem písmene _ : - nebo .</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1806"/>
+        <location filename="../MainWindow.cpp" line="1821"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Nemůžete vložit ID v této poloze.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1820"/>
+        <location filename="../MainWindow.cpp" line="1835"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Před vložením nového odkazu musíte vybrat text.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1833"/>
+        <location filename="../MainWindow.cpp" line="1848"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Odkaz je neplatný - nemůže obsahovat &apos;&lt;&apos; nebo &apos;&gt;&apos;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1839"/>
+        <location filename="../MainWindow.cpp" line="1854"/>
         <source>Error inserting external link target.</source>
         <translation>Chyba při vkládání cíle vnějšího odkazu.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1847"/>
+        <location filename="../MainWindow.cpp" line="1862"/>
         <source>Error inserting a link at this position.</source>
         <translation>Chyba při vkládání odkazu na toto místo.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1873"/>
         <source>Insert File</source>
         <translation>Vložit soubor</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1902"/>
+        <location filename="../MainWindow.cpp" line="1917"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Nemůžete vložit multimediální soubor v této poloze.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1993"/>
+        <location filename="../MainWindow.cpp" line="2008"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Chcete před přepsáním tohoto souboru uložit změny?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2045"/>
+        <location filename="../MainWindow.cpp" line="2060"/>
         <source>Pasted clip entry %1.</source>
         <translation>Vložena položka úryvku %1.</translation>
     </message>
@@ -2004,52 +2004,52 @@ Line: %1 Column %2 - %3</source>
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="581"/>
+        <location filename="../Utility.cpp" line="582"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>Úprava strany se potkala s potížemi.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="582"/>
+        <location filename="../Utility.cpp" line="583"/>
         <source>PageEdit may need to close.</source>
         <translation>Úprava strany může potřebovat zavřít.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="884"/>
+        <location filename="../Utility.cpp" line="896"/>
         <source>About PageEdit</source>
         <translation>O programu PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="889"/>
+        <location filename="../Utility.cpp" line="901"/>
         <source>Version</source>
         <translation>Verze:</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="890"/>
+        <location filename="../Utility.cpp" line="902"/>
         <source>Build Date</source>
         <translation>Datum sestavení</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="891"/>
+        <location filename="../Utility.cpp" line="903"/>
         <source>Build Time</source>
         <translation>Čas sestavení</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="892"/>
+        <location filename="../Utility.cpp" line="904"/>
         <source>Qt Runtime Version</source>
         <translation>Běhová verze Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="893"/>
+        <location filename="../Utility.cpp" line="905"/>
         <source>Qt Compiled Version</source>
         <translation>Sestavená verze Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="894"/>
+        <location filename="../Utility.cpp" line="906"/>
         <source>System</source>
         <translation>Systém</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="895"/>
+        <location filename="../Utility.cpp" line="907"/>
         <source>Architecture</source>
         <translation>Architektura</translation>
     </message>
@@ -3473,12 +3473,12 @@ Názvy ID musí být jedinečné a začínat písmenem.</translation>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="677"/>
+        <location filename="../Utility.cpp" line="689"/>
         <source>PageEdit</source>
         <translation>Úprava strany</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="678"/>
+        <location filename="../Utility.cpp" line="690"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
