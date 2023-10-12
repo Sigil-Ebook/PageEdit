@@ -1719,8 +1719,9 @@ void MainWindow::SelectAll() { m_WebView->triggerPageAction(QWebEnginePage::Sele
 void MainWindow::Paste()
 {
     QClipboard *clipboard = QApplication::clipboard();
-
-    if (clipboard->mimeData()->hasHtml()) {
+    const QMimeData * mimeData = clipboard->mimeData();
+    qDebug() << "clipboard has formats: " << mimeData->formats();
+    if (mimeData->hasHtml()) {
         QMessageBox msgBox(QMessageBox::Question,
                tr("Clipboard contains HTML formatting"),
                tr("Do you want to paste clipboard data as plain text?"),
@@ -1728,20 +1729,19 @@ void MainWindow::Paste()
         msgBox.setDefaultButton(QMessageBox::Yes);
 
         // populate the detailed text window - by HTML not by the text
-        msgBox.setDetailedText(clipboard->mimeData()->html());
-
-        // show message box
-        switch (msgBox.exec()) {
-            case QMessageBox::Yes:
-                m_WebView->triggerPageAction(QWebEnginePage::PasteAndMatchStyle);
-                break;
-            case QMessageBox::No:
-                m_WebView->triggerPageAction(QWebEnginePage::Paste);
-                break;
-            default:
-                // Cancel was clicked - do nothing
-                break;
-        }
+        msgBox.setDetailedText(mimeData->html());
+        int rv = msgBox.exec();
+        if (rv == QMessageBox::Yes) {
+            m_WebView->triggerPageAction(QWebEnginePage::PasteAndMatchStyle);
+        } else if (rv == QMessageBox::No) {
+            // work around QWebEnginePage not using the html mimedata when present
+            QString html = mimeData->html();
+            qDebug() << "clipboard mimedata as html: " << html;
+            QMimeData * htmldata = new QMimeData();
+            htmldata->setHtml(html);
+            clipboard->setMimeData(htmldata); // ownershgip is passed to clipboard
+            m_WebView->triggerPageAction(QWebEnginePage::Paste);
+        } // else Cancel was clicked - do nothing
     } else {
         m_WebView->triggerPageAction(QWebEnginePage::Paste);
     }
