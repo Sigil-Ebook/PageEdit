@@ -1720,7 +1720,6 @@ void MainWindow::Paste()
 {
     QClipboard *clipboard = QApplication::clipboard();
     const QMimeData * mimeData = clipboard->mimeData();
-    qDebug() << "clipboard has formats: " << mimeData->formats();
     if (mimeData->hasHtml()) {
         QMessageBox msgBox(QMessageBox::Question,
                tr("Clipboard contains HTML formatting"),
@@ -1734,14 +1733,27 @@ void MainWindow::Paste()
         if (rv == QMessageBox::Yes) {
             m_WebView->triggerPageAction(QWebEnginePage::PasteAndMatchStyle);
         } else if (rv == QMessageBox::No) {
-            // work around QWebEnginePage not using the html mimedata when present
+#if defined(Q_OS_WIN32)
+            // work around QtWebEngine Window's bug with clipboard html with no context
+            // by adding context back and creating a new clipboard element
             QString html = mimeData->html();
-            qDebug() << "clipboard mimedata as html: " << html;
-            QMimeData * htmldata = new QMimeData();
-            htmldata->setHtml(html);
-            clipboard->setMimeData(htmldata); // ownershgip is passed to clipboard
+            QString text;
+            if (mimeData->hasText()) text = mimeData->text();
+            if (html.indexOf("<html") == -1) {
+                int pos = html.indexOf("<");
+                if (pos == -1) pos = 0;
+                html.insert(pos, "<html>\r\n<body>\r\n");
+                html.append("\r\n</body>\r\n</html>");
+                qDebug() << "modified clipboard mimedata as html: " << html;
+                QMimeData * newdata = new QMimeData();
+                newdata->setHtml(html);
+                if (!text.isEmpty()) newdata->setText(text);
+                // ownership is passed to clipboard
+                clipboard->setMimeData(newdata);
+            }
+#endif
             m_WebView->triggerPageAction(QWebEnginePage::Paste);
-        } // else Cancel was clicked - do nothing
+        }  // else Cancel was clicked - do nothing
     } else {
         m_WebView->triggerPageAction(QWebEnginePage::Paste);
     }
