@@ -1744,7 +1744,6 @@ void MainWindow::Paste()
                 if (pos == -1) pos = 0;
                 html.insert(pos, "<html>\r\n<body>\r\n");
                 html.append("\r\n</body>\r\n</html>");
-                qDebug() << "modified clipboard mimedata as html: " << html;
                 QMimeData * newdata = new QMimeData();
                 newdata->setHtml(html);
                 if (!text.isEmpty()) newdata->setText(text);

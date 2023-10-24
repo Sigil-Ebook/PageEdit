@@ -8,6 +8,7 @@ PageEdit-2.02
     - workaround MacOS QMessageBox loss of focus Qt 6.5.X bug without hurting other platforms
     - give user the chance to cancel leaving a page if modified
     - update macOS Info.plist for macOS min of macOS 11.0
+    - add workaround Edit->Paste of html from clipboard without full context on Windows
 
 
 PageEdit-2.00
