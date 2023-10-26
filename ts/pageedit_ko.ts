@@ -639,15 +639,15 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1802"/>
-        <location filename="../MainWindow.cpp" line="1815"/>
-        <location filename="../MainWindow.cpp" line="1821"/>
-        <location filename="../MainWindow.cpp" line="1835"/>
-        <location filename="../MainWindow.cpp" line="1848"/>
-        <location filename="../MainWindow.cpp" line="1854"/>
-        <location filename="../MainWindow.cpp" line="1862"/>
-        <location filename="../MainWindow.cpp" line="1917"/>
-        <location filename="../MainWindow.cpp" line="2007"/>
+        <location filename="../MainWindow.cpp" line="1813"/>
+        <location filename="../MainWindow.cpp" line="1826"/>
+        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp" line="1846"/>
+        <location filename="../MainWindow.cpp" line="1859"/>
+        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1928"/>
+        <location filename="../MainWindow.cpp" line="2018"/>
         <source>PageEdit</source>
         <translation>페이지 에디터</translation>
     </message>
@@ -1902,57 +1902,57 @@ If a translation for specific word or phrase is not available it will be display
         <translation>클립보드의 내용을 서식 없는 텍스트로 추가하시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1802"/>
+        <location filename="../MainWindow.cpp" line="1813"/>
         <source>You must select text before inserting a new id.</source>
         <translation>새 ID를 삽입할 텍스트를 먼저 선택하세요. </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1815"/>
+        <location filename="../MainWindow.cpp" line="1826"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>잘못된 ID - 반드시 영문으로 시작하고 영문, 숫자, 언더바(_) 콜론(:), 하이픈(-) 혹은 점(.)만 사용 가능</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1821"/>
+        <location filename="../MainWindow.cpp" line="1832"/>
         <source>You cannot insert an id at this position.</source>
         <translation>이 위치에는 ID를 삽입할 수 없습니다. </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1835"/>
+        <location filename="../MainWindow.cpp" line="1846"/>
         <source>You must select text before inserting a new link.</source>
         <translation>링크를 삽입할 텍스트를 먼저 선택하세요.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1848"/>
+        <location filename="../MainWindow.cpp" line="1859"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>잘못된 링크 - &apos;&lt;&apos;나 &apos;&gt;&apos;는 포함할 수 없음</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1854"/>
+        <location filename="../MainWindow.cpp" line="1865"/>
         <source>Error inserting external link target.</source>
         <translation>외부 링크를 삽입하는 동안 오류가 발생했습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1862"/>
+        <location filename="../MainWindow.cpp" line="1873"/>
         <source>Error inserting a link at this position.</source>
         <translation>이 위치에 링크를 삽입하는 동안 오류가 발생했습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1884"/>
         <source>Insert File</source>
         <translation>파일 삽입</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1917"/>
+        <location filename="../MainWindow.cpp" line="1928"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>이 위치에는 미디어 파일을 삽입할 수 없습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2008"/>
+        <location filename="../MainWindow.cpp" line="2019"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>이 파일을 덮어쓰기 전에 모든 변경사항을 저장하시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2060"/>
+        <location filename="../MainWindow.cpp" line="2071"/>
         <source>Pasted clip entry %1.</source>
         <translation>붙여 넣은 클립 항목 %1</translation>
     </message>

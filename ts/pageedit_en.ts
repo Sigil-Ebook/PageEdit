@@ -645,15 +645,15 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1802"/>
-        <location filename="../MainWindow.cpp" line="1815"/>
-        <location filename="../MainWindow.cpp" line="1821"/>
-        <location filename="../MainWindow.cpp" line="1835"/>
-        <location filename="../MainWindow.cpp" line="1848"/>
-        <location filename="../MainWindow.cpp" line="1854"/>
-        <location filename="../MainWindow.cpp" line="1862"/>
-        <location filename="../MainWindow.cpp" line="1917"/>
-        <location filename="../MainWindow.cpp" line="2007"/>
+        <location filename="../MainWindow.cpp" line="1813"/>
+        <location filename="../MainWindow.cpp" line="1826"/>
+        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp" line="1846"/>
+        <location filename="../MainWindow.cpp" line="1859"/>
+        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1928"/>
+        <location filename="../MainWindow.cpp" line="2018"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1907,57 +1907,57 @@ If a translation for specific word or phrase is not available it will be display
         <translation>Do you want to paste clipboard data as plain text?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1802"/>
+        <location filename="../MainWindow.cpp" line="1813"/>
         <source>You must select text before inserting a new id.</source>
         <translation>You must select text before inserting a new id.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1815"/>
+        <location filename="../MainWindow.cpp" line="1826"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID is invalid - must start with a letter, followed by letter number _ : - or .</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1821"/>
+        <location filename="../MainWindow.cpp" line="1832"/>
         <source>You cannot insert an id at this position.</source>
         <translation>You cannot insert an id at this position.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1835"/>
+        <location filename="../MainWindow.cpp" line="1846"/>
         <source>You must select text before inserting a new link.</source>
         <translation>You must select text before inserting a new link.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1848"/>
+        <location filename="../MainWindow.cpp" line="1859"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1854"/>
+        <location filename="../MainWindow.cpp" line="1865"/>
         <source>Error inserting external link target.</source>
         <translation>Error inserting external link target.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1862"/>
+        <location filename="../MainWindow.cpp" line="1873"/>
         <source>Error inserting a link at this position.</source>
         <translation>Error inserting a link at this position.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1884"/>
         <source>Insert File</source>
         <translation>Insert File</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1917"/>
+        <location filename="../MainWindow.cpp" line="1928"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>You cannot insert a media file at this position.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2008"/>
+        <location filename="../MainWindow.cpp" line="2019"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Do you want to save any changes before overwriting this file?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2060"/>
+        <location filename="../MainWindow.cpp" line="2071"/>
         <source>Pasted clip entry %1.</source>
         <translation>Pasted clip entry %1.</translation>
     </message>
