@@ -280,11 +280,12 @@ if( UNIX AND NOT APPLE )
     
     query_qmake( QT_INSTALL_BINS QT_INSTALL_BINS_DIR )
     query_qmake( QT_INSTALL_DATA QT_INSTALL_DATA_DIR )
+    query_qmake( QT_INSTALL_LIBEXECS QT_INSTALL_LIBEXECS_DIR )
 
     # Bundled dictionaries will be coverted to qtwebengine spellcheck dicts with qwebengine_convert_dict
     # by default and installed to qmake -query QT_INSTALL_DATA + ./qtwebengine_dictionaries.
     # Use -DINSTALL_BUNDLED_DICTS=0 to prevent this.
-    set( CONVERTDICT ${QT_INSTALL_BINS_DIR}/qwebengine_convert_dict )
+    set( CONVERTDICT ${QT_INSTALL_LIBEXECS_DIR}/qwebengine_convert_dict )
     if ( NOT DEFINED INSTALL_BUNDLED_DICTS )
         set ( INSTALL_BUNDLED_DICTS 1 )
     endif()
