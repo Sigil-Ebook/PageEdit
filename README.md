@@ -64,7 +64,7 @@ __Ubuntu__
 
 `sudo apt-get install build-essential`<br>
 `sudo apt-get install cmake`<br>
-`sudo apt-get install qt6-webengine6-dev qt6-webengine-dev-tools qt6-base-dev-tools qt6-tools-dev qt6-tools-dev-tools qt6-5compat-dev libqt6svg6`
+`sudo apt-get install qt6-webengine-dev qt6-webengine-dev-tools qt6-base-dev-tools qt6-tools-dev qt6-tools-dev-tools qt6-5compat-dev libqt6svg6`
 
 `mkdir build`<br>
 `cd build`<br>
