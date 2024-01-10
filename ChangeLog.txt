@@ -1,5 +1,9 @@
 Change Log
 ==========
+PageEdit-pre2.X.X
+  Bug Fixes
+  New Features
+
 PageEdit-2.02
   Bug Fixes
     - workaround QtWebEngine load Finished signal not indicating when javascript is ready
