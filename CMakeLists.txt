@@ -7,7 +7,7 @@
 #
 #########################################################
 
-cmake_minimum_required( VERSION 3.0.0 )
+cmake_minimum_required( VERSION 3.0.5 )
 
 #############################################################################
 
@@ -46,8 +46,8 @@ set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib )
 set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib )
 
 set( PAGEEDIT_MAJOR_VERSION 2 )
-set( PAGEEDIT_MINOR_VERSION 0 )
-set( PAGEEDIT_REVISION_VERSION 2 )
+set( PAGEEDIT_MINOR_VERSION 1 )
+set( PAGEEDIT_REVISION_VERSION 0 )
 set( PAGEEDIT_FULL_VERSION ${PAGEEDIT_MAJOR_VERSION}.${PAGEEDIT_MINOR_VERSION}.${PAGEEDIT_REVISION_VERSION} )
 
 if( UNIX AND NOT APPLE )

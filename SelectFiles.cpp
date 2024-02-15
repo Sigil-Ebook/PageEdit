@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2015-2023 Kevin B, Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2015-2024 Kevin B, Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2012-2013 John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012-2013 Dave Heiland
 **
@@ -199,8 +199,13 @@ void SelectFiles::SetImages()
 
         // Do not show thumbnail if file is not an image
         if ((mkind == "image" || mkind == "svgimage") && m_ThumbnailSize) {
-              QPixmap pixmap(mediapath);
-
+            QImage image;
+            if (mkind == "image") {
+                image.load(mediapath);
+            } else {
+                image = Utility::RenderSvgToImage(mediapath);
+            }
+            QPixmap pixmap = QPixmap::fromImage(image);
             if (pixmap.height() > m_ThumbnailSize || pixmap.width() > m_ThumbnailSize) {
                 pixmap = pixmap.scaled(QSize(m_ThumbnailSize, m_ThumbnailSize), Qt::KeepAspectRatio);
             }

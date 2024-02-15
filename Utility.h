@@ -60,7 +60,12 @@ public:
     // For instance, "test" and "TEST" return false, "teSt" returns true.
     static bool IsMixedCase(const QString &string);
 
-    // Returns a substring of a specified string;
+    // Returns a substring of a specified QStringRef;
+    // the characters included are in the interval:
+    // [ start_index, end_index >
+    static QString Substring(int start_index, int end_index, const QStringRef &string);
+
+    // Returns a substring of a specified QString;
     // the characters included are in the interval:
     // [ start_index, end_index >
     static QString Substring(int start_index, int end_index, const QString &string);
@@ -206,6 +211,8 @@ public:
                                                 QMessageBox::StandardButtons buttons = QMessageBox::Ok,
                                                 QMessageBox::StandardButton defaultButton = QMessageBox::NoButton);
 
+    static QString FixupSvgForRendering(const QString& data);
+    static QImage  RenderSvgToImage(const QString& filepath);
 };
 
 #endif // UTILITY_H

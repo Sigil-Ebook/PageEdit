@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2024 Kevin B. Hendricks, Stratford, Ontario, Canada
 **  Copyright (C) 2009-2011 Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
 **  This file is part of PageEdit.
@@ -43,11 +43,15 @@
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
 #include <QPixmap>
+#include <QImage>
+#include <QPainter>
+#include <QtSvg/QSvgRenderer>
 #include <QVector>
 #include <QDebug>
 
 #include "SettingsStore.h"
 #include "MainApplication.h"
+#include "QuickParser.h"
 #include "pageedit_constants.h"
 #include "pageedit_exception.h"
 
@@ -196,8 +200,14 @@ bool Utility::IsMixedCase(const QString &string)
     return false;
 }
 
-// Returns a substring of a specified string;
-// the characters included are in the interval:
+
+// [ start_index, end_index >
+QString Utility::Substring(int start_index, int end_index, const QStringRef &string)
+{
+    return string.mid(start_index, end_index - start_index).toString();
+}
+
+
 // [ start_index, end_index >
 QString Utility::Substring(int start_index, int end_index, const QString &string)
 {
@@ -1028,4 +1038,58 @@ QMessageBox::StandardButton Utility::critical(QWidget* parent, const QString &ti
   if (parent) parent->activateWindow();
 #endif
   return result;
+}
+
+// QtSvg is broken with respect to desc and title tags used
+// inside text tags and does not support flowRoot and its children
+// so strip them all out before trying to render using QSvgRenderer
+QString Utility::FixupSvgForRendering(const QString& data)
+{
+    QStringList svgdata;
+    QuickParser qp(data);
+    bool skip = false;
+    bool in_svg = false;
+    while(true) {
+        QuickParser::MarkupInfo mi = qp.parse_next();
+        if (mi.pos < 0) break;
+	if (mi.tname == "svg" && mi.ttype == "begin") {
+	    in_svg = true;
+        }
+	if (mi.tname == "svg" && mi.ttype == "end") {
+	    in_svg = false;
+	    skip = false;
+	}
+	if (in_svg) {
+            if (mi.tname == "desc" || mi.tname == "title" || mi.tname == "flowRoot") {
+	        if (mi.ttype == "single") continue; // no need to update skip since open self-closing
+	        // allow for arbitrary nesting of these tags which is not explicitly ruled out by the spec
+	        QStringList tagpath = mi.tpath.split(".");
+	        skip = tagpath.contains("desc")  || tagpath.contains("title") || tagpath.contains( "flowRoot");
+		if (mi.ttype == "end") continue; // do not output end tags after updating skip
+	    }
+	}
+        if (!skip) {
+            svgdata << qp.serialize_markup(mi);
+        }
+    }
+    return svgdata.join("");
+}
+
+QImage Utility::RenderSvgToImage(const QString& filepath)
+{
+    QString svgdata = Utility::ReadUnicodeTextFile(filepath);
+    // QtSvg has many issues with desc, title, and flowRoot tags
+    svgdata = Utility::FixupSvgForRendering(svgdata);
+    QSvgRenderer renderer;
+    renderer.load(svgdata.toUtf8());
+    QSize sz = renderer.defaultSize();
+    QImage svgimage(sz, QImage::Format_ARGB32);
+    // **must** fill it with pixels BEFORE trying to render anything
+    // transparent fill will not work with light and dark modes: svgimage.fill(qRgba(0,0,0,0));
+    svgimage.fill(QColor("white"));
+    // was svgimage.fill(qRgba(0,0,0,0));
+    QPainter painter(&svgimage);
+    renderer.render(&painter);
+    return svgimage;
+
 }

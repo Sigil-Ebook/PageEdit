@@ -1,10 +1,15 @@
 Change Log
 ==========
-PageEdit-pre2.X.X
+PageEdit-2.1.0
   Bug Fixes
+    - fixes for numerous Qt related bug and security issues via update to Qt 6.6.2
+    - fix poor or missing svg rendering of thumbnails when selecting images to insert
+    
   New Features
+    - Improved Accessibility support via Qt, especially for users on macOS
 
-PageEdit-2.02
+
+PageEdit-2.0.2
   Bug Fixes
     - workaround QtWebEngine load Finished signal not indicating when javascript is ready
     - remove previous hack for missing loadFinished after loadStarted during internal links
@@ -15,7 +20,7 @@ PageEdit-2.02
     - add workaround Edit->Paste of html from clipboard without full context on Windows
 
 
-PageEdit-2.00
+PageEdit-2.0.0
   New Features
     - updated official releases to use Qt 6.5.2
     - added ability to create and apply Clips

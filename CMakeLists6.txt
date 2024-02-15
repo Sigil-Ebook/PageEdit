@@ -22,7 +22,7 @@ else()
     # Qt6 packages minimum version 5.12 for Windows/Mac
     set(QT6_NEEDED 6.2)
 endif()
-find_package(Qt6 ${QT6_NEEDED} COMPONENTS Core5Compat Network WebEngineCore WebEngineWidgets Widgets Xml PrintSupport LinguistTools)
+find_package(Qt6 ${QT6_NEEDED} COMPONENTS Core5Compat Network WebEngineCore WebEngineWidgets Svg Widgets Xml PrintSupport LinguistTools)
 set(CMAKE_AUTOMOC ON)
 
 set( SOURCE_FILES
@@ -60,6 +60,8 @@ set( SOURCE_FILES
     ClipsWindow.cpp
     ClassInfo.cpp
     WebProfileMgr.cpp
+    TagAtts.cpp
+    QuickParser.cpp
     )
 
 set( HEADER_FILES
@@ -101,6 +103,8 @@ set( HEADER_FILES
     ClipsWindow.h
     ClassInfo.h
     WebProfileMgr.h
+    TagAtts.h
+    QuickParser.h
     )
 
 set( FORM_FILES
@@ -237,7 +241,7 @@ endif()
 
 # No need to explicity link Qt6::WinMain or to use the qt6_use_modules macro since CMAKE 2.8.11. We require CMAKE 3.0.0
 target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt6::Core5Compat Qt6::Widgets  Qt6::PrintSupport
-                                     Qt6::WebEngineCore  Qt6::WebEngineWidgets  Qt6::Network)
+                                     Qt6::WebEngineCore  Qt6::WebEngineWidgets  Qt6::Svg Qt6::Network)
 
 #############################################################################
 
