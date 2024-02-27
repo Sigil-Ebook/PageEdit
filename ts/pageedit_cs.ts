@@ -1997,59 +1997,59 @@ Line: %1 Column %2 - %3</source>
 Řádek: %1, Sloupec %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="392"/>
+        <location filename="../Utility.cpp" line="402"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Nelze přečíst soubor %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="582"/>
+        <location filename="../Utility.cpp" line="592"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>Úprava strany se potkala s potížemi.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="583"/>
+        <location filename="../Utility.cpp" line="593"/>
         <source>PageEdit may need to close.</source>
         <translation>Úprava strany může potřebovat zavřít.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="896"/>
+        <location filename="../Utility.cpp" line="906"/>
         <source>About PageEdit</source>
         <translation>O programu PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="901"/>
+        <location filename="../Utility.cpp" line="911"/>
         <source>Version</source>
         <translation>Verze:</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="902"/>
+        <location filename="../Utility.cpp" line="912"/>
         <source>Build Date</source>
         <translation>Datum sestavení</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="903"/>
+        <location filename="../Utility.cpp" line="913"/>
         <source>Build Time</source>
         <translation>Čas sestavení</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="904"/>
+        <location filename="../Utility.cpp" line="914"/>
         <source>Qt Runtime Version</source>
         <translation>Běhová verze Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="905"/>
+        <location filename="../Utility.cpp" line="915"/>
         <source>Qt Compiled Version</source>
         <translation>Sestavená verze Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="916"/>
         <source>System</source>
         <translation>Systém</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="907"/>
+        <location filename="../Utility.cpp" line="917"/>
         <source>Architecture</source>
         <translation>Architektura</translation>
     </message>
@@ -3383,22 +3383,22 @@ Line: %1 Column %2 - %3</source>
         <translation>Náhledy</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="330"/>
+        <location filename="../SelectFiles.cpp" line="335"/>
         <source>shades</source>
         <translation>Odstíny</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="330"/>
+        <location filename="../SelectFiles.cpp" line="335"/>
         <source>colors</source>
         <translation>Barvy</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="331"/>
+        <location filename="../SelectFiles.cpp" line="336"/>
         <source>Grayscale</source>
         <translation>Stupnice šedi</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="331"/>
+        <location filename="../SelectFiles.cpp" line="336"/>
         <source>Color</source>
         <translation>Barva</translation>
     </message>
@@ -3473,12 +3473,12 @@ Názvy ID musí být jedinečné a začínat písmenem.</translation>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="689"/>
+        <location filename="../Utility.cpp" line="699"/>
         <source>PageEdit</source>
         <translation>Úprava strany</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="690"/>
+        <location filename="../Utility.cpp" line="700"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>

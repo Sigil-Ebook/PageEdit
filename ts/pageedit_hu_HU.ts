@@ -80,7 +80,7 @@ ha egy sans-serif font-család van megadva a CSS-ben</translation>
         <location filename="../PAppearanceWidget.ui" line="163"/>
         <location filename="../PAppearanceWidget.ui" line="166"/>
         <source>Skip Print Preview</source>
-        <translation type="unfinished"/>
+        <translation>Nyomtatási előnézet átugrása</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="175"/>
@@ -1994,59 +1994,59 @@ Line: %1 Column %2 - %3</source>
 Line: %1 Column %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="392"/>
+        <location filename="../Utility.cpp" line="402"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Nem olvasható fájl %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="582"/>
+        <location filename="../Utility.cpp" line="592"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>A PageEdit problémát észlelt.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="583"/>
+        <location filename="../Utility.cpp" line="593"/>
         <source>PageEdit may need to close.</source>
         <translation>A PageEdit-et be kell zárnia.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="896"/>
+        <location filename="../Utility.cpp" line="906"/>
         <source>About PageEdit</source>
         <translation>A PageEdit programról</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="901"/>
+        <location filename="../Utility.cpp" line="911"/>
         <source>Version</source>
         <translation>Verzió</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="902"/>
+        <location filename="../Utility.cpp" line="912"/>
         <source>Build Date</source>
         <translation>Készítés dátuma</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="903"/>
+        <location filename="../Utility.cpp" line="913"/>
         <source>Build Time</source>
         <translation>Készítés időpontja</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="904"/>
+        <location filename="../Utility.cpp" line="914"/>
         <source>Qt Runtime Version</source>
         <translation>Qt Runtime verzió</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="905"/>
+        <location filename="../Utility.cpp" line="915"/>
         <source>Qt Compiled Version</source>
         <translation>Qt Compiled verzió</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="916"/>
         <source>System</source>
         <translation>Rendszer</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="907"/>
+        <location filename="../Utility.cpp" line="917"/>
         <source>Architecture</source>
         <translation>Architektúra</translation>
     </message>
@@ -3380,22 +3380,22 @@ Line: %1 Column %2 - %3</translation>
         <translation>Bélyegképek</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="330"/>
+        <location filename="../SelectFiles.cpp" line="335"/>
         <source>shades</source>
         <translation>árnyalatok</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="330"/>
+        <location filename="../SelectFiles.cpp" line="335"/>
         <source>colors</source>
         <translation>színek</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="331"/>
+        <location filename="../SelectFiles.cpp" line="336"/>
         <source>Grayscale</source>
         <translation>Szürkeskála</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="331"/>
+        <location filename="../SelectFiles.cpp" line="336"/>
         <source>Color</source>
         <translation>Szín</translation>
     </message>
@@ -3469,12 +3469,12 @@ Az azonosító neveknek egyedinek kell lenniük, és betűvel kell kezdődniük.
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="689"/>
+        <location filename="../Utility.cpp" line="699"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="690"/>
+        <location filename="../Utility.cpp" line="700"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>

@@ -1994,59 +1994,59 @@ Line: %1 Column %2 - %3</source>
 Linha: %1 Coluna %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="392"/>
+        <location filename="../Utility.cpp" line="402"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Não pode ler o arquivo %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="582"/>
+        <location filename="../Utility.cpp" line="592"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>PageEdit encontrou um problema</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="583"/>
+        <location filename="../Utility.cpp" line="593"/>
         <source>PageEdit may need to close.</source>
         <translation>Pode ser necessário fechar PageEdit.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="896"/>
+        <location filename="../Utility.cpp" line="906"/>
         <source>About PageEdit</source>
         <translation>Sobre o PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="901"/>
+        <location filename="../Utility.cpp" line="911"/>
         <source>Version</source>
         <translation>Versão</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="902"/>
+        <location filename="../Utility.cpp" line="912"/>
         <source>Build Date</source>
         <translation>Data de construção</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="903"/>
+        <location filename="../Utility.cpp" line="913"/>
         <source>Build Time</source>
         <translation>Hora de construção</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="904"/>
+        <location filename="../Utility.cpp" line="914"/>
         <source>Qt Runtime Version</source>
         <translation>Versão do Runtime do Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="905"/>
+        <location filename="../Utility.cpp" line="915"/>
         <source>Qt Compiled Version</source>
         <translation>Versão de Compilação do Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="916"/>
         <source>System</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="907"/>
+        <location filename="../Utility.cpp" line="917"/>
         <source>Architecture</source>
         <translation>Arquitetura</translation>
     </message>
@@ -3380,22 +3380,22 @@ Linha: %1 Coluna %2 - %3</translation>
         <translation>Miniaturas</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="330"/>
+        <location filename="../SelectFiles.cpp" line="335"/>
         <source>shades</source>
         <translation>sombras</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="330"/>
+        <location filename="../SelectFiles.cpp" line="335"/>
         <source>colors</source>
         <translation>cores</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="331"/>
+        <location filename="../SelectFiles.cpp" line="336"/>
         <source>Grayscale</source>
         <translation>Tons de Cinza</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="331"/>
+        <location filename="../SelectFiles.cpp" line="336"/>
         <source>Color</source>
         <translation>Cor</translation>
     </message>
@@ -3470,12 +3470,12 @@ Nomes de identificadores precisam ser únicos e começar com uma letra.</transla
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="689"/>
+        <location filename="../Utility.cpp" line="699"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="690"/>
+        <location filename="../Utility.cpp" line="700"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>

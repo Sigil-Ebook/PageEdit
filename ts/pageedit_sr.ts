@@ -1995,59 +1995,59 @@ Line: %1 Column %2 - %3</source>
 Линија: %1 Колона %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="392"/>
+        <location filename="../Utility.cpp" line="402"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Није могуће читање фајла %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="582"/>
+        <location filename="../Utility.cpp" line="592"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>ЕдиторСтранице је наишао на проблем.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="583"/>
+        <location filename="../Utility.cpp" line="593"/>
         <source>PageEdit may need to close.</source>
         <translation>ЕдиторСтранице можда мора да се затвори.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="896"/>
+        <location filename="../Utility.cpp" line="906"/>
         <source>About PageEdit</source>
         <translation>О програму ЕдиторСтранице</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="901"/>
+        <location filename="../Utility.cpp" line="911"/>
         <source>Version</source>
         <translation>Верзија</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="902"/>
+        <location filename="../Utility.cpp" line="912"/>
         <source>Build Date</source>
         <translation>Датум изградње</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="903"/>
+        <location filename="../Utility.cpp" line="913"/>
         <source>Build Time</source>
         <translation>Време изградње</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="904"/>
+        <location filename="../Utility.cpp" line="914"/>
         <source>Qt Runtime Version</source>
         <translation>Верзија Qt Извршног Окружења</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="905"/>
+        <location filename="../Utility.cpp" line="915"/>
         <source>Qt Compiled Version</source>
         <translation>Верзија компајлираног Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="916"/>
         <source>System</source>
         <translation>Систем</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="907"/>
+        <location filename="../Utility.cpp" line="917"/>
         <source>Architecture</source>
         <translation>Архитектура</translation>
     </message>
@@ -3381,22 +3381,22 @@ Line: %1 Column %2 - %3</source>
         <translation>Сличице</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="330"/>
+        <location filename="../SelectFiles.cpp" line="335"/>
         <source>shades</source>
         <translation>нијансе</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="330"/>
+        <location filename="../SelectFiles.cpp" line="335"/>
         <source>colors</source>
         <translation>боје</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="331"/>
+        <location filename="../SelectFiles.cpp" line="336"/>
         <source>Grayscale</source>
         <translation>Сиви тонови</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="331"/>
+        <location filename="../SelectFiles.cpp" line="336"/>
         <source>Color</source>
         <translation>Боја</translation>
     </message>
@@ -3470,12 +3470,12 @@ ID имена морају бити јединствена и морају да 
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="689"/>
+        <location filename="../Utility.cpp" line="699"/>
         <source>PageEdit</source>
         <translation>ЕдиторСтранице</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="690"/>
+        <location filename="../Utility.cpp" line="700"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
