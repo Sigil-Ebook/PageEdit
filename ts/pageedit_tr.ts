@@ -80,12 +80,12 @@ CSS&apos;nizde bir sans-serif yazı tipi ailesi belirtilmişse</translation>
         <location filename="../PAppearanceWidget.ui" line="163"/>
         <location filename="../PAppearanceWidget.ui" line="166"/>
         <source>Skip Print Preview</source>
-        <translation type="unfinished"/>
+        <translation>Yazdırma Önzilemesini Atla</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="175"/>
         <source>Print DPI:</source>
-        <translation type="unfinished"/>
+        <translation>Yazdırma Ölçeği (DPI):</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="204"/>
