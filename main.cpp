@@ -403,6 +403,7 @@ int main(int argc, char *argv[])
 
     // initialize our QWebEngineProfiles and URL Interceptor
     WebProfileMgr* profile_mgr = WebProfileMgr::instance();
+    Q_UNUSED(profile_mgr);
 
     QStringList arguments = QCoreApplication::arguments();
 

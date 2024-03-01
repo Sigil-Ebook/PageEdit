@@ -57,7 +57,7 @@ QString UIDictionary::GetDictionaryPath()
 
     // finally look inside the installed Qt directories
 #ifndef Q_OS_MAC
-    dict_path = QLibraryInfo::location(QLibraryInfo::DataPath) + "/qtwebengine_dictionaries";
+    dict_path = QLibraryInfo::path(QLibraryInfo::DataPath) + "/qtwebengine_dictionaries";
 #else
     dict_path = QCoreApplication::applicationDirPath() + 
       "/../Frameworks/QtWebEngineCore.framework/Resources/qtwebengine_dictionaries";

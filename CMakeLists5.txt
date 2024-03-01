@@ -18,6 +18,10 @@ endif()
 find_package(Qt5 ${QT5_NEEDED} COMPONENTS Core Network WebEngine WebEngineWidgets Svg Widgets PrintSupport Xml LinguistTools)
 set(CMAKE_AUTOMOC ON)
 
+if (CMAKE_VERSION VERSION_GREATER "3.27.9")
+    cmake_policy(SET CMP0153 OLD)
+endif()
+
 set( SOURCE_FILES
     main.cpp
     MainApplication.cpp

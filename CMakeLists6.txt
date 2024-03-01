@@ -15,6 +15,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 #############################################################################
 
+if (CMAKE_VERSION VERSION_GREATER "3.27.9")
+    cmake_policy(SET CMP0153 OLD)
+endif()
+
 if( UNIX AND NOT APPLE )
     # Qt6 packages minimum version 6.2 for Linux
     set(QT6_NEEDED 6.2)
