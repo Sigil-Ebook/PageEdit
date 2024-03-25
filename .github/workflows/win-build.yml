@@ -31,8 +31,8 @@ on:
 
 env:
   BUILD_TYPE: Release
-  DOWNLOADQT: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/Qt6.5.3_x64_VS2022.7z
-  QT: Qt6.5.3
+  DOWNLOADQT: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/Qt6.6.2e_x64_VS2022.7z
+  QT: Qt6.6.2
   INNO: C:\Program Files (x86)\Inno Setup 6
   CMAKE64BIT: -DWIN_INSTALLER_USE_64BIT_CRT=1
 
@@ -76,7 +76,7 @@ jobs:
       working-directory: ${{runner.workspace}}\build
       run: |
         set PATH=${{runner.workspace}}\%QT%\bin;%PATH%
-        call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.37
+        call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.38
         echo %PATH%
         cmake %GITHUB_WORKSPACE% ^
         -G "Ninja" ^
@@ -95,7 +95,7 @@ jobs:
         set REDIST=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Redist\MSVC\%RedistVersion%\vc_redist.x64.exe
         echo "%REDIST%"
         cp '%REDIST%' %GITHUB_WORKSPACE%\installer\vcredist_x64.exe
-        call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.37
+        call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=14.38
         ninja -j2 deployinstaller
 
     - uses: actions/upload-artifact@v3
