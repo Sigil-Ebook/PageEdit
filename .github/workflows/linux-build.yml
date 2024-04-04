@@ -40,11 +40,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Cache Qt
       id: cache-qt
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{runner.workspace}}/Qt
         key: ${{ runner.os }}-qtdeps-${{ hashFiles('**/reset-lin-caches.txt') }}
@@ -52,7 +52,7 @@ jobs:
     - name: Install Qt
       uses: jurplel/install-qt-action@v3
       with:
-        version: '6.5.2'
+        version: '6.6.2'
         dir: ${{runner.workspace}}/Qt
         modules: 'qtwebengine qtpositioning qt5compat qtpdf qtwebchannel'
         setup-python: 'true'
