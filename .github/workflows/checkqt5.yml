@@ -46,7 +46,7 @@ jobs:
       run: |
         cmake $GITHUB_WORKSPACE \
         -G "Ninja" \
-        -DUSE_QT5 \
+        -DUSE_QT5=1 \
         -DCMAKE_PREFIX_PATH="{$QT_ROOT_DIR}/lib/cmake" \
         -DCMAKE_BUILD_TYPE=$BUILD_TYPE
         ninja -j$(getconf _NPROCESSORS_ONLN)
