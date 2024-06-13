@@ -1,6 +1,6 @@
 Change Log
 ==========
-pre-PageEdit-2.2.0
+PageEdit-2.2.0
   Bug Fixes
     - use patched Qt 6.6.2 to fix huge memory leak when resizing QWebEngineView on macOS
     - fix broken URLEncodePath that prevent proper insertion of Media (image, audo, video)
