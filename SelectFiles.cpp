@@ -26,6 +26,7 @@
 #include <QEventLoop>
 #include <QImage>
 #include <QPixmap>
+#include <QTimer>
 #include <QtWidgets/QLayout>
 #include <QtWebEngineWidgets>
 #include <QtWebEngineCore>
@@ -96,9 +97,10 @@ SelectFiles::SelectFiles(QString title,
     m_MediaKind(mediakind),
     m_MediaBase(mediabase),
     m_SelectFilesModel(new QStandardItemModel),
-    m_PreviewReady(false),
+    m_PreviewReady(true),
     m_PreviewLoaded(false),
     m_ThumbnailSize(THUMBNAIL_SIZE),
+    m_ImageChangedTimer(new QTimer()),
     m_WebView(new QWebEngineView(this))
 {
     ui.setupUi(this);
@@ -106,12 +108,22 @@ SelectFiles::SelectFiles(QString title,
     QWebEngineProfile* profile = WebProfileMgr::instance()->GetOneTimeProfile();
     m_WebView->setPage(new SimplePage(profile, m_WebView));
     m_WebView->setContextMenuPolicy(Qt::NoContextMenu);
-    m_WebView->setFocusPolicy(Qt::NoFocus);
     m_WebView->setAcceptDrops(false);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
     m_WebView->page()->settings()->setAttribute(QWebEngineSettings::ShowScrollBars,false);
 #endif
     ui.avLayout->addWidget(m_WebView);
+    ui.Details->setFocusPolicy(Qt::NoFocus);
+    m_WebView->setFocusPolicy(Qt::NoFocus);
+    ui.imageTree->setFocusPolicy(Qt::StrongFocus);
+
+    // set up ImageChangedTimer to absorb multiple selection
+    // changed signals since loading the WebView is slow
+    m_ImageChangedTimer->setSingleShot(true);
+    m_ImageChangedTimer->setInterval(20);
+    connect(m_ImageChangedTimer, SIGNAL(timeout()),this, SLOT(SetPreviewImage()));
+    m_ImageChangedTimer->stop();
+
 
     ReadSettings();
 
@@ -127,6 +139,7 @@ SelectFiles::SelectFiles(QString title,
     connectSignalsSlots();
 
     SetPreviewImage();
+    ui.imageTree->setFocus();
 }
 
 SelectFiles::~SelectFiles()
@@ -159,6 +172,7 @@ void SelectFiles::SetImages()
     }
     m_WebView->setHtml(html, QUrl());
 
+    ui.imageTree->reset();
     m_SelectFilesModel->clear();
     QStringList header;
     header.append(tr("Media Files In the Book"));
@@ -184,7 +198,7 @@ void SelectFiles::SetImages()
         // Don't show resources not matching the selected kind
         if ((m_ImageItem->isSelected() && mkind != "image" && mkind != "svgimage") ||
             (m_VideoItem->isSelected() && mkind != "video") ||
-	    (m_AudioItem->isSelected() && mkind != "audio")) {
+	        (m_AudioItem->isSelected() && mkind != "audio")) {
             continue;
         }
 
@@ -210,7 +224,7 @@ void SelectFiles::SetImages()
                 pixmap = pixmap.scaled(QSize(m_ThumbnailSize, m_ThumbnailSize), Qt::KeepAspectRatio);
             }
             QStandardItem *icon_item = new QStandardItem();
-            icon_item->setIcon(QIcon(pixmap));
+            icon_item->setData(QVariant(pixmap), Qt::DecorationRole);
             icon_item->setEditable(false);
             rowItems << icon_item;
         }
@@ -276,9 +290,8 @@ void SelectFiles::DecreaseThumbnailSize()
 void SelectFiles::ReloadPreview()
 {
     // Make sure we don't load when initial painting is resizing
-    if (m_PreviewReady) {
-        SetPreviewImage();
-    }
+    if (m_ImageChangedTimer->isActive()) m_ImageChangedTimer->stop();
+    m_ImageChangedTimer->start();
 }
 
 void SelectFiles::SelectionChanged(const QItemSelection &selected, const QItemSelection &deselected)
@@ -288,16 +301,21 @@ void SelectFiles::SelectionChanged(const QItemSelection &selected, const QItemSe
 
 void SelectFiles::SplitterMoved(int pos, int index)
 {
-    ReloadPreview();
+    // ReloadPreview();
 }
 
 void SelectFiles::resizeEvent(QResizeEvent *event)
 {
-    ReloadPreview();
+    // ReloadPreview();
 }
 
 void SelectFiles::SetPreviewImage()
 {
+    if (!m_PreviewReady) {
+        m_ImageChangedTimer->stop();
+        m_ImageChangedTimer->start();
+        return;
+    }
     m_PreviewReady = false;
     QPixmap pixmap;
     QString details = "";
@@ -324,8 +342,6 @@ void SelectFiles::SetPreviewImage()
     const double ffmbsize = ffsize / 1024.0;
     const QString fmbsize = QLocale().toString(ffmbsize, 'f', 2);
 
-    bool loading_resources = false;
-    
     // Images
     if (mkind == "image" || mkind == "svgimage") {
 
@@ -348,12 +364,12 @@ void SelectFiles::SetPreviewImage()
         // MainWindow::clearMemoryCaches();
         const QUrl resourceUrl = QUrl::fromLocalFile(path);
         QString html = IMAGE_HTML_BASE_PREVIEW.arg(resourceUrl.toString());
-        m_PreviewLoaded = false;
         if (Utility::IsDarkMode()) {
-	    html = Utility::AddDarkCSS(html);
+            html = Utility::AddDarkCSS(html);
         }
+        m_WebView->page()->setBackgroundColor(Utility::WebViewBackgroundColor());
+        m_PreviewLoaded = false;
         m_WebView->setHtml(html, resourceUrl);
-        loading_resources = true;
     }
 
     if (mkind == "video") {
@@ -363,31 +379,23 @@ void SelectFiles::SetPreviewImage()
         html = VIDEO_HTML_BASE.arg(resourceUrl.toString());
         m_PreviewLoaded = false;
         if (Utility::IsDarkMode()) {
-	    html = Utility::AddDarkCSS(html);
+            html = Utility::AddDarkCSS(html);
         }
+        m_WebView->page()->setBackgroundColor(Utility::WebViewBackgroundColor());
+        m_PreviewLoaded = false;
         m_WebView->setHtml(html, resourceUrl);
-        loading_resources = true;
         details = QString("%1 MB").arg(fmbsize);
     } else if (mkind == "audio") {
         QString html;
         const QUrl resourceUrl = QUrl::fromLocalFile(path);
         // MainWindow::clearMemoryCaches();
         html = AUDIO_HTML_BASE.arg(resourceUrl.toString());
-        m_PreviewLoaded = false;
         if (Utility::IsDarkMode()) {
-	    html = Utility::AddDarkCSS(html);
+            html = Utility::AddDarkCSS(html);
         }
+        m_PreviewLoaded = false;
         m_WebView->setHtml(html, resourceUrl);
-        loading_resources = true;
         details = QString("%1 MB").arg(fmbsize);
-    }
-
-    // Technically, we need to wait until Preview is actually loaded
-    // because setHtml loads external resources asynchronously
-    if (loading_resources) {
-        while(!IsPreviewLoaded()) {
-            qApp->processEvents(QEventLoop::ExcludeUserInputEvents);
-        }
     }
     ui.Details->setText(details);
     m_PreviewReady = true;
@@ -399,6 +407,7 @@ void SelectFiles::PreviewLoadComplete(bool okay)
 	    m_WebView->stop();
 	}
 	m_PreviewLoaded = true;
+    m_PreviewReady = true;
 }
 
 bool SelectFiles::IsPreviewLoaded()
