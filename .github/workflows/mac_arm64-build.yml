@@ -1,4 +1,4 @@
-name: Build PageEdit on macOS x86_64
+name: Build PageEdit on macOS arm64
 
 on:
   push:
@@ -31,13 +31,13 @@ env:
   HOMEBREW_NO_AUTO_UPDATE: 1
   HOMEBREW_NO_INSTALL_CLEANUP: 1
   MACOSX_DEPLOYMENT_TARGET: 11
-  DOWNLOADQT: https://github.com/kevinhendricks/BuildSigilOnMac/releases/download/for_sigil_1.0.0/Qt672.tar.xz
+  DOWNLOADQT: https://github.com/kevinhendricks/BuildSigilOnMac/releases/download/for_sigil_1.0.0/Qt672_arm64.tar.xz
   QT: Qt672
 
 jobs:
   build:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    runs-on: macos-12
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v4
@@ -46,7 +46,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: ${{runner.workspace}}/${{env.QT}}
-        key: ${{ runner.os }}-qtdeps-${{hashFiles('**/reset-mac-caches.txt')}}
+        key: ${{ runner.os }}-qtdeps-${{hashFiles('**/reset-mac_arm64-caches.txt')}}
 
     - name: Install dependencies
       shell: bash
@@ -96,13 +96,13 @@ jobs:
         make addframeworks
         bash $GITHUB_WORKSPACE/ci_scripts/rpath_adjust.sh
         cd ./bin
-        tar -cJf PageEdit.tar.xz PageEdit.app
+        tar -cJf PageEdit_arm64.tar.xz PageEdit.app
 
 
     - uses: actions/upload-artifact@v4
       if: "contains(github.event.head_commit.message, '[deploy]')"
       with:
         name: pageedit-installer
-        path: ${{runner.workspace}}/build/bin/PageEdit.tar.xz
+        path: ${{runner.workspace}}/build/bin/PageEdit_arm64.tar.xz
         retention-days: 3
          
