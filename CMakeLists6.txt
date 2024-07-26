@@ -475,6 +475,20 @@ if ( MSVC )
                         COMMAND ${WINDEPLOYQT} --release --no-translations --no-compiler-runtime --dir ${MAIN_PACKAGE_DIR}
                         --libdir ${MAIN_PACKAGE_DIR} ${MAIN_PACKAGE_DIR}/${PROJECT_NAME}${CMAKE_EXECUTABLE_SUFFIX} )
 
+    # Copy ICU libs. Windeployqt does not always pick up all three.
+    set( ICU_BIN_LIBS icudt icuin icuuc )
+    add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND cmake -E make_directory ${MAIN_PACKAGE_DIR}/ )
+    foreach( lib ${ICU_BIN_LIBS} )
+        # If the three are there (any version), copy them. Otherwise keep going without them.
+        file( GLOB ICU_LIB ${QT_INSTALL_BINS}/${lib}*.dll )
+        list( LENGTH ICU_LIB PATHS_LEN )
+        if( PATHS_LEN GREATER 0 )
+            foreach( ICU ${ICU_LIB} )
+                add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND cmake -E copy ${ICU} ${MAIN_PACKAGE_DIR}/ )
+            endforeach( ICU )
+        endif()
+    endforeach( lib )    
+    
     # Copy the translation qm files
     if( NOT EXISTS ${MAIN_PACKAGE_DIR}/translations )
         add_custom_command( TARGET ${TARGET_FOR_COPY} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory ${MAIN_PACKAGE_DIR}/translations/ )
