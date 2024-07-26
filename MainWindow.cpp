@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023 Kevin Hendricks, Doug Massay
+**  Copyright (C) 2019-2024 Kevin Hendricks, Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -1599,7 +1599,6 @@ bool MainWindow::Save()
 
 void MainWindow::printRendered()
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
     // Refresh skipflags from Prefs
     SettingsStore settings;
     m_skipPrintWarnings = settings.skipPrintWarnings();
@@ -1632,18 +1631,6 @@ void MainWindow::printRendered()
     settings.setSkipPrintWarnings(m_skipPrintWarnings);
 
     m_WebViewPrinter->setPage(m_WebView->url(), m_skipPrintPreview);
-#else
-    QMessageBox msgbox;
-    QString text = tr("Feature not available before Qt5.12.x");
-    msgbox.setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
-    msgbox.setModal(true);
-    msgbox.setWindowTitle("PageEdit");
-    msgbox.setText("<h3>" + text + "</h3><br/>");
-    msgbox.setIcon(QMessageBox::Icon::Warning);
-    msgbox.setStandardButtons(QMessageBox::Close);
-    msgbox.exec();
-#endif
-
 }
 
 void MainWindow::Open()
@@ -1943,7 +1930,6 @@ void MainWindow::Superscript()
 }
 
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
 void MainWindow::Bold()               { m_WebView->triggerPageAction(QWebEnginePage::ToggleBold);          }
 void MainWindow::Italic()             { m_WebView->triggerPageAction(QWebEnginePage::ToggleItalic);        }
 void MainWindow::Underline()          { m_WebView->triggerPageAction(QWebEnginePage::ToggleUnderline);     }
@@ -1956,20 +1942,6 @@ void MainWindow::DecreaseIndent()     { m_WebView->triggerPageAction(QWebEngineP
 void MainWindow::IncreaseIndent()     { m_WebView->triggerPageAction(QWebEnginePage::Indent);              }
 void MainWindow::InsertBulletedList() { m_WebView->triggerPageAction(QWebEnginePage::InsertUnorderedList); }
 void MainWindow::InsertNumberedList() { m_WebView->triggerPageAction(QWebEnginePage::InsertOrderedList);   }
-#else
-void MainWindow::Bold()               { m_WebView->ExecCommand("bold");                }
-void MainWindow::Italic()             { m_WebView->ExecCommand("italic");              }
-void MainWindow::Underline()          { m_WebView->ExecCommand("underline");           }
-void MainWindow::Strikethrough()      { m_WebView->ExecCommand("strikeThrough");       }
-void MainWindow::AlignLeft()          { m_WebView->ExecCommand("justifyLeft");         }
-void MainWindow::AlignCenter()        { m_WebView->ExecCommand("justifyCenter");       }
-void MainWindow::AlignRight()         { m_WebView->ExecCommand("justifyRight");        }
-void MainWindow::AlignJustify()       { m_WebView->ExecCommand("justifyFull");         }
-void MainWindow::DecreaseIndent()     { m_WebView->ExecCommand("outdent");             }
-void MainWindow::IncreaseIndent()     { m_WebView->ExecCommand("indent");              }
-void MainWindow::InsertBulletedList() { m_WebView->ExecCommand("insertUnorderedList"); }
-void MainWindow::InsertNumberedList() { m_WebView->ExecCommand("insertOrderedList");   }
-#endif
 
 void MainWindow::ShowMessageOnStatusBar(const QString &message,
                                         int millisecond_duration)
@@ -2140,11 +2112,7 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionHeadingNormal, SIGNAL(triggered()), m_headingMapper, SLOT(map()));
     m_headingMapper->setMapping(ui.actionHeadingNormal, "Normal");
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    connect(m_headingMapper, SIGNAL(mapped(const QString &)), this, SLOT(ApplyHeadingToSelection(const QString &)));
-#else
     connect(m_headingMapper, SIGNAL(mappedString(const QString &)), this, SLOT(ApplyHeadingToSelection(const QString &)));
-#endif
 
     connect(ui.actionHeadingPreserveAttributes,SIGNAL(triggered(bool)),this,SLOT(SetPreserveHeadingAttributes(bool)));
 
@@ -2207,11 +2175,7 @@ void MainWindow::ConnectSignalsToSlots()
     m_casingChangeMapper->setMapping(ui.actionCasingUppercase,  Utility::Casing_Uppercase);
     m_casingChangeMapper->setMapping(ui.actionCasingTitlecase, Utility::Casing_Titlecase);
     m_casingChangeMapper->setMapping(ui.actionCasingCapitalize, Utility::Casing_Capitalize);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    connect(m_casingChangeMapper, SIGNAL(mapped(int)), this, SLOT(ChangeCasing(int)));
-#else
     connect(m_casingChangeMapper, SIGNAL(mappedInt(int)), this, SLOT(ChangeCasing(int)));
-#endif
 
     // View/Zoom Related
     connect(ui.actionZoomIn,     SIGNAL(triggered()),       this, SLOT(ZoomIn()));

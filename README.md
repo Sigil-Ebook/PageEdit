@@ -17,7 +17,7 @@ This app is working and fundamentally complete.
 
 ![PageEdit](screencaps/add-links.png?raw=true) Add Links
 
-It prefers Qt 6.6.2 or later but can still be built with Qt 5.15.9.
+It prefers Qt 6.7.2 or later but can still be built with Qt 6.4.2.
 
 Building on macOS Ventura
 -------------------------
@@ -29,7 +29,7 @@ After checking out the PageEdit github repo into a PageEdit directory
 
 
 `export MACOSX_DEPLOYMENT_TARGET=11.0`<br>
-`export MYQTHOME=~/Qt653`<br>
+`export MYQTHOME=~/Qt672`<br>
 `export PATH=${PATH}:${MYQTHOME}/bin`<br>
 `mkdir build`<br>
 `cd build`<br>
@@ -49,10 +49,10 @@ After checking out the PageEdit github repo into a PageEdit directory
 On Linux
 --------
 
-Make sure a minimum of Qt5.9.4(ish) is installed (with the WebEngine package) as well as cmake.<br>
+Make sure a minimum of Qt6.4.2(ish) is installed (with the WebEngine package) as well as cmake.<br>
 You build in a separate directory and not in the source directory.
 
-Qt 6.6.2 or later is preferred but Qt5.13+ is probably a more realistic minimum to be able enjoy all of PageEdit's features.
+Qt 6.7.2 or later is preferred.
 
 Get the PageEdit Source:
 
@@ -64,7 +64,7 @@ __Ubuntu__
 
 `sudo apt-get install build-essential`<br>
 `sudo apt-get install cmake`<br>
-`sudo apt-get install qt6-webengine-dev qt6-webengine-dev-tools qt6-base-dev-tools qt6-tools-dev qt6-tools-dev-tools qt6-5compat-dev libqt6svg6`
+`sudo apt-get install qt6-webengine-dev qt6-webengine-dev-tools qt6-base-dev-tools qt6-tools-dev qt6-tools-dev-tools libqt6svg6`
 
 `mkdir build`<br>
 `cd build`<br>
@@ -88,16 +88,12 @@ To test
 
 `make install` (defaults to the /usr/local prefix, so use sudo if required).
 
-__NOTE__: certain features, like Inspector, will require a minimum of Qt5.11.x to function on Linux.
-
-__NOTE__: If you want to build with Qt5, you'll obviously need to add -DUSE_Qt5=1 and change -DQt6_DIR to -DQt5_DIR and point it to your Qt5 installation.
-
 By default, bundled hunspell dictionaries are converted to webengine spell check dictionaries (with qt tools) and installed to the QT_INSTALL_DATA/qtwebengine_dictionaries location. This location can be found using the qmake binary (of the Qt you're building PageEdit with) with the following command `-qmake -query QT_INSTALL_DATA` . If using the system Qt, this will typically be /usr/share/qt/qtwebengine_dictionaries. To disable the conversion/installation of these bundled dictionaries, use -DNSTALL_BUNDLED_DICTS=0 when configuring PageEdit with cmake. Arch Linux already includes these dictionaries with the corresponding hunspell language dictionaries. So you'll want to skip their conversion/installation on Arch and make sure you have the correct hunspell languages installed instead.
 
 On Windows:
 -----------
 
-Qt6.6.2 or higher is preferred, but you'll want to maintain a  minimum of Qt5.13.x (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.6.2. Install cmake 3.18+ and make sure its bin directory is added to your path.
+Qt6.7.2 or higher is preferred, but you'll want to maintain a  minimum of Qt6.4.2 (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.7.2. Install cmake 3.18+ and make sure its bin directory is added to your path.
 
 Make sure that Qt's bin directory is also added to your PATH. Take note of the path for your Qt's prefix (the directory right above the bin directory). Open an "x64 Native Tools Command Prompt for VS2022" from the Start menu and cd to wherever you want to build.
 
@@ -116,9 +112,7 @@ Use `nmake deployinstaller` to package PageEdit and all of its dependencies into
 
 __NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deploy` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
-__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.6.2
-
-__NOTE__: If you want to build with Qt5, you'll obviously need to add -DUSE_Qt5=1 and change -DQt6_DIR to -DQt5_DIR and point it to your Qt5 installation.
+__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.7.2
 
 
 ## For Github repository maintainers (who am I kidding, this is to keep myself from forgetting/messing up):

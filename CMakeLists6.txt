@@ -21,12 +21,12 @@ endif()
 
 if( UNIX AND NOT APPLE )
     # Qt6 packages minimum version 6.2 for Linux
-    set(QT6_NEEDED 6.2)
+    set(QT6_NEEDED 6.4)
 else()
-    # Qt6 packages minimum version 5.12 for Windows/Mac
-    set(QT6_NEEDED 6.2)
+    # Qt6 packages
+    set(QT6_NEEDED 6.4)
 endif()
-find_package(Qt6 ${QT6_NEEDED} COMPONENTS Core5Compat Network WebEngineCore WebEngineWidgets Svg Widgets Xml PrintSupport LinguistTools)
+find_package(Qt6 ${QT6_NEEDED} COMPONENTS Network WebEngineCore WebEngineWidgets Svg Widgets Xml PrintSupport LinguistTools)
 set(CMAKE_AUTOMOC ON)
 
 set( SOURCE_FILES
@@ -244,7 +244,7 @@ else()
 endif()
 
 # No need to explicity link Qt6::WinMain or to use the qt6_use_modules macro since CMAKE 2.8.11. We require CMAKE 3.0.0
-target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt6::Core5Compat Qt6::Widgets  Qt6::PrintSupport
+target_link_libraries( ${PROJECT_NAME} ${GUMBO_LIBRARIES} Qt6::Widgets  Qt6::PrintSupport
                                      Qt6::WebEngineCore  Qt6::WebEngineWidgets  Qt6::Svg Qt6::Network)
 
 #############################################################################

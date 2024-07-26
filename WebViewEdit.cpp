@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2024  Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -35,11 +35,7 @@
 #include <QWebEnginePage>
 #include <QWebEngineView>
 #include <QWebEngineScript>
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
 #include <QWebEngineContextMenuRequest>
-#else
-#include <QWebEngineContextMenuData>
-#endif
 #include <QDebug>
 
 #include "Utility.h"
@@ -49,13 +45,6 @@
 
 #include "WebPageEdit.h"
 #include "WebViewEdit.h"
-
-#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
-    #define QT_ENUM_SKIPEMPTYPARTS Qt::SkipEmptyParts
-#else
-    #define QT_ENUM_SKIPEMPTYPARTS QString::SkipEmptyParts
-#endif
-
 
 #define DBG if(0)
 
@@ -142,38 +131,21 @@ WebViewEdit::~WebViewEdit()
 
 void WebViewEdit::contextMenuEvent(QContextMenuEvent *event)
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    const QWebEngineContextMenuData &data = page()->contextMenuData();
-    Q_ASSERT(data.isValid());
-#else
     const QWebEngineContextMenuRequest* request = lastContextMenuRequest();
-#endif
 
     QWebEngineProfile *profile = page()->profile();
     m_menu->clear();
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    if (data.isContentEditable()) {
-#else
     if (request->isContentEditable()) {
-#endif        
         
         // Used for edit mode
         const QStringList &dictionaries = profile->spellCheckLanguages();
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-        if (!data.misspelledWord().isEmpty()) {
-#else
         if (!request->misspelledWord().isEmpty()) {
-#endif
             QFont boldFont = m_menu->font();
             boldFont.setBold(true);
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-            for (const QString &suggestion : data.spellCheckerSuggestions()) {
-#else
             for (const QString &suggestion : request->spellCheckerSuggestions()) {
-#endif
 	            QAction *action = m_menu->addAction(suggestion);
 	            action->setFont(boldFont);
 
@@ -730,7 +702,7 @@ QList<ElementIndex> WebViewEdit::ConvertQWebPathToHierarchy(const QString & webp
 {
     // The location element hierarchy encoded in a string
     QString location_string = webpath;
-    QStringList elements    = location_string.split(",", QT_ENUM_SKIPEMPTYPARTS);
+    QStringList elements    = location_string.split(",", Qt::SkipEmptyParts);
     QList<ElementIndex> location;
     foreach(QString element, elements) {
         ElementIndex new_element;

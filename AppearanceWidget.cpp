@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2020  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2024  Kevin B. Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2019-2020  Doug Massay
 **  Copyright (C) 2012       John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012       Grant Drake
@@ -36,15 +36,10 @@
 #include "Utility.h"
 
 AppearanceWidget::AppearanceWidget()
-    : m_isHighDPIComboEnabled(true)
+    : m_isHighDPIComboEnabled(false)
 {
-
-#if defined(Q_OS_MAC) || QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
-    // Disable the HighDPI combobox on Mac
-    // Effectively an isMacOS runtime check
-    // Also needed if Qt >= 6.0.0
+    // Disable the HighDPI combobox on all platforms under Qt6
     m_isHighDPIComboEnabled = false;
-#endif
 
     ui.setupUi(this);
 
@@ -93,11 +88,7 @@ PreferencesWidget::ResultActions AppearanceWidget::saveSettings()
     settings.setMainMenuIconSize(double(ui.iconSizeSlider->value())/10);
 
     // WV settings can be globally changed and will take effect immediately
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QWebEngineSettings *web_settings = QWebEngineSettings::defaultSettings();
-#else
     QWebEngineSettings *web_settings = QWebEngineProfile::defaultProfile()->settings();
-#endif
     web_settings->setFontSize(QWebEngineSettings::DefaultFontSize,   WVAppearance.font_size);
     web_settings->setFontFamily(QWebEngineSettings::StandardFont,    WVAppearance.font_family_standard);
     web_settings->setFontFamily(QWebEngineSettings::SerifFont,       WVAppearance.font_family_serif);

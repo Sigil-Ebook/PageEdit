@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2022  Kevin B. Hendricks, Stratford Ontario Canada
-**  Copyright (C) 2019-2022  Doug Massay
+**  Copyright (C) 2019-2024  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2024  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -25,6 +25,10 @@
 #define PE_CONSTANTS_H
 
 class QString;
+
+// QL1SV() Macro to handle renaming of QLatin1String to QLatin1StringView in Qt6.4+
+#include <QLatin1StringView>
+#define QL1SV(t) QLatin1StringView(t)
 
 // Workaround LTO issues with static initializers when initailized
 // from const qstrings from a different compilation unit

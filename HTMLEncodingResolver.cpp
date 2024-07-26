@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2016-2020 Kevin B. Hendricks Stratford, Ontario, Canada
+**  Copyright (C) 2016-2024 Kevin B. Hendricks Stratford, Ontario, Canada
 **  Copyright (C) 2013      John Schember <john@nachtimwald.com>
 **  Copyright (C) 2009-2011 Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
@@ -25,19 +25,17 @@
 
 #include <QFile>
 #include <QString>
-#include <QTextCodec>
 #include <QRegularExpression>
-
-#include "Utility.h"
-#include "pageedit_exception.h"
+#include <QDebug>
 #include "HTMLEncodingResolver.h"
-
+#include "Utility.h"
+#include "pageedit_constants.h"
+#include "pageedit_exception.h"
 
 const QString ENCODING_ATTRIBUTE   = "encoding\\s*=\\s*(?:\"|')([^\"']+)(?:\"|')";
 const QString CHARSET_ATTRIBUTE    = "charset\\s*=\\s*(?:\"|')([^\"']+)(?:\"|')";
 const QString STANDALONE_ATTRIBUTE = "standalone\\s*=\\s*(?:\"|')([^\"']+)(?:\"|')";
 const QString VERSION_ATTRIBUTE    = "<\\?xml[^>]*version\\s*=\\s*(?:\"|')([^\"']+)(?:\"|')[^>]*>";
-
 
 // Accepts a full path to an HTML file.
 // Reads the file, detects the encoding
@@ -54,7 +52,7 @@ QString HTMLEncodingResolver::ReadHTMLFile(const QString &fullfilepath)
 
     QByteArray data = file.readAll();
 
-    return Utility::ConvertLineEndings(GetCodecForHTML(data)->toUnicode(data));
+    return Utility::ConvertLineEndingsAndNormalize(GetDecoderForHTML(data).decode(data));
 }
 
 
@@ -62,17 +60,17 @@ QString HTMLEncodingResolver::ReadHTMLFile(const QString &fullfilepath)
 // if no encoding is detected, the default codec for this locale is returned.
 // We use this function because Qt's QTextCodec::codecForHtml() function
 // leaves a *lot* to be desired.
-const QTextCodec *HTMLEncodingResolver::GetCodecForHTML(const QByteArray &raw_text)
+QStringDecoder HTMLEncodingResolver::GetDecoderForHTML(const QByteArray &raw_text)
 {
     unsigned char c1;
     unsigned char c2;
     unsigned char c3;
     unsigned char c4;
     QString text;
-    QTextCodec *codec;
+    QStringDecoder decoder;
 
     if (raw_text.length() < 4) {
-        return QTextCodec::codecForName("UTF-8");
+        return QStringDecoder("UTF-8");
     }
 
     // Check the BOM if present.
@@ -81,20 +79,20 @@ const QTextCodec *HTMLEncodingResolver::GetCodecForHTML(const QByteArray &raw_te
     c3 = raw_text.at(2);
     c4 = raw_text.at(3);
     if (c1 == 0xEF && c2 == 0xBB && c3 == 0xBF) {
-        return QTextCodec::codecForName("UTF-8");
+        return QStringDecoder("UTF-8");
     } else if (c1 == 0xFF && c2 == 0xFE && c3 == 0 && c4 == 0) {
-        return QTextCodec::codecForName("UTF-32LE");
+        return QStringDecoder("UTF-32LE");
     } else if (c1 == 0 && c2 == 0 && c3 == 0xFE && c4 == 0xFF) {
-        return QTextCodec::codecForName("UTF-32BE");
+        return QStringDecoder("UTF-32BE");
     } else if (c1 == 0xFE && c2 == 0xFF) {
-        return QTextCodec::codecForName("UTF-16BE");
+        return QStringDecoder("UTF-16BE");
     } else if (c1 == 0xFF && c2 == 0xFE) {
-        return QTextCodec::codecForName("UTF-16LE");
+        return QStringDecoder("UTF-16LE");
     }
 
     // Alternating char followed by 0 is typical of utf 16 le without BOM.
     if (c1 != 0 && c2 == 0 && c3 != 0 && c4 == 0) {
-        return QTextCodec::codecForName("UTF-16LE");
+        return QStringDecoder("UTF-16LE");
     }
 
     // Try to find an ecoding specified in the file itself.
@@ -104,9 +102,11 @@ const QTextCodec *HTMLEncodingResolver::GetCodecForHTML(const QByteArray &raw_te
     QRegularExpression enc_re(ENCODING_ATTRIBUTE);
     QRegularExpressionMatch enc_mo = enc_re.match(text);
     if (enc_mo.hasMatch()) {
-        codec = QTextCodec::codecForName(enc_mo.captured(1).toLatin1().toUpper());
-        if (codec) {
-            return codec;
+        QByteArray ba(enc_mo.captured(1).toLatin1());
+        ba = FixupCodePageMapping(ba);
+        QStringDecoder decoder = QStringDecoder(ba);
+        if (decoder.isValid()) {
+            return decoder;
         }
     }
 
@@ -114,21 +114,21 @@ const QTextCodec *HTMLEncodingResolver::GetCodecForHTML(const QByteArray &raw_te
     QRegularExpression char_re(CHARSET_ATTRIBUTE);
     QRegularExpressionMatch char_mo = char_re.match(text);
     if (char_mo.hasMatch()) {
-        codec = QTextCodec::codecForName(char_mo.captured(1).toLatin1().toUpper());
-        if (codec) {
-            return codec;
+        QByteArray ba(char_mo.captured(1).toLatin1());
+        ba = FixupCodePageMapping(ba);
+        QStringDecoder decoder = QStringDecoder(ba);
+        if (decoder.isValid()) {
+            return decoder;
         }
     }
 
     // See if all characters within this document are utf-8.
     if (IsValidUtf8(raw_text)) {
-        return QTextCodec::codecForName("UTF-8");
+        return QStringDecoder("UTF-8");
     }
 
-    // Finally, let Qt guess and if it doesn't know it will return the codec
-    // for the current locale.
-    text = raw_text;
-    return QTextCodec::codecForHtml(raw_text, QTextCodec::codecForLocale());
+    // Finally, let Qt guess
+    return QStringDecoder::decoderForHtml(raw_text);
 }
 
 
@@ -206,4 +206,18 @@ bool HTMLEncodingResolver::IsValidUtf8(const QByteArray &string)
     }
 
     return true;
+}
+
+QByteArray HTMLEncodingResolver::FixupCodePageMapping(const QByteArray& ba)
+{
+  if (ba == "cp1250" || ba == "CP1250" || ba == "cp-1250" || ba == "CP-1250") return QByteArray("windows-1250");
+  if (ba == "cp1251" || ba == "CP1251" || ba == "cp-1251" || ba == "CP-1251") return QByteArray("windows-1251");
+  if (ba == "cp1252" || ba == "CP1252" || ba == "cp-1252" || ba == "CP-1252") return QByteArray("windows-1252");
+  if (ba == "cp1253" || ba == "CP1253" || ba == "cp-1253" || ba == "CP-1253") return QByteArray("windows-1253");
+  if (ba == "cp1254" || ba == "CP1254" || ba == "cp-1254" || ba == "CP-1254") return QByteArray("windows-1254");
+  if (ba == "cp1255" || ba == "CP1255" || ba == "cp-1255" || ba == "CP-1255") return QByteArray("windows-1255");
+  if (ba == "cp1256" || ba == "CP1256" || ba == "cp-1256" || ba == "CP-1256") return QByteArray("windows-1256");
+  if (ba == "cp1257" || ba == "CP1257" || ba == "cp-1257" || ba == "CP-1257") return QByteArray("windows-1257");
+  if (ba == "cp1258" || ba == "CP1258" || ba == "cp-1258" || ba == "CP-1258") return QByteArray("windows-1258");
+  return QByteArray(ba);
 }

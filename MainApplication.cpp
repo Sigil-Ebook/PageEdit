@@ -1,6 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2021 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2024 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2024 Doug Massay
 **  Copyright (C) 2012      John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012      Grant Drake
 **  Copyright (C) 2012      Dave Heiland
@@ -26,50 +27,55 @@
 #include <QTimer>
 #include <QStyleFactory>
 #include <QStyle>
+
+#if QT_VERSION >= QT_VERSION_CHECK(6,5,0)
+#include <QStyleHints>
+#endif
+
 #include <QPalette>
 #include <QDebug>
 
 #include "MainApplication.h"
 
+#define DBG if(0)
+
 MainApplication::MainApplication(int &argc, char **argv)
     : QApplication(argc, argv),
-      m_Style(nullptr),
-      m_isDark(false)
+      m_isDark(false),
+      m_PaletteChangeTimer(new QTimer()),
+      m_AlwaysUseNFC(true)
 {
-#ifdef Q_OS_MAC
-    // on macOS the application palette actual text colors never seem to change when DarkMode is enabled
-    // so use a mac style standardPalette
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    m_Style = QStyleFactory::create("macintosh");
-#else
-    m_Style = QStyleFactory::create("macos");
-#endif
-    QPalette app_palette = m_Style->standardPalette();
-    m_isDark = app_palette.color(QPalette::Active,QPalette::WindowText).lightness() > 128;
-    fixMacDarkModePalette(app_palette);
-    // set the initial app palette
-    setPalette(app_palette);
-#endif
-}
+    // Do this only once early on in the PageEdit startup
+    if (qEnvironmentVariableIsSet("PAGEEDIT_DISABLE_NFC_NORMALIZATION")) m_AlwaysUseNFC = false;
 
-void MainApplication::fixMacDarkModePalette(QPalette &pal)
-{
-# ifdef Q_OS_MAC
-    // See QTBUG-75321 and follow Kovid's workaround for broken ButtonText always being dark
-    pal.setColor(QPalette::ButtonText, pal.color(QPalette::WindowText));
-    if (m_isDark) {
-        // make alternating base color change not so sharp
-        pal.setColor(QPalette::AlternateBase, pal.color(QPalette::Base).lighter(150));
-        // make link color better for dark mode (try to match calibre for consistency)
-        pal.setColor(QPalette::Link, QColor("#6cb4ee"));
+    // Keep track on our own of dark or light
+    m_isDark = qApp->palette().color(QPalette::Active,QPalette::WindowText).lightness() > 128;
+
+    // Set up PaletteChangeTimer to absorb multiple QEvents
+    // We need this for older < Qt 6.5 and as a backup mechanism for Linux
+    // Whose ability to detect theme changes is not in a good state
+    m_PaletteChangeTimer->setSingleShot(true);
+    m_PaletteChangeTimer->setInterval(50);
+    connect(m_PaletteChangeTimer, SIGNAL(timeout()),this, SLOT(systemColorChanged()));
+    m_PaletteChangeTimer->stop();
+
+    // Connect system color scheme change signal to reporting mechanism
+    // Note: This mechanism is very very unreliable on Linux (across many distributions and desktops)
+    // So fall back to the QApplication:Palette change event instead for all of Linux for now
+#if QT_VERSION >= QT_VERSION_CHECK(6,5,0)
+    DBG qDebug() << "initial styleHints colorScheme: " << styleHints()->colorScheme();
+    if (styleHints()->colorScheme() == Qt::ColorScheme::Unknown) {
+        m_isDark = qApp->palette().color(QPalette::Active,QPalette::WindowText).lightness() > 128;
+    } else {
+        m_isDark = styleHints()->colorScheme() == Qt::ColorScheme::Dark;
     }
+
+    connect(styleHints(), &QStyleHints::colorSchemeChanged, this, [this]() {
+                MainApplication::systemColorChanged();
+        });
 #endif
 }
-
-
-
-
-
+    
 
 bool MainApplication::event(QEvent *pEvent)
 {
@@ -78,30 +84,141 @@ bool MainApplication::event(QEvent *pEvent)
     } else if (pEvent->type() == QEvent::ApplicationDeactivate) {
         emit applicationDeactivated();
     }
-#ifdef Q_OS_MAC
     if (pEvent->type() == QEvent::ApplicationPaletteChange) {
-        // qDebug() << "Application Palette Changed";
-	QTimer::singleShot(0, this, SLOT(EmitPaletteChanged()));
-    }
+        // can be generated multiple times
+        DBG qDebug() << "Application Palette Changed";
+        
+#if QT_VERSION < QT_VERSION_CHECK(6,5,0) ||  (!defined(Q_OS_WIN32) && !defined(Q_OS_MAC))
+	// Use this approach as a backup for Linux currently
+        if (m_PaletteChangeTimer->isActive()) m_PaletteChangeTimer->stop();
+        m_PaletteChangeTimer->start();
 #endif
+
+    }
     return QApplication::event(pEvent);
 }
 
 void MainApplication::EmitPaletteChanged()
 {
-#ifdef Q_OS_MAC
-    // on macOS the application palette actual colors never seem to change after launch
-    // even when DarkMode is enabled. So we use a mac style standardPalette to determine
-    // if a drak vs light mode transition has been made and then use it to set the
-    // Application palette
-    QPalette app_palette = m_Style->standardPalette();
-    bool isdark = app_palette.color(QPalette::Active,QPalette::WindowText).lightness() > 128;
-    if (m_isDark != isdark) {
-        // qDebug() << "Theme changed " << "was isDark:" << m_isDark << "now isDark:" << isdark;
+    DBG qDebug() << "emitting applicationPaletteChanged";
+    emit applicationPaletteChanged();
+}
+
+void MainApplication::systemColorChanged()
+{
+    // intential race on Linux so that both approaches work (typically won by styleHint() signal
+    // if it ever gets properly generated
+    m_PaletteChangeTimer->stop();
+    bool theme_changed = false;
+    bool isdark = qApp->palette().color(QPalette::Active,QPalette::WindowText).lightness() > 128;
+    DBG qDebug() << "reached systemColorChanged";
+    
+#if QT_VERSION < QT_VERSION_CHECK(6,5,0)
+    // in reality we really should not care if light or dark, just that theme changed
+    // but this is where we are at now
+    if (isdark != m_isDark) {
         m_isDark = isdark;
-        fixMacDarkModePalette(app_palette);
-        setPalette(app_palette);
-        emit applicationPaletteChanged();
+        theme_changed = true;
+    }
+
+#else  // Qt >= 6.5 and not Linux till it gets more robust
+
+    switch (styleHints()->colorScheme())
+    {
+        case Qt::ColorScheme::Light:
+            DBG qDebug() << "System Changed to Light Theme";
+            m_isDark = false;
+            theme_changed = true;
+            
+#ifdef Q_OS_WIN32
+            windowsLightThemeChange();
+#endif // Q_OS_WIN32
+            
+            break;
+
+        case Qt::ColorScheme::Unknown:
+            DBG qDebug() << "System Changed to Unknown Theme";
+	    // This is typical needed for all linux where Qt can not properly
+	    // identify the theme being used
+            if (isdark != m_isDark) {
+                m_isDark = isdark;
+                theme_changed = true;
+            }
+            break;
+
+        case Qt::ColorScheme::Dark:
+            DBG qDebug() << "System Changed to Dark Theme";
+            m_isDark = true;
+            theme_changed = true;
+
+#ifdef Q_OS_WIN32
+            windowsDarkThemeChange();
+#endif // Q_OS_WIN32
+
+            break;
+    }
+    
+#endif // Qt Version Check
+   
+    if (theme_changed) QTimer::singleShot(0, this, SLOT(EmitPaletteChanged()));
+
+}
+
+void MainApplication::windowsDarkThemeChange()
+{
+#if 0 // FIXME:  Is any of this needed on PageEdit?
+    SettingsStore settings;
+    if (settings.uiUseCustomSigilDarkTheme()) {
+        QStyle* astyle = QStyleFactory::create("Fusion");
+        setStyle(astyle);
+        //Handle the new CaretStyle (double width cursor)
+        bool isbstyle = false;
+        QStyle* bstyle;
+        if (settings.uiDoubleWidthTextCursor()) {
+            bstyle = new CaretStyle(astyle);
+            setStyle(bstyle);
+            isbstyle = true;
+        }
+        // modify windows sigil palette to our dark
+        QStyle* cstyle;
+        if (isbstyle) {
+            cstyle = new SigilDarkStyle(bstyle);
+        } else {
+            cstyle = new SigilDarkStyle(astyle);
+        }
+        setStyle(cstyle);
+        setPalette(style()->standardPalette());
+
+        // Add back stylesheet changes added after MainApplication started
+        if (!m_accumulatedQss.isEmpty()) {
+            setStyleSheet(styleSheet().append(m_accumulatedQss));
+            DBG qDebug() << styleSheet();
+        }
+    }
+#endif
+}
+
+void MainApplication::windowsLightThemeChange()
+{
+#if 0 // FIXME:  Is any of this needed on PageEdit?
+    SettingsStore settings;
+    if (settings.uiUseCustomSigilDarkTheme()) {
+        // Windows Fusion light mode
+        QStyle* astyle = QStyleFactory::create("Fusion");
+        setStyle(astyle);
+        // Handle the new CaretStyle (double width cursor)
+        if (settings.uiDoubleWidthTextCursor()) {
+            QStyle* bstyle = new CaretStyle(astyle);
+            setStyle(bstyle);
+        }
+        setPalette(style()->standardPalette());
+        // Add back stylesheet changes added after MainApplication started
+        if (!m_accumulatedQss.isEmpty()) {
+            setStyleSheet(m_accumulatedQss);
+            DBG qDebug() << styleSheet();
+        } else {
+            setStyleSheet("");
+        }
     }
 #endif
 }

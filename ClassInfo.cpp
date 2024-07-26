@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2023  Kevin B. Hendricks, Stratford, ON Canada
+**  Copyright (C) 2023-2024  Kevin B. Hendricks, Stratford, ON Canada
 **
 **  This file is part of PageEdit.
 **
@@ -26,14 +26,6 @@
 
 const int TAB_SPACES_WIDTH = 4;
 static const QString DELIMITERS = "}{;";
-
-#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
-    #define QT_ENUM_SKIPEMPTYPARTS Qt::SkipEmptyParts
-    #define QT_ENUM_KEEPEMPTYPARTS Qt::KeepEmptyParts
-#else
-    #define QT_ENUM_SKIPEMPTYPARTS QString::SkipEmptyParts
-    #define QT_ENUM_KEEPEMPTYPARTS QString::KeepEmptyParts
-#endif
 
 // Note: CSSProperties and CSSSelectors are simple struct that this code
 // created with new and so need to be manually cleaned up to prevent
@@ -120,7 +112,7 @@ void ClassInfo::parseCSSSelectors(const QString &text, const int &offsetLines, c
         int line = search_text.left(pos + 1).count(QChar('\n')) + 1;
         QString selector_text = search_text.mid(pos, open_brace_pos - pos).trimmed();
         // Handle case of a selector group containing multiple declarations
-        QStringList matches = selector_text.split(QChar(','), QT_ENUM_SKIPEMPTYPARTS);
+        QStringList matches = selector_text.split(QChar(','), Qt::SkipEmptyParts);
         foreach(QString match, matches) {
             CSSSelector *selector = new CSSSelector();
             selector->text = selector_text;
@@ -137,7 +129,7 @@ void ClassInfo::parseCSSSelectors(const QString &text, const int &offsetLines, c
             // Also replace any other characters like > or + not of interest
             match.replace(strip_non_name_chars_regex, QChar(' '));
             // Now break it down into the element components
-            QStringList elements = match.trimmed().split(QChar(' '), QT_ENUM_SKIPEMPTYPARTS);
+            QStringList elements = match.trimmed().split(QChar(' '), Qt::SkipEmptyParts);
             foreach(QString element, elements) {
                 if (element.contains(QChar('.'))) {
                     QStringList parts = element.split('.');

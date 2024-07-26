@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2024 Kevin B. Hendricks, Stratford, Ontario, Canada
 **  Copyright (C) 2009-2011 Strahinja Markovic  <strahinja.markovic@gmail.com>
 **
 **  This file is part of PageEdit.
@@ -27,7 +27,7 @@
 #include <QCoreApplication>
 #include <QString>
 #include <QStringList>
-#include <QStringRef>
+#include <QStringView>
 #include <QMessageBox>
 
 class QWidget;
@@ -60,10 +60,10 @@ public:
     // For instance, "test" and "TEST" return false, "teSt" returns true.
     static bool IsMixedCase(const QString &string);
 
-    // Returns a substring of a specified QStringRef;
+    // Returns a substring of a QStringView as a real string
     // the characters included are in the interval:
     // [ start_index, end_index >
-    static QString Substring(int start_index, int end_index, const QStringRef &string);
+    static QString Substring(int start_index, int end_index, const QStringView string);
 
     // Returns a substring of a specified QString;
     // the characters included are in the interval:
@@ -73,7 +73,7 @@ public:
     // Returns a substring of a specified string;
     // the characters included are in the interval:
     // [ start_index, end_index >
-    static QStringRef SubstringRef(int start_index, int end_index, const QString &string);
+    static QStringView SubstringView(int start_index, int end_index, const QString &string);
 
     // Replace the first occurrence of string "before"
     // with string "after" in string "string"
@@ -112,7 +112,7 @@ public:
 
     // Converts Mac and Windows style line endings to Unix style
     // line endings that are expected throughout the Qt framework
-    static QString ConvertLineEndings(const QString &text);
+    static QString ConvertLineEndingsAndNormalize(const QString &text);
 
     // Decodes XML escaped string to normal text
     // &amp; -> &    &apos; -> '  &quot; -> "   &lt; -> <  &gt; -> >
@@ -213,6 +213,8 @@ public:
 
     static QString FixupSvgForRendering(const QString& data);
     static QImage  RenderSvgToImage(const QString& filepath);
+
+    static QString UseNFC(const QString& text);
 };
 
 #endif // UTILITY_H

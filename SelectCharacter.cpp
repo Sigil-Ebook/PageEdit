@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2018-2021 Kevin B. Hendricks, Stratford, ON Canada
+**  Copyright (C) 2018-2024 Kevin B. Hendricks, Stratford, ON Canada
 **  Copyright (C) 2012      John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012      Dave Heiland
 **
@@ -437,9 +437,5 @@ void SelectCharacter::WriteSettings()
 
 void SelectCharacter::connectSignalsSlots()
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    connect(m_buttonMapper, SIGNAL(mapped(const QString &)), this, SLOT(SetSelectedCharacter(const QString &)));
-#else
     connect(m_buttonMapper, SIGNAL(mappedString(const QString &)), this, SLOT(SetSelectedCharacter(const QString &)));
-#endif
 }

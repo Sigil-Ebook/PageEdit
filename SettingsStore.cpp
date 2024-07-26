@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2016-2023 Kevin B. Hendricks, Stratford, ON
+**  Copyright (C) 2016-2024 Kevin B. Hendricks, Stratford, ON
 **  Copyright (C) 2011-2013 John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012-2013 Dave Heiland
 **
@@ -65,11 +65,7 @@ static QString KEY_USE_WSPREWRAP = SETTINGS_GROUP + "/" + "use_white_space_pre_w
 static QString KEY_SKIP_PRINT_WARNINGS = SETTINGS_GROUP + "/" + "skipprintwarnings";
 static QString KEY_SKIP_PRINT_PREVIEW = SETTINGS_GROUP + "/" + "skipprintpreview";
 
-#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
-static const QString SETTINGS_FILE = PAGEEDIT_SETTINGS_FILE;
-#else
 static const QString SETTINGS_FILE = PAGEEDIT_V6_SETTINGS_FILE;
-#endif
 
 SettingsStore::SettingsStore()
     : QSettings(Utility::DefinePrefsDir() + "/" + SETTINGS_FILE, QSettings::IniFormat)

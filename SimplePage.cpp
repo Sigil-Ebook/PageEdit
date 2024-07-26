@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2024 Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -32,7 +32,5 @@ SimplePage::SimplePage(QWebEngineProfile* profile, QObject *parent)
     : QWebEnginePage(profile, parent)
 {
     setBackgroundColor(Utility::WebViewBackgroundColor());
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0) || QT_VERSION >= QT_VERSION_CHECK(6, 4, 0)
     setUrl(QUrl("about:blank"));
-#endif
 }

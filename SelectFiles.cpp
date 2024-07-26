@@ -109,9 +109,7 @@ SelectFiles::SelectFiles(QString title,
     m_WebView->setPage(new SimplePage(profile, m_WebView));
     m_WebView->setContextMenuPolicy(Qt::NoContextMenu);
     m_WebView->setAcceptDrops(false);
-#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
     m_WebView->page()->settings()->setAttribute(QWebEngineSettings::ShowScrollBars,false);
-#endif
     ui.avLayout->addWidget(m_WebView);
     ui.Details->setFocusPolicy(Qt::NoFocus);
     m_WebView->setFocusPolicy(Qt::NoFocus);

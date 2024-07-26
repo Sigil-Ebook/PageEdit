@@ -31,7 +31,7 @@
 #include <QProcess>
 #include <QStandardPaths>
 #include <QStringList>
-#include <QStringRef>
+#include <QStringView>
 #include <QTextStream>
 #include <QtGlobal>
 #include <QUrl>
@@ -63,27 +63,16 @@
 // This is the same read buffer size used by Java and Perl.
 #define BUFF_SIZE 8192
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
-    #define QT_ENUM_KEEPEMPTYPARTS Qt::KeepEmptyParts
-#else
-    #define QT_ENUM_KEEPEMPTYPARTS QString::KeepEmptyParts
-#endif
-
 // Subclass QMessageBox for our StdWarningDialog to make any Details Resizable
 class PageEditMessageBox: public QMessageBox
 {
     public:
         PageEditMessageBox(QWidget* parent) : QMessageBox(parent) 
         {
-            setSizeGripEnabled(true);
         }
     private:
         virtual void resizeEvent(QResizeEvent * e) {
             QMessageBox::resizeEvent(e);
-            setMaximumSize(QWIDGETSIZE_MAX, QWIDGETSIZE_MAX);
-            if (QWidget *textEdit = findChild<QTextEdit *>()) {
-                textEdit->setMaximumHeight(QWIDGETSIZE_MAX);
-            }
         }
 };
 
@@ -104,11 +93,7 @@ static const QString DARK_STYLE =
 // Define the user preferences location to be used
 QString Utility::DefinePrefsDir()
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-        return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
-#else
         return QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation);
-#endif
 }
 
 
@@ -200,13 +185,13 @@ bool Utility::IsMixedCase(const QString &string)
     return false;
 }
 
-
+// Returns a substring from a specified QStringView as a real QString;
+// the characters included are in the interval:
 // [ start_index, end_index >
-QString Utility::Substring(int start_index, int end_index, const QStringRef &string)
+QString Utility::Substring(int start_index, int end_index, const QStringView string)
 {
-    return string.mid(start_index, end_index - start_index).toString();
+    return string.sliced(start_index, end_index - start_index).toString();
 }
-
 
 // [ start_index, end_index >
 QString Utility::Substring(int start_index, int end_index, const QString &string)
@@ -214,16 +199,12 @@ QString Utility::Substring(int start_index, int end_index, const QString &string
     return string.mid(start_index, end_index - start_index);
 }
 
-// Returns a substring of a specified string;
+// Returns a substring of a specified string as a QStringView
 // the characters included are in the interval:
 // [ start_index, end_index >
-QStringRef Utility::SubstringRef(int start_index, int end_index, const QString &string)
+QStringView Utility::SubstringView(int start_index, int end_index, const QString &string)
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    return string.midRef(start_index, end_index - start_index);
-#else
-    return QStringRef(&string, start_index, end_index - start_index);
-#endif
+    return QStringView(string).sliced(start_index, end_index - start_index);
 }
 
 // Replace the first occurrence of string "before"
@@ -428,13 +409,10 @@ QString Utility::ReadUnicodeTextFile(const QString &fullfilepath)
 
     QTextStream in(&file);
     // Input should be UTF-8
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    in.setCodec("UTF-8");
-#endif
     // This will automatically switch reading from
     // UTF-8 to UTF-16 if a BOM is detected
     in.setAutoDetectUnicode(true);
-    return ConvertLineEndings(in.readAll());
+    return ConvertLineEndingsAndNormalize(in.readAll());
 }
 
 
@@ -442,6 +420,7 @@ QString Utility::ReadUnicodeTextFile(const QString &fullfilepath)
 // file; if the file exists, it is truncated
 void Utility::WriteUnicodeTextFile(const QString &text, const QString &fullfilepath)
 {
+    QString newtext = Utility::UseNFC(text);
     QFile file(fullfilepath);
 
     if (!file.open(QIODevice::WriteOnly |
@@ -455,18 +434,15 @@ void Utility::WriteUnicodeTextFile(const QString &text, const QString &fullfilep
 
     QTextStream out(&file);
     // We ALWAYS output in UTF-8
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    out.setCodec("UTF-8");
-#endif
     out << text;
 }
 
 
 // Converts Mac and Windows style line endings to Unix style
 // line endings that are expected throughout the Qt framework
-QString Utility::ConvertLineEndings(const QString &text)
+QString Utility::ConvertLineEndingsAndNormalize(const QString &text)
 {
-    QString newtext(text);
+    QString newtext = Utility::UseNFC(text);
     return newtext.replace("\x0D\x0A", "\x0A").replace("\x0D", "\x0A");
 }
 
@@ -534,6 +510,10 @@ QString Utility::URLEncodePath(const QString &path)
    // url encoding them
    QString newpath = DecodeXML(path);
 
+   // The epub spec says all paths must use Unicode Normalization Form C (NFC)
+    // So do NOT Use Utility::UseNFC which conditionalizes things
+    newpath = newpath.normalized(QString::NormalizationForm_C);
+
    // then undo any existing url encoding
    newpath = URLDecodePath(newpath);
 
@@ -541,11 +521,7 @@ QString Utility::URLEncodePath(const QString &path)
    QVector<uint32_t> codepoints = newpath.toUcs4();
    for (int i = 0; i < codepoints.size(); i++) {
        uint32_t cp = codepoints.at(i);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-       QString s = QString::fromUcs4(&cp, 1);
-#else
        QString s = QString::fromUcs4(reinterpret_cast<char32_t *>(&cp), 1);
-#endif
        if (NeedToPercentEncode(cp)) {
            QByteArray b = s.toUtf8();
            for (int j = 0; j < b.size(); j++) {
@@ -570,13 +546,17 @@ QString Utility::URLEncodePath(const QString &path)
 
 QString Utility::URLDecodePath(const QString &path)
 {
-   QString apath(path);
-   // some very poorly written software uses xml-escape on hrefs
-   // instead of properly url encoding them, so look for the
-   // the "&" character which should *not* exist if properly
-   // url encoded and if found try to xml decode them first
-   apath = DecodeXML(apath);
-   return QUrl::fromPercentEncoding(apath.toUtf8());
+    QString apath(path);
+    // some very poorly written software uses xml-escape on hrefs
+    // instead of properly url encoding them, so look for the
+    // the "&" character which should *not* exist if properly
+    // url encoded and if found try to xml decode them first
+    apath = DecodeXML(apath);
+    QString newpath = QUrl::fromPercentEncoding(apath.toUtf8());
+    // epub spec says all paths must use Normalization Form C (NFC)
+    // Do Not use Utility::UseNFC as it conditionalizes it
+    newpath = newpath.normalized(QString::NormalizationForm_C);
+    return newpath;
 }
 
 
@@ -655,15 +635,10 @@ void Utility::DisplayStdWarningDialog(const QString &warning_message, const QStr
 // if the env var isn't set, it returns an empty string
 QString Utility::GetEnvironmentVar(const QString &variable_name)
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
     // The only time this might fall down is on Linux when an
     // environment variable holds bytedata. Don't use this
     // utility function for retrieval if that's the case.
     return qEnvironmentVariable(variable_name.toUtf8().constData(), "").trimmed();
-#else
-    // This will typically only be used on older Qts on Linux
-    return QProcessEnvironment::systemEnvironment().value(variable_name, "").trimmed();
-#endif
 }
 
 
@@ -847,8 +822,8 @@ QString Utility::relativePath(const QString & destination, const QString & start
     while (dest.endsWith(sep)) dest.chop(1);
     while (start.endsWith(sep)) start.chop(1);
 
-    QStringList dsegs = dest.split(sep, QT_ENUM_KEEPEMPTYPARTS);
-    QStringList ssegs = start.split(sep, QT_ENUM_KEEPEMPTYPARTS);
+    QStringList dsegs = dest.split(sep, Qt::KeepEmptyParts);
+    QStringList ssegs = start.split(sep, Qt::KeepEmptyParts);
     QStringList res;
     int i = 0;
     int nd = dsegs.size();
@@ -1092,4 +1067,16 @@ QImage Utility::RenderSvgToImage(const QString& filepath)
     renderer.render(&painter);
     return svgimage;
 
+}
+
+QString Utility::UseNFC(const QString& text)
+{
+    QString txt;
+    MainApplication *mainApplication = qobject_cast<MainApplication *>(qApp);
+    if (mainApplication->AlwaysUseNFC()) {
+        txt = text.normalized(QString::NormalizationForm_C);
+    } else {
+        txt = text;
+    }
+    return txt;
 }

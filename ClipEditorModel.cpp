@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2023 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2023-2024 Kevin B. Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2012 John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012 Dave Heiland
 **  Copyright (C) 2012 Grant Drake
@@ -32,14 +32,6 @@
 #include "ClipEditorModel.h"
 #include "Utility.h"
 #include "pageedit_constants.h"
-
-#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
-    #define QT_ENUM_SKIPEMPTYPARTS Qt::SkipEmptyParts
-    #define QT_ENUM_KEEPEMPTYPARTS Qt::KeepEmptyParts
-#else
-    #define QT_ENUM_SKIPEMPTYPARTS QString::SkipEmptyParts
-    #define QT_ENUM_KEEPEMPTYPARTS QString::KeepEmptyParts
-#endif
 
 static const QString SETTINGS_FILE = "clips.ini";
 
@@ -383,7 +375,7 @@ void ClipEditorModel::AddFullNameEntry(ClipEditorModel::clipEntry *entry, QStand
     QString entry_name = entry->name;
 
     if (entry->name.contains("/")) {
-        QStringList group_names = entry->name.split("/", QT_ENUM_SKIPEMPTYPARTS);
+        QStringList group_names = entry->name.split("/", Qt::SkipEmptyParts);
         entry_name = group_names.last();
 
         if (!entry->is_group) {

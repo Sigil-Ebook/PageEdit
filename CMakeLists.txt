@@ -46,7 +46,7 @@ set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib )
 set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib )
 
 set( PAGEEDIT_MAJOR_VERSION 2 )
-set( PAGEEDIT_MINOR_VERSION 2 )
+set( PAGEEDIT_MINOR_VERSION 3 )
 set( PAGEEDIT_REVISION_VERSION 0 )
 set( PAGEEDIT_FULL_VERSION ${PAGEEDIT_MAJOR_VERSION}.${PAGEEDIT_MINOR_VERSION}.${PAGEEDIT_REVISION_VERSION} )
 
@@ -70,12 +70,5 @@ endif()
 
 add_subdirectory( gumbo_subtree/src )
 
-# Pull in th proper cmake file depending on whether
-# a qt5 or qt6 build was requested (defaults to qt5)
-
-if (${USE_QT5})
-    include(CMakeLists5.txt)
-else()
-    include(CMakeLists6.txt)
-endif()
+include(CMakeLists6.txt)
 

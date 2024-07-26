@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2022  Kevin B. Hendricks, Stratford, Ontario, Canada
-**  Copyright (C) 2019-2022  Doug Massay
+**  Copyright (C) 2019-2024  Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2024  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -28,7 +28,6 @@
 #include <QLibraryInfo>
 #include <QStyleFactory>
 #include <QStyle>
-#include <QTextCodec>
 #include <QTranslator>
 #include <QMessageBox>
 #include <QFileInfo>
@@ -117,36 +116,6 @@ static QIcon GetApplicationIcon()
 }
 #endif
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-void setupHighDPI()
-{
-    bool has_env_setting = false;
-    QStringList env_vars;
-    env_vars << "QT_ENABLE_HIGHDPI_SCALING" << "QT_SCALE_FACTOR_ROUNDING_POLICY"
-             << "QT_AUTO_SCREEN_SCALE_FACTOR" << "QT_SCALE_FACTOR"
-             << "QT_SCREEN_SCALE_FACTORS" << "QT_DEVICE_PIXEL_RATIO";
-    foreach(QString v, env_vars) {
-        if (!Utility::GetEnvironmentVar(v).isEmpty()) {
-            has_env_setting = true;
-            break;
-        }
-    }
-
-    SettingsStore ss;
-    int highdpi = ss.highDPI();
-    if (highdpi == 1 || (highdpi == 0 && !has_env_setting)) {
-        // Turning on Automatic High DPI scaling
-        QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
-    } else if (highdpi == 2) {
-        // Turning off Automatic High DPI scaling
-        QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, false);
-        foreach(QString v, env_vars) {
-            bool irrel = qunsetenv(v.toUtf8().constData());
-        }
-    }
-}
-#endif
-
 // The message handler installed to handle Qt messages
 void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QString &message)
 {
@@ -188,11 +157,7 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
         QFile outFile(pageedit_log_file);
         outFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text);
         QTextStream ts(&outFile);
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-        ts << qt_log_entry << endl;
-#else
         ts << qt_log_entry << Qt::endl;
-#endif
     }
 }
 
@@ -210,26 +175,6 @@ void update_ini_file_if_needed(const QString oldfile, const QString newfile)
 // Application entry point
 int main(int argc, char *argv[])
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-  #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
-    QT_REQUIRE_VERSION(argc, argv, "5.9.0");
-  #else
-    QT_REQUIRE_VERSION(argc, argv, "5.12.3");
-  #endif
-#endif
-    
-#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
-    // Unset platform theme plugins/styles environment variables immediately
-    // when forcing Sigil's own darkmode palette on Linux
-    if (!force_sigil_darkmode_palette.isEmpty() ||
-	!force_pageedit_darkmode_palette.isEmpty()) {
-        QStringList env_vars = {"QT_QPA_PLATFORMTHEME", "QT_STYLE_OVERRIDE"};
-        foreach(QString v, env_vars) {
-            bool irrel = qunsetenv(v.toUtf8().constData());
-        Q_UNUSED(irrel);
-        }
-    }
-#endif
     
 #ifndef QT_DEBUG
     qInstallMessageHandler(MessageHandler);
@@ -241,19 +186,11 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("pageedit");
     QCoreApplication::setApplicationVersion(QString(PAGEEDIT_VERSION));
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     // Qt6 forced move to utf-8 settings values but Qt5 settings are broken for utf-8 codec
     // See QTBUG-40796 and QTBUG-54510 which never got fixed
     update_ini_file_if_needed(Utility::DefinePrefsDir() + "/" + PAGEEDIT_SETTINGS_FILE,
                               Utility::DefinePrefsDir() + "/" + PAGEEDIT_V6_SETTINGS_FILE);
-#endif
 
-#ifndef Q_OS_MAC
-  #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    setupHighDPI();
-    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
-  #endif
-#endif
     QCoreApplication::setAttribute(Qt::AA_DisableShaderDiskCache);
 
     // enable disabling of gpu acceleration for QtWebEngine.
@@ -270,6 +207,9 @@ int main(int argc, char *argv[])
         qputenv("QTWEBENGINE_CHROMIUM_FLAGS", current_flags.toUtf8());
     }
 
+    // disable thread unsafe use of broken PCRE2 JIT (version 10.43) in QRegularExpression
+    qputenv("QT_ENABLE_REGEXP_JIT","0");
+
     MainApplication app(argc, argv);
 
 #ifdef Q_OS_MAC
@@ -281,8 +221,6 @@ int main(int argc, char *argv[])
     // so we can catch OS X's file open events
     AppEventFilter *filter = new AppEventFilter(&app);
     app.installEventFilter(filter);
-
-    QTextCodec::setCodecForLocale(QTextCodec::codecForName("utf8"));
 
     // set up for translations
     SettingsStore settings;
@@ -315,63 +253,40 @@ int main(int argc, char *argv[])
     }
     app.installTranslator(&pageeditTranslator);
 
+#ifdef Q_OS_MAC
+    // QApplication::setStyle("macOS");
+    QStyle* astyle = QStyleFactory::create("macOS");
+    app.setStyle(astyle);
+#endif // Q_OS_MAC
+
+#ifdef Q_OS_WIN32
+    QStyle* astyle = QStyleFactory::create("fusion");
+    app.setStyle(astyle);
+#endif // Q_OS_WIN32
+
+#if !defined(Q_OS_MAC) && !defined(Q_OS_WIN32) // *nix
+    // QStyle* astyle = QStyleFactory::create("fusion");
+    QStyle* astyle = app.style();
+    app.setStyle(astyle);
+#endif // *nix
+
 #ifndef Q_OS_MAC
-    // Custom dark style/palette for Windows and Linux
-#ifndef Q_OS_WIN32
-    // Use platform themes/styles on Linux unless either Sigil or PageEdit's FORCE variable is set
-    if (!force_pageedit_darkmode_palette.isEmpty() || !force_sigil_darkmode_palette.isEmpty()) {
-        // Apply custom dark style
-        app.setStyle(new PEDarkStyle);
-#if QT_VERSION == QT_VERSION_CHECK(5, 15, 0)
-        // Qt keeps breaking my custom dark theme.
-        // This was apparently only necessary for Qt5.15.0!!
-        app.setPalette(QApplication::style()->standardPalette());
-#endif
-    }
-#else
     if (Utility::WindowsShouldUseDarkMode()) {
         // Apply custom dark style
         app.setStyle(new PEDarkStyle);
         app.setPalette(QApplication::style()->standardPalette());
     }
 #endif
-#endif
 
-    // Set ui font from preferences after dark theming
-    QFont f = QFont(QApplication::font());
-#ifdef Q_OS_WIN32
-    if (f.family() == "MS Shell Dlg 2" && f.pointSize() == 8) {
-        // Microsoft's recommended UI defaults
-        f.setFamily("Segoe UI");
-        f.setPointSize(9);
-        QApplication::setFont(f);
-    }
-#elif defined(Q_OS_MAC)
-    // Just in case
-#else
-    if (f.family() == "Sans Serif" && f.pointSize() == 9) {
-        f.setPointSize(10);
-        QApplication::setFont(f);
-    }
-#endif
-    settings.setOriginalUIFont(f.toString());
-    if (!settings.uiFont().isEmpty()) {
-        QFont font;
-        if (font.fromString(settings.uiFont()))
-            QApplication::setFont(font);
-    }
-#ifndef Q_OS_MAC
-    // redo on a timer to ensure in all cases
-    if (!settings.uiFont().isEmpty()) {
-        QFont font;
-        if (font.fromString(settings.uiFont())) {
-            QTimer::singleShot(0, [=]() {
-                    QApplication::setFont(font);
-                } );
-        }
-    }
-#endif
-    // End of UI font stuff
+    // it seems that any time there is stylesheet used, system dark-light palette
+    // changes are not propagated to widgets with stylesheets (See QTBUG-124268).
+    // This in turn prevents some widgets from properly geting repainted with the new
+    // dark or light theme palette (See paintEvent in BookBrowser.cpp for example.)
+    // Because our style changes are not palette dependent they should be
+    // properly propagated to all widgets including those with stylesheets
+    // This is how to tell Qt to do that.  Perhaps any platforms need this as well.
+     app.setAttribute(Qt::AA_UseStyleSheetPropagationInWidgetStyles);
+
 
     // Check for existing qt_styles.qss in Prefs dir and load it if present
     QString qt_stylesheet_path = Utility::DefinePrefsDir() + "/qt_styles.qss";
@@ -395,10 +310,8 @@ int main(int argc, char *argv[])
     // application icons linuxicons
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
     app.setWindowIcon(GetApplicationIcon());
-#if QT_VERSION >= 0x050700
     // Wayland needs this clarified in order to propery assign the icon 
     app.setDesktopFileName(QStringLiteral("pageedit.desktop"));
-#endif
 #endif
 
     // initialize our QWebEngineProfiles and URL Interceptor
@@ -465,6 +378,50 @@ int main(int argc, char *argv[])
     basemw->setMenuBar(mac_menu);
     basemw->show();
 #endif
+
+    // Set ui font from preferences
+    // This needs to happen as late as possible (before
+    // MainWindow) on Linux to work consistently.
+
+    QFont f = QFont(QApplication::font());
+
+#ifdef Q_OS_WIN32
+    if (f.family() == "MS Shell Dlg 2" && f.pointSize() == 8) {
+        // Microsoft's recommended UI defaults
+        f.setFamily("Segoe UI");
+        f.setPointSize(9);
+        QApplication::setFont(f);
+    }
+
+#elif defined(Q_OS_MAC)
+    // Just in case
+
+#else
+    if (f.family() == "Sans Serif" && f.pointSize() == 9) {
+        f.setPointSize(10);
+        QApplication::setFont(f);
+    }
+#endif
+    
+    settings.setOriginalUIFont(f.toString());
+    if (!settings.uiFont().isEmpty()) {
+        QFont font;
+        if (font.fromString(settings.uiFont()))
+            QApplication::setFont(font);
+    }
+
+#ifndef Q_OS_MAC
+    // redo on a timer to ensure in all cases
+    if (!settings.uiFont().isEmpty()) {
+        QFont font;
+        if (font.fromString(settings.uiFont())) {
+            QTimer::singleShot(0, [=]() {
+                    QApplication::setFont(font);
+                } );
+        }
+    }
+#endif
+    // End of UI font stuff
 
     MainWindow *widget = GetMainWindow(arguments);
     widget->show();

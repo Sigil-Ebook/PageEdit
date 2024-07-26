@@ -1,6 +1,6 @@
 /************************************************************************
  **
- **  Copyright (C) 2019-2021 Kevin B. Hendricks, Stratford Ontario Canada
+ **  Copyright (C) 2019-2024 Kevin B. Hendricks, Stratford Ontario Canada
  **
  **  This file is part of PageEdit.
  **
@@ -35,10 +35,7 @@
 #include <QtWebEngineCore>
 #include <QWebEngineScript>
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
 #include <QWebEngineFindTextResult>
-#endif
-
 
 #include "SearchToolbar.h"
 #include "WebViewEdit.h"
@@ -134,12 +131,8 @@ void SearchToolbar::setText(const QString &text)
 void SearchToolbar::searchText(const QString &text)
 {
     QPointer<SearchToolbar> guard = this;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    m_view->findText(text, m_findFlags, [=](bool found) {
-#else
     m_view->findText(text, m_findFlags, [=](const QWebEngineFindTextResult& result) {
     bool found = result.numberOfMatches() > 0;
-#endif
         if (!guard) {
             return;
         }

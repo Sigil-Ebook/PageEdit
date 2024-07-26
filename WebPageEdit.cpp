@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2024 Kevin B. Hendricks, Stratford Ontario Canada
 **  Copyright (C) 2020      Doug Massay
 **
 **  This file is part of PageEdit.
@@ -38,19 +38,7 @@ WebPageEdit::WebPageEdit(QWebEngineProfile *profile, QObject *parent)
 {
 
     setBackgroundColor(Utility::WebViewBackgroundColor(true));
-
-#if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
-  #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    // Qt 5.14 seems to have broken setBackgroundColor completely
-    // Linux is the only one there now but this may be needed for all platforms
-    // in the future unless Qt is fixed
-    setHtml(BASIC_HTML.arg(backgroundColor().name()));
-  #endif
-#else
-  #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0) || QT_VERSION >= QT_VERSION_CHECK(6, 4, 0)
     setUrl(QUrl("about:blank"));
-  #endif
-#endif
 }
 
 // Because you can not delegate all links in QtWebEngine we must override 
@@ -81,12 +69,10 @@ bool WebPageEdit::acceptNavigationRequest(const QUrl & url, QWebEnginePage::Navi
         DBG qDebug() << "acceptNavigationRequest from scheme handler load" << url.toString();
         return true;
     }
-#if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
     if (type == QWebEnginePage::NavigationTypeRedirect) {
         DBG qDebug() << "acceptNavigationRequest from scheme handler redirect" << url.toString();
         return true;
     }
-#endif
     qDebug() << " Unhandled acceptNavigationRequest with type: " << type;
     return true;
 }
