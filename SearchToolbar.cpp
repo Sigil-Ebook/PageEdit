@@ -40,6 +40,7 @@
 #include "SearchToolbar.h"
 #include "WebViewEdit.h"
 #include "WebPageEdit.h"
+#include "Utility.h"
 #include "FocusSelectLineEdit.h"
 #include "ui_SearchToolbar.h"
 
@@ -75,6 +76,13 @@ SearchToolbar::SearchToolbar(WebViewEdit* view, QWidget* parent)
 
 }
 
+QString SearchToolbar::getNeedle()
+{
+    QString needle = ui->lineEdit->text();
+    needle = Utility::UseNFC(needle);
+    return needle;
+}
+
 void SearchToolbar::focusSearchLine()
 {
     ui->lineEdit->setFocus();
@@ -93,7 +101,7 @@ void SearchToolbar::findNext()
     m_findFlags = QWebEnginePage::FindFlags();
     updateFindFlags();
 
-    searchText(ui->lineEdit->text());
+    searchText(getNeedle());
 }
 
 void SearchToolbar::findPrevious()
@@ -101,7 +109,7 @@ void SearchToolbar::findPrevious()
     m_findFlags = QWebEnginePage::FindBackward;
     updateFindFlags();
 
-    searchText(ui->lineEdit->text());
+    searchText(getNeedle());
 }
 
 void SearchToolbar::updateFindFlags()
@@ -119,7 +127,7 @@ void SearchToolbar::caseSensitivityChanged()
     updateFindFlags();
 
     searchText(QString());
-    searchText(ui->lineEdit->text());
+    searchText(getNeedle());
 }
 
 void SearchToolbar::setText(const QString &text)
@@ -136,7 +144,7 @@ void SearchToolbar::searchText(const QString &text)
         if (!guard) {
             return;
         }
-        if (ui->lineEdit->text().isEmpty())
+        if (getNeedle().isEmpty())
             found = true;
 
         if (!found)
