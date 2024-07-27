@@ -387,7 +387,9 @@ QString WebViewEdit::GetHtml() const
 QString WebViewEdit::GetSelectedText()
 {
     QString javascript = "window.getSelection().toString();";
-    return EvaluateJavascript(javascript).toString();
+    QString text = EvaluateJavascript(javascript).toString();
+    text = Utility::UseNFC(text);
+    return text;
 }
 
 
@@ -445,7 +447,8 @@ void WebViewEdit::PasteText(const QString &text)
 
 bool WebViewEdit::InsertHtml(const QString &html)
 {
-    return ExecCommand("insertHTML", html);
+    QString newhtml = Utility::UseNFC(html);
+    return ExecCommand("insertHTML", newhtml);
 }
 
 bool WebViewEdit::InsertId(const QString &id)

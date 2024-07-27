@@ -1706,43 +1706,55 @@ void MainWindow::SelectAll() { m_WebView->triggerPageAction(QWebEnginePage::Sele
 void MainWindow::Paste()
 {
     QClipboard *clipboard = QApplication::clipboard();
-    const QMimeData * mimeData = clipboard->mimeData();
-    if (mimeData->hasHtml()) {
-        QMessageBox msgBox(QMessageBox::Question,
-               tr("Clipboard contains HTML formatting"),
-               tr("Do you want to paste clipboard data as plain text?"),
-               QMessageBox::Yes|QMessageBox::No|QMessageBox::Cancel);
-        msgBox.setDefaultButton(QMessageBox::Yes);
+    const QMimeData * md = clipboard->mimeData();
+    QString html;
+    if (md->hasText() || md->hasHtml()) {
+        // ownership will be passed to the clipboard
+        QMimeData * nmd = new QMimeData();
+        if (md->hasText()) {
+            QString txt = md->text();
+            txt = Utility::UseNFC(txt);
+            nmd->setText(txt);
+        }
+        if (md->hasHtml()) {
+            QString ht = md->html();
+            ht = Utility::UseNFC(ht);
 
-        // populate the detailed text window - by HTML not by the text
-        msgBox.setDetailedText(mimeData->html());
+#if defined(Q_OS_WIN32)
+            // work around QtWebEngine Window's bug with clipboard html with no context
+            // by adding context back and creating a new clipboard element
+             if (ht.indexOf("<html") == -1) {
+                int pos = ht.indexOf("<");
+                if (pos == -1) pos = 0;
+                ht.insert(pos, "<html>\r\n<body>\r\n");
+                ht.append("\r\n</body>\r\n</html>");
+            }
+#endif
+            html = ht;
+            nmd->setHtml(ht);
+        }
+        clipboard->setMimeData(nmd);
+    }
+    if (!html.isEmpty()) {
+        QMessageBox msgBox(QMessageBox::Question,
+          tr("Clipboard contains HTML formatting"),
+          tr("Do you want to paste clipboard data as plain text?"),
+          QMessageBox::Yes|QMessageBox::No|QMessageBox::Cancel);
+        msgBox.setDefaultButton(QMessageBox::Yes);
+        // populate the detailed text window - by HTML
+        msgBox.setDetailedText(html);
         int rv = msgBox.exec();
         if (rv == QMessageBox::Yes) {
             m_WebView->triggerPageAction(QWebEnginePage::PasteAndMatchStyle);
         } else if (rv == QMessageBox::No) {
-#if defined(Q_OS_WIN32)
-            // work around QtWebEngine Window's bug with clipboard html with no context
-            // by adding context back and creating a new clipboard element
-            QString html = mimeData->html();
-            QString text;
-            if (mimeData->hasText()) text = mimeData->text();
-            if (html.indexOf("<html") == -1) {
-                int pos = html.indexOf("<");
-                if (pos == -1) pos = 0;
-                html.insert(pos, "<html>\r\n<body>\r\n");
-                html.append("\r\n</body>\r\n</html>");
-                QMimeData * newdata = new QMimeData();
-                newdata->setHtml(html);
-                if (!text.isEmpty()) newdata->setText(text);
-                // ownership is passed to clipboard
-                clipboard->setMimeData(newdata);
-            }
-#endif
             m_WebView->triggerPageAction(QWebEnginePage::Paste);
-        }  // else Cancel was clicked - do nothing
-    } else {
-        m_WebView->triggerPageAction(QWebEnginePage::Paste);
+        } else {
+            // they have hit Cancel so paste nothing
+            return;
+        }
     }
+    // handle all other mimedata types
+    m_WebView->triggerPageAction(QWebEnginePage::Paste);
 }
 
 void MainWindow::PasteText(const QString& text)
