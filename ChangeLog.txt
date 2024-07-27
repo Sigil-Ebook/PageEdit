@@ -1,5 +1,18 @@
 Change Log
 ==========
+PageEdit-2.3.0
+  Bug Fixes
+    - fix broken use of arrow keys when selecting images to insert
+    - move to Qt 6.7.2 for improved security and bug fixes
+
+  New Features
+    - move to Qt6 (minimum version 6.4.2), remove support for Qt5 as it cluttered the codebase
+    - remove the need for Qt6Core5Compat library (use QStringView instead of QStringRef)
+    - added support for using NFC for search, and for all content, links, hrefs, urls
+    - added support for Windows Dark mode
+    - added support for auto dark/light switching for Windows and major Linux desktops to match MacOS
+
+
 PageEdit-2.2.0
   Bug Fixes
     - use patched Qt 6.6.2 to fix huge memory leak when resizing QWebEngineView on macOS
