@@ -36,6 +36,8 @@
 #include <QDebug>
 
 #include "MainApplication.h"
+#include "SettingsStore.h"
+#include "PEDarkStyle.h"
 
 #define DBG if(0)
 
@@ -166,59 +168,25 @@ void MainApplication::systemColorChanged()
 
 void MainApplication::windowsDarkThemeChange()
 {
-#if 0 // FIXME:  Is any of this needed on PageEdit?
     SettingsStore settings;
-    if (settings.uiUseCustomSigilDarkTheme()) {
+    if (settings.uiUseCustomDarkTheme()) {
         QStyle* astyle = QStyleFactory::create("Fusion");
-        setStyle(astyle);
-        //Handle the new CaretStyle (double width cursor)
-        bool isbstyle = false;
-        QStyle* bstyle;
-        if (settings.uiDoubleWidthTextCursor()) {
-            bstyle = new CaretStyle(astyle);
-            setStyle(bstyle);
-            isbstyle = true;
-        }
+        //setStyle(astyle);
         // modify windows sigil palette to our dark
-        QStyle* cstyle;
-        if (isbstyle) {
-            cstyle = new SigilDarkStyle(bstyle);
-        } else {
-            cstyle = new SigilDarkStyle(astyle);
-        }
-        setStyle(cstyle);
+        QStyle* bstyle;
+        bstyle = new PEDarkStyle(astyle);
+        setStyle(bstyle);
         setPalette(style()->standardPalette());
-
-        // Add back stylesheet changes added after MainApplication started
-        if (!m_accumulatedQss.isEmpty()) {
-            setStyleSheet(styleSheet().append(m_accumulatedQss));
-            DBG qDebug() << styleSheet();
-        }
     }
-#endif
 }
 
 void MainApplication::windowsLightThemeChange()
 {
-#if 0 // FIXME:  Is any of this needed on PageEdit?
     SettingsStore settings;
-    if (settings.uiUseCustomSigilDarkTheme()) {
+    if (settings.uiUseCustomDarkTheme()) {
         // Windows Fusion light mode
         QStyle* astyle = QStyleFactory::create("Fusion");
         setStyle(astyle);
-        // Handle the new CaretStyle (double width cursor)
-        if (settings.uiDoubleWidthTextCursor()) {
-            QStyle* bstyle = new CaretStyle(astyle);
-            setStyle(bstyle);
-        }
         setPalette(style()->standardPalette());
-        // Add back stylesheet changes added after MainApplication started
-        if (!m_accumulatedQss.isEmpty()) {
-            setStyleSheet(m_accumulatedQss);
-            DBG qDebug() << styleSheet();
-        } else {
-            setStyleSheet("");
-        }
     }
-#endif
 }

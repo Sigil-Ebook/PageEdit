@@ -43,6 +43,11 @@ AppearanceWidget::AppearanceWidget()
 
     ui.setupUi(this);
 
+    // Hide the Windows only preference from all other OSes
+#ifndef Q_OS_WIN32
+    ui.grpCustomDarkStyle->setVisible(false);
+#endif
+
     // setup the HighDPI combo box here
     ui.comboHighDPI->addItems({tr("Detect"), tr("On"), tr("Off")});
     QString highdpi_tooltip = "<p><dt><b>" + tr("Detect") + "</b><dd>" + tr("Detect whether any high dpi scaling should take place.");
@@ -67,6 +72,8 @@ PreferencesWidget::ResultActions AppearanceWidget::saveSettings()
     SettingsStore settings;
     settings.setAppearancePrefsTabIndex(ui.tabAppearance->currentIndex());
     settings.setPreviewDark(ui.PreviewDarkInDM->isChecked() ? 1 : 0);
+    // This setting has no effect on other OSes, but it won't hurt to set it.
+    settings.setUiUseCustomDarkTheme(ui.chkDarkStyle->isChecked() ? 1 : 0);
     // Don't try to get the index of a disabled combobox
     if (m_isHighDPIComboEnabled) {
         settings.setHighDPI(ui.comboHighDPI->currentIndex());
@@ -111,6 +118,13 @@ PreferencesWidget::ResultActions AppearanceWidget::saveSettings()
     if ((m_currentUIFont != m_initUIFont) || m_uiFontResetFlag) {
         results = results | PreferencesWidget::ResultAction_RestartPageEdit;
     }
+    // if dark style changed on Windows, set need for restart.
+    // This setting has no effect on other OSes so no need to prompt for a restart.
+#ifdef Q_OS_WIN32
+    if (m_UseCustomDarkTheme != (ui.chkDarkStyle->isChecked() ? 1 : 0)) {
+        results = results | PreferencesWidget::ResultAction_RestartPageEdit;
+    }
+#endif
     m_uiFontResetFlag = false;
     results = results & PreferencesWidget::ResultAction_Mask;
     return results;
@@ -121,6 +135,10 @@ void AppearanceWidget::readSettings()
 {
     SettingsStore settings;
     ui.tabAppearance->setCurrentIndex(settings.appearancePrefsTabIndex());
+    // This setting has no effect on other OSes, but it won't hurt to read it.
+    m_UseCustomDarkTheme = settings.uiUseCustomDarkTheme();
+    ui.chkDarkStyle->setChecked(settings.uiUseCustomDarkTheme());
+
     SettingsStore::WebViewAppearance WVAppearance = settings.webViewAppearance();
     SettingsStore::SpecialCharacterAppearance specialCharacterAppearance = settings.specialCharacterAppearance();
     loadComboValueOrDefault(ui.cbWebViewFontStandard,  WVAppearance.font_family_standard,    "Arial");
@@ -154,7 +172,6 @@ void AppearanceWidget::readSettings()
         }
     }
     ui.cboPrintDPI->setCurrentIndex(index);
-
 }
 
 void AppearanceWidget::updateUIFontDisplay()

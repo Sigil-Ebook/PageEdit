@@ -1,6 +1,7 @@
 /************************************************************************
 **
 **  Copyright (C) 2019-2020 Kevin B. Hendricks, Stratford, Ontario Canada
+**  Copyright (C) 2016-2024  Doug Massay
 **  Copyright (C) 2012      John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012      Grant Drake
 **
@@ -59,6 +60,7 @@ private:
     QString m_currentUIFont;
     bool m_isHighDPIComboEnabled;
     bool m_uiFontResetFlag;
+    bool m_UseCustomDarkTheme;
 };
 
 #endif // APPEARANCEWIDGET_H
