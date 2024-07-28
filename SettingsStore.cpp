@@ -37,6 +37,7 @@ static QString KEY_UI_DICTIONARY = SETTINGS_GROUP + "/" + "ui_dictionary";
 
 static QString KEY_UI_FONT = SETTINGS_GROUP + "/" + "ui_font";
 static QString KEY_ORIGINAL_UI_FONT = SETTINGS_GROUP + "/" + "original_ui_font";
+static QString KEY_UI_CUSTOM_DARK_THEME = SETTINGS_GROUP + "/" + "ui_custom_dark_theme";
 
 static QString KEY_HIGHDPI_SETTING = SETTINGS_GROUP + "/" + "high_dpi";
 static QString KEY_DISABLEGPU_SETTING = SETTINGS_GROUP + "/" + "disable_gpu";
@@ -144,6 +145,12 @@ bool SettingsStore::spellCheck()
   return static_cast<bool>(value(KEY_SPELL_CHECK, false).toBool());
 }
 #endif
+
+bool SettingsStore::uiUseCustomDarkTheme()
+{
+    clearSettingsGroup();
+    return value(KEY_UI_CUSTOM_DARK_THEME, true).toBool();
+}
 
 float SettingsStore::zoomImage()
 {
@@ -303,6 +310,12 @@ void SettingsStore::setSpellCheck(bool enabled)
   setValue(KEY_SPELL_CHECK, enabled);
 }
 #endif
+
+void SettingsStore::setUiUseCustomDarkTheme(bool enable)
+{
+    clearSettingsGroup();
+    setValue(KEY_UI_CUSTOM_DARK_THEME, enable);
+}
 
 void SettingsStore::setZoomImage(float zoom)
 {

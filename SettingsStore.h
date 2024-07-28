@@ -69,6 +69,8 @@ public:
     
     // bool spellCheck();
 
+    bool uiUseCustomDarkTheme();
+
     /**
      * The zoom factor used by the component.
      *
@@ -156,6 +158,8 @@ public slots:
     void setPrintDPI(int dpi);
 
     // void setSpellCheck(bool enabled);
+
+    void setUiUseCustomDarkTheme(bool enable);
 
     /**
      * Set the zoom factor used by the component.

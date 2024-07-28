@@ -262,6 +262,12 @@ int main(int argc, char *argv[])
 #ifdef Q_OS_WIN32
     QStyle* astyle = QStyleFactory::create("fusion");
     app.setStyle(astyle);
+    // Use our custom Windows dark theme unless user opts-in with preference
+    if (Utility::WindowsShouldUseDarkMode() && settings.uiUseCustomDarkTheme()) {
+        // Apply custom dark style
+        app.setStyle(new PEDarkStyle);
+        app.setPalette(QApplication::style()->standardPalette());
+    }
 #endif // Q_OS_WIN32
 
 #if !defined(Q_OS_MAC) && !defined(Q_OS_WIN32) // *nix
@@ -269,14 +275,6 @@ int main(int argc, char *argv[])
     QStyle* astyle = app.style();
     app.setStyle(astyle);
 #endif // *nix
-
-#ifndef Q_OS_MAC
-    if (Utility::WindowsShouldUseDarkMode()) {
-        // Apply custom dark style
-        app.setStyle(new PEDarkStyle);
-        app.setPalette(QApplication::style()->standardPalette());
-    }
-#endif
 
     // it seems that any time there is stylesheet used, system dark-light palette
     // changes are not propagated to widgets with stylesheets (See QTBUG-124268).
