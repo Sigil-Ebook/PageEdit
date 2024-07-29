@@ -1,6 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023 Kevin B, Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2016-2024 Kevin B. Hendricks, Stratford, ON
+**  Copyright (C) 2016-2024 Doug Massay
 **  Copyright (C) 2011      John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
@@ -148,14 +149,13 @@ void Preferences::openPreferencesLocation()
 
 void Preferences::extendUI()
 {
-    QPushButton *open_button = ui.buttonBox->button(QDialogButtonBox::Reset);
-    open_button->setText(tr("Open Preferences Location"));
+    QPushButton *open_button = ui.buttonBox->addButton(tr("Open Preferences Location"), QDialogButtonBox::ResetRole);
     open_button->setToolTip(QDir::toNativeSeparators(Utility::DefinePrefsDir()));
+    connect(open_button, SIGNAL(clicked()), this, SLOT(openPreferencesLocation()));
 }
 
 void Preferences::connectSignalsSlots()
 {
     connect(ui.availableWidgets, SIGNAL(currentItemChanged(QListWidgetItem *, QListWidgetItem *)), this, SLOT(selectPWidget(QListWidgetItem *, QListWidgetItem *)));
     connect(this, SIGNAL(finished(int)), this, SLOT(saveSettings()));
-    connect(ui.buttonBox->button(QDialogButtonBox::Reset), SIGNAL(clicked()), this, SLOT(openPreferencesLocation()));
 }

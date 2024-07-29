@@ -308,8 +308,9 @@ int main(int argc, char *argv[])
     // application icons linuxicons
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
     app.setWindowIcon(GetApplicationIcon());
-    // Wayland needs this clarified in order to propery assign the icon 
-    app.setDesktopFileName(QStringLiteral("pageedit.desktop"));
+    // Wayland needs this clarified in order to propery assign the icon
+    // No extenstion for desktop filename. It gets removed with a warning
+    app.setDesktopFileName(QStringLiteral("pageedit"));
 #endif
 
     // initialize our QWebEngineProfiles and URL Interceptor
