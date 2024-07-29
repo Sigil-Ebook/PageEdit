@@ -40,7 +40,6 @@ static QString KEY_UI_FONT = SETTINGS_GROUP + "/" + "ui_font";
 static QString KEY_ORIGINAL_UI_FONT = SETTINGS_GROUP + "/" + "original_ui_font";
 static QString KEY_UI_CUSTOM_DARK_THEME = SETTINGS_GROUP + "/" + "ui_custom_dark_theme";
 
-static QString KEY_HIGHDPI_SETTING = SETTINGS_GROUP + "/" + "high_dpi";
 static QString KEY_DISABLEGPU_SETTING = SETTINGS_GROUP + "/" + "disable_gpu";
 static QString KEY_PREVIEW_DARK_IN_DM = SETTINGS_GROUP + "/" + "preview_dark_in_dm";
 static QString KEY_PRINT_PREVIEW_DPI_SETTING = SETTINGS_GROUP + "/" + "print_preview_dpi";
@@ -105,12 +104,6 @@ QString SettingsStore::originalUIFont()
 {
     clearSettingsGroup();
     return value(KEY_ORIGINAL_UI_FONT, "").toString();
-}
-
-int SettingsStore::highDPI()
-{
-    clearSettingsGroup();
-    return value(KEY_HIGHDPI_SETTING, 0).toInt();
 }
 
 bool SettingsStore::disableGPU()
@@ -272,12 +265,6 @@ void SettingsStore::setOriginalUIFont(const QString &font_data)
 {
     clearSettingsGroup();
     setValue(KEY_ORIGINAL_UI_FONT, font_data);
-}
-
-void SettingsStore::setHighDPI(int value)
-{
-    clearSettingsGroup();
-    setValue(KEY_HIGHDPI_SETTING, value);
 }
 
 void SettingsStore::setDisableGPU(bool value)

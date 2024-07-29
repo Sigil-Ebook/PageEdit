@@ -1,6 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023 Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2016-2024 Kevin B. Hendricks, Stratford, ON
+**  Copyright (C) 2016-2024  Doug Massay
 **  Copyright (C) 2011-2013 John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012-2013 Dave Heiland
 **
@@ -56,8 +57,6 @@ public:
     QString uiFont();
 
     QString originalUIFont();
-
-    int highDPI();
 
     bool disableGPU();
 
@@ -147,7 +146,6 @@ public slots:
 
     void setOriginalUIFont(const QString &font_data);
 
-    void setHighDPI(int value);
 
     void setDisableGPU(bool value);
     

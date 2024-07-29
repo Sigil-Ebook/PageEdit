@@ -1,7 +1,7 @@
 /************************************************************************
 **
 **  Copyright (C) 2019-2024  Kevin B. Hendricks, Stratford Ontario Canada
-**  Copyright (C) 2019-2020  Doug Massay
+**  Copyright (C) 2019-2024  Doug Massay
 **  Copyright (C) 2012       John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012       Grant Drake
 **
@@ -36,10 +36,7 @@
 #include "Utility.h"
 
 AppearanceWidget::AppearanceWidget()
-    : m_isHighDPIComboEnabled(false)
 {
-    // Disable the HighDPI combobox on all platforms under Qt6
-    m_isHighDPIComboEnabled = false;
 
     ui.setupUi(this);
 
@@ -47,19 +44,6 @@ AppearanceWidget::AppearanceWidget()
 #ifndef Q_OS_WIN32
     ui.grpCustomDarkStyle->setVisible(false);
 #endif
-
-    // setup the HighDPI combo box here
-    ui.comboHighDPI->addItems({tr("Detect"), tr("On"), tr("Off")});
-    QString highdpi_tooltip = "<p><dt><b>" + tr("Detect") + "</b><dd>" + tr("Detect whether any high dpi scaling should take place.");
-    highdpi_tooltip += " " + tr("Defers to any Qt environment variables that are set to control high dpi behavior.") + "</dd>";
-    highdpi_tooltip += "<dt><b>" + tr("On") + "</b><dd>" + tr("Turns on high dpi scaling and ignores any Qt environment variables");
-    highdpi_tooltip += " " + tr("that are set controlling high dpi behavior.") + "</dd>";
-    highdpi_tooltip += "<dt><b>" + tr("Off") + "</b><dd>" + tr("Turns off high dpi scaling regardless if any Qt environment");
-    highdpi_tooltip += " " + tr("variables controlling high dpi behavior are set.") + "</dd>";
-    ui.comboHighDPI->setToolTip(highdpi_tooltip);
-
-    // The HighDPI setting is unused/unnecessary on Mac
-    ui.comboHighDPI->setEnabled(m_isHighDPIComboEnabled);
 
     m_uiFontResetFlag = false;
 
@@ -74,10 +58,6 @@ PreferencesWidget::ResultActions AppearanceWidget::saveSettings()
     settings.setPreviewDark(ui.PreviewDarkInDM->isChecked() ? 1 : 0);
     // This setting has no effect on other OSes, but it won't hurt to set it.
     settings.setUiUseCustomDarkTheme(ui.chkDarkStyle->isChecked() ? 1 : 0);
-    // Don't try to get the index of a disabled combobox
-    if (m_isHighDPIComboEnabled) {
-        settings.setHighDPI(ui.comboHighDPI->currentIndex());
-    }
     settings.setUIFont(m_currentUIFont);
 
     SettingsStore::WebViewAppearance WVAppearance;
@@ -108,12 +88,6 @@ PreferencesWidget::ResultActions AppearanceWidget::saveSettings()
 
     if (m_PreviewDark != (ui.PreviewDarkInDM->isChecked() ? 1 : 0)) {
         results = results | PreferencesWidget::ResultAction_ReloadPreview;
-    }
-    // Don't try to get the index of a disabled combobox
-    if (m_isHighDPIComboEnabled) {
-        if (m_HighDPI != (ui.comboHighDPI->currentIndex())) {
-            results = results | PreferencesWidget::ResultAction_RestartPageEdit;
-        }
     }
     if ((m_currentUIFont != m_initUIFont) || m_uiFontResetFlag) {
         results = results | PreferencesWidget::ResultAction_RestartPageEdit;
@@ -148,11 +122,6 @@ void AppearanceWidget::readSettings()
     ui.webViewFontSizeSpin->setValue(WVAppearance.font_size);
     ui.specialCharacterFontSizeSpin->setValue(specialCharacterAppearance.font_size);
     ui.iconSizeSlider->setValue(int(settings.mainMenuIconSize()*10));
-    // Don't try to set the index of a disabled combobox
-    if (m_isHighDPIComboEnabled) {
-        m_HighDPI = settings.highDPI();
-        ui.comboHighDPI->setCurrentIndex(m_HighDPI);
-    }
     if (!settings.uiFont().isEmpty()) {
         m_initUIFont = settings.uiFont();
     } else {

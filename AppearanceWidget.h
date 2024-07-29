@@ -54,11 +54,9 @@ private:
     void connectSignalsToSlots();
 
     Ui::AppearanceWidget ui;
-    int m_HighDPI;
     int m_PreviewDark;
     QString m_initUIFont;
     QString m_currentUIFont;
-    bool m_isHighDPIComboEnabled;
     bool m_uiFontResetFlag;
     bool m_UseCustomDarkTheme;
 };
