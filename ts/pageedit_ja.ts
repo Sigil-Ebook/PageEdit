@@ -13,7 +13,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
-        <location filename="../PAppearanceWidget.ui" line="312"/>
+        <location filename="../PAppearanceWidget.ui" line="319"/>
         <source>Fonts:</source>
         <translation>フォント:</translation>
     </message>
@@ -31,7 +31,7 @@ PageEditでデフォルトのフォントサイズが使用されます。</tran
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
-        <location filename="../PAppearanceWidget.ui" line="372"/>
+        <location filename="../PAppearanceWidget.ui" line="379"/>
         <source>Font Size:</source>
         <translation>フォントサイズ:</translation>
     </message>
@@ -109,106 +109,68 @@ PageEditでデフォルトのフォントファミリが使用されます。</t
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
-        <source>High DPI Setting:</source>
-        <translation>高DPI設定:</translation>
+        <source>Dark Theme Style (Windows Only):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="286"/>
+        <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
+        <source>Use Classic Dark Theme</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="296"/>
         <source>(Needs PageEdit Restart)</source>
         <translation>（PageEditの再起動が必要）</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="318"/>
+        <location filename="../PAppearanceWidget.ui" line="325"/>
         <source>UI Font:</source>
         <translation>UIフォント:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="328"/>
+        <location filename="../PAppearanceWidget.ui" line="335"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
         <translation>PageEditのメニューやボタンなどで使用されるフォントを変更します。</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="331"/>
+        <location filename="../PAppearanceWidget.ui" line="338"/>
         <source>Change Font (Needs PageEdit Restart)</source>
         <translation>フォントの変更（PageEditの再起動が必要）</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="355"/>
+        <location filename="../PAppearanceWidget.ui" line="362"/>
         <source>Insert Special Characters:</source>
         <translation>特殊文字を挿入:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="369"/>
+        <location filename="../PAppearanceWidget.ui" line="376"/>
         <source>Font size to be used for Insert Special Characters window</source>
         <translation>&quot;特殊文字を挿入&quot;ウィンドウで使用するフォントサイズ</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="402"/>
+        <location filename="../PAppearanceWidget.ui" line="409"/>
         <source>Font family to be used for Insert Special Characters window</source>
         <translation>&quot;特殊文字を挿入&quot;ウィンドウで使用するフォントの種類</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="405"/>
+        <location filename="../PAppearanceWidget.ui" line="412"/>
         <source>Standard Font:</source>
         <translation>標準フォント:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="472"/>
+        <location filename="../PAppearanceWidget.ui" line="479"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>すべてのフォントと色をデフォルト値にリセットします</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="475"/>
+        <location filename="../PAppearanceWidget.ui" line="482"/>
         <source>Reset All</source>
         <translation>すべてリセット</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect</source>
-        <translation>検出</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>On</source>
-        <translation>On</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Off</source>
-        <translation>Off</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect whether any high dpi scaling should take place.</source>
-        <translation>高DPIスケーリングを実行する必要があるか検出します。</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
-        <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation>高DPIの動作を制御するように設定されているQt環境変数に従います。</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation>高DPIスケーリングをオンにして、Qt環境変数を無視します。</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="56"/>
-        <source>that are set controlling high dpi behavior.</source>
-        <translation>高DPIの動作を制御するように設定されています。</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation>Qt環境に関係なく、高DPIスケーリングをオフにします。</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="58"/>
-        <source>variables controlling high dpi behavior are set.</source>
-        <translation>高DPIの動作を制御する変数が設定されます。</translation>
     </message>
 </context>
 <context>
@@ -455,17 +417,17 @@ Do you want to save your changes?</source>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="75"/>
+        <location filename="../ClipEditorModel.cpp" line="67"/>
         <source>Name</source>
         <translation>名前</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="76"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Text</source>
         <translation>テキスト</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="672"/>
+        <location filename="../ClipEditorModel.cpp" line="664"/>
         <source>Unable to create file %1</source>
         <translation>ファイル %1 を作成できません</translation>
     </message>
@@ -635,11 +597,6 @@ If a translation for specific word or phrase is not available it will be display
         <source>Inspect Page or Element</source>
         <translation>ページまたは要素の検査</translation>
     </message>
-    <message>
-        <location filename="../Inspector.cpp" line="158"/>
-        <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>インスペクタ機能は、Qt 5.11 以前ではサポートされていません。</translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -647,15 +604,15 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1813"/>
-        <location filename="../MainWindow.cpp" line="1826"/>
-        <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp" line="1846"/>
-        <location filename="../MainWindow.cpp" line="1859"/>
-        <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp" line="1873"/>
-        <location filename="../MainWindow.cpp" line="1928"/>
-        <location filename="../MainWindow.cpp" line="2018"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
+        <location filename="../MainWindow.cpp" line="2002"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1854,112 +1811,107 @@ If a translation for specific word or phrase is not available it will be display
         <translation>ファイルが存在しないか、書き込み不可</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1609"/>
+        <location filename="../MainWindow.cpp" line="1608"/>
         <source>Do not show this warning again</source>
         <translation>この警告を再度表示しない</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1610"/>
+        <location filename="../MainWindow.cpp" line="1609"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>このファイルは、期待どおりに印刷されない場合があります。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1611"/>
+        <location filename="../MainWindow.cpp" line="1610"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>EPUBのCSS適用された暗い背景と色付きテキストが印刷されます。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1611"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>多くのインクが使用される可能性があるため、注意してください！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1613"/>
+        <location filename="../MainWindow.cpp" line="1612"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>次の印刷プレビューを使用して、このファイルがどのように印刷されるか確認してください。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1614"/>
+        <location filename="../MainWindow.cpp" line="1613"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>今後この警告を表示したくない場合は、このチェックボックスをオンにしてください。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1637"/>
-        <source>Feature not available before Qt5.12.x</source>
-        <translation>Qt 5.12.x より前の機能は利用できません。</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp" line="1698"/>
+        <location filename="../MainWindow.cpp" line="1685"/>
         <source>File Opened</source>
         <translation>ファイルを開きました</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp" line="1689"/>
         <source>File Open Failed!</source>
         <translation>ファイルのオープンに失敗しました！</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1725"/>
+        <location filename="../MainWindow.cpp" line="1740"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>クリップボードにHTML形式が含まれています</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1726"/>
+        <location filename="../MainWindow.cpp" line="1741"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>クリップボードのデータをプレーンテキスト形式でペーストしますか?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1813"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
         <source>You must select text before inserting a new id.</source>
         <translation>新しいIDを挿入する前に、テキストを選択する必要があります。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1826"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>IDが無効です。文字で始まり、文字の後に「数字」「_」「:」「-」「.」が続く必要があります。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
         <source>You cannot insert an id at this position.</source>
         <translation>この位置にIDを挿入できません。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1846"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
         <source>You must select text before inserting a new link.</source>
         <translation>新しいリンクを挿入する前に、テキストを選択する必要があります。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1859"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>リンクは有効です - &apos;&lt;&apos;または&apos;&gt;&apos;は含めません</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
         <source>Error inserting external link target.</source>
         <translation>外部のリンクターゲット挿入時にエラーが発生しました。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
         <source>Error inserting a link at this position.</source>
         <translation>この位置へのリンク挿入時にエラーが発生しました。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp" line="1883"/>
         <source>Insert File</source>
         <translation>ファイルを挿入</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1928"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>この位置にメディアファイルを挿入できません。</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2019"/>
+        <location filename="../MainWindow.cpp" line="2003"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>このファイルを上書きする前に、変更を保存しますか?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2071"/>
+        <location filename="../MainWindow.cpp" line="2055"/>
         <source>Pasted clip entry %1.</source>
         <translation>クリップエントリー %1 を貼り付けます。</translation>
     </message>
@@ -1972,12 +1924,12 @@ If a translation for specific word or phrase is not available it will be display
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>Changes will take effect when you restart PageEdit.</source>
         <translation>変更した内容はPageEditの再起動後に有効になります。</translation>
     </message>
@@ -1997,59 +1949,59 @@ Line: %1 Column %2 - %3</source>
 行: %1 列 %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="402"/>
+        <location filename="../Utility.cpp" line="383"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>ファイル %1 を読み込めませんでした:
 %2。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="592"/>
+        <location filename="../Utility.cpp" line="572"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>PageEditで問題が発生しました。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="593"/>
+        <location filename="../Utility.cpp" line="573"/>
         <source>PageEdit may need to close.</source>
         <translation>PageEditを終了する必要がある可能性があります。</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="881"/>
         <source>About PageEdit</source>
         <translation>PageEditについて</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="911"/>
+        <location filename="../Utility.cpp" line="886"/>
         <source>Version</source>
         <translation>バージョン</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="912"/>
+        <location filename="../Utility.cpp" line="887"/>
         <source>Build Date</source>
         <translation>ビルド日付</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="913"/>
+        <location filename="../Utility.cpp" line="888"/>
         <source>Build Time</source>
         <translation>ビルド時刻</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="914"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Qt Runtime Version</source>
         <translation>Qtランタイムバージョン</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="915"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Qt Compiled Version</source>
         <translation>Qtコンパイル済みバージョン</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="916"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>System</source>
         <translation>システム</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="917"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Architecture</source>
         <translation>アーキテクチャー</translation>
     </message>
@@ -2072,7 +2024,7 @@ Line: %1 Column %2 - %3</source>
         <translation>大文字小文字を区別(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../SearchToolbar.cpp" line="150"/>
+        <location filename="../SearchToolbar.cpp" line="151"/>
         <source>No results found.</source>
         <translation>検索結果が見つかりません。</translation>
     </message>
@@ -3353,52 +3305,52 @@ Line: %1 Column %2 - %3</source>
         <translation>サムネイルサイズ:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="118"/>
+        <location filename="../SelectFiles.cpp" line="128"/>
         <source>All</source>
         <translation>すべて</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="119"/>
+        <location filename="../SelectFiles.cpp" line="129"/>
         <source>Images</source>
         <translation>画像</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="120"/>
+        <location filename="../SelectFiles.cpp" line="130"/>
         <source>Video</source>
         <translation>動画</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="121"/>
+        <location filename="../SelectFiles.cpp" line="131"/>
         <source>Audio</source>
         <translation>オーディオ</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="164"/>
+        <location filename="../SelectFiles.cpp" line="176"/>
         <source>Media Files In the Book</source>
         <translation>ブック内のメディアファイル</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="167"/>
+        <location filename="../SelectFiles.cpp" line="179"/>
         <source>Thumbnails</source>
         <translation>サムネイル</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>shades</source>
         <translation>階調</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>colors</source>
         <translation>カラー</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Grayscale</source>
         <translation>グレースケール</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Color</source>
         <translation>カラー</translation>
     </message>
@@ -3472,12 +3424,12 @@ ID名は一意で、文字で始まる必要があります。</translation>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="699"/>
+        <location filename="../Utility.cpp" line="674"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="700"/>
+        <location filename="../Utility.cpp" line="675"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3489,17 +3441,17 @@ Continue using the requested filename?</source>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="186"/>
+        <location filename="../WebViewEdit.cpp" line="158"/>
         <source>No suggestions</source>
         <translation>候補なし</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="198"/>
+        <location filename="../WebViewEdit.cpp" line="170"/>
         <source>Check Spelling</source>
         <translation>スペルチェックを実行</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="207"/>
+        <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Select Language</source>
         <translation>言語の選択</translation>
     </message>

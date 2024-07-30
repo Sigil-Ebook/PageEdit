@@ -13,7 +13,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
-        <location filename="../PAppearanceWidget.ui" line="312"/>
+        <location filename="../PAppearanceWidget.ui" line="319"/>
         <source>Fonts:</source>
         <translation>Fontit:</translation>
     </message>
@@ -31,7 +31,7 @@ jos CSS:ssä ei ole määritetty fonttikokoa</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
-        <location filename="../PAppearanceWidget.ui" line="372"/>
+        <location filename="../PAppearanceWidget.ui" line="379"/>
         <source>Font Size:</source>
         <translation>Fonttikoko:</translation>
     </message>
@@ -109,106 +109,68 @@ jos CSS:ssäsi on määritetty sans-serif-kirjasintyyppi.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
-        <source>High DPI Setting:</source>
-        <translation>Suuren DPI:n asetus:</translation>
+        <source>Dark Theme Style (Windows Only):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="286"/>
+        <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
+        <source>Use Classic Dark Theme</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="296"/>
         <source>(Needs PageEdit Restart)</source>
         <translation>(Tarvitsee Sivun muokkauksen uudelleenkäynnistyksen)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="318"/>
+        <location filename="../PAppearanceWidget.ui" line="325"/>
         <source>UI Font:</source>
         <translation>Käyttöliittymäfontti:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="328"/>
+        <location filename="../PAppearanceWidget.ui" line="335"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
         <translation>Vaihda Sivun muokkauksen valikoissa, painikkeissa jne. käytettävää fonttia....</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="331"/>
+        <location filename="../PAppearanceWidget.ui" line="338"/>
         <source>Change Font (Needs PageEdit Restart)</source>
         <translation>Vaihda fontti (vaatii Sivun muokkauksen uudelleenkäynnistyksen)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="355"/>
+        <location filename="../PAppearanceWidget.ui" line="362"/>
         <source>Insert Special Characters:</source>
         <translation>Erikoismerkkien lisääminen:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="369"/>
+        <location filename="../PAppearanceWidget.ui" line="376"/>
         <source>Font size to be used for Insert Special Characters window</source>
         <translation>Lisää erikoismerkki -ikkunassa käytettävä fonttikoko</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="402"/>
+        <location filename="../PAppearanceWidget.ui" line="409"/>
         <source>Font family to be used for Insert Special Characters window</source>
         <translation>Lisää erikoismerkki -ikkunassa käytettävä fonttiperhe</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="405"/>
+        <location filename="../PAppearanceWidget.ui" line="412"/>
         <source>Standard Font:</source>
         <translation>Perusfontti:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="472"/>
+        <location filename="../PAppearanceWidget.ui" line="479"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>Aseta kaikki fontit ja värit alkuarvoihin</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="475"/>
+        <location filename="../PAppearanceWidget.ui" line="482"/>
         <source>Reset All</source>
         <translation>Palauta kaikki</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect</source>
-        <translation>Tunnista</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>On</source>
-        <translation>On</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Off</source>
-        <translation>Ei</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect whether any high dpi scaling should take place.</source>
-        <translation>Tunnista, pitäisikö korkean dpi:n skaalaus suorittaa.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
-        <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation>Ohittaa kaikki Qt-ympäristömuuttujat, jotka on asetettu ohjaamaan korkean dpi:n käyttäytymistä.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation>Ottaa käyttöön suuren dpi:n skaalauksen ja jättää huomiotta kaikki Qt-ympäristömuuttujat.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="56"/>
-        <source>that are set controlling high dpi behavior.</source>
-        <translation>jotka on asetettu ohjaamaan korkean dpi:n käyttäytymistä.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation>Poistaa korkean dpi:n skaalauksen käytöstä riippumatta Qt-ympäristöstä</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="58"/>
-        <source>variables controlling high dpi behavior are set.</source>
-        <translation>suuren dpi:n käyttäytymistä ohjaavat muuttujat on asetettu.</translation>
     </message>
 </context>
 <context>
@@ -455,17 +417,17 @@ Haluatko tallentaa muutokset?</translation>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="75"/>
+        <location filename="../ClipEditorModel.cpp" line="67"/>
         <source>Name</source>
         <translation>Nimi</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="76"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Text</source>
         <translation>Teksti</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="672"/>
+        <location filename="../ClipEditorModel.cpp" line="664"/>
         <source>Unable to create file %1</source>
         <translation>Tiedostoa %1 ei voi luoda</translation>
     </message>
@@ -633,11 +595,6 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <source>Inspect Page or Element</source>
         <translation>Tutki sivua tai elementtiä</translation>
     </message>
-    <message>
-        <location filename="../Inspector.cpp" line="158"/>
-        <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>Tutkintatoimintoa ei ole ennen versiota Qt 5.11</translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -645,15 +602,15 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1813"/>
-        <location filename="../MainWindow.cpp" line="1826"/>
-        <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp" line="1846"/>
-        <location filename="../MainWindow.cpp" line="1859"/>
-        <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp" line="1873"/>
-        <location filename="../MainWindow.cpp" line="1928"/>
-        <location filename="../MainWindow.cpp" line="2018"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
+        <location filename="../MainWindow.cpp" line="2002"/>
         <source>PageEdit</source>
         <translation>Muokkaustila</translation>
     </message>
@@ -1852,112 +1809,107 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <translation>ei ole olemassa tai ei ole kirjoitettavissa</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1609"/>
+        <location filename="../MainWindow.cpp" line="1608"/>
         <source>Do not show this warning again</source>
         <translation>Älä näytä tätä varoitusta uudelleen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1610"/>
+        <location filename="../MainWindow.cpp" line="1609"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Tämä tiedosto ei ehkä tulostu odotetulla tavalla.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1611"/>
+        <location filename="../MainWindow.cpp" line="1610"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>EPUB:n CSS:llä käytetyt tummat taustat ja värillinen teksti tulostuvat.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1611"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Ole varovainen, sillä tämä voi johtaa siihen, että mustetta kuluu paljon!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1613"/>
+        <location filename="../MainWindow.cpp" line="1612"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Käytä seuraavaa tulostuksen esikatselua nähdäksesi, miten tämä tiedosto tulostuu.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1614"/>
+        <location filename="../MainWindow.cpp" line="1613"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Rastita ruutu, jos et halua nähdä tätä varoitusta tulevaisuudessa.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1637"/>
-        <source>Feature not available before Qt5.12.x</source>
-        <translation>Ominaisuus ei ole käytettävissä ennen Qt5.12.x:ää.</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp" line="1698"/>
+        <location filename="../MainWindow.cpp" line="1685"/>
         <source>File Opened</source>
         <translation>Tiedosto avautui</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp" line="1689"/>
         <source>File Open Failed!</source>
         <translation>Tiedoston avaus epäonnistui!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1725"/>
+        <location filename="../MainWindow.cpp" line="1740"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Leikepöytä sisältää HTML-muotoilua</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1726"/>
+        <location filename="../MainWindow.cpp" line="1741"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Haluatko liittää leikepöydältä sisältöä pelkkänä tekstinä?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1813"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Valitse teksti ennen uuden tunnisteen määrittelemistä.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1826"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Tunniste on virheellinen. Tunnisteen pitää alkaa kirjaimella, ja siinä saa olla kirjaimia, numeroita ja merkkejä ”_:-.”.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Et voi lisätä tähän paikkaan tunnistetta</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1846"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Valitse teksti ennen uuden linkin luomista.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1859"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Linkki on virheellinen – ei voi sisältää merkkiä ”&lt;” tai ”&gt;”.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
         <source>Error inserting external link target.</source>
         <translation>Virhe ulkoisen linkkikohteen lisäämisessä.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
         <source>Error inserting a link at this position.</source>
         <translation>Virhe linkin lisäämisessä tähän kohtaan.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp" line="1883"/>
         <source>Insert File</source>
         <translation>Lisää tiedosto</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1928"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Et voi lisätä mediatiedostoa tähän kohtaan.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2019"/>
+        <location filename="../MainWindow.cpp" line="2003"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Haluatko tallentaa muutokset ennen tämän tiedoston päälle kirjoittamista?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2071"/>
+        <location filename="../MainWindow.cpp" line="2055"/>
         <source>Pasted clip entry %1.</source>
         <translation>Liitettiin leike %1.</translation>
     </message>
@@ -1970,12 +1922,12 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <translation>Asetukset</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>PageEdit</source>
         <translation>Muokkaustila</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>Changes will take effect when you restart PageEdit.</source>
         <translation>Muutokset tulevat voimaan muokkaustilan käynnistämisen jälkeen.</translation>
     </message>
@@ -1995,59 +1947,59 @@ Line: %1 Column %2 - %3</source>
 Rivi: %1 Sarake %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="402"/>
+        <location filename="../Utility.cpp" line="383"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Ei voi lukea tiedostoa %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="592"/>
+        <location filename="../Utility.cpp" line="572"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>Sivun muokkauksessa on syntynyt ongelma.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="593"/>
+        <location filename="../Utility.cpp" line="573"/>
         <source>PageEdit may need to close.</source>
         <translation>Sivunmuokkaustoiminto joutuu sulkemaan itsensä.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="881"/>
         <source>About PageEdit</source>
         <translation>Tietoa Sivun muokkauksesta</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="911"/>
+        <location filename="../Utility.cpp" line="886"/>
         <source>Version</source>
         <translation>Versio</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="912"/>
+        <location filename="../Utility.cpp" line="887"/>
         <source>Build Date</source>
         <translation>Valmistumispäivä</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="913"/>
+        <location filename="../Utility.cpp" line="888"/>
         <source>Build Time</source>
         <translation>Valmistumisaika</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="914"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Qt Runtime Version</source>
         <translation>Qt-ajoaikaversio</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="915"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Qt Compiled Version</source>
         <translation>Qt:n käännetty versio</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="916"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>System</source>
         <translation>Järjestelmä</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="917"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Architecture</source>
         <translation>Arkkitehtuuri</translation>
     </message>
@@ -2070,7 +2022,7 @@ Rivi: %1 Sarake %2 - %3</translation>
         <translation>&amp;Sama kirjainkoko</translation>
     </message>
     <message>
-        <location filename="../SearchToolbar.cpp" line="150"/>
+        <location filename="../SearchToolbar.cpp" line="151"/>
         <source>No results found.</source>
         <translation>Tuloksia ei löytynyt.</translation>
     </message>
@@ -3351,52 +3303,52 @@ Rivi: %1 Sarake %2 - %3</translation>
         <translation>Pienoiskuvan koko:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="118"/>
+        <location filename="../SelectFiles.cpp" line="128"/>
         <source>All</source>
         <translation>Kaikki</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="119"/>
+        <location filename="../SelectFiles.cpp" line="129"/>
         <source>Images</source>
         <translation>Kuvat</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="120"/>
+        <location filename="../SelectFiles.cpp" line="130"/>
         <source>Video</source>
         <translation>Video</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="121"/>
+        <location filename="../SelectFiles.cpp" line="131"/>
         <source>Audio</source>
         <translation>Audio</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="164"/>
+        <location filename="../SelectFiles.cpp" line="176"/>
         <source>Media Files In the Book</source>
         <translation>Mediatiedostot kirjassa</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="167"/>
+        <location filename="../SelectFiles.cpp" line="179"/>
         <source>Thumbnails</source>
         <translation>Pienoiskuvat</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>shades</source>
         <translation>sävyä</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>colors</source>
         <translation>väriä</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Grayscale</source>
         <translation>Harmaasävy</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Color</source>
         <translation>Väri</translation>
     </message>
@@ -3470,12 +3422,12 @@ Tunnisteiden nimien tulee olla yksikäsitteisiä, ja niiden pitää alkaa kirjai
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="699"/>
+        <location filename="../Utility.cpp" line="674"/>
         <source>PageEdit</source>
         <translation>Muokkaustila</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="700"/>
+        <location filename="../Utility.cpp" line="675"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3487,17 +3439,17 @@ Haluatko jatkaa käyttäen antamaasi tiedostonimeä?</translation>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="186"/>
+        <location filename="../WebViewEdit.cpp" line="158"/>
         <source>No suggestions</source>
         <translation>Ehdotuksia ei ole</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="198"/>
+        <location filename="../WebViewEdit.cpp" line="170"/>
         <source>Check Spelling</source>
         <translation>Tarkista oikeinkirjoitus</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="207"/>
+        <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Select Language</source>
         <translation>Valitse kieli</translation>
     </message>

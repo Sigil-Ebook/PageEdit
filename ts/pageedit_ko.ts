@@ -13,7 +13,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
-        <location filename="../PAppearanceWidget.ui" line="312"/>
+        <location filename="../PAppearanceWidget.ui" line="319"/>
         <source>Fonts:</source>
         <translation>글꼴:</translation>
     </message>
@@ -30,7 +30,7 @@ if no font-size specified in your CSS</source>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
-        <location filename="../PAppearanceWidget.ui" line="372"/>
+        <location filename="../PAppearanceWidget.ui" line="379"/>
         <source>Font Size:</source>
         <translation>글자 크기:</translation>
     </message>
@@ -105,106 +105,68 @@ if a sans-serif font-family specified in your CSS</source>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
-        <source>High DPI Setting:</source>
-        <translation>High DPI 설정:</translation>
+        <source>Dark Theme Style (Windows Only):</source>
+        <translation>다크 테마 스타일(Windows Only):</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="286"/>
+        <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
+        <translation>Windows에서 dark style을 사용하는 경우 내장된 Qt 스타일 대신 클래식 다크 스타일을 사용하십시오.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
+        <source>Use Classic Dark Theme</source>
+        <translation>Classic Dark Theme 사용</translation>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="296"/>
         <source>(Needs PageEdit Restart)</source>
         <translation>(페이지 에디터를 다시 시작해야 합니다)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="318"/>
+        <location filename="../PAppearanceWidget.ui" line="325"/>
         <source>UI Font:</source>
         <translation>UI 글꼴:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="328"/>
+        <location filename="../PAppearanceWidget.ui" line="335"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
         <translation>페이지 에디터의 메뉴, 버튼 등에 사용되는 글꼴 변경</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="331"/>
+        <location filename="../PAppearanceWidget.ui" line="338"/>
         <source>Change Font (Needs PageEdit Restart)</source>
         <translation>글꼴 변경(페이지 에디터를 다시 시작해야 합니다)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="355"/>
+        <location filename="../PAppearanceWidget.ui" line="362"/>
         <source>Insert Special Characters:</source>
         <translation>특수 문자 삽입 :</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="369"/>
+        <location filename="../PAppearanceWidget.ui" line="376"/>
         <source>Font size to be used for Insert Special Characters window</source>
         <translation>특수 문자 삽입 창에서 사용할 글자 크기</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="402"/>
+        <location filename="../PAppearanceWidget.ui" line="409"/>
         <source>Font family to be used for Insert Special Characters window</source>
         <translation>특수 문자 삽입 창에서 사용할 글꼴 모음</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="405"/>
+        <location filename="../PAppearanceWidget.ui" line="412"/>
         <source>Standard Font:</source>
         <translation>기본 글꼴:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="472"/>
+        <location filename="../PAppearanceWidget.ui" line="479"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>모든 글꼴과 색상을 기본값으로 초기화합니다</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="475"/>
+        <location filename="../PAppearanceWidget.ui" line="482"/>
         <source>Reset All</source>
         <translation>모두 초기화</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect</source>
-        <translation>감지</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>On</source>
-        <translation>켜기</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Off</source>
-        <translation>끄기</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect whether any high dpi scaling should take place.</source>
-        <translation>High dpi 스케일링이 발생하는지 감지합니다.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
-        <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation>High dpi 동작을 제어하도록 설정된 Qt 환경 변수를 연기합니다.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation>High dpi 스케일링을 켜고 Qt 환경 변수를 무시합니다.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="56"/>
-        <source>that are set controlling high dpi behavior.</source>
-        <translation>High dpi 동작을 제어하도록 설정되어 있습니다.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation>Qt 환경에 관계없이 High dpi 스케일링을 끕니다.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="58"/>
-        <source>variables controlling high dpi behavior are set.</source>
-        <translation>High dpi 동작을 제어하는 ​​변수가 설정됩니다.</translation>
     </message>
 </context>
 <context>
@@ -451,17 +413,17 @@ Do you want to save your changes?</source>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="75"/>
+        <location filename="../ClipEditorModel.cpp" line="67"/>
         <source>Name</source>
         <translation>이름</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="76"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Text</source>
         <translation>텍스트</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="672"/>
+        <location filename="../ClipEditorModel.cpp" line="664"/>
         <source>Unable to create file %1</source>
         <translation>%1 파일을 생성할 수 없습니다</translation>
     </message>
@@ -627,11 +589,6 @@ If a translation for specific word or phrase is not available it will be display
         <source>Inspect Page or Element</source>
         <translation>페이지 또는 요소 검사</translation>
     </message>
-    <message>
-        <location filename="../Inspector.cpp" line="158"/>
-        <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>검사 기능은 Qt 5.11 이전에는 지원되지 않습니다.</translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -639,15 +596,15 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1813"/>
-        <location filename="../MainWindow.cpp" line="1826"/>
-        <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp" line="1846"/>
-        <location filename="../MainWindow.cpp" line="1859"/>
-        <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp" line="1873"/>
-        <location filename="../MainWindow.cpp" line="1928"/>
-        <location filename="../MainWindow.cpp" line="2018"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
+        <location filename="../MainWindow.cpp" line="2002"/>
         <source>PageEdit</source>
         <translation>페이지 에디터</translation>
     </message>
@@ -1847,112 +1804,107 @@ If a translation for specific word or phrase is not available it will be display
         <translation>존재하지 않거나 저장할 수 없습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1609"/>
+        <location filename="../MainWindow.cpp" line="1608"/>
         <source>Do not show this warning again</source>
         <translation>이 경고를 다시 표시하지 않음</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1610"/>
+        <location filename="../MainWindow.cpp" line="1609"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>이 파일은 예상대로 인쇄되지 않을 수 있습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1611"/>
+        <location filename="../MainWindow.cpp" line="1610"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>EPUB의 CSS로 적용된 어두운 배경과 컬러 텍스트가 인쇄됩니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1611"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>잉크를 많이 사용할 수 있으므로주의하십시오!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1613"/>
+        <location filename="../MainWindow.cpp" line="1612"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>인쇄 미리보기를 사용하여이 파일이 어떻게 인쇄되는지 확인합니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1614"/>
+        <location filename="../MainWindow.cpp" line="1613"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>앞으로 이 경고를 보지 않으려면 체크 박스를 선택하세요.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1637"/>
-        <source>Feature not available before Qt5.12.x</source>
-        <translation>Qt5.12.x 이전에는 사용할 수 없었던 기능</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp" line="1698"/>
+        <location filename="../MainWindow.cpp" line="1685"/>
         <source>File Opened</source>
         <translation>파일을 열었습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp" line="1689"/>
         <source>File Open Failed!</source>
         <translation>파일을 열지 못했습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1725"/>
+        <location filename="../MainWindow.cpp" line="1740"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>클립보드에 HTML 서식이 있습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1726"/>
+        <location filename="../MainWindow.cpp" line="1741"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>클립보드의 내용을 서식 없는 텍스트로 추가하시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1813"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
         <source>You must select text before inserting a new id.</source>
         <translation>새 ID를 삽입할 텍스트를 먼저 선택하세요. </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1826"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>잘못된 ID - 반드시 영문으로 시작하고 영문, 숫자, 언더바(_) 콜론(:), 하이픈(-) 혹은 점(.)만 사용 가능</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
         <source>You cannot insert an id at this position.</source>
         <translation>이 위치에는 ID를 삽입할 수 없습니다. </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1846"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
         <source>You must select text before inserting a new link.</source>
         <translation>링크를 삽입할 텍스트를 먼저 선택하세요.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1859"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>잘못된 링크 - &apos;&lt;&apos;나 &apos;&gt;&apos;는 포함할 수 없음</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
         <source>Error inserting external link target.</source>
         <translation>외부 링크를 삽입하는 동안 오류가 발생했습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
         <source>Error inserting a link at this position.</source>
         <translation>이 위치에 링크를 삽입하는 동안 오류가 발생했습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp" line="1883"/>
         <source>Insert File</source>
         <translation>파일 삽입</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1928"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>이 위치에는 미디어 파일을 삽입할 수 없습니다.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2019"/>
+        <location filename="../MainWindow.cpp" line="2003"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>이 파일을 덮어쓰기 전에 모든 변경사항을 저장하시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2071"/>
+        <location filename="../MainWindow.cpp" line="2055"/>
         <source>Pasted clip entry %1.</source>
         <translation>붙여 넣은 클립 항목 %1</translation>
     </message>
@@ -1965,12 +1917,12 @@ If a translation for specific word or phrase is not available it will be display
         <translation>기본 설정</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>PageEdit</source>
         <translation>페이지 에디터</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>Changes will take effect when you restart PageEdit.</source>
         <translation>페이지 에디터를 다시 시작하면 변경사항이 반영됩니다.</translation>
     </message>
@@ -1990,59 +1942,59 @@ Line: %1 Column %2 - %3</source>
 Line: %1 Column %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="402"/>
+        <location filename="../Utility.cpp" line="383"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>다음 파일을 읽을 수 없습니다 %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="592"/>
+        <location filename="../Utility.cpp" line="572"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>페이지 에디터에 문제가 생겼습니다.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="593"/>
+        <location filename="../Utility.cpp" line="573"/>
         <source>PageEdit may need to close.</source>
         <translation>페이지 에디터를 종료해야 합니다.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="881"/>
         <source>About PageEdit</source>
         <translation>페이지 에디터 정보</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="911"/>
+        <location filename="../Utility.cpp" line="886"/>
         <source>Version</source>
         <translation>버전</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="912"/>
+        <location filename="../Utility.cpp" line="887"/>
         <source>Build Date</source>
         <translation>배포일</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="913"/>
+        <location filename="../Utility.cpp" line="888"/>
         <source>Build Time</source>
         <translation>배포 시간</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="914"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Qt Runtime Version</source>
         <translation>Qt Runtime 버전</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="915"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Qt Compiled Version</source>
         <translation>Qt Compiled 버전</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="916"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>System</source>
         <translation>시스템</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="917"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Architecture</source>
         <translation>Architecture</translation>
     </message>
@@ -2065,7 +2017,7 @@ Line: %1 Column %2 - %3</translation>
         <translation>일치 여부(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../SearchToolbar.cpp" line="150"/>
+        <location filename="../SearchToolbar.cpp" line="151"/>
         <source>No results found.</source>
         <translation>검색 결과 없음</translation>
     </message>
@@ -3346,52 +3298,52 @@ Line: %1 Column %2 - %3</translation>
         <translation>썸네일 크기:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="118"/>
+        <location filename="../SelectFiles.cpp" line="128"/>
         <source>All</source>
         <translation>모두</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="119"/>
+        <location filename="../SelectFiles.cpp" line="129"/>
         <source>Images</source>
         <translation>이미지</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="120"/>
+        <location filename="../SelectFiles.cpp" line="130"/>
         <source>Video</source>
         <translation>비디오</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="121"/>
+        <location filename="../SelectFiles.cpp" line="131"/>
         <source>Audio</source>
         <translation>오디오</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="164"/>
+        <location filename="../SelectFiles.cpp" line="176"/>
         <source>Media Files In the Book</source>
         <translation>책의 미디어 파일</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="167"/>
+        <location filename="../SelectFiles.cpp" line="179"/>
         <source>Thumbnails</source>
         <translation>썸네일</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>shades</source>
         <translation>그림자</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>colors</source>
         <translation>색상</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Grayscale</source>
         <translation>회색조(Grayscale)</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Color</source>
         <translation>색상</translation>
     </message>
@@ -3460,12 +3412,12 @@ ID names must be unique and start with a letter.</source>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="699"/>
+        <location filename="../Utility.cpp" line="674"/>
         <source>PageEdit</source>
         <translation>페이지 에디터</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="700"/>
+        <location filename="../Utility.cpp" line="675"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3476,17 +3428,17 @@ Continue using the requested filename?</source>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="186"/>
+        <location filename="../WebViewEdit.cpp" line="158"/>
         <source>No suggestions</source>
         <translation>추천이 없습니다.</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="198"/>
+        <location filename="../WebViewEdit.cpp" line="170"/>
         <source>Check Spelling</source>
         <translation>맞춤법 검사</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="207"/>
+        <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Select Language</source>
         <translation>언어 선택</translation>
     </message>

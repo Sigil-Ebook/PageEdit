@@ -13,7 +13,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
-        <location filename="../PAppearanceWidget.ui" line="312"/>
+        <location filename="../PAppearanceWidget.ui" line="319"/>
         <source>Fonts:</source>
         <translation>Yazı tipleri:</translation>
     </message>
@@ -31,7 +31,7 @@ CSS&apos;nizde yazı tipi boyutu belirtilmemişse</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
-        <location filename="../PAppearanceWidget.ui" line="372"/>
+        <location filename="../PAppearanceWidget.ui" line="379"/>
         <source>Font Size:</source>
         <translation>Yazı Tipi Boyutu:</translation>
     </message>
@@ -109,106 +109,68 @@ CSS&apos;nizde bir sans-serif yazı tipi ailesi belirtilmişse</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
-        <source>High DPI Setting:</source>
-        <translation>Yüksek DPI Ayarı:</translation>
+        <source>Dark Theme Style (Windows Only):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="286"/>
+        <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
+        <source>Use Classic Dark Theme</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="296"/>
         <source>(Needs PageEdit Restart)</source>
         <translation>(PageEdit&apos;in Yeniden Başlatılması Gerekiyor)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="318"/>
+        <location filename="../PAppearanceWidget.ui" line="325"/>
         <source>UI Font:</source>
         <translation>Kullanıcı arayüzü Yazı Tipi:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="328"/>
+        <location filename="../PAppearanceWidget.ui" line="335"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
         <translation>PageEdit menüleri, düğmeleri vb. Tarafından kullanılan yazı tipini değiştirin...</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="331"/>
+        <location filename="../PAppearanceWidget.ui" line="338"/>
         <source>Change Font (Needs PageEdit Restart)</source>
         <translation>Yazı Tipini Değiştir (PageEdit&apos;in Yeniden Başlatılması Gerekiyor)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="355"/>
+        <location filename="../PAppearanceWidget.ui" line="362"/>
         <source>Insert Special Characters:</source>
         <translation>Özel Karakter Ekle:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="369"/>
+        <location filename="../PAppearanceWidget.ui" line="376"/>
         <source>Font size to be used for Insert Special Characters window</source>
         <translation>Yazıtipi Özel Karakter Ekle penceresinde kullanılacak</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="402"/>
+        <location filename="../PAppearanceWidget.ui" line="409"/>
         <source>Font family to be used for Insert Special Characters window</source>
         <translation>Yazıtipi Özel Karakterler Ekle penceresinde kullanılacak</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="405"/>
+        <location filename="../PAppearanceWidget.ui" line="412"/>
         <source>Standard Font:</source>
         <translation>Standart Yazıtipi:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="472"/>
+        <location filename="../PAppearanceWidget.ui" line="479"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>Bütün yazıtipi ve renkleri varsayılan değerlere sıfırla</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="475"/>
+        <location filename="../PAppearanceWidget.ui" line="482"/>
         <source>Reset All</source>
         <translation>Tümünü Sıfırla</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect</source>
-        <translation>Algıla</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>On</source>
-        <translation>Açık</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Off</source>
-        <translation>Kapalı</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect whether any high dpi scaling should take place.</source>
-        <translation>Herhangi bir yüksek dpi ölçeklendirmesinin gerçekleşmesi gerekip gerekmediğini tespit edin.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
-        <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation>Yüksek dpi davranışını kontrol etmek için ayarlanmış herhangi bir Qt ortam değişkenini tanımlar.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation>Yüksek dpi ölçeklendirmeyi açar ve herhangi bir Qt ortam değişkenini yok sayar</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="56"/>
-        <source>that are set controlling high dpi behavior.</source>
-        <translation>yüksek dpi davranışını kontrol eden ayarlar.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation>Herhangi bir Qt ortamı olup olmadığına bakılmaksızın yüksek dpi ölçeklendirmeyi kapatır</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="58"/>
-        <source>variables controlling high dpi behavior are set.</source>
-        <translation>yüksek dpi davranışını kontrol eden değişkenler ayarlanır.</translation>
     </message>
 </context>
 <context>
@@ -455,17 +417,17 @@ Değişikliklerinizi kaydetmek istiyor musunuz?</translation>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="75"/>
+        <location filename="../ClipEditorModel.cpp" line="67"/>
         <source>Name</source>
         <translation>Ad</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="76"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Text</source>
         <translation>Metin</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="672"/>
+        <location filename="../ClipEditorModel.cpp" line="664"/>
         <source>Unable to create file %1</source>
         <translation>%1 dosyası oluşturulamıyor</translation>
     </message>
@@ -633,11 +595,6 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
         <source>Inspect Page or Element</source>
         <translation>Sayfa ya da öğeyi denetle</translation>
     </message>
-    <message>
-        <location filename="../Inspector.cpp" line="158"/>
-        <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>Denetçi işlevselliği Qt 5.11&apos;den öncesini desteklemiyor</translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -645,15 +602,15 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1813"/>
-        <location filename="../MainWindow.cpp" line="1826"/>
-        <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp" line="1846"/>
-        <location filename="../MainWindow.cpp" line="1859"/>
-        <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp" line="1873"/>
-        <location filename="../MainWindow.cpp" line="1928"/>
-        <location filename="../MainWindow.cpp" line="2018"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
+        <location filename="../MainWindow.cpp" line="2002"/>
         <source>PageEdit</source>
         <translation>SayfaDüzen</translation>
     </message>
@@ -1852,112 +1809,107 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
         <translation>yok veya yazılabilir değil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1609"/>
+        <location filename="../MainWindow.cpp" line="1608"/>
         <source>Do not show this warning again</source>
         <translation>Bu uyarı bir daha görüntülenmesin</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1610"/>
+        <location filename="../MainWindow.cpp" line="1609"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Bu dosya beklediğiniz şekilde yazdırılamayabilir.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1611"/>
+        <location filename="../MainWindow.cpp" line="1610"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>EPUB&apos;ın CSS&apos;si ile uygulanan koyu arka planlar ve renkli metin yazdırılır.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1611"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Çok fazla mürekkep kullanılmasına neden olabileceğinden dikkatli olun!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1613"/>
+        <location filename="../MainWindow.cpp" line="1612"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Bu dosyanın nasıl yazdırılacağını görmek için aşağıdaki Baskı Önizlemeyi kullanın.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1614"/>
+        <location filename="../MainWindow.cpp" line="1613"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Gelecekte bu uyarıyı görmek istemiyorsanız kutuyu işaretleyin.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1637"/>
-        <source>Feature not available before Qt5.12.x</source>
-        <translation>Qt5.12.x&apos;ten önce özellik mevcut değil</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp" line="1698"/>
+        <location filename="../MainWindow.cpp" line="1685"/>
         <source>File Opened</source>
         <translation>Dosya Açıldı</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp" line="1689"/>
         <source>File Open Failed!</source>
         <translation>Dosya Açılamadı!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1725"/>
+        <location filename="../MainWindow.cpp" line="1740"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Pano HTML biçimlendirmesi içeriyor</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1726"/>
+        <location filename="../MainWindow.cpp" line="1741"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Panodaki veriyi düz metin olarak yapıştırmak istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1813"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Yeni bir kimlik eklemeden önce metin seçmelisiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1826"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Kimlik geçersiz - bir harfle başlamalı ve ardından _: - veya harf numarası gelmelidir.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Bu konuma bir kimlik ekleyemezsiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1846"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Yeni bir bağlantı eklemeden önce metin seçmelisiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1859"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Bağlantı geçersiz - &apos;&lt;&apos; veya &apos;&gt;&apos; içeremez</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
         <source>Error inserting external link target.</source>
         <translation>Harici bağlantı hedefi eklenirken hata oluştu.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
         <source>Error inserting a link at this position.</source>
         <translation>Bu konumda bir bağlantı eklenirken hata oluştu.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp" line="1883"/>
         <source>Insert File</source>
         <translation>Dosya Ekle</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1928"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Bu konuma bir medya dosyası ekleyemezsiniz.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2019"/>
+        <location filename="../MainWindow.cpp" line="2003"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Bu dosyanın üzerine yazmadan önce herhangi bir değişikliği kaydetmek ister misiniz?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2071"/>
+        <location filename="../MainWindow.cpp" line="2055"/>
         <source>Pasted clip entry %1.</source>
         <translation>%1 klibi girişi yapıştırıldı.</translation>
     </message>
@@ -1970,12 +1922,12 @@ Belirli bir kelime veya cümle için bir çeviri mevcut değilse, İngilizce ola
         <translation>Tercihler</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>PageEdit</source>
         <translation>Sayfa Düzenleme</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>Changes will take effect when you restart PageEdit.</source>
         <translation>Değişiklikler SayfaDüzen&apos;i yeniden başlattığınızda geçerli olacaktır.</translation>
     </message>
@@ -1995,59 +1947,59 @@ Line: %1 Column %2 - %3</source>
 Satır: %1 Sütun %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="402"/>
+        <location filename="../Utility.cpp" line="383"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>%1 dosyası okunamadı:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="592"/>
+        <location filename="../Utility.cpp" line="572"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>Sayfa Düzenleme bir sorunla karşılaştı.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="593"/>
+        <location filename="../Utility.cpp" line="573"/>
         <source>PageEdit may need to close.</source>
         <translation>Sayfa Düzenleme nin kapanması gerekebilir.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="881"/>
         <source>About PageEdit</source>
         <translation>Sayfa Düzenleme Hakkında</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="911"/>
+        <location filename="../Utility.cpp" line="886"/>
         <source>Version</source>
         <translation>Sürüm</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="912"/>
+        <location filename="../Utility.cpp" line="887"/>
         <source>Build Date</source>
         <translation>Oluşturma Tarihi</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="913"/>
+        <location filename="../Utility.cpp" line="888"/>
         <source>Build Time</source>
         <translation>Oluşturma Zamanı</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="914"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Qt Runtime Version</source>
         <translation>Qt Runtime Sürümü</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="915"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Qt Compiled Version</source>
         <translation>Qt Derlenme Sürümü</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="916"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>System</source>
         <translation>Sistem</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="917"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Architecture</source>
         <translation>Mimari</translation>
     </message>
@@ -2070,7 +2022,7 @@ Satır: %1 Sütun %2 - %3</translation>
         <translation>&amp;Eşleşme Kasası</translation>
     </message>
     <message>
-        <location filename="../SearchToolbar.cpp" line="150"/>
+        <location filename="../SearchToolbar.cpp" line="151"/>
         <source>No results found.</source>
         <translation>Sonuç bulunamadı.</translation>
     </message>
@@ -3351,52 +3303,52 @@ Satır: %1 Sütun %2 - %3</translation>
         <translation>Küçük resim boyutu:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="118"/>
+        <location filename="../SelectFiles.cpp" line="128"/>
         <source>All</source>
         <translation>Tüm</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="119"/>
+        <location filename="../SelectFiles.cpp" line="129"/>
         <source>Images</source>
         <translation>Görüntüler</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="120"/>
+        <location filename="../SelectFiles.cpp" line="130"/>
         <source>Video</source>
         <translation>Video</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="121"/>
+        <location filename="../SelectFiles.cpp" line="131"/>
         <source>Audio</source>
         <translation>Ses</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="164"/>
+        <location filename="../SelectFiles.cpp" line="176"/>
         <source>Media Files In the Book</source>
         <translation>Kitaptaki Medya Dosyaları</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="167"/>
+        <location filename="../SelectFiles.cpp" line="179"/>
         <source>Thumbnails</source>
         <translation>Örneklendirmeler</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>shades</source>
         <translation>gölgeler</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>colors</source>
         <translation>renkler</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Grayscale</source>
         <translation>Gri Tonlama</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Color</source>
         <translation>Renk</translation>
     </message>
@@ -3470,12 +3422,12 @@ Kimlik adları benzersiz olmalı ve bir harfle başlamalıdır.</translation>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="699"/>
+        <location filename="../Utility.cpp" line="674"/>
         <source>PageEdit</source>
         <translation>Sayfa Düzenleme</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="700"/>
+        <location filename="../Utility.cpp" line="675"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3487,17 +3439,17 @@ Continue using the requested filename?</source>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="186"/>
+        <location filename="../WebViewEdit.cpp" line="158"/>
         <source>No suggestions</source>
         <translation>Öneri yok</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="198"/>
+        <location filename="../WebViewEdit.cpp" line="170"/>
         <source>Check Spelling</source>
         <translation>Yazım denetimi</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="207"/>
+        <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Select Language</source>
         <translation>Dil Seç</translation>
     </message>

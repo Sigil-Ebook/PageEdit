@@ -13,7 +13,7 @@
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
-        <location filename="../PAppearanceWidget.ui" line="312"/>
+        <location filename="../PAppearanceWidget.ui" line="319"/>
         <source>Fonts:</source>
         <translation>Betűtípusok:</translation>
     </message>
@@ -31,7 +31,7 @@ ha a kapcsolódó CSS-ben nincs megadva</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
-        <location filename="../PAppearanceWidget.ui" line="372"/>
+        <location filename="../PAppearanceWidget.ui" line="379"/>
         <source>Font Size:</source>
         <translation>Betűméret:</translation>
     </message>
@@ -109,106 +109,68 @@ ha egy sans-serif font-család van megadva a CSS-ben</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
-        <source>High DPI Setting:</source>
-        <translation>Magas DPI beállítások:</translation>
+        <source>Dark Theme Style (Windows Only):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="286"/>
+        <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
+        <source>Use Classic Dark Theme</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../PAppearanceWidget.ui" line="296"/>
         <source>(Needs PageEdit Restart)</source>
         <translation>(A PageEdit újraindítása szükséges)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="318"/>
+        <location filename="../PAppearanceWidget.ui" line="325"/>
         <source>UI Font:</source>
         <translation>Felület betűtípusa:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="328"/>
+        <location filename="../PAppearanceWidget.ui" line="335"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
         <translation>A Page-Edit menüiben, a gombokon stb. használt betűtípus megváltoztatása...</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="331"/>
+        <location filename="../PAppearanceWidget.ui" line="338"/>
         <source>Change Font (Needs PageEdit Restart)</source>
         <translation>Betűtípus módosítása (a PageEdit újraindítása szükséges)</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="355"/>
+        <location filename="../PAppearanceWidget.ui" line="362"/>
         <source>Insert Special Characters:</source>
         <translation>Speciális karakterek beszúrása:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="369"/>
+        <location filename="../PAppearanceWidget.ui" line="376"/>
         <source>Font size to be used for Insert Special Characters window</source>
         <translation>A Speciális karakterek beszúrása ablakban használt betűméret</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="402"/>
+        <location filename="../PAppearanceWidget.ui" line="409"/>
         <source>Font family to be used for Insert Special Characters window</source>
         <translation>A Speciális karakterek beszúrása ablakban használt betűtípus</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="405"/>
+        <location filename="../PAppearanceWidget.ui" line="412"/>
         <source>Standard Font:</source>
         <translation>Alapértelmezett betűtípus:</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="472"/>
+        <location filename="../PAppearanceWidget.ui" line="479"/>
         <source>Reset all fonts and colors to the default values</source>
         <translation>Minden betűtípus és szín visszaállítása alapértékre</translation>
     </message>
     <message>
-        <location filename="../PAppearanceWidget.ui" line="475"/>
+        <location filename="../PAppearanceWidget.ui" line="482"/>
         <source>Reset All</source>
         <translation>Mindent alaphelyzetbe</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect</source>
-        <translation>Felismerés</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>On</source>
-        <translation>Be</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="52"/>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Off</source>
-        <translation>Ki</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="53"/>
-        <source>Detect whether any high dpi scaling should take place.</source>
-        <translation>Annak felismerése, hogy nagyfelbontású méretezést kell-e végrehajtani.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="54"/>
-        <source>Defers to any Qt environment variables that are set to control high dpi behavior.</source>
-        <translation>Minden olyan Qt környezeti változó elhalasztása, mely a nagy dpi viselkedés szabályozására van beállítva.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="55"/>
-        <source>Turns on high dpi scaling and ignores any Qt environment variables</source>
-        <translation>Bekapcsolja a nagy dpi-s skálázást, és figyelmen kívül hagy minden Qt környezeti változót</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="56"/>
-        <source>that are set controlling high dpi behavior.</source>
-        <translation>melyek a magas dpi viselkedést szabályozzák.</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="57"/>
-        <source>Turns off high dpi scaling regardless if any Qt environment</source>
-        <translation>Kikapcsolja a nagy dpi-s skálázást, bármilyen Qt környezettől függetlenül</translation>
-    </message>
-    <message>
-        <location filename="../AppearanceWidget.cpp" line="58"/>
-        <source>variables controlling high dpi behavior are set.</source>
-        <translation>a nagy dpi viselkedést szabályozó változók beállítva.</translation>
     </message>
 </context>
 <context>
@@ -454,17 +416,17 @@ Do you want to save your changes?</source>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="75"/>
+        <location filename="../ClipEditorModel.cpp" line="67"/>
         <source>Name</source>
         <translation>Név</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="76"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Text</source>
         <translation>Szöveg</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="672"/>
+        <location filename="../ClipEditorModel.cpp" line="664"/>
         <source>Unable to create file %1</source>
         <translation>A %1 fájlt nem lehet létrehozni</translation>
     </message>
@@ -632,11 +594,6 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <source>Inspect Page or Element</source>
         <translation>Az oldal vagy elem vizsgálata</translation>
     </message>
-    <message>
-        <location filename="../Inspector.cpp" line="158"/>
-        <source>The Inspector functionality is not supported before Qt 5.11</source>
-        <translation>A vizsgáló funkció nem támogatott Qt 5.11 előtti verziókon</translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -644,15 +601,15 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1813"/>
-        <location filename="../MainWindow.cpp" line="1826"/>
-        <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp" line="1846"/>
-        <location filename="../MainWindow.cpp" line="1859"/>
-        <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp" line="1873"/>
-        <location filename="../MainWindow.cpp" line="1928"/>
-        <location filename="../MainWindow.cpp" line="2018"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
+        <location filename="../MainWindow.cpp" line="2002"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1851,112 +1808,107 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <translation>nem létezik vagy nem írható</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1609"/>
+        <location filename="../MainWindow.cpp" line="1608"/>
         <source>Do not show this warning again</source>
         <translation>Ne mutassa többet ezt az üzenetet</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1610"/>
+        <location filename="../MainWindow.cpp" line="1609"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Előfordulhat, hogy ez a fájl nem a várt módon nyomtatható ki.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1611"/>
+        <location filename="../MainWindow.cpp" line="1610"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Az EPUB CSS szerint formázott sötét hátterek és színes szöveg nyomtatásra kerülnek.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1611"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Legyen óvatos, mert ez sok tintafelhasználást eredményezhet!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1613"/>
+        <location filename="../MainWindow.cpp" line="1612"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Használja a következő Nyomtatási előnézetet a nyomat megtekintéséhez.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1614"/>
+        <location filename="../MainWindow.cpp" line="1613"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Jelölje be, ha a jövőben nem szeretné látni ezt a figyelmeztetést.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1637"/>
-        <source>Feature not available before Qt5.12.x</source>
-        <translation>A funkció nem elérhető a Qt5.12.x előtti verziónál</translation>
-    </message>
-    <message>
-        <location filename="../MainWindow.cpp" line="1698"/>
+        <location filename="../MainWindow.cpp" line="1685"/>
         <source>File Opened</source>
         <translation>Fájl megnyitva</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1702"/>
+        <location filename="../MainWindow.cpp" line="1689"/>
         <source>File Open Failed!</source>
         <translation>Fájlmegnyitási hiba!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1725"/>
+        <location filename="../MainWindow.cpp" line="1740"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>A vágólap HTML formázást tartalmaz</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1726"/>
+        <location filename="../MainWindow.cpp" line="1741"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Sima szövegként szeretné beilleszteni a vágólap tartalmát?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1813"/>
+        <location filename="../MainWindow.cpp" line="1812"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Ki kell választani a szöveget egy új ID beszúrása előtt.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1826"/>
+        <location filename="../MainWindow.cpp" line="1825"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Az azonosító érvénytelen – betűvel kell kezdődnie, melyet betű, szám, alulvonás &apos;_&apos; kettőspont &apos;:&apos; - vagy pont &apos;.&apos; követ</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp" line="1831"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Ezen a helyen nem lehet ID-t beszúrni.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1846"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Új hivatkozás beszúrása előtt ki kell választani a szöveget.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1859"/>
+        <location filename="../MainWindow.cpp" line="1858"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>A hivatkozás érvénytelen - nem tartalmazhat &apos;&lt;&apos; vagy &apos;&gt;&apos; jelet. </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1864"/>
         <source>Error inserting external link target.</source>
         <translation>Hiba a külső hivatkozási cél beszúrásakor.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1873"/>
+        <location filename="../MainWindow.cpp" line="1872"/>
         <source>Error inserting a link at this position.</source>
         <translation>Hiba a beszúráskor ezen a helyen.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp" line="1883"/>
         <source>Insert File</source>
         <translation>Fájl beszúrása</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1928"/>
+        <location filename="../MainWindow.cpp" line="1927"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Ezen a helyen nem lehet média fájlt beszúrni.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2019"/>
+        <location filename="../MainWindow.cpp" line="2003"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Szeretné menteni a változtatásokat a fájl felülírása előtt?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2071"/>
+        <location filename="../MainWindow.cpp" line="2055"/>
         <source>Pasted clip entry %1.</source>
         <translation type="unfinished"/>
     </message>
@@ -1969,12 +1921,12 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <translation>Beállítások</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Preferences.cpp" line="90"/>
+        <location filename="../Preferences.cpp" line="91"/>
         <source>Changes will take effect when you restart PageEdit.</source>
         <translation>A módosítások csak a PageEdit újraindítását követően lépnek életbe.</translation>
     </message>
@@ -1994,59 +1946,59 @@ Line: %1 Column %2 - %3</source>
 Line: %1 Column %2 - %3</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="402"/>
+        <location filename="../Utility.cpp" line="383"/>
         <source>Cannot read file %1:
 %2.</source>
         <translation>Nem olvasható fájl %1:
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="592"/>
+        <location filename="../Utility.cpp" line="572"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>A PageEdit problémát észlelt.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="593"/>
+        <location filename="../Utility.cpp" line="573"/>
         <source>PageEdit may need to close.</source>
         <translation>A PageEdit-et be kell zárnia.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="906"/>
+        <location filename="../Utility.cpp" line="881"/>
         <source>About PageEdit</source>
         <translation>A PageEdit programról</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="911"/>
+        <location filename="../Utility.cpp" line="886"/>
         <source>Version</source>
         <translation>Verzió</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="912"/>
+        <location filename="../Utility.cpp" line="887"/>
         <source>Build Date</source>
         <translation>Készítés dátuma</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="913"/>
+        <location filename="../Utility.cpp" line="888"/>
         <source>Build Time</source>
         <translation>Készítés időpontja</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="914"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Qt Runtime Version</source>
         <translation>Qt Runtime verzió</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="915"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Qt Compiled Version</source>
         <translation>Qt Compiled verzió</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="916"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>System</source>
         <translation>Rendszer</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="917"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Architecture</source>
         <translation>Architektúra</translation>
     </message>
@@ -2069,7 +2021,7 @@ Line: %1 Column %2 - %3</translation>
         <translation>Pontos egyezés</translation>
     </message>
     <message>
-        <location filename="../SearchToolbar.cpp" line="150"/>
+        <location filename="../SearchToolbar.cpp" line="151"/>
         <source>No results found.</source>
         <translation>Nincs találat.</translation>
     </message>
@@ -3350,52 +3302,52 @@ Line: %1 Column %2 - %3</translation>
         <translation>Bélyegkép méret:</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="118"/>
+        <location filename="../SelectFiles.cpp" line="128"/>
         <source>All</source>
         <translation>Összes</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="119"/>
+        <location filename="../SelectFiles.cpp" line="129"/>
         <source>Images</source>
         <translation>Képek</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="120"/>
+        <location filename="../SelectFiles.cpp" line="130"/>
         <source>Video</source>
         <translation>Videó</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="121"/>
+        <location filename="../SelectFiles.cpp" line="131"/>
         <source>Audio</source>
         <translation>Hang</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="164"/>
+        <location filename="../SelectFiles.cpp" line="176"/>
         <source>Media Files In the Book</source>
         <translation>Médiafájlok a könyvben</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="167"/>
+        <location filename="../SelectFiles.cpp" line="179"/>
         <source>Thumbnails</source>
         <translation>Bélyegképek</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>shades</source>
         <translation>árnyalatok</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="335"/>
+        <location filename="../SelectFiles.cpp" line="349"/>
         <source>colors</source>
         <translation>színek</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Grayscale</source>
         <translation>Szürkeskála</translation>
     </message>
     <message>
-        <location filename="../SelectFiles.cpp" line="336"/>
+        <location filename="../SelectFiles.cpp" line="350"/>
         <source>Color</source>
         <translation>Szín</translation>
     </message>
@@ -3469,12 +3421,12 @@ Az azonosító neveknek egyedinek kell lenniük, és betűvel kell kezdődniük.
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="699"/>
+        <location filename="../Utility.cpp" line="674"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="700"/>
+        <location filename="../Utility.cpp" line="675"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3486,17 +3438,17 @@ Továbbra is a megadott fájlnevet szeretné használni?</translation>
 <context>
     <name>WebViewEdit</name>
     <message>
-        <location filename="../WebViewEdit.cpp" line="186"/>
+        <location filename="../WebViewEdit.cpp" line="158"/>
         <source>No suggestions</source>
         <translation>Nincs javaslat</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="198"/>
+        <location filename="../WebViewEdit.cpp" line="170"/>
         <source>Check Spelling</source>
         <translation>Nyelvhelyesség ellenőrzése</translation>
     </message>
     <message>
-        <location filename="../WebViewEdit.cpp" line="207"/>
+        <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Select Language</source>
         <translation>Nyelv kiválasztása</translation>
     </message>
