@@ -115,12 +115,12 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>
         <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
-        <translation type="unfinished"/>
+        <translation>使用 Windows 深色样式时，使用经典的深色样式，而不是内置的 Qt 样式</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>Use Classic Dark Theme</source>
-        <translation type="unfinished"/>
+        <translation>使用经典深色主题</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="296"/>

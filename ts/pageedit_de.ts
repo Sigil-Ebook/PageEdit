@@ -115,12 +115,12 @@ Sans-Serif-Schriftfamilie in der CSS-Datei angegeben wurde.</translation>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>
         <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
-        <translation type="unfinished"/>
+        <translation>Verwendet das klassische dunkle Design anstatt das in Qt integrierte dunkle Design.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>Use Classic Dark Theme</source>
-        <translation type="unfinished"/>
+        <translation>Klassisches dunkles Design verwenden</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="296"/>
