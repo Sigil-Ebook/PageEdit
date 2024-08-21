@@ -14,6 +14,7 @@ License: GNU General Public License v3.0
 LicenseUrl: https://raw.githubusercontent.com/Sigil-Ebook/PageEdit/master/COPYING.txt
 # Copyright:
 CopyrightUrl: https://raw.githubusercontent.com/Sigil-Ebook/PageEdit/master/COPYING.txt
+ReleaseNotesUrl: https://github.com/Sigil-Ebook/PageEdit/releases/tag/<VERSION>
 ShortDescription: An ePub visual XHTML editor based on Sigil's Deprecated BookView. It uses WebEngine instead of WebKit.
 # Description:
 Moniker: pageedit
@@ -23,7 +24,6 @@ Tags:
 - ebook-editor
 - epub
 # ReleaseNotes:
-# ReleaseNotesUrl:
 # PurchaseUrl:
 # InstallationNotes:
 # Documentations:
