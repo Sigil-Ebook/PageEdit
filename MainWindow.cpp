@@ -1748,10 +1748,9 @@ void MainWindow::Paste()
             m_WebView->triggerPageAction(QWebEnginePage::PasteAndMatchStyle);
         } else if (rv == QMessageBox::No) {
             m_WebView->triggerPageAction(QWebEnginePage::Paste);
-        } else {
-            // they have hit Cancel so paste nothing
-            return;
         }
+        // all pasted or Cancel was used
+        return;
     }
     // handle all other mimedata types
     m_WebView->triggerPageAction(QWebEnginePage::Paste);
