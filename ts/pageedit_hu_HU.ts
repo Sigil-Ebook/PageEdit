@@ -601,15 +601,15 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1812"/>
-        <location filename="../MainWindow.cpp" line="1825"/>
-        <location filename="../MainWindow.cpp" line="1831"/>
-        <location filename="../MainWindow.cpp" line="1845"/>
-        <location filename="../MainWindow.cpp" line="1858"/>
-        <location filename="../MainWindow.cpp" line="1864"/>
-        <location filename="../MainWindow.cpp" line="1872"/>
-        <location filename="../MainWindow.cpp" line="1927"/>
-        <location filename="../MainWindow.cpp" line="2002"/>
+        <location filename="../MainWindow.cpp" line="1811"/>
+        <location filename="../MainWindow.cpp" line="1824"/>
+        <location filename="../MainWindow.cpp" line="1830"/>
+        <location filename="../MainWindow.cpp" line="1844"/>
+        <location filename="../MainWindow.cpp" line="1857"/>
+        <location filename="../MainWindow.cpp" line="1863"/>
+        <location filename="../MainWindow.cpp" line="1871"/>
+        <location filename="../MainWindow.cpp" line="1926"/>
+        <location filename="../MainWindow.cpp" line="2001"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1858,57 +1858,57 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <translation>Sima szövegként szeretné beilleszteni a vágólap tartalmát?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp" line="1811"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Ki kell választani a szöveget egy új ID beszúrása előtt.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1824"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Az azonosító érvénytelen – betűvel kell kezdődnie, melyet betű, szám, alulvonás &apos;_&apos; kettőspont &apos;:&apos; - vagy pont &apos;.&apos; követ</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1830"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Ezen a helyen nem lehet ID-t beszúrni.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp" line="1844"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Új hivatkozás beszúrása előtt ki kell választani a szöveget.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1857"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>A hivatkozás érvénytelen - nem tartalmazhat &apos;&lt;&apos; vagy &apos;&gt;&apos; jelet. </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1863"/>
         <source>Error inserting external link target.</source>
         <translation>Hiba a külső hivatkozási cél beszúrásakor.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1872"/>
+        <location filename="../MainWindow.cpp" line="1871"/>
         <source>Error inserting a link at this position.</source>
         <translation>Hiba a beszúráskor ezen a helyen.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1883"/>
+        <location filename="../MainWindow.cpp" line="1882"/>
         <source>Insert File</source>
         <translation>Fájl beszúrása</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1927"/>
+        <location filename="../MainWindow.cpp" line="1926"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Ezen a helyen nem lehet média fájlt beszúrni.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2003"/>
+        <location filename="../MainWindow.cpp" line="2002"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Szeretné menteni a változtatásokat a fájl felülírása előtt?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2055"/>
+        <location filename="../MainWindow.cpp" line="2054"/>
         <source>Pasted clip entry %1.</source>
         <translation type="unfinished"/>
     </message>

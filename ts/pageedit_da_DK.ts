@@ -602,15 +602,15 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
         <location filename="../main.ui" line="15"/>
         <location filename="../MainWindow.cpp" line="1053"/>
         <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1812"/>
-        <location filename="../MainWindow.cpp" line="1825"/>
-        <location filename="../MainWindow.cpp" line="1831"/>
-        <location filename="../MainWindow.cpp" line="1845"/>
-        <location filename="../MainWindow.cpp" line="1858"/>
-        <location filename="../MainWindow.cpp" line="1864"/>
-        <location filename="../MainWindow.cpp" line="1872"/>
-        <location filename="../MainWindow.cpp" line="1927"/>
-        <location filename="../MainWindow.cpp" line="2002"/>
+        <location filename="../MainWindow.cpp" line="1811"/>
+        <location filename="../MainWindow.cpp" line="1824"/>
+        <location filename="../MainWindow.cpp" line="1830"/>
+        <location filename="../MainWindow.cpp" line="1844"/>
+        <location filename="../MainWindow.cpp" line="1857"/>
+        <location filename="../MainWindow.cpp" line="1863"/>
+        <location filename="../MainWindow.cpp" line="1871"/>
+        <location filename="../MainWindow.cpp" line="1926"/>
+        <location filename="../MainWindow.cpp" line="2001"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1859,57 +1859,57 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
         <translation>Vil du indsætte klippebords data som almindelig tekst?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1812"/>
+        <location filename="../MainWindow.cpp" line="1811"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Du skal vælge en tekst før du indsætter et nyt id.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1825"/>
+        <location filename="../MainWindow.cpp" line="1824"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID er ugyldigt - skal starte med et bogstav, efterfulgt af bogstav nummer _ : - eller .</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1831"/>
+        <location filename="../MainWindow.cpp" line="1830"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Du kan ikke indsætte et ID ved denne placering.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp" line="1844"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Du skal vælge en tekst før di indsætter et nyt link.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1858"/>
+        <location filename="../MainWindow.cpp" line="1857"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Link er ugyldig - kan ikke indeholde &apos;&lt;&apos; eller &apos;&gt;&apos;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1864"/>
+        <location filename="../MainWindow.cpp" line="1863"/>
         <source>Error inserting external link target.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1872"/>
+        <location filename="../MainWindow.cpp" line="1871"/>
         <source>Error inserting a link at this position.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1883"/>
+        <location filename="../MainWindow.cpp" line="1882"/>
         <source>Insert File</source>
         <translation>Indsæt fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1927"/>
+        <location filename="../MainWindow.cpp" line="1926"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Du kan ikke indsætte en mediefil på denne placering.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2003"/>
+        <location filename="../MainWindow.cpp" line="2002"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Vil du gemme evt. ændringer, før du overskriver denne fil?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2055"/>
+        <location filename="../MainWindow.cpp" line="2054"/>
         <source>Pasted clip entry %1.</source>
         <translation>Indsat klipoptegnelse %1.</translation>
     </message>
