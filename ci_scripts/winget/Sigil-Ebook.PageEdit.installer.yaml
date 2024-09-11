@@ -10,27 +10,31 @@ InstallModes:
 - interactive
 - silent
 - silentWithProgress
-UpgradeBehavior: install
-FileExtensions:
-- epub
 InstallerSwitches:
   Upgrade: /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon,*afiles"
-ReleaseDate: <DATE>
+UpgradeBehavior: install
+FileExtensions:
+- xhtml
+- opf
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+Commands:
+- pageedit
 Installers:
 - Architecture: x64
   Scope: machine
-  Dependencies:
-    PackageDependencies:
-    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+  ElevationRequirement: elevatesSelf
   InstallerUrl: https://github.com/Sigil-Ebook/PageEdit/releases/download/<VERSION>/PageEdit-<VERSION>-Windows-x64-Setup.exe
   InstallerSha256: <HASH-AMD64>
   InstallerSwitches:
-    Custom: /ALLUSERS /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon,*afiles"
+    Custom: /ALLUSERS /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon"
 - Architecture: x64
   Scope: user
   InstallerUrl: https://github.com/Sigil-Ebook/PageEdit/releases/download/<VERSION>/PageEdit-<VERSION>-Windows-x64-Setup.exe
   InstallerSha256: <HASH-AMD64>
   InstallerSwitches:
-    Custom: /CURRENTUSER /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon,*afiles"
+    Custom: /CURRENTUSER /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon"
+ReleaseDate: <DATE>
 ManifestType: installer
 ManifestVersion: 1.6.0
