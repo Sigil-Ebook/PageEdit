@@ -11,7 +11,7 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Upgrade: /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon,*afiles"
+  Upgrade: /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon"
 UpgradeBehavior: install
 FileExtensions:
 - xhtml
