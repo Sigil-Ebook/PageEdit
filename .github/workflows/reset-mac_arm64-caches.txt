@@ -1,2 +1,4 @@
 Change the content of this file to reset the caches for the github actions sigil macOS arm64 build
 
+cleared cache on 25 July 2024
+cleared cache on 23 October 2024
