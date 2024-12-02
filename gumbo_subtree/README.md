@@ -39,13 +39,28 @@ Original Goals & features:
 Installation
 ============
 
-To build and install the library, use CMake version 3.0 or later
+To build and install the library on macOS and Linux/Unix, use CMake version 3.0 or later
 
     git clone https://github.com/Sigil-Ebook/sigil-gumbo.git
     mkdir build
     cd build
     cmake -DCMAKE_BUILD_TYPE=Release ../sigil-gumbo
     make -j4
+
+
+To build the library on Windows, use CMake version 3.0 or later
+
+   1. clone the sigil gumbo repo
+   git clone https://github.com/Sigil-Ebook/sigil-gumbo.git
+
+   2. create a seprate build directory (do not build in the source directory itself)
+   mkdir build
+   cd build
+
+   3. Start the Visual Studio Command prompt for x64
+
+   4. cmake -G "NMake Makefiles" ..\sigil-gumbo
+      nmake
 
 
 To run the html5lib tree-construction test suite from the build directory
