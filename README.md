@@ -123,7 +123,7 @@ The upstream sigil-gumbo repository is included in PageEdit's repository (this o
 
 --squash because we don't need sigil-gumbo's entire history in the PageEdit repository. Push the changes to github master (with a commit message like "merge in upstream sigil-gumbo changes") if there are any.
 
-You can also create a remote for the upstream sigil-gumbo repo to simply the subtree pull command a bit -- BUT YOU MUST REMEMBER TO USE THE --no-tags OPTION WHEN CREATING THE REMOTE. Otherwise the --squash option may not suppress all upstream history when using the remote name. A careless `git fetch --all` could make a dog's lunch of your repo history with a very taggy remote (which sigil-gumbo is decidedly not):
+You can also create a remote for the upstream sigil-gumbo repo to simplify the subtree pull command a bit -- BUT YOU MUST REMEMBER TO USE THE --no-tags OPTION WHEN CREATING THE REMOTE. Otherwise the --squash option may not suppress all upstream history when using the remote name. A careless `git fetch --all` could make a dog's lunch of your repo history with a very taggy remote (which sigil-gumbo is decidedly not):
 
 `git remote add --no-tags sigil-gumbo https://github.com/Sigil-Ebook/sigil-gumbo.git`
 
