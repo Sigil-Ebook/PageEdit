@@ -1,7 +1,7 @@
 # Build examples/clean_text to ensure c++ code can
 # be linked to newly built gumbo shared library.
 
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.18)
 
 
 set( test_executable run_tests )

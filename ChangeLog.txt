@@ -2,6 +2,7 @@ List of Changes since the Fork
 ==============================
 In reverse chronological order:
 
+- remove long outdated vcxproj files, support building with cmake and nmake only on Windows
 - change update foreign attributes to remove xml:base and add xlink:arcrole to follow whatwg spec
 - fixed minor memory leaks
 - correctly handle text in form elements
