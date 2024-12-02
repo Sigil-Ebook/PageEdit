@@ -1621,11 +1621,19 @@ void MainWindow::printRendered()
         msgbox.setDetailedText(detailed_text);
         msgbox.setStandardButtons(QMessageBox::Close);
         msgbox.setCheckBox(cb);
+#if QT_VERSION >= QT_VERSION_CHECK(6,7,0)
+        connect(cb, &QCheckBox::checkStateChanged, [this](Qt::CheckState state) {
+            if (state == Qt::CheckState::Checked) {
+                m_skipPrintWarnings = true;    
+            }
+        });
+#else
         connect(cb, &QCheckBox::stateChanged, [this](int state) {
             if (static_cast<Qt::CheckState>(state) == Qt::CheckState::Checked) {
                 m_skipPrintWarnings = true;    
             }
         });
+#endif
         msgbox.exec();
     }
     settings.setSkipPrintWarnings(m_skipPrintWarnings);
