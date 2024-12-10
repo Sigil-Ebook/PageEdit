@@ -471,11 +471,6 @@ float MainWindow::SliderRangeToZoomFactor(int slider_range_value)
 
 void MainWindow::resizeEvent(QResizeEvent *event)
 {
-    // Workaround for Qt 4.8 bug - see WriteSettings() for details.                                             
-    if (!isMaximized()) {
-        m_LastWindowSize = saveGeometry();
-    }
-    // Update self normally
     QMainWindow::resizeEvent(event);
     UpdateWindowTitle();
 }
@@ -1175,10 +1170,6 @@ void MainWindow::closeEvent(QCloseEvent *event)
 
 void MainWindow::moveEvent(QMoveEvent *event)
 {
-    // Workaround for Qt 4.8 bug - see WriteSettings() for details.                                             
-    if (!isMaximized()) {
-        m_LastWindowSize = saveGeometry();
-    }
     QMainWindow::moveEvent(event);
 }
 
@@ -1188,18 +1179,14 @@ void MainWindow::LoadSettings()
     m_skipPrintWarnings = settings.skipPrintWarnings();
     m_skipPrintPreview = settings.skipPrintPreview();
     settings.beginGroup(SETTINGS_GROUP);
-    // The size of the window and its full screen status
-    // Due to the 4.8 bug, we restore its "normal" window size and then maximize
-    // it afterwards (if last state was maximized) to ensure on correct screen.
+    // no longer needed but keep in settings in case Qt bug returns
     bool isMaximized = settings.value("maximized", false).toBool();
+    bool isFullScreen = settings.value("maximized", false).toBool();
+
     m_LastWindowSize = settings.value("geometry").toByteArray();
 
     if (!m_LastWindowSize.isNull()) {
         restoreGeometry(m_LastWindowSize);
-
-        if (isMaximized) {
-            setWindowState(windowState() | Qt::WindowMaximized);
-        }
     }
 
     // The positions of all the toolbars and dock widgets
@@ -1208,6 +1195,7 @@ void MainWindow::LoadSettings()
     if (!toolbars.isNull()) {
         restoreState(toolbars);
     }
+
     m_Inspector->hide();
 
     m_preserveHeadingAttributes = settings.value("preserveheadingattributes", true).toBool();
@@ -1242,12 +1230,10 @@ void MainWindow::SaveSettings()
     settings.setSkipPrintWarnings(m_skipPrintWarnings);
     settings.setSkipPrintPreview(m_skipPrintPreview);
     settings.beginGroup(SETTINGS_GROUP);
-    // The size of the window and it's full screen status                                                       
-    // This is a workaround for this bug:                                                                       
-    // Maximizing PageEdit and then closing will forget the previous window size                                   
-    // and open it maximized on the wrong screen.                                                               
-    // https://bugreports.qt-project.org/browse/QTBUG-21371                                                     
+    // No longer needed but keep these in settings n case Qt bug returns
     settings.setValue("maximized", isMaximized());
+    settings.setValue("fullscreen", isFullScreen());
+
     settings.setValue("geometry", m_LastWindowSize);
     // The positions of all the toolbars and dock widgets                                                       
     settings.setValue("toolbars", saveState());
