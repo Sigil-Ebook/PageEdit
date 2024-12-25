@@ -334,7 +334,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message numerus="yes">
         <location filename="../ClipEditor.cpp" line="541"/>
         <source>CSS entries added: %n</source>
-        <translation><numerusform>加入的CSS项： %n</numerusform></translation>
+        <translation><numerusform>加入的CSS项：%n</numerusform></translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="653"/>
@@ -1911,7 +1911,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../MainWindow.cpp" line="2054"/>
         <source>Pasted clip entry %1.</source>
-        <translation>剪辑条目 %1已粘贴。</translation>
+        <translation>剪辑条目 %1 已粘贴。</translation>
     </message>
 </context>
 <context>
@@ -1943,14 +1943,14 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../OPFReader.cpp" line="60"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>无法读取 OPF文件。
-行：%1 列%2 - %3</translation>
+        <translation>无法读取 OPF 文件。
+行：%1 列 %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="383"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>无法读取文件%1：
+        <translation>无法读取文件 %1：
 %2。</translation>
     </message>
     <message>

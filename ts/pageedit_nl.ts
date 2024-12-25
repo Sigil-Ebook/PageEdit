@@ -110,7 +110,7 @@ als in de CSS een schreefloze lettertypefamilie is opgegeven</translation>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>Dark Theme Style (Windows Only):</source>
-        <translation type="unfinished"/>
+        <translation>Donker thema (alleen Windows)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>

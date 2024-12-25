@@ -110,7 +110,7 @@ se c&apos;è una famiglia di caratteri senza grazie specificata nel CSS</transla
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>Dark Theme Style (Windows Only):</source>
-        <translation type="unfinished"/>
+        <translation>Tema Scuro (Solo Windows):</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>
@@ -2067,42 +2067,42 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="94"/>
         <source>left single quote</source>
-        <translation type="unfinished"/>
+        <translation>virgoletta singola sinistra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="95"/>
         <source>right single quote</source>
-        <translation type="unfinished"/>
+        <translation>virgoletta singola destra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="96"/>
         <source>left double quote</source>
-        <translation type="unfinished"/>
+        <translation>virgoletta doppia sinistra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="97"/>
         <source>right double quote</source>
-        <translation type="unfinished"/>
+        <translation>virgoletta doppia destra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="98"/>
         <source>left-pointing single angle quote</source>
-        <translation type="unfinished"/>
+        <translation>virgolette ad angolo singolo rivolte verso sinitra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="99"/>
         <source>right-pointing single angle quote</source>
-        <translation type="unfinished"/>
+        <translation>virgolette ad angolo singolo rivolte verso destra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="100"/>
         <source>left-pointing double angle quote</source>
-        <translation type="unfinished"/>
+        <translation>virgolette a doppie angolo rivolte verso sinistra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="101"/>
         <source>right-pointing double angle quote</source>
-        <translation type="unfinished"/>
+        <translation>virgolette a doppie angolo rivolte verso destra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="102"/>
@@ -2112,17 +2112,17 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="103"/>
         <source>double quote</source>
-        <translation type="unfinished"/>
+        <translation>virgoletta doppia</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="104"/>
         <source>single low-9 quote</source>
-        <translation type="unfinished"/>
+        <translation>9-basso singolo per citazione</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="105"/>
         <source>double low-9 quote</source>
-        <translation type="unfinished"/>
+        <translation>doppio 9-basso per citazione</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="106"/>
@@ -2142,7 +2142,7 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="109"/>
         <source>pilcrow - paragraph sign</source>
-        <translation type="unfinished"/>
+        <translation>pilcrow - segno di paragrafo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="110"/>
@@ -2367,7 +2367,7 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="154"/>
         <source>capital AE</source>
-        <translation type="unfinished"/>
+        <translation>AE maiuscolo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="155"/>
@@ -2417,7 +2417,7 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="164"/>
         <source>capital eth</source>
-        <translation type="unfinished"/>
+        <translation>eth maiuscolo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="165"/>
@@ -2452,12 +2452,12 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="171"/>
         <source>capital O with stroke</source>
-        <translation type="unfinished"/>
+        <translation>O  maiuscola con tratto</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="172"/>
         <source>capital ligature OE</source>
-        <translation type="unfinished"/>
+        <translation>Lettera maiuscola OE</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="173"/>
@@ -2497,7 +2497,7 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="180"/>
         <source>capital THORN</source>
-        <translation type="unfinished"/>
+        <translation>THORN maiuscolo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="181"/>
@@ -2532,12 +2532,12 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="187"/>
         <source>small a with ring above</source>
-        <translation type="unfinished"/>
+        <translation>a con anello superiore  minuscola</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="188"/>
         <source>small ae</source>
-        <translation type="unfinished"/>
+        <translation>ae minuscola</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="189"/>
@@ -2587,7 +2587,7 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="198"/>
         <source>small eth</source>
-        <translation type="unfinished"/>
+        <translation>eth minuscolo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="199"/>
@@ -2622,17 +2622,17 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="205"/>
         <source>small o with stroke</source>
-        <translation type="unfinished"/>
+        <translation>o con tratto minuscola</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="206"/>
         <source>small ligature oe</source>
-        <translation type="unfinished"/>
+        <translation>legatura oe minuscola</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="207"/>
         <source>small s with caron</source>
-        <translation type="unfinished"/>
+        <translation>piccola s con caron</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="208"/>
@@ -2667,17 +2667,17 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="214"/>
         <source>small thorn</source>
-        <translation type="unfinished"/>
+        <translation>thorn minuscolo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="215"/>
         <source>feminine ordinal indicator</source>
-        <translation type="unfinished"/>
+        <translation>indicatore ordinale femminile</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="216"/>
         <source>masculine ordinal indicator</source>
-        <translation type="unfinished"/>
+        <translation>indicatore ordinale maschile</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="217"/>
@@ -2847,12 +2847,12 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="253"/>
         <source>Greek double prime</source>
-        <translation type="unfinished"/>
+        <translation>Numero primo doppio greco</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="254"/>
         <source>Greek single prime</source>
-        <translation type="unfinished"/>
+        <translation>Numero primo greco singolo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="255"/>
@@ -3032,7 +3032,7 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="293"/>
         <source>left right single arrow</source>
-        <translation type="unfinished"/>
+        <translation>singola freccia sinistra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="294"/>
@@ -3057,7 +3057,7 @@ Linea: %1 Colonna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="298"/>
         <source>double right arrow</source>
-        <translation type="unfinished"/>
+        <translation>doppia freccia destra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="299"/>

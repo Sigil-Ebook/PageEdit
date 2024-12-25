@@ -110,17 +110,17 @@ PageEditでデフォルトのフォントファミリが使用されます。</t
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>Dark Theme Style (Windows Only):</source>
-        <translation type="unfinished"/>
+        <translation>ダークテーマスタイル（Windows のみ）:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>
         <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
-        <translation type="unfinished"/>
+        <translation>Windowsのダークスタイルを使用する場合は、組み込みのQtダークスタイルではなく、クラシックなダークスタイルを使用します</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>Use Classic Dark Theme</source>
-        <translation type="unfinished"/>
+        <translation>クラシックなダークテーマを使用する</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="296"/>

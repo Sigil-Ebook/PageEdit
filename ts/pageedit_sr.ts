@@ -110,17 +110,17 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>Dark Theme Style (Windows Only):</source>
-        <translation type="unfinished"/>
+        <translation>Тема тамног стила (само Windows):</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>
         <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
-        <translation type="unfinished"/>
+        <translation>Када се користи Windows тамни стил, користи класични тамни стил уместо уграђеног Qt стила</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>Use Classic Dark Theme</source>
-        <translation type="unfinished"/>
+        <translation>Користи класичну тамну тему</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="296"/>
