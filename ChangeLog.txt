@@ -1,5 +1,13 @@
 Change Log
 ==========
+PageEdit-2.4.0
+
+   Bug Fixes
+     - update PageEdit startup code to use fixes from Qt6 ala Sigil
+
+   New Features
+     - Update to Qt 6.7.3
+
 PageEdit-2.3.1
   Bug Fixes
     - fix double pasting of xhtml/html content into PageEdit
