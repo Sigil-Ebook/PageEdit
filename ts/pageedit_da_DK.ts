@@ -600,17 +600,17 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="1053"/>
-        <location filename="../MainWindow.cpp" line="1147"/>
-        <location filename="../MainWindow.cpp" line="1811"/>
+        <location filename="../MainWindow.cpp" line="1048"/>
+        <location filename="../MainWindow.cpp" line="1142"/>
+        <location filename="../MainWindow.cpp" line="1805"/>
+        <location filename="../MainWindow.cpp" line="1818"/>
         <location filename="../MainWindow.cpp" line="1824"/>
-        <location filename="../MainWindow.cpp" line="1830"/>
-        <location filename="../MainWindow.cpp" line="1844"/>
+        <location filename="../MainWindow.cpp" line="1838"/>
+        <location filename="../MainWindow.cpp" line="1851"/>
         <location filename="../MainWindow.cpp" line="1857"/>
-        <location filename="../MainWindow.cpp" line="1863"/>
-        <location filename="../MainWindow.cpp" line="1871"/>
-        <location filename="../MainWindow.cpp" line="1926"/>
-        <location filename="../MainWindow.cpp" line="2001"/>
+        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1920"/>
+        <location filename="../MainWindow.cpp" line="1995"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1713,27 +1713,27 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
         <translation>Indsæt kodestykke 20</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="784"/>
+        <location filename="../MainWindow.cpp" line="779"/>
         <source>File load failed</source>
         <translation>Fejl ved indlæsning af fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="785"/>
+        <location filename="../MainWindow.cpp" line="780"/>
         <source>File Load Failed</source>
         <translation>Fejl ved indlæsning af fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="884"/>
+        <location filename="../MainWindow.cpp" line="879"/>
         <source>mode: Preview</source>
         <translation>tilstand: Forhåndsvisning</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="886"/>
+        <location filename="../MainWindow.cpp" line="881"/>
         <source>mode: Edit</source>
         <translation>tilstand: Rediger</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1053"/>
+        <location filename="../MainWindow.cpp" line="1048"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1742,174 +1742,174 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1148"/>
+        <location filename="../MainWindow.cpp" line="1143"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Vil du gemme dine ændringer, før du forlader programmet?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1167"/>
+        <location filename="../MainWindow.cpp" line="1162"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit lukker …</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1262"/>
-        <location filename="../MainWindow.cpp" line="1263"/>
-        <location filename="../MainWindow.cpp" line="1264"/>
-        <location filename="../MainWindow.cpp" line="1273"/>
-        <location filename="../MainWindow.cpp" line="1274"/>
-        <location filename="../MainWindow.cpp" line="1275"/>
+        <location filename="../MainWindow.cpp" line="1248"/>
+        <location filename="../MainWindow.cpp" line="1249"/>
+        <location filename="../MainWindow.cpp" line="1250"/>
+        <location filename="../MainWindow.cpp" line="1259"/>
+        <location filename="../MainWindow.cpp" line="1260"/>
+        <location filename="../MainWindow.cpp" line="1261"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML-filer (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1265"/>
+        <location filename="../MainWindow.cpp" line="1251"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF-filer (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1266"/>
+        <location filename="../MainWindow.cpp" line="1252"/>
         <source>All files (*.*)</source>
         <translation>Alle filer (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1505"/>
+        <location filename="../MainWindow.cpp" line="1491"/>
         <source>Save File</source>
         <translation>Gem fil</translation>
     </message>
     <message>
+        <location filename="../MainWindow.cpp" line="1526"/>
+        <location filename="../MainWindow.cpp" line="1527"/>
+        <location filename="../MainWindow.cpp" line="1539"/>
         <location filename="../MainWindow.cpp" line="1540"/>
-        <location filename="../MainWindow.cpp" line="1541"/>
-        <location filename="../MainWindow.cpp" line="1553"/>
-        <location filename="../MainWindow.cpp" line="1554"/>
         <source>File Save-As Failed!</source>
         <translation>Fil Gem som fejlede!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1540"/>
+        <location filename="../MainWindow.cpp" line="1526"/>
         <source>is not writeable</source>
         <translation>er ikke skrivbar</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1549"/>
-        <location filename="../MainWindow.cpp" line="1588"/>
+        <location filename="../MainWindow.cpp" line="1535"/>
+        <location filename="../MainWindow.cpp" line="1574"/>
         <source>File Saved</source>
         <translation>Filen er gemt</translation>
     </message>
     <message>
+        <location filename="../MainWindow.cpp" line="1565"/>
+        <location filename="../MainWindow.cpp" line="1567"/>
+        <location filename="../MainWindow.cpp" line="1578"/>
         <location filename="../MainWindow.cpp" line="1579"/>
-        <location filename="../MainWindow.cpp" line="1581"/>
-        <location filename="../MainWindow.cpp" line="1592"/>
-        <location filename="../MainWindow.cpp" line="1593"/>
         <source>File Save Failed!</source>
         <translation>Fil Gem som fejlede!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1580"/>
+        <location filename="../MainWindow.cpp" line="1566"/>
         <source>does not exist or is not writeable</source>
         <translation>findes ikke eller kan ikke overskrives</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1608"/>
+        <location filename="../MainWindow.cpp" line="1594"/>
         <source>Do not show this warning again</source>
         <translation>Vis ikke denne advarsel igen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1609"/>
+        <location filename="../MainWindow.cpp" line="1595"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Denne fil udskrives muligvis ikke som forventet.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1610"/>
+        <location filename="../MainWindow.cpp" line="1596"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Mørk baggrund og farvet tekst anvendt med en EPUB&apos;s CSS udskrives.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1611"/>
+        <location filename="../MainWindow.cpp" line="1597"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Vær forsigtig, da dette kan medføre, at der bruges meget blæk!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1612"/>
+        <location filename="../MainWindow.cpp" line="1598"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Brug følgende udskriftseksempel for at se, hvordan denne fil udskrives.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1613"/>
+        <location filename="../MainWindow.cpp" line="1599"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Marker afkrydsningsfeltet, hvis du ikke ønsker at se denne advarsel i fremtiden.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1685"/>
+        <location filename="../MainWindow.cpp" line="1679"/>
         <source>File Opened</source>
         <translation>Fil åbnet</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1689"/>
+        <location filename="../MainWindow.cpp" line="1683"/>
         <source>File Open Failed!</source>
         <translation>Fejl ved åbning af fil!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1740"/>
+        <location filename="../MainWindow.cpp" line="1734"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Klippebordet indeholder HTML formateret kode</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1741"/>
+        <location filename="../MainWindow.cpp" line="1735"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Vil du indsætte klippebords data som almindelig tekst?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1811"/>
+        <location filename="../MainWindow.cpp" line="1805"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Du skal vælge en tekst før du indsætter et nyt id.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1824"/>
+        <location filename="../MainWindow.cpp" line="1818"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID er ugyldigt - skal starte med et bogstav, efterfulgt af bogstav nummer _ : - eller .</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1830"/>
+        <location filename="../MainWindow.cpp" line="1824"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Du kan ikke indsætte et ID ved denne placering.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1844"/>
+        <location filename="../MainWindow.cpp" line="1838"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Du skal vælge en tekst før di indsætter et nyt link.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1857"/>
+        <location filename="../MainWindow.cpp" line="1851"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Link er ugyldig - kan ikke indeholde &apos;&lt;&apos; eller &apos;&gt;&apos;</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1863"/>
+        <location filename="../MainWindow.cpp" line="1857"/>
         <source>Error inserting external link target.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1871"/>
+        <location filename="../MainWindow.cpp" line="1865"/>
         <source>Error inserting a link at this position.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1882"/>
+        <location filename="../MainWindow.cpp" line="1876"/>
         <source>Insert File</source>
         <translation>Indsæt fil</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1926"/>
+        <location filename="../MainWindow.cpp" line="1920"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Du kan ikke indsætte en mediefil på denne placering.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2002"/>
+        <location filename="../MainWindow.cpp" line="1996"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Vil du gemme evt. ændringer, før du overskriver denne fil?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2054"/>
+        <location filename="../MainWindow.cpp" line="2048"/>
         <source>Pasted clip entry %1.</source>
         <translation>Indsat klipoptegnelse %1.</translation>
     </message>

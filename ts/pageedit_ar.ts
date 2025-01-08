@@ -1,176 +1,176 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ar">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Apparence</translation>
+        <translation>المظهر</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="25"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>محرر الصفحات</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="31"/>
         <location filename="../PAppearanceWidget.ui" line="319"/>
         <source>Fonts:</source>
-        <translation>Polices :</translation>
+        <translation>الخطوط:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>Si aucune police n&apos;est spécifiée dans le CSS de votre page, la police suivante sera utilisée pour s&apos;afficher dans PageEdit. Ces polices ne seront pas utilisées dans votre livre numérique actuel.</translation>
+        <translation>إذا لم يُحدّد خط في لوح الطُرُز CSS لصفحتك، فسيًستخدم الخط التالي للعَرض ضمن محرر الصفحات PageEdit. لن تُستخدم هذه الخطوط في كتابك الفعلي.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation>Taille de police par défaut à utiliser pour PageEdit
-si aucune taille de police n&apos;est spécifiée dans votre CSS</translation>
+        <translation>الحجم الافتراضي للخط ليُستخدم في محرر الصفحات PageEdit 
+إذا لم يُحدّد حجم خط في لوح الطُرُز CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
         <location filename="../PAppearanceWidget.ui" line="379"/>
         <source>Font Size:</source>
-        <translation>Taille de police :</translation>
+        <translation>حجم الخط:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation>Famille de polices par défaut à utiliser pour PageEdit
-si aucune famille de polices n&apos;est spécifiée dans votre CSS</translation>
+        <translation>عائلة الخط الافتراضية لتُستخدم في محرر الصفحات PageEdit 
+إذا لم تُحدّد عائلة خط في لوح الطُرُز CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
         <source>Standard:</source>
-        <translation>Standard :</translation>
+        <translation>القياسي:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation>Famille de polices par défaut à utiliser pour PageEdit
-si aucune famille de polices Serif n&apos;est spécifiée dans votre CSS</translation>
+        <translation>عائلة الخط الافتراضية لتُستخدم في محرر الصفحات PageEdit 
+إذا حُدّدت عائلة خط مذيّلة في لوح الطُرُز CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
         <source>Serif:</source>
-        <translation>Serif :</translation>
+        <translation>المذيّل:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation>Famille de polices par défaut à utiliser pour PageEdit
-si aucune famille de polices Sans-serif n&apos;est spécifiée dans votre CSS</translation>
+        <translation>عائلة الخط الافتراضية لتُستخدم في محرر الصفحات PageEdit 
+إذا حُدّدت عائلة خط مذيّلة في لوح الطُرُز CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
         <source>Sans-Serif:</source>
-        <translation>Sans-serif :</translation>
+        <translation>غير المذيّل:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="157"/>
         <source>Printer Output Appearance</source>
-        <translation>Apparence de la sortie de l&apos;imprimante</translation>
+        <translation>مظهر مخرجات الطابعة</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="163"/>
         <location filename="../PAppearanceWidget.ui" line="166"/>
         <source>Skip Print Preview</source>
-        <translation>Passer la prévisualisation d&apos;impression</translation>
+        <translation>تجاوز معاينة الطباعة</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="175"/>
         <source>Print DPI:</source>
-        <translation>DPI d&apos;impression :</translation>
+        <translation>دقة DPI الطباعة:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="204"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation>Faire en sorte que PageEdit simule une apparence sombre en mode sombre</translation>
+        <translation>اجعل محرر الصفحات يحاكي مظهراً داكناً في النمط الداكن</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="230"/>
         <source>Main UI</source>
-        <translation>UI principal</translation>
+        <translation>الواجهة الرسومية الرئيسية</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="236"/>
         <source>Main Menu Icon Size:</source>
-        <translation>Taille des icônes du menu principal :</translation>
+        <translation>حجم أيقونة القائمة الرئيسية:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="242"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Ajuster la taille des icônes dans le menu principal</translation>
+        <translation>ضبّط حجم الأيقونات في القائمة الرئيسية.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>Dark Theme Style (Windows Only):</source>
-        <translation>Style du thème sombre (Windows uniquement) :</translation>
+        <translation>طراز القالب الداكن (وندوز فقط):</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>
         <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
-        <translation>Lors de l&apos;utilisation d&apos;un style sombre Windows, utilisez le style sombre classique au lieu du style sombre intégré à Qt</translation>
+        <translation>عند استخدام طراز وندوز الداكن، استخدم الطراز الداكن التقليدي بدلا عن طراز كيوتي Qt المضمَّن</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>Use Classic Dark Theme</source>
-        <translation>Utiliser le thème sombre classique</translation>
+        <translation>استخدم القالب الداكن التقليدي</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="296"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation>(Nécessite le redémarrage de PageEdit)</translation>
+        <translation>(يحتاج إعادة تشغيل محرر الصفحات)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="325"/>
         <source>UI Font:</source>
-        <translation>Police UI :</translation>
+        <translation>خط واجهة المستخدم:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="335"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation>Changer la police utilisée par PageEdit pour les menus, boutons, etc. .</translation>
+        <translation>غيّر الخط الذي تستخدمه قوائم محرر الصفحات وأزراره وغيرها...</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="338"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation>Changer la Police (nécessite le redémarrage de PageEdit)</translation>
+        <translation>تغيير الخط (يحتاج إعادة تشغيل محرر الصفحات)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="362"/>
         <source>Insert Special Characters:</source>
-        <translation>Insérer un caractère spécial :</translation>
+        <translation>ادراج رموز خاصة:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="376"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Taille de police à utiliser pour la fenêtre d&apos;insertion de caractères spéciaux</translation>
+        <translation>حجم الخط الذي يًستخدم لنافذة إدراج الرموز الخاصة</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="409"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Famille de police à utiliser pour la fenêtre d&apos;insertion de caractères spéciaux</translation>
+        <translation>عائلة الخط التي ستُتخدم لنافذة إدراج الرموز الخاصة</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="412"/>
         <source>Standard Font:</source>
-        <translation>Police standard :</translation>
+        <translation>الخط الاساسي:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="479"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Remettre toutes les polices et les couleurs aux valeurs par défaut</translation>
+        <translation>تصفير كل الخطوط والألوان إلى القيم الإفتراضية</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="482"/>
         <source>Reset All</source>
-        <translation>Tout réinitialiser</translation>
+        <translation>اعادة تعيين الكل</translation>
     </message>
 </context>
 <context>
@@ -179,49 +179,49 @@ si aucune famille de polices Sans-serif n&apos;est spécifiée dans votre CSS</t
         <location filename="../ClipEditor.ui" line="14"/>
         <location filename="../ClipEditor.cpp" line="541"/>
         <source>Clip Editor</source>
-        <translation>Éditeur de Clips</translation>
+        <translation>محرر المقاطع</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="23"/>
         <source>Filter Name:</source>
-        <translation>Nom du filtre :</translation>
+        <translation>اسم عامل الفرز:</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="28"/>
         <source>Filter All:</source>
-        <translation>Filtrer tout :</translation>
+        <translation>افرز الكل:</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="36"/>
         <source>List only the entries containing the text you enter.</source>
-        <translation>Liste uniquement les entrées contenant le texte tapé. </translation>
+        <translation>فقط عَرض المُدخَلات التي تحتوي النص الذي أدخلته.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="65"/>
         <source>Paste the selected entry into the active window.</source>
-        <translation>Coller l&apos;entrée sélectionnée dans la fenêtre active.</translation>
+        <translation>لصق المُدخَل المحدد في النافذة النشطة.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="68"/>
         <source>Paste Clip</source>
-        <translation>Coller le Clip</translation>
+        <translation>لصق مقطع</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="91"/>
         <location filename="../ClipEditor.cpp" line="651"/>
         <source>Add Entry</source>
-        <translation>Ajouter une entrée</translation>
+        <translation>إضافة مُدخَل</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="98"/>
         <location filename="../ClipEditor.cpp" line="652"/>
         <source>Add Group</source>
-        <translation>Ajouter un groupe</translation>
+        <translation>إضافة مجموعة</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="123"/>
         <source>Move an entry up one entry in the same group.</source>
-        <translation>Déplacer une entrée au-dessus d&apos;une autre dans le même groupe.</translation>
+        <translation>انقل المُدخَل للأعلى بقدر مُدخَل واحد في نفس المجموعة.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="126"/>
@@ -229,189 +229,189 @@ si aucune famille de polices Sans-serif n&apos;est spécifiée dans votre CSS</t
         <location filename="../ClipEditor.ui" line="185"/>
         <location filename="../ClipEditor.ui" line="215"/>
         <source>...</source>
-        <translation>…</translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="153"/>
         <source>Move an entry to the level of its parent.</source>
-        <translation>Déplacer une entrée au niveau de son parent.</translation>
+        <translation>انقل المُدخَل إلى مستوى عنصره الأعلى.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="182"/>
         <source>You must select an item immediately under a group to move it into the group.</source>
-        <translation>Vous devez sélectionné un élément immédiatement au-dessous d&apos;un groupe pour être en mesure de le déplacer dans le groupe.</translation>
+        <translation>يجب أن تحدد عنصراً أسفل المجموعة مباشرة لتنقله الى المجموعة.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="212"/>
         <source>Move an entry down one in the group.</source>
-        <translation>Déplacer une entrée d&apos;un cran dans le groupe.</translation>
+        <translation>انقل المُدخَل للأسفل خطوة واحدة في المجموعة.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="75"/>
         <source>Right click on an entry to see a context menu of actions.</source>
-        <translation>Faites un clic droit sur ​​une entrée avec la souris pour afficher un menu contextuel.</translation>
+        <translation>انقر يميناً على مُدخَل لترى قائمة سياق بالإجراءات.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="76"/>
         <source>You can also right click in your document to select an entry.</source>
-        <translation>Vous pouvez également faire un clic droit dans votre document pour choisir une entrée.</translation>
+        <translation>يمكنك أيضاً أن تنقر يميناً في مستندك لتحدد مُدخَلاَ.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
         <source>Name</source>
-        <translation>Nom</translation>
+        <translation>الاسم</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
         <source>Name of your entry or group.</source>
-        <translation>Nom de l&apos;entrée ou du groupe.</translation>
+        <translation>اسم المُدخَل أو المجموعة.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
         <source>Text</source>
-        <translation>Texte</translation>
+        <translation>النص</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
         <source>The text to insert. The text is treated like a Regex replacement expression so \1 can be used to insert the text selected in Code View when you paste the clip.</source>
-        <translation>Le texte à insérer. Ce texte est utilisé comme une expression Regex de remplacement de sorte que \1 peut être utililsé pour insérer le texte sélectionné dans le mode d&apos;affichage Code lorsque vous collez le clip.</translation>
+        <translation>النص المراد إدراجه. يُعامَل النص كتعبير إستبدال نظامي Regex لذا يمكن استخدام ‎\1‏ لإدراج النص المحدد في معاينة الشفرة عندما تلصق المقطع.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <source>Save</source>
-        <translation>Enregistrer</translation>
+        <translation>حفظ</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <source>Save your changes.</source>
-        <translation>Enregistre vos changements.</translation>
+        <translation>حفظ التغييرات.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <source>If any other instances of Sigil are running they will be automatically updated with your changes.</source>
-        <translation>Si d&apos;autres instances de Sigil sont actives, elles seront mises à jour avec vos changements.</translation>
+        <translation>إذا وُجدَت نُسخ أخرى مشتغلة من سيغل فستُحدَّث تلقائياً بتغييراتك.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="93"/>
         <source>Cannot save entries.</source>
-        <translation>Impossible d&apos;enregistrer les entrées.</translation>
+        <translation>لا يمكن حفظ المُدخَلات.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="137"/>
         <source>Clip entries loaded from file.</source>
-        <translation>Les entrées Clip ont été chargées du fichier.</translation>
+        <translation>مُدخَلات مقاطع محمّلة من ملف.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="200"/>
         <source>You cannot select an entry and a group containing the entry.</source>
-        <translation>Impossible de choisir une entrée et un groupe contenant cette entrée.</translation>
+        <translation>لا يمكنك تحديد مُدخَل ومجموعة تحتوي المُدخَل.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="287"/>
         <source>You cannot Copy or Cut groups - use drag-and-drop.</source>
-        <translation>Impossible de copier ou de couper les groupes – utilisez la fonction glisser-déposer. </translation>
+        <translation>لا يمكنك نَسخ أو قصّ المجموعات - استخدم السحب-و-الإسقاط.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
         <source>Sigil</source>
-        <translation>Sigil</translation>
+        <translation>سيغل</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
         <source>Are you sure you want to reload all entries?  This will overwrite any unsaved changes.</source>
-        <translation>Voulez-vous vraiment recharger toutes les entrées ? Cela écrasera tous les changements qui n&apos;ont pas été sauvegardés. </translation>
+        <translation>أأنت متأكد أنك تريد إعادة تحميل المُدخَلات؟ سيؤدي هذا إلى الكتابة على أية تغييرات غير محفوظة.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="380"/>
         <source>Import Entries</source>
-        <translation>Importer des entrées</translation>
+        <translation>استورد مُدخَلات</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="460"/>
         <source>Export Selected Entries</source>
-        <translation>Exporter les entrées sélectionnées</translation>
+        <translation>تصدير المُدخَلات المحددة</translation>
     </message>
     <message numerus="yes">
         <location filename="../ClipEditor.cpp" line="541"/>
         <source>CSS entries added: %n</source>
-        <translation><numerusform>Entrées CSS ajouté : %n</numerusform><numerusform>Entrées CSS ajouté : %n</numerusform><numerusform>Entrées CSS ajouté : %n</numerusform></translation>
+        <translation><numerusform>مُدخَلات ألواح الطُرُز المضافة: %n</numerusform><numerusform>مُدخَلات ألواح الطُرُز المضافة: %n</numerusform><numerusform>مُدخَلات ألواح الطُرُز المضافة: %n</numerusform><numerusform>مُدخَلات ألواح الطُرُز المضافة: %n</numerusform><numerusform>مُدخَلات ألواح الطُرُز المضافة: %n</numerusform><numerusform>مُدخَلات ألواح الطُرُز المضافة: %n</numerusform></translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="653"/>
         <source>Edit</source>
-        <translation>Édition</translation>
+        <translation>تحرير</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="654"/>
         <source>Cut</source>
-        <translation>Couper</translation>
+        <translation>قص</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="655"/>
         <source>Copy</source>
-        <translation>Copier</translation>
+        <translation>نسخ</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="656"/>
         <source>Paste</source>
-        <translation>Coller</translation>
+        <translation>لصق</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="657"/>
         <source>Delete</source>
-        <translation>Supprimer</translation>
+        <translation>حذف</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="658"/>
         <source>Import</source>
-        <translation>Importer</translation>
+        <translation>استيراد</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="659"/>
         <source>Reload</source>
-        <translation>Recharger</translation>
+        <translation>اعادة تحميل</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="660"/>
         <source>Export</source>
-        <translation>Exporter</translation>
+        <translation>تصدير</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="661"/>
         <source>Export All</source>
-        <translation>Exporter tout</translation>
+        <translation>تصدير الكل</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="662"/>
         <source>Collapse All</source>
-        <translation>Réduire tout</translation>
+        <translation>طيّ الكل</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="663"/>
         <source>Expand All</source>
-        <translation>Dévelloper tout</translation>
+        <translation>توسيع الكل</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="664"/>
         <source>Autofill</source>
-        <translation>Remplissage automatique</translation>
+        <translation>ملء تلقائي</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="746"/>
         <source>Clip entries saved.</source>
-        <translation>Les entrées Clip ont été enregistrées.</translation>
+        <translation>حُفظت مُدخَلات المقطع.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="775"/>
         <source>Sigil: Clip Editor</source>
-        <translation>Éditeur de Clips</translation>
+        <translation>سيغل: محرر المقاطع</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="776"/>
         <source>The Clip entries may have been modified.
 Do you want to save your changes?</source>
-        <translation>Il est possible que les entrées Clip aient été modifiées.
-Voulez-vous enregistrer les changements ?</translation>
+        <translation>ربما عُدّلت مُدخَلات المقطع.
+أتريد حفظ التغييرات؟</translation>
     </message>
 </context>
 <context>
@@ -419,17 +419,17 @@ Voulez-vous enregistrer les changements ?</translation>
     <message>
         <location filename="../ClipEditorModel.cpp" line="67"/>
         <source>Name</source>
-        <translation>Nom</translation>
+        <translation>الاسم</translation>
     </message>
     <message>
         <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Text</source>
-        <translation>Texte</translation>
+        <translation>النص</translation>
     </message>
     <message>
         <location filename="../ClipEditorModel.cpp" line="664"/>
         <source>Unable to create file %1</source>
-        <translation>Impossible de créer le fichier %1</translation>
+        <translation>لا يمكن إنشاء الملف %1</translation>
     </message>
 </context>
 <context>
@@ -437,17 +437,17 @@ Voulez-vous enregistrer les changements ?</translation>
     <message>
         <location filename="../ClipsWindow.cpp" line="37"/>
         <source>Clips</source>
-        <translation>Clips</translation>
+        <translation>مقاطع</translation>
     </message>
     <message>
         <location filename="../ClipsWindow.cpp" line="102"/>
         <source>Collapse All</source>
-        <translation>Réduire tout</translation>
+        <translation>طيّ الكل</translation>
     </message>
     <message>
         <location filename="../ClipsWindow.cpp" line="103"/>
         <source>Expand All</source>
-        <translation>Dévelloper tout</translation>
+        <translation>توسيع الكل</translation>
     </message>
 </context>
 <context>
@@ -455,137 +455,137 @@ Voulez-vous enregistrer les changements ?</translation>
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>Paramètres généraux</translation>
+        <translation>الاعدادات العامة</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>Vous devez redémarrer PageEdit après avoir changé la langue de l&apos;interface utilisateur.
+        <translation>يجب أن تعيد تشغيل محرر الصفحات بعد تغيير لغة واجهة المستخدم.
 
-Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponible, elle sera affichée en anglais.</translation>
+إذا لم تتوفر ترجمة لكلمة أو عبارة معيَّنة فستُعرَض بالانكليزية.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>Langue de l&apos;interface utilisateur :</translation>
+        <translation>لغة واجهة المستخدم:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Sélectionner des dictionnaires d&apos;orthographe installés</translation>
+        <translation>اختر من بين قواميس التدقيق الإملائي المثبَّتة.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Dictionnaire de vérification d&apos;orthographe</translation>
+        <translation>قاموس التدقيق الإملائي:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Déterminez si les fichiers HTML sont autorisés à accéder aux ressources distantes non multimédias.</translation>
+        <translation>قرّر فيما لو يُسمَح لملفات html بالدخول إلى موارد بعيدة ليست بوسائط.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation>Contrôler l&apos;accès des fichiers HTML aux ressources distantes non multimédias.</translation>
+        <translation> تحكّم بدخول ملفات html إلى موارد بعيدة ليست بوسائط.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Cochez cette case pour permettre aux fichiers HTML d&apos;accéder aux ressources distantes non multimédias.</translation>
+        <translation>أشّر لتسمح بدخول ملفات html إلى موارد بعيدة ليست بوسائط.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Les fichiers HTML peuvent accéder à tous les types de ressources distantes.</translation>
+        <translation>يمكن لملفات html الدخول الى كل أنواع الموارد البعيدة.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Déterminer si JavaScript peut être utilisé par les fichiers HTML</translation>
+        <translation>قرر فيما لو يُسمَح لملفات html باستخدام جافاسكربت</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation>Contrôle de l&apos;utilisation de JavaScript par les fichiers HTML.</translation>
+        <translation> تحكّم باستخدام ملفات html لجافاسكربت.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Cochez cette case pour permettre aux fichiers HTML d&apos;utiliser JavaScript.</translation>
+        <translation>أشّر لتسمح لملفات html باستخدام جافاسكربت.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Les fichiers HTML peuvent utiliser JavaScript.</translation>
+        <translation>يمكن لملفات html استخدام جافاسكربت.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Choisissez la façon dont vous souhaitez que PageEdit gère l&apos;utilisation de plusieurs espaces blancs pendant l&apos;édition.</translation>
+        <translation>اختر كيف سيتولّى محرر الصفحات استخدام رموز الفراغات البيضاء المتعددة خلال التحرير.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Gérer la disposition de plusieurs espaces blancs à l&apos;aide de :</translation>
+        <translation>تعامل مع مخطط الفراغات البيضاء المتعددة مستخدماً:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Utiliser l&apos;espace blanc CSS : pre-wrap</translation>
+        <translation>استخدم خاصية الطُرُز white-space: pre-wrap</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
         <source>css white-space: pre-wrap</source>
-        <translation>CSS white-space: pre-wrap</translation>
+        <translation>خاصية الطُرُز white-space: pre-wrap</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Utilisez des espaces incassables au besoin.</translation>
+        <translation>استخدم الفراغات غير الفاصلة بقدر ما تحتاج</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>espaces incassables selon les besoins</translation>
+        <translation>الفراغات غير الفاصلة بقدر ما تحتاج</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Déterminez si Prettify est utilisé lors de l&apos;enregistrement.</translation>
+        <translation>قرر إن كان Prettify سيُستخدَم عند الحفظ</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation>Utilisez Prettify pour reformater le XHTML lors de l&apos;enregistrement.</translation>
+        <translation> استخدم Prettify لإعادة صياغة xhtml عند الحفظ.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Cochez cette case pour reformater avec Prettify lors de l&apos;enregistrement de fichiers XHTML.</translation>
+        <translation>أشّر لإعادة الصياغة بـ Prettify عند حفظ ملفات xhtml .</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Utilisez Prettify pour reformater XHTML lors de l&apos;enregistrement.</translation>
+        <translation>استخدم Prettify لإعادة صياغة xhtml عند الحفظ.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="300"/>
         <source>Disable GPU Acceleration in PageEdit/QtWebEngine</source>
-        <translation>Désactiver l&apos;accélération du GPU dans PageEdit/QtWebEngine.</translation>
+        <translation>عطّل تسريع وحدة معالجة الرسوم في محرر الصفحات\محرك وب كيوتي QtWebEngine</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="303"/>
         <source> Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
-        <translation>Désactiver l&apos;accélération du GPU dans PageEdit/QtWebEngine.</translation>
+        <translation> عطّل تسريع وحدة معالجة الرسوم في محرر الصفحات\محرك وب كيوتي QtWebEngine.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="318"/>
         <location filename="../PGeneralSettings.ui" line="321"/>
         <source>Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
-        <translation>Désactiver l&apos;accélération du GPU dans PageEdit/QtWebEngine.</translation>
+        <translation>عطّل تسريع وحدة معالجة الرسوم في محرر الصفحات\محرك وب كيوتي QtWebEngine.</translation>
     </message>
 </context>
 <context>
@@ -593,7 +593,7 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../Inspector.cpp" line="76"/>
         <source>Inspect Page or Element</source>
-        <translation>Inspecter la Page ou un Élément</translation>
+        <translation>تفحّص صفحة أو عنصراً</translation>
     </message>
 </context>
 <context>
@@ -612,560 +612,560 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../MainWindow.cpp" line="1920"/>
         <location filename="../MainWindow.cpp" line="1995"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>محرر الصفحات</translation>
     </message>
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;Fichier</translation>
+        <translation>&amp;م‍لف</translation>
     </message>
     <message>
         <location filename="../main.ui" line="75"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Édition</translation>
+        <translation>&amp;ت‍حرير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="88"/>
         <source>&amp;Find</source>
-        <translation>&amp;Chercher</translation>
+        <translation>إي‍&amp;ج‍اد</translation>
     </message>
     <message>
         <location filename="../main.ui" line="95"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Insérer</translation>
+        <translation>إد&amp;راج</translation>
     </message>
     <message>
         <location filename="../main.ui" line="110"/>
         <source>For&amp;mat</source>
-        <translation>For&amp;mat</translation>
+        <translation>تنسي&amp;ق</translation>
     </message>
     <message>
         <location filename="../main.ui" line="115"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Rubrique</translation>
+        <translation>تروي&amp;س</translation>
     </message>
     <message>
         <location filename="../main.ui" line="130"/>
         <source>C&amp;hange Case</source>
-        <translation>Chan&amp;ger la casse</translation>
+        <translation>تغيير &amp;حالة الحروف</translation>
     </message>
     <message>
         <location filename="../main.ui" line="160"/>
         <source>&amp;View</source>
-        <translation>&amp;Affichage</translation>
+        <translation>&amp;ع‍رض</translation>
     </message>
     <message>
         <location filename="../main.ui" line="169"/>
         <source>Inspector</source>
-        <translation>Inspecteur</translation>
+        <translation>المتفحّص</translation>
     </message>
     <message>
         <location filename="../main.ui" line="176"/>
         <location filename="../main.ui" line="1144"/>
         <source>Clips</source>
-        <translation>Clips</translation>
+        <translation>مقاطع</translation>
     </message>
     <message>
         <location filename="../main.ui" line="195"/>
         <source>File</source>
-        <translation>Fichier</translation>
+        <translation>ملف</translation>
     </message>
     <message>
         <location filename="../main.ui" line="209"/>
         <source>Edit</source>
-        <translation>Édition</translation>
+        <translation>تحرير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="227"/>
         <location filename="../main.ui" line="1241"/>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation>النمط</translation>
     </message>
     <message>
         <location filename="../main.ui" line="240"/>
         <source>Insert</source>
-        <translation>Insérer</translation>
+        <translation>إدراج</translation>
     </message>
     <message>
         <location filename="../main.ui" line="259"/>
         <source>Inspect</source>
-        <translation>Inspecter</translation>
+        <translation>تفحّص</translation>
     </message>
     <message>
         <location filename="../main.ui" line="272"/>
         <source>Clip Bar</source>
-        <translation>Barre d&apos;outils Clip 1</translation>
+        <translation>شريط المقاطع</translation>
     </message>
     <message>
         <location filename="../main.ui" line="304"/>
         <location filename="../main.ui" line="1184"/>
         <source>Find</source>
-        <translation>Chercher</translation>
+        <translation>إيجاد</translation>
     </message>
     <message>
         <location filename="../main.ui" line="317"/>
         <source>Heading</source>
-        <translation>Titre</translation>
+        <translation>الترويس</translation>
     </message>
     <message>
         <location filename="../main.ui" line="331"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>Définir le niveau d&apos;en-tête du texte sélectionné</translation>
+        <translation>عيّن مستوى الترويس للنصّ المحدد</translation>
     </message>
     <message>
         <location filename="../main.ui" line="345"/>
         <source>Change Case</source>
-        <translation>Changer la casse</translation>
+        <translation>تغيير حالة الحروف</translation>
     </message>
     <message>
         <location filename="../main.ui" line="361"/>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation>تنسيق</translation>
     </message>
     <message>
         <location filename="../main.ui" line="379"/>
         <source>Align</source>
-        <translation>Alignement</translation>
+        <translation>محاذاة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="395"/>
         <source>Indent</source>
-        <translation>Retrait</translation>
+        <translation>البادئة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="409"/>
         <source>Navigate</source>
-        <translation>Naviguer</translation>
+        <translation>تنقّل</translation>
     </message>
     <message>
         <location filename="../main.ui" line="419"/>
         <source>Navigation List</source>
-        <translation>Liste de navigation</translation>
+        <translation>لائحة التنقّل</translation>
     </message>
     <message>
         <location filename="../main.ui" line="435"/>
         <source>&amp;Save</source>
-        <translation>&amp;Enregistrer</translation>
+        <translation>&amp;ح‍فظ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="438"/>
         <source>Save the current file.</source>
-        <translation>Sauvegarder le fichier actuel.</translation>
+        <translation>احفظ الملف الحالي.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="441"/>
         <source>Ctrl+S</source>
-        <translation>Ctrl+S</translation>
+        <translation>تحكم+ح</translation>
     </message>
     <message>
         <location filename="../main.ui" line="451"/>
         <source>&amp;Print</source>
-        <translation>&amp;Imprimer</translation>
+        <translation>ا&amp;طبع</translation>
     </message>
     <message>
         <location filename="../main.ui" line="454"/>
         <source>Print the current Page.</source>
-        <translation>Imprimer la page actuel.</translation>
+        <translation>اطبع الصفحة الحالية.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="457"/>
         <source>Ctrl+P</source>
-        <translation>Ctrl+P</translation>
+        <translation>تحكم+ط</translation>
     </message>
     <message>
         <location filename="../main.ui" line="463"/>
         <source>Save &amp;As...</source>
-        <translation>Enregistrer &amp;sous…</translation>
+        <translation>حفظ &amp;ب‍إسم...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="466"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Sauvegarder le fichier actuel sous un nom différent.</translation>
+        <translation>احفظ الملف الحالي بإسم ملف مختلف.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="469"/>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl+Maj+S</translation>
+        <translation>تحكم+تبديل+ح</translation>
     </message>
     <message>
         <location filename="../main.ui" line="479"/>
         <source>Cu&amp;t</source>
-        <translation>Cou&amp;per</translation>
+        <translation>ق&amp;ص</translation>
     </message>
     <message>
         <location filename="../main.ui" line="482"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Couper le texte sélectionné et le mettre dans le presse-papier.</translation>
+        <translation>يقصّ النص المحدد من المستند ويضعه في الحافظة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="492"/>
         <source>&amp;Paste</source>
-        <translation>Co&amp;ller</translation>
+        <translation>&amp;ل‍صق</translation>
     </message>
     <message>
         <location filename="../main.ui" line="495"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Colle le contenue du presse-papier dans le fichier.</translation>
+        <translation>ألصق المحتوى من الحافظة إلى الملف.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="505"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Annuler</translation>
+        <translation>&amp;اعادة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="508"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Annule les modifications de l&apos;opération précédente.</translation>
+        <translation>اعكس تغييرات العملية الأخيرة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="511"/>
         <source>Ctrl+Z</source>
-        <translation>Ctrl+Z</translation>
+        <translation>تحكم+ت</translation>
     </message>
     <message>
         <location filename="../main.ui" line="521"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Rétablir</translation>
+        <translation>&amp;ت‍كرار</translation>
     </message>
     <message>
         <location filename="../main.ui" line="524"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Restaure les modifications annulées par l&apos;action « Annuler » précédente.</translation>
+        <translation>استعد التغييرات المعكوسة بعملية التراجع السابقة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="527"/>
         <source>Ctrl+Y</source>
-        <translation>Ctrl+Y</translation>
+        <translation>تحكم+ك</translation>
     </message>
     <message>
         <location filename="../main.ui" line="537"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Copier</translation>
+        <translation>&amp;ن‍سخ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="540"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Copier le texte sélectionné et le mettre dans le presse-papier.</translation>
+        <translation>انسخ النص المحدد وضعه في الحافظة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="553"/>
         <source>Align &amp;Left</source>
-        <translation>Aligner à &amp;gauche</translation>
+        <translation>محاذاة يسا&amp;را</translation>
     </message>
     <message>
         <location filename="../main.ui" line="556"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Aligne le paragraphe sur la gauche.</translation>
+        <translation>محاذاة المقطع إلى اليسار.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="570"/>
         <source>Align &amp;Right</source>
-        <translation>Aligner à &amp;droite</translation>
+        <translation>محاذاة &amp;ي‍مينا</translation>
     </message>
     <message>
         <location filename="../main.ui" line="573"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Aligne le paragraphe sur la droite.</translation>
+        <translation>محاذاة المقطع إلى اليمين.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="586"/>
         <source>&amp;Center</source>
-        <translation>&amp;Centrer</translation>
+        <translation>&amp;توسيط</translation>
     </message>
     <message>
         <location filename="../main.ui" line="589"/>
         <source>Center the paragraph.</source>
-        <translation>Centre le paragraphe.</translation>
+        <translation>توسيط المقطع.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="592"/>
         <source>Ctrl+E</source>
-        <translation>Ctrl+E</translation>
+        <translation>تحكم+و</translation>
     </message>
     <message>
         <location filename="../main.ui" line="605"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Justifier</translation>
+        <translation>&amp;ضبط المحاذاة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="608"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Aligne le paragraphe sur les marges gauche et droite.</translation>
+        <translation>محاذاة المقطع إلى كل من الحواشي اليسرى واليمنى.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="611"/>
         <source>Ctrl+J</source>
-        <translation>Ctrl+J</translation>
+        <translation>تحكم+ض</translation>
     </message>
     <message>
         <location filename="../main.ui" line="624"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Gras</translation>
+        <translation>&amp;ث‍خين</translation>
     </message>
     <message>
         <location filename="../main.ui" line="627"/>
         <source>Make the selected text bold.</source>
-        <translation>Mettre le texte sélectionné en gras.</translation>
+        <translation>اجعل النص المحدد غامقاً..</translation>
     </message>
     <message>
         <location filename="../main.ui" line="630"/>
         <source>Ctrl+B</source>
-        <translation>Ctrl+B</translation>
+        <translation>تحكم+ث</translation>
     </message>
     <message>
         <location filename="../main.ui" line="643"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Italique</translation>
+        <translation>&amp;م‍ائل</translation>
     </message>
     <message>
         <location filename="../main.ui" line="646"/>
         <source>Make the selected text italic.</source>
-        <translation>Mettre le texte sélectionné en italique.</translation>
+        <translation>اجعل النص المحدد مائلاً.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="649"/>
         <source>Ctrl+I</source>
-        <translation>Ctrl+I</translation>
+        <translation>تحكم+م</translation>
     </message>
     <message>
         <location filename="../main.ui" line="659"/>
         <source>&amp;Open...</source>
-        <translation>&amp;Ouvrir…</translation>
+        <translation>&amp;ف‍تح...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="662"/>
         <source>Open a file from disk.</source>
-        <translation>Ouvrir un fichier sur le disque.</translation>
+        <translation>افتح ملفا من القرص.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="665"/>
         <source>Ctrl+O</source>
-        <translation>Ctrl+O</translation>
+        <translation>تحكم+ف</translation>
     </message>
     <message>
         <location filename="../main.ui" line="678"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Souligner</translation>
+        <translation>&amp;تحته خط</translation>
     </message>
     <message>
         <location filename="../main.ui" line="681"/>
         <source>Underline the selected text.</source>
-        <translation>Souligner le texte sélectionné.</translation>
+        <translation>ضع خطا تحت النص المحدد.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
         <source>Ctrl+U</source>
-        <translation>Ctrl+U</translation>
+        <translation>تحكم+خ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="694"/>
         <source>&amp;Lowercase</source>
-        <translation>Mi&amp;nuscules</translation>
+        <translation>حروف &amp;صغيرة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
         <source>Set selected text to lowercase.</source>
-        <translation>Mettre le texte sélectionné en minuscules.</translation>
+        <translation>اجعل النص المحدد بحروف صغيرة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="700"/>
         <source>Ctrl+Alt+L</source>
-        <translation>Ctrl+Alt+L</translation>
+        <translation>تحكم+تبديل+غ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="710"/>
         <source>&amp;Uppercase</source>
-        <translation>&amp;Majuscules</translation>
+        <translation>حروف &amp;كبيرة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="713"/>
         <source>Set selected text to uppercase.</source>
-        <translation>Mettre le texte sélectionné en majuscules.</translation>
+        <translation>اجعل النص المحدد بحروف كبيرة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="716"/>
         <source>Ctrl+Alt+U</source>
-        <translation>Ctrl+Alt+U</translation>
+        <translation>تحكم+تبديل+ك</translation>
     </message>
     <message>
         <location filename="../main.ui" line="726"/>
         <source>&amp;Titlecase</source>
-        <translation>Majuscule à &amp;chaque mot</translation>
+        <translation>حالة &amp;عنوان</translation>
     </message>
     <message>
         <location filename="../main.ui" line="729"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation>Mettre en majuscule la première lettre de chaque mot sélectionné.</translation>
+        <translation>اجعل الحرف الأول من كلمة محددة كبيرا.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="739"/>
         <source>&amp;Capitalize</source>
-        <translation>Majuscule &amp;initiale</translation>
+        <translation>ال‍&amp;بدأ كبيرا</translation>
     </message>
     <message>
         <location filename="../main.ui" line="742"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation>Mettre en majuscule uniquement la première lettre du texte sélectionné.</translation>
+        <translation>اجعل الحرف الأول فقط من النص المحدد كبيرا.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="752"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Quitter</translation>
+        <translation>&amp;اغلاق</translation>
     </message>
     <message>
         <location filename="../main.ui" line="755"/>
         <source>Quit</source>
-        <translation>Quitter</translation>
+        <translation>إنهاء</translation>
     </message>
     <message>
         <location filename="../main.ui" line="758"/>
         <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
+        <translation>تحكم+غ</translation>
     </message>
     <message>
         <location filename="../main.ui" line="768"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Caractère spécial…</translation>
+        <translation>&amp;م‍حارف خاصة...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="771"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Sélectionnez un caractère à insérer dans le texte.</translation>
+        <translation>حدد رمزا لإدراجه في النص.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="784"/>
         <source>&amp;Numbered List</source>
-        <translation>Liste &amp;numérotée</translation>
+        <translation>لائحة مر&amp;قمة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="787"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Créer une liste numérotée a partir de la sélection.</translation>
+        <translation>أنشيء قائمة مرقمة من التحديد.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="800"/>
         <source>Bulle&amp;ted List</source>
-        <translation>Liste à &amp;puces</translation>
+        <translation>لائحة برمو&amp;ز</translation>
     </message>
     <message>
         <location filename="../main.ui" line="803"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Créer une liste à puces a partir de la sélection.</translation>
+        <translation>أنشيء قائمة برموز من التحديد.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="806"/>
         <source>Ctrl+Shift+L</source>
-        <translation>Ctrl+Shift+L</translation>
+        <translation>تحكم+تحويل+ق</translation>
     </message>
     <message>
         <location filename="../main.ui" line="819"/>
         <source>Stri&amp;kethrough</source>
-        <translation>&amp;Barré</translation>
+        <translation>يتوس‍&amp;ط‍ه خط</translation>
     </message>
     <message>
         <location filename="../main.ui" line="822"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Tracez une ligne en travers du texte sélectionné.</translation>
+        <translation>ارسم خطاً عبر النص المحدد.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="835"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Indice</translation>
+        <translation>نص &amp;سفلي</translation>
     </message>
     <message>
         <location filename="../main.ui" line="838"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Définir le texte sélectionné comme légèrement plus petit et en-dessous de la ligne normale.</translation>
+        <translation>اجعل النص المحدد أصغر بقليل وأسفل من السطر الاعتيادي.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="851"/>
         <source>Su&amp;perscript</source>
-        <translation>&amp;Exposant</translation>
+        <translation>نص &amp;علوي</translation>
     </message>
     <message>
         <location filename="../main.ui" line="854"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Définir le texte sélectionné comme légèrement plus petit et au-dessus de la ligne normale.</translation>
+        <translation>اجعل النص المحدد أصغر بقليل وأعلى من السطر الاعتيادي.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="865"/>
         <source>Zoom &amp;In</source>
-        <translation>Zoom a&amp;vant</translation>
+        <translation>&amp;ت‍كبير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="868"/>
         <source>Zoom In</source>
-        <translation>Zoom avant</translation>
+        <translation>تكبير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="871"/>
         <source>Ctrl+=</source>
-        <translation>Ctrl+=</translation>
+        <translation>تحكم+=</translation>
     </message>
     <message>
         <location filename="../main.ui" line="882"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zoom a&amp;rrière</translation>
+        <translation>ت‍&amp;ص‍غير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="885"/>
         <source>Zoom Out</source>
-        <translation>Zoom arrière</translation>
+        <translation>تصغير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="888"/>
         <source>Ctrl+-</source>
-        <translation>Ctrl+-</translation>
+        <translation>تحكم+-</translation>
     </message>
     <message>
         <location filename="../main.ui" line="899"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>Au&amp;gmenter le retrait</translation>
+        <translation>&amp;زيادة البادئة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="902"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Augmenter le niveau d’indentation du paragraphe.</translation>
+        <translation>زيادة مستوى البادئة للمقطع.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="905"/>
         <source>Ctrl+Alt+M</source>
-        <translation>Ctrl+Alt+M</translation>
+        <translation>تحكم+تبديل+ص</translation>
     </message>
     <message>
         <location filename="../main.ui" line="915"/>
         <source>&amp;Decrease Indent</source>
-        <translation>Di&amp;minuer le retrait</translation>
+        <translation>إ&amp;ن‍قاص البادئة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="918"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Diminuer le niveau d’indentation du paragraphe.</translation>
+        <translation>إنقاص مستوى البادئة للمقطع.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="921"/>
         <source>Ctrl+Shift+M</source>
-        <translation>Ctrl+Shift+M</translation>
+        <translation>تحكم+تحويل+ص</translation>
     </message>
     <message>
         <location filename="../main.ui" line="931"/>
         <source>Split &amp;Marker</source>
-        <translation>&amp;Marqueur de séparation</translation>
+        <translation>إ&amp;ش‍ارة تقسيم</translation>
     </message>
     <message>
         <location filename="../main.ui" line="934"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Insérer un marqueur de subdivision de Sigil</translation>
+        <translation>إدراج علامة سيغل لتقسيم الملف</translation>
     </message>
     <message>
         <location filename="../main.ui" line="937"/>
         <source>Ctrl+Shift+Return</source>
-        <translation>Ctrl+Maj+Retour</translation>
+        <translation>تحكم+تحويل+رجوع</translation>
     </message>
     <message>
         <location filename="../main.ui" line="943"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Préférences…</translation>
+        <translation>&amp;التفضيلات…</translation>
     </message>
     <message>
         <location filename="../main.ui" line="946"/>
@@ -1175,581 +1175,581 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../main.ui" line="952"/>
         <source>&amp;Zoom Reset</source>
-        <translation>Réinitialisation du &amp;zoom</translation>
+        <translation>تص‍‌&amp;فير التكبير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="955"/>
         <source>Zoom Reset</source>
-        <translation>Réinitialiser Zoom</translation>
+        <translation>تصفير التكبير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="958"/>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation>تجكم+0</translation>
     </message>
     <message>
         <location filename="../main.ui" line="971"/>
         <source>Heading &amp;1</source>
-        <translation>Titre &amp;1</translation>
+        <translation>ترويس &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="974"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 1.</translation>
+        <translation>صِغ المقطع بشكل ترويس مستوى 1.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="977"/>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation>تجكم+1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="990"/>
         <source>Heading &amp;2</source>
-        <translation>Titre &amp;2</translation>
+        <translation>ترويس &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="993"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 2.</translation>
+        <translation>صِغ المقطع بشكل ترويس مستوى 2.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="996"/>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation>تجكم+2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1009"/>
         <source>Heading &amp;3</source>
-        <translation>Titre &amp;3</translation>
+        <translation>ترويس &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1012"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 3.</translation>
+        <translation>صِغ المقطع بشكل ترويس مستوى 3.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1015"/>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation>تجكم+3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1029"/>
         <source>Heading &amp;4</source>
-        <translation>Titre &amp;4</translation>
+        <translation>ترويس &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1032"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 4.</translation>
+        <translation>صِغ المقطع بشكل ترويس مستوى 4.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1035"/>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation>تجكم+4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1048"/>
         <source>Heading &amp;5</source>
-        <translation>Titre &amp;5</translation>
+        <translation>ترويس &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1051"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 5.</translation>
+        <translation>صِغ المقطع بشكل ترويس مستوى 5.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1054"/>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation>تجكم+5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1067"/>
         <source>Heading &amp;6</source>
-        <translation>Titre &amp;6</translation>
+        <translation>ترويس &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1070"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Formater le paragraphe comme un en-tête de niveau 6.</translation>
+        <translation>صِغ المقطع بشكل ترويس مستوى 6.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1073"/>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation>تجكم+6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1087"/>
         <source>&amp;Normal</source>
-        <translation>&amp;Normal</translation>
+        <translation>&amp;ع‍ادي</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1090"/>
         <source>Format paragraph as a normal paragraph.</source>
-        <translation>Formater le paragraphe comme un paragraphe normal.</translation>
+        <translation>نسّق المقطع كمقطع اعتيادي.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1093"/>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation>تجكم+7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1103"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Préserver les attributs existants</translation>
+        <translation>الاحتفا&amp;ظ بالسمات الحالية</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1106"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>Lors de l&apos;application de ce style, conserver tous les attributs dans la balise</translation>
+        <translation>عند تطبيق هذا الطراز، حافظ على أية سِمات موجودة في الوسم</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1116"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Sélectionner tout</translation>
+        <translation>تح‍&amp;ديد الكل</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1119"/>
         <source>Select all text in the document.</source>
-        <translation>Sélectionne tout le texte du document.</translation>
+        <translation>حدد كل النص في المستند.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1122"/>
         <source>Ctrl+A</source>
-        <translation>Ctrl+A</translation>
+        <translation>تحكم+ل</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1132"/>
         <source>&amp;Inspector</source>
-        <translation>&amp;Inspecteur</translation>
+        <translation>المت‍&amp;ف‍حص</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1135"/>
         <source>Inspect the page.</source>
-        <translation>Inspecter la page</translation>
+        <translation>تفحّص الصفحة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1138"/>
         <source>Ctrl+F5</source>
-        <translation>Ctrl+F5</translation>
+        <translation>تحكم+F5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1147"/>
         <source>Apply clips to page.</source>
-        <translation>Appliquer les clips à la page.</translation>
+        <translation>طبّق المقاطع على الصفحة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1156"/>
         <source>ClipEditor ...</source>
-        <translation>Editeur de Clip …</translation>
+        <translation>محرر المقاطع ...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1159"/>
         <source>Edit and Create Clips.</source>
-        <translation>Modifier et créer des clips.</translation>
+        <translation>حرر وأضف المقاطع.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1162"/>
         <source>Ctrl+Alt+C</source>
-        <translation>Ctrl+Alt+C</translation>
+        <translation>تحكم+تبديل+ا</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1168"/>
         <source>ClipBar Show/Hide</source>
-        <translation>Afficher/Masquer la barre de Clip</translation>
+        <translation>أظهر\أخقِ شريط المقاطع</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1171"/>
         <source>Show and Hide the Clip Toolbar.</source>
-        <translation>Afficher et masquer la barre d&apos;outil Clip</translation>
+        <translation>أظهر وأخفِ شريط أدوات المقاطع.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1187"/>
         <source>Find text in the page</source>
-        <translation>Chercher du texte dans la page</translation>
+        <translation>جد النص في الصفحة</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1190"/>
         <source>Ctrl+F</source>
-        <translation>Ctrl+F</translation>
+        <translation>تحكم+ب</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1203"/>
         <source>Next XHtml File</source>
-        <translation>Fichier XHTML suivant</translation>
+        <translation>ملف XHtml التالي</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1206"/>
         <source>Next file in navigation list</source>
-        <translation>Fichier XHTML suivant dans la liste de navigation</translation>
+        <translation>الملف التالي في لائحة التنقل</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1209"/>
         <source>Ctrl+PgDown</source>
-        <translation>Ctrl+PgSuiv</translation>
+        <translation>تحكم+صفحةلأسفل</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1222"/>
         <source>Previous XHtml File</source>
-        <translation>Fichier XHTML précédent</translation>
+        <translation>ملف XHtml السابق</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1225"/>
         <source>Previous file in navigation list</source>
-        <translation>Fichier XHTML précédent dans la liste de navigation</translation>
+        <translation>الملف السابق في لائحة التنقل</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1228"/>
         <source>Ctrl+PgUp</source>
-        <translation>Ctrl+PgPréc</translation>
+        <translation>تحكم+صفحةلأعلى</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1244"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Basculer entre les modes Édition et Aperçu.</translation>
+        <translation>بدّل بين نمطي التحرير والمعاينة.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1254"/>
         <source>About...</source>
-        <translation>A propos…</translation>
+        <translation>عن البرنامج...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1257"/>
         <source>Show information about PageEdit.</source>
-        <translation>Afficher les informations a propos PageEdit.</translation>
+        <translation>أظهر معلومات عن محرر الصفحات.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1267"/>
         <source>Back to Last Link</source>
-        <translation>Retourner au dernier lien</translation>
+        <translation>العودة إلى الرابط الأخير</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1270"/>
         <source>Return from the last link taken</source>
-        <translation>Revenir au dernier lien pris</translation>
+        <translation>الرجوع من آخر رابط مُعالج</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1280"/>
         <source>I&amp;D...</source>
-        <translation>&amp;ID…</translation>
+        <translation>م‍&amp;عرِّف...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1283"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation>Insérez ou modifiez une ancre avec un ID à utiliser comme cible de lien.</translation>
+        <translation>أدرج أو حرر مرساة ذات إسم معرِّف لاستخدامها كهدف لرابط.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1293"/>
         <source>&amp;Link...</source>
-        <translation>&amp;Lien…</translation>
+        <translation>&amp;رابط...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1296"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation>Insérer ou éditer une ancre avec un hyperlien vers une cible.</translation>
+        <translation>أدرج أو حرر مرساة ذات ارتباط تشعبي إلى هدف.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1306"/>
         <source>&amp;File...</source>
-        <translation>&amp;Fichier…</translation>
+        <translation>م‍&amp;لف...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1309"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation>Sélectionnez le fichier image, vidéo ou audio existant dans votre livre à insérer dans le texte.</translation>
+        <translation>حدد ملفات صور أو فيديو أو صوت موجودة من كتابك لإدراجها في النص.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1312"/>
         <source>Ctrl+Shift+I</source>
-        <translation>Ctrl+Maj+I</translation>
+        <translation>تحكم+تحويل+ر</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1318"/>
         <source>Clip &amp;1</source>
-        <translation>Clip &amp;1</translation>
+        <translation>المقطع &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1321"/>
         <source>Insert Clip 1</source>
-        <translation>Insérer le Clip 1</translation>
+        <translation>أدرج المقطع 1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1324"/>
         <source>Ctrl+Alt+1</source>
-        <translation>Ctrl+Alt+1</translation>
+        <translation>تحكم+تبديل+1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1330"/>
         <source>Clip &amp;2</source>
-        <translation>Clip &amp;2</translation>
+        <translation>المقطع &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1333"/>
         <source>Insert Clip 2</source>
-        <translation>Insérer le Clip 2</translation>
+        <translation>أدرج المقطع 2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1336"/>
         <source>Ctrl+Alt+2</source>
-        <translation>Ctrl+Alt+2</translation>
+        <translation>تحكم+تبديل+2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1342"/>
         <source>Clip &amp;3</source>
-        <translation>Clip &amp;2</translation>
+        <translation>المقطع &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1345"/>
         <source>Insert Clip 3</source>
-        <translation>Insérer le Clip 3</translation>
+        <translation>أدرج المقطع 3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1348"/>
         <source>Ctrl+Alt+3</source>
-        <translation>Ctrl+Alt+3</translation>
+        <translation>تحكم+تبديل+3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1354"/>
         <source>Clip &amp;4</source>
-        <translation>Clip &amp;3</translation>
+        <translation>المقطع &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1357"/>
         <source>Insert Clip 4</source>
-        <translation>Insérer le Clip 4</translation>
+        <translation>أدرج المقطع 4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1360"/>
         <source>Ctrl+Alt+4</source>
-        <translation>Ctrl+Alt+4</translation>
+        <translation>تحكم+تبديل+4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1366"/>
         <source>Clip &amp;5</source>
-        <translation>Clip &amp;5</translation>
+        <translation>المقطع &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1369"/>
         <source>Insert Clip 5</source>
-        <translation>Insérer le Clip 5</translation>
+        <translation>أدرج المقطع 5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1372"/>
         <source>Ctrl+Alt+5</source>
-        <translation>Ctrl+Alt+5</translation>
+        <translation>تحكم+تبديل+5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1378"/>
         <source>Clip &amp;6</source>
-        <translation>Clip &amp;6</translation>
+        <translation>المقطع &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1381"/>
         <source>Insert Clip 6</source>
-        <translation>Insérer le Clip 6</translation>
+        <translation>أدرج المقطع 6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1384"/>
         <source>Ctrl+Alt+6</source>
-        <translation>Ctrl+Alt+6</translation>
+        <translation>تحكم+تبديل+6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1390"/>
         <source>Clip &amp;7</source>
-        <translation>Clip &amp;7</translation>
+        <translation>المقطع &amp;7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1393"/>
         <source>Insert Clip 7</source>
-        <translation>Insérer le Clip 7</translation>
+        <translation>أدرج المقطع 7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1396"/>
         <source>Ctrl+Alt+7</source>
-        <translation>Ctrl+Alt+7</translation>
+        <translation>تحكم+تبديل+7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1402"/>
         <source>Clip &amp;8</source>
-        <translation>Clip &amp;8</translation>
+        <translation>المقطع &amp;8</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1405"/>
         <source>Insert Clip 8</source>
-        <translation>Insérer le Clip 8</translation>
+        <translation>أدرج المقطع 8</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1408"/>
         <source>Ctrl+Alt+8</source>
-        <translation>Ctrl+Alt+8</translation>
+        <translation>تحكم+تبديل+8</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1414"/>
         <source>Clip &amp;9</source>
-        <translation>Clip &amp;9</translation>
+        <translation>المقطع &amp;9</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1417"/>
         <source>Insert Clip 9</source>
-        <translation>Insérer le Clip 9</translation>
+        <translation>أدرج المقطع 9</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1420"/>
         <source>Ctrl+Alt+9</source>
-        <translation>Ctrl+Alt+9</translation>
+        <translation>تحكم+تبديل+9</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1426"/>
         <source>Clip 1&amp;0</source>
-        <translation>Clip 1&amp;0</translation>
+        <translation>المقطع 1&amp;0</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1429"/>
         <source>Insert Clip 10</source>
-        <translation>Insérer le Clip 10</translation>
+        <translation>أدرج المقطع 10</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1432"/>
         <source>Ctrl+Alt+0</source>
-        <translation>Ctrl+Alt+0</translation>
+        <translation>تحكم+تبديل+0</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1438"/>
         <source>Clip 11</source>
-        <translation>Clip 11</translation>
+        <translation>المقطع 11</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1441"/>
         <source>Insert Clip 11</source>
-        <translation>Insérer le Clip 11</translation>
+        <translation>أدرج المقطع 11</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1447"/>
         <source>Clip 12</source>
-        <translation>Clip 12</translation>
+        <translation>المقطع 12</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1450"/>
         <source>Insert Clip 12</source>
-        <translation>Insérer le Clip 12</translation>
+        <translation>أدرج المقطع 12</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1456"/>
         <source>Clip 13</source>
-        <translation>Clip 13</translation>
+        <translation>المقطع 13</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1459"/>
         <source>Insert Clip 13</source>
-        <translation>Insérer le Clip 13</translation>
+        <translation>أدرج المقطع 13</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1465"/>
         <source>Clip 14</source>
-        <translation>Clip 14</translation>
+        <translation>المقطع 14</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1468"/>
         <source>Insert Clip 14</source>
-        <translation>Insérer le Clip 14</translation>
+        <translation>أدرج المقطع 14</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1474"/>
         <source>Clip 15</source>
-        <translation>Clip 15</translation>
+        <translation>المقطع 15</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1477"/>
         <source>Insert Clip 15</source>
-        <translation>Insérer le Clip 15</translation>
+        <translation>أدرج المقطع 15</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1483"/>
         <source>Clip 16</source>
-        <translation>Clip 16</translation>
+        <translation>المقطع 16</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1486"/>
         <source>Insert Clip 16</source>
-        <translation>Insérer le Clip 16</translation>
+        <translation>أدرج المقطع 16</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1492"/>
         <source>Clip 17</source>
-        <translation>Clip 17</translation>
+        <translation>المقطع 17</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1495"/>
         <source>Insert Clip 17</source>
-        <translation>Insérer le Clip 17</translation>
+        <translation>أدرج المقطع 17</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1501"/>
         <source>Clip 18</source>
-        <translation>Clip 18</translation>
+        <translation>المقطع 18</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1504"/>
         <source>Insert Clip 18</source>
-        <translation>Insérer le Clip 18</translation>
+        <translation>أدرج المقطع 18</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1510"/>
         <source>Clip 19</source>
-        <translation>Clip 19</translation>
+        <translation>المقطع 19</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1513"/>
         <source>Insert Clip 19</source>
-        <translation>Insérer le Clip 19</translation>
+        <translation>أدرج المقطع 19</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1519"/>
         <source>Clip 20</source>
-        <translation>Clip 20</translation>
+        <translation>المقطع 20</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1522"/>
         <source>Insert Clip 20</source>
-        <translation>Insérer le Clip 20</translation>
+        <translation>أدرج المقطع 20</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="779"/>
         <source>File load failed</source>
-        <translation>Échec du chargement du fichier</translation>
+        <translation>فشل تحميل الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="780"/>
         <source>File Load Failed</source>
-        <translation>Échec du chargement du fichier</translation>
+        <translation>فشل تحميل الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="879"/>
         <source>mode: Preview</source>
-        <translation>Mode : Aperçu</translation>
+        <translation>النمط: معاينة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="881"/>
         <source>mode: Edit</source>
-        <translation>Mode : Édition</translation>
+        <translation>النمط: تحرير</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1048"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Êtes-vous sûr de vouloir ouvrir ce lien dans votre navigateur ?
+        <translation>أأنت متأكد أنك تريد فتح هذا الرابط في متصفحك؟
 
 %1</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1143"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Voulez-vous sauvegarder vos modifications avant de partir ?</translation>
+        <translation>أتريد حفظ تغييراتك قبل المغادرة؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1162"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit se ferme…</translation>
+        <translation>محرر الصفحات يُغلَق...</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1248"/>
@@ -1759,22 +1759,22 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../MainWindow.cpp" line="1260"/>
         <location filename="../MainWindow.cpp" line="1261"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>Fichiers XHTML (*.htm *.html *.xhtml)</translation>
+        <translation>ملفات HTML انترنت (‎*.htm *.html *.xhtml‏)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1251"/>
         <source>OPF files (*.opf)</source>
-        <translation>Fichier OPF (*.opf)</translation>
+        <translation>ملفات OPF (‎*.opf‏)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1252"/>
         <source>All files (*.*)</source>
-        <translation>Tous les fichiers (*.*)</translation>
+        <translation>كل الملفات (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1491"/>
         <source>Save File</source>
-        <translation>Enregistrer le fichier</translation>
+        <translation>حفظ ملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1526"/>
@@ -1782,18 +1782,18 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../MainWindow.cpp" line="1539"/>
         <location filename="../MainWindow.cpp" line="1540"/>
         <source>File Save-As Failed!</source>
-        <translation>La sauvegarde du fichier a échoué !</translation>
+        <translation>فشل حفظ الملف بإسم!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1526"/>
         <source>is not writeable</source>
-        <translation>n&apos;est pas écrivable</translation>
+        <translation>غير قابل للكتابة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1535"/>
         <location filename="../MainWindow.cpp" line="1574"/>
         <source>File Saved</source>
-        <translation>Fichier sauvegardé</translation>
+        <translation>حُفظ الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1565"/>
@@ -1801,117 +1801,117 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../MainWindow.cpp" line="1578"/>
         <location filename="../MainWindow.cpp" line="1579"/>
         <source>File Save Failed!</source>
-        <translation>Échec de la sauvegarde du fichier !</translation>
+        <translation>فشل حفظ الملف!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1566"/>
         <source>does not exist or is not writeable</source>
-        <translation>n&apos;existe pas ou n&apos;est pas écrivable</translation>
+        <translation>غير موجود أو غير قابل للكتابة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1594"/>
         <source>Do not show this warning again</source>
-        <translation>Ne plus afficher cet avertissement</translation>
+        <translation>لا تُظهر هذا التحذير مرة أخرى</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1595"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation>Ce fichier peut ne pas s&apos;imprimer comme vous l&apos;attendez.</translation>
+        <translation>قد لا يُطبع هذا الملف بالطريقة التي تتوقعها.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1596"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation>Les fonds sombres et les textes colorés appliqués avec le CSS d&apos;un ePub seront imprimé.</translation>
+        <translation>ستُطبَع الخلفيات والنصوص الملونة المطبَّقة بألواح طُرُز كتاب الكتروني.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1597"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation>Faites attention, car cela peut entraîner l&apos;utilisation de beaucoup d&apos;encre !</translation>
+        <translation>توخّ الحذر حيث أنّ هذا يمكن أن ينتج عنه الكثير من استخدام الحبر!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1598"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation>Utilisez l&apos;aperçu avant impression qui suit pour voir comment ce fichier s&apos;imprimera.</translation>
+        <translation>استخدم معاينة الطباعة التالية لترى كيف سيُطبَع هذا الملف.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1599"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation>Cochez la case si vous ne souhaitez pas voir cet avertissement à l&apos;avenir.</translation>
+        <translation>أشّر المربع إذا لم ترغب في مشاهدة هذا التحذير مستقبلا.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1679"/>
         <source>File Opened</source>
-        <translation>Fichier ouvert</translation>
+        <translation>فُتح الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1683"/>
         <source>File Open Failed!</source>
-        <translation>Échec de l&apos;ouverture du fichier !</translation>
+        <translation>فشل فتح الملف!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1734"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Le presse-papiers contient de la mise en forme HTML</translation>
+        <translation>الحافظة تحتوي صيغ HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1735"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Voulez-vous coller les données du presse-papiers en tant que texte brut ?</translation>
+        <translation>أتريد لصق بيانات الحافظة كنص بسيط؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1805"/>
         <source>You must select text before inserting a new id.</source>
-        <translation>Vous devez sélectionner le texte avant d&apos;insérer un nouvel ID.</translation>
+        <translation>يجب ان تحدد نصاً قبل إدراج معرِّف جديد.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1818"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
-        <translation>L&apos;ID n&apos;est pas valide – doit commencer par une lettre, suivie suivi du numéro de la lettre _ : - ou .</translation>
+        <translation>المعرِّف غير صحيح - يجب أن يبدأ بحرف، متبوعاً بحرف أو رقم أو _ أو : أو - أو .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1824"/>
         <source>You cannot insert an id at this position.</source>
-        <translation>Impossible d&apos;insérer un id à cet endroit.</translation>
+        <translation>لا يمكنك إدراج معرّف في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1838"/>
         <source>You must select text before inserting a new link.</source>
-        <translation>Vous devez sélectionner le texte avant d&apos;insérer un nouveau lien.</translation>
+        <translation>يجب ان تحدد نصاً قبل إدراج رابط جديد.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
-        <translation>Le lien n&apos;est pas valide – il ne peut contenir “&lt;” ou “&gt;”</translation>
+        <translation>الرابط غير صحيح - لا يمكن أن يحتوي &apos;&lt;&apos; أو &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1857"/>
         <source>Error inserting external link target.</source>
-        <translation>Erreur d&apos;insertion de la cible du lien externe.</translation>
+        <translation>خطأ في إدراج هدف رابط خارجي.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
         <source>Error inserting a link at this position.</source>
-        <translation>Erreur d&apos;insertion d&apos;un lien à cet endroit.</translation>
+        <translation>خطأ في إدراج رابط في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1876"/>
         <source>Insert File</source>
-        <translation>Insérer le fichier</translation>
+        <translation>إدراج ملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1920"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation>Vous ne pouvez pas insérer un fichier média à cette position.</translation>
+        <translation>لا يمكنك إدراج ملف وسائط في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1996"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Voulez-vous enregistrer des modifications avant d&apos;écraser ce fichier ?</translation>
+        <translation>أتريد حفظ أية تغييرات قبل الكتابة على هذا الملف؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2048"/>
         <source>Pasted clip entry %1.</source>
-        <translation>L&apos;entrée clip %1 collée.</translation>
+        <translation>لُصق مُدخَل مقطع %1.</translation>
     </message>
 </context>
 <context>
@@ -1919,22 +1919,22 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Préférences</translation>
+        <translation>التفضيلات</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="91"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>محرر الصفحات</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="91"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Les modifications prendront effet lorsque vous redémarrerez PageEdit.</translation>
+        <translation>ستأخذ التغييرات حيّز التنفيذ عند إعادة تشغيل محرر الصفحات.</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="152"/>
         <source>Open Preferences Location</source>
-        <translation>Ouvrir l&apos;emplacement des Préférences</translation>
+        <translation>افتح موضع التفضيلات</translation>
     </message>
 </context>
 <context>
@@ -1943,65 +1943,65 @@ Si une traduction pour un mot ou une phrase spécifique n&apos;est pas disponibl
         <location filename="../OPFReader.cpp" line="60"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Impossible de lire le fichier OPF.
-Ligne : %1 Colonne %2 - %3</translation>
+        <translation>لا يمكن قراءة ملف OPF.
+السطر: %1 العمود %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="383"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Impossible de lire le fichier %1 :
-%2</translation>
+        <translation>لا يمكن قراءة الملف %1:
+%2.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="572"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit a rencontré un problème.</translation>
+        <translation>واجه محرر الصفحات مشكلة.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="573"/>
         <source>PageEdit may need to close.</source>
-        <translation>PageEdit peut avoir besoin de se fermer.</translation>
+        <translation>قد يحتاج محرر الصفحات إلى إغلاقه.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="881"/>
         <source>About PageEdit</source>
-        <translation>A propos PageEdit</translation>
+        <translation>عن محرر الصفحات</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="886"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>الإصدار</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="887"/>
         <source>Build Date</source>
-        <translation>Date de construction</translation>
+        <translation>تاريخ التركيبة</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="888"/>
         <source>Build Time</source>
-        <translation>Durée de construction</translation>
+        <translation>وقت التركيبة</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="889"/>
         <source>Qt Runtime Version</source>
-        <translation>Version d&apos;exécution Qt</translation>
+        <translation>إصدار دالة الوقت الحقيقي لـ QT</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="890"/>
         <source>Qt Compiled Version</source>
-        <translation>Version compilé de Qt</translation>
+        <translation>إصدار QT المركَّب</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="891"/>
         <source>System</source>
-        <translation>Systeme</translation>
+        <translation>النظام</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="892"/>
         <source>Architecture</source>
-        <translation>Architecture</translation>
+        <translation>البِنية</translation>
     </message>
 </context>
 <context>
@@ -2009,22 +2009,22 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Recherche :</translation>
+        <translation>البحث: </translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Recherche…</translation>
+        <translation>بحث...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>&amp;Sensible a la Case</translation>
+        <translation>م‍&amp;طابقة حالة الحروف</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="151"/>
         <source>No results found.</source>
-        <translation>Aucun résultat trouvé.</translation>
+        <translation>لم يُعثر على نتائج.</translation>
     </message>
 </context>
 <context>
@@ -2032,1252 +2032,1252 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Insérer un caractère spécial</translation>
+        <translation>أدرج محرفاً خاصاً</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="85"/>
         <source>non-breaking space</source>
-        <translation>espace insécable</translation>
+        <translation>فراغ غير فاصل</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="86"/>
         <source>en space</source>
-        <translation>espace demi-cadratin</translation>
+        <translation>فراغ أن en</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="87"/>
         <source>em space</source>
-        <translation>espace cadratin</translation>
+        <translation>فراغ أم em</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="88"/>
         <source>thin space</source>
-        <translation>espace fin</translation>
+        <translation>فراغ نحيف</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="89"/>
         <source>soft hyphen</source>
-        <translation>tiret conditionnel</translation>
+        <translation>واصلة لينة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="90"/>
         <source>narrow non-breaking space</source>
-        <translation>espace insécable</translation>
+        <translation>فراغ غير فاصل ضيق</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="94"/>
         <source>left single quote</source>
-        <translation>guillemet simple gauche</translation>
+        <translation>اقتباس مفرد يساراً</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="95"/>
         <source>right single quote</source>
-        <translation>guillemet simple droit</translation>
+        <translation>اقتباس مفرد يمينًا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="96"/>
         <source>left double quote</source>
-        <translation>guillemet double gauche</translation>
+        <translation>اقتباس مزدوج يساراً</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="97"/>
         <source>right double quote</source>
-        <translation>guillemet double droit</translation>
+        <translation>اقتباس مزدوج يمينًا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="98"/>
         <source>left-pointing single angle quote</source>
-        <translation>guillemets français simple à gauche</translation>
+        <translation>اقتباس مفرد الزاوية يشير يساراً</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="99"/>
         <source>right-pointing single angle quote</source>
-        <translation>guillemets français simple à droite</translation>
+        <translation>اقتباس مفرد الزاوية يشير يمينًا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="100"/>
         <source>left-pointing double angle quote</source>
-        <translation>guillemets français à gauche</translation>
+        <translation>اقتباس مزدوج الزاوية يشير يساراً</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="101"/>
         <source>right-pointing double angle quote</source>
-        <translation>guillemets français à droite</translation>
+        <translation>اقتباس مزدوج الزاوية يشير يمينًا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="102"/>
         <source>apostrophe</source>
-        <translation>apostrophe</translation>
+        <translation>الفاصلة العليا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="103"/>
         <source>double quote</source>
-        <translation>guillemet</translation>
+        <translation>اقتباس مزدوج</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="104"/>
         <source>single low-9 quote</source>
-        <translation>guillemet-virgule inférieur</translation>
+        <translation>اقتباس 9 منخفض مفرد</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="105"/>
         <source>double low-9 quote</source>
-        <translation>guillemet-virgule double inférieur</translation>
+        <translation>اقتباس 9 منخفض مزدوج</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="106"/>
         <source>em dash</source>
-        <translation>tiret cadratin</translation>
+        <translation>شَرْطة أن em</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="107"/>
         <source>en dash</source>
-        <translation>tiret demi-cadratin</translation>
+        <translation>شَرْطة أن en</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="108"/>
         <source>section sign</source>
-        <translation>signe de section</translation>
+        <translation>علامة المقطع</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="109"/>
         <source>pilcrow - paragraph sign</source>
-        <translation>pied-de-mouche - signe de paragraphe</translation>
+        <translation>بلكرو - علامة فقرة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="110"/>
         <source>dagger</source>
-        <translation>dague</translation>
+        <translation>خنجر</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="111"/>
         <source>double dagger</source>
-        <translation>double dague</translation>
+        <translation>خنجر مزدوج</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="112"/>
         <source>ampersand</source>
-        <translation>esperluette</translation>
+        <translation>علامة الواو</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="113"/>
         <source>less-than sign</source>
-        <translation>signe moins que</translation>
+        <translation>علامة الأقل-من</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="114"/>
         <source>greater-than sign</source>
-        <translation>signe plus gand que</translation>
+        <translation>علامة الأكبر-من</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="115"/>
         <source>copyright</source>
-        <translation>copyright</translation>
+        <translation>حقوق الطباعة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="116"/>
         <source>registered sign</source>
-        <translation>symbole marque déposée</translation>
+        <translation>علامة المسجلة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="117"/>
         <source>trademark symbol</source>
-        <translation>symbole de marque de commerce</translation>
+        <translation>رمز العلامة التجارية</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="118"/>
         <source>left arrow</source>
-        <translation>flèche gauche</translation>
+        <translation>سهم أيسر</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="119"/>
         <source>right arrow</source>
-        <translation>flèche droite</translation>
+        <translation>سهم أيمن</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="120"/>
         <source>bullet</source>
-        <translation>puce</translation>
+        <translation>نقطية</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="121"/>
         <source>middle dot</source>
-        <translation>point milieu</translation>
+        <translation>نقطة وسطى</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="122"/>
         <source>degree sign</source>
-        <translation>signe de degré</translation>
+        <translation>علامة الدرجة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="123"/>
         <source>plus minus sign</source>
-        <translation>signe plus-ou-moins</translation>
+        <translation>علامة زائد-ناقص</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="124"/>
         <source>minus sign</source>
-        <translation>signe moins</translation>
+        <translation>علامة السالب</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="125"/>
         <source>multiplication sign</source>
-        <translation>signe de multiplication</translation>
+        <translation>علامة الضرب</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="126"/>
         <source>division sign</source>
-        <translation>signe de la division</translation>
+        <translation>علامة القسمة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="127"/>
         <source>fraction 1/4</source>
-        <translation>fraction 1/4</translation>
+        <translation>الكسر 1\4</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="128"/>
         <source>fraction 1/2</source>
-        <translation>fraction 1/2</translation>
+        <translation>الكسر 1\2</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="129"/>
         <source>fraction 3/4</source>
-        <translation>fraction 3/4</translation>
+        <translation>الكسر 3\4</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="130"/>
         <source>fraction 1/3</source>
-        <translation>fraction 1/3</translation>
+        <translation>الكسر 1\3</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="131"/>
         <source>fraction 2/3</source>
-        <translation>fraction 2/3</translation>
+        <translation>الكسر 2\3</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="132"/>
         <source>fraction 1/8</source>
-        <translation>fraction 1/8</translation>
+        <translation>الكسر 1\8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="133"/>
         <source>fraction 3/8</source>
-        <translation>fraction 3/8</translation>
+        <translation>الكسر 3\8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="134"/>
         <source>fraction 5/8</source>
-        <translation>fraction 5/8</translation>
+        <translation>الكسر 5\8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="135"/>
         <source>fraction 7/8</source>
-        <translation>fraction 7/8</translation>
+        <translation>الكسر 7\8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="136"/>
         <source>horizontal ellipsis</source>
-        <translation>ellipse horizontale</translation>
+        <translation>القطع الافقي</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="137"/>
         <source>micron</source>
-        <translation>micron</translation>
+        <translation>مايكرون</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="138"/>
         <source>cent sign</source>
-        <translation>signe des centimes</translation>
+        <translation>علامة السنت</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="139"/>
         <source>pound sign</source>
-        <translation>symbole de la livre sterling</translation>
+        <translation>علامة الباوند</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="140"/>
         <source>euro sign</source>
-        <translation>symbole de l&apos;euro</translation>
+        <translation>علامة اليورو</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="141"/>
         <source>inverted question mark</source>
-        <translation>point d&apos;interrogation inversé</translation>
+        <translation>علامة استفهام مقلوبة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="142"/>
         <source>inverted exclamation mark</source>
-        <translation>point d&apos;exclamation inversé</translation>
+        <translation>علامة تعجب مقلوبة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="143"/>
         <source>diaeresis</source>
-        <translation>tréma</translation>
+        <translation>الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="144"/>
         <source>acute accent</source>
-        <translation>accent aigu</translation>
+        <translation>نبرة حادة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="145"/>
         <source>cedilla</source>
-        <translation>cédille</translation>
+        <translation>سديلة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="146"/>
         <source>circumflex accent</source>
-        <translation>accent circonflexe</translation>
+        <translation>نبرة المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="147"/>
         <source>small tilde</source>
-        <translation>petit tilde</translation>
+        <translation>علامة تيلدة صغيرة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="148"/>
         <source>capital A with grave</source>
-        <translation>majuscule A avec accent grave</translation>
+        <translation>حرف A كبير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="149"/>
         <source>capital A with acute</source>
-        <translation>majuscule A avec accent aigu</translation>
+        <translation>حرف A كبير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="150"/>
         <source>capital A with circumflex</source>
-        <translation>majuscule A avec accent circonflexe</translation>
+        <translation>حرف A كبير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="151"/>
         <source>capital A with tilde</source>
-        <translation>majuscule A avec tilde</translation>
+        <translation>حرف A كبير مع النبرة تيلدا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="152"/>
         <source>capital A with diaeresis</source>
-        <translation>majuscule A avec tréma</translation>
+        <translation>حرف A كبير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="153"/>
         <source>capital A with ring above</source>
-        <translation>majuscule A rond en chef</translation>
+        <translation>حرف A كبير مع حلقة فوقه</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="154"/>
         <source>capital AE</source>
-        <translation>majuscule ligature AE</translation>
+        <translation>المركّب AE كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="155"/>
         <source>capital C with cedilla</source>
-        <translation>majuscule C avec cédille</translation>
+        <translation>حرف C كبير مع سديلة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="156"/>
         <source>capital E with grave</source>
-        <translation>majuscule E avec accent grave</translation>
+        <translation>حرف E كبير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="157"/>
         <source>capital E with acute</source>
-        <translation>majuscule E avec accent aigu</translation>
+        <translation>حرف E كبير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="158"/>
         <source>capital E with circumflex</source>
-        <translation>majuscule E avec accent circonflexe</translation>
+        <translation>حرف E كبير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="159"/>
         <source>capital E with diaeresis</source>
-        <translation>majuscule E avec tréma</translation>
+        <translation>حرف E كبير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="160"/>
         <source>capital I with grave</source>
-        <translation>majuscule I avec accent grave</translation>
+        <translation>حرف I كبير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="161"/>
         <source>capital I with acute</source>
-        <translation>majuscule I avec accent aigu</translation>
+        <translation>حرف I كبير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="162"/>
         <source>capital I with circumflex</source>
-        <translation>majuscule I avec accent circonflexe</translation>
+        <translation>حرف I كبير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="163"/>
         <source>capital I with diaeresis</source>
-        <translation>majuscule I avec tréma</translation>
+        <translation>حرف I كبير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="164"/>
         <source>capital eth</source>
-        <translation>majuscule Eth</translation>
+        <translation>حرف ذ eth كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="165"/>
         <source>capital N with tilde</source>
-        <translation>majuscule N avec tilde</translation>
+        <translation>حرف N كبير مع النبرة تيلدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="166"/>
         <source>capital O with grave</source>
-        <translation>majuscule O avec accent grave</translation>
+        <translation>حرف O كبير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="167"/>
         <source>capital O with acute</source>
-        <translation>majuscule O avec accent aigu</translation>
+        <translation>حرف O كبير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="168"/>
         <source>capital O with circumflex</source>
-        <translation>majuscule O avec accent circonflexe</translation>
+        <translation>حرف O كبير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="169"/>
         <source>capital O with tilde</source>
-        <translation>majuscule O avec tilde</translation>
+        <translation>حرف O كبير مع النبرة تيلدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="170"/>
         <source>capital O with diaeresis</source>
-        <translation>majuscule O avec tréma</translation>
+        <translation>حرف O كبير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="171"/>
         <source>capital O with stroke</source>
-        <translation>majuscule O barré</translation>
+        <translation>حرف O كبير مع الشطب</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="172"/>
         <source>capital ligature OE</source>
-        <translation>majuscule ligature OE</translation>
+        <translation>تعانق OE كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="173"/>
         <source>capital S with caron</source>
-        <translation>majuscule S avec caron</translation>
+        <translation>حرف S كبير مع علامة التحول</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="174"/>
         <source>capital U with grave</source>
-        <translation>majuscule U avec accent grave</translation>
+        <translation>حرف U كبير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="175"/>
         <source>capital U with acute</source>
-        <translation>majuscule U avec accent aigu</translation>
+        <translation>حرف U كبير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="176"/>
         <source>capital U with circumflex</source>
-        <translation>majuscule U avec accent circonflexe</translation>
+        <translation>حرف U كبير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="177"/>
         <source>capital U with diaeresis</source>
-        <translation>majuscule U avec tréma</translation>
+        <translation>حرف U كبير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="178"/>
         <source>capital Y with acute</source>
-        <translation>majuscule Y avec accent aigu</translation>
+        <translation>حرف Y كبير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="179"/>
         <source>capital Y with diaeresis</source>
-        <translation>majuscule Y avec tréma</translation>
+        <translation>حرف Y كبير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="180"/>
         <source>capital THORN</source>
-        <translation>majuscule Thorn</translation>
+        <translation>حرف THORN كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="181"/>
         <source>small sharp s</source>
-        <translation>minuscule s dur</translation>
+        <translation>حرف s صغير حادّ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="182"/>
         <source>small a with grave</source>
-        <translation>minuscule a avec accent grave</translation>
+        <translation>حرف a صغير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="183"/>
         <source>small a with acute</source>
-        <translation>minuscule a avec accent aigu</translation>
+        <translation>حرف a صغير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="184"/>
         <source>small a with circumflex</source>
-        <translation>minuscule a avec accent circonflexe</translation>
+        <translation>حرف a صغير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="185"/>
         <source>small a with tilde</source>
-        <translation>minuscule a avec tilde</translation>
+        <translation>حرف a صغير مع النبرة تيلدا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="186"/>
         <source>small a with diaeresis</source>
-        <translation>minuscule a avec tréma</translation>
+        <translation>حرف a صغير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="187"/>
         <source>small a with ring above</source>
-        <translation>majuscule a rond en chef</translation>
+        <translation>حرف a صغير مع حلقة فوقه</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="188"/>
         <source>small ae</source>
-        <translation>minuscule ligature ae</translation>
+        <translation>المركب ae صغير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="189"/>
         <source>small c with cedilia</source>
-        <translation>minuscule c avec cédille</translation>
+        <translation>حرف c صغير مع سديلة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="190"/>
         <source>small e with grave</source>
-        <translation>minuscule e avec accent grave</translation>
+        <translation>حرف e صغير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="191"/>
         <source>small e with acute</source>
-        <translation>minuscule e avec accent aigu</translation>
+        <translation>حرف e صغير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="192"/>
         <source>small e with circumflex</source>
-        <translation>minuscule e avec accent circonflexe</translation>
+        <translation>حرف e صغير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="193"/>
         <source>small e with diaeresis</source>
-        <translation>minuscule e avec tréma</translation>
+        <translation>حرف e صغير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="194"/>
         <source>small i with grave</source>
-        <translation>minuscule i avec accent grave</translation>
+        <translation>حرف i صغير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="195"/>
         <source>small i with acute</source>
-        <translation>minuscule i avec accent aigu</translation>
+        <translation>حرف i صغير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="196"/>
         <source>small i with circumflex</source>
-        <translation>minuscule i avec accent circonflexe</translation>
+        <translation>حرف i صغير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="197"/>
         <source>small i with diaeresis</source>
-        <translation>minuscule i avec tréma</translation>
+        <translation>حرف i صغير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="198"/>
         <source>small eth</source>
-        <translation>minuscule Eth</translation>
+        <translation>حرف ذ eth صغير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="199"/>
         <source>small n with tilde</source>
-        <translation>minuscule n avec tilde</translation>
+        <translation>حرف n صغير مع النبرة تيلدا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="200"/>
         <source>small o with grave</source>
-        <translation>minuscule o avec accent grave</translation>
+        <translation>حرف o صغير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="201"/>
         <source>small o with acute</source>
-        <translation>minuscule o avec accent aigu</translation>
+        <translation>حرف o صغير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="202"/>
         <source>small o with circumflex</source>
-        <translation>minuscule o avec accent circonflexe</translation>
+        <translation>حرف o صغير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="203"/>
         <source>small o with tilde</source>
-        <translation>minuscule o avec tilde</translation>
+        <translation>حرف o صغير مع النبرة تيلدا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="204"/>
         <source>small o with diaeresis</source>
-        <translation>minuscule o avec tréma</translation>
+        <translation>حرف o صغير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="205"/>
         <source>small o with stroke</source>
-        <translation>minuscule o barré</translation>
+        <translation>حرف o صغير مع شطب</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="206"/>
         <source>small ligature oe</source>
-        <translation>minuscule ligature oe</translation>
+        <translation>التعانق oe صغير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="207"/>
         <source>small s with caron</source>
-        <translation>minuscule s avec caron</translation>
+        <translation>حرف s صغير مع علامة التحول</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="208"/>
         <source>small u with grave</source>
-        <translation>minuscule u avec accent grave</translation>
+        <translation>حرف u صغير مع نبرة الشدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="209"/>
         <source>small u with acute</source>
-        <translation>minuscule u avec accent aigu</translation>
+        <translation>حرف u صغير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="210"/>
         <source>small u with circumflex</source>
-        <translation>minuscule u avec accent circonflexe</translation>
+        <translation>حرف u صغير مع المكتنفة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="211"/>
         <source>small u with diaeresis</source>
-        <translation>minuscule u avec tréma</translation>
+        <translation>حرف u صغير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="212"/>
         <source>small y with acute</source>
-        <translation>minuscule y avec accent aigu</translation>
+        <translation>حرف y صغير مع نبرة الحدة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="213"/>
         <source>small y with diaeresis</source>
-        <translation>minuscule y avec tréma</translation>
+        <translation>حرف y صغير مع الفاكّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="214"/>
         <source>small thorn</source>
-        <translation>minuscule Thorn</translation>
+        <translation>حرف thorn صغير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="215"/>
         <source>feminine ordinal indicator</source>
-        <translation>indicateur ordinal féminin</translation>
+        <translation>مؤشّر ترتيبي مؤنث</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="216"/>
         <source>masculine ordinal indicator</source>
-        <translation>indicateur ordinal masculin</translation>
+        <translation>مؤشّر ترتيبي مذكر</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="217"/>
         <source>infinity</source>
-        <translation>infini</translation>
+        <translation>ما لا نهاية</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="221"/>
         <source>Greek capital letter Alpha</source>
-        <translation>Lettre capitale grecque Alpha</translation>
+        <translation>الحرف اليوناني ألفا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="222"/>
         <source>Greek lower letter alpha</source>
-        <translation>Lettre minuscule grecque alpha</translation>
+        <translation>الحرف اليوناني ألفا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="223"/>
         <source>Greek capital letter Beta</source>
-        <translation>Lettre capitale grecque Beta</translation>
+        <translation>الحرف اليوناني بيتا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="224"/>
         <source>Greek lower letter beta</source>
-        <translation>Lettre minuscule grecque beta</translation>
+        <translation>الحرف اليوناني بيتا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="225"/>
         <source>Greek capital letter Chi</source>
-        <translation>Lettre capitale grecque Chi</translation>
+        <translation>الحرف اليوناني تشي كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="226"/>
         <source>Greek lower letter chi</source>
-        <translation>Lettre minuscule grecque chi</translation>
+        <translation>الحرف اليوناني شي منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="227"/>
         <source>Greek capital letter Delta</source>
-        <translation>Lettre capitale grecque Delta</translation>
+        <translation>الحرف اليوناني دلتا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="228"/>
         <source>Greek lower letter delta</source>
-        <translation>Lettre minuscule grecque delta</translation>
+        <translation>الحرف اليوناني دلتا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="229"/>
         <source>Greek capital letter Epsilon</source>
-        <translation>Lettre capitale grecque Epsilon</translation>
+        <translation>الحرف اليوناني إبسلون كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="230"/>
         <source>Greek lower letter epsilon</source>
-        <translation>Lettre minuscule grecque epsilon</translation>
+        <translation>الحرف اليوناني إبسلون منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="231"/>
         <source>Greek capital letter Eta</source>
-        <translation>Lettre capitale grecque Eta</translation>
+        <translation>الحرف اليوناني أيتا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="232"/>
         <source>Greek lower letter eta</source>
-        <translation>Lettre minuscule grecque eta</translation>
+        <translation>الحرف اليوناني ايتا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="233"/>
         <source>Greek capital letter Gamma</source>
-        <translation>Lettre capitale grecque Gamma</translation>
+        <translation>الحرف اليوناني غاما كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="234"/>
         <source>Greek lower letter gamma</source>
-        <translation>Lettre minuscule grecque gamma</translation>
+        <translation>الحرف اليوناني غاما منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="235"/>
         <source>Greek capital letter Iota</source>
-        <translation>Lettre capitale grecque Iota</translation>
+        <translation>الحرف اليوناني أيوتا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="236"/>
         <source>Greek lower letter iota</source>
-        <translation>Lettre minuscule grecque iota</translation>
+        <translation>الحرف اليوناني ايوتا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="237"/>
         <source>Greek capital letter Kappa</source>
-        <translation>Lettre capitale grecque Kappa</translation>
+        <translation>الحرف اليوناني كابا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="238"/>
         <source>Greek lower letter kappa</source>
-        <translation>Lettre minuscule grecque kappa</translation>
+        <translation>الحرف اليوناني كابا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="239"/>
         <source>Greek capital letter Lambda</source>
-        <translation>Lettre capitale grecque Lambda</translation>
+        <translation>الحرف اليوناني لمدا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="240"/>
         <source>Greek lower letter lambda</source>
-        <translation>Lettre minuscule grecque lambda</translation>
+        <translation>الحرف اليوناني لمدا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="241"/>
         <source>Greek capital letter Mu</source>
-        <translation>Lettre capitale grecque Mu</translation>
+        <translation>الحرف اليوناني ميو كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="242"/>
         <source>Greek lower letter mu</source>
-        <translation>Lettre minuscule grecque mu</translation>
+        <translation>الحرف اليوناني ميو منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="243"/>
         <source>Greek capital letter Nu</source>
-        <translation>Lettre capitale grecque Nu</translation>
+        <translation>الحرف اليوناني نيو كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="244"/>
         <source>Greek lower letter nu</source>
-        <translation>Lettre minuscule grecque nu</translation>
+        <translation>الحرف اليوناني نيو منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="245"/>
         <source>Greek capital letter Omega</source>
-        <translation>Lettre capitale grecque Omega</translation>
+        <translation>الحرف اليوناني أوميغا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="246"/>
         <source>Greek lower letter omega</source>
-        <translation>Lettre minuscule grecque omega</translation>
+        <translation>الحرف اليوناني اوميغا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="247"/>
         <source>Greek capital letter Omicron</source>
-        <translation>Lettre capitale grecque Omicron</translation>
+        <translation>الحرف اليوناني أومايكرون كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="248"/>
         <source>Greek lower letter omicron</source>
-        <translation>Lettre minuscule grecque omicron</translation>
+        <translation>الحرف اليوناني أومايكرون منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="249"/>
         <source>Greek capital letter Phi</source>
-        <translation>Lettre capitale grecque Phi</translation>
+        <translation>الحرف اليوناني فاي كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="250"/>
         <source>Greek lower letter phi</source>
-        <translation>Lettre minuscule grecque phi</translation>
+        <translation>الحرف اليوناني فاي منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="251"/>
         <source>Greek capital letter Pi</source>
-        <translation>Lettre capitale grecque Pi</translation>
+        <translation>الحرف اليوناني باي كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="252"/>
         <source>Greek lower letter pi</source>
-        <translation>Lettre minuscule grecque pi</translation>
+        <translation>الحرف اليوناني باي منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="253"/>
         <source>Greek double prime</source>
-        <translation>guillemet grecque</translation>
+        <translation>تشديد مزدوج يوناني</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="254"/>
         <source>Greek single prime</source>
-        <translation>apostrophe grecque</translation>
+        <translation>تشديد مفرد يوناني</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="255"/>
         <source>Greek capital letter Psi</source>
-        <translation>Lettre capitale grecque Psi</translation>
+        <translation>الحرف اليوناني ساي كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="256"/>
         <source>Greek lower letter psi</source>
-        <translation>Lettre minuscule grecque psi</translation>
+        <translation>الحرف اليوناني ساي منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="257"/>
         <source>Greek capital letter Rho</source>
-        <translation>Lettre capitale grecque Rho</translation>
+        <translation>الحرف اليوناني رو كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="258"/>
         <source>Greek lower letter rho</source>
-        <translation>Lettre minuscule grecque rho</translation>
+        <translation>الحرف اليوناني رو منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="259"/>
         <source>Greek capital letter Sigma</source>
-        <translation>Lettre capitale grecque Sigma</translation>
+        <translation>الحرف اليوناني سيغما كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="260"/>
         <source>Greek lower letter sigma</source>
-        <translation>Lettre minuscule grecque sigma</translation>
+        <translation>الحرف اليوناني سيغما منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="261"/>
         <source>Greek capital letter Tau</source>
-        <translation>Lettre capitale grecque Tau</translation>
+        <translation>الحرف اليوناني تاو كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="262"/>
         <source>Greek lower letter tau</source>
-        <translation>Lettre minuscule grecque tau</translation>
+        <translation>الحرف اليوناني تاو منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="263"/>
         <source>Greek capital letter Theta</source>
-        <translation>Lettre capitale grecque Theta</translation>
+        <translation>الحرف اليوناني ثيتا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="264"/>
         <source>Greek lower letter theta</source>
-        <translation>Lettre minuscule grecque theta</translation>
+        <translation>الحرف اليوناني ثيتا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="265"/>
         <source>Greek capital letter Upsilon</source>
-        <translation>Lettre capitale grecque Upsilon</translation>
+        <translation>الحرف اليوناني يوبسلون كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="266"/>
         <source>Greek lower letter upsilon</source>
-        <translation>Lettre minuscule grecque upsilon</translation>
+        <translation>الحرف اليوناني يوبسلون منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="267"/>
         <source>Greek capital letter Xi</source>
-        <translation>Lettre capitale grecque Xi</translation>
+        <translation>الحرف اليوناني شي كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="268"/>
         <source>Greek lower letter xi</source>
-        <translation>Lettre minuscule grecque xi</translation>
+        <translation>الحرف اليوناني شي منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="269"/>
         <source>Greek capital letter Zeta</source>
-        <translation>Lettre capitale grecque Zeta</translation>
+        <translation>الحرف اليوناني زيتا كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="270"/>
         <source>Greek lower letter zeta</source>
-        <translation>Lettre minuscule grecque zeta</translation>
+        <translation>الحرف اليوناني زيتا منخفض</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="274"/>
         <source>alef symbol</source>
-        <translation>symbol aleph</translation>
+        <translation>رمز حرف ألَف</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="275"/>
         <source>logical and</source>
-        <translation>et logique</translation>
+        <translation>’و‘ and المنطقية</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="276"/>
         <source>logical or</source>
-        <translation>ou logique</translation>
+        <translation>’أو‘ or المنطقية</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="277"/>
         <source>intersection</source>
-        <translation>intersection</translation>
+        <translation>تقاطُع</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="278"/>
         <source>union</source>
-        <translation>union</translation>
+        <translation>اتحاد</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="279"/>
         <source>congruent to</source>
-        <translation>congruent à</translation>
+        <translation>متطابق مع</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="280"/>
         <source>downwards arrow with corner leftwards</source>
-        <translation>flèche vers le bas avec coin vers la gauche</translation>
+        <translation>سهم للأسفل مع زاوية لليسار</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="281"/>
         <source>currency sign</source>
-        <translation>symbole de monnaie</translation>
+        <translation>علامة العملة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="282"/>
         <source>downwards double arrow</source>
-        <translation>double flèche vers le bas</translation>
+        <translation>سهم مزدوج للأسفل</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="283"/>
         <source>upwards double arrow</source>
-        <translation>double flèche vers le haut</translation>
+        <translation>سهم مزدوج للأعلى</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="284"/>
         <source>downwards arrow</source>
-        <translation>flèche bas</translation>
+        <translation>سهم للأسفل</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="285"/>
         <source>upwards arrow</source>
-        <translation>flèche haut</translation>
+        <translation>سهم للأعلى</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="286"/>
         <source>empty set</source>
-        <translation>ensemble vide</translation>
+        <translation>مجموعة خالية</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="287"/>
         <source>identical to</source>
-        <translation>identique à</translation>
+        <translation>مطابق لـ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="288"/>
         <source>there exists</source>
-        <translation>il existe</translation>
+        <translation>حيث يوجد</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="289"/>
         <source>Latin small letter f with hook</source>
-        <translation>Lettre minuscule latine f hameçon</translation>
+        <translation>الحرف اللاتيني f صغير مع كلّاب</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="290"/>
         <source>for all</source>
-        <translation>pour tout</translation>
+        <translation>للكُلّ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="291"/>
         <source>fraction slash</source>
-        <translation>trait de fraction</translation>
+        <translation>شرطة الكسر</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="292"/>
         <source>left right double arrow</source>
-        <translation>double flèche gauche-droite</translation>
+        <translation>سهم مزدوج يسار يمين</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="293"/>
         <source>left right single arrow</source>
-        <translation>flèche gauche-droite</translation>
+        <translation>سهم مفرد يسار يمين</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="294"/>
         <source>black-letter capital I</source>
-        <translation>Lettre gothique capital I</translation>
+        <translation>حرف I أسود كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="295"/>
         <source>integral</source>
-        <translation>intégral</translation>
+        <translation>تتميمي</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="296"/>
         <source>element of</source>
-        <translation>élément de</translation>
+        <translation>عنصر من</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="297"/>
         <source>leftwards double arrow</source>
-        <translation>double flèche vers la gauche</translation>
+        <translation>سهم مزدوج باتجاه اليسار</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="298"/>
         <source>double right arrow</source>
-        <translation>flèche gauche-droite double</translation>
+        <translation>سهم أيمن مزدوج</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="299"/>
         <source>left-pointing angle bracket</source>
-        <translation>chevron vers la gauche</translation>
+        <translation>قوس معقوف بزاوية تشير يساراً</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="300"/>
         <source>right-pointing angle bracket</source>
-        <translation>chevron vers la droite</translation>
+        <translation>قوس معقوف بزاوية تشير يميناً</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="301"/>
         <source>left ceiling</source>
-        <translation>cellule de gauche</translation>
+        <translation>السقف الأيسر</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="302"/>
         <source>right ceiling</source>
-        <translation>cellule de droite</translation>
+        <translation>السقف الأيمن</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="303"/>
         <source>less-than or equal to</source>
-        <translation>plus petit ou égal à</translation>
+        <translation>أقل من أو مساوٍ لـ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="304"/>
         <source>greater-than or equal to</source>
-        <translation>plus grand ou égale à</translation>
+        <translation>أكبر من أو مساوٍ لـ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="305"/>
         <source>left floor</source>
-        <translation>plancher à gauche</translation>
+        <translation>الأرضية اليسرى</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="306"/>
         <source>right floor</source>
-        <translation>plancher à droite</translation>
+        <translation>الأرضية اليمنى</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="307"/>
         <source>asterisk operator</source>
-        <translation>opérateur astérisque</translation>
+        <translation>مُعامِل المنجّمة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="308"/>
         <source>lozenge</source>
-        <translation>losange</translation>
+        <translation>معيني</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="309"/>
         <source>macron</source>
-        <translation>macron</translation>
+        <translation>تطويل</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="310"/>
         <source>nabla</source>
-        <translation>nabla</translation>
+        <translation>نابلا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="311"/>
         <source>not equal to</source>
-        <translation>différent de</translation>
+        <translation>ليس مساويا لـ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="312"/>
         <source>contains as member</source>
-        <translation>contient comme membre</translation>
+        <translation>يحوي كعنصر</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="313"/>
         <source>not sign</source>
-        <translation>signe non</translation>
+        <translation>علامة لا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="314"/>
         <source>not an element of</source>
-        <translation>pas un élément de</translation>
+        <translation>ليس عنصرا من</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="315"/>
         <source>not a subset of</source>
-        <translation>pas un sous-ensemble de</translation>
+        <translation>ليس مجموعة فرعية من</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="316"/>
         <source>overline</source>
-        <translation>surlignée</translation>
+        <translation>خط علوي</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="317"/>
         <source>circled plus</source>
-        <translation>plus entouré</translation>
+        <translation>الموجب محاطا بدائرة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="318"/>
         <source>circled times</source>
-        <translation>croix entourée</translation>
+        <translation>مرات الإحاطة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="319"/>
         <source>partial differential</source>
-        <translation>dérivée partielle</translation>
+        <translation>الاشتقاق الجزئي</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="320"/>
         <source>per mille sign</source>
-        <translation>symbole pour mille</translation>
+        <translation>علامة لكل ميل</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="321"/>
         <source>up tack</source>
-        <translation>taquet vers le haut</translation>
+        <translation>مسمار مقلوب</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="322"/>
         <source>Greek pi symbol</source>
-        <translation>Symbole grec pour pi</translation>
+        <translation>رمز باي اليوناني</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="323"/>
         <source>n-ary product</source>
-        <translation>signe produit</translation>
+        <translation>حاصل n-ary</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="324"/>
         <source>proportional to</source>
-        <translation>proportionnel à</translation>
+        <translation>متناسب مع</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="325"/>
         <source>square root</source>
-        <translation>racine carrée</translation>
+        <translation>جذر تربيعي</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="326"/>
         <source>black-letter capital R</source>
-        <translation>Lettre gothique capital R</translation>
+        <translation>حرف R أسود كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="327"/>
         <source>dot operator</source>
-        <translation>opérateur point</translation>
+        <translation>مُعامِل النقطة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="328"/>
         <source>Greek small letter final sigma</source>
-        <translation>Lettre minuscule grecque sigma</translation>
+        <translation>الحرف اليوناني سيغما صغير نهائي</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="329"/>
         <source>tilde operator</source>
-        <translation>opérateur tilde</translation>
+        <translation>مُعامِل تيلدا</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="330"/>
         <source>subset of</source>
-        <translation>sous-ensemble de</translation>
+        <translation>مجموعة فرعية من</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="331"/>
         <source>superset of</source>
-        <translation>sur-ensemble de</translation>
+        <translation>مجموعة رئيسة من</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="332"/>
         <source>subset of or equal to</source>
-        <translation>sous-ensemble de ou égal à</translation>
+        <translation>مجموعة فرعية من أو مساويا لـ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="333"/>
         <source>superset of or equal to</source>
-        <translation>sur-ensemble de ou égal à</translation>
+        <translation>مجموعة رئيسة من أو مساوٍ لـ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="334"/>
         <source>n-ary summation</source>
-        <translation>signe somme</translation>
+        <translation>مجموع n-ary</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="335"/>
         <source>superscript one</source>
-        <translation>exposant un</translation>
+        <translation>واحد مرتفع</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="336"/>
         <source>superscript two</source>
-        <translation>exposant deux</translation>
+        <translation>اثنان مرتفع</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="337"/>
         <source>superscript three</source>
-        <translation>exposant trois</translation>
+        <translation>ثلاثة مرتفع</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="338"/>
         <source>therefore sign</source>
-        <translation>symbole par conséquent</translation>
+        <translation>علامة ’لذلك‘</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="339"/>
         <source>Greek theta symbol</source>
-        <translation>Symbole grec theta</translation>
+        <translation>رمز ثيتا اليوناني</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="340"/>
         <source>Greek Upsilon with hook symbol</source>
-        <translation>Symbole grec pour epsilon crochet</translation>
+        <translation>يوبسلون يوناني مع رمز كلّاب</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="341"/>
         <source>script capital P</source>
-        <translation>capitale P manuscrite</translation>
+        <translation>حرف P خطي كبير</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="342"/>
         <source>yen sign</source>
-        <translation>symbole du yen</translation>
+        <translation>علامة الين</translation>
     </message>
 </context>
 <context>
@@ -3285,72 +3285,72 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.ui" line="14"/>
         <source>Insert File</source>
-        <translation>Insérer le fichier</translation>
+        <translation>إدراج ملف</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="46"/>
         <source>List only the file names which contain the text you enter.</source>
-        <translation>Affiche uniquement le nom des fichiers contenant le texte que vous avez tapé.</translation>
+        <translation>اسرد فقط أسماء الملفات التي تحتوي النص الذي تدخله.</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="49"/>
         <source>Filter:</source>
-        <translation>Filtre :</translation>
+        <translation>المرشح:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="118"/>
         <source>Thumbnail size:</source>
-        <translation>Taille de la vignette :</translation>
+        <translation>حجم المصغرة:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="128"/>
         <source>All</source>
-        <translation>Tout</translation>
+        <translation>الكل</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="129"/>
         <source>Images</source>
-        <translation>Images</translation>
+        <translation>الصور</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="130"/>
         <source>Video</source>
-        <translation>Vidéo</translation>
+        <translation>فيديو</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="131"/>
         <source>Audio</source>
-        <translation>Audio</translation>
+        <translation>صوت</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="176"/>
         <source>Media Files In the Book</source>
-        <translation>Fichiers média dans le livre</translation>
+        <translation>ملفات الوسائط في الكتاب</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="179"/>
         <source>Thumbnails</source>
-        <translation>Vignettes</translation>
+        <translation>المصغرات</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="349"/>
         <source>shades</source>
-        <translation>Nuances</translation>
+        <translation>ظِلال</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="349"/>
         <source>colors</source>
-        <translation>Couleurs</translation>
+        <translation>الالوان</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="350"/>
         <source>Grayscale</source>
-        <translation>Niveaux de gris</translation>
+        <translation>تدرج رمادي</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="350"/>
         <source>Color</source>
-        <translation>Couleur</translation>
+        <translation>لون</translation>
     </message>
 </context>
 <context>
@@ -3358,40 +3358,39 @@ Ligne : %1 Colonne %2 - %3</translation>
     <message>
         <location filename="../SelectHyperlink.ui" line="14"/>
         <source>Select Target</source>
-        <translation>Choisir la cible</translation>
+        <translation>حدد الوُجهة</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="22"/>
         <source>List only the entries that match the text you enter.</source>
-        <translation>Affiche uniquement les entrées qui correspondent au texte tapé.</translation>
+        <translation>فقط عَرض المُدخَلات التي تطابق النص الذي أدخلته.</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="25"/>
         <source>Filter:</source>
-        <translation>Filtre :</translation>
+        <translation>المرشح:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="58"/>
         <source>Enter the target URL for this hyperlink.  You can select or 
 double click on existing destinations in your book from the list above.</source>
-        <translation>Tapé la cible de l&apos;URL pour cet hyperlien. Vous pouvez sélectionner
-ou double-cliquer sur des destinations existantes dans votre livre en
-utilisant la liste ci-dessus.</translation>
+        <translation>أدخل الرابط الوُجهة لهذا التشعب.  يمكنك التحديد أو 
+النقر المزدوج على وجهات موجودة في كتابك من اللائحة في اعلاه.</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="62"/>
         <source>Target:</source>
-        <translation>Cible :</translation>
+        <translation>الوُجهة:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="96"/>
         <source>Targets in the Book</source>
-        <translation>Cibles dans le Livre</translation>
+        <translation>وُجهات في الكتاب</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="97"/>
         <source>Text</source>
-        <translation>Texte</translation>
+        <translation>النص</translation>
     </message>
 </context>
 <context>
@@ -3399,7 +3398,7 @@ utilisant la liste ci-dessus.</translation>
     <message>
         <location filename="../SelectId.ui" line="14"/>
         <source>Insert ID </source>
-        <translation>Insérer un ID</translation>
+        <translation>أدرج معرِّفاً </translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="22"/>
@@ -3408,16 +3407,16 @@ utilisant la liste ci-dessus.</translation>
 The dropdown box shows existing ID names in the current file.
 
 ID names must be unique and start with a letter.</source>
-        <translation>Entrez un nom d&apos;ID pour servir de cible d&apos;hyperliens, de note, et d&apos;entrée de table des matières.
+        <translation>أدخل أسماء المعرِّفات لاستخدامها كوُجهات للروابط التشعبية والملاحظات ومُدخَلات المحتويات.
 
-La fenêtre d&apos;affichage montre les ID existants dans le fichier en cours.
+مربع الإنسدال يُظهر أسماء المعرِّفات الحالية في الملف الحالي.
 
-Le noms des ID doivent être uniques et commencer par une lettre. </translation>
+يجب أن تكون أسماء المعرِّفات فريدة وتبدأ بحرف.</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="29"/>
         <source>ID:</source>
-        <translation>ID :</translation>
+        <translation>المعرِّف:</translation>
     </message>
 </context>
 <context>
@@ -3425,16 +3424,16 @@ Le noms des ID doivent être uniques et commencer par une lettre. </translation>
     <message>
         <location filename="../Utility.cpp" line="674"/>
         <source>PageEdit</source>
-        <translation>PageEdit</translation>
+        <translation>محرر الصفحات</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="675"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>Le nom du fichier demandé contient des caractères non-ASCII. Vous ne devriez utiliser que les caractères ASCII pour les noms de fichiers. L&apos;utilisation de caractères non-ASCII peut empêcher l&apos;utilisation du ePub avec certaines liseuses.
+        <translation>اسم الملف المطلوب يحوي محارف ليست ASCII. ينبغي أن تستخدم فقط محارف ASCII في أسماء الملفات. استخدام محارف ليست ASCII يمكن أن يمنع الكتاب من العمل في بعض القارئات.
 
-Voulez-vous toujours utiliser ce nom de fichier ?</translation>
+مواصلة استخدام اسم الملف المطلوب؟</translation>
     </message>
 </context>
 <context>
@@ -3442,17 +3441,17 @@ Voulez-vous toujours utiliser ce nom de fichier ?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="158"/>
         <source>No suggestions</source>
-        <translation>Aucune suggestion</translation>
+        <translation>لا اقتراحات</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="170"/>
         <source>Check Spelling</source>
-        <translation>Vérifier l&apos;orthographe</translation>
+        <translation>تدقيق الإملاء</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Select Language</source>
-        <translation>Choisir la langue</translation>
+        <translation>اختيار اللغة</translation>
     </message>
 </context>
 </TS>
