@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
 
 PackageIdentifier: Sigil-Ebook.PageEdit
 PackageVersion: <VERSION>
@@ -37,4 +37,4 @@ Installers:
     Custom: /CURRENTUSER /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon"
 ReleaseDate: <DATE>
 ManifestType: installer
-ManifestVersion: 1.6.0
+ManifestVersion: 1.9.0
