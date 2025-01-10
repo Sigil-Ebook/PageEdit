@@ -7,6 +7,7 @@ PageEdit-2.4.0
 
    New Features
      - Update to Qt 6.7.3
+     - allow Windows installer to work on arm64
 
 PageEdit-2.3.1
   Bug Fixes
