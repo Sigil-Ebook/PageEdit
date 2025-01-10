@@ -394,6 +394,7 @@ if ( MSVC )
     # Specify platform var for Inno
     if ( 64_BIT_PLATFORM )
         # Used in the ISS CMake configuration
+        # x64compatible makes InnoSetup 6.3+ the minimum
         set( ISS_ARCH "x64compatible" )
         set( ISS_SETUP_FILENAME_PLATFORM "-x64" )
     endif()
