@@ -6,6 +6,7 @@ Platform:
 - Windows.Desktop
 MinimumOSVersion: 10.0.17763.0
 InstallerType: inno
+Scope: machine
 InstallModes:
 - interactive
 - silent
@@ -23,18 +24,11 @@ Commands:
 - pageedit
 Installers:
 - Architecture: x64
-  Scope: machine
   ElevationRequirement: elevatesSelf
   InstallerUrl: https://github.com/Sigil-Ebook/PageEdit/releases/download/<VERSION>/PageEdit-<VERSION>-Windows-x64-Setup.exe
   InstallerSha256: <HASH-AMD64>
   InstallerSwitches:
     Custom: /ALLUSERS /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon"
-- Architecture: x64
-  Scope: user
-  InstallerUrl: https://github.com/Sigil-Ebook/PageEdit/releases/download/<VERSION>/PageEdit-<VERSION>-Windows-x64-Setup.exe
-  InstallerSha256: <HASH-AMD64>
-  InstallerSwitches:
-    Custom: /CURRENTUSER /NORESTART /SUPPRESSMSGBOXES /COMPONENTS="dicon"
 ReleaseDate: <DATE>
 ManifestType: installer
 ManifestVersion: 1.9.0
