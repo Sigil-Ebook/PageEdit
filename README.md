@@ -17,11 +17,11 @@ This app is working and fundamentally complete.
 
 ![PageEdit](screencaps/add-links.png?raw=true) Add Links
 
-It prefers Qt 6.7.2 or later but can still be built with Qt 6.4.2.
+It prefers Qt 6.8.2 or later but can still be built with Qt 6.4.2.
 
 Building on macOS Ventura
 -------------------------
-You will need cmake version 3.0 or later to build:
+You will need cmake version 3.18 or later to build:
 
 You build in a separate directory and not in the source directory.
 
@@ -29,15 +29,15 @@ After checking out the PageEdit github repo into a PageEdit directory
 
 
 `export MACOSX_DEPLOYMENT_TARGET=11.0`<br>
-`export MYQTHOME=~/Qt672`<br>
-`export PATH=${PATH}:${MYQTHOME}/bin`<br>
+`export MYQTHOME=~/Qt682`<br>
+`export PATH=${PATH}:${MYQTHOME}/bin:${MYQTHOME}/libexec`<br>
 `mkdir build`<br>
 `cd build`<br>
 `cmake -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_BUILD_TYPE=Release \`<br>
 `      -DCMAKE_CXX_FLAGS=-Wno-inconsistent-missing-override \`<br>
 `      -DCMAKE_PREFIX_PATH=${MYQTHOME}/lib/cmake \ `<br>
 `      -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/\`<br>
-`                   MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/ ../PageEdit`<br>
+`                   MacOSX.platform/Developer/SDKs/MacOSX14.sdk/ ../PageEdit`<br>
 `make`<br>
 `make addframeworks`<br>
 `cd bin`<br>
