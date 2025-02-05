@@ -62,6 +62,7 @@ jobs:
 
         export MYQTHOME=${{runner.workspace}}/${{env.QT}}
         echo ${MYQTHOME}/bin >> $GITHUB_PATH
+        echo ${MYQTHOME}/libexec >> $GITHUB_PATH
         cd ${{runner.workspace}}
 
 
