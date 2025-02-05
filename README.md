@@ -93,7 +93,7 @@ By default, bundled hunspell dictionaries are converted to webengine spell check
 On Windows:
 -----------
 
-Qt6.7.2 or higher is preferred, but you'll want to maintain a  minimum of Qt6.4.2 (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.7.2. Install cmake 3.18+ and make sure its bin directory is added to your path.
+Qt6.7.2 or higher is preferred, but you'll want to maintain a  minimum of Qt6.4.2 (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.7.2. At the time of this writing Qt6.8.2 is included in the official installer. Install cmake 3.18+ and make sure its bin directory is added to your path.
 
 Make sure that Qt's bin directory is also added to your PATH. Take note of the path for your Qt's prefix (the directory right above the bin directory). Open an "x64 Native Tools Command Prompt for VS2022" from the Start menu and cd to wherever you want to build.
 
@@ -106,7 +106,7 @@ To test:
 `cd bin`<br>
 `PageEdit.exe \FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB\FILENAME.xhtml`
 
-Use `nmake deploy` to package PageEdit and all of its dependencies into a zip archive (in a newly created 'deploy' folder in the build folder)
+Use `nmake deploy` to package PageEdit as a zip archive (in a newly created 'deploy' folder in the build folder)
 
 Use `nmake deployinstaller` to package PageEdit and all of its dependencies into an Inno Setup installer (must have InnoSetup installed and on the PATH for this to work).
 
