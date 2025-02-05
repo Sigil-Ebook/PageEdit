@@ -106,11 +106,11 @@ To test:
 `cd bin`<br>
 `PageEdit.exe \FULL_PATH_TO_AN_XHTML_FILE_IN_AN_UNZIPPED_EPUB\FILENAME.xhtml`
 
-Use `nmake deploy` to package PageEdit as a zip archive (in a newly created 'deploy' folder in the build folder)
+Use `nmake deployzip` to package PageEdit as a zip archive (in a newly created 'deploy' folder in the build folder)
 
 Use `nmake deployinstaller` to package PageEdit and all of its dependencies into an Inno Setup installer (must have InnoSetup installed and on the PATH for this to work).
 
-__NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deploy` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
+__NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deployzip` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
 __NOTE__: as of this writing, the Official PageEdit release are built using Qt6.7.2
 
