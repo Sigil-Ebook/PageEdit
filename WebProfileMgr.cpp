@@ -1,21 +1,21 @@
 /************************************************************************
 **
-**  Copyright (C) 2023-2024 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2023-2025 Kevin B. Hendricks, Stratford Ontario Canada
 **
-**  This file is part of Sigil.
+**  This file is part of PageEdit.
 **
-**  Sigil is free software: you can redistribute it and/or modify
+**  PageEdit is free software: you can redistribute it and/or modify
 **  it under the terms of the GNU General Public License as published by
 **  the Free Software Foundation, either version 3 of the License, or
 **  (at your option) any later version.
 **
-**  Sigil is distributed in the hope that it will be useful,
+**  PageEdit is distributed in the hope that it will be useful,
 **  but WITHOUT ANY WARRANTY; without even the implied warranty of
 **  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 **  GNU General Public License for more details.
 **
 **  You should have received a copy of the GNU General Public License
-**  along with Sigil.  If not, see <http://www.gnu.org/licenses/>.
+**  along with PageEdit.  If not, see <http://www.gnu.org/licenses/>.
 **
 *************************************************************************/
 
@@ -97,7 +97,9 @@ WebProfileMgr::WebProfileMgr()
 
     // create the profile for Preview / Edit
     SettingsStore ss;
-    m_preview_profile = new QWebEngineProfile("Preview", nullptr);
+    // m_preview_profile = new QWebEngineProfile("Preview", nullptr);
+    // Use an off-the-rcord to workaround profile creation bugs
+    m_preview_profile = new QWebEngineProfile();
     InitializeDefaultSettings(m_preview_profile->settings());
     m_preview_profile->settings()->setAttribute(QWebEngineSettings::LocalContentCanAccessFileUrls, true);
     m_preview_profile->settings()->setAttribute(QWebEngineSettings::ErrorPageEnabled, false);
@@ -116,6 +118,7 @@ WebProfileMgr::WebProfileMgr()
         storageDir.mkpath(localStorePath);
     }
     m_preview_profile->setPersistentStoragePath(localStorePath);
+    m_preview_profile->setSpellCheckEnabled(true);
     // Use our URLInterceptor
     m_preview_profile->setUrlRequestInterceptor(m_URLint);
 
