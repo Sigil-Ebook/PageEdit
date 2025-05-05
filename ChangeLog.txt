@@ -3,7 +3,9 @@ Change Log
 pre -2.X.X
     New Features
       - update MacOS and Windows builds to use Qt 6.8.2
- 
+      - improve light dark theming for Linux
+      - change WebProfileMgr to use off-the-record profiles until Qt profile creation bugs get fixed
+
 
 PageEdit-2.4.0
 
