@@ -61,6 +61,7 @@ private:
     bool m_isDark;
     QTimer * m_PaletteChangeTimer;
     bool m_AlwaysUseNFC = true;
+    bool m_UseAppPaletteEvent = false;
 };
 
 #endif // MAINAPPLICATION_H
