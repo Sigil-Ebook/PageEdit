@@ -5,6 +5,9 @@ pre -2.X.X
       - update MacOS and Windows builds to use Qt 6.8.2
       - improve light dark theming for Linux
       - change WebProfileMgr to use off-the-record profiles until Qt profile creation bugs get fixed
+    Bug Fixes
+    ---------
+      - fix bug when current MainWindow size was not being saved
 
 
 PageEdit-2.4.0

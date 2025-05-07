@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2024 Kevin Hendricks, Doug Massay
+**  Copyright (C) 2019-2025 Kevin Hendricks, Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -1234,7 +1234,7 @@ void MainWindow::SaveSettings()
     settings.setValue("maximized", isMaximized());
     settings.setValue("fullscreen", isFullScreen());
 
-    settings.setValue("geometry", m_LastWindowSize);
+    settings.setValue("geometry", saveGeometry());
     // The positions of all the toolbars and dock widgets                                                       
     settings.setValue("toolbars", saveState());
     settings.setValue("preserveheadingattributes", m_preserveHeadingAttributes);
