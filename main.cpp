@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2024  Kevin B. Hendricks, Stratford, Ontario, Canada
-**  Copyright (C) 2019-2024  Doug Massay
+**  Copyright (C) 2019-2025  Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2025  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -65,14 +65,18 @@ static MainWindow *GetMainWindow(const QStringList &arguments)
     // We use the first argument as the file to load after starting
     QString filepath;
     QString spineno;
+    QString curpos;
     if (arguments.size() > 1 && Utility::IsFileReadable(arguments.at(1))) {
         filepath = arguments.at(1);
     }
     if (arguments.size() > 2) {
         spineno = arguments.at(2);
     }
+    if (arguments.size() > 3) {
+        curpos = arguments.at(3);
+    }
     
-    return new MainWindow(filepath, spineno);
+    return new MainWindow(filepath, spineno, curpos);
 }
 
 

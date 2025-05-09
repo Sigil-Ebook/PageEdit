@@ -1,13 +1,16 @@
 Change Log
 ==========
-pre -2.X.X
+pre -2.5.0
     New Features
       - update MacOS and Windows builds to use Qt 6.8.2
-      - improve light dark theming for Linux
-      - change WebProfileMgr to use off-the-record profiles until Qt profile creation bugs get fixed
+      - improve light to dark theming for Linux
+      - when launched via Sigil's External Xhtml Editor when editing an xhtml file in CodeView,
+        the cursor in PageEdit will sync to the current editing position
+
     Bug Fixes
     ---------
-      - fix bug when current MainWindow size was not being saved
+      - fix bug when current MainWindow geometry was not being saved
+      - change WebProfileMgr to use off-the-record profiles until Qt profile creation bugs get fixed
 
 
 PageEdit-2.4.0

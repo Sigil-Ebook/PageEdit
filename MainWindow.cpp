@@ -64,6 +64,7 @@
 #include "HTMLEncodingResolver.h"
 #include "SearchToolbar.h"
 #include "OPFReader.h"
+#include "TagLister.h"
 #include "MainApplication.h"
 #include "MainWindow.h"
 
@@ -95,7 +96,7 @@ static const int ZOOM_SLIDER_MIDDLE = 500;
 static const int ZOOM_SLIDER_WIDTH  = 140;
 
 
-MainWindow::MainWindow(QString filepath, QString spineno, QWidget *parent)
+MainWindow::MainWindow(QString filepath, QString spineno, QString curpos, QWidget *parent)
     :
     QMainWindow(parent),
     m_WebView(new WebViewEdit(this)),
@@ -126,7 +127,8 @@ MainWindow::MainWindow(QString filepath, QString spineno, QWidget *parent)
     m_WebViewPrinter(new WebViewPrinter(this)),
     m_Clips(nullptr),
     m_ClipEditor(new ClipEditor(this)),
-    m_LastPtr(-1)
+    m_LastPtr(-1),
+    m_FilePos(-1)
 {
     ui.setupUi(this);
     // initialize the toolbar UI clip actions
@@ -144,7 +146,7 @@ MainWindow::MainWindow(QString filepath, QString spineno, QWidget *parent)
     ui.actionMode->setChecked(true);
     LoadSettings();
     ConnectSignalsToSlots();
-    SetupFileList(filepath, spineno);
+    SetupFileList(filepath, spineno, curpos);
     SetupNavigationComboBox();
     m_ClipEditor->SetCSSList(m_CSSList);
     QTimer::singleShot(200, this, SLOT(DoUpdatePage()));
@@ -177,7 +179,7 @@ void MainWindow::ApplicationPaletteChanged()
 
 // initializes m_Base, m_SpineList, m_ListPtr, and m_CurrentFilePath
 // Also sets m_SandBoxPath to limit file: urls
-void MainWindow::SetupFileList(const QString &filepath, const QString &spineno)
+void MainWindow::SetupFileList(const QString &filepath, const QString &spineno, const QString &curpos)
 {
     m_CurrentFilePath = "";
     ui.actionNext->setEnabled(false);
@@ -186,6 +188,7 @@ void MainWindow::SetupFileList(const QString &filepath, const QString &spineno)
     QFileInfo fi(filepath);
     if (!fi.exists() || !fi.isReadable()) return;
     m_ListPtr = -1;
+    m_FilePos = -1;
     if (fi.suffix() == "opf") {
         m_ListPtr = 0;
         OPFReader opfrdr;
@@ -196,6 +199,12 @@ void MainWindow::SetupFileList(const QString &filepath, const QString &spineno)
             int val = spineno.toInt(&okay);
             if ((val >= 0) && (val < spine_files.size())) m_ListPtr = val;
         }
+        if (!curpos.isEmpty()) {
+            bool okay;
+            int val = curpos.toInt(&okay);
+            if (val >= -1) m_FilePos = val;
+        }
+
         m_Base = Utility::longestCommonPath(spine_files, "/");
         foreach(QString sf, spine_files) {
             m_SpineList << sf.right(sf.length()-m_Base.length());
@@ -239,6 +248,7 @@ void MainWindow::SetupFileList(const QString &filepath, const QString &spineno)
         m_Base = fi.absolutePath()+ "/";
         m_SpineList << fi.fileName();
         m_ListPtr = 0;
+        m_FilePos = -1;
         // FIXME: how should we determine an appropriate sandbox for this case?
         // For Now: limit to the directory holding this file and its parent if not root
         m_SandBoxPath = m_Base;
@@ -783,6 +793,8 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
         }
     }
 
+    QString original_source = text;
+
     //if isDarkMode is set, inject a local style in head
     SettingsStore settings;
     if (Utility::IsDarkMode() && settings.previewDark()) {
@@ -850,6 +862,16 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
     m_WebView->show();
     m_WebView->GrabFocus();
 
+    if (m_FilePos > -1) {
+        // need to handle scroll to initial file cursor
+        // position in a delayed manner (ie. in SetInitialSource)
+        TagLister tl(original_source);
+        QString webpath = tl.GeneratePathToTag(m_FilePos);
+        // qDebug() << "webpath is: " << webpath;
+        m_FirstLocation = m_WebView->ConvertQWebPathToHierarchy(webpath);
+        m_FilePos = -1;
+    }
+
     // now set the mode: edit or preview
     ToggleMode(ui.actionMode->isChecked());
     QTimer::singleShot(100, this, SLOT(SetInitialSource()));
@@ -858,6 +880,11 @@ void MainWindow::UpdatePage(const QString &filename_url, const QString &source)
 void MainWindow::SetInitialSource()
 {
     m_source = GetSource();
+    if (!m_FirstLocation.isEmpty()) {
+        m_WebView->StoreCaretLocationUpdate(m_FirstLocation);
+        m_WebView->ExecuteCaretUpdate();
+        m_FirstLocation.clear();
+    }
     m_UpdatePageInProgress = false;
 }
 
@@ -890,7 +917,7 @@ QList<ElementIndex> MainWindow::GetCaretLocation()
     QList<ElementIndex> hierarchy = m_WebView->GetCaretLocation();
     // foreach(ElementIndex ei, hierarchy) {
     //     qDebug() << "name: " << ei.name << " index: " << ei.index;
-    // }    
+    // }
     return hierarchy;
 }
 

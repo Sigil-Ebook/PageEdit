@@ -109,7 +109,7 @@ WebProfileMgr::WebProfileMgr()
     m_preview_profile->settings()->setAttribute(QWebEngineSettings::JavascriptEnabled, (ss.javascriptOn() == 1));
     m_preview_profile->settings()->setAttribute(QWebEngineSettings::JavascriptCanOpenWindows, (ss.javascriptOn() == 1));
     m_preview_profile->settings()->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, (ss.remoteOn() == 1));
-    m_preview_profile->settings()->setAttribute(QWebEngineSettings::FocusOnNavigationEnabled, false);
+    m_preview_profile->settings()->setAttribute(QWebEngineSettings::FocusOnNavigationEnabled, true);
     m_preview_profile->settings()->setAttribute(QWebEngineSettings::LocalStorageEnabled, true);
     // Enable local-storage for epub3
     QString localStorePath = Utility::DefinePrefsDir() + "/local-storage/";

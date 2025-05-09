@@ -61,7 +61,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QString filepath, QString spineno = "", QWidget *parent = 0);
+    MainWindow(QString filepath, QString spineno = "", QString curpos = "", QWidget *parent = 0);
     ~MainWindow();
     QList<ElementIndex> GetCaretLocation();
     bool IsVisible();
@@ -203,7 +203,7 @@ protected:
 
 private:
     void SetupView();
-    void SetupFileList(const QString& filepath, const QString& spineno = "");
+    void SetupFileList(const QString& filepath, const QString& spineno = "", const QString& curpos = "");
     void SetupNavigationComboBox();
     void LoadSettings();
     void SaveSettings();
@@ -249,10 +249,12 @@ private:
     WebViewPrinter *m_WebViewPrinter;
 
     QList<ElementIndex> m_LastLocation;
+    QList<ElementIndex> m_FirstLocation;
     ClipsWindow* m_Clips;
     ClipEditor*  m_ClipEditor;
     QList<QAction*> m_clactions;
     int m_LastPtr;
+    int m_FilePos;
 
     Ui::MainWindow ui;
 };

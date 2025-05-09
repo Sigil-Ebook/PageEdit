@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2023 Kevin B. Hendricks Stratford, Ontario, Canada 
+**  Copyright (C) 2019-2025 Kevin B. Hendricks Stratford, Ontario, Canada
 **
 **  This file is part of PageEdit.
 **

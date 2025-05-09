@@ -66,6 +66,7 @@ set( SOURCE_FILES
     WebProfileMgr.cpp
     TagAtts.cpp
     QuickParser.cpp
+    TagLister.cpp
     )
 
 set( HEADER_FILES
@@ -109,6 +110,7 @@ set( HEADER_FILES
     WebProfileMgr.h
     TagAtts.h
     QuickParser.h
+    TagLister.h
     )
 
 set( FORM_FILES
