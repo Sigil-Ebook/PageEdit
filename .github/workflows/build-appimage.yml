@@ -87,6 +87,7 @@ jobs:
         -DCMAKE_PREFIX_PATH=${QT_ROOT_DIR}/lib/cmake \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_INSTALL_PREFIX=/usr \
+        -DAPPIMAGE_BUILD=1 \
         -DCMAKE_SKIP_RPATH=ON
         ninja -j$(getconf _NPROCESSORS_ONLN)
         DESTDIR=pageedit.AppDir ninja install
