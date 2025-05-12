@@ -67,7 +67,7 @@ jobs:
         which python3
         python3 --version
         gcc --version
-        mkdir ${{runner.workspace}}/build
+        mkdir -p ${{runner.workspace}}/build/pageedit.AppDir/usr/lib
         cd ${{runner.workspace}}/build
         wget -nv https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
         chmod +x linuxdeploy-x86_64.AppImage
