@@ -1,0 +1,14 @@
+#! /usr/bin/env bash
+
+# make sure errors in sourced scripts will cause this script to stop
+set -e
+
+this_dir="$(readlink -f "$(dirname "$0")")"
+
+PAGEEDIT_EXTRA_ROOT="$this_dir/usr/share/pageedit"
+export PAGEEDIT_EXTRA_ROOT
+echo "${PAGEEDIT_EXTRA_ROOT}"
+
+source "$this_dir"/apprun-hooks/"linuxdeploy-plugin-qt-hook.sh"
+
+exec "$this_dir"/AppRun.wrapped "$@"
