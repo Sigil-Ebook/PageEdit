@@ -600,17 +600,28 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
     <name>MainWindow</name>
     <message>
         <location filename="../main.ui" line="15"/>
-        <location filename="../MainWindow.cpp" line="1048"/>
-        <location filename="../MainWindow.cpp" line="1142"/>
-        <location filename="../MainWindow.cpp" line="1805"/>
-        <location filename="../MainWindow.cpp" line="1818"/>
-        <location filename="../MainWindow.cpp" line="1824"/>
-        <location filename="../MainWindow.cpp" line="1838"/>
+        <location filename="../MainWindow.cpp" line="1075"/>
+        <location filename="../MainWindow.cpp" line="1169"/>
+        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
         <location filename="../MainWindow.cpp" line="1851"/>
-        <location filename="../MainWindow.cpp" line="1857"/>
         <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp" line="1920"/>
-        <location filename="../MainWindow.cpp" line="1995"/>
+        <location filename="../MainWindow.cpp" line="1878"/>
+        <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp" line="1892"/>
+        <location filename="../MainWindow.cpp" line="1947"/>
+        <location filename="../MainWindow.cpp" line="2022"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1169"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1713,27 +1724,32 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
         <translation>Knipsel 20 invoegen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="779"/>
+        <location filename="../MainWindow.cpp" line="789"/>
+        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>Inlezen van bestand mislukt</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="780"/>
+        <location filename="../MainWindow.cpp" line="790"/>
+        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>Inlezen van bestand mislukt</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="879"/>
+        <location filename="../MainWindow.cpp" line="906"/>
+        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>modus: Voorbeeld</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="881"/>
+        <location filename="../MainWindow.cpp" line="908"/>
+        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>modus: Bewerken</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1048"/>
+        <location filename="../MainWindow.cpp" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1742,174 +1758,218 @@ Als er voor een bepaald woord of uitdrukking geen vertaling beschikbaar is, dan 
 %1</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1143"/>
+        <location filename="../MainWindow.cpp" line="1170"/>
+        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Wilt u de wijzigingen opslaan voor het verlaten?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1162"/>
+        <location filename="../MainWindow.cpp" line="1189"/>
+        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit wordt afgesloten ...</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1248"/>
-        <location filename="../MainWindow.cpp" line="1249"/>
-        <location filename="../MainWindow.cpp" line="1250"/>
-        <location filename="../MainWindow.cpp" line="1259"/>
-        <location filename="../MainWindow.cpp" line="1260"/>
-        <location filename="../MainWindow.cpp" line="1261"/>
+        <location filename="../MainWindow.cpp" line="1275"/>
+        <location filename="../MainWindow.cpp" line="1276"/>
+        <location filename="../MainWindow.cpp" line="1277"/>
+        <location filename="../MainWindow.cpp" line="1286"/>
+        <location filename="../MainWindow.cpp" line="1287"/>
+        <location filename="../MainWindow.cpp" line="1288"/>
+        <location filename="../MainWindow.cpp~" line="1275"/>
+        <location filename="../MainWindow.cpp~" line="1276"/>
+        <location filename="../MainWindow.cpp~" line="1277"/>
+        <location filename="../MainWindow.cpp~" line="1286"/>
+        <location filename="../MainWindow.cpp~" line="1287"/>
+        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML-bestanden (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1251"/>
+        <location filename="../MainWindow.cpp" line="1278"/>
+        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF-bestanden (*.opf)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1252"/>
+        <location filename="../MainWindow.cpp" line="1279"/>
+        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>Alle bestanden (*.*)</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1491"/>
+        <location filename="../MainWindow.cpp" line="1518"/>
+        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>Bestand opslaan</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1526"/>
-        <location filename="../MainWindow.cpp" line="1527"/>
-        <location filename="../MainWindow.cpp" line="1539"/>
-        <location filename="../MainWindow.cpp" line="1540"/>
+        <location filename="../MainWindow.cpp" line="1553"/>
+        <location filename="../MainWindow.cpp" line="1554"/>
+        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1567"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1554"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>Opslaan van bestand als ... is mislukt!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1526"/>
+        <location filename="../MainWindow.cpp" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>is alleen-lezen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1535"/>
-        <location filename="../MainWindow.cpp" line="1574"/>
+        <location filename="../MainWindow.cpp" line="1562"/>
+        <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1562"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>Bestand opgeslagen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1565"/>
-        <location filename="../MainWindow.cpp" line="1567"/>
-        <location filename="../MainWindow.cpp" line="1578"/>
-        <location filename="../MainWindow.cpp" line="1579"/>
+        <location filename="../MainWindow.cpp" line="1592"/>
+        <location filename="../MainWindow.cpp" line="1594"/>
+        <location filename="../MainWindow.cpp" line="1605"/>
+        <location filename="../MainWindow.cpp" line="1606"/>
+        <location filename="../MainWindow.cpp~" line="1592"/>
+        <location filename="../MainWindow.cpp~" line="1594"/>
+        <location filename="../MainWindow.cpp~" line="1605"/>
+        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>Opslaan van bestand is mislukt!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1566"/>
+        <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>bestaat niet of is alleen-lezen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1594"/>
+        <location filename="../MainWindow.cpp" line="1621"/>
+        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>Deze waarschuwing niet opnieuw weergeven</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1595"/>
+        <location filename="../MainWindow.cpp" line="1622"/>
+        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Dit bestand wordt mogelijk niet afgedrukt zoals u verwacht.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1596"/>
+        <location filename="../MainWindow.cpp" line="1623"/>
+        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Donkere achtergronden en gekleurde tekst die veroorzaakt zijn door de CSS van een epub worden ook zo afgedrukt. </translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1597"/>
+        <location filename="../MainWindow.cpp" line="1624"/>
+        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Wees voorzichtig, want dit kan leiden tot een hoog inktverbruik!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1598"/>
+        <location filename="../MainWindow.cpp" line="1625"/>
+        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Gebruik het volgende afdrukvoorbeeld om te zien hoe dit bestand wordt afgedrukt.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1599"/>
+        <location filename="../MainWindow.cpp" line="1626"/>
+        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Schakel het selectievakje in als u deze waarschuwing voortaan niet meer wilt zien.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1679"/>
+        <location filename="../MainWindow.cpp" line="1706"/>
+        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>Bestand geopend</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1683"/>
+        <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>Openen van bestand is mislukt!</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1734"/>
+        <location filename="../MainWindow.cpp" line="1761"/>
+        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Klembord bevat HTML-opmaak</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1735"/>
+        <location filename="../MainWindow.cpp" line="1762"/>
+        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Wilt u klembordgegevens plakken als platte tekst?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1805"/>
+        <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>U dient tekst te selecteren voordat u een nieuwe referentie invoegt.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1818"/>
+        <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Referentie is ongeldig.  Deze moet beginnen met een letter, gevolgd door letter, cijfer, laag streepje, dubbele punt, koppelteken of punt.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1824"/>
+        <location filename="../MainWindow.cpp" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Op deze positie kunt u geen referentie invoegen.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1838"/>
+        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>U dient tekst te selecteren voordat u een nieuwe koppeling invoegt.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1851"/>
+        <location filename="../MainWindow.cpp" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Koppeling is ongeldig - mag geen &quot;&lt;&quot; of &quot;&gt;&quot; bevatten</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1857"/>
+        <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>Fout bij het invoegen van het externe koppelingsdoel.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>Fout bij het invoegen van een koppeling op deze positie.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1876"/>
+        <location filename="../MainWindow.cpp" line="1903"/>
+        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>Bestand invoegen</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1920"/>
+        <location filename="../MainWindow.cpp" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Op deze positie kunt u geen mediabestand invoegen.</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="1996"/>
+        <location filename="../MainWindow.cpp" line="2023"/>
+        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Wilt u de wijzigingen nog opslaan alvorens dit bestand te overschrijven?</translation>
     </message>
     <message>
-        <location filename="../MainWindow.cpp" line="2048"/>
+        <location filename="../MainWindow.cpp" line="2075"/>
+        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>Geplakt knipsel %1.</translation>
     </message>
@@ -3439,16 +3499,19 @@ Wilt u de gevraagde bestandsnaam toch gebruiken?</translation>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="158"/>
+        <location filename="../WebViewEdit.cpp~" line="158"/>
         <source>No suggestions</source>
         <translation>Geen suggesties</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="170"/>
+        <location filename="../WebViewEdit.cpp~" line="170"/>
         <source>Check Spelling</source>
         <translation>Spelling controleren</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
+        <location filename="../WebViewEdit.cpp~" line="179"/>
         <source>Select Language</source>
         <translation>Taal selecteren</translation>
     </message>
