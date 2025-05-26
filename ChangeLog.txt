@@ -1,6 +1,11 @@
 Change Log
 ==========
-pre -2.5.0
+pre - 2.X.X
+    Bug Fixes
+      - improve Sigil CodeView to PageEdit intial syncing of cursor location
+
+
+PageEdit-2.5.0
     New Features
       - update MacOS and Windows builds to use Qt 6.8.2
       - improve light to dark theming for Linux
@@ -8,7 +13,6 @@ pre -2.5.0
         the cursor in PageEdit will sync to the current editing position
 
     Bug Fixes
-    ---------
       - fix bug when current MainWindow geometry was not being saved
       - change WebProfileMgr to use off-the-record profiles until Qt profile creation bugs get fixed
 
