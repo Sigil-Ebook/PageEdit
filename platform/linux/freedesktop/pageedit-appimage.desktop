@@ -2,7 +2,7 @@
 Type=Application
 Name=PageEdit
 Comment=xhtml visual page editor
-X-AppImage-Version="${APPIMAGE_FULL_VERSION}"
+X-AppImage-Version=${APPIMAGE_FULL_VERSION}
 TryExec=pageedit
 Exec=pageedit %F
 Icon=pageedit
