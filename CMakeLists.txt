@@ -68,6 +68,10 @@ if(NOT DEFINED GUMBO_IS_SUBTREE)
   set(GUMBO_IS_SUBTREE 1)
 endif()
 
+if( NOT DEFINED APPIMAGE_BUILD )
+  set( APPIMAGE_BUILD 0 )
+endif()
+
 add_subdirectory( gumbo_subtree/src )
 
 include(CMakeLists6.txt)
