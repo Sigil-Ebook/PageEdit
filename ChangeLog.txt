@@ -1,6 +1,6 @@
 Change Log
 ==========
-pre - 2.5.2
+PageEdit- 2.5.2
     Bug Fixes
       - improve Sigil CodeView to PageEdit intial syncing of cursor location
 
