@@ -1,6 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2023-2024 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2023-2025 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2025 Doug Massay
 **  Copyright (C) 2012 John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012 Dave Heiland
 **  Copyright (C) 2012 Grant Drake
@@ -496,7 +497,9 @@ void ClipEditorModel::AddExampleEntries()
 #else
     // all flavours of linux / unix
     // user supplied environment variable to 'share/pageedit' directory will override everything
-    if (!pageedit_share_root.isEmpty()) {
+    if (!pageedit_extra_root.isEmpty()) {
+        examples_dir = pageedit_extra_root + "/examples/";
+    } else {
         examples_dir = pageedit_share_root + "/examples/";
     }
 #endif

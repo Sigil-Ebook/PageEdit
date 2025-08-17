@@ -1,6 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2024  Kevin B. Hendricks, Stratford, Ontario Canada 
+**  Copyright (C) 2019-2025  Kevin B. Hendricks, Stratford, Ontario Canada
+**  Copyright (C) 2025  Doug massay
 **  Copyright (C) 2011  John Schember <john@nachtimwald.com>
 **
 **  This file is part of PageEdit.
@@ -40,7 +41,12 @@ QStringList UILanguage::GetPossibleTranslationPaths()
     // on the platform and where they were installed.
     QStringList possible_qm_locations;
 #if !defined(Q_OS_WIN32) && !defined(Q_OS_MAC)
-    possible_qm_locations.append(pageedit_share_root + "/translations/");
+    // The user can specify an env variable that points to the translation.
+    if (!pageedit_extra_root.isEmpty()) {
+        possible_qm_locations.append(pageedit_extra_root + "/translations/");
+    } else {
+        possible_qm_locations.append(pageedit_share_root + "/translations/");
+    }
 #endif
     
     possible_qm_locations.append(QLibraryInfo::path(QLibraryInfo::TranslationsPath));
