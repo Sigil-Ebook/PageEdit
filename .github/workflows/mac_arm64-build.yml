@@ -108,5 +108,5 @@ jobs:
       with:
         name: pageedit-installer
         path: ${{runner.workspace}}/build/bin/PageEdit_arm64.tar.xz
-        retention-days: 3
+        retention-days: 5
          
