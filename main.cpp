@@ -175,6 +175,30 @@ void update_ini_file_if_needed(const QString oldfile, const QString newfile)
     }
 }
 
+void set_env_vars_if_needed(const QString& env_path)
+{
+    QString envdata;
+    if (QFile::exists(env_path)) {
+        envdata = Utility::ReadUnicodeTextFile(env_path, false);
+    }
+    // assumes NAME=VALUE and one per line
+    if (!envdata.isEmpty()) {
+        QStringList evpairs = envdata.split('\n');
+        foreach(QString apair, evpairs) {
+            if (apair.contains('=')) {
+                QStringList nv = apair.split('=');
+                QString evname = nv.value(0).trimmed();
+                QString evval = nv.value(1).trimmed();
+                // This is defined as: bool qputenv(const char * varName, QByteArrayView raw);
+                if (!evname.isEmpty() && !evval.isEmpty()) {
+                    qputenv(evname.toLocal8Bit().data(), evval.toLocal8Bit());
+                    // qDebug() << "setting ev: " << evname << " to: " << evval;
+                }
+            }
+        }
+    }
+}
+
 
 // Application entry point
 int main(int argc, char *argv[])
@@ -189,6 +213,10 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("sigil-ebook.com");
     QCoreApplication::setApplicationName("pageedit");
     QCoreApplication::setApplicationVersion(QString(PAGEEDIT_VERSION));
+
+    // handle env-vars.txt if present in PageEdit Prefs Folder
+    QString env_path = Utility::DefinePrefsDir() + "/env-vars.txt";
+    set_env_vars_if_needed(env_path);
 
     // Qt6 forced move to utf-8 settings values but Qt5 settings are broken for utf-8 codec
     // See QTBUG-40796 and QTBUG-54510 which never got fixed

@@ -1207,8 +1207,8 @@ void MainWindow::LoadSettings()
     m_skipPrintPreview = settings.skipPrintPreview();
     settings.beginGroup(SETTINGS_GROUP);
     // no longer needed but keep in settings in case Qt bug returns
-    bool isMaximized = settings.value("maximized", false).toBool();
-    bool isFullScreen = settings.value("maximized", false).toBool();
+    // bool isMaximized = settings.value("maximized", false).toBool();
+    // bool isFullScreen = settings.value("maximized", false).toBool();
 
     m_LastWindowSize = settings.value("geometry").toByteArray();
 
