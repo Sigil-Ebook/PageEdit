@@ -199,11 +199,11 @@ setup_webengine() {
 get_appimage_tools() {
   mkdir -p /build/pageedit.AppDir/usr/lib
   cd /build
-  wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
+  wget -nv https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
   chmod +x linuxdeploy-x86_64.AppImage
-  wget https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage
+  wget -nv https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage
   chmod +x linuxdeploy-plugin-qt-x86_64.AppImage
-  wget https://github.com/linuxdeploy/linuxdeploy-plugin-appimage/releases/download/continuous/linuxdeploy-plugin-appimage-x86_64.AppImage
+  wget -nv https://github.com/linuxdeploy/linuxdeploy-plugin-appimage/releases/download/continuous/linuxdeploy-plugin-appimage-x86_64.AppImage
   chmod +x linuxdeploy-plugin-appimage-x86_64.AppImage
   cp -v /lib/x86_64-linux-gnu/libtiff.so.5 /build/pageedit.AppDir/usr/lib/
   cp -v /lib/x86_64-linux-gnu/libwebp.so.7 /build/pageedit.AppDir/usr/lib/
