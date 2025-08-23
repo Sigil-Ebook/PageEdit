@@ -299,7 +299,9 @@ if( UNIX AND NOT APPLE )
     query_qmake( QT_INSTALL_LIBEXECS QT_INSTALL_LIBEXECS_DIR )
 
     if( APPIMAGE_BUILD )
+        # Write file that the appimage build process can use for naming the image
         set( APPIMAGE_FULL_VERSION "${PAGEEDIT_FULL_VERSION}" )
+        file(WRITE "${CMAKE_BINARY_DIR}/appimage_version.txt" "${APPIMAGE_FULL_VERSION}")
     endif()
 
     # Bundled dictionaries will be coverted to qtwebengine spellcheck dicts with qwebengine_convert_dict
