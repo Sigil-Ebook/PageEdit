@@ -136,3 +136,38 @@ Probably safer in the long run to create a git alias specific to the PageEdit re
 `git config alias.gumbo-sub-pull 'subtree pull --prefix gumbo_subtree https://github.com/Sigil-Ebook/sigil-gumbo.git master --squash'`
 
 Use any alias name you like. I chose "gumbo-sub-pull"  Then it's simply a matter of using `git gumbo-sub-pull` in the root of the PageEdit repository.
+
+
+# <center>Building the PageEdit AppImage on Linux</center>
+
+## General Overview
+
+**Warning! Do not attempt to run any of these scripts outside of a Docker container. Doing so could damage your system. All scripts provided are intended to be used inside of a temporary docker container that will be removed after the process completes.**
+
+The only requirement for building the PageEdit Linux AppImage is having Docker installed/configured and having an internet connection. How to get Docker installed and configured on your system is beyond the scope of this document. Every distro is different, so you're on your own there. Everything after this assumes that Docker is ready to go. Typing `docker info` in a terminal should verify everything is ready.
+
+There are two separate pieces that are needed for building the AppImage. These are a custom build of Python and a custom build of QtWebEngine. The custom Python is only used to get later versions of Qt installed in the Docker container. The AppImage build process will automatically download these pieces from my [personal github repository](https://github.com/dougmassay/win-qtwebkit-5.212/releases/tag/v5.212-1). The files used from there are sigilpython3.\*.\*.tar.gz and appimagewebengine6\*.tar.gz. These two pieces can also be fairly easily built if you wish. Should you desire to build everything from scratch, the instructions to do so are in the matching document in the Sigil AppImage build instructions in the Sigil repository.
+
+The building of the PageEdit AppImage takes place entirely within a docker container built from a stock Ubuntu 22.04 image. No system changes or updates will be made to your host system during this process. Once the Docker process completes, the PageEdit AppImage (and its corresonding zsync file) will be found in in the same directory the build process was launched from.
+
+Everything is done by entering commands in a terminal.
+
+### Get PageEdit's Source
+
+You can either download PageEdit's source code from [GitHub](https://github.com/Sigil-Ebook/PageEdit), or you can clone PageEdit's repository using git `git clone https://github.com/Sigil-Ebook/PageEdit.git pageedit`. Your choice. These built pieces will be ignored by git, so don't worry about contaminating the source tree.
+
+### CD to the root of PageEdit's source
+
+`cd pageedit` or `cd pageedit-master` or whatever. You need to be in the same directory that PageEdit's README.md, ChangeLog.txt, and docker-compose.yml files are in.
+
+### Build the AppImage
+
+If you have docker-compose installed, you can build the AppImage with the following simple command:
+
+`docker compose run --rm build_appimage`
+
+If you don't have docker-compose installed, use the following command instead:
+
+`docker run --rm -v $PWD:/reporoot ubuntu:22.04 /reporoot/.github/workflows/build_pageedit_appimage.sh`
+
+Once completed, the PageEdit-\*-x86_64.AppImage file (as well as the PageEdit-\*-x86_64.AppImage.zsync file - which can be safely ignored/removed) will be located in the current directory. Depending on how your docker permissions are configured, you may need to take ownership of the file(s) with `sudo chown <user>:<user> PageEdit-*AppImage*`. The file should already be executable, but if not just fix it up with `chmod a+x PageEdit-*AppImage`.
