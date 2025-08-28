@@ -239,7 +239,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.ui" line="182"/>
         <source>You must select an item immediately under a group to move it into the group.</source>
-        <translation>يجب أن تحدد عنصراً أسفل المجموعة مباشرة لتنقله الى المجموعة.</translation>
+        <translation>يجب أن تحدد بنداً أسفل المجموعة مباشرة لتنقله الى المجموعة.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="212"/>
@@ -417,17 +417,17 @@ Do you want to save your changes?</source>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="67"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Name</source>
         <translation>الاسم</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="68"/>
+        <location filename="../ClipEditorModel.cpp" line="69"/>
         <source>Text</source>
         <translation>النص</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="664"/>
+        <location filename="../ClipEditorModel.cpp" line="667"/>
         <source>Unable to create file %1</source>
         <translation>لا يمكن إنشاء الملف %1</translation>
     </message>
@@ -611,17 +611,6 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1169"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>محرر الصفحات</translation>
     </message>
@@ -658,7 +647,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="130"/>
         <source>C&amp;hange Case</source>
-        <translation>تغيير &amp;حالة الحروف</translation>
+        <translation>غيّر &amp;حالة الحروف</translation>
     </message>
     <message>
         <location filename="../main.ui" line="160"/>
@@ -781,7 +770,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="457"/>
         <source>Ctrl+P</source>
-        <translation>تحكم+ط</translation>
+        <translation>م‌تحكّم+P</translation>
     </message>
     <message>
         <location filename="../main.ui" line="463"/>
@@ -1725,31 +1714,26 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
-        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>فشل تحميل الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
-        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>فشل تحميل الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
-        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>النمط: معاينة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
-        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>النمط: تحرير</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1759,13 +1743,11 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
-        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>أتريد حفظ تغييراتك قبل المغادرة؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
-        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>محرر الصفحات يُغلَق...</translation>
     </message>
@@ -1776,30 +1758,21 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
-        <location filename="../MainWindow.cpp~" line="1275"/>
-        <location filename="../MainWindow.cpp~" line="1276"/>
-        <location filename="../MainWindow.cpp~" line="1277"/>
-        <location filename="../MainWindow.cpp~" line="1286"/>
-        <location filename="../MainWindow.cpp~" line="1287"/>
-        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>ملفات HTML انترنت (‎*.htm *.html *.xhtml‏)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
-        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>ملفات OPF (‎*.opf‏)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
-        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>كل الملفات (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
-        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>حفظ ملف</translation>
     </message>
@@ -1808,24 +1781,17 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1554"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>فشل حفظ الملف بإسم!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>غير قابل للكتابة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1562"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>حُفظ الملف</translation>
     </message>
@@ -1834,142 +1800,116 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
-        <location filename="../MainWindow.cpp~" line="1592"/>
-        <location filename="../MainWindow.cpp~" line="1594"/>
-        <location filename="../MainWindow.cpp~" line="1605"/>
-        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>فشل حفظ الملف!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>غير موجود أو غير قابل للكتابة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
-        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>لا تُظهر هذا التحذير مرة أخرى</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
-        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>قد لا يُطبع هذا الملف بالطريقة التي تتوقعها.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
-        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>ستُطبَع الخلفيات والنصوص الملونة المطبَّقة بألواح طُرُز كتاب الكتروني.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
-        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>توخّ الحذر حيث أنّ هذا يمكن أن ينتج عنه الكثير من استخدام الحبر!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
-        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>استخدم معاينة الطباعة التالية لترى كيف سيُطبَع هذا الملف.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
-        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>أشّر المربع إذا لم ترغب في مشاهدة هذا التحذير مستقبلا.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
-        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>فُتح الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
-        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>فشل فتح الملف!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
-        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>الحافظة تحتوي صيغ HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
-        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>أتريد لصق بيانات الحافظة كنص بسيط؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>يجب ان تحدد نصاً قبل إدراج معرِّف جديد.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>المعرِّف غير صحيح - يجب أن يبدأ بحرف، متبوعاً بحرف أو رقم أو _ أو : أو - أو .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>لا يمكنك إدراج معرّف في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>يجب ان تحدد نصاً قبل إدراج رابط جديد.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>الرابط غير صحيح - لا يمكن أن يحتوي &apos;&lt;&apos; أو &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>خطأ في إدراج هدف رابط خارجي.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>خطأ في إدراج رابط في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
-        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>إدراج ملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>لا يمكنك إدراج ملف وسائط في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
-        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>أتريد حفظ أية تغييرات قبل الكتابة على هذا الملف؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
-        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>لُصق مُدخَل مقطع %1.</translation>
     </message>
@@ -2014,52 +1954,52 @@ Line: %1 Column %2 - %3</source>
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="572"/>
+        <location filename="../Utility.cpp" line="575"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>واجه محرر الصفحات مشكلة.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="573"/>
+        <location filename="../Utility.cpp" line="576"/>
         <source>PageEdit may need to close.</source>
         <translation>قد يحتاج محرر الصفحات إلى إغلاقه.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="881"/>
+        <location filename="../Utility.cpp" line="884"/>
         <source>About PageEdit</source>
         <translation>عن محرر الصفحات</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="886"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Version</source>
         <translation>الإصدار</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="887"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Build Date</source>
         <translation>تاريخ التركيبة</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="888"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>Build Time</source>
         <translation>وقت التركيبة</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="889"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Qt Runtime Version</source>
         <translation>إصدار دالة الوقت الحقيقي لـ QT</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="890"/>
+        <location filename="../Utility.cpp" line="893"/>
         <source>Qt Compiled Version</source>
         <translation>إصدار QT المركَّب</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="891"/>
+        <location filename="../Utility.cpp" line="894"/>
         <source>System</source>
         <translation>النظام</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="892"/>
+        <location filename="../Utility.cpp" line="895"/>
         <source>Architecture</source>
         <translation>البِنية</translation>
     </message>
@@ -2377,7 +2317,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="144"/>
         <source>acute accent</source>
-        <translation>نبرة حادة</translation>
+        <translation>نبر الحِدّة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="145"/>
@@ -3102,7 +3042,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="295"/>
         <source>integral</source>
-        <translation>تتميمي</translation>
+        <translation>جزء مكوِّن</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="296"/>
@@ -3212,12 +3152,12 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="317"/>
         <source>circled plus</source>
-        <translation>الموجب محاطا بدائرة</translation>
+        <translation>الموجب المحوَّط</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="318"/>
         <source>circled times</source>
-        <translation>مرات الإحاطة</translation>
+        <translation>المرات المحوَّطة</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="319"/>
@@ -3282,7 +3222,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="331"/>
         <source>superset of</source>
-        <translation>مجموعة رئيسة من</translation>
+        <translation>مجموعة رئيسة لـ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="332"/>
@@ -3292,7 +3232,7 @@ Line: %1 Column %2 - %3</source>
     <message>
         <location filename="../SelectCharacter.cpp" line="333"/>
         <source>superset of or equal to</source>
-        <translation>مجموعة رئيسة من أو مساوٍ لـ</translation>
+        <translation>مجموعة رئيسة أو مساوٍية لـ</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="334"/>
@@ -3482,12 +3422,12 @@ ID names must be unique and start with a letter.</source>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="674"/>
+        <location filename="../Utility.cpp" line="677"/>
         <source>PageEdit</source>
         <translation>محرر الصفحات</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="675"/>
+        <location filename="../Utility.cpp" line="678"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3500,19 +3440,16 @@ Continue using the requested filename?</source>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="158"/>
-        <location filename="../WebViewEdit.cpp~" line="158"/>
         <source>No suggestions</source>
         <translation>لا اقتراحات</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="170"/>
-        <location filename="../WebViewEdit.cpp~" line="170"/>
         <source>Check Spelling</source>
         <translation>تدقيق الإملاء</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
-        <location filename="../WebViewEdit.cpp~" line="179"/>
         <source>Select Language</source>
         <translation>اختيار اللغة</translation>
     </message>

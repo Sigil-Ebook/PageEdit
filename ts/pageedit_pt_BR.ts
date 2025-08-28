@@ -417,17 +417,17 @@ Deseja salvar as alterações?</translation>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="67"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Name</source>
         <translation>Nome</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="68"/>
+        <location filename="../ClipEditorModel.cpp" line="69"/>
         <source>Text</source>
         <translation>Texto</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="664"/>
+        <location filename="../ClipEditorModel.cpp" line="667"/>
         <source>Unable to create file %1</source>
         <translation>Não é possível criar arquivo %1</translation>
     </message>
@@ -610,17 +610,6 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1169"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1724,31 +1713,26 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
-        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>Falha no carregamento do aquivo</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
-        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>Falha no Carregamento do Arquivo</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
-        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>modo: Pré-visualização</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
-        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>modo:Edição</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1758,13 +1742,11 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
-        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Deseja salvar suas alterações antes de sair?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
-        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit está fechando...</translation>
     </message>
@@ -1775,30 +1757,21 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
-        <location filename="../MainWindow.cpp~" line="1275"/>
-        <location filename="../MainWindow.cpp~" line="1276"/>
-        <location filename="../MainWindow.cpp~" line="1277"/>
-        <location filename="../MainWindow.cpp~" line="1286"/>
-        <location filename="../MainWindow.cpp~" line="1287"/>
-        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Arquivo HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
-        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>Arquivos OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
-        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>Todos os arquivos (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
-        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>Salvar arquivo</translation>
     </message>
@@ -1807,24 +1780,17 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1554"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>Não foi possível salvar o arquivo com esse nome! Verifique se possui espaço suficiente em disco e os privilégios de escrita no diretório de destino.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>O destino não possui permissões de escrita/gravação. Escolha outra pasta.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1562"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>Arquivo Salvo</translation>
     </message>
@@ -1833,142 +1799,116 @@ Se a tradução para uma palavra ou frase não está disponível, ela será exib
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
-        <location filename="../MainWindow.cpp~" line="1592"/>
-        <location filename="../MainWindow.cpp~" line="1594"/>
-        <location filename="../MainWindow.cpp~" line="1605"/>
-        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>Não foi possível salvar o arquivo! Verifique se possui espaço suficiente em disco e os privilégios de escrita no diretório de destino.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>Destino inexistente. Verifique os privilégios de escrita/gravação no diretório.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
-        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>Não exiba este aviso novamente</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
-        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Este arquivo pode não ser impresso da maneira que você imagina.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
-        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Fundos escuros e textos coloridos especificados no CSS de um Epub serão impressos assim.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
-        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Tenha cuidado, já que isto pode resultar na utilização de muita tinta!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
-        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Utilize a Pré visualização de Impressão para ver como ficará a impressão.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
-        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Marque a caixa se você não quiser ver este aviso no futuro.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
-        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>Carregamento do arquivo concluído.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
-        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>Falha ao abrir arquivo.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
-        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Área de Transferência contem formatação HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
-        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Deseja colar os dados da área de transferência como texto puro?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Você deve selecionar o texto antes de inserir um novo id.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID inválida - deve iniciar com letra, seguida de número _ : - ou .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Você não pode inserir um id nesta posição</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Você deve selecionar o texto antes de inserir um novo link.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>O link é inválido - não pode conter &apos;&lt;&apos; ou &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>Erro na inserção de uma URL externa de destino.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>Erro na inserção de um link neste local.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
-        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>Inserir arquivo</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Você pode inserir um arquivo de mídia aqui.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
-        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Deseja salvar alterações antes de sobreescrever este arquivo?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
-        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>Entrada recorte de %1 colada.</translation>
     </message>
@@ -2013,52 +1953,52 @@ Linha: %1 Coluna %2 - %3</translation>
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="572"/>
+        <location filename="../Utility.cpp" line="575"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>PageEdit encontrou um problema</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="573"/>
+        <location filename="../Utility.cpp" line="576"/>
         <source>PageEdit may need to close.</source>
         <translation>Pode ser necessário fechar PageEdit.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="881"/>
+        <location filename="../Utility.cpp" line="884"/>
         <source>About PageEdit</source>
         <translation>Sobre o PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="886"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Version</source>
         <translation>Versão</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="887"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Build Date</source>
         <translation>Data de construção</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="888"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>Build Time</source>
         <translation>Hora de construção</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="889"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Qt Runtime Version</source>
         <translation>Versão do Runtime do Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="890"/>
+        <location filename="../Utility.cpp" line="893"/>
         <source>Qt Compiled Version</source>
         <translation>Versão de Compilação do Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="891"/>
+        <location filename="../Utility.cpp" line="894"/>
         <source>System</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="892"/>
+        <location filename="../Utility.cpp" line="895"/>
         <source>Architecture</source>
         <translation>Arquitetura</translation>
     </message>
@@ -3482,12 +3422,12 @@ Nomes de identificadores precisam ser únicos e começar com uma letra.</transla
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="674"/>
+        <location filename="../Utility.cpp" line="677"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="675"/>
+        <location filename="../Utility.cpp" line="678"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3498,19 +3438,16 @@ Continue using the requested filename?</source>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="158"/>
-        <location filename="../WebViewEdit.cpp~" line="158"/>
         <source>No suggestions</source>
         <translation>Sem sugestões</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="170"/>
-        <location filename="../WebViewEdit.cpp~" line="170"/>
         <source>Check Spelling</source>
         <translation>Checar Ortografia</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
-        <location filename="../WebViewEdit.cpp~" line="179"/>
         <source>Select Language</source>
         <translation>Selecione Idioma</translation>
     </message>

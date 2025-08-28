@@ -219,7 +219,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.ui" line="123"/>
         <source>Move an entry up one entry in the same group.</source>
-        <translation>Перемістити запис в групі на один щабель вгору.</translation>
+        <translation>Перемістити запис у групі на один щабель вгору.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="126"/>
@@ -242,17 +242,17 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.ui" line="212"/>
         <source>Move an entry down one in the group.</source>
-        <translation>Перемістити запис в групі на один щабель вниз.</translation>
+        <translation>Перемістити запис у групі на один щабель вниз.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="75"/>
         <source>Right click on an entry to see a context menu of actions.</source>
-        <translation>Клацніть правою кнопкою миші на запис, щоб побачити контекстне меню дій.</translation>
+        <translation>Зробіть правий клік миші на запису, щоб побачити контекстне меню дій.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="76"/>
         <source>You can also right click in your document to select an entry.</source>
-        <translation>Ви також можете клацнути правою кнопкою миші на документі, щоб вибрати запис.</translation>
+        <translation>Ви можете зробити правий клік миші на документі, щоб вибрати запис.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
@@ -287,7 +287,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <source>If any other instances of Sigil are running they will be automatically updated with your changes.</source>
-        <translation>Якщо запущені інші екземпляри Sigil, вони будуть автоматично оновлені з вашими змінами.</translation>
+        <translation>Якщо запущені інші екземпляри Sigil, вони будуть автоматично оновлені з Вашими змінами.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="93"/>
@@ -307,7 +307,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.cpp" line="287"/>
         <source>You cannot Copy or Cut groups - use drag-and-drop.</source>
-        <translation>Ви не можете копіювати або вирізати групи - використовуйте drag-and-drop.</translation>
+        <translation>Ви не можете копіювати або вирізати групи – використовуйте drag&amp;drop.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
@@ -415,17 +415,17 @@ Do you want to save your changes?</source>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="67"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Name</source>
-        <translation>Ім&apos;я</translation>
+        <translation>Назва</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="68"/>
+        <location filename="../ClipEditorModel.cpp" line="69"/>
         <source>Text</source>
         <translation>Текст</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="664"/>
+        <location filename="../ClipEditorModel.cpp" line="667"/>
         <source>Unable to create file %1</source>
         <translation>Неможливо створити файл %1</translation>
     </message>
@@ -609,17 +609,6 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1169"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -1723,31 +1712,26 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
-        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>Не вдалося загрузити файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
-        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>Не вдалося загрузити файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
-        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>режим: Попередній перегляд</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
-        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>режим: Редагування</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1757,13 +1741,11 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
-        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Зберегти зроблені зміни перед подальшими діями?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
-        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit закривається...</translation>
     </message>
@@ -1774,30 +1756,21 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
-        <location filename="../MainWindow.cpp~" line="1275"/>
-        <location filename="../MainWindow.cpp~" line="1276"/>
-        <location filename="../MainWindow.cpp~" line="1277"/>
-        <location filename="../MainWindow.cpp~" line="1286"/>
-        <location filename="../MainWindow.cpp~" line="1287"/>
-        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Файли HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
-        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>Файли OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
-        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>Усі файли (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
-        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>Зберегти файл</translation>
     </message>
@@ -1806,24 +1779,17 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1554"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>недоступно для запису</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1562"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>Файл збережено</translation>
     </message>
@@ -1832,142 +1798,116 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
-        <location filename="../MainWindow.cpp~" line="1592"/>
-        <location filename="../MainWindow.cpp~" line="1594"/>
-        <location filename="../MainWindow.cpp~" line="1605"/>
-        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>не існує або недоступно для запису </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
-        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>Не показувати це попередження в подальшому</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
-        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Цей файл може бути надрукований не так, як Ви очікуєте.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
-        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Буде надруковано темний фон і кольоровий текст, застосований за допомогою CSS EPUB.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
-        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Будьте обережні, так як це може привести до витрачання великої кількості чорнила!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
-        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Використовуйте попередній перегляд, щоб побачити, як буде виглядати файл після друку.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
-        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Поставте прапорець, якщо Ви не хочете бачити це попередження в майбутньому.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
-        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>Файл відкрито</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
-        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>Не вдалося відкрити файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
-        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Буфер обміну містить форматований HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
-        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Ви хочете вставити дані з буферу обміну як звичайний текст?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Ви повинні виділити текст перед тим, як вставити новий ідентифікатор.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID недійсний — повинен починатися з літери, після чого можуть додаватися букви, цифри, знаки  &quot;-&quot;, &quot;_&quot;, &quot;:&quot;, або &quot;.&quot;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Ви не можете вставити ідентифікатор у цю позицію.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Ви повинні виділити текст перед тим, як вставити нове посилання.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Посилання недійсне — не може містити &apos;&lt;&apos; або &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>Помилка при вставці цілі зовнішнього посилання.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>Помилка при вставці посилання в цій позиції.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
-        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>Вставити Файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Ви не можете вставити медіафайл у цій позиції.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
-        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Зберегти зроблені зміни перед перезаписом цього файлу?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
-        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>Вставлено елемент фрагменту %1.</translation>
     </message>
@@ -2012,52 +1952,52 @@ Line: %1 Column %2 - %3</source>
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="572"/>
+        <location filename="../Utility.cpp" line="575"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>У PageEdit виникли проблеми.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="573"/>
+        <location filename="../Utility.cpp" line="576"/>
         <source>PageEdit may need to close.</source>
         <translation>PageEdit, має закритися.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="881"/>
+        <location filename="../Utility.cpp" line="884"/>
         <source>About PageEdit</source>
         <translation>Про програму PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="886"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Version</source>
         <translation>Версія</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="887"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Build Date</source>
         <translation>Дата збірки</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="888"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>Build Time</source>
         <translation>Час збірки</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="889"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Qt Runtime Version</source>
         <translation>Версія Qt Runtime</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="890"/>
+        <location filename="../Utility.cpp" line="893"/>
         <source>Qt Compiled Version</source>
         <translation>Версія компіляції Qt</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="891"/>
+        <location filename="../Utility.cpp" line="894"/>
         <source>System</source>
         <translation>Система</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="892"/>
+        <location filename="../Utility.cpp" line="895"/>
         <source>Architecture</source>
         <translation>Архітектура</translation>
     </message>
@@ -3480,12 +3420,12 @@ ID names must be unique and start with a letter.</source>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="674"/>
+        <location filename="../Utility.cpp" line="677"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="675"/>
+        <location filename="../Utility.cpp" line="678"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3498,19 +3438,16 @@ Continue using the requested filename?</source>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="158"/>
-        <location filename="../WebViewEdit.cpp~" line="158"/>
         <source>No suggestions</source>
         <translation>Варіанти відсутні</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="170"/>
-        <location filename="../WebViewEdit.cpp~" line="170"/>
         <source>Check Spelling</source>
         <translation>Перевірити орфографію</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
-        <location filename="../WebViewEdit.cpp~" line="179"/>
         <source>Select Language</source>
         <translation>Оберіть мову</translation>
     </message>

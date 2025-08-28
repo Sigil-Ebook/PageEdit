@@ -285,7 +285,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <source>If any other instances of Sigil are running they will be automatically updated with your changes.</source>
-        <translation>다른 Sigil 인스턴스가 실행중인 경우 변경 사항이 자동으로 업데이트됩니다.</translation>
+        <translation>다른 시길 인스턴스가 실행중인 경우 변경 사항이 자동으로 업데이트됩니다.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="93"/>
@@ -310,7 +310,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
         <source>Sigil</source>
-        <translation>Sigil</translation>
+        <translation>시길</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
@@ -325,7 +325,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.cpp" line="460"/>
         <source>Export Selected Entries</source>
-        <translation>선택된 항목 내보내기</translation>
+        <translation>선택한 항목 내보내기</translation>
     </message>
     <message numerus="yes">
         <location filename="../ClipEditor.cpp" line="541"/>
@@ -400,7 +400,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../ClipEditor.cpp" line="775"/>
         <source>Sigil: Clip Editor</source>
-        <translation>Sigil: 클립 편집기</translation>
+        <translation>시길: 클립 편집기</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="776"/>
@@ -413,17 +413,17 @@ Do you want to save your changes?</source>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="67"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Name</source>
         <translation>이름</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="68"/>
+        <location filename="../ClipEditorModel.cpp" line="69"/>
         <source>Text</source>
         <translation>텍스트</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="664"/>
+        <location filename="../ClipEditorModel.cpp" line="667"/>
         <source>Unable to create file %1</source>
         <translation>%1 파일을 생성할 수 없습니다</translation>
     </message>
@@ -605,17 +605,6 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1169"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>페이지 에디터</translation>
     </message>
@@ -652,7 +641,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="130"/>
         <source>C&amp;hange Case</source>
-        <translation>대/소문자 변경(&amp;H)</translation>
+        <translation>대/소문자 변경(&amp;h)</translation>
     </message>
     <message>
         <location filename="../main.ui" line="160"/>
@@ -699,7 +688,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="272"/>
         <source>Clip Bar</source>
-        <translation>클립 바 1</translation>
+        <translation>클립 바1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="304"/>
@@ -1471,12 +1460,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1318"/>
         <source>Clip &amp;1</source>
-        <translation>클립 &amp;1</translation>
+        <translation>클립 0&amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1321"/>
         <source>Insert Clip 1</source>
-        <translation>클립 1 삽입</translation>
+        <translation>클립 01 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1324"/>
@@ -1486,12 +1475,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1330"/>
         <source>Clip &amp;2</source>
-        <translation>클립 &amp;2</translation>
+        <translation>클립 0&amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1333"/>
         <source>Insert Clip 2</source>
-        <translation>클립 2 삽입</translation>
+        <translation>클립 02 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1336"/>
@@ -1501,12 +1490,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1342"/>
         <source>Clip &amp;3</source>
-        <translation>클립 &amp;3</translation>
+        <translation>클립 0&amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1345"/>
         <source>Insert Clip 3</source>
-        <translation>클립 3 삽입</translation>
+        <translation>클립 03 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1348"/>
@@ -1516,12 +1505,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1354"/>
         <source>Clip &amp;4</source>
-        <translation>클립 &amp;4</translation>
+        <translation>클립 0&amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1357"/>
         <source>Insert Clip 4</source>
-        <translation>클립 4 삽입</translation>
+        <translation>클립 04 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1360"/>
@@ -1531,12 +1520,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1366"/>
         <source>Clip &amp;5</source>
-        <translation>클립 &amp;5</translation>
+        <translation>클립 0&amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1369"/>
         <source>Insert Clip 5</source>
-        <translation>클립 5 삽입</translation>
+        <translation>클립 05 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1372"/>
@@ -1546,12 +1535,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1378"/>
         <source>Clip &amp;6</source>
-        <translation>클립 &amp;6</translation>
+        <translation>클립 0&amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1381"/>
         <source>Insert Clip 6</source>
-        <translation>클립 6 삽입</translation>
+        <translation>클립 06 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1384"/>
@@ -1561,12 +1550,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1390"/>
         <source>Clip &amp;7</source>
-        <translation>클립 &amp;7</translation>
+        <translation>클립 0&amp;7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1393"/>
         <source>Insert Clip 7</source>
-        <translation>클립 7 삽입</translation>
+        <translation>클립 07 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1396"/>
@@ -1576,12 +1565,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1402"/>
         <source>Clip &amp;8</source>
-        <translation>클립 &amp;8</translation>
+        <translation>클립 0&amp;8</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1405"/>
         <source>Insert Clip 8</source>
-        <translation>클립 8 삽입</translation>
+        <translation>클립 08 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1408"/>
@@ -1591,12 +1580,12 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="1414"/>
         <source>Clip &amp;9</source>
-        <translation>클립 &amp;9</translation>
+        <translation>클립 0&amp;9</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1417"/>
         <source>Insert Clip 9</source>
-        <translation>클립 9 삽입</translation>
+        <translation>클립 09 삽입</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1420"/>
@@ -1720,31 +1709,26 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
-        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>파일을 불러오지 못했습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
-        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>파일을 불러오지 못했습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
-        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>mode: 미리보기</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
-        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>mode: 편집</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1754,13 +1738,11 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
-        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>종료하기 전에 변경 사항을 저장하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
-        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>페이지 에디터를 종료합니다.</translation>
     </message>
@@ -1771,30 +1753,21 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
-        <location filename="../MainWindow.cpp~" line="1275"/>
-        <location filename="../MainWindow.cpp~" line="1276"/>
-        <location filename="../MainWindow.cpp~" line="1277"/>
-        <location filename="../MainWindow.cpp~" line="1286"/>
-        <location filename="../MainWindow.cpp~" line="1287"/>
-        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML 파일 (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
-        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF 파일 (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
-        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>모든 파일 (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
-        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>파일 저장</translation>
     </message>
@@ -1803,24 +1776,17 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1554"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>다른이름으로 파일 저장 실패!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>저장할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1562"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>파일 저장</translation>
     </message>
@@ -1829,142 +1795,116 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
-        <location filename="../MainWindow.cpp~" line="1592"/>
-        <location filename="../MainWindow.cpp~" line="1594"/>
-        <location filename="../MainWindow.cpp~" line="1605"/>
-        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>파일 저장 실패</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>존재하지 않거나 저장할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
-        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>이 경고를 다시 표시하지 않음</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
-        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>이 파일은 예상대로 인쇄되지 않을 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
-        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>EPUB의 CSS로 적용된 어두운 배경과 컬러 텍스트가 인쇄됩니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
-        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>잉크를 많이 사용할 수 있으므로주의하십시오!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
-        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>인쇄 미리보기를 사용하여이 파일이 어떻게 인쇄되는지 확인합니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
-        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>앞으로 이 경고를 보지 않으려면 체크 박스를 선택하세요.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
-        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>파일을 열었습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
-        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>파일을 열지 못했습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
-        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>클립보드에 HTML 서식이 있습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
-        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>클립보드의 내용을 서식 없는 텍스트로 추가하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>새 ID를 삽입할 텍스트를 먼저 선택하세요. </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>잘못된 ID - 반드시 영문으로 시작하고 영문, 숫자, 언더바(_) 콜론(:), 하이픈(-) 혹은 점(.)만 사용 가능</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>이 위치에는 ID를 삽입할 수 없습니다. </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>링크를 삽입할 텍스트를 먼저 선택하세요.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>잘못된 링크 - &apos;&lt;&apos;나 &apos;&gt;&apos;는 포함할 수 없음</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>외부 링크를 삽입하는 동안 오류가 발생했습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>이 위치에 링크를 삽입하는 동안 오류가 발생했습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
-        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>파일 삽입</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>이 위치에는 미디어 파일을 삽입할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
-        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>이 파일을 덮어쓰기 전에 모든 변경사항을 저장하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
-        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>붙여 넣은 클립 항목 %1</translation>
     </message>
@@ -2009,52 +1949,52 @@ Line: %1 Column %2 - %3</translation>
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="572"/>
+        <location filename="../Utility.cpp" line="575"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>페이지 에디터에 문제가 생겼습니다.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="573"/>
+        <location filename="../Utility.cpp" line="576"/>
         <source>PageEdit may need to close.</source>
         <translation>페이지 에디터를 종료해야 합니다.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="881"/>
+        <location filename="../Utility.cpp" line="884"/>
         <source>About PageEdit</source>
         <translation>페이지 에디터 정보</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="886"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Version</source>
         <translation>버전</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="887"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Build Date</source>
         <translation>배포일</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="888"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>Build Time</source>
         <translation>배포 시간</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="889"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Qt Runtime Version</source>
         <translation>Qt Runtime 버전</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="890"/>
+        <location filename="../Utility.cpp" line="893"/>
         <source>Qt Compiled Version</source>
         <translation>Qt Compiled 버전</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="891"/>
+        <location filename="../Utility.cpp" line="894"/>
         <source>System</source>
         <translation>시스템</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="892"/>
+        <location filename="../Utility.cpp" line="895"/>
         <source>Architecture</source>
         <translation>Architecture</translation>
     </message>
@@ -3472,12 +3412,12 @@ ID names must be unique and start with a letter.</source>
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="674"/>
+        <location filename="../Utility.cpp" line="677"/>
         <source>PageEdit</source>
         <translation>페이지 에디터</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="675"/>
+        <location filename="../Utility.cpp" line="678"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3489,19 +3429,16 @@ Continue using the requested filename?</source>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="158"/>
-        <location filename="../WebViewEdit.cpp~" line="158"/>
         <source>No suggestions</source>
         <translation>추천이 없습니다.</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="170"/>
-        <location filename="../WebViewEdit.cpp~" line="170"/>
         <source>Check Spelling</source>
         <translation>맞춤법 검사</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
-        <location filename="../WebViewEdit.cpp~" line="179"/>
         <source>Select Language</source>
         <translation>언어 선택</translation>
     </message>

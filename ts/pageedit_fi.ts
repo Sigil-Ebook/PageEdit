@@ -417,17 +417,17 @@ Haluatko tallentaa muutokset?</translation>
 <context>
     <name>ClipEditorModel</name>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="67"/>
+        <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Name</source>
         <translation>Nimi</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="68"/>
+        <location filename="../ClipEditorModel.cpp" line="69"/>
         <source>Text</source>
         <translation>Teksti</translation>
     </message>
     <message>
-        <location filename="../ClipEditorModel.cpp" line="664"/>
+        <location filename="../ClipEditorModel.cpp" line="667"/>
         <source>Unable to create file %1</source>
         <translation>Tiedostoa %1 ei voi luoda</translation>
     </message>
@@ -611,17 +611,6 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1169"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>Muokkaustila</translation>
     </message>
@@ -726,7 +715,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="345"/>
         <source>Change Case</source>
-        <translation>Vaihda kirjaintaso</translation>
+        <translation>Vaihda kirjainkoko</translation>
     </message>
     <message>
         <location filename="../main.ui" line="361"/>
@@ -1011,7 +1000,7 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     <message>
         <location filename="../main.ui" line="739"/>
         <source>&amp;Capitalize</source>
-        <translation>Iso alkukirjain</translation>
+        <translation>Iso &amp;alkukirjain</translation>
     </message>
     <message>
         <location filename="../main.ui" line="742"/>
@@ -1725,31 +1714,26 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
-        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>Tiedoston lataus epäonnistui</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
-        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>Tiedoston lataus epäonnistui</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
-        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>tila: Esikatselu</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
-        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>tila: Muokkaus</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
-        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1759,13 +1743,11 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
-        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Haluatko tallentaa muutokset ennen lähtöasi?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
-        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>Muokkaustilan lopetus...</translation>
     </message>
@@ -1776,30 +1758,21 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
-        <location filename="../MainWindow.cpp~" line="1275"/>
-        <location filename="../MainWindow.cpp~" line="1276"/>
-        <location filename="../MainWindow.cpp~" line="1277"/>
-        <location filename="../MainWindow.cpp~" line="1286"/>
-        <location filename="../MainWindow.cpp~" line="1287"/>
-        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML-tiedostot (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
-        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF-tiedostot (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
-        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>Kaikki tiedostot (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
-        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>Tallenna tiedosto</translation>
     </message>
@@ -1808,24 +1781,17 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1554"/>
-        <location filename="../MainWindow.cpp~" line="1566"/>
-        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>Tallenna nimellä -toiminto epäonnistui!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
-        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>ei ole kirjoitettavissa</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
-        <location filename="../MainWindow.cpp~" line="1562"/>
-        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>Tiedosto tallentui</translation>
     </message>
@@ -1834,142 +1800,116 @@ Jos jollekin sanalle tai ilmaukselle ei ole käännöstä, se näkyy englanninki
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
-        <location filename="../MainWindow.cpp~" line="1592"/>
-        <location filename="../MainWindow.cpp~" line="1594"/>
-        <location filename="../MainWindow.cpp~" line="1605"/>
-        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>Tiedoston tallennus epäonnistui!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
-        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>ei ole olemassa tai ei ole kirjoitettavissa</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
-        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>Älä näytä tätä varoitusta uudelleen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
-        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Tämä tiedosto ei ehkä tulostu odotetulla tavalla.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
-        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>EPUB:n CSS:llä käytetyt tummat taustat ja värillinen teksti tulostuvat.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
-        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Ole varovainen, sillä tämä voi johtaa siihen, että mustetta kuluu paljon!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
-        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Käytä seuraavaa tulostuksen esikatselua nähdäksesi, miten tämä tiedosto tulostuu.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
-        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Rastita ruutu, jos et halua nähdä tätä varoitusta tulevaisuudessa.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
-        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>Tiedosto avautui</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
-        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>Tiedoston avaus epäonnistui!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
-        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Leikepöytä sisältää HTML-muotoilua</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
-        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Haluatko liittää leikepöydältä sisältöä pelkkänä tekstinä?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
-        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Valitse teksti ennen uuden tunnisteen määrittelemistä.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
-        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Tunniste on virheellinen. Tunnisteen pitää alkaa kirjaimella, ja siinä saa olla kirjaimia, numeroita ja merkkejä ”_:-.”.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
-        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Et voi lisätä tähän paikkaan tunnistetta</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
-        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Valitse teksti ennen uuden linkin luomista.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
-        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Linkki on virheellinen – ei voi sisältää merkkiä ”&lt;” tai ”&gt;”.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
-        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>Virhe ulkoisen linkkikohteen lisäämisessä.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
-        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>Virhe linkin lisäämisessä tähän kohtaan.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
-        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>Lisää tiedosto</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
-        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Et voi lisätä mediatiedostoa tähän kohtaan.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
-        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Haluatko tallentaa muutokset ennen tämän tiedoston päälle kirjoittamista?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
-        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>Liitettiin leike %1.</translation>
     </message>
@@ -2014,52 +1954,52 @@ Rivi: %1 Sarake %2 - %3</translation>
 %2.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="572"/>
+        <location filename="../Utility.cpp" line="575"/>
         <source>PageEdit has encountered a problem.</source>
         <translation>Sivun muokkauksessa on syntynyt ongelma.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="573"/>
+        <location filename="../Utility.cpp" line="576"/>
         <source>PageEdit may need to close.</source>
         <translation>Sivunmuokkaustoiminto joutuu sulkemaan itsensä.</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="881"/>
+        <location filename="../Utility.cpp" line="884"/>
         <source>About PageEdit</source>
         <translation>Tietoa Sivun muokkauksesta</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="886"/>
+        <location filename="../Utility.cpp" line="889"/>
         <source>Version</source>
         <translation>Versio</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="887"/>
+        <location filename="../Utility.cpp" line="890"/>
         <source>Build Date</source>
         <translation>Valmistumispäivä</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="888"/>
+        <location filename="../Utility.cpp" line="891"/>
         <source>Build Time</source>
         <translation>Valmistumisaika</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="889"/>
+        <location filename="../Utility.cpp" line="892"/>
         <source>Qt Runtime Version</source>
         <translation>Qt-ajoaikaversio</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="890"/>
+        <location filename="../Utility.cpp" line="893"/>
         <source>Qt Compiled Version</source>
         <translation>Qt:n käännetty versio</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="891"/>
+        <location filename="../Utility.cpp" line="894"/>
         <source>System</source>
         <translation>Järjestelmä</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="892"/>
+        <location filename="../Utility.cpp" line="895"/>
         <source>Architecture</source>
         <translation>Arkkitehtuuri</translation>
     </message>
@@ -2327,7 +2267,7 @@ Rivi: %1 Sarake %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="134"/>
         <source>fraction 5/8</source>
-        <translation>fraktio 5/8</translation>
+        <translation>murto-osa 5/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="135"/>
@@ -2337,12 +2277,12 @@ Rivi: %1 Sarake %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="136"/>
         <source>horizontal ellipsis</source>
-        <translation>vaakasuora ellipsi</translation>
+        <translation>horizontal ellipsis</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="137"/>
         <source>micron</source>
-        <translation>mikroni</translation>
+        <translation>micron</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="138"/>
@@ -2387,12 +2327,12 @@ Rivi: %1 Sarake %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="146"/>
         <source>circumflex accent</source>
-        <translation>circumflex aksentti</translation>
+        <translation>circumflex accent</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="147"/>
         <source>small tilde</source>
-        <translation>pieni tilde</translation>
+        <translation>small tilde</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="148"/>
@@ -2732,7 +2672,7 @@ Rivi: %1 Sarake %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="215"/>
         <source>feminine ordinal indicator</source>
-        <translation>feminine ordinal indicator</translation>
+        <translation>feminiininen järjestysluku</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="216"/>
@@ -3062,7 +3002,7 @@ Rivi: %1 Sarake %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="287"/>
         <source>identical to</source>
-        <translation>identtisyysmerkki</translation>
+        <translation>sama kuin</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="288"/>
@@ -3072,7 +3012,7 @@ Rivi: %1 Sarake %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="289"/>
         <source>Latin small letter f with hook</source>
-        <translation>koukullinen gemena-s. guldenin merkki</translation>
+        <translation>Latinalainen pieni f-kirjain koukulla</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="290"/>
@@ -3482,12 +3422,12 @@ Tunnisteiden nimien tulee olla yksikäsitteisiä, ja niiden pitää alkaa kirjai
 <context>
     <name>Utility</name>
     <message>
-        <location filename="../Utility.cpp" line="674"/>
+        <location filename="../Utility.cpp" line="677"/>
         <source>PageEdit</source>
         <translation>Muokkaustila</translation>
     </message>
     <message>
-        <location filename="../Utility.cpp" line="675"/>
+        <location filename="../Utility.cpp" line="678"/>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
@@ -3500,19 +3440,16 @@ Haluatko jatkaa käyttäen antamaasi tiedostonimeä?</translation>
     <name>WebViewEdit</name>
     <message>
         <location filename="../WebViewEdit.cpp" line="158"/>
-        <location filename="../WebViewEdit.cpp~" line="158"/>
         <source>No suggestions</source>
         <translation>Ehdotuksia ei ole</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="170"/>
-        <location filename="../WebViewEdit.cpp~" line="170"/>
         <source>Check Spelling</source>
         <translation>Tarkista oikeinkirjoitus</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
-        <location filename="../WebViewEdit.cpp~" line="179"/>
         <source>Select Language</source>
         <translation>Valitse kieli</translation>
     </message>
