@@ -1,13 +1,16 @@
 Change Log
 ==========
+
 PageEdit-2.6.2
     Bug Fixes
       - fix issue with AppImage builds not being able to find shared resources
-      - fix potwential crash issue in Utility::UseNFC if used before MainApplication created
+      - fix potential crash issue in Utility::UseNFC if used before MainApplication created
       - minor fixes and changes pulled in from Sigil
+
     New Features
       - add ability for users to create and "env-vars.txt" file in PageEdit's Preferences folder
         to make setting environment variables much easier for all platforms.
+      - revamp AppImage CI build to use Docker images
 
 
 PageEdit- 2.5.2
