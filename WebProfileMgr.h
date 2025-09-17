@@ -42,6 +42,7 @@ public:
     static WebProfileMgr *instance();
     QWebEngineProfile* GetPreviewProfile();
     QWebEngineProfile* GetOneTimeProfile();
+    QWebEngineProfile* GetInspectorProfile();
     
 private:
 
@@ -51,6 +52,7 @@ private:
 
     QWebEngineProfile* m_preview_profile;
     QWebEngineProfile* m_onetime_profile;
+    QWebEngineProfile* m_inspector_profile;
     static WebProfileMgr *m_instance;
 };
 
