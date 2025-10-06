@@ -17,7 +17,7 @@ This app is working and fundamentally complete.
 
 ![PageEdit](screencaps/add-links.png?raw=true) Add Links
 
-It prefers Qt 6.8.2 or later but can still be built with Qt 6.4.2.
+It prefers Qt 6.9.3 or later but can still be built with Qt 6.4.2.
 
 Building on macOS Ventura
 -------------------------
@@ -28,8 +28,8 @@ You build in a separate directory and not in the source directory.
 After checking out the PageEdit github repo into a PageEdit directory
 
 
-`export MACOSX_DEPLOYMENT_TARGET=11.0`<br>
-`export MYQTHOME=~/Qt682`<br>
+`export MACOSX_DEPLOYMENT_TARGET=12.0`<br>
+`export MYQTHOME=~/Qt693`<br>
 `export PATH=${PATH}:${MYQTHOME}/bin:${MYQTHOME}/libexec`<br>
 `mkdir build`<br>
 `cd build`<br>
@@ -37,7 +37,7 @@ After checking out the PageEdit github repo into a PageEdit directory
 `      -DCMAKE_CXX_FLAGS=-Wno-inconsistent-missing-override \`<br>
 `      -DCMAKE_PREFIX_PATH=${MYQTHOME}/lib/cmake \ `<br>
 `      -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/\`<br>
-`                   MacOSX.platform/Developer/SDKs/MacOSX14.sdk/ ../PageEdit`<br>
+`                   MacOSX.platform/Developer/SDKs/MacOSX15.sdk/ ../PageEdit`<br>
 `make`<br>
 `make addframeworks`<br>
 `cd bin`<br>
@@ -112,7 +112,7 @@ Use `nmake deployinstaller` to package PageEdit and all of its dependencies into
 
 __NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deployzip` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
-__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.7.2
+__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.9.3
 
 
 ## For Github repository maintainers (who am I kidding, this is to keep myself from forgetting/messing up):
