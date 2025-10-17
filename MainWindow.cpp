@@ -577,7 +577,7 @@ void MainWindow::SetupView()
     ui.actionMode->setIcon(icon);
     
     // Headings QToolButton
-    ui.tbHeadings->setPopupMode(QToolButton::InstantPopup);
+    ui.tbHeadings->setPopupMode(QToolButton::MenuButtonPopup);
 
     // Preferences and About
     ui.actionPreferences->setMenuRole(QAction::PreferencesRole);
@@ -2147,6 +2147,7 @@ void MainWindow::ConnectSignalsToSlots()
     connect(m_headingMapper, SIGNAL(mappedString(const QString &)), this, SLOT(ApplyHeadingToSelection(const QString &)));
 
     connect(ui.actionHeadingPreserveAttributes,SIGNAL(triggered(bool)),this,SLOT(SetPreserveHeadingAttributes(bool)));
+    connect(ui.tbHeadings, &QToolButton::triggered, ui.tbHeadings, &QToolButton::setDefaultAction);
 
     // Navigation Related
     connect(ui.actionPrev,       SIGNAL(triggered()),    this, SLOT(EditPrev()));

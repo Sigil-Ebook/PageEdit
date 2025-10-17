@@ -1,5 +1,12 @@
 Change Log
 ==========
+prePageEdit-2.7.0
+    Bug Fixes
+      -
+    New Features
+      - assign short cut Ctrl+Shift+N to create a numbered list
+      - Modify HeadingChange ToolButton to remember last used action
+
 
 PageEdit-2.6.2
     Bug Fixes

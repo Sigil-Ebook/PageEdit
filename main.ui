@@ -786,6 +786,9 @@
    <property name="toolTip">
     <string>Create a numbered list from selection.</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
   </action>
 
   <action name="actionInsertBulletedList">
