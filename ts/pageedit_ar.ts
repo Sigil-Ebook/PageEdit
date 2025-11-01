@@ -591,7 +591,7 @@ If a translation for specific word or phrase is not available it will be display
 <context>
     <name>Inspector</name>
     <message>
-        <location filename="../Inspector.cpp" line="76"/>
+        <location filename="../Inspector.cpp" line="67"/>
         <source>Inspect Page or Element</source>
         <translation>تفحّص صفحة أو عنصراً</translation>
     </message>
@@ -611,6 +611,17 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1169"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>محرر الصفحات</translation>
     </message>
@@ -661,7 +672,7 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="176"/>
-        <location filename="../main.ui" line="1144"/>
+        <location filename="../main.ui" line="1147"/>
         <source>Clips</source>
         <translation>مقاطع</translation>
     </message>
@@ -677,7 +688,7 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="227"/>
-        <location filename="../main.ui" line="1241"/>
+        <location filename="../main.ui" line="1244"/>
         <source>Mode</source>
         <translation>النمط</translation>
     </message>
@@ -698,7 +709,7 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="304"/>
-        <location filename="../main.ui" line="1184"/>
+        <location filename="../main.ui" line="1187"/>
         <source>Find</source>
         <translation>إيجاد</translation>
     </message>
@@ -1043,697 +1054,707 @@ If a translation for specific word or phrase is not available it will be display
         <translation>أنشيء قائمة مرقمة من التحديد.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="800"/>
+        <location filename="../main.ui" line="790"/>
+        <source>Ctrl+Shift+N</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="803"/>
         <source>Bulle&amp;ted List</source>
         <translation>لائحة برمو&amp;ز</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="803"/>
+        <location filename="../main.ui" line="806"/>
         <source>Create a bulleted list from selection.</source>
         <translation>أنشيء قائمة برموز من التحديد.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="806"/>
+        <location filename="../main.ui" line="809"/>
         <source>Ctrl+Shift+L</source>
         <translation>تحكم+تحويل+ق</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="819"/>
+        <location filename="../main.ui" line="822"/>
         <source>Stri&amp;kethrough</source>
         <translation>يتوس‍&amp;ط‍ه خط</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="822"/>
+        <location filename="../main.ui" line="825"/>
         <source>Draw a line through the selected text.</source>
         <translation>ارسم خطاً عبر النص المحدد.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="835"/>
+        <location filename="../main.ui" line="838"/>
         <source>&amp;Subscript</source>
         <translation>نص &amp;سفلي</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="838"/>
+        <location filename="../main.ui" line="841"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
         <translation>اجعل النص المحدد أصغر بقليل وأسفل من السطر الاعتيادي.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="851"/>
+        <location filename="../main.ui" line="854"/>
         <source>Su&amp;perscript</source>
         <translation>نص &amp;علوي</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="854"/>
+        <location filename="../main.ui" line="857"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
         <translation>اجعل النص المحدد أصغر بقليل وأعلى من السطر الاعتيادي.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="865"/>
+        <location filename="../main.ui" line="868"/>
         <source>Zoom &amp;In</source>
         <translation>&amp;ت‍كبير</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="868"/>
+        <location filename="../main.ui" line="871"/>
         <source>Zoom In</source>
         <translation>تكبير</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="871"/>
+        <location filename="../main.ui" line="874"/>
         <source>Ctrl+=</source>
         <translation>تحكم+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="882"/>
+        <location filename="../main.ui" line="885"/>
         <source>Zoom &amp;Out</source>
         <translation>ت‍&amp;ص‍غير</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="885"/>
+        <location filename="../main.ui" line="888"/>
         <source>Zoom Out</source>
         <translation>تصغير</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="888"/>
+        <location filename="../main.ui" line="891"/>
         <source>Ctrl+-</source>
         <translation>تحكم+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="899"/>
+        <location filename="../main.ui" line="902"/>
         <source>Incre&amp;ase Indent</source>
         <translation>&amp;زيادة البادئة</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="902"/>
+        <location filename="../main.ui" line="905"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>زيادة مستوى البادئة للمقطع.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="905"/>
+        <location filename="../main.ui" line="908"/>
         <source>Ctrl+Alt+M</source>
         <translation>تحكم+تبديل+ص</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="915"/>
+        <location filename="../main.ui" line="918"/>
         <source>&amp;Decrease Indent</source>
         <translation>إ&amp;ن‍قاص البادئة</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="918"/>
+        <location filename="../main.ui" line="921"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>إنقاص مستوى البادئة للمقطع.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="921"/>
+        <location filename="../main.ui" line="924"/>
         <source>Ctrl+Shift+M</source>
         <translation>تحكم+تحويل+ص</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="931"/>
+        <location filename="../main.ui" line="934"/>
         <source>Split &amp;Marker</source>
         <translation>إ&amp;ش‍ارة تقسيم</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="934"/>
+        <location filename="../main.ui" line="937"/>
         <source>Insert Sigil split file marker</source>
         <translation>إدراج علامة سيغل لتقسيم الملف</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="937"/>
+        <location filename="../main.ui" line="940"/>
         <source>Ctrl+Shift+Return</source>
         <translation>تحكم+تحويل+رجوع</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="943"/>
+        <location filename="../main.ui" line="946"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;التفضيلات…</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="946"/>
+        <location filename="../main.ui" line="949"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="952"/>
+        <location filename="../main.ui" line="955"/>
         <source>&amp;Zoom Reset</source>
         <translation>تص‍‌&amp;فير التكبير</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="955"/>
+        <location filename="../main.ui" line="958"/>
         <source>Zoom Reset</source>
         <translation>تصفير التكبير</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="958"/>
+        <location filename="../main.ui" line="961"/>
         <source>Ctrl+0</source>
         <translation>تجكم+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="971"/>
+        <location filename="../main.ui" line="974"/>
         <source>Heading &amp;1</source>
         <translation>ترويس &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="974"/>
+        <location filename="../main.ui" line="977"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation>صِغ المقطع بشكل ترويس مستوى 1.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="977"/>
+        <location filename="../main.ui" line="980"/>
         <source>Ctrl+1</source>
         <translation>تجكم+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="990"/>
+        <location filename="../main.ui" line="993"/>
         <source>Heading &amp;2</source>
         <translation>ترويس &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="993"/>
+        <location filename="../main.ui" line="996"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation>صِغ المقطع بشكل ترويس مستوى 2.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="996"/>
+        <location filename="../main.ui" line="999"/>
         <source>Ctrl+2</source>
         <translation>تجكم+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1009"/>
+        <location filename="../main.ui" line="1012"/>
         <source>Heading &amp;3</source>
         <translation>ترويس &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1012"/>
+        <location filename="../main.ui" line="1015"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation>صِغ المقطع بشكل ترويس مستوى 3.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1015"/>
+        <location filename="../main.ui" line="1018"/>
         <source>Ctrl+3</source>
         <translation>تجكم+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1029"/>
+        <location filename="../main.ui" line="1032"/>
         <source>Heading &amp;4</source>
         <translation>ترويس &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1032"/>
+        <location filename="../main.ui" line="1035"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation>صِغ المقطع بشكل ترويس مستوى 4.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1035"/>
+        <location filename="../main.ui" line="1038"/>
         <source>Ctrl+4</source>
         <translation>تجكم+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1048"/>
+        <location filename="../main.ui" line="1051"/>
         <source>Heading &amp;5</source>
         <translation>ترويس &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1051"/>
+        <location filename="../main.ui" line="1054"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation>صِغ المقطع بشكل ترويس مستوى 5.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1054"/>
+        <location filename="../main.ui" line="1057"/>
         <source>Ctrl+5</source>
         <translation>تجكم+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1067"/>
+        <location filename="../main.ui" line="1070"/>
         <source>Heading &amp;6</source>
         <translation>ترويس &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1070"/>
+        <location filename="../main.ui" line="1073"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation>صِغ المقطع بشكل ترويس مستوى 6.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1073"/>
+        <location filename="../main.ui" line="1076"/>
         <source>Ctrl+6</source>
         <translation>تجكم+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1087"/>
+        <location filename="../main.ui" line="1090"/>
         <source>&amp;Normal</source>
         <translation>&amp;ع‍ادي</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1090"/>
+        <location filename="../main.ui" line="1093"/>
         <source>Format paragraph as a normal paragraph.</source>
         <translation>نسّق المقطع كمقطع اعتيادي.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1093"/>
+        <location filename="../main.ui" line="1096"/>
         <source>Ctrl+7</source>
         <translation>تجكم+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1103"/>
+        <location filename="../main.ui" line="1106"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>الاحتفا&amp;ظ بالسمات الحالية</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1106"/>
+        <location filename="../main.ui" line="1109"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>عند تطبيق هذا الطراز، حافظ على أية سِمات موجودة في الوسم</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1116"/>
+        <location filename="../main.ui" line="1119"/>
         <source>&amp;Select All</source>
         <translation>تح‍&amp;ديد الكل</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1119"/>
+        <location filename="../main.ui" line="1122"/>
         <source>Select all text in the document.</source>
         <translation>حدد كل النص في المستند.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1122"/>
+        <location filename="../main.ui" line="1125"/>
         <source>Ctrl+A</source>
         <translation>تحكم+ل</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1132"/>
+        <location filename="../main.ui" line="1135"/>
         <source>&amp;Inspector</source>
         <translation>المت‍&amp;ف‍حص</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1135"/>
+        <location filename="../main.ui" line="1138"/>
         <source>Inspect the page.</source>
         <translation>تفحّص الصفحة.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1138"/>
+        <location filename="../main.ui" line="1141"/>
         <source>Ctrl+F5</source>
         <translation>تحكم+F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1147"/>
+        <location filename="../main.ui" line="1150"/>
         <source>Apply clips to page.</source>
         <translation>طبّق المقاطع على الصفحة.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1156"/>
+        <location filename="../main.ui" line="1159"/>
         <source>ClipEditor ...</source>
         <translation>محرر المقاطع ...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1159"/>
+        <location filename="../main.ui" line="1162"/>
         <source>Edit and Create Clips.</source>
         <translation>حرر وأضف المقاطع.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1162"/>
+        <location filename="../main.ui" line="1165"/>
         <source>Ctrl+Alt+C</source>
         <translation>تحكم+تبديل+ا</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1168"/>
+        <location filename="../main.ui" line="1171"/>
         <source>ClipBar Show/Hide</source>
         <translation>أظهر\أخقِ شريط المقاطع</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1171"/>
+        <location filename="../main.ui" line="1174"/>
         <source>Show and Hide the Clip Toolbar.</source>
         <translation>أظهر وأخفِ شريط أدوات المقاطع.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1187"/>
+        <location filename="../main.ui" line="1190"/>
         <source>Find text in the page</source>
         <translation>جد النص في الصفحة</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1190"/>
+        <location filename="../main.ui" line="1193"/>
         <source>Ctrl+F</source>
         <translation>تحكم+ب</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1203"/>
+        <location filename="../main.ui" line="1206"/>
         <source>Next XHtml File</source>
         <translation>ملف XHtml التالي</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1206"/>
+        <location filename="../main.ui" line="1209"/>
         <source>Next file in navigation list</source>
         <translation>الملف التالي في لائحة التنقل</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1209"/>
+        <location filename="../main.ui" line="1212"/>
         <source>Ctrl+PgDown</source>
         <translation>تحكم+صفحةلأسفل</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1222"/>
+        <location filename="../main.ui" line="1225"/>
         <source>Previous XHtml File</source>
         <translation>ملف XHtml السابق</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1225"/>
+        <location filename="../main.ui" line="1228"/>
         <source>Previous file in navigation list</source>
         <translation>الملف السابق في لائحة التنقل</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1228"/>
+        <location filename="../main.ui" line="1231"/>
         <source>Ctrl+PgUp</source>
         <translation>تحكم+صفحةلأعلى</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1244"/>
+        <location filename="../main.ui" line="1247"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation>بدّل بين نمطي التحرير والمعاينة.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1254"/>
+        <location filename="../main.ui" line="1257"/>
         <source>About...</source>
         <translation>عن البرنامج...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1257"/>
+        <location filename="../main.ui" line="1260"/>
         <source>Show information about PageEdit.</source>
         <translation>أظهر معلومات عن محرر الصفحات.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1267"/>
+        <location filename="../main.ui" line="1270"/>
         <source>Back to Last Link</source>
         <translation>العودة إلى الرابط الأخير</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1270"/>
+        <location filename="../main.ui" line="1273"/>
         <source>Return from the last link taken</source>
         <translation>الرجوع من آخر رابط مُعالج</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1280"/>
+        <location filename="../main.ui" line="1283"/>
         <source>I&amp;D...</source>
         <translation>م‍&amp;عرِّف...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1283"/>
+        <location filename="../main.ui" line="1286"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
         <translation>أدرج أو حرر مرساة ذات إسم معرِّف لاستخدامها كهدف لرابط.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1293"/>
+        <location filename="../main.ui" line="1296"/>
         <source>&amp;Link...</source>
         <translation>&amp;رابط...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1296"/>
+        <location filename="../main.ui" line="1299"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
         <translation>أدرج أو حرر مرساة ذات ارتباط تشعبي إلى هدف.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1306"/>
+        <location filename="../main.ui" line="1309"/>
         <source>&amp;File...</source>
         <translation>م‍&amp;لف...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1309"/>
+        <location filename="../main.ui" line="1312"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
         <translation>حدد ملفات صور أو فيديو أو صوت موجودة من كتابك لإدراجها في النص.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1312"/>
+        <location filename="../main.ui" line="1315"/>
         <source>Ctrl+Shift+I</source>
         <translation>تحكم+تحويل+ر</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1318"/>
+        <location filename="../main.ui" line="1321"/>
         <source>Clip &amp;1</source>
         <translation>المقطع &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1321"/>
+        <location filename="../main.ui" line="1324"/>
         <source>Insert Clip 1</source>
         <translation>أدرج المقطع 1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1324"/>
+        <location filename="../main.ui" line="1327"/>
         <source>Ctrl+Alt+1</source>
         <translation>تحكم+تبديل+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1330"/>
+        <location filename="../main.ui" line="1333"/>
         <source>Clip &amp;2</source>
         <translation>المقطع &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1333"/>
+        <location filename="../main.ui" line="1336"/>
         <source>Insert Clip 2</source>
         <translation>أدرج المقطع 2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1336"/>
+        <location filename="../main.ui" line="1339"/>
         <source>Ctrl+Alt+2</source>
         <translation>تحكم+تبديل+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1342"/>
+        <location filename="../main.ui" line="1345"/>
         <source>Clip &amp;3</source>
         <translation>المقطع &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1345"/>
+        <location filename="../main.ui" line="1348"/>
         <source>Insert Clip 3</source>
         <translation>أدرج المقطع 3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1348"/>
+        <location filename="../main.ui" line="1351"/>
         <source>Ctrl+Alt+3</source>
         <translation>تحكم+تبديل+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1354"/>
+        <location filename="../main.ui" line="1357"/>
         <source>Clip &amp;4</source>
         <translation>المقطع &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1357"/>
+        <location filename="../main.ui" line="1360"/>
         <source>Insert Clip 4</source>
         <translation>أدرج المقطع 4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1360"/>
+        <location filename="../main.ui" line="1363"/>
         <source>Ctrl+Alt+4</source>
         <translation>تحكم+تبديل+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1366"/>
+        <location filename="../main.ui" line="1369"/>
         <source>Clip &amp;5</source>
         <translation>المقطع &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1369"/>
+        <location filename="../main.ui" line="1372"/>
         <source>Insert Clip 5</source>
         <translation>أدرج المقطع 5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1372"/>
+        <location filename="../main.ui" line="1375"/>
         <source>Ctrl+Alt+5</source>
         <translation>تحكم+تبديل+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1378"/>
+        <location filename="../main.ui" line="1381"/>
         <source>Clip &amp;6</source>
         <translation>المقطع &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1381"/>
+        <location filename="../main.ui" line="1384"/>
         <source>Insert Clip 6</source>
         <translation>أدرج المقطع 6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1384"/>
+        <location filename="../main.ui" line="1387"/>
         <source>Ctrl+Alt+6</source>
         <translation>تحكم+تبديل+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1390"/>
+        <location filename="../main.ui" line="1393"/>
         <source>Clip &amp;7</source>
         <translation>المقطع &amp;7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1393"/>
+        <location filename="../main.ui" line="1396"/>
         <source>Insert Clip 7</source>
         <translation>أدرج المقطع 7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1396"/>
+        <location filename="../main.ui" line="1399"/>
         <source>Ctrl+Alt+7</source>
         <translation>تحكم+تبديل+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1402"/>
+        <location filename="../main.ui" line="1405"/>
         <source>Clip &amp;8</source>
         <translation>المقطع &amp;8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1405"/>
+        <location filename="../main.ui" line="1408"/>
         <source>Insert Clip 8</source>
         <translation>أدرج المقطع 8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1408"/>
+        <location filename="../main.ui" line="1411"/>
         <source>Ctrl+Alt+8</source>
         <translation>تحكم+تبديل+8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1414"/>
+        <location filename="../main.ui" line="1417"/>
         <source>Clip &amp;9</source>
         <translation>المقطع &amp;9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1417"/>
+        <location filename="../main.ui" line="1420"/>
         <source>Insert Clip 9</source>
         <translation>أدرج المقطع 9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1420"/>
+        <location filename="../main.ui" line="1423"/>
         <source>Ctrl+Alt+9</source>
         <translation>تحكم+تبديل+9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1426"/>
+        <location filename="../main.ui" line="1429"/>
         <source>Clip 1&amp;0</source>
         <translation>المقطع 1&amp;0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1429"/>
+        <location filename="../main.ui" line="1432"/>
         <source>Insert Clip 10</source>
         <translation>أدرج المقطع 10</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1432"/>
+        <location filename="../main.ui" line="1435"/>
         <source>Ctrl+Alt+0</source>
         <translation>تحكم+تبديل+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1438"/>
+        <location filename="../main.ui" line="1441"/>
         <source>Clip 11</source>
         <translation>المقطع 11</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1441"/>
+        <location filename="../main.ui" line="1444"/>
         <source>Insert Clip 11</source>
         <translation>أدرج المقطع 11</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1447"/>
+        <location filename="../main.ui" line="1450"/>
         <source>Clip 12</source>
         <translation>المقطع 12</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1450"/>
+        <location filename="../main.ui" line="1453"/>
         <source>Insert Clip 12</source>
         <translation>أدرج المقطع 12</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1456"/>
+        <location filename="../main.ui" line="1459"/>
         <source>Clip 13</source>
         <translation>المقطع 13</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1459"/>
+        <location filename="../main.ui" line="1462"/>
         <source>Insert Clip 13</source>
         <translation>أدرج المقطع 13</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1465"/>
+        <location filename="../main.ui" line="1468"/>
         <source>Clip 14</source>
         <translation>المقطع 14</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1468"/>
+        <location filename="../main.ui" line="1471"/>
         <source>Insert Clip 14</source>
         <translation>أدرج المقطع 14</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1474"/>
+        <location filename="../main.ui" line="1477"/>
         <source>Clip 15</source>
         <translation>المقطع 15</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1477"/>
+        <location filename="../main.ui" line="1480"/>
         <source>Insert Clip 15</source>
         <translation>أدرج المقطع 15</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1483"/>
+        <location filename="../main.ui" line="1486"/>
         <source>Clip 16</source>
         <translation>المقطع 16</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1486"/>
+        <location filename="../main.ui" line="1489"/>
         <source>Insert Clip 16</source>
         <translation>أدرج المقطع 16</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1492"/>
+        <location filename="../main.ui" line="1495"/>
         <source>Clip 17</source>
         <translation>المقطع 17</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1495"/>
+        <location filename="../main.ui" line="1498"/>
         <source>Insert Clip 17</source>
         <translation>أدرج المقطع 17</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1501"/>
+        <location filename="../main.ui" line="1504"/>
         <source>Clip 18</source>
         <translation>المقطع 18</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1504"/>
+        <location filename="../main.ui" line="1507"/>
         <source>Insert Clip 18</source>
         <translation>أدرج المقطع 18</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1510"/>
+        <location filename="../main.ui" line="1513"/>
         <source>Clip 19</source>
         <translation>المقطع 19</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1513"/>
+        <location filename="../main.ui" line="1516"/>
         <source>Insert Clip 19</source>
         <translation>أدرج المقطع 19</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1519"/>
+        <location filename="../main.ui" line="1522"/>
         <source>Clip 20</source>
         <translation>المقطع 20</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1522"/>
+        <location filename="../main.ui" line="1525"/>
         <source>Insert Clip 20</source>
         <translation>أدرج المقطع 20</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
+        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>فشل تحميل الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
+        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>فشل تحميل الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
+        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>النمط: معاينة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
+        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>النمط: تحرير</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1743,11 +1764,13 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
+        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>أتريد حفظ تغييراتك قبل المغادرة؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
+        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>محرر الصفحات يُغلَق...</translation>
     </message>
@@ -1758,21 +1781,30 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
+        <location filename="../MainWindow.cpp~" line="1275"/>
+        <location filename="../MainWindow.cpp~" line="1276"/>
+        <location filename="../MainWindow.cpp~" line="1277"/>
+        <location filename="../MainWindow.cpp~" line="1286"/>
+        <location filename="../MainWindow.cpp~" line="1287"/>
+        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>ملفات HTML انترنت (‎*.htm *.html *.xhtml‏)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
+        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>ملفات OPF (‎*.opf‏)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
+        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>كل الملفات (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
+        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>حفظ ملف</translation>
     </message>
@@ -1781,17 +1813,24 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1554"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>فشل حفظ الملف بإسم!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>غير قابل للكتابة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1562"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>حُفظ الملف</translation>
     </message>
@@ -1800,116 +1839,142 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
+        <location filename="../MainWindow.cpp~" line="1592"/>
+        <location filename="../MainWindow.cpp~" line="1594"/>
+        <location filename="../MainWindow.cpp~" line="1605"/>
+        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>فشل حفظ الملف!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>غير موجود أو غير قابل للكتابة</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
+        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>لا تُظهر هذا التحذير مرة أخرى</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
+        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>قد لا يُطبع هذا الملف بالطريقة التي تتوقعها.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
+        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>ستُطبَع الخلفيات والنصوص الملونة المطبَّقة بألواح طُرُز كتاب الكتروني.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
+        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>توخّ الحذر حيث أنّ هذا يمكن أن ينتج عنه الكثير من استخدام الحبر!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
+        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>استخدم معاينة الطباعة التالية لترى كيف سيُطبَع هذا الملف.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
+        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>أشّر المربع إذا لم ترغب في مشاهدة هذا التحذير مستقبلا.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
+        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>فُتح الملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>فشل فتح الملف!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
+        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>الحافظة تحتوي صيغ HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
+        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>أتريد لصق بيانات الحافظة كنص بسيط؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>يجب ان تحدد نصاً قبل إدراج معرِّف جديد.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>المعرِّف غير صحيح - يجب أن يبدأ بحرف، متبوعاً بحرف أو رقم أو _ أو : أو - أو .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>لا يمكنك إدراج معرّف في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>يجب ان تحدد نصاً قبل إدراج رابط جديد.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>الرابط غير صحيح - لا يمكن أن يحتوي &apos;&lt;&apos; أو &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>خطأ في إدراج هدف رابط خارجي.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>خطأ في إدراج رابط في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
+        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>إدراج ملف</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>لا يمكنك إدراج ملف وسائط في هذا الموضع.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
+        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>أتريد حفظ أية تغييرات قبل الكتابة على هذا الملف؟</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
+        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>لُصق مُدخَل مقطع %1.</translation>
     </message>

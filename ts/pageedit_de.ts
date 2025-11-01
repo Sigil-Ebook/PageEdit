@@ -590,7 +590,7 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
 <context>
     <name>Inspector</name>
     <message>
-        <location filename="../Inspector.cpp" line="76"/>
+        <location filename="../Inspector.cpp" line="67"/>
         <source>Inspect Page or Element</source>
         <translation>Seite oder Element untersuchen</translation>
     </message>
@@ -610,6 +610,17 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1169"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -660,7 +671,7 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="176"/>
-        <location filename="../main.ui" line="1144"/>
+        <location filename="../main.ui" line="1147"/>
         <source>Clips</source>
         <translation>Clips</translation>
     </message>
@@ -676,7 +687,7 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="227"/>
-        <location filename="../main.ui" line="1241"/>
+        <location filename="../main.ui" line="1244"/>
         <source>Mode</source>
         <translation>Modus</translation>
     </message>
@@ -697,7 +708,7 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="304"/>
-        <location filename="../main.ui" line="1184"/>
+        <location filename="../main.ui" line="1187"/>
         <source>Find</source>
         <translation>Suchen</translation>
     </message>
@@ -1042,697 +1053,707 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
         <translation>Nummerierte Liste aus dem markierten Text erstellen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="800"/>
+        <location filename="../main.ui" line="790"/>
+        <source>Ctrl+Shift+N</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="803"/>
         <source>Bulle&amp;ted List</source>
         <translation>&amp;Aufzählung</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="803"/>
+        <location filename="../main.ui" line="806"/>
         <source>Create a bulleted list from selection.</source>
         <translation>Aufzählung aus dem markierten Text erstellen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="806"/>
+        <location filename="../main.ui" line="809"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="819"/>
+        <location filename="../main.ui" line="822"/>
         <source>Stri&amp;kethrough</source>
         <translation>Durch&amp;gestrichen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="822"/>
+        <location filename="../main.ui" line="825"/>
         <source>Draw a line through the selected text.</source>
         <translation>Den markierten Text durchstreichen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="835"/>
+        <location filename="../main.ui" line="838"/>
         <source>&amp;Subscript</source>
         <translation>&amp;Tiefgestellt</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="838"/>
+        <location filename="../main.ui" line="841"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
         <translation>Kleine Buchstaben unterhalb der Textbasislinie erstellen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="851"/>
+        <location filename="../main.ui" line="854"/>
         <source>Su&amp;perscript</source>
         <translation>&amp;Hochgestellt</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="854"/>
+        <location filename="../main.ui" line="857"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
         <translation>Kleine Buchstaben über der Textzeile erstellen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="865"/>
+        <location filename="../main.ui" line="868"/>
         <source>Zoom &amp;In</source>
         <translation>Ver&amp;größern</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="868"/>
+        <location filename="../main.ui" line="871"/>
         <source>Zoom In</source>
         <translation>Vergrößern</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="871"/>
+        <location filename="../main.ui" line="874"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="882"/>
+        <location filename="../main.ui" line="885"/>
         <source>Zoom &amp;Out</source>
         <translation>Ver&amp;kleinern</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="885"/>
+        <location filename="../main.ui" line="888"/>
         <source>Zoom Out</source>
         <translation>Verkleinern</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="888"/>
+        <location filename="../main.ui" line="891"/>
         <source>Ctrl+-</source>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="899"/>
+        <location filename="../main.ui" line="902"/>
         <source>Incre&amp;ase Indent</source>
         <translation>Einzug &amp;vergrößern</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="902"/>
+        <location filename="../main.ui" line="905"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>Die Einzugsebene des Absatzes vergrößern</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="905"/>
+        <location filename="../main.ui" line="908"/>
         <source>Ctrl+Alt+M</source>
         <translation>Ctrl+Alt+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="915"/>
+        <location filename="../main.ui" line="918"/>
         <source>&amp;Decrease Indent</source>
         <translation>&amp;Einzug verkleinern</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="918"/>
+        <location filename="../main.ui" line="921"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>Die Einzugsebene des Absatzes verkleinern</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="921"/>
+        <location filename="../main.ui" line="924"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="931"/>
+        <location filename="../main.ui" line="934"/>
         <source>Split &amp;Marker</source>
         <translation>Teilungs&amp;markierung</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="934"/>
+        <location filename="../main.ui" line="937"/>
         <source>Insert Sigil split file marker</source>
         <translation>Sigil-Datei-Teilungsmakierung einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="937"/>
+        <location filename="../main.ui" line="940"/>
         <source>Ctrl+Shift+Return</source>
         <translation>Ctrl+Shift+Return</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="943"/>
+        <location filename="../main.ui" line="946"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Einstellungen...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="946"/>
+        <location filename="../main.ui" line="949"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="952"/>
+        <location filename="../main.ui" line="955"/>
         <source>&amp;Zoom Reset</source>
         <translation>Vergrößerung &amp;zurücksetzen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="955"/>
+        <location filename="../main.ui" line="958"/>
         <source>Zoom Reset</source>
         <translation>Vergrößerung zurücksetzen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="958"/>
+        <location filename="../main.ui" line="961"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="971"/>
+        <location filename="../main.ui" line="974"/>
         <source>Heading &amp;1</source>
         <translation>Überschrift &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="974"/>
+        <location filename="../main.ui" line="977"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation> Als Überschriftenebene 1 formatieren</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="977"/>
+        <location filename="../main.ui" line="980"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="990"/>
+        <location filename="../main.ui" line="993"/>
         <source>Heading &amp;2</source>
         <translation>Überschrift &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="993"/>
+        <location filename="../main.ui" line="996"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation> Als Überschriftenebene 2 formatieren</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="996"/>
+        <location filename="../main.ui" line="999"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1009"/>
+        <location filename="../main.ui" line="1012"/>
         <source>Heading &amp;3</source>
         <translation>Überschrift &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1012"/>
+        <location filename="../main.ui" line="1015"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation> Als Überschriftenebene 3 formatieren</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1015"/>
+        <location filename="../main.ui" line="1018"/>
         <source>Ctrl+3</source>
         <translation>Ctrl+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1029"/>
+        <location filename="../main.ui" line="1032"/>
         <source>Heading &amp;4</source>
         <translation>Überschrift &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1032"/>
+        <location filename="../main.ui" line="1035"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation> Als Überschriftenebene 4 formatieren</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1035"/>
+        <location filename="../main.ui" line="1038"/>
         <source>Ctrl+4</source>
         <translation>Ctrl+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1048"/>
+        <location filename="../main.ui" line="1051"/>
         <source>Heading &amp;5</source>
         <translation>Überschrift &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1051"/>
+        <location filename="../main.ui" line="1054"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation> Als Überschriftenebene 5 formatieren</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1054"/>
+        <location filename="../main.ui" line="1057"/>
         <source>Ctrl+5</source>
         <translation>Ctrl+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1067"/>
+        <location filename="../main.ui" line="1070"/>
         <source>Heading &amp;6</source>
         <translation>Überschrift &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1070"/>
+        <location filename="../main.ui" line="1073"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation> Als Überschriftenebene 6 formatieren</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1073"/>
+        <location filename="../main.ui" line="1076"/>
         <source>Ctrl+6</source>
         <translation>Ctrl+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1087"/>
+        <location filename="../main.ui" line="1090"/>
         <source>&amp;Normal</source>
         <translation>&amp;Normaler Absatz</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1090"/>
+        <location filename="../main.ui" line="1093"/>
         <source>Format paragraph as a normal paragraph.</source>
         <translation>Absatz als normalen Absatz formatieren</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1093"/>
+        <location filename="../main.ui" line="1096"/>
         <source>Ctrl+7</source>
         <translation>Ctrl+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1103"/>
+        <location filename="../main.ui" line="1106"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>&amp;Vorhandene Attribute beibehalten</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1106"/>
+        <location filename="../main.ui" line="1109"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>Bei Anwendung dieses Styles alle vorhandenen Tag-Attribute beibehalten</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1116"/>
+        <location filename="../main.ui" line="1119"/>
         <source>&amp;Select All</source>
         <translation>Alles au&amp;swählen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1119"/>
+        <location filename="../main.ui" line="1122"/>
         <source>Select all text in the document.</source>
         <translation>Den gesamten Text des Dokuments auswählen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1122"/>
+        <location filename="../main.ui" line="1125"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1132"/>
+        <location filename="../main.ui" line="1135"/>
         <source>&amp;Inspector</source>
         <translation>&amp;Inspektor</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1135"/>
+        <location filename="../main.ui" line="1138"/>
         <source>Inspect the page.</source>
         <translation>Seite untersuchen.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1138"/>
+        <location filename="../main.ui" line="1141"/>
         <source>Ctrl+F5</source>
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1147"/>
+        <location filename="../main.ui" line="1150"/>
         <source>Apply clips to page.</source>
         <translation>Clips auf Seite anwenden</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1156"/>
+        <location filename="../main.ui" line="1159"/>
         <source>ClipEditor ...</source>
         <translation>Clip-Editor ...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1159"/>
+        <location filename="../main.ui" line="1162"/>
         <source>Edit and Create Clips.</source>
         <translation>Clips bearbeiten und erstellen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1162"/>
+        <location filename="../main.ui" line="1165"/>
         <source>Ctrl+Alt+C</source>
         <translation>Ctrl+Alt+C</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1168"/>
+        <location filename="../main.ui" line="1171"/>
         <source>ClipBar Show/Hide</source>
         <translation>Clip-Leiste ein-/ausblenden</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1171"/>
+        <location filename="../main.ui" line="1174"/>
         <source>Show and Hide the Clip Toolbar.</source>
         <translation>Clip-Symbolleiste ein-/ausblenden</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1187"/>
+        <location filename="../main.ui" line="1190"/>
         <source>Find text in the page</source>
         <translation>Auf der Seite nach Text suchen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1190"/>
+        <location filename="../main.ui" line="1193"/>
         <source>Ctrl+F</source>
         <translation>Strg+F</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1203"/>
+        <location filename="../main.ui" line="1206"/>
         <source>Next XHtml File</source>
         <translation>Nächste XHTML-Datei</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1206"/>
+        <location filename="../main.ui" line="1209"/>
         <source>Next file in navigation list</source>
         <translation>Nächste Datei in der Navigationsliste</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1209"/>
+        <location filename="../main.ui" line="1212"/>
         <source>Ctrl+PgDown</source>
         <translation>Ctrl+PgDown</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1222"/>
+        <location filename="../main.ui" line="1225"/>
         <source>Previous XHtml File</source>
         <translation>Vorherige XHTML-Datei</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1225"/>
+        <location filename="../main.ui" line="1228"/>
         <source>Previous file in navigation list</source>
         <translation>Vorherige Datei in der Navigationsliste</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1228"/>
+        <location filename="../main.ui" line="1231"/>
         <source>Ctrl+PgUp</source>
         <translation>Ctrl+PgUp</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1244"/>
+        <location filename="../main.ui" line="1247"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation>Umschalten zwischen Bearbeiten und Vorschau</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1254"/>
+        <location filename="../main.ui" line="1257"/>
         <source>About...</source>
         <translation>Info...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1257"/>
+        <location filename="../main.ui" line="1260"/>
         <source>Show information about PageEdit.</source>
         <translation>PageEdit-Informationen anzeigen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1267"/>
+        <location filename="../main.ui" line="1270"/>
         <source>Back to Last Link</source>
         <translation>Zurück zum letzten Link</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1270"/>
+        <location filename="../main.ui" line="1273"/>
         <source>Return from the last link taken</source>
         <translation>Rückkehr vom letzten Link</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1280"/>
+        <location filename="../main.ui" line="1283"/>
         <source>I&amp;D...</source>
         <translation>I&amp;D...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1283"/>
+        <location filename="../main.ui" line="1286"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
         <translation>ID-Attribut für die Verwendung als Link-Ziel einfügen oder bearbeiten. </translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1293"/>
+        <location filename="../main.ui" line="1296"/>
         <source>&amp;Link...</source>
         <translation>&amp;Verknüpfung...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1296"/>
+        <location filename="../main.ui" line="1299"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
         <translation>Link zu einem Element mit einem ID-Attribut einfügen oder bearbeiten. </translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1306"/>
+        <location filename="../main.ui" line="1309"/>
         <source>&amp;File...</source>
         <translation>&amp;Datei...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1309"/>
+        <location filename="../main.ui" line="1312"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
         <translation>Im Buch enthaltene Bild-, Video- oder Audiodateien in den Text einfügen.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1312"/>
+        <location filename="../main.ui" line="1315"/>
         <source>Ctrl+Shift+I</source>
         <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1318"/>
+        <location filename="../main.ui" line="1321"/>
         <source>Clip &amp;1</source>
         <translation>Clip &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1321"/>
+        <location filename="../main.ui" line="1324"/>
         <source>Insert Clip 1</source>
         <translation>Clip 1 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1324"/>
+        <location filename="../main.ui" line="1327"/>
         <source>Ctrl+Alt+1</source>
         <translation>Ctrl+Alt+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1330"/>
+        <location filename="../main.ui" line="1333"/>
         <source>Clip &amp;2</source>
         <translation>Clip &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1333"/>
+        <location filename="../main.ui" line="1336"/>
         <source>Insert Clip 2</source>
         <translation>Clip 2 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1336"/>
+        <location filename="../main.ui" line="1339"/>
         <source>Ctrl+Alt+2</source>
         <translation>Ctrl+Alt+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1342"/>
+        <location filename="../main.ui" line="1345"/>
         <source>Clip &amp;3</source>
         <translation>Clip &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1345"/>
+        <location filename="../main.ui" line="1348"/>
         <source>Insert Clip 3</source>
         <translation>Clip 3 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1348"/>
+        <location filename="../main.ui" line="1351"/>
         <source>Ctrl+Alt+3</source>
         <translation>Ctrl+Alt+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1354"/>
+        <location filename="../main.ui" line="1357"/>
         <source>Clip &amp;4</source>
         <translation>Clip &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1357"/>
+        <location filename="../main.ui" line="1360"/>
         <source>Insert Clip 4</source>
         <translation>Clip 4 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1360"/>
+        <location filename="../main.ui" line="1363"/>
         <source>Ctrl+Alt+4</source>
         <translation>Ctrl+Alt+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1366"/>
+        <location filename="../main.ui" line="1369"/>
         <source>Clip &amp;5</source>
         <translation>Clip &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1369"/>
+        <location filename="../main.ui" line="1372"/>
         <source>Insert Clip 5</source>
         <translation>Clip 5 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1372"/>
+        <location filename="../main.ui" line="1375"/>
         <source>Ctrl+Alt+5</source>
         <translation>Ctrl+Alt+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1378"/>
+        <location filename="../main.ui" line="1381"/>
         <source>Clip &amp;6</source>
         <translation>Clip &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1381"/>
+        <location filename="../main.ui" line="1384"/>
         <source>Insert Clip 6</source>
         <translation>Clip 6 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1384"/>
+        <location filename="../main.ui" line="1387"/>
         <source>Ctrl+Alt+6</source>
         <translation>Ctrl+Alt+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1390"/>
+        <location filename="../main.ui" line="1393"/>
         <source>Clip &amp;7</source>
         <translation>Clip &amp;7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1393"/>
+        <location filename="../main.ui" line="1396"/>
         <source>Insert Clip 7</source>
         <translation>Clip 7 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1396"/>
+        <location filename="../main.ui" line="1399"/>
         <source>Ctrl+Alt+7</source>
         <translation>Ctrl+Alt+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1402"/>
+        <location filename="../main.ui" line="1405"/>
         <source>Clip &amp;8</source>
         <translation>Clip &amp;8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1405"/>
+        <location filename="../main.ui" line="1408"/>
         <source>Insert Clip 8</source>
         <translation>Clip 8 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1408"/>
+        <location filename="../main.ui" line="1411"/>
         <source>Ctrl+Alt+8</source>
         <translation>Ctrl+Alt+8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1414"/>
+        <location filename="../main.ui" line="1417"/>
         <source>Clip &amp;9</source>
         <translation>Clip &amp;9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1417"/>
+        <location filename="../main.ui" line="1420"/>
         <source>Insert Clip 9</source>
         <translation>Clip 9 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1420"/>
+        <location filename="../main.ui" line="1423"/>
         <source>Ctrl+Alt+9</source>
         <translation>Ctrl+Alt+9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1426"/>
+        <location filename="../main.ui" line="1429"/>
         <source>Clip 1&amp;0</source>
         <translation>Clip 1&amp;0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1429"/>
+        <location filename="../main.ui" line="1432"/>
         <source>Insert Clip 10</source>
         <translation>Clip 10 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1432"/>
+        <location filename="../main.ui" line="1435"/>
         <source>Ctrl+Alt+0</source>
         <translation>Ctrl+Alt+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1438"/>
+        <location filename="../main.ui" line="1441"/>
         <source>Clip 11</source>
         <translation>Clip 11</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1441"/>
+        <location filename="../main.ui" line="1444"/>
         <source>Insert Clip 11</source>
         <translation>Clip 11 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1447"/>
+        <location filename="../main.ui" line="1450"/>
         <source>Clip 12</source>
         <translation>Clip 12</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1450"/>
+        <location filename="../main.ui" line="1453"/>
         <source>Insert Clip 12</source>
         <translation>Clip 12 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1456"/>
+        <location filename="../main.ui" line="1459"/>
         <source>Clip 13</source>
         <translation>Clip 13</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1459"/>
+        <location filename="../main.ui" line="1462"/>
         <source>Insert Clip 13</source>
         <translation>Clip 13 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1465"/>
+        <location filename="../main.ui" line="1468"/>
         <source>Clip 14</source>
         <translation>Clip 14</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1468"/>
+        <location filename="../main.ui" line="1471"/>
         <source>Insert Clip 14</source>
         <translation>Clip 14 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1474"/>
+        <location filename="../main.ui" line="1477"/>
         <source>Clip 15</source>
         <translation>Clip 15</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1477"/>
+        <location filename="../main.ui" line="1480"/>
         <source>Insert Clip 15</source>
         <translation>Clip 15 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1483"/>
+        <location filename="../main.ui" line="1486"/>
         <source>Clip 16</source>
         <translation>Clip 16</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1486"/>
+        <location filename="../main.ui" line="1489"/>
         <source>Insert Clip 16</source>
         <translation>Clip 16 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1492"/>
+        <location filename="../main.ui" line="1495"/>
         <source>Clip 17</source>
         <translation>Clip 17</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1495"/>
+        <location filename="../main.ui" line="1498"/>
         <source>Insert Clip 17</source>
         <translation>Clip 17 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1501"/>
+        <location filename="../main.ui" line="1504"/>
         <source>Clip 18</source>
         <translation>Clip 18</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1504"/>
+        <location filename="../main.ui" line="1507"/>
         <source>Insert Clip 18</source>
         <translation>Clip 18 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1510"/>
+        <location filename="../main.ui" line="1513"/>
         <source>Clip 19</source>
         <translation>Clip 19</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1513"/>
+        <location filename="../main.ui" line="1516"/>
         <source>Insert Clip 19</source>
         <translation>Clip 19 einfügen</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1519"/>
+        <location filename="../main.ui" line="1522"/>
         <source>Clip 20</source>
         <translation>Clip 20</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1522"/>
+        <location filename="../main.ui" line="1525"/>
         <source>Insert Clip 20</source>
         <translation>Clip 20 einfügen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
+        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>Datei konnte nicht geladen werden.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
+        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>Datei konnte nicht geladen werden.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
+        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>Modus: Vorschau</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
+        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>Modus: Bearbeiten</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1743,11 +1764,13 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
+        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Möchten Sie die Änderungen vor dem Schließen speichern? </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
+        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit wird geschlossen...</translation>
     </message>
@@ -1758,21 +1781,30 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
+        <location filename="../MainWindow.cpp~" line="1275"/>
+        <location filename="../MainWindow.cpp~" line="1276"/>
+        <location filename="../MainWindow.cpp~" line="1277"/>
+        <location filename="../MainWindow.cpp~" line="1286"/>
+        <location filename="../MainWindow.cpp~" line="1287"/>
+        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML-Dateien (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
+        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF-Dateien (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
+        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>Alle Dateien (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
+        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>Datei speichern</translation>
     </message>
@@ -1781,17 +1813,24 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1554"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>Speichern unter ist fehlgeschlagen!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>ist nicht schreibbar</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1562"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>Datei gespeichert</translation>
     </message>
@@ -1800,116 +1839,142 @@ Nicht übersetzte Begriffe werden in Englisch angezeigt.</translation>
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
+        <location filename="../MainWindow.cpp~" line="1592"/>
+        <location filename="../MainWindow.cpp~" line="1594"/>
+        <location filename="../MainWindow.cpp~" line="1605"/>
+        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>Datei konnte nicht gespeichert werden!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>existiert nicht oder ist schreibgeschützt</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
+        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>Diese Warnung nicht mehr anzeigen.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
+        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Diese Datei wird möglicherweise nicht erwartungsgemäß gedruckt.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
+        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Im CSS des EPUB-Buchs definierte dunkle Hintergründe und farbiger Text werden gedruckt.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
+        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Wenn Sie diese Option aktivieren, wird möglicherweise sehr viel Tinte oder Toner verbraucht!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
+        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Anhand der folgenden Druckvorschau können Sie sehen, wie die Datei gedruckt wird.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
+        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Aktivieren Sie diese Option, wenn die Warnung nicht mehr angezeigt werden soll.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
+        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>Datei geöffnet</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>Datei konnte nicht geöffnet werden!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
+        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Zwischenablage enthält HTML-Formatierungen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
+        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Möchten Sie den Inhalt der Zwischenablage als unformatierten Text einfügen?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Sie müssen einen Text auswählen, bevor Sie eine neue Id einfügen können.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID ist ungültig - muss mit einem Buchstaben beginnen, gefolgt von Buchstaben, Nummer, _:- oder .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>An dieser Stelle können Sie keine ID einfügen.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Sie müssen einen Text auswählen, bevor Sie einen neue Verknüpfung einfügen können.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Verknüpfung ist ungültig - darf kein &apos;&lt;&apos; oder &apos;&gt;&apos; enthalten</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>Fehler beim Einfügen eines externen Verknüpfungsziels.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>Fehler beim Einfügen einer Verknüpfung an dieser Position.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
+        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>Datei einfügen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Sie können an dieser Position keine Mediendatei einfügen.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
+        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Möchten Sie die Änderungen speichern, bevor diese Datei überschrieben wird?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
+        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>Eingefügter Clip-Eintrag %1.</translation>
     </message>

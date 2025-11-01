@@ -72,7 +72,7 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="157"/>
         <source>Printer Output Appearance</source>
-        <translation type="unfinished"/>
+        <translation>Оформлення виводу на друк</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="163"/>
@@ -113,12 +113,12 @@ if a sans-serif font-family specified in your CSS</source>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>
         <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
-        <translation type="unfinished"/>
+        <translation>При використанні темного стилю у Windows, застосовуйте класичну темну тему замість теми вбудованої в Qt.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>Use Classic Dark Theme</source>
-        <translation type="unfinished"/>
+        <translation>Використовувати класичну темну тему</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="296"/>
@@ -589,7 +589,7 @@ If a translation for specific word or phrase is not available it will be display
 <context>
     <name>Inspector</name>
     <message>
-        <location filename="../Inspector.cpp" line="76"/>
+        <location filename="../Inspector.cpp" line="67"/>
         <source>Inspect Page or Element</source>
         <translation>Ревізувати Сторінку чи Елемент</translation>
     </message>
@@ -609,6 +609,17 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1169"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -659,7 +670,7 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="176"/>
-        <location filename="../main.ui" line="1144"/>
+        <location filename="../main.ui" line="1147"/>
         <source>Clips</source>
         <translation>Фрагменти</translation>
     </message>
@@ -675,7 +686,7 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="227"/>
-        <location filename="../main.ui" line="1241"/>
+        <location filename="../main.ui" line="1244"/>
         <source>Mode</source>
         <translation>Режим</translation>
     </message>
@@ -696,7 +707,7 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../main.ui" line="304"/>
-        <location filename="../main.ui" line="1184"/>
+        <location filename="../main.ui" line="1187"/>
         <source>Find</source>
         <translation>Знайти</translation>
     </message>
@@ -1041,697 +1052,707 @@ If a translation for specific word or phrase is not available it will be display
         <translation>Створити нумерований список з виділеного фрагменту.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="800"/>
+        <location filename="../main.ui" line="790"/>
+        <source>Ctrl+Shift+N</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="803"/>
         <source>Bulle&amp;ted List</source>
         <translation>Марк&amp;ований список</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="803"/>
+        <location filename="../main.ui" line="806"/>
         <source>Create a bulleted list from selection.</source>
         <translation>Створити маркований список з виділеного фрагменту.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="806"/>
+        <location filename="../main.ui" line="809"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="819"/>
+        <location filename="../main.ui" line="822"/>
         <source>Stri&amp;kethrough</source>
         <translation>Закре&amp;слити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="822"/>
+        <location filename="../main.ui" line="825"/>
         <source>Draw a line through the selected text.</source>
         <translation>Закреслити виділений текст лінією.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="835"/>
+        <location filename="../main.ui" line="838"/>
         <source>&amp;Subscript</source>
         <translation>Ни&amp;жній індекс</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="838"/>
+        <location filename="../main.ui" line="841"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
         <translation>Зробити виділений текст трохи меншим і нижче звичайного рядка. </translation>
     </message>
     <message>
-        <location filename="../main.ui" line="851"/>
+        <location filename="../main.ui" line="854"/>
         <source>Su&amp;perscript</source>
         <translation>Ве&amp;рхній індекс</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="854"/>
+        <location filename="../main.ui" line="857"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
         <translation>Робить виділений текст трохи меншим і вище звичайного рядка.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="865"/>
+        <location filename="../main.ui" line="868"/>
         <source>Zoom &amp;In</source>
         <translation>&amp;Збільшити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="868"/>
+        <location filename="../main.ui" line="871"/>
         <source>Zoom In</source>
         <translation>Збільшити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="871"/>
+        <location filename="../main.ui" line="874"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="882"/>
+        <location filename="../main.ui" line="885"/>
         <source>Zoom &amp;Out</source>
         <translation>Зм&amp;еншити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="885"/>
+        <location filename="../main.ui" line="888"/>
         <source>Zoom Out</source>
         <translation>Зменшити</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="888"/>
+        <location filename="../main.ui" line="891"/>
         <source>Ctrl+-</source>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="899"/>
+        <location filename="../main.ui" line="902"/>
         <source>Incre&amp;ase Indent</source>
         <translation>Збіль&amp;шити відступ</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="902"/>
+        <location filename="../main.ui" line="905"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>Збільшує рівень відступу абзацу.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="905"/>
+        <location filename="../main.ui" line="908"/>
         <source>Ctrl+Alt+M</source>
         <translation>Ctrl+Alt+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="915"/>
+        <location filename="../main.ui" line="918"/>
         <source>&amp;Decrease Indent</source>
         <translation>&amp;Зменшити відступ</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="918"/>
+        <location filename="../main.ui" line="921"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>Зменьшує рівень відступу абзацу.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="921"/>
+        <location filename="../main.ui" line="924"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="931"/>
+        <location filename="../main.ui" line="934"/>
         <source>Split &amp;Marker</source>
         <translation>&amp;Маркер розділення</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="934"/>
+        <location filename="../main.ui" line="937"/>
         <source>Insert Sigil split file marker</source>
         <translation>Вставити Sigil-маркер розділення файлу</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="937"/>
+        <location filename="../main.ui" line="940"/>
         <source>Ctrl+Shift+Return</source>
         <translation>Ctrl+Shift+Return</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="943"/>
+        <location filename="../main.ui" line="946"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Налаштування…</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="946"/>
+        <location filename="../main.ui" line="949"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="952"/>
+        <location filename="../main.ui" line="955"/>
         <source>&amp;Zoom Reset</source>
         <translation>Початковий &amp;масштаб</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="955"/>
+        <location filename="../main.ui" line="958"/>
         <source>Zoom Reset</source>
         <translation>Повернутися до початкового масштабу</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="958"/>
+        <location filename="../main.ui" line="961"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="971"/>
+        <location filename="../main.ui" line="974"/>
         <source>Heading &amp;1</source>
         <translation>Заголовок &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="974"/>
+        <location filename="../main.ui" line="977"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 1.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="977"/>
+        <location filename="../main.ui" line="980"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="990"/>
+        <location filename="../main.ui" line="993"/>
         <source>Heading &amp;2</source>
         <translation>Заголовок &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="993"/>
+        <location filename="../main.ui" line="996"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 2.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="996"/>
+        <location filename="../main.ui" line="999"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1009"/>
+        <location filename="../main.ui" line="1012"/>
         <source>Heading &amp;3</source>
         <translation>Заголовок &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1012"/>
+        <location filename="../main.ui" line="1015"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 3.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1015"/>
+        <location filename="../main.ui" line="1018"/>
         <source>Ctrl+3</source>
         <translation>Ctrl+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1029"/>
+        <location filename="../main.ui" line="1032"/>
         <source>Heading &amp;4</source>
         <translation>Заголовок &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1032"/>
+        <location filename="../main.ui" line="1035"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 4.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1035"/>
+        <location filename="../main.ui" line="1038"/>
         <source>Ctrl+4</source>
         <translation>Ctrl+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1048"/>
+        <location filename="../main.ui" line="1051"/>
         <source>Heading &amp;5</source>
         <translation>Заголовок &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1051"/>
+        <location filename="../main.ui" line="1054"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 5.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1054"/>
+        <location filename="../main.ui" line="1057"/>
         <source>Ctrl+5</source>
         <translation>Ctrl+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1067"/>
+        <location filename="../main.ui" line="1070"/>
         <source>Heading &amp;6</source>
         <translation>Заголовок &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1070"/>
+        <location filename="../main.ui" line="1073"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation>Форматувати абзац як заголовок рівня 6.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1073"/>
+        <location filename="../main.ui" line="1076"/>
         <source>Ctrl+6</source>
         <translation>Ctrl+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1087"/>
+        <location filename="../main.ui" line="1090"/>
         <source>&amp;Normal</source>
         <translation>Звичайний текст</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1090"/>
+        <location filename="../main.ui" line="1093"/>
         <source>Format paragraph as a normal paragraph.</source>
         <translation>Форматувати параграф як звичайний текст.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1093"/>
+        <location filename="../main.ui" line="1096"/>
         <source>Ctrl+7</source>
         <translation>Ctrl+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1103"/>
+        <location filename="../main.ui" line="1106"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>&amp;Збереження Існуючих Атрибутів</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1106"/>
+        <location filename="../main.ui" line="1109"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>При застосуванні цього стилю зберігаються всі існуючі атрибути тега</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1116"/>
+        <location filename="../main.ui" line="1119"/>
         <source>&amp;Select All</source>
         <translation>&amp;Виділити все</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1119"/>
+        <location filename="../main.ui" line="1122"/>
         <source>Select all text in the document.</source>
         <translation>Виділити весь текст документа</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1122"/>
+        <location filename="../main.ui" line="1125"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1132"/>
+        <location filename="../main.ui" line="1135"/>
         <source>&amp;Inspector</source>
         <translation>&amp;Інспектор</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1135"/>
+        <location filename="../main.ui" line="1138"/>
         <source>Inspect the page.</source>
         <translation>Ревізувати сторінку</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1138"/>
+        <location filename="../main.ui" line="1141"/>
         <source>Ctrl+F5</source>
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1147"/>
+        <location filename="../main.ui" line="1150"/>
         <source>Apply clips to page.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../main.ui" line="1156"/>
-        <source>ClipEditor ...</source>
-        <translation type="unfinished"/>
+        <translation>Застосувати фрагменти на сторінці.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1159"/>
-        <source>Edit and Create Clips.</source>
-        <translation type="unfinished"/>
+        <source>ClipEditor ...</source>
+        <translation>Редактор Фрагментів...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1162"/>
+        <source>Edit and Create Clips.</source>
+        <translation>Редактор для створення та редагування фрагментів.</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1165"/>
         <source>Ctrl+Alt+C</source>
         <translation>Ctrl+Alt+C</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1168"/>
-        <source>ClipBar Show/Hide</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location filename="../main.ui" line="1171"/>
-        <source>Show and Hide the Clip Toolbar.</source>
-        <translation type="unfinished"/>
+        <source>ClipBar Show/Hide</source>
+        <translation>Показати/Приховати панель фрагментів </translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1187"/>
+        <location filename="../main.ui" line="1174"/>
+        <source>Show and Hide the Clip Toolbar.</source>
+        <translation>Відображає або приховує панель фрагментів в інтерфейсі.</translation>
+    </message>
+    <message>
+        <location filename="../main.ui" line="1190"/>
         <source>Find text in the page</source>
         <translation>Знайти текст на сторінці</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1190"/>
+        <location filename="../main.ui" line="1193"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1203"/>
+        <location filename="../main.ui" line="1206"/>
         <source>Next XHtml File</source>
         <translation>Наступний файл XHtml</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1206"/>
+        <location filename="../main.ui" line="1209"/>
         <source>Next file in navigation list</source>
         <translation>Наступний файл у Навігаційному Списку</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1209"/>
+        <location filename="../main.ui" line="1212"/>
         <source>Ctrl+PgDown</source>
         <translation>Ctrl+PgDown</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1222"/>
+        <location filename="../main.ui" line="1225"/>
         <source>Previous XHtml File</source>
         <translation>Попередній файл XHtml</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1225"/>
+        <location filename="../main.ui" line="1228"/>
         <source>Previous file in navigation list</source>
         <translation>Попередній файл у Навігаційному Списку</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1228"/>
+        <location filename="../main.ui" line="1231"/>
         <source>Ctrl+PgUp</source>
         <translation>Ctrl+PgUp</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1244"/>
+        <location filename="../main.ui" line="1247"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation>Зміна режимів редагування та попереднього перегляду.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1254"/>
+        <location filename="../main.ui" line="1257"/>
         <source>About...</source>
         <translation>Про це...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1257"/>
+        <location filename="../main.ui" line="1260"/>
         <source>Show information about PageEdit.</source>
         <translation>Показати інформацію стосовно PageEdit.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1267"/>
+        <location filename="../main.ui" line="1270"/>
         <source>Back to Last Link</source>
         <translation>Назад до останнього посилання</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1270"/>
+        <location filename="../main.ui" line="1273"/>
         <source>Return from the last link taken</source>
         <translation>Повернутися від останнього використаного посилання</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1280"/>
+        <location filename="../main.ui" line="1283"/>
         <source>I&amp;D...</source>
         <translation>I&amp;D...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1283"/>
+        <location filename="../main.ui" line="1286"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
         <translation>Вставити або редагувати якір із ідентифікатором, щоб використовувати його як ціль посилання.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1293"/>
+        <location filename="../main.ui" line="1296"/>
         <source>&amp;Link...</source>
         <translation>&amp;Посилання...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1296"/>
+        <location filename="../main.ui" line="1299"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
         <translation>Вставити або редагувати якір із гіперпосиланням на ціль.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1306"/>
+        <location filename="../main.ui" line="1309"/>
         <source>&amp;File...</source>
         <translation>&amp;Файл...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1309"/>
+        <location filename="../main.ui" line="1312"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
         <translation>Виберіть наявні в книзі файли зображень, відео чи аудіо, які потрібно вставити в текст.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1312"/>
+        <location filename="../main.ui" line="1315"/>
         <source>Ctrl+Shift+I</source>
         <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1318"/>
+        <location filename="../main.ui" line="1321"/>
         <source>Clip &amp;1</source>
         <translation>Фрагмент &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1321"/>
+        <location filename="../main.ui" line="1324"/>
         <source>Insert Clip 1</source>
         <translation>Вставити Фрагмент 1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1324"/>
+        <location filename="../main.ui" line="1327"/>
         <source>Ctrl+Alt+1</source>
         <translation>Ctrl+Alt+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1330"/>
+        <location filename="../main.ui" line="1333"/>
         <source>Clip &amp;2</source>
         <translation>Фрагмент &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1333"/>
+        <location filename="../main.ui" line="1336"/>
         <source>Insert Clip 2</source>
         <translation>Вставити Фрагмент 2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1336"/>
+        <location filename="../main.ui" line="1339"/>
         <source>Ctrl+Alt+2</source>
         <translation>Ctrl+Alt+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1342"/>
+        <location filename="../main.ui" line="1345"/>
         <source>Clip &amp;3</source>
         <translation>Фрагмент &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1345"/>
+        <location filename="../main.ui" line="1348"/>
         <source>Insert Clip 3</source>
         <translation>Вставити Фрагмент 3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1348"/>
+        <location filename="../main.ui" line="1351"/>
         <source>Ctrl+Alt+3</source>
         <translation>Ctrl+Alt+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1354"/>
+        <location filename="../main.ui" line="1357"/>
         <source>Clip &amp;4</source>
         <translation>Фрагмент &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1357"/>
+        <location filename="../main.ui" line="1360"/>
         <source>Insert Clip 4</source>
         <translation>Вставити Фрагмент 4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1360"/>
+        <location filename="../main.ui" line="1363"/>
         <source>Ctrl+Alt+4</source>
         <translation>Ctrl+Alt+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1366"/>
+        <location filename="../main.ui" line="1369"/>
         <source>Clip &amp;5</source>
         <translation>Фрагмент &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1369"/>
+        <location filename="../main.ui" line="1372"/>
         <source>Insert Clip 5</source>
         <translation>Вставити Фрагмент 5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1372"/>
+        <location filename="../main.ui" line="1375"/>
         <source>Ctrl+Alt+5</source>
         <translation>Ctrl+Alt+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1378"/>
+        <location filename="../main.ui" line="1381"/>
         <source>Clip &amp;6</source>
         <translation>Фрагмент &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1381"/>
+        <location filename="../main.ui" line="1384"/>
         <source>Insert Clip 6</source>
         <translation>Вставити Фрагмент 6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1384"/>
+        <location filename="../main.ui" line="1387"/>
         <source>Ctrl+Alt+6</source>
         <translation>Ctrl+Alt+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1390"/>
+        <location filename="../main.ui" line="1393"/>
         <source>Clip &amp;7</source>
         <translation>Фрагмент &amp;7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1393"/>
+        <location filename="../main.ui" line="1396"/>
         <source>Insert Clip 7</source>
         <translation>Вставити Фрагмент 7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1396"/>
+        <location filename="../main.ui" line="1399"/>
         <source>Ctrl+Alt+7</source>
         <translation>Ctrl+Alt+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1402"/>
+        <location filename="../main.ui" line="1405"/>
         <source>Clip &amp;8</source>
         <translation>Фрагмент &amp;8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1405"/>
+        <location filename="../main.ui" line="1408"/>
         <source>Insert Clip 8</source>
         <translation>Вставити Фрагмент 8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1408"/>
+        <location filename="../main.ui" line="1411"/>
         <source>Ctrl+Alt+8</source>
         <translation>Ctrl+Alt+8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1414"/>
+        <location filename="../main.ui" line="1417"/>
         <source>Clip &amp;9</source>
         <translation>Фрагмент &amp;9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1417"/>
+        <location filename="../main.ui" line="1420"/>
         <source>Insert Clip 9</source>
         <translation>Вставити Фрагмент 9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1420"/>
+        <location filename="../main.ui" line="1423"/>
         <source>Ctrl+Alt+9</source>
         <translation>Ctrl+Alt+9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1426"/>
+        <location filename="../main.ui" line="1429"/>
         <source>Clip 1&amp;0</source>
         <translation>Фрагмент 1&amp;0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1429"/>
+        <location filename="../main.ui" line="1432"/>
         <source>Insert Clip 10</source>
         <translation>Вставити Фрагмент 10</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1432"/>
+        <location filename="../main.ui" line="1435"/>
         <source>Ctrl+Alt+0</source>
         <translation>Ctrl+Alt+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1438"/>
+        <location filename="../main.ui" line="1441"/>
         <source>Clip 11</source>
         <translation>Фрагмент 11</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1441"/>
+        <location filename="../main.ui" line="1444"/>
         <source>Insert Clip 11</source>
         <translation>Вставити Фрагмент 11</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1447"/>
+        <location filename="../main.ui" line="1450"/>
         <source>Clip 12</source>
         <translation>Фрагмент 12</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1450"/>
+        <location filename="../main.ui" line="1453"/>
         <source>Insert Clip 12</source>
         <translation>Вставити Фрагмент 12</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1456"/>
+        <location filename="../main.ui" line="1459"/>
         <source>Clip 13</source>
         <translation>Фрагмент 13</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1459"/>
+        <location filename="../main.ui" line="1462"/>
         <source>Insert Clip 13</source>
         <translation>Вставити Фрагмент 13</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1465"/>
+        <location filename="../main.ui" line="1468"/>
         <source>Clip 14</source>
         <translation>Фрагмент 14</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1468"/>
+        <location filename="../main.ui" line="1471"/>
         <source>Insert Clip 14</source>
         <translation>Вставити Фрагмент 14</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1474"/>
+        <location filename="../main.ui" line="1477"/>
         <source>Clip 15</source>
         <translation>Фрагмент 15</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1477"/>
+        <location filename="../main.ui" line="1480"/>
         <source>Insert Clip 15</source>
         <translation>Вставити Фрагмент 15</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1483"/>
+        <location filename="../main.ui" line="1486"/>
         <source>Clip 16</source>
         <translation>Фрагмент 16</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1486"/>
+        <location filename="../main.ui" line="1489"/>
         <source>Insert Clip 16</source>
         <translation>Вставити Фрагмент 16</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1492"/>
+        <location filename="../main.ui" line="1495"/>
         <source>Clip 17</source>
         <translation>Фрагмент 17</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1495"/>
+        <location filename="../main.ui" line="1498"/>
         <source>Insert Clip 17</source>
         <translation>Вставити Фрагмент 17</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1501"/>
+        <location filename="../main.ui" line="1504"/>
         <source>Clip 18</source>
         <translation>Фрагмент 18</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1504"/>
+        <location filename="../main.ui" line="1507"/>
         <source>Insert Clip 18</source>
         <translation>Вставити Фрагмент 18</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1510"/>
+        <location filename="../main.ui" line="1513"/>
         <source>Clip 19</source>
         <translation>Фрагмент 19</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1513"/>
+        <location filename="../main.ui" line="1516"/>
         <source>Insert Clip 19</source>
         <translation>Вставити Фрагмент 19</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1519"/>
+        <location filename="../main.ui" line="1522"/>
         <source>Clip 20</source>
         <translation>Фрагмент 20</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1522"/>
+        <location filename="../main.ui" line="1525"/>
         <source>Insert Clip 20</source>
         <translation>Вставити Фрагмент 20</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
+        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>Не вдалося загрузити файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
+        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>Не вдалося загрузити файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
+        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>режим: Попередній перегляд</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
+        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>режим: Редагування</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1741,11 +1762,13 @@ If a translation for specific word or phrase is not available it will be display
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
+        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Зберегти зроблені зміни перед подальшими діями?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
+        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>PageEdit закривається...</translation>
     </message>
@@ -1756,21 +1779,30 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
+        <location filename="../MainWindow.cpp~" line="1275"/>
+        <location filename="../MainWindow.cpp~" line="1276"/>
+        <location filename="../MainWindow.cpp~" line="1277"/>
+        <location filename="../MainWindow.cpp~" line="1286"/>
+        <location filename="../MainWindow.cpp~" line="1287"/>
+        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>Файли HTML (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
+        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>Файли OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
+        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>Усі файли (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
+        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>Зберегти файл</translation>
     </message>
@@ -1779,17 +1811,24 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1554"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>недоступно для запису</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1562"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>Файл збережено</translation>
     </message>
@@ -1798,116 +1837,142 @@ If a translation for specific word or phrase is not available it will be display
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
+        <location filename="../MainWindow.cpp~" line="1592"/>
+        <location filename="../MainWindow.cpp~" line="1594"/>
+        <location filename="../MainWindow.cpp~" line="1605"/>
+        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>Не вдалося зберегти файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>не існує або недоступно для запису </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
+        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>Не показувати це попередження в подальшому</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
+        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Цей файл може бути надрукований не так, як Ви очікуєте.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
+        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Буде надруковано темний фон і кольоровий текст, застосований за допомогою CSS EPUB.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
+        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Будьте обережні, так як це може привести до витрачання великої кількості чорнила!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
+        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Використовуйте попередній перегляд, щоб побачити, як буде виглядати файл після друку.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
+        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Поставте прапорець, якщо Ви не хочете бачити це попередження в майбутньому.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
+        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>Файл відкрито</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>Не вдалося відкрити файл!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
+        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>Буфер обміну містить форматований HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
+        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Ви хочете вставити дані з буферу обміну як звичайний текст?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Ви повинні виділити текст перед тим, як вставити новий ідентифікатор.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>ID недійсний — повинен починатися з літери, після чого можуть додаватися букви, цифри, знаки  &quot;-&quot;, &quot;_&quot;, &quot;:&quot;, або &quot;.&quot;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Ви не можете вставити ідентифікатор у цю позицію.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Ви повинні виділити текст перед тим, як вставити нове посилання.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>Посилання недійсне — не може містити &apos;&lt;&apos; або &apos;&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>Помилка при вставці цілі зовнішнього посилання.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>Помилка при вставці посилання в цій позиції.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
+        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>Вставити Файл</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Ви не можете вставити медіафайл у цій позиції.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
+        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Зберегти зроблені зміни перед перезаписом цього файлу?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
+        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation>Вставлено елемент фрагменту %1.</translation>
     </message>

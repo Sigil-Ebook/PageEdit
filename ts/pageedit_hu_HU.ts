@@ -590,7 +590,7 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
 <context>
     <name>Inspector</name>
     <message>
-        <location filename="../Inspector.cpp" line="76"/>
+        <location filename="../Inspector.cpp" line="67"/>
         <source>Inspect Page or Element</source>
         <translation>Az oldal vagy elem vizsgálata</translation>
     </message>
@@ -610,6 +610,17 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <location filename="../MainWindow.cpp" line="1892"/>
         <location filename="../MainWindow.cpp" line="1947"/>
         <location filename="../MainWindow.cpp" line="2022"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1169"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="2022"/>
         <source>PageEdit</source>
         <translation>PageEdit</translation>
     </message>
@@ -660,7 +671,7 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
     </message>
     <message>
         <location filename="../main.ui" line="176"/>
-        <location filename="../main.ui" line="1144"/>
+        <location filename="../main.ui" line="1147"/>
         <source>Clips</source>
         <translation>Klipek</translation>
     </message>
@@ -676,7 +687,7 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
     </message>
     <message>
         <location filename="../main.ui" line="227"/>
-        <location filename="../main.ui" line="1241"/>
+        <location filename="../main.ui" line="1244"/>
         <source>Mode</source>
         <translation>Üzemmód</translation>
     </message>
@@ -697,7 +708,7 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
     </message>
     <message>
         <location filename="../main.ui" line="304"/>
-        <location filename="../main.ui" line="1184"/>
+        <location filename="../main.ui" line="1187"/>
         <source>Find</source>
         <translation>Keresés</translation>
     </message>
@@ -1042,697 +1053,707 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <translation>Sorszámozott lista létrehozása a kiválasztott szövegből.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="800"/>
+        <location filename="../main.ui" line="790"/>
+        <source>Ctrl+Shift+N</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../main.ui" line="803"/>
         <source>Bulle&amp;ted List</source>
         <translation>Felsorolás</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="803"/>
+        <location filename="../main.ui" line="806"/>
         <source>Create a bulleted list from selection.</source>
         <translation>Felsorolás létrehozása a kiválasztott szövegből.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="806"/>
+        <location filename="../main.ui" line="809"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="819"/>
+        <location filename="../main.ui" line="822"/>
         <source>Stri&amp;kethrough</source>
         <translation>Áthúzott</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="822"/>
+        <location filename="../main.ui" line="825"/>
         <source>Draw a line through the selected text.</source>
         <translation>Egy vonalat húz keresztbe a kijelölt szövegen.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="835"/>
+        <location filename="../main.ui" line="838"/>
         <source>&amp;Subscript</source>
         <translation>Alsó index</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="838"/>
+        <location filename="../main.ui" line="841"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
         <translation>A kijelölt szöveget valamivel kisebbre módosítja és a normál vonal alá süllyeszti.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="851"/>
+        <location filename="../main.ui" line="854"/>
         <source>Su&amp;perscript</source>
         <translation>Felső index</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="854"/>
+        <location filename="../main.ui" line="857"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
         <translation>A kijelölt szöveget valamivel kisebbre módosítja és a normál vonal fölé emeli.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="865"/>
+        <location filename="../main.ui" line="868"/>
         <source>Zoom &amp;In</source>
         <translation>Nagyítás</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="868"/>
+        <location filename="../main.ui" line="871"/>
         <source>Zoom In</source>
         <translation>Nagyítás</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="871"/>
+        <location filename="../main.ui" line="874"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="882"/>
+        <location filename="../main.ui" line="885"/>
         <source>Zoom &amp;Out</source>
         <translation>Kicsinyítés</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="885"/>
+        <location filename="../main.ui" line="888"/>
         <source>Zoom Out</source>
         <translation>Kicsinyítés</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="888"/>
+        <location filename="../main.ui" line="891"/>
         <source>Ctrl+-</source>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="899"/>
+        <location filename="../main.ui" line="902"/>
         <source>Incre&amp;ase Indent</source>
         <translation>Behúzás növelése</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="902"/>
+        <location filename="../main.ui" line="905"/>
         <source>Increase the indent level of the paragraph.</source>
         <translation>Megnöveli a bekezdés behúzást.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="905"/>
+        <location filename="../main.ui" line="908"/>
         <source>Ctrl+Alt+M</source>
         <translation>Ctrl+Alt+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="915"/>
+        <location filename="../main.ui" line="918"/>
         <source>&amp;Decrease Indent</source>
         <translation>Behúzás csökkentése</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="918"/>
+        <location filename="../main.ui" line="921"/>
         <source>Decrease the indent level of the paragraph.</source>
         <translation>Csökkenti a bekezdés behúzást.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="921"/>
+        <location filename="../main.ui" line="924"/>
         <source>Ctrl+Shift+M</source>
         <translation>Ctrl+Shift+M</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="931"/>
+        <location filename="../main.ui" line="934"/>
         <source>Split &amp;Marker</source>
         <translation>Szétvágás jelölő</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="934"/>
+        <location filename="../main.ui" line="937"/>
         <source>Insert Sigil split file marker</source>
         <translation>Szétvágás jelölő beillesztése</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="937"/>
+        <location filename="../main.ui" line="940"/>
         <source>Ctrl+Shift+Return</source>
         <translation>Ctrl+Shift+Return</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="943"/>
+        <location filename="../main.ui" line="946"/>
         <source>&amp;Preferences...</source>
         <translation>Beállítások...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="946"/>
+        <location filename="../main.ui" line="949"/>
         <source>F5</source>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="952"/>
+        <location filename="../main.ui" line="955"/>
         <source>&amp;Zoom Reset</source>
         <translation>Alap nagyítás</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="955"/>
+        <location filename="../main.ui" line="958"/>
         <source>Zoom Reset</source>
         <translation>Alap nagyítás</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="958"/>
+        <location filename="../main.ui" line="961"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="971"/>
+        <location filename="../main.ui" line="974"/>
         <source>Heading &amp;1</source>
         <translation>Címsor &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="974"/>
+        <location filename="../main.ui" line="977"/>
         <source>Format paragraph as a level 1 heading.</source>
         <translation>Bekezdés formázása 1. szintű fejlécként.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="977"/>
+        <location filename="../main.ui" line="980"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="990"/>
+        <location filename="../main.ui" line="993"/>
         <source>Heading &amp;2</source>
         <translation>Címsor &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="993"/>
+        <location filename="../main.ui" line="996"/>
         <source>Format paragraph as a level 2 heading.</source>
         <translation>Bekezdés formázása 2. szintű fejlécként.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="996"/>
+        <location filename="../main.ui" line="999"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1009"/>
+        <location filename="../main.ui" line="1012"/>
         <source>Heading &amp;3</source>
         <translation>Címsor &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1012"/>
+        <location filename="../main.ui" line="1015"/>
         <source>Format paragraph as a level 3 heading.</source>
         <translation>Bekezdés formázása 3. szintű fejlécként.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1015"/>
+        <location filename="../main.ui" line="1018"/>
         <source>Ctrl+3</source>
         <translation>Ctrl+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1029"/>
+        <location filename="../main.ui" line="1032"/>
         <source>Heading &amp;4</source>
         <translation>Címsor &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1032"/>
+        <location filename="../main.ui" line="1035"/>
         <source>Format paragraph as a level 4 heading.</source>
         <translation>Bekezdés formázása 4. szintű fejlécként.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1035"/>
+        <location filename="../main.ui" line="1038"/>
         <source>Ctrl+4</source>
         <translation>Ctrl+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1048"/>
+        <location filename="../main.ui" line="1051"/>
         <source>Heading &amp;5</source>
         <translation>Címsor &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1051"/>
+        <location filename="../main.ui" line="1054"/>
         <source>Format paragraph as a level 5 heading.</source>
         <translation>Bekezdés formázása 5. szintű fejlécként.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1054"/>
+        <location filename="../main.ui" line="1057"/>
         <source>Ctrl+5</source>
         <translation>Ctrl+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1067"/>
+        <location filename="../main.ui" line="1070"/>
         <source>Heading &amp;6</source>
         <translation>Címsor &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1070"/>
+        <location filename="../main.ui" line="1073"/>
         <source>Format paragraph as a level 6 heading.</source>
         <translation>Bekezdés formázása 6. szintű fejlécként.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1073"/>
+        <location filename="../main.ui" line="1076"/>
         <source>Ctrl+6</source>
         <translation>Ctrl+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1087"/>
+        <location filename="../main.ui" line="1090"/>
         <source>&amp;Normal</source>
         <translation>&amp;Normál</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1090"/>
+        <location filename="../main.ui" line="1093"/>
         <source>Format paragraph as a normal paragraph.</source>
         <translation>Bekezdés formázása normál bekezdésként.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1093"/>
+        <location filename="../main.ui" line="1096"/>
         <source>Ctrl+7</source>
         <translation>Ctrl+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1103"/>
+        <location filename="../main.ui" line="1106"/>
         <source>&amp;Preserve Existing Attributes</source>
         <translation>Meglévő tulajdonságok megőrzése</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1106"/>
+        <location filename="../main.ui" line="1109"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
         <translation>A stílus alkalmazásakor őrizze meg a címkén lévő összes meglévő attribútumot</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1116"/>
+        <location filename="../main.ui" line="1119"/>
         <source>&amp;Select All</source>
         <translation>Ö&amp;sszes kijelölése</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1119"/>
+        <location filename="../main.ui" line="1122"/>
         <source>Select all text in the document.</source>
         <translation>Jelölje ki a dokumentum teljes szövegét.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1122"/>
+        <location filename="../main.ui" line="1125"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1132"/>
+        <location filename="../main.ui" line="1135"/>
         <source>&amp;Inspector</source>
         <translation>&amp;Ellenőr</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1135"/>
+        <location filename="../main.ui" line="1138"/>
         <source>Inspect the page.</source>
         <translation>Az oldal vizsgálata</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1138"/>
+        <location filename="../main.ui" line="1141"/>
         <source>Ctrl+F5</source>
         <translation>Ctrl+F5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1147"/>
+        <location filename="../main.ui" line="1150"/>
         <source>Apply clips to page.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1156"/>
+        <location filename="../main.ui" line="1159"/>
         <source>ClipEditor ...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1159"/>
+        <location filename="../main.ui" line="1162"/>
         <source>Edit and Create Clips.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1162"/>
+        <location filename="../main.ui" line="1165"/>
         <source>Ctrl+Alt+C</source>
         <translation>Ctrl+Alt+C</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1168"/>
+        <location filename="../main.ui" line="1171"/>
         <source>ClipBar Show/Hide</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1171"/>
+        <location filename="../main.ui" line="1174"/>
         <source>Show and Hide the Clip Toolbar.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.ui" line="1187"/>
+        <location filename="../main.ui" line="1190"/>
         <source>Find text in the page</source>
         <translation>Szöveg keresése az oldalon</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1190"/>
+        <location filename="../main.ui" line="1193"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1203"/>
+        <location filename="../main.ui" line="1206"/>
         <source>Next XHtml File</source>
         <translation>Következő XHtml fájl</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1206"/>
+        <location filename="../main.ui" line="1209"/>
         <source>Next file in navigation list</source>
         <translation>Következő fájl a navigációs listában</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1209"/>
+        <location filename="../main.ui" line="1212"/>
         <source>Ctrl+PgDown</source>
         <translation>Ctrl+PgDown</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1222"/>
+        <location filename="../main.ui" line="1225"/>
         <source>Previous XHtml File</source>
         <translation>Előző XHtml fájl</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1225"/>
+        <location filename="../main.ui" line="1228"/>
         <source>Previous file in navigation list</source>
         <translation>Előző fájl a navigációs listában</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1228"/>
+        <location filename="../main.ui" line="1231"/>
         <source>Ctrl+PgUp</source>
         <translation>Ctrl+PgUp</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1244"/>
+        <location filename="../main.ui" line="1247"/>
         <source>Toggle between Edit and Preview Modes.</source>
         <translation>Váltás a Szerkesztés és Előnézet módok között</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1254"/>
+        <location filename="../main.ui" line="1257"/>
         <source>About...</source>
         <translation>A programról...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1257"/>
+        <location filename="../main.ui" line="1260"/>
         <source>Show information about PageEdit.</source>
         <translation>Információk megjelenítése a PageEdit-ről.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1267"/>
+        <location filename="../main.ui" line="1270"/>
         <source>Back to Last Link</source>
         <translation>Vissza az utolsó hivatkozáshoz</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1270"/>
+        <location filename="../main.ui" line="1273"/>
         <source>Return from the last link taken</source>
         <translation>Vissza az utoljára használt linkről</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1280"/>
+        <location filename="../main.ui" line="1283"/>
         <source>I&amp;D...</source>
         <translation>I&amp;D...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1283"/>
+        <location filename="../main.ui" line="1286"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
         <translation>Horgony beszúrása vagy szerkesztése egy azonosítónévvel, hivatkozási célként való használatra.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1293"/>
+        <location filename="../main.ui" line="1296"/>
         <source>&amp;Link...</source>
         <translation>&amp;Hivatkozás...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1296"/>
+        <location filename="../main.ui" line="1299"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
         <translation>Egy Horgony beszúrása vagy szerkesztése egy célra mutató hiperhivatkozással.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1306"/>
+        <location filename="../main.ui" line="1309"/>
         <source>&amp;File...</source>
         <translation>&amp;Fájl...</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1309"/>
+        <location filename="../main.ui" line="1312"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
         <translation>Válassza ki a meglévő kép-, video- vagy hangfájlokat a könyvből, a szövegbe illesztéshez.</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1312"/>
+        <location filename="../main.ui" line="1315"/>
         <source>Ctrl+Shift+I</source>
         <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1318"/>
+        <location filename="../main.ui" line="1321"/>
         <source>Clip &amp;1</source>
         <translation>Klip &amp;1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1321"/>
+        <location filename="../main.ui" line="1324"/>
         <source>Insert Clip 1</source>
         <translation>Klip 1 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1324"/>
+        <location filename="../main.ui" line="1327"/>
         <source>Ctrl+Alt+1</source>
         <translation>Ctrl+Alt+1</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1330"/>
+        <location filename="../main.ui" line="1333"/>
         <source>Clip &amp;2</source>
         <translation>Klip &amp;2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1333"/>
+        <location filename="../main.ui" line="1336"/>
         <source>Insert Clip 2</source>
         <translation>Klip 2 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1336"/>
+        <location filename="../main.ui" line="1339"/>
         <source>Ctrl+Alt+2</source>
         <translation>Ctrl+Alt+2</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1342"/>
+        <location filename="../main.ui" line="1345"/>
         <source>Clip &amp;3</source>
         <translation>Klip &amp;3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1345"/>
+        <location filename="../main.ui" line="1348"/>
         <source>Insert Clip 3</source>
         <translation>Klip 3 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1348"/>
+        <location filename="../main.ui" line="1351"/>
         <source>Ctrl+Alt+3</source>
         <translation>Ctrl+Alt+3</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1354"/>
+        <location filename="../main.ui" line="1357"/>
         <source>Clip &amp;4</source>
         <translation>Klip &amp;4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1357"/>
+        <location filename="../main.ui" line="1360"/>
         <source>Insert Clip 4</source>
         <translation>Klip 4 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1360"/>
+        <location filename="../main.ui" line="1363"/>
         <source>Ctrl+Alt+4</source>
         <translation>Ctrl+Alt+4</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1366"/>
+        <location filename="../main.ui" line="1369"/>
         <source>Clip &amp;5</source>
         <translation>Klip &amp;5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1369"/>
+        <location filename="../main.ui" line="1372"/>
         <source>Insert Clip 5</source>
         <translation>Klip 5 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1372"/>
+        <location filename="../main.ui" line="1375"/>
         <source>Ctrl+Alt+5</source>
         <translation>Ctrl+Alt+5</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1378"/>
+        <location filename="../main.ui" line="1381"/>
         <source>Clip &amp;6</source>
         <translation>Klip &amp;6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1381"/>
+        <location filename="../main.ui" line="1384"/>
         <source>Insert Clip 6</source>
         <translation>Klip 6 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1384"/>
+        <location filename="../main.ui" line="1387"/>
         <source>Ctrl+Alt+6</source>
         <translation>Ctrl+Alt+6</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1390"/>
+        <location filename="../main.ui" line="1393"/>
         <source>Clip &amp;7</source>
         <translation>Klip &amp;7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1393"/>
+        <location filename="../main.ui" line="1396"/>
         <source>Insert Clip 7</source>
         <translation>Klip 7 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1396"/>
+        <location filename="../main.ui" line="1399"/>
         <source>Ctrl+Alt+7</source>
         <translation>Ctrl+Alt+7</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1402"/>
+        <location filename="../main.ui" line="1405"/>
         <source>Clip &amp;8</source>
         <translation>Klip &amp;8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1405"/>
+        <location filename="../main.ui" line="1408"/>
         <source>Insert Clip 8</source>
         <translation>Klip 8 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1408"/>
+        <location filename="../main.ui" line="1411"/>
         <source>Ctrl+Alt+8</source>
         <translation>Ctrl+Alt+8</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1414"/>
+        <location filename="../main.ui" line="1417"/>
         <source>Clip &amp;9</source>
         <translation>Klip &amp;9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1417"/>
+        <location filename="../main.ui" line="1420"/>
         <source>Insert Clip 9</source>
         <translation>Klip 9 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1420"/>
+        <location filename="../main.ui" line="1423"/>
         <source>Ctrl+Alt+9</source>
         <translation>Ctrl+Alt+9</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1426"/>
+        <location filename="../main.ui" line="1429"/>
         <source>Clip 1&amp;0</source>
         <translation>Klip 1&amp;0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1429"/>
+        <location filename="../main.ui" line="1432"/>
         <source>Insert Clip 10</source>
         <translation>Klip 10 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1432"/>
+        <location filename="../main.ui" line="1435"/>
         <source>Ctrl+Alt+0</source>
         <translation>Ctrl+Alt+0</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1438"/>
+        <location filename="../main.ui" line="1441"/>
         <source>Clip 11</source>
         <translation>Klip 11</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1441"/>
+        <location filename="../main.ui" line="1444"/>
         <source>Insert Clip 11</source>
         <translation>Klip 11 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1447"/>
+        <location filename="../main.ui" line="1450"/>
         <source>Clip 12</source>
         <translation>Klip 12</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1450"/>
+        <location filename="../main.ui" line="1453"/>
         <source>Insert Clip 12</source>
         <translation>Klip 12 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1456"/>
+        <location filename="../main.ui" line="1459"/>
         <source>Clip 13</source>
         <translation>Klip 13</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1459"/>
+        <location filename="../main.ui" line="1462"/>
         <source>Insert Clip 13</source>
         <translation>Klip 13 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1465"/>
+        <location filename="../main.ui" line="1468"/>
         <source>Clip 14</source>
         <translation>Klip 14</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1468"/>
+        <location filename="../main.ui" line="1471"/>
         <source>Insert Clip 14</source>
         <translation>Klip 14 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1474"/>
+        <location filename="../main.ui" line="1477"/>
         <source>Clip 15</source>
         <translation>Klip 15</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1477"/>
+        <location filename="../main.ui" line="1480"/>
         <source>Insert Clip 15</source>
         <translation>Klip 15 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1483"/>
+        <location filename="../main.ui" line="1486"/>
         <source>Clip 16</source>
         <translation>Klip 16</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1486"/>
+        <location filename="../main.ui" line="1489"/>
         <source>Insert Clip 16</source>
         <translation>Klip 16 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1492"/>
+        <location filename="../main.ui" line="1495"/>
         <source>Clip 17</source>
         <translation>Klip 17</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1495"/>
+        <location filename="../main.ui" line="1498"/>
         <source>Insert Clip 17</source>
         <translation>Klip 17 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1501"/>
+        <location filename="../main.ui" line="1504"/>
         <source>Clip 18</source>
         <translation>Klip 18</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1504"/>
+        <location filename="../main.ui" line="1507"/>
         <source>Insert Clip 18</source>
         <translation>Klip 18 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1510"/>
+        <location filename="../main.ui" line="1513"/>
         <source>Clip 19</source>
         <translation>Klip 19</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1513"/>
+        <location filename="../main.ui" line="1516"/>
         <source>Insert Clip 19</source>
         <translation>Klip 19 beszúrása</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1519"/>
+        <location filename="../main.ui" line="1522"/>
         <source>Clip 20</source>
         <translation>Klip 20</translation>
     </message>
     <message>
-        <location filename="../main.ui" line="1522"/>
+        <location filename="../main.ui" line="1525"/>
         <source>Insert Clip 20</source>
         <translation>Klip 20 beszúrása</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
+        <location filename="../MainWindow.cpp~" line="789"/>
         <source>File load failed</source>
         <translation>Fájl betöltés sikertelen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
+        <location filename="../MainWindow.cpp~" line="790"/>
         <source>File Load Failed</source>
         <translation>Fájl betöltés sikertelen</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
+        <location filename="../MainWindow.cpp~" line="906"/>
         <source>mode: Preview</source>
         <translation>mód: Előnézet</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
+        <location filename="../MainWindow.cpp~" line="908"/>
         <source>mode: Edit</source>
         <translation>mód: Szerkesztés</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
+        <location filename="../MainWindow.cpp~" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
@@ -1742,11 +1763,13 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
+        <location filename="../MainWindow.cpp~" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
         <translation>Szeretné menteni a változtatásokat kilépés előtt?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
+        <location filename="../MainWindow.cpp~" line="1189"/>
         <source>PageEdit is closing...</source>
         <translation>A PageEdit leáll...</translation>
     </message>
@@ -1757,21 +1780,30 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <location filename="../MainWindow.cpp" line="1286"/>
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
+        <location filename="../MainWindow.cpp~" line="1275"/>
+        <location filename="../MainWindow.cpp~" line="1276"/>
+        <location filename="../MainWindow.cpp~" line="1277"/>
+        <location filename="../MainWindow.cpp~" line="1286"/>
+        <location filename="../MainWindow.cpp~" line="1287"/>
+        <location filename="../MainWindow.cpp~" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
         <translation>HTML fájlok (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
+        <location filename="../MainWindow.cpp~" line="1278"/>
         <source>OPF files (*.opf)</source>
         <translation>OPF fájlok (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
+        <location filename="../MainWindow.cpp~" line="1279"/>
         <source>All files (*.*)</source>
         <translation>Összes fájl (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
+        <location filename="../MainWindow.cpp~" line="1518"/>
         <source>Save File</source>
         <translation>Fájl mentése</translation>
     </message>
@@ -1780,17 +1812,24 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <location filename="../MainWindow.cpp" line="1554"/>
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1554"/>
+        <location filename="../MainWindow.cpp~" line="1566"/>
+        <location filename="../MainWindow.cpp~" line="1567"/>
         <source>File Save-As Failed!</source>
         <translation>Fájl mentés másként sikertelen!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
+        <location filename="../MainWindow.cpp~" line="1553"/>
         <source>is not writeable</source>
         <translation>nem írható</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
+        <location filename="../MainWindow.cpp~" line="1562"/>
+        <location filename="../MainWindow.cpp~" line="1601"/>
         <source>File Saved</source>
         <translation>Fájl elmentve</translation>
     </message>
@@ -1799,116 +1838,142 @@ Ha egy adott szó vagy kifejezés nincs lefordítva, akkor az angolul fog megjel
         <location filename="../MainWindow.cpp" line="1594"/>
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
+        <location filename="../MainWindow.cpp~" line="1592"/>
+        <location filename="../MainWindow.cpp~" line="1594"/>
+        <location filename="../MainWindow.cpp~" line="1605"/>
+        <location filename="../MainWindow.cpp~" line="1606"/>
         <source>File Save Failed!</source>
         <translation>Fájl mentési hiba!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
+        <location filename="../MainWindow.cpp~" line="1593"/>
         <source>does not exist or is not writeable</source>
         <translation>nem létezik vagy nem írható</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
+        <location filename="../MainWindow.cpp~" line="1621"/>
         <source>Do not show this warning again</source>
         <translation>Ne mutassa többet ezt az üzenetet</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
+        <location filename="../MainWindow.cpp~" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
         <translation>Előfordulhat, hogy ez a fájl nem a várt módon nyomtatható ki.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
+        <location filename="../MainWindow.cpp~" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
         <translation>Az EPUB CSS szerint formázott sötét hátterek és színes szöveg nyomtatásra kerülnek.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
+        <location filename="../MainWindow.cpp~" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
         <translation>Legyen óvatos, mert ez sok tintafelhasználást eredményezhet!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
+        <location filename="../MainWindow.cpp~" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
         <translation>Használja a következő Nyomtatási előnézetet a nyomat megtekintéséhez.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
+        <location filename="../MainWindow.cpp~" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
         <translation>Jelölje be, ha a jövőben nem szeretné látni ezt a figyelmeztetést.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
+        <location filename="../MainWindow.cpp~" line="1706"/>
         <source>File Opened</source>
         <translation>Fájl megnyitva</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
+        <location filename="../MainWindow.cpp~" line="1710"/>
         <source>File Open Failed!</source>
         <translation>Fájlmegnyitási hiba!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
+        <location filename="../MainWindow.cpp~" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
         <translation>A vágólap HTML formázást tartalmaz</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
+        <location filename="../MainWindow.cpp~" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
         <translation>Sima szövegként szeretné beilleszteni a vágólap tartalmát?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
+        <location filename="../MainWindow.cpp~" line="1832"/>
         <source>You must select text before inserting a new id.</source>
         <translation>Ki kell választani a szöveget egy új ID beszúrása előtt.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
+        <location filename="../MainWindow.cpp~" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
         <translation>Az azonosító érvénytelen – betűvel kell kezdődnie, melyet betű, szám, alulvonás &apos;_&apos; kettőspont &apos;:&apos; - vagy pont &apos;.&apos; követ</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
+        <location filename="../MainWindow.cpp~" line="1851"/>
         <source>You cannot insert an id at this position.</source>
         <translation>Ezen a helyen nem lehet ID-t beszúrni.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
+        <location filename="../MainWindow.cpp~" line="1865"/>
         <source>You must select text before inserting a new link.</source>
         <translation>Új hivatkozás beszúrása előtt ki kell választani a szöveget.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
+        <location filename="../MainWindow.cpp~" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
         <translation>A hivatkozás érvénytelen - nem tartalmazhat &apos;&lt;&apos; vagy &apos;&gt;&apos; jelet. </translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
+        <location filename="../MainWindow.cpp~" line="1884"/>
         <source>Error inserting external link target.</source>
         <translation>Hiba a külső hivatkozási cél beszúrásakor.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
+        <location filename="../MainWindow.cpp~" line="1892"/>
         <source>Error inserting a link at this position.</source>
         <translation>Hiba a beszúráskor ezen a helyen.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
+        <location filename="../MainWindow.cpp~" line="1903"/>
         <source>Insert File</source>
         <translation>Fájl beszúrása</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
+        <location filename="../MainWindow.cpp~" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
         <translation>Ezen a helyen nem lehet média fájlt beszúrni.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
+        <location filename="../MainWindow.cpp~" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
         <translation>Szeretné menteni a változtatásokat a fájl felülírása előtt?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
+        <location filename="../MainWindow.cpp~" line="2075"/>
         <source>Pasted clip entry %1.</source>
         <translation type="unfinished"/>
     </message>
