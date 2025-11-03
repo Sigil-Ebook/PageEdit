@@ -1056,7 +1056,7 @@ If a translation for specific word or phrase is not available it will be display
     <message>
         <location filename="../main.ui" line="790"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main.ui" line="803"/>

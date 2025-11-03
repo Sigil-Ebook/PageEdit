@@ -1056,7 +1056,7 @@ Si no está disponible la traducción para alguna palabra o frase específica, s
     <message>
         <location filename="../main.ui" line="790"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+Mayús+N</translation>
     </message>
     <message>
         <location filename="../main.ui" line="803"/>
