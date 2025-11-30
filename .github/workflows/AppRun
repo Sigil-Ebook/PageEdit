@@ -13,6 +13,12 @@ echo "${PAGEEDIT_EXTRA_ROOT}"
 # export LD_LIBRARY_PATH
 # echo "$LD_LIBRARY_PATH"
 
-source "$this_dir"/apprun-hooks/"linuxdeploy-plugin-qt-hook.sh"
+# Incorporate old qt-hook script contents here since the auto-hook generation stopped upstream
+case "${XDG_CURRENT_DESKTOP}" in
+    *GNOME*|*gnome*|*XFCE*)
+        export QT_QPA_PLATFORMTHEME=gtk3
+        ;;
+esac
 
-LD_LIBRARY_PATH="$this_dir/usr/lib:$LD_LIBRARY_PATH" exec "$this_dir"/AppRun.wrapped "$@"
+# Call the pageedit binary directly since AppRun.wrapped is no longer auto-generated
+LD_LIBRARY_PATH="$this_dir/usr/lib:$LD_LIBRARY_PATH" exec "$this_dir"/usr/bin/pageedit "$@"
