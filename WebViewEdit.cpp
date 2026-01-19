@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2025  Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2019-2026  Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -614,8 +614,12 @@ void WebViewEdit::FormatBlock(const QString &element_name, bool preserve_attribu
     QString javascript =  c_GetBlock + c_FormatBlock +
                           "var node = document.getSelection().anchorNode;"
                           "var startNode = get_block( node );"
-                          "var element = format_block( startNode, \"" + element_name + "\", " + preserve + " );"
-                          "startNode.parentNode.replaceChild( element, startNode );"
+                          "if (startNode == null) {"
+                          "  document.execCommand(\"formatBlock\", false, \"" + element_name + "\" );"
+                          "} else {"
+                          "  var element = format_block( startNode, \"" + element_name + "\", " + preserve + " );"
+                          "  startNode.parentNode.replaceChild( element, startNode );"
+                          "}"
                           + SET_CURSOR_JS2;
     DoJavascript(javascript);
 }
