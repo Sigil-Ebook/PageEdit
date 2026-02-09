@@ -1,5 +1,12 @@
 Change Log
 ==========
+PageEdit-2.7.5
+    Bug Fixes
+      - make heading tool properly handle bare text inside the body tag without errors
+
+    New Features
+      - updated to Qt 6.10.2
+
 
 PageEdit-2.7.0
     New Features
