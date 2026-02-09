@@ -34,14 +34,14 @@ on:
 
 env:
   BUILD_TYPE: Release
-  DOWNLOADQT: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/Qt6.9.3ci_x64_VS2022.7z
-  QT: Qt6.9.3
+  DOWNLOADQT: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/Qt6.10.2ci_x64_VS2026.7z
+  QT: Qt6.10.2
   INNO: C:\Program Files (x86)\Inno Setup 6
 
 jobs:
   build:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    runs-on: windows-latest
+    runs-on: windows-2025-vs2026
 
     steps:
     - uses: actions/checkout@v4
@@ -83,7 +83,7 @@ jobs:
       working-directory: ${{runner.workspace}}\build
       run: |
         set PATH=${{runner.workspace}}\%QT%\bin;%PATH%
-        call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
+        call "C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
         cmake %GITHUB_WORKSPACE% ^
         -G "Ninja" ^
         -DCMAKE_BUILD_TYPE=%BUILD_TYPE% ^
@@ -96,7 +96,7 @@ jobs:
       if: contains(github.event.head_commit.message, '[deploy]') || github.event_name == 'workflow_dispatch'
       run: |
         set PATH=%INNO%;${{runner.workspace}}\%QT%\bin;%PATH%
-        call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
+        call "C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
         ninja -j2 deployinstaller
 
     - uses: actions/upload-artifact@v4
