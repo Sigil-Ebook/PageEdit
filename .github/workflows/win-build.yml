@@ -34,7 +34,7 @@ on:
 
 env:
   BUILD_TYPE: Release
-  DOWNLOADQT: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/Qt6.10.2ci_x64_VS2022.7z
+  DOWNLOADQT: https://github.com/dougmassay/win-qtwebkit-5.212/releases/download/v5.212-1/Qt6.10.2ci_x64_VS2026.7z
   QT: Qt6.10.2
   INNO: C:\Program Files (x86)\Inno Setup 6
 
