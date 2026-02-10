@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2025  Kevin B. Hendricks, Stratford, Ontario, Canada
-**  Copyright (C) 2019-2025  Doug Massay
+**  Copyright (C) 2019-2026  Kevin B. Hendricks, Stratford, Ontario, Canada
+**  Copyright (C) 2019-2026  Doug Massay
 **
 **  This file is part of PageEdit.
 **
@@ -36,6 +36,7 @@
 #include <QtWebEngineWidgets>
 #include <QtWebEngineCore>
 #include <QWebEngineProfile>
+#include <QSharedMemory>
 #include <QDebug>
 
 #ifdef Q_OS_MAC
@@ -159,9 +160,10 @@ void MessageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
     pageedit_log_file = Utility::GetEnvironmentVar("PAGEEDIT_DEBUG_LOGFILE");
     if (!pageedit_log_file.isEmpty()) {
         QFile outFile(pageedit_log_file);
-        outFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text);
-        QTextStream ts(&outFile);
-        ts << qt_log_entry << Qt::endl;
+        if (outFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
+            QTextStream ts(&outFile);
+            ts << qt_log_entry << Qt::endl;
+        }
     }
 }
 
@@ -248,6 +250,18 @@ int main(int argc, char *argv[])
     disableWindowTabbing();
     removeMacosSpecificMenuItems();
 #endif
+
+    // Test to see if there is another instance of Sigil already running
+    QString memorykey = qgetenv("USER");
+    if (memorykey.isEmpty()) memorykey = qgetenv("USERNAME");
+    memorykey = "PAGEEDIT-EBOOK-SIGIL" + memorykey; 
+    QSharedMemory sharedMemory(memorykey);
+    if (!sharedMemory.create(128)) {
+        // another version of PageEdit is already running
+        app.setFirstInstance(false);
+    } else {
+        app.setFirstInstance(true);
+    }
 
     // Install an event filter for the application
     // so we can catch OS X's file open events

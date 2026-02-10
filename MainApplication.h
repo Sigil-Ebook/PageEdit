@@ -1,7 +1,7 @@
 /************************************************************************
 **
-**  Copyright (C) 2019-2024 Kevin B. Hendricks, Stratford, Ontario Canada
-**  Copyright (C) 2019-2024 Doug Massay
+**  Copyright (C) 2019-2026 Kevin B. Hendricks, Stratford, Ontario Canada
+**  Copyright (C) 2019-2026 Doug Massay
 **  Copyright (C) 2012 John Schember <john@nachtimwald.com>
 **  Copyright (C) 2012 Grant Drake
 **  Copyright (C) 2012 Dave Heiland
@@ -42,6 +42,8 @@ public:
 
     bool isDarkMode() { return m_isDark; }
     bool AlwaysUseNFC(){ return m_AlwaysUseNFC; };
+    void setFirstInstance(bool val) { m_first_instance = val; };
+    bool isFirstInstance() { return m_first_instance; };
 
 signals:
     void applicationActivated();
@@ -62,6 +64,7 @@ private:
     QTimer * m_PaletteChangeTimer;
     bool m_AlwaysUseNFC = true;
     bool m_UseAppPaletteEvent = false;
+    bool m_first_instance = false;
 };
 
 #endif // MAINAPPLICATION_H

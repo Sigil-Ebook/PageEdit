@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**  Copyright (C) 2023-2025 Kevin B. Hendricks, Stratford Ontario Canada
+**  Copyright (C) 2023-2026 Kevin B. Hendricks, Stratford Ontario Canada
 **
 **  This file is part of PageEdit.
 **
@@ -28,6 +28,7 @@
 #include <QWebEngineProfileBuilder>
 #endif
 
+#include "MainApplication.h"
 #include "Utility.h"
 #include "SettingsStore.h"
 #include "URLInterceptor.h"
@@ -95,6 +96,7 @@ void WebProfileMgr::InitializeDefaultSettings(QWebEngineSettings* web_settings)
 
 WebProfileMgr::WebProfileMgr()
 {
+
     m_URLint = new URLInterceptor();
     
     // create local storage path if needed
@@ -111,6 +113,11 @@ WebProfileMgr::WebProfileMgr()
         devstorageDir.mkpath(devToolsStorePath);
     }
 
+    // determine if another instance of Sigil is already running
+    bool first_instance = false;
+    MainApplication *mainApplication = qobject_cast<MainApplication *>(qApp);
+    if (mainApplication) first_instance = mainApplication->isFirstInstance();
+
 #if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
     // create a place for Preview Caches if needed
     QString PreviewCachePath = Utility::DefinePrefsDir() + "/Preview-Cache/";
@@ -118,6 +125,7 @@ WebProfileMgr::WebProfileMgr()
     if (!preview_cacheDir.exists()) {
         preview_cacheDir.mkpath(PreviewCachePath);
     }
+    
     // create a place for Inspector Caches if needed
     QString InspectorCachePath = Utility::DefinePrefsDir() + "/Inspector-Cache/";
     QDir inspector_cacheDir(InspectorCachePath);
@@ -145,11 +153,17 @@ WebProfileMgr::WebProfileMgr()
     pb.setPersistentCookiesPolicy(QWebEngineProfile::NoPersistentCookies);
     pb.setPersistentPermissionsPolicy(QWebEngineProfile::PersistentPermissionsPolicy::StoreOnDisk);
     pb.setPersistentStoragePath(localStorePath);
-    m_preview_profile = pb.createProfile("Preview", nullptr);
+    if (first_instance) {
+        m_preview_profile = pb.createProfile("Preview", nullptr);
+    } else {
+        m_preview_profile = QWebEngineProfileBuilder::createOffTheRecordProfile(nullptr);
+    }
+    // handle possible nullptr return by creating a off the record profile
+    if (!m_preview_profile) {
+        m_preview_profile = QWebEngineProfileBuilder::createOffTheRecordProfile(nullptr);
+    }
 #endif
-    // qDebug() << "WebProfileMgr Preview - StorageName: " << m_preview_profile->storageName();
-    // qDebug() << "WebProfileMgr Preview - CachePath: " << m_preview_profile->cachePath();
-    
+     
     InitializeDefaultSettings(m_preview_profile->settings());
     SettingsStore ss;
     m_preview_profile->settings()->setDefaultTextEncoding("UTF-8"); 
@@ -182,10 +196,16 @@ WebProfileMgr::WebProfileMgr()
     pb2.setPersistentCookiesPolicy(QWebEngineProfile::NoPersistentCookies);
     pb2.setPersistentPermissionsPolicy(QWebEngineProfile::PersistentPermissionsPolicy::StoreOnDisk);
     pb2.setPersistentStoragePath(devToolsStorePath);
-    m_inspector_profile = pb2.createProfile("Inspector", nullptr);
+    if (first_instance) {
+        m_inspector_profile = pb2.createProfile("Inspector", nullptr);
+    } else {
+        m_inspector_profile = QWebEngineProfileBuilder::createOffTheRecordProfile(nullptr);
+    }
+    // handle possible nullptr return by creating a off the record profile
+    if (!m_inspector_profile) {
+        m_inspector_profile = QWebEngineProfileBuilder::createOffTheRecordProfile(nullptr);
+    }
 #endif
-    // qDebug() << "WebProfileMgr Inspector - StorageName: " << m_inspector_profile->storageName();
-    // qDebug() << "WebProfileMgr Inspector - CachePath: " << m_inspector_profile->cachePath();
 
     InitializeDefaultSettings(m_inspector_profile->settings());
     m_inspector_profile->settings()->setDefaultTextEncoding("UTF-8");  
