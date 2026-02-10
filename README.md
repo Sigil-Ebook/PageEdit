@@ -17,10 +17,10 @@ This app is working and fundamentally complete.
 
 ![PageEdit](screencaps/add-links.png?raw=true) Add Links
 
-It prefers Qt 6.9.3 or later but can still be built with Qt 6.4.2.
+It prefers Qt 6.10.2 or later but can still be built with Qt 6.4.2.
 
-Building on macOS Ventura
--------------------------
+Building on macOS
+-----------------
 You will need cmake version 3.18 or later to build:
 
 You build in a separate directory and not in the source directory.
@@ -28,12 +28,12 @@ You build in a separate directory and not in the source directory.
 After checking out the PageEdit github repo into a PageEdit directory
 
 
-`export MACOSX_DEPLOYMENT_TARGET=12.0`<br>
-`export MYQTHOME=~/Qt693`<br>
+`export MACOSX_DEPLOYMENT_TARGET=13.0`<br>
+`export MYQTHOME=~/Qt102`<br>
 `export PATH=${PATH}:${MYQTHOME}/bin:${MYQTHOME}/libexec`<br>
 `mkdir build`<br>
 `cd build`<br>
-`cmake -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_BUILD_TYPE=Release \`<br>
+`cmake -DCMAKE_OSX_DEPLOYMENT_TARGET=13.0 -DCMAKE_BUILD_TYPE=Release \`<br>
 `      -DCMAKE_CXX_FLAGS=-Wno-inconsistent-missing-override \`<br>
 `      -DCMAKE_PREFIX_PATH=${MYQTHOME}/lib/cmake \ `<br>
 `      -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/\`<br>
@@ -52,7 +52,7 @@ On Linux
 Make sure a minimum of Qt6.4.2(ish) is installed (with the WebEngine package) as well as cmake.<br>
 You build in a separate directory and not in the source directory.
 
-Qt 6.7.2 or later is preferred.
+Qt 6.10.2 or later is preferred.
 
 Get the PageEdit Source:
 
@@ -93,7 +93,7 @@ By default, bundled hunspell dictionaries are converted to webengine spell check
 On Windows:
 -----------
 
-Qt6.7.2 or higher is preferred, but you'll want to maintain a  minimum of Qt6.4.2 (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.7.2. At the time of this writing Qt6.8.2 is included in the official installer. Install cmake 3.18+ and make sure its bin directory is added to your path.
+Qt6.10.2 or higher is preferred, but you'll want to maintain a  minimum of Qt6.4.2 (with the WebEngine component) if you want to take advantage of all features. A minimum of Visual Studio 2022 is required if you want to use Qt6.10.2. At the time of this writing Qt6.10.2 is included in the official installer. Install cmake 3.18+ and make sure its bin directory is added to your path.
 
 Make sure that Qt's bin directory is also added to your PATH. Take note of the path for your Qt's prefix (the directory right above the bin directory). Open an "x64 Native Tools Command Prompt for VS2022" from the Start menu and cd to wherever you want to build.
 
@@ -112,7 +112,7 @@ Use `nmake deployinstaller` to package PageEdit and all of its dependencies into
 
 __NOTE__: if you configure PageEdit with the -DDEPLOY_SFX=1 cmake option before compiling, 'nmake deployzip` will attempt to create a 7-Zip self-extracting archive. So naturally, make sure 7-Zip is installed before trying to use it.
 
-__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.9.3
+__NOTE__: as of this writing, the Official PageEdit release are built using Qt6.10.2
 
 
 ## For Github repository maintainers (who am I kidding, this is to keep myself from forgetting/messing up):
