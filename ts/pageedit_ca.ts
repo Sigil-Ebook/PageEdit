@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="da_DK">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ca">
 <context>
     <name>AppearanceWidget</name>
     <message>
         <location filename="../PAppearanceWidget.ui" line="14"/>
         <source>Appearance</source>
-        <translation>Udseende</translation>
+        <translation>Aparença</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="25"/>
@@ -15,162 +15,162 @@
         <location filename="../PAppearanceWidget.ui" line="31"/>
         <location filename="../PAppearanceWidget.ui" line="319"/>
         <source>Fonts:</source>
-        <translation>Skrifttyper:</translation>
+        <translation>Fonts:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="40"/>
         <source>If no font is specified in the CSS for your page, the following font will be used to display within PageEdit. These fonts will not be used in your actual ebook.</source>
-        <translation>Er ingen skrifttyper angivet i den tilhørende CSS-fil, vil følgende skrifttype blive brugt til at vise teksten i &apos;PageEdit&apos;. Skrifterne vil ikke blive anvendt i den endelige bog.</translation>
+        <translation>Si no s&apos;especifica cap tipus de lletra al CSS de la pàgina, s&apos;utilitzarà el tipus de lletra següent per mostrar el contingut dins del PageEdit. Aquests tipus de lletra no s&apos;utilitzaran al llibre electrònic final.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="70"/>
         <source>Default font size to be used for PageEdit
 if no font-size specified in your CSS</source>
-        <translation>Standardskriftstørrelse, der skal bruges til PageEdit
-hvis der ikke er angivet nogen skriftstørrelse i CSS</translation>
+        <translation>Mida de lletra predeterminada que s&apos;utilitzarà al PageEdit
+si no s&apos;especifica cap mida de lletra al CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="74"/>
         <location filename="../PAppearanceWidget.ui" line="379"/>
         <source>Font Size:</source>
-        <translation>Skriftstørrelse:</translation>
+        <translation>Cos de lletra:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="81"/>
         <source>Default font family to be used for PageEdit
 if no font-family specified in your CSS</source>
-        <translation>Standardskrifttypefamilie, der skal bruges til PageEdit
-hvis der ikke er angivet nogen skrifttypefamilie i CSS</translation>
+        <translation>Família tipogràfica predeterminada que s&apos;utilitzarà al PageEdit
+si no s&apos;especifica cap família tipogràfica al CSS</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="85"/>
         <source>Standard:</source>
-        <translation>Standard:</translation>
+        <translation>Estàndard:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="108"/>
         <source>Default font family to be used for PageEdit
 if a serif font-family specified in your CSS</source>
-        <translation>Standardskrifttypefamilie, der skal bruges til PageEdit
-hvis der er angivet en serif-skrifttypefamilie i CSS</translation>
+        <translation>Família tipogràfica predeterminada que s&apos;utilitzarà al PageEdit
+si al CSS s&apos;especifica una família tipogràfica amb serif</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="112"/>
         <source>Serif:</source>
-        <translation>Serif:</translation>
+        <translation>Amb serifs:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="125"/>
         <source>Default font family to be used for PageEdit
 if a sans-serif font-family specified in your CSS</source>
-        <translation>Standardskrifttypefamilie, der skal bruges til PageEdit
-hvis der er angivet en sans-serif-skrifttypefamilie i CSS</translation>
+        <translation>Família tipogràfica predeterminada que s&apos;utilitzarà al PageEdit
+si al CSS s&apos;especifica una família tipogràfica sans serif</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="129"/>
         <source>Sans-Serif:</source>
-        <translation>Sans-Serif:</translation>
+        <translation>Sense serifs:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="157"/>
         <source>Printer Output Appearance</source>
-        <translation type="unfinished"/>
+        <translation>Aparença de la sortida d&apos;impressió</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="163"/>
         <location filename="../PAppearanceWidget.ui" line="166"/>
         <source>Skip Print Preview</source>
-        <translation type="unfinished"/>
+        <translation>Omet la vista prèvia d&apos;impressió</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="175"/>
         <source>Print DPI:</source>
-        <translation type="unfinished"/>
+        <translation>DPI (impressió):</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="204"/>
         <source>Make PageEdit simulate a dark appearance in dark mode</source>
-        <translation>Lad PageEdit simulere mørkt udseende i mørk tilstand</translation>
+        <translation>Fes que el PageEdit simuli una aparença fosca en el mode fosc</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="230"/>
         <source>Main UI</source>
-        <translation>Primær UI</translation>
+        <translation>Interfície d&apos;usuari principal</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="236"/>
         <source>Main Menu Icon Size:</source>
-        <translation>Størrelse på hovedmenuikon:</translation>
+        <translation>Mida de les icones del menú principal</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="242"/>
         <source>Adjust the size of the icons in the main menu.</source>
-        <translation>Tilpas størrelsen på ikoner i hovedmenuen.</translation>
+        <translation>Ajusteu la mida de les icones al menú principal.</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="280"/>
         <source>Dark Theme Style (Windows Only):</source>
-        <translation type="unfinished"/>
+        <translation>Estil del tema fosc (només Windows):</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="286"/>
         <source>When using a Windows dark style, use the classic dark style instead of the built in Qt one</source>
-        <translation type="unfinished"/>
+        <translation>Quan s&apos;utilitzi un estil fosc de Windows, fes servir l&apos;estil fosc clàssic en lloc del que incorpora Qt</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="289"/>
         <source>Use Classic Dark Theme</source>
-        <translation type="unfinished"/>
+        <translation>Utilitza el tema fosc clàssic</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="296"/>
         <source>(Needs PageEdit Restart)</source>
-        <translation>(Kræver genstart af PageEdit)</translation>
+        <translation>(Cal reiniciar el PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="325"/>
         <source>UI Font:</source>
-        <translation>UI skrifttype:</translation>
+        <translation>Font de la interfície d&apos;usuari:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="335"/>
         <source>Change the font used by PageEdit&apos;s menus, buttons, etc...</source>
-        <translation>Skift skrifttype for PageEdits menuer, knapper osv. …</translation>
+        <translation>Canvia el tipus de lletra utilitzat als menús, botons, etc. del PageEdit</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="338"/>
         <source>Change Font (Needs PageEdit Restart)</source>
-        <translation>Skift skrifttype (Kræver genstart af PageEdit)</translation>
+        <translation>Canvia el tipus de lletra (cal reiniciar el PageEdit)</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="362"/>
         <source>Insert Special Characters:</source>
-        <translation>Indsæt specialtegn:</translation>
+        <translation>Insereix caràcters especials:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="376"/>
         <source>Font size to be used for Insert Special Characters window</source>
-        <translation>Skriftstørrelse, der skal anvendes ved Indsæt specialtegnsvinduet</translation>
+        <translation>Cos de lletra que es farà servir a la finestra d&apos;inserció de caràcters especials</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="409"/>
         <source>Font family to be used for Insert Special Characters window</source>
-        <translation>Skrifttype, der skal anvendes ved Indsæt specialtegnsvinduet</translation>
+        <translation>Família de lletra que es farà servir a la finestra d&apos;inserció de caràcters especials</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="412"/>
         <source>Standard Font:</source>
-        <translation>Standardskrifttype:</translation>
+        <translation>Tipus de lletra estàndard:</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="479"/>
         <source>Reset all fonts and colors to the default values</source>
-        <translation>Nulstil alle skrifttyper og farver til standardværdierne</translation>
+        <translation>Reinicia tots els tipus de lletra i els colors als seus valors predeterminats</translation>
     </message>
     <message>
         <location filename="../PAppearanceWidget.ui" line="482"/>
         <source>Reset All</source>
-        <translation>Nulstil alt</translation>
+        <translation>Reinicia-ho tot</translation>
     </message>
 </context>
 <context>
@@ -179,49 +179,49 @@ hvis der er angivet en sans-serif-skrifttypefamilie i CSS</translation>
         <location filename="../ClipEditor.ui" line="14"/>
         <location filename="../ClipEditor.cpp" line="541"/>
         <source>Clip Editor</source>
-        <translation>Kodestykkeseditor</translation>
+        <translation>Editor de clips</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="23"/>
         <source>Filter Name:</source>
-        <translation>Filtrér navn:</translation>
+        <translation>Filtra el nom:</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="28"/>
         <source>Filter All:</source>
-        <translation>Filtrér alle:</translation>
+        <translation>Filtra-ho tot:</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="36"/>
         <source>List only the entries containing the text you enter.</source>
-        <translation>Angiv kun det indhold, der indeholder den tekst, du indtaster.</translation>
+        <translation>Mostra només les entrades que continguin el text introduït.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="65"/>
         <source>Paste the selected entry into the active window.</source>
-        <translation>Indsæt den valgte indtastning i det aktive vindue.</translation>
+        <translation>Enganxa l&apos;entrada seleccionada a la finestra activa.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="68"/>
         <source>Paste Clip</source>
-        <translation>Indsæt kodestykke</translation>
+        <translation>Enganxa el clip</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="91"/>
         <location filename="../ClipEditor.cpp" line="651"/>
         <source>Add Entry</source>
-        <translation>Tilføj optegnelse</translation>
+        <translation>Afegeix una entrada</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="98"/>
         <location filename="../ClipEditor.cpp" line="652"/>
         <source>Add Group</source>
-        <translation>Tilføj gruppe</translation>
+        <translation>Afegeix un grup</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="123"/>
         <source>Move an entry up one entry in the same group.</source>
-        <translation>Flyt en indtastning op én indtastning i den samme gruppe.</translation>
+        <translation>Mou una entrada una posició amunt dins del seu grup.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="126"/>
@@ -234,82 +234,82 @@ hvis der er angivet en sans-serif-skrifttypefamilie i CSS</translation>
     <message>
         <location filename="../ClipEditor.ui" line="153"/>
         <source>Move an entry to the level of its parent.</source>
-        <translation>Flyt en indtastning til hovedniveauet.</translation>
+        <translation>Puja una entrada al nivell del seu element pare.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="182"/>
         <source>You must select an item immediately under a group to move it into the group.</source>
-        <translation>Du skal vælge et emne umiddelbart under en gruppe for at flytte den ind i gruppen.</translation>
+        <translation>Heu de seleccionar un element que estigui immediatament sota un grup per poder moure&apos;l dins del grup.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.ui" line="212"/>
         <source>Move an entry down one in the group.</source>
-        <translation>Flyt en indtastning ned én i gruppen.</translation>
+        <translation>Mou una entrada una posició avall dins del seu grup.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="75"/>
         <source>Right click on an entry to see a context menu of actions.</source>
-        <translation>Højreklik på en optegnelse for at se en kontekstmenu med handlinger.</translation>
+        <translation>Cliqueu amb el botó dret sobre una entrada per mostrar un menú d&apos;accions contextual.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="76"/>
         <source>You can also right click in your document to select an entry.</source>
-        <translation>Du kan også højreklikke i dit dokument for at vælge en optegnelse.</translation>
+        <translation>També podeu seleccionar una entrada fent clic amb el botó dret al document.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
         <source>Name</source>
-        <translation>Navn</translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="78"/>
         <source>Name of your entry or group.</source>
-        <translation>Navnet på din optegnelse eller gruppe.</translation>
+        <translation>Nom de l&apos;entrada o del grup.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
         <source>Text</source>
-        <translation>Tekst</translation>
+        <translation>Text</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="79"/>
         <source>The text to insert. The text is treated like a Regex replacement expression so \1 can be used to insert the text selected in Code View when you paste the clip.</source>
-        <translation>Den tekst, der skal indsættes. Teksten er behandlet som en Regex-erstatningsudtryk, så \1 kan bruges til at indsætte teksten, der er valgt i Kodevisning, når du indsætter udklippet.</translation>
+        <translation>El text per inserir. Aquest text es tracta com un reemplaçament d&apos;expressió regular, de manera que es pot utilitzar \1 per inserir el text seleccionat quan s&apos;enganxa el clip en la vista de codi.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <source>Save</source>
-        <translation>Gem</translation>
+        <translation>Desa</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <source>Save your changes.</source>
-        <translation>Gem din ændringer.</translation>
+        <translation>Desa els canvis.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="83"/>
         <source>If any other instances of Sigil are running they will be automatically updated with your changes.</source>
-        <translation>Hvis andre forekomster af Sigil kører, vil de automatisk blive opdateret med dine ændringer.</translation>
+        <translation>Si hi ha altres instàncies del Sigil executant-se, se n&apos;actualitzaran automàticament els canvis.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="93"/>
         <source>Cannot save entries.</source>
-        <translation>Kan ikke gemme optegnelser.</translation>
+        <translation>No es poden desar les entrades.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="137"/>
         <source>Clip entries loaded from file.</source>
-        <translation>Kodestykker hentet fra en fil.</translation>
+        <translation>Entrades de clips carregades des del fitxer.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="200"/>
         <source>You cannot select an entry and a group containing the entry.</source>
-        <translation>Du kan ikke vælge en optegnelse og en gruppe, der indeholder optegnelsen.</translation>
+        <translation>No es pot seleccionar a la vegada una entrada i el grup que la conté.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="287"/>
         <source>You cannot Copy or Cut groups - use drag-and-drop.</source>
-        <translation>Du kan ikke kopiere eller klippe grupper - benyt drag-and-drop.</translation>
+        <translation>Els grups no es poden copiar ni retallar. Podeu arrossegar-los i deixar-los anar.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
@@ -319,99 +319,99 @@ hvis der er angivet en sans-serif-skrifttypefamilie i CSS</translation>
     <message>
         <location filename="../ClipEditor.cpp" line="359"/>
         <source>Are you sure you want to reload all entries?  This will overwrite any unsaved changes.</source>
-        <translation>Er du sikker på du vil genindlæse alle optegnelser?  Dette vil overskrive eventuelle gemte ændringer.</translation>
+        <translation>Esteu segur que voleu tornar a carregar totes les entrades? Tots els canvis sense desar es sobreescriuran.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="380"/>
         <source>Import Entries</source>
-        <translation>Importér optegnelser</translation>
+        <translation>Importa entrades</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="460"/>
         <source>Export Selected Entries</source>
-        <translation>Eksportér valgte optegnelser</translation>
+        <translation>Exporta les entrades seleccionades</translation>
     </message>
     <message numerus="yes">
         <location filename="../ClipEditor.cpp" line="541"/>
         <source>CSS entries added: %n</source>
-        <translation><numerusform>CSS poster tilføjet: %n</numerusform><numerusform>CSS poster tilføjet: %n</numerusform></translation>
+        <translation><numerusform>Entrades CSS afegides: %n</numerusform><numerusform>Entrades CSS afegides: %n</numerusform></translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="653"/>
         <source>Edit</source>
-        <translation>Redigér</translation>
+        <translation>Edita</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="654"/>
         <source>Cut</source>
-        <translation>Klip</translation>
+        <translation>Retalla</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="655"/>
         <source>Copy</source>
-        <translation>Kopiér</translation>
+        <translation>Copia</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="656"/>
         <source>Paste</source>
-        <translation>Sæt ind</translation>
+        <translation>Enganxa</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="657"/>
         <source>Delete</source>
-        <translation>Slet</translation>
+        <translation>Esborra</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="658"/>
         <source>Import</source>
-        <translation>Importér</translation>
+        <translation>Importa</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="659"/>
         <source>Reload</source>
-        <translation>Genindlæs</translation>
+        <translation>Torna a carregar</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="660"/>
         <source>Export</source>
-        <translation>Eksportér</translation>
+        <translation>Exporta</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="661"/>
         <source>Export All</source>
-        <translation>Eksportér alle</translation>
+        <translation>Exporta-ho tot</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="662"/>
         <source>Collapse All</source>
-        <translation>Skjul alle</translation>
+        <translation>Redueix-ho tot</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="663"/>
         <source>Expand All</source>
-        <translation>Udvid alle</translation>
+        <translation>Amplia-ho tot</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="664"/>
         <source>Autofill</source>
-        <translation>Autoudfyld</translation>
+        <translation>Emplena automàticament</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="746"/>
         <source>Clip entries saved.</source>
-        <translation>Kodestykker gemt.</translation>
+        <translation>S&apos;ha desat les entrades de clips.</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="775"/>
         <source>Sigil: Clip Editor</source>
-        <translation>Sigil: Kodestykkeseditor</translation>
+        <translation>Sigil: Editor de clips</translation>
     </message>
     <message>
         <location filename="../ClipEditor.cpp" line="776"/>
         <source>The Clip entries may have been modified.
 Do you want to save your changes?</source>
-        <translation>Kodestykkerne kan være ændret.
-Vil du gemme dine ændringer?</translation>
+        <translation>Les entrades dels clips poden haver estat modificades.
+Voleu desar-ne els canvis?</translation>
     </message>
 </context>
 <context>
@@ -419,17 +419,17 @@ Vil du gemme dine ændringer?</translation>
     <message>
         <location filename="../ClipEditorModel.cpp" line="68"/>
         <source>Name</source>
-        <translation>Navn</translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <location filename="../ClipEditorModel.cpp" line="69"/>
         <source>Text</source>
-        <translation>Tekst</translation>
+        <translation>Text</translation>
     </message>
     <message>
         <location filename="../ClipEditorModel.cpp" line="667"/>
         <source>Unable to create file %1</source>
-        <translation>Kan ikke oprette filen %1</translation>
+        <translation>No s&apos;ha pogut crear el fitxer %1</translation>
     </message>
 </context>
 <context>
@@ -437,17 +437,17 @@ Vil du gemme dine ændringer?</translation>
     <message>
         <location filename="../ClipsWindow.cpp" line="37"/>
         <source>Clips</source>
-        <translation>Kodestykker</translation>
+        <translation>Clips</translation>
     </message>
     <message>
         <location filename="../ClipsWindow.cpp" line="102"/>
         <source>Collapse All</source>
-        <translation>Skjul alle</translation>
+        <translation>Redueix-ho tot</translation>
     </message>
     <message>
         <location filename="../ClipsWindow.cpp" line="103"/>
         <source>Expand All</source>
-        <translation>Udvid alle</translation>
+        <translation>Amplia-ho tot</translation>
     </message>
 </context>
 <context>
@@ -455,86 +455,86 @@ Vil du gemme dine ændringer?</translation>
     <message>
         <location filename="../PGeneralSettings.ui" line="14"/>
         <source>General Settings</source>
-        <translation>Generelle indstillinger</translation>
+        <translation>Configuració general</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="37"/>
         <source>You must restart PageEdit after changing the User Interface language.
 
 If a translation for specific word or phrase is not available it will be displayed in English.</source>
-        <translation>Du skal genstarte PageEdit efter at have skiftet brugefladesprog.
+        <translation>Cal reiniciar el PageEdit després de canviar la llengua de la interfície d&apos;usuari.
 
-Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist på engelsk.</translation>
+Si no hi ha cap traducció disponible per a una paraula o expressió concreta, es mostrarà en anglès.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="42"/>
         <source>User Interface Language:</source>
-        <translation>Brugergrænsefladesprog:</translation>
+        <translation>Idioma de la interfície d&apos;usuari:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="74"/>
         <source>Select from installed spellcheck dictionaries.</source>
-        <translation>Vælg mellem installerede stavekontrol-ordbøger.</translation>
+        <translation>Selecciona entre els diccionaris de correcció ortogràfica instal·lats.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="77"/>
         <source>Spellcheck Dictionary:</source>
-        <translation>Ordbog til stavekontrol:</translation>
+        <translation>Diccionari de correcció ortogràfica:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="119"/>
         <source>Determine if html files are allowed to access non-multimedia remote resources.</source>
-        <translation>Vælg, om html-filer har lov til at tilgå ikke-multimedia eksterne ressourcer.</translation>
+        <translation>Determina si es permet que els fitxers HTML accedeixin a recursos remots que no siguin multimèdia.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="122"/>
         <source> Control access by html files to non-multimedia remote resources.</source>
-        <translation> Kontroller adgang for html-filer til ikke-multimedia eksterne ressourcer.</translation>
+        <translation>Controla l&apos;accés dels fitxers HTML a recursos remots que no siguin multimèdia.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="131"/>
         <source>Check to allow html files to access non-multimedia remote resources.</source>
-        <translation>Afmærk for at tillade html-filer at tilgå ikke-multimedia eksterne ressourcer.</translation>
+        <translation>Marca-ho per permetre que els fitxers HTML accedeixin a recursos remots que no siguin multimèdia.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="134"/>
         <source>Html files may access all remote resources types.</source>
-        <translation>Html-filer kan tilgå alle eksterne ressource-typer.</translation>
+        <translation>Els fitxers HTML poden accedir a tots els tipus de recursos remots.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="161"/>
         <source>Determine if javascript is allowed to be used by html files</source>
-        <translation>Vælg, om html-filer kan anvende javascript</translation>
+        <translation>Determina si es permet l&apos;ús de JavaScript als fitxers HTML.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="164"/>
         <source> Control use of javascript by html files.</source>
-        <translation> Kontroller brug af javascript i html-filer.</translation>
+        <translation> Controla l&apos;ús de JavaScript als fitxers HTML.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="173"/>
         <source>Check to allow html files to use javascript.</source>
-        <translation>Afmærk for at tillade html-filer at bruge javascript.</translation>
+        <translation>Marca-ho per permetre que els fitxers HTML facin servir JavaScript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="176"/>
         <source>Html files may use javascript.</source>
-        <translation>Html-filer kan bruge javascript.</translation>
+        <translation>Els fitxers HTML poden fer servir JavaScript.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="204"/>
         <source>Choose how you would like PageEdit to handle the use of multiple white space characters during editing.</source>
-        <translation>Vælg, hvordan PageEdit skal håndtere flere sammenhængende blanktegn.</translation>
+        <translation>Tria com vols que el PageEdit gestioni l&apos;ús de múltiples caràcters d&apos;espai en blanc durant l&apos;edició.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="207"/>
         <source>Handle multiple white space layout using:</source>
-        <translation>Håndter flere blanktegn ved at:</translation>
+        <translation>Gestiona la disposició de múltiples espais en blanc amb:</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="213"/>
         <source>Use CSS white-space: pre-wrap</source>
-        <translation>Bruge CSS &apos;white-space: pre-wrap&apos;</translation>
+        <translation>Utilitza el CSS white-space: pre-wrap</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="216"/>
@@ -544,48 +544,48 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../PGeneralSettings.ui" line="226"/>
         <source>Use non-breaking spaces as needed</source>
-        <translation>Brug non-breaking spaces efter behov</translation>
+        <translation>Utilitza espais no separables quan calgui</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="229"/>
         <source>non-breaking spaces as needed</source>
-        <translation>non-breaking spaces efter behov</translation>
+        <translation>espais no separables quan calgui</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="257"/>
         <source>Determine if Prettify is used when saving</source>
-        <translation>Vælg, om Prettify skal benyttes, når der gemmes</translation>
+        <translation>Determina si s&apos;utilitza el Prettify en desar</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="260"/>
         <source> Use Prettify to reformat the xhtml when saving.</source>
-        <translation> Benyt Prettify til opsætning af xhtml-kode, når der gemmes.</translation>
+        <translation>Utilitza el Prettify per reformatar l&apos;XHTML en desar.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="269"/>
         <source>Check to reformat with Prettify when saving xhtml files.</source>
-        <translation>Afmærk for at benytte Prettify, når der gemmes xhtml-filer.</translation>
+        <translation>Marca-ho per reformatar amb el Prettify en desar els fitxers XHTML.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="272"/>
         <source>Use Prettify to reformat xhtml when saving.</source>
-        <translation>Benyt Prettify til opsætning af xhtml-kode, når der gemmes.</translation>
+        <translation>Utilitza el Prettify per reformatar l&apos;XHTML en desar.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="300"/>
         <source>Disable GPU Acceleration in PageEdit/QtWebEngine</source>
-        <translation type="unfinished"/>
+        <translation>Desactiva l&apos;acceleració per GPU al PageEdit / QtWebEngine</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="303"/>
         <source> Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
-        <translation type="unfinished"/>
+        <translation>Desactiva l&apos;acceleració per GPU al PageEdit / QtWebEngine.</translation>
     </message>
     <message>
         <location filename="../PGeneralSettings.ui" line="318"/>
         <location filename="../PGeneralSettings.ui" line="321"/>
         <source>Disable GPU Acceleration in PageEdit/QtWebEngine.</source>
-        <translation type="unfinished"/>
+        <translation>Desactiva l&apos;acceleració per GPU al PageEdit / QtWebEngine.</translation>
     </message>
 </context>
 <context>
@@ -593,7 +593,7 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../Inspector.cpp" line="67"/>
         <source>Inspect Page or Element</source>
-        <translation>undersøg side eller element</translation>
+        <translation>Inspecciona la pàgina o l&apos;element</translation>
     </message>
 </context>
 <context>
@@ -617,42 +617,42 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="62"/>
         <source>&amp;File</source>
-        <translation>&amp;Filer</translation>
+        <translation>&amp;Fitxer</translation>
     </message>
     <message>
         <location filename="../main.ui" line="75"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Rediger</translation>
+        <translation>&amp;Edita</translation>
     </message>
     <message>
         <location filename="../main.ui" line="88"/>
         <source>&amp;Find</source>
-        <translation>&amp;Find</translation>
+        <translation>&amp;Cerca</translation>
     </message>
     <message>
         <location filename="../main.ui" line="95"/>
         <source>&amp;Insert</source>
-        <translation>&amp;Indsæt</translation>
+        <translation>&amp;Insereix</translation>
     </message>
     <message>
         <location filename="../main.ui" line="110"/>
         <source>For&amp;mat</source>
-        <translation>For&amp;mat</translation>
+        <translation>For&amp;mata</translation>
     </message>
     <message>
         <location filename="../main.ui" line="115"/>
         <source>&amp;Heading</source>
-        <translation>&amp;Overskrift</translation>
+        <translation>&amp;Encapçalament</translation>
     </message>
     <message>
         <location filename="../main.ui" line="130"/>
         <source>C&amp;hange Case</source>
-        <translation>&amp;Skift mellem store og små bogstaver</translation>
+        <translation>Ma&amp;júscules i minúscules</translation>
     </message>
     <message>
         <location filename="../main.ui" line="160"/>
         <source>&amp;View</source>
-        <translation>&amp;Vis</translation>
+        <translation>&amp;Visualitza</translation>
     </message>
     <message>
         <location filename="../main.ui" line="169"/>
@@ -663,59 +663,59 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
         <location filename="../main.ui" line="176"/>
         <location filename="../main.ui" line="1147"/>
         <source>Clips</source>
-        <translation>Kodestykker</translation>
+        <translation>Clips</translation>
     </message>
     <message>
         <location filename="../main.ui" line="195"/>
         <source>File</source>
-        <translation>Fil</translation>
+        <translation>Fitxer</translation>
     </message>
     <message>
         <location filename="../main.ui" line="209"/>
         <source>Edit</source>
-        <translation>Redigér</translation>
+        <translation>Edita</translation>
     </message>
     <message>
         <location filename="../main.ui" line="227"/>
         <location filename="../main.ui" line="1244"/>
         <source>Mode</source>
-        <translation>Tilstand</translation>
+        <translation>Mode</translation>
     </message>
     <message>
         <location filename="../main.ui" line="240"/>
         <source>Insert</source>
-        <translation>Indsæt</translation>
+        <translation>Insereix</translation>
     </message>
     <message>
         <location filename="../main.ui" line="259"/>
         <source>Inspect</source>
-        <translation>Undersøg</translation>
+        <translation>Inspector</translation>
     </message>
     <message>
         <location filename="../main.ui" line="272"/>
         <source>Clip Bar</source>
-        <translation>Kodestykkelinje</translation>
+        <translation>Barra de clips</translation>
     </message>
     <message>
         <location filename="../main.ui" line="304"/>
         <location filename="../main.ui" line="1187"/>
         <source>Find</source>
-        <translation>Søg</translation>
+        <translation>Cerca</translation>
     </message>
     <message>
         <location filename="../main.ui" line="317"/>
         <source>Heading</source>
-        <translation>Overskrift</translation>
+        <translation>Encapçalament</translation>
     </message>
     <message>
         <location filename="../main.ui" line="331"/>
         <source>set Heading Level of Selected Text</source>
-        <translation>Angiv overskriftsniveau for valgt tekst</translation>
+        <translation>Estableix el nivell d&apos;encapçalament del text seleccionat</translation>
     </message>
     <message>
         <location filename="../main.ui" line="345"/>
         <source>Change Case</source>
-        <translation>Skift mellem store og små bogstaver</translation>
+        <translation>Majúscules i minúscules</translation>
     </message>
     <message>
         <location filename="../main.ui" line="361"/>
@@ -725,32 +725,32 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="379"/>
         <source>Align</source>
-        <translation>Justér</translation>
+        <translation>Alinea</translation>
     </message>
     <message>
         <location filename="../main.ui" line="395"/>
         <source>Indent</source>
-        <translation>Indryk</translation>
+        <translation>Sagna</translation>
     </message>
     <message>
         <location filename="../main.ui" line="409"/>
         <source>Navigate</source>
-        <translation>Navigér</translation>
+        <translation>Navega</translation>
     </message>
     <message>
         <location filename="../main.ui" line="419"/>
         <source>Navigation List</source>
-        <translation>Navigations-liste</translation>
+        <translation>Llista de navegació</translation>
     </message>
     <message>
         <location filename="../main.ui" line="435"/>
         <source>&amp;Save</source>
-        <translation>&amp;Gem</translation>
+        <translation>&amp;Desa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="438"/>
         <source>Save the current file.</source>
-        <translation>Gem aktuel fil.</translation>
+        <translation>Desa el fitxer actual.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="441"/>
@@ -760,12 +760,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="451"/>
         <source>&amp;Print</source>
-        <translation>&amp;Udskriv</translation>
+        <translation>&amp;Imprimeix</translation>
     </message>
     <message>
         <location filename="../main.ui" line="454"/>
         <source>Print the current Page.</source>
-        <translation>Udskriv denne side.</translation>
+        <translation>Imprimeix la pàgina activa.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="457"/>
@@ -775,47 +775,47 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="463"/>
         <source>Save &amp;As...</source>
-        <translation>Ge&amp;m som …</translation>
+        <translation>&amp;Anomena i desa...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="466"/>
         <source>Save the current file with a different filename.</source>
-        <translation>Gem aktuel fil med et andet filnavn.</translation>
+        <translation>Desa el fitxer actual amb un nom diferent.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="469"/>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl+Shift+S</translation>
+        <translation>Ctrl+Maj+S</translation>
     </message>
     <message>
         <location filename="../main.ui" line="479"/>
         <source>Cu&amp;t</source>
-        <translation>&amp;Klip</translation>
+        <translation>Re&amp;talla</translation>
     </message>
     <message>
         <location filename="../main.ui" line="482"/>
         <source>Cuts the selected text from the document and puts it on the clipboard.</source>
-        <translation>Klipper den valgte tekst fra dokumentet og indsætter det i udklipsholderen.</translation>
+        <translation>Retalla el text seleccionat del document i el col·loca al porta-retalls.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="492"/>
         <source>&amp;Paste</source>
-        <translation>Sæt i&amp;nd</translation>
+        <translation>&amp;Enganxa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="495"/>
         <source>Pastes the content from the clipboard into the file.</source>
-        <translation>Indsætter indholdet af udklipsholder i filen.</translation>
+        <translation>Enganxa el contingut del porta-retalls al fitxer.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="505"/>
         <source>&amp;Undo</source>
-        <translation>Fortr&amp;yd</translation>
+        <translation>&amp;Desfés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="508"/>
         <source>Reverts the changes of the previous operation.</source>
-        <translation>Fortryder den seneste ændring.</translation>
+        <translation>Reverteix els canvis de l&apos;operació anterior.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="511"/>
@@ -825,12 +825,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="521"/>
         <source>&amp;Redo</source>
-        <translation>G&amp;endan</translation>
+        <translation>&amp;Refés</translation>
     </message>
     <message>
         <location filename="../main.ui" line="524"/>
         <source>Restores the changes reverted by the previous Undo action.</source>
-        <translation>Gendanner de ændringer, der blev slettet ved sidste Fortryd-handling.</translation>
+        <translation>Restaura els canvis revertits per l&apos;acció de desfer anterior.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="527"/>
@@ -840,42 +840,42 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="537"/>
         <source>&amp;Copy</source>
-        <translation>K&amp;opiér</translation>
+        <translation>&amp;Copia</translation>
     </message>
     <message>
         <location filename="../main.ui" line="540"/>
         <source>Copies the selected text and puts it on the clipboard.</source>
-        <translation>Kopierer den valgte tekst og indsætter den i udklipsholderen.</translation>
+        <translation>Copia el text seleccionat i el col·loca al porta-retalls.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="553"/>
         <source>Align &amp;Left</source>
-        <translation>Justér til &amp;venstre</translation>
+        <translation>Alinea a l&apos;es&amp;querra</translation>
     </message>
     <message>
         <location filename="../main.ui" line="556"/>
         <source>Align the paragraph to the left.</source>
-        <translation>Venstrejuster aktuelt afsnit.</translation>
+        <translation>Alinea el paràgraf a l&apos;esquerra.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="570"/>
         <source>Align &amp;Right</source>
-        <translation>Justér til &amp;højre</translation>
+        <translation>Alinea a la d&amp;reta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="573"/>
         <source>Align the paragraph to the right.</source>
-        <translation>Højrejuster aktuelt afsnit.</translation>
+        <translation>Alinea el paràgraf a la dreta.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="586"/>
         <source>&amp;Center</source>
-        <translation>&amp;Centrér</translation>
+        <translation>&amp;Centra</translation>
     </message>
     <message>
         <location filename="../main.ui" line="589"/>
         <source>Center the paragraph.</source>
-        <translation>Centrer aktuelt afsnit.</translation>
+        <translation>Centra el paràgraf.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="592"/>
@@ -885,12 +885,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="605"/>
         <source>&amp;Justify</source>
-        <translation>&amp;Lige margen</translation>
+        <translation>&amp;Justifica</translation>
     </message>
     <message>
         <location filename="../main.ui" line="608"/>
         <source>Align the paragraph to both the left and right margins.</source>
-        <translation>Juster aktuelt afsnit med lige margener.</translation>
+        <translation>Alinea el paràgraf als marges esquerre i dret.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="611"/>
@@ -900,12 +900,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="624"/>
         <source>&amp;Bold</source>
-        <translation>&amp;Fed</translation>
+        <translation>&amp;Negreta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="627"/>
         <source>Make the selected text bold.</source>
-        <translation>Gør markeret tekst fed.</translation>
+        <translation>Posa el text seleccionat en negreta.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="630"/>
@@ -915,12 +915,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="643"/>
         <source>&amp;Italic</source>
-        <translation>&amp;Kursiv</translation>
+        <translation>Curs&amp;iva</translation>
     </message>
     <message>
         <location filename="../main.ui" line="646"/>
         <source>Make the selected text italic.</source>
-        <translation>Gør markeret tekst kursiv.</translation>
+        <translation>Posa el text seleccionat en cursiva.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="649"/>
@@ -930,12 +930,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="659"/>
         <source>&amp;Open...</source>
-        <translation>Å&amp;bn …</translation>
+        <translation>&amp;Obre...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="662"/>
         <source>Open a file from disk.</source>
-        <translation>Åbn en fil.</translation>
+        <translation>Obre un fitxer des del disc.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="665"/>
@@ -945,12 +945,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="678"/>
         <source>&amp;Underline</source>
-        <translation>&amp;Understreget</translation>
+        <translation>&amp;Subratlla</translation>
     </message>
     <message>
         <location filename="../main.ui" line="681"/>
         <source>Underline the selected text.</source>
-        <translation>Understreg den valgte tekst.</translation>
+        <translation>Subratlla el text seleccionat.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="684"/>
@@ -960,12 +960,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="694"/>
         <source>&amp;Lowercase</source>
-        <translation>S&amp;må bogstaver</translation>
+        <translation>Caixa &amp;baixa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="697"/>
         <source>Set selected text to lowercase.</source>
-        <translation>Gør valgt tekst til små bogstaver.</translation>
+        <translation>Converteix el text seleccionat a minúscules.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="700"/>
@@ -975,12 +975,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="710"/>
         <source>&amp;Uppercase</source>
-        <translation>S&amp;tore bogstaver</translation>
+        <translation>Caixa &amp;alta</translation>
     </message>
     <message>
         <location filename="../main.ui" line="713"/>
         <source>Set selected text to uppercase.</source>
-        <translation>Gør valgt tekst til versaler.</translation>
+        <translation>Converteix el text seleccionat a majúscules.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="716"/>
@@ -990,32 +990,32 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="726"/>
         <source>&amp;Titlecase</source>
-        <translation>&amp;Titlecase</translation>
+        <translation>Majúscules &amp;posicionals</translation>
     </message>
     <message>
         <location filename="../main.ui" line="729"/>
         <source>Capitalize the first letter of each word selected.</source>
-        <translation>Gør det første bogstav i de valgte ord til en versal.</translation>
+        <translation>Posa en majúscula la primera lletra de cada paraula seleccionada.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="739"/>
         <source>&amp;Capitalize</source>
-        <translation>&amp;Skriv med stort</translation>
+        <translation>Majúscula &amp;inicial</translation>
     </message>
     <message>
         <location filename="../main.ui" line="742"/>
         <source>Capitalize only the first word of the selected text.</source>
-        <translation>Gør det første ord i den valgte tekst til versaler.</translation>
+        <translation>Posa en majúscula només la primera paraula del text seleccionat.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="752"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Afslut</translation>
+        <translation>&amp;Surt</translation>
     </message>
     <message>
         <location filename="../main.ui" line="755"/>
         <source>Quit</source>
-        <translation>Afslut</translation>
+        <translation>Surt</translation>
     </message>
     <message>
         <location filename="../main.ui" line="758"/>
@@ -1025,82 +1025,82 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="768"/>
         <source>&amp;Special Character...</source>
-        <translation>&amp;Specialtegn …</translation>
+        <translation>Caràcter &amp;especial...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="771"/>
         <source>Select a character to insert into your text.</source>
-        <translation>Vælg et tegn til at indsætte i din tekst.</translation>
+        <translation>Selecciona un caràcter per inserir-lo al text.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="784"/>
         <source>&amp;Numbered List</source>
-        <translation>&amp;Talopstilling</translation>
+        <translation>&amp;Llista numerada</translation>
     </message>
     <message>
         <location filename="../main.ui" line="787"/>
         <source>Create a numbered list from selection.</source>
-        <translation>Opret en talopstilling fra den valgte tekst.</translation>
+        <translation>Crea una llista numerada a partir de la selecció.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="790"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"/>
+        <translation>Ctrl+Maj+N</translation>
     </message>
     <message>
         <location filename="../main.ui" line="803"/>
         <source>Bulle&amp;ted List</source>
-        <translation>&amp;Punktopstilling</translation>
+        <translation>Llis&amp;ta de pics</translation>
     </message>
     <message>
         <location filename="../main.ui" line="806"/>
         <source>Create a bulleted list from selection.</source>
-        <translation>Opret en punktopstilling fra den valgte tekst.</translation>
+        <translation>Crea una llista amb vinyetes a partir de la selecció.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="809"/>
         <source>Ctrl+Shift+L</source>
-        <translation>Ctrl+Shift+L</translation>
+        <translation>Ctrl+Maj+L</translation>
     </message>
     <message>
         <location filename="../main.ui" line="822"/>
         <source>Stri&amp;kethrough</source>
-        <translation>&amp;Gennemstreget</translation>
+        <translation>Barra&amp;t</translation>
     </message>
     <message>
         <location filename="../main.ui" line="825"/>
         <source>Draw a line through the selected text.</source>
-        <translation>Gennemstreg den valgte tekst.</translation>
+        <translation>Traça una línia sobre el text seleccionat.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="838"/>
         <source>&amp;Subscript</source>
-        <translation>&amp;Sænket skrift</translation>
+        <translation>&amp;Subíndex</translation>
     </message>
     <message>
         <location filename="../main.ui" line="841"/>
         <source>Set the selected text slightly smaller and below the normal line.</source>
-        <translation>Gør den valgte tekst lidt mindre og sænket under den normale linje.</translation>
+        <translation>Defineix el text seleccionat una mica més petit i per sota de la línia normal.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="854"/>
         <source>Su&amp;perscript</source>
-        <translation>H&amp;ævet skrift</translation>
+        <translation>Su&amp;períndex</translation>
     </message>
     <message>
         <location filename="../main.ui" line="857"/>
         <source>Set the selected text slightly smaller and above the normal line.</source>
-        <translation>Gør den valgte tekst lidt mindre og hævet over den normale linje.</translation>
+        <translation>Defineix el text seleccionat una mica més petit i per sobre de la línia normal.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="868"/>
         <source>Zoom &amp;In</source>
-        <translation>Zoom &amp;ind</translation>
+        <translation>&amp;Amplia</translation>
     </message>
     <message>
         <location filename="../main.ui" line="871"/>
         <source>Zoom In</source>
-        <translation>Zoom ind</translation>
+        <translation>Apropa</translation>
     </message>
     <message>
         <location filename="../main.ui" line="874"/>
@@ -1110,12 +1110,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="885"/>
         <source>Zoom &amp;Out</source>
-        <translation>Zoom &amp;ud</translation>
+        <translation>&amp;Redueix</translation>
     </message>
     <message>
         <location filename="../main.ui" line="888"/>
         <source>Zoom Out</source>
-        <translation>Zoom ud</translation>
+        <translation>Redueix</translation>
     </message>
     <message>
         <location filename="../main.ui" line="891"/>
@@ -1125,12 +1125,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="902"/>
         <source>Incre&amp;ase Indent</source>
-        <translation>For&amp;øg indrykning</translation>
+        <translation>Au&amp;gmenta el sagnat</translation>
     </message>
     <message>
         <location filename="../main.ui" line="905"/>
         <source>Increase the indent level of the paragraph.</source>
-        <translation>Forøg aktuelt afsnits indrykning.</translation>
+        <translation>Augmenta el nivell de sagnat del paràgraf.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="908"/>
@@ -1140,37 +1140,37 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="918"/>
         <source>&amp;Decrease Indent</source>
-        <translation>For&amp;mindsk indrykning</translation>
+        <translation>Re&amp;dueix el sagnat</translation>
     </message>
     <message>
         <location filename="../main.ui" line="921"/>
         <source>Decrease the indent level of the paragraph.</source>
-        <translation>Formindsk aktuelt afsnits indrykning.</translation>
+        <translation>Disminueix el nivell de sagnat del paràgraf.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="924"/>
         <source>Ctrl+Shift+M</source>
-        <translation>Ctrl+Shift+M</translation>
+        <translation>Ctrl+Maj+M</translation>
     </message>
     <message>
         <location filename="../main.ui" line="934"/>
         <source>Split &amp;Marker</source>
-        <translation>Opdelings&amp;markør</translation>
+        <translation>&amp;Marcador de divisió</translation>
     </message>
     <message>
         <location filename="../main.ui" line="937"/>
         <source>Insert Sigil split file marker</source>
-        <translation>Indsæt Sigil-opdelingsmarkør</translation>
+        <translation>Insereix un marcador de divisió de fitxer del Sigil</translation>
     </message>
     <message>
         <location filename="../main.ui" line="940"/>
         <source>Ctrl+Shift+Return</source>
-        <translation>Ctrl+Shift+Enter</translation>
+        <translation>Ctrl+Maj+Retorn</translation>
     </message>
     <message>
         <location filename="../main.ui" line="946"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Indstillinger …</translation>
+        <translation>&amp;Preferències...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="949"/>
@@ -1180,12 +1180,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="955"/>
         <source>&amp;Zoom Reset</source>
-        <translation>Nulstil &amp;zoom</translation>
+        <translation>Reinicia el &amp;zoom</translation>
     </message>
     <message>
         <location filename="../main.ui" line="958"/>
         <source>Zoom Reset</source>
-        <translation>Nulstil zoom</translation>
+        <translation>Reinicia el zoom</translation>
     </message>
     <message>
         <location filename="../main.ui" line="961"/>
@@ -1195,12 +1195,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="974"/>
         <source>Heading &amp;1</source>
-        <translation>Overskrift &amp;1</translation>
+        <translation>Encapçalament &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="977"/>
         <source>Format paragraph as a level 1 heading.</source>
-        <translation>Formatter aktuelt afsnit som niveau 1-overskrift.</translation>
+        <translation>Dona format al paràgraf com a encapçalament de nivell 1.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="980"/>
@@ -1210,12 +1210,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="993"/>
         <source>Heading &amp;2</source>
-        <translation>Overskrift &amp;2</translation>
+        <translation>Encapçalament &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="996"/>
         <source>Format paragraph as a level 2 heading.</source>
-        <translation>Formatter aktuelt afsnit som niveau 2-overskrift.</translation>
+        <translation>Dona format al paràgraf com a encapçalament de nivell 2.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="999"/>
@@ -1225,12 +1225,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1012"/>
         <source>Heading &amp;3</source>
-        <translation>Overskrift &amp;3</translation>
+        <translation>Encapçalament &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1015"/>
         <source>Format paragraph as a level 3 heading.</source>
-        <translation>Formatter aktuelt afsnit som niveau 3-overskrift.</translation>
+        <translation>Dona format al paràgraf com a encapçalament de nivell 3.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1018"/>
@@ -1240,12 +1240,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1032"/>
         <source>Heading &amp;4</source>
-        <translation>Overskrift &amp;4</translation>
+        <translation>Encapçalament &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1035"/>
         <source>Format paragraph as a level 4 heading.</source>
-        <translation>Formatter aktuelt afsnit som niveau 4-overskrift.</translation>
+        <translation>Dona format al paràgraf com a encapçalament de nivell 4.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1038"/>
@@ -1255,12 +1255,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1051"/>
         <source>Heading &amp;5</source>
-        <translation>Overskrift &amp;5</translation>
+        <translation>Encapçalament &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1054"/>
         <source>Format paragraph as a level 5 heading.</source>
-        <translation>Formatter aktuelt afsnit som niveau 5-overskrift.</translation>
+        <translation>Dona format al paràgraf com a encapçalament de nivell 5.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1057"/>
@@ -1270,12 +1270,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1070"/>
         <source>Heading &amp;6</source>
-        <translation>Overskrift &amp;6</translation>
+        <translation>Encapçalament &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1073"/>
         <source>Format paragraph as a level 6 heading.</source>
-        <translation>Formatter aktuelt afsnit som niveau 6-overskrift.</translation>
+        <translation>Dona format al paràgraf com a encapçalament de nivell 6.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1076"/>
@@ -1290,7 +1290,7 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1093"/>
         <source>Format paragraph as a normal paragraph.</source>
-        <translation type="unfinished"/>
+        <translation>Dona format al paràgraf com a paràgraf normal.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1096"/>
@@ -1300,22 +1300,22 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1106"/>
         <source>&amp;Preserve Existing Attributes</source>
-        <translation>&amp;Bevar eksisterende attributter</translation>
+        <translation>&amp;Conserva els atributs que tingui</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1109"/>
         <source>When applying this style, preserve any existing attributes on the tag</source>
-        <translation>Ved anvendelse af denne typografi, skal alle eksisterende attributter på tagget bevares</translation>
+        <translation>Conserva els atributs de l&apos;etiqueta en aplicar aquest estil</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1119"/>
         <source>&amp;Select All</source>
-        <translation>&amp;Vælg alt</translation>
+        <translation>&amp;Selecciona-ho tot</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1122"/>
         <source>Select all text in the document.</source>
-        <translation>Vælg al tekst i dokumentet.</translation>
+        <translation>Selecciona tot el text del document.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1125"/>
@@ -1330,7 +1330,7 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1138"/>
         <source>Inspect the page.</source>
-        <translation>Undersøg siden.</translation>
+        <translation>Inspecciona la pàgina</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1141"/>
@@ -1340,17 +1340,17 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1150"/>
         <source>Apply clips to page.</source>
-        <translation type="unfinished"/>
+        <translation>Aplica els clips a la pàgina.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1159"/>
         <source>ClipEditor ...</source>
-        <translation type="unfinished"/>
+        <translation>Editor de clips ...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1162"/>
         <source>Edit and Create Clips.</source>
-        <translation type="unfinished"/>
+        <translation>Edita i crea clips.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1165"/>
@@ -1360,17 +1360,17 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1171"/>
         <source>ClipBar Show/Hide</source>
-        <translation type="unfinished"/>
+        <translation>Mostra/oculta la barra de clips</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1174"/>
         <source>Show and Hide the Clip Toolbar.</source>
-        <translation type="unfinished"/>
+        <translation>Mostra i oculta la barra de clips.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1190"/>
         <source>Find text in the page</source>
-        <translation>Find tekst på siden</translation>
+        <translation>Cerca text a la pàgina</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1193"/>
@@ -1380,102 +1380,102 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1206"/>
         <source>Next XHtml File</source>
-        <translation>Næste xhtml-fil</translation>
+        <translation>Fitxer XHTML següent</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1209"/>
         <source>Next file in navigation list</source>
-        <translation>Næste fil i navigationslisten</translation>
+        <translation>Fitxer següent de la llista de navegació</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1212"/>
         <source>Ctrl+PgDown</source>
-        <translation>Ctrl+PgDown</translation>
+        <translation>Ctrl+Av Pàg</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1225"/>
         <source>Previous XHtml File</source>
-        <translation>Forrige xhtml-fil</translation>
+        <translation>Fitxer XHTML anterior</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1228"/>
         <source>Previous file in navigation list</source>
-        <translation>Forrige fil i navigationslisten</translation>
+        <translation>Fitxer anterior de la llista de navegació</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1231"/>
         <source>Ctrl+PgUp</source>
-        <translation>Ctrl+PgUp</translation>
+        <translation>Ctrl+Re Pàg</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1247"/>
         <source>Toggle between Edit and Preview Modes.</source>
-        <translation>Skift mellem Rediger og Forhåndsvisning.</translation>
+        <translation>Commuta entre els modes d&apos;edició i de previsualització.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1257"/>
         <source>About...</source>
-        <translation>Om …</translation>
+        <translation>Quant a...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1260"/>
         <source>Show information about PageEdit.</source>
-        <translation>Vis oplysninger om PageEdit.</translation>
+        <translation>Mostra informació sobre el PageEdit.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1270"/>
         <source>Back to Last Link</source>
-        <translation>Tilbage til det sidste Link</translation>
+        <translation>Torna a l&apos;últim enllaç</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1273"/>
         <source>Return from the last link taken</source>
-        <translation>Tilbage fra det sidst fulgte link</translation>
+        <translation> Torna de l&apos;últim enllaç seguit</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1283"/>
         <source>I&amp;D...</source>
-        <translation>&amp;ID …</translation>
+        <translation>I&amp;dentificador...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1286"/>
         <source>Insert or edit an anchor with an ID name to use as a link target.</source>
-        <translation>Indsæt eller rediger et anker med et ID-navn til brug som mål for et hyperlink.</translation>
+        <translation>Insereix o edita una àncora amb un nom d&apos;ID per utilitzar-la com a destinació de l&apos;enllaç.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1296"/>
         <source>&amp;Link...</source>
-        <translation>&amp;Link …</translation>
+        <translation>&amp;Enllaç...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1299"/>
         <source>Insert or edit an anchor with a hyperlink to a target.</source>
-        <translation>Indsæt eller rediger et anker med et hyperlink til et mål.</translation>
+        <translation>Insereix o edita una àncora amb un hiperenllaç a una destinació.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1309"/>
         <source>&amp;File...</source>
-        <translation>&amp;Fil …</translation>
+        <translation>&amp;Fitxer...</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1312"/>
         <source>Select existing image, video or audio files from your book to insert into the text.</source>
-        <translation>Vælg eksisterende billede, video- eller lydfil fra din bog og indsæt den i teksten.</translation>
+        <translation>Selecciona fitxers d&apos;imatge, vídeo o àudio existents del llibre per inserir-los al text.</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1315"/>
         <source>Ctrl+Shift+I</source>
-        <translation>Ctrl+Shift+I</translation>
+        <translation>Ctrl+Maj+I</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1321"/>
         <source>Clip &amp;1</source>
-        <translation>Kodestykke &amp;1</translation>
+        <translation>Clip &amp;1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1324"/>
         <source>Insert Clip 1</source>
-        <translation>Indsæt kodestykke 1</translation>
+        <translation>Insereix el clip 1</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1327"/>
@@ -1485,12 +1485,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1333"/>
         <source>Clip &amp;2</source>
-        <translation>klip &amp;2</translation>
+        <translation>Clip &amp;2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1336"/>
         <source>Insert Clip 2</source>
-        <translation>Indsæt kodestykke 2</translation>
+        <translation>Insereix el clip 2</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1339"/>
@@ -1500,12 +1500,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1345"/>
         <source>Clip &amp;3</source>
-        <translation>Kodestykke &amp;3</translation>
+        <translation>Clip &amp;3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1348"/>
         <source>Insert Clip 3</source>
-        <translation>Indsæt kodestykke 3</translation>
+        <translation>Insereix el clip 3</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1351"/>
@@ -1515,12 +1515,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1357"/>
         <source>Clip &amp;4</source>
-        <translation>Kodestykke &amp;4</translation>
+        <translation>Clip &amp;4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1360"/>
         <source>Insert Clip 4</source>
-        <translation>Indsæt kodestykke 4</translation>
+        <translation>Insereix el clip 4</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1363"/>
@@ -1530,12 +1530,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1369"/>
         <source>Clip &amp;5</source>
-        <translation>Kodestykke &amp;5</translation>
+        <translation>Clip &amp;5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1372"/>
         <source>Insert Clip 5</source>
-        <translation>Indsæt kodestykke 5</translation>
+        <translation>Insereix el clip 5</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1375"/>
@@ -1545,12 +1545,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1381"/>
         <source>Clip &amp;6</source>
-        <translation>Kodestykke &amp;6</translation>
+        <translation>Clip &amp;6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1384"/>
         <source>Insert Clip 6</source>
-        <translation>Indsæt kodestykke 6</translation>
+        <translation>Insereix el clip 6</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1387"/>
@@ -1560,12 +1560,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1393"/>
         <source>Clip &amp;7</source>
-        <translation>Kodestykke &amp;7</translation>
+        <translation>Clip &amp;7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1396"/>
         <source>Insert Clip 7</source>
-        <translation>Indsæt kodestykke 7</translation>
+        <translation>Insereix el clip 7</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1399"/>
@@ -1575,12 +1575,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1405"/>
         <source>Clip &amp;8</source>
-        <translation>Kodestykke &amp;8</translation>
+        <translation>Clip &amp;8</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1408"/>
         <source>Insert Clip 8</source>
-        <translation>Indsæt kodestykke 8</translation>
+        <translation>Insereix el clip 8</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1411"/>
@@ -1590,12 +1590,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1417"/>
         <source>Clip &amp;9</source>
-        <translation>Kodestykke &amp;9</translation>
+        <translation>Clip &amp;9</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1420"/>
         <source>Insert Clip 9</source>
-        <translation>Indsæt kodestykke 9</translation>
+        <translation>Insereix el clip 9</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1423"/>
@@ -1605,12 +1605,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1429"/>
         <source>Clip 1&amp;0</source>
-        <translation>Kodestykke 1&amp;0</translation>
+        <translation>Clip 1&amp;0</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1432"/>
         <source>Insert Clip 10</source>
-        <translation>Indsæt kodestykke 10</translation>
+        <translation>Insereix el clip 10</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1435"/>
@@ -1620,141 +1620,141 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../main.ui" line="1441"/>
         <source>Clip 11</source>
-        <translation>Kodestykke 11</translation>
+        <translation>Clip 11</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1444"/>
         <source>Insert Clip 11</source>
-        <translation>Indsæt kodestykke 11</translation>
+        <translation>Insereix el clip 11</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1450"/>
         <source>Clip 12</source>
-        <translation>Kodestykke 12</translation>
+        <translation>Clip 12</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1453"/>
         <source>Insert Clip 12</source>
-        <translation>Indsæt kodestykke 12</translation>
+        <translation>Insereix el clip 12</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1459"/>
         <source>Clip 13</source>
-        <translation>Kodestykke 13</translation>
+        <translation>Clip 13</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1462"/>
         <source>Insert Clip 13</source>
-        <translation>Indsæt kodestykke 13</translation>
+        <translation>Insereix el clip 13</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1468"/>
         <source>Clip 14</source>
-        <translation>Kodestykke 14</translation>
+        <translation>Clip 14</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1471"/>
         <source>Insert Clip 14</source>
-        <translation>Indsæt kodestykke 14</translation>
+        <translation>Insereix el clip 14</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1477"/>
         <source>Clip 15</source>
-        <translation>Kodestykke 15</translation>
+        <translation>Clip 15</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1480"/>
         <source>Insert Clip 15</source>
-        <translation>Indsæt kodestykke 15</translation>
+        <translation>Insereix el clip 15</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1486"/>
         <source>Clip 16</source>
-        <translation>Kodestykke 16</translation>
+        <translation>Clip 16</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1489"/>
         <source>Insert Clip 16</source>
-        <translation>Indsæt kodestykke 16</translation>
+        <translation>Insereix el clip 16</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1495"/>
         <source>Clip 17</source>
-        <translation>Kodestykke 17</translation>
+        <translation>Clip 17</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1498"/>
         <source>Insert Clip 17</source>
-        <translation>Indsæt kodestykke 17</translation>
+        <translation>Insereix el clip 17</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1504"/>
         <source>Clip 18</source>
-        <translation>Kodestykke 18</translation>
+        <translation>Clip 18</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1507"/>
         <source>Insert Clip 18</source>
-        <translation>Indsæt kodestykke 18</translation>
+        <translation>Insereix el clip 18</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1513"/>
         <source>Clip 19</source>
-        <translation>Kodestykke 19</translation>
+        <translation>Clip 19</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1516"/>
         <source>Insert Clip 19</source>
-        <translation>Indsæt kodestykke 19</translation>
+        <translation>Insereix el clip 19</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1522"/>
         <source>Clip 20</source>
-        <translation>Kodestykke 20</translation>
+        <translation>Clip 20</translation>
     </message>
     <message>
         <location filename="../main.ui" line="1525"/>
         <source>Insert Clip 20</source>
-        <translation>Indsæt kodestykke 20</translation>
+        <translation>Insereix el clip 20</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="789"/>
         <source>File load failed</source>
-        <translation>Fejl ved indlæsning af fil</translation>
+        <translation>Ha fallat la càrrega del fitxer</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="790"/>
         <source>File Load Failed</source>
-        <translation>Fejl ved indlæsning af fil</translation>
+        <translation>Ha fallat la càrrega del fitxer</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="906"/>
         <source>mode: Preview</source>
-        <translation>tilstand: Forhåndsvisning</translation>
+        <translation>mode: Previsualització</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="908"/>
         <source>mode: Edit</source>
-        <translation>tilstand: Rediger</translation>
+        <translation>mode: Edició</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1075"/>
         <source>Are you sure you want to open this link in your browser?
 
 %1</source>
-        <translation>Er du sikker på, at du vil åbne dette link i din browser?
+        <translation>Esteu segur que voleu obrir aquest enllaç al navegador?
 
 %1</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1170"/>
         <source>Do you want to save your changes before leaving?</source>
-        <translation>Vil du gemme dine ændringer, før du forlader programmet?</translation>
+        <translation>Voleu desar els canvis abans de sortir?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1189"/>
         <source>PageEdit is closing...</source>
-        <translation>PageEdit lukker …</translation>
+        <translation>El PageEdit s&apos;està tancant...</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1275"/>
@@ -1764,22 +1764,22 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
         <location filename="../MainWindow.cpp" line="1287"/>
         <location filename="../MainWindow.cpp" line="1288"/>
         <source>HTML files (*.htm *.html *.xhtml)</source>
-        <translation>HTML-filer (*.htm *.html *.xhtml)</translation>
+        <translation>Fitxers HTML  (*.htm *.html *.xhtml)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1278"/>
         <source>OPF files (*.opf)</source>
-        <translation>OPF-filer (*.opf)</translation>
+        <translation>Fitxers OPF (*.opf)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1279"/>
         <source>All files (*.*)</source>
-        <translation>Alle filer (*.*)</translation>
+        <translation>Tots els fitxers (*.*)</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1518"/>
         <source>Save File</source>
-        <translation>Gem fil</translation>
+        <translation>Desa el fitxer</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
@@ -1787,18 +1787,18 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
         <location filename="../MainWindow.cpp" line="1566"/>
         <location filename="../MainWindow.cpp" line="1567"/>
         <source>File Save-As Failed!</source>
-        <translation>Fil Gem som fejlede!</translation>
+        <translation>No s’ha pogut desar el fitxer!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1553"/>
         <source>is not writeable</source>
-        <translation>er ikke skrivbar</translation>
+        <translation>no és escrivible</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1562"/>
         <location filename="../MainWindow.cpp" line="1601"/>
         <source>File Saved</source>
-        <translation>Filen er gemt</translation>
+        <translation>Fitxer desat</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1592"/>
@@ -1806,117 +1806,117 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
         <location filename="../MainWindow.cpp" line="1605"/>
         <location filename="../MainWindow.cpp" line="1606"/>
         <source>File Save Failed!</source>
-        <translation>Fil Gem som fejlede!</translation>
+        <translation> No s&apos;ha pogut desar el fitxer!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1593"/>
         <source>does not exist or is not writeable</source>
-        <translation>findes ikke eller kan ikke overskrives</translation>
+        <translation>no existeix o no és escrivible</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1621"/>
         <source>Do not show this warning again</source>
-        <translation>Vis ikke denne advarsel igen</translation>
+        <translation>No tornis a mostrar aquest avís</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1622"/>
         <source>This file may not print the way you expect it to.</source>
-        <translation>Denne fil udskrives muligvis ikke som forventet.</translation>
+        <translation> És possible que aquest fitxer no s&apos;imprimeixi de la manera que esperes.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1623"/>
         <source>Dark backgrounds and colored text applied with an EPUB&apos;s CSS will print.</source>
-        <translation>Mørk baggrund og farvet tekst anvendt med en EPUB&apos;s CSS udskrives.</translation>
+        <translation> Els fons foscos i el text amb color aplicats mitjançant el CSS de l&apos;EPUB s&apos;imprimiran.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1624"/>
         <source>Use caution as this can result in a lot of ink being used!</source>
-        <translation>Vær forsigtig, da dette kan medføre, at der bruges meget blæk!</translation>
+        <translation>Ves amb compte, ja que això pot comportar un gran consum de tinta.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1625"/>
         <source>Use the following Print Preview to see how this file will print.</source>
-        <translation>Brug følgende udskriftseksempel for at se, hvordan denne fil udskrives.</translation>
+        <translation>Utilitza la vista prèvia d&apos;impressió següent per veure com s&apos;imprimirà aquest fitxer.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1626"/>
         <source>Check the box if you don&apos;t wish to see this warning in the future.</source>
-        <translation>Marker afkrydsningsfeltet, hvis du ikke ønsker at se denne advarsel i fremtiden.</translation>
+        <translation>Marca la casella si no vols tornar a veure aquest avís en el futur.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1706"/>
         <source>File Opened</source>
-        <translation>Fil åbnet</translation>
+        <translation>Fitxer obert</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1710"/>
         <source>File Open Failed!</source>
-        <translation>Fejl ved åbning af fil!</translation>
+        <translation>No s&apos;ha pogut obrir el fitxer!</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1761"/>
         <source>Clipboard contains HTML formatting</source>
-        <translation>Klippebordet indeholder HTML formateret kode</translation>
+        <translation>El gestor de clips conté format HTML</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1762"/>
         <source>Do you want to paste clipboard data as plain text?</source>
-        <translation>Vil du indsætte klippebords data som almindelig tekst?</translation>
+        <translation>Voleu copiar les dades del gestor de clips com a text pla?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1832"/>
         <source>You must select text before inserting a new id.</source>
-        <translation>Du skal vælge en tekst før du indsætter et nyt id.</translation>
+        <translation>Heu de seleccionar algun text abans d&apos;inserir un identificador nou.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1845"/>
         <source>ID is invalid - must start with a letter, followed by letter number _ : - or .</source>
-        <translation>ID er ugyldigt - skal starte med et bogstav, efterfulgt af bogstav nummer _ : - eller .</translation>
+        <translation>L&apos;identificador no és vàlid; ha de començar amb una lletra seguida de lletres, números _ : o .</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1851"/>
         <source>You cannot insert an id at this position.</source>
-        <translation>Du kan ikke indsætte et ID ved denne placering.</translation>
+        <translation>No es pot inserir un identificador en aquesta posició.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1865"/>
         <source>You must select text before inserting a new link.</source>
-        <translation>Du skal vælge en tekst før di indsætter et nyt link.</translation>
+        <translation>Heu de seleccionar algun text abans d&apos;inserir un nou enllaç.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1878"/>
         <source>Link is invalid - cannot contain &apos;&lt;&apos; or &apos;&gt;&apos;</source>
-        <translation>Link er ugyldig - kan ikke indeholde &apos;&lt;&apos; eller &apos;&gt;&apos;</translation>
+        <translation>L&apos;enllaç no és correcte; no ha de tenir «&lt;» ni «&gt;»</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1884"/>
         <source>Error inserting external link target.</source>
-        <translation type="unfinished"/>
+        <translation>Error en inserir la destinació de l&apos;enllaç extern.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1892"/>
         <source>Error inserting a link at this position.</source>
-        <translation type="unfinished"/>
+        <translation>Error en inserir un enllaç en aquesta posició.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1903"/>
         <source>Insert File</source>
-        <translation>Indsæt fil</translation>
+        <translation>Insereix un fitxer</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="1947"/>
         <source>You cannot insert a media file at this position.</source>
-        <translation>Du kan ikke indsætte en mediefil på denne placering.</translation>
+        <translation>No pots inserir un fitxer multimèdia en aquesta posició.</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2023"/>
         <source>Do you want to save any changes before overwriting this file?</source>
-        <translation>Vil du gemme evt. ændringer, før du overskriver denne fil?</translation>
+        <translation>Voleu desar els canvis abans de sobreescriure aquest fitxer?</translation>
     </message>
     <message>
         <location filename="../MainWindow.cpp" line="2075"/>
         <source>Pasted clip entry %1.</source>
-        <translation>Indsat klipoptegnelse %1.</translation>
+        <translation>S&apos;ha enganxat l&apos;entrada del clip %1.</translation>
     </message>
 </context>
 <context>
@@ -1924,7 +1924,7 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../Preferences.ui" line="14"/>
         <source>Preferences</source>
-        <translation>Indstillinger</translation>
+        <translation>Preferències</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="91"/>
@@ -1934,12 +1934,12 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
     <message>
         <location filename="../Preferences.cpp" line="91"/>
         <source>Changes will take effect when you restart PageEdit.</source>
-        <translation>Ændringer vil træde i kraft, når du genstarter PageEdit.</translation>
+        <translation>Els canvis tindran efecte quan reiniciïs el PageEdit.</translation>
     </message>
     <message>
         <location filename="../Preferences.cpp" line="152"/>
         <source>Open Preferences Location</source>
-        <translation>Åben placering for indstillinger</translation>
+        <translation>Obre la ubicació de les preferències</translation>
     </message>
 </context>
 <context>
@@ -1948,65 +1948,65 @@ Hvis en oversættelse for et ord eller en frase ikke findes, vil det blive vist 
         <location filename="../OPFReader.cpp" line="60"/>
         <source>Unable to read OPF file.
 Line: %1 Column %2 - %3</source>
-        <translation>Kunne ikke læse OPF-fil.
-Linje: %1 Kolonne %2 - %3</translation>
+        <translation>No s&apos;ha pogut llegir el fitxer OPF.
+Línia %1 - Columna %2 - %3</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="383"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Kan ikke indlæse filen %1:
+        <translation>No es pot llegir el fitxer %1:
 %2.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="575"/>
         <source>PageEdit has encountered a problem.</source>
-        <translation>PageEdit er stødt på et problem.</translation>
+        <translation>El PageEdit ha trobat un problema.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="576"/>
         <source>PageEdit may need to close.</source>
-        <translation>PageEdit vil muligvis lukke ned.</translation>
+        <translation>És possible que el PageEdit s&apos;hagi de tancar.</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="884"/>
         <source>About PageEdit</source>
-        <translation>Om PageEdit</translation>
+        <translation>Quant al PageEdit</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="889"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Versió</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="890"/>
         <source>Build Date</source>
-        <translation>Build Date</translation>
+        <translation>Data de compilació</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="891"/>
         <source>Build Time</source>
-        <translation>Build Time</translation>
+        <translation>Hora de compilació</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="892"/>
         <source>Qt Runtime Version</source>
-        <translation>Qt Runtime Version</translation>
+        <translation>Versió de Qt en temps d&apos;execució</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="893"/>
         <source>Qt Compiled Version</source>
-        <translation>Qt Compiled Version</translation>
+        <translation>Versió de Qt amb què s&apos;ha compilat</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="894"/>
         <source>System</source>
-        <translation>System</translation>
+        <translation>Sistema</translation>
     </message>
     <message>
         <location filename="../Utility.cpp" line="895"/>
         <source>Architecture</source>
-        <translation>Architecture</translation>
+        <translation>Arquitectura</translation>
     </message>
 </context>
 <context>
@@ -2014,22 +2014,22 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SearchToolbar.ui" line="36"/>
         <source>Search: </source>
-        <translation>Søg: </translation>
+        <translation>Cerca:</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="55"/>
         <source>Search...</source>
-        <translation>Søg …</translation>
+        <translation>Cerca...</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.ui" line="88"/>
         <source>&amp;Match Case</source>
-        <translation>Forskel på STORE/s&amp;må bogstaver</translation>
+        <translation>&amp;Distingeix majúscules i minúscules</translation>
     </message>
     <message>
         <location filename="../SearchToolbar.cpp" line="151"/>
         <source>No results found.</source>
-        <translation>Intet fundet.</translation>
+        <translation>No s&apos;han trobat resultats.</translation>
     </message>
 </context>
 <context>
@@ -2037,117 +2037,117 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.ui" line="14"/>
         <source>Insert Special Character</source>
-        <translation>Indsæt specialtegn</translation>
+        <translation>Insereix un caràcter especial</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="85"/>
         <source>non-breaking space</source>
-        <translation type="unfinished"/>
+        <translation>espai no separable</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="86"/>
         <source>en space</source>
-        <translation>en space</translation>
+        <translation>mig quadratí</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="87"/>
         <source>em space</source>
-        <translation>em space</translation>
+        <translation>quadratí</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="88"/>
         <source>thin space</source>
-        <translation>thin space</translation>
+        <translation>espai fi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="89"/>
         <source>soft hyphen</source>
-        <translation>blødt mellemrum</translation>
+        <translation>guionet suau</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="90"/>
         <source>narrow non-breaking space</source>
-        <translation type="unfinished"/>
+        <translation>espai fi no separable</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="94"/>
         <source>left single quote</source>
-        <translation>venstre enkelt-citationstegn</translation>
+        <translation>cometa simple d&apos;obertura</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="95"/>
         <source>right single quote</source>
-        <translation>højre enkelt-citationstegn</translation>
+        <translation>cometa simple de tancament</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="96"/>
         <source>left double quote</source>
-        <translation>venstre dobbelt-citationstegn</translation>
+        <translation>cometes d&apos;obertura</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="97"/>
         <source>right double quote</source>
-        <translation>højre dobbelt-citationstegn</translation>
+        <translation>cometes de tancament</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="98"/>
         <source>left-pointing single angle quote</source>
-        <translation type="unfinished"/>
+        <translation>clau angular esquerra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="99"/>
         <source>right-pointing single angle quote</source>
-        <translation type="unfinished"/>
+        <translation>clau angular dreta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="100"/>
         <source>left-pointing double angle quote</source>
-        <translation type="unfinished"/>
+        <translation>cometa baixa esquerra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="101"/>
         <source>right-pointing double angle quote</source>
-        <translation type="unfinished"/>
+        <translation>cometa baixa dreta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="102"/>
         <source>apostrophe</source>
-        <translation>apostrof</translation>
+        <translation>apòstrof</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="103"/>
         <source>double quote</source>
-        <translation type="unfinished"/>
+        <translation>cometes dobles</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="104"/>
         <source>single low-9 quote</source>
-        <translation type="unfinished"/>
+        <translation>cometa simple baixa (9)</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="105"/>
         <source>double low-9 quote</source>
-        <translation type="unfinished"/>
+        <translation>cometa doble baixa (9)</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="106"/>
         <source>em dash</source>
-        <translation>em dash</translation>
+        <translation>guió llarg</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="107"/>
         <source>en dash</source>
-        <translation>en dash</translation>
+        <translation>guió mig</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="108"/>
         <source>section sign</source>
-        <translation>paragraftegn</translation>
+        <translation>signe de secció</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="109"/>
         <source>pilcrow - paragraph sign</source>
-        <translation type="unfinished"/>
+        <translation>calderó – signe de paràgraf</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="110"/>
@@ -2162,17 +2162,17 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="112"/>
         <source>ampersand</source>
-        <translation>og-tegn</translation>
+        <translation>et (i comercial)</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="113"/>
         <source>less-than sign</source>
-        <translation>mindre end-tegn</translation>
+        <translation>més petit que</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="114"/>
         <source>greater-than sign</source>
-        <translation>større end-tegn</translation>
+        <translation>més gran que</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="115"/>
@@ -2182,242 +2182,242 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="116"/>
         <source>registered sign</source>
-        <translation>registreret varemærketegn</translation>
+        <translation>símbol de registrat</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="117"/>
         <source>trademark symbol</source>
-        <translation>varemærksymbol</translation>
+        <translation>símbol de marca registrada</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="118"/>
         <source>left arrow</source>
-        <translation>venstrepil</translation>
+        <translation>fletxa cap a l&apos;esquerra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="119"/>
         <source>right arrow</source>
-        <translation>højrepil</translation>
+        <translation>fletxa cap a la dreta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="120"/>
         <source>bullet</source>
-        <translation>prik</translation>
+        <translation>pic</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="121"/>
         <source>middle dot</source>
-        <translation>halvhøj prik</translation>
+        <translation>punt volat</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="122"/>
         <source>degree sign</source>
-        <translation>gradtegn</translation>
+        <translation>signe de grau</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="123"/>
         <source>plus minus sign</source>
-        <translation>plus-minus-tegn</translation>
+        <translation>signe més-menys</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="124"/>
         <source>minus sign</source>
-        <translation>minustegn</translation>
+        <translation>signe menys</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="125"/>
         <source>multiplication sign</source>
-        <translation>gangetegn</translation>
+        <translation>signe de multiplicació</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="126"/>
         <source>division sign</source>
-        <translation>divisionstegn</translation>
+        <translation>signe de divisió</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="127"/>
         <source>fraction 1/4</source>
-        <translation>fraction 1/4</translation>
+        <translation>fracció 1/4</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="128"/>
         <source>fraction 1/2</source>
-        <translation>fraction 1/2</translation>
+        <translation>fracció 1/2</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="129"/>
         <source>fraction 3/4</source>
-        <translation>fraction 3/4</translation>
+        <translation>fracció 3/4</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="130"/>
         <source>fraction 1/3</source>
-        <translation>fraction 1/3</translation>
+        <translation>fracció 1/3</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="131"/>
         <source>fraction 2/3</source>
-        <translation>fraction 2/3</translation>
+        <translation>fracció 2/3</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="132"/>
         <source>fraction 1/8</source>
-        <translation>fraction 1/8</translation>
+        <translation>fracció 1/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="133"/>
         <source>fraction 3/8</source>
-        <translation>fraction 3/8</translation>
+        <translation>fracció 3/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="134"/>
         <source>fraction 5/8</source>
-        <translation>fraction 5/8</translation>
+        <translation>fracció 5/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="135"/>
         <source>fraction 7/8</source>
-        <translation>fraction 7/8</translation>
+        <translation>fracció 7/8</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="136"/>
         <source>horizontal ellipsis</source>
-        <translation type="unfinished"/>
+        <translation>el·lipsi horitzontal</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="137"/>
         <source>micron</source>
-        <translation type="unfinished"/>
+        <translation>micró</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="138"/>
         <source>cent sign</source>
-        <translation>centtegn</translation>
+        <translation>símbol de centau</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="139"/>
         <source>pound sign</source>
-        <translation>pundtegn</translation>
+        <translation>símbol de lliura</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="140"/>
         <source>euro sign</source>
-        <translation>eurotegn</translation>
+        <translation>símbol de l&apos;euro</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="141"/>
         <source>inverted question mark</source>
-        <translation>omvendt spørgsmålstegn</translation>
+        <translation>interrogant inicial</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="142"/>
         <source>inverted exclamation mark</source>
-        <translation>omvendt udråbstegn</translation>
+        <translation>exclamació inicial</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="143"/>
         <source>diaeresis</source>
-        <translation>trema</translation>
+        <translation>dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="144"/>
         <source>acute accent</source>
-        <translation>accent aigu</translation>
+        <translation>accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="145"/>
         <source>cedilla</source>
-        <translation>cedille</translation>
+        <translation>vírgula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="146"/>
         <source>circumflex accent</source>
-        <translation type="unfinished"/>
+        <translation>accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="147"/>
         <source>small tilde</source>
-        <translation>lille tilde</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="148"/>
         <source>capital A with grave</source>
-        <translation type="unfinished"/>
+        <translation>A majúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="149"/>
         <source>capital A with acute</source>
-        <translation type="unfinished"/>
+        <translation>A majúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="150"/>
         <source>capital A with circumflex</source>
-        <translation>stort A med cirkumfleks</translation>
+        <translation>A majúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="151"/>
         <source>capital A with tilde</source>
-        <translation>stort A med tilde</translation>
+        <translation>A majúscula amb titlla</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="152"/>
         <source>capital A with diaeresis</source>
-        <translation>stort A med diakrit</translation>
+        <translation>A majúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="153"/>
         <source>capital A with ring above</source>
-        <translation type="unfinished"/>
+        <translation>A majúscula amb un cercle superior</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="154"/>
         <source>capital AE</source>
-        <translation type="unfinished"/>
+        <translation>AE majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="155"/>
         <source>capital C with cedilla</source>
-        <translation type="unfinished"/>
+        <translation>C trencada majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="156"/>
         <source>capital E with grave</source>
-        <translation type="unfinished"/>
+        <translation>E majúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="157"/>
         <source>capital E with acute</source>
-        <translation type="unfinished"/>
+        <translation>E majúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="158"/>
         <source>capital E with circumflex</source>
-        <translation>stort E med cirkumfleks</translation>
+        <translation>E majúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="159"/>
         <source>capital E with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>E majúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="160"/>
         <source>capital I with grave</source>
-        <translation type="unfinished"/>
+        <translation>I majúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="161"/>
         <source>capital I with acute</source>
-        <translation type="unfinished"/>
+        <translation>I majúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="162"/>
         <source>capital I with circumflex</source>
-        <translation>stort I med cirkumfleks</translation>
+        <translation>I majúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="163"/>
         <source>capital I with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>I majúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="164"/>
@@ -2427,77 +2427,77 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="165"/>
         <source>capital N with tilde</source>
-        <translation type="unfinished"/>
+        <translation>N majúscula amb accent</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="166"/>
         <source>capital O with grave</source>
-        <translation type="unfinished"/>
+        <translation>O majúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="167"/>
         <source>capital O with acute</source>
-        <translation type="unfinished"/>
+        <translation>O majúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="168"/>
         <source>capital O with circumflex</source>
-        <translation>stort U med cirkumfleks</translation>
+        <translation>O majúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="169"/>
         <source>capital O with tilde</source>
-        <translation type="unfinished"/>
+        <translation>O majúscula amb titlla</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="170"/>
         <source>capital O with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>O majúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="171"/>
         <source>capital O with stroke</source>
-        <translation type="unfinished"/>
+        <translation>O majúscula amb traç</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="172"/>
         <source>capital ligature OE</source>
-        <translation type="unfinished"/>
+        <translation>lligadura OE en majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="173"/>
         <source>capital S with caron</source>
-        <translation type="unfinished"/>
+        <translation>S majúscula amb hàtxek</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="174"/>
         <source>capital U with grave</source>
-        <translation type="unfinished"/>
+        <translation>U majúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="175"/>
         <source>capital U with acute</source>
-        <translation type="unfinished"/>
+        <translation>U majúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="176"/>
         <source>capital U with circumflex</source>
-        <translation>stort U med cirkumfleks</translation>
+        <translation>U majúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="177"/>
         <source>capital U with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>U majúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="178"/>
         <source>capital Y with acute</source>
-        <translation type="unfinished"/>
+        <translation>Y majúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="179"/>
         <source>capital Y with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>Y majúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="180"/>
@@ -2512,602 +2512,602 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="182"/>
         <source>small a with grave</source>
-        <translation>lille a med accent grave</translation>
+        <translation>a minúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="183"/>
         <source>small a with acute</source>
-        <translation>lille a med accent aigu</translation>
+        <translation>a minúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="184"/>
         <source>small a with circumflex</source>
-        <translation>lille a med cirkumfleks</translation>
+        <translation>a minúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="185"/>
         <source>small a with tilde</source>
-        <translation>lille a med tilde</translation>
+        <translation>a minúscula amb titlla</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="186"/>
         <source>small a with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>a minúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="187"/>
         <source>small a with ring above</source>
-        <translation type="unfinished"/>
+        <translation>a minúscula amb cercle superior</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="188"/>
         <source>small ae</source>
-        <translation>lille ae</translation>
+        <translation>ae minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="189"/>
         <source>small c with cedilia</source>
-        <translation type="unfinished"/>
+        <translation>ce trencada en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="190"/>
         <source>small e with grave</source>
-        <translation>lille e med accent grave</translation>
+        <translation>e minúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="191"/>
         <source>small e with acute</source>
-        <translation>lille e med accent aigu</translation>
+        <translation>e minúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="192"/>
         <source>small e with circumflex</source>
-        <translation>lille e med cirkumfleks</translation>
+        <translation>e minúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="193"/>
         <source>small e with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>e minúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="194"/>
         <source>small i with grave</source>
-        <translation>lille i med accent grave</translation>
+        <translation>i minúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="195"/>
         <source>small i with acute</source>
-        <translation>lille i med accent aigu</translation>
+        <translation>i minúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="196"/>
         <source>small i with circumflex</source>
-        <translation type="unfinished"/>
+        <translation>i minúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="197"/>
         <source>small i with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>i minúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="198"/>
         <source>small eth</source>
-        <translation>lille &apos;eth&apos;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="199"/>
         <source>small n with tilde</source>
-        <translation>lille n med tilde</translation>
+        <translation>n minúscula amb titlla</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="200"/>
         <source>small o with grave</source>
-        <translation>lille o med accent grave</translation>
+        <translation>o minúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="201"/>
         <source>small o with acute</source>
-        <translation>lille o med accent aigu</translation>
+        <translation>o minúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="202"/>
         <source>small o with circumflex</source>
-        <translation>lille o med cirkumfleks</translation>
+        <translation>o minúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="203"/>
         <source>small o with tilde</source>
-        <translation>lille o med tilde</translation>
+        <translation>o minúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="204"/>
         <source>small o with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>o minúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="205"/>
         <source>small o with stroke</source>
-        <translation>lille o med streg</translation>
+        <translation>o minúscula amb traç</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="206"/>
         <source>small ligature oe</source>
-        <translation type="unfinished"/>
+        <translation>lligadura oe en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="207"/>
         <source>small s with caron</source>
-        <translation type="unfinished"/>
+        <translation>s minúscula amb hàtxek</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="208"/>
         <source>small u with grave</source>
-        <translation type="unfinished"/>
+        <translation>u minúscula amb accent greu</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="209"/>
         <source>small u with acute</source>
-        <translation>lille u med accent aigu</translation>
+        <translation>u minúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="210"/>
         <source>small u with circumflex</source>
-        <translation>lille u med cirkumfleks</translation>
+        <translation>u minúscula amb accent circumflex</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="211"/>
         <source>small u with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>u minúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="212"/>
         <source>small y with acute</source>
-        <translation type="unfinished"/>
+        <translation>y minúscula amb accent agut</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="213"/>
         <source>small y with diaeresis</source>
-        <translation type="unfinished"/>
+        <translation>y minúscula amb dièresi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="214"/>
         <source>small thorn</source>
-        <translation>lille &apos;thorn&apos;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="215"/>
         <source>feminine ordinal indicator</source>
-        <translation>feminin ordensindikator</translation>
+        <translation>indicador ordinal femení</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="216"/>
         <source>masculine ordinal indicator</source>
-        <translation>maskulin ordensindikator</translation>
+        <translation>indicador ordinal masculí</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="217"/>
         <source>infinity</source>
-        <translation>uendelighed</translation>
+        <translation>infinit</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="221"/>
         <source>Greek capital letter Alpha</source>
-        <translation>græsk stort bogstav Alfa</translation>
+        <translation>lletra grega Alfa majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="222"/>
         <source>Greek lower letter alpha</source>
-        <translation>Græsk lille bogstav alpha</translation>
+        <translation>lletra grega alfa minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="223"/>
         <source>Greek capital letter Beta</source>
-        <translation>græsk stort bogstav Beta</translation>
+        <translation>lletra grega Beta majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="224"/>
         <source>Greek lower letter beta</source>
-        <translation>Græsk lille bogstav beta</translation>
+        <translation>Lletra grega beta en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="225"/>
         <source>Greek capital letter Chi</source>
-        <translation>græsk stort bogstav Chi</translation>
+        <translation>lletra grega khi majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="226"/>
         <source>Greek lower letter chi</source>
-        <translation>Græsk lille bogstav chi</translation>
+        <translation>Lletra grega chi en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="227"/>
         <source>Greek capital letter Delta</source>
-        <translation>græsk stort bogstav Delta</translation>
+        <translation>lletra grega Delta majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="228"/>
         <source>Greek lower letter delta</source>
-        <translation>Græsk lille bogstav delta</translation>
+        <translation>Lletra grega delta en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="229"/>
         <source>Greek capital letter Epsilon</source>
-        <translation>græsk stort bogstav Epsilon</translation>
+        <translation>lletra grega èpsilon majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="230"/>
         <source>Greek lower letter epsilon</source>
-        <translation>Græsk lille bogstav epsilon</translation>
+        <translation>Lletra grega èpsilon en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="231"/>
         <source>Greek capital letter Eta</source>
-        <translation>græsk stort bogstav Eta</translation>
+        <translation>lletra grega eta majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="232"/>
         <source>Greek lower letter eta</source>
-        <translation>Græsk lille bogstav eta</translation>
+        <translation>Lletra grega eta en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="233"/>
         <source>Greek capital letter Gamma</source>
-        <translation>græsk stort bogstav Gamma</translation>
+        <translation>lletra grega gamma majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="234"/>
         <source>Greek lower letter gamma</source>
-        <translation>Græsk lille bogstav gamma</translation>
+        <translation>Lletra grega gamma en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="235"/>
         <source>Greek capital letter Iota</source>
-        <translation>græsk stort bogstav Jota</translation>
+        <translation>lletra grega iota majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="236"/>
         <source>Greek lower letter iota</source>
-        <translation>Græsk lille bogstav iota</translation>
+        <translation>Lletra grega iota en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="237"/>
         <source>Greek capital letter Kappa</source>
-        <translation>græsk stort bogstav Kappa</translation>
+        <translation>lletra grega kappa majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="238"/>
         <source>Greek lower letter kappa</source>
-        <translation>Græsk lille bogstav kappa</translation>
+        <translation>Lletra grega kappa en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="239"/>
         <source>Greek capital letter Lambda</source>
-        <translation>græsk stort bogstav Lambda</translation>
+        <translation>lletra grega lambda majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="240"/>
         <source>Greek lower letter lambda</source>
-        <translation>Græsk lille bogstav lambda</translation>
+        <translation>Lletra grega lambda en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="241"/>
         <source>Greek capital letter Mu</source>
-        <translation>græsk stort bogstav My</translation>
+        <translation>lletra grega mi majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="242"/>
         <source>Greek lower letter mu</source>
-        <translation>Græsk lille bogstav mu</translation>
+        <translation>lletra grega mu en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="243"/>
         <source>Greek capital letter Nu</source>
-        <translation>græsk stort bogstav Ny</translation>
+        <translation>lletra grega ni majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="244"/>
         <source>Greek lower letter nu</source>
-        <translation>Græsk lille bogstav nu</translation>
+        <translation>Lletra grega nu en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="245"/>
         <source>Greek capital letter Omega</source>
-        <translation>græsk stort bogstav Omega</translation>
+        <translation>lletra grega omega majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="246"/>
         <source>Greek lower letter omega</source>
-        <translation>Græsk lille bogstav omega</translation>
+        <translation>Lletra grega omega en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="247"/>
         <source>Greek capital letter Omicron</source>
-        <translation>græsk stort bogstav Omikron</translation>
+        <translation>lletra grega òmicron majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="248"/>
         <source>Greek lower letter omicron</source>
-        <translation>Græsk lille bogstav omicron</translation>
+        <translation>Lletra grega òmicron en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="249"/>
         <source>Greek capital letter Phi</source>
-        <translation>græsk stort bogstav Phi</translation>
+        <translation>lletra grega fi majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="250"/>
         <source>Greek lower letter phi</source>
-        <translation>Græsk lille bogstav phi</translation>
+        <translation>Lletra grega phi en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="251"/>
         <source>Greek capital letter Pi</source>
-        <translation>græsk stort bogstav Pi</translation>
+        <translation>lletra grega pi majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="252"/>
         <source>Greek lower letter pi</source>
-        <translation>Græsk lille bogstav pi</translation>
+        <translation>Lletra grega pi en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="253"/>
         <source>Greek double prime</source>
-        <translation>Græsk double prime</translation>
+        <translation>Prima doble grega</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="254"/>
         <source>Greek single prime</source>
-        <translation type="unfinished"/>
+        <translation>Prima simple grega</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="255"/>
         <source>Greek capital letter Psi</source>
-        <translation>græsk stort bogstav Psi</translation>
+        <translation>lletra grega psi majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="256"/>
         <source>Greek lower letter psi</source>
-        <translation>Græsk lille bogstav  psi</translation>
+        <translation>Lletra grega psi en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="257"/>
         <source>Greek capital letter Rho</source>
-        <translation>græsk stort bogstav Rho</translation>
+        <translation>lletra grega ro majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="258"/>
         <source>Greek lower letter rho</source>
-        <translation>Græsk lille bogstav rho</translation>
+        <translation>Lletra grega rho en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="259"/>
         <source>Greek capital letter Sigma</source>
-        <translation>græsk stort bogstav Sigma</translation>
+        <translation>lletra grega sigma majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="260"/>
         <source>Greek lower letter sigma</source>
-        <translation>Græsk lille bogstav sigma</translation>
+        <translation>Lletra grega sigma en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="261"/>
         <source>Greek capital letter Tau</source>
-        <translation>græsk stort bogstav Tau</translation>
+        <translation>lletra grega tau majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="262"/>
         <source>Greek lower letter tau</source>
-        <translation>Græsk lille bogstav tau</translation>
+        <translation>Lletra grega tau en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="263"/>
         <source>Greek capital letter Theta</source>
-        <translation>græsk stort bogstav Theta</translation>
+        <translation>lletra grega theta majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="264"/>
         <source>Greek lower letter theta</source>
-        <translation>Græsk lille bogstav theta</translation>
+        <translation>Lletra grega theta en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="265"/>
         <source>Greek capital letter Upsilon</source>
-        <translation>græsk stort bogstav Ypsilon</translation>
+        <translation>lletra grega ípsilon majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="266"/>
         <source>Greek lower letter upsilon</source>
-        <translation>Græsk lille bogstav upsilon</translation>
+        <translation>Lletra grega ípsilon en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="267"/>
         <source>Greek capital letter Xi</source>
-        <translation>græsk stort bogstav Xi</translation>
+        <translation>lletra grega csi majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="268"/>
         <source>Greek lower letter xi</source>
-        <translation>Græsk lille bogstav xi</translation>
+        <translation>Lletra grega xi en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="269"/>
         <source>Greek capital letter Zeta</source>
-        <translation>græsk stort bogstav Zeta</translation>
+        <translation>lletra grega zeta majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="270"/>
         <source>Greek lower letter zeta</source>
-        <translation>Græsk lille bogstav zeta</translation>
+        <translation>Lletra grega zeta en minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="274"/>
         <source>alef symbol</source>
-        <translation>alefsymbol</translation>
+        <translation>àlef</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="275"/>
         <source>logical and</source>
-        <translation>disjunktion (logisk eller)</translation>
+        <translation>AND lògic</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="276"/>
         <source>logical or</source>
-        <translation>konjunktion (logisk og)</translation>
+        <translation>OR lògic</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="277"/>
         <source>intersection</source>
-        <translation>fællesmængde</translation>
+        <translation>intersecció</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="278"/>
         <source>union</source>
-        <translation>foreningsmængde</translation>
+        <translation>unió</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="279"/>
         <source>congruent to</source>
-        <translation>kongruent til</translation>
+        <translation>congruent</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="280"/>
         <source>downwards arrow with corner leftwards</source>
-        <translation>pil nedad med hjørne mod venstre</translation>
+        <translation>fletxa avall amb cantonada esquerra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="281"/>
         <source>currency sign</source>
-        <translation>valutategn</translation>
+        <translation>símbol de moneda</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="282"/>
         <source>downwards double arrow</source>
-        <translation>dobbeltpil nedad</translation>
+        <translation>doble fletxa avall</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="283"/>
         <source>upwards double arrow</source>
-        <translation>dobbeltpil opad</translation>
+        <translation>doble fletxa amunt</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="284"/>
         <source>downwards arrow</source>
-        <translation>pil nedad</translation>
+        <translation>fletxa avall</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="285"/>
         <source>upwards arrow</source>
-        <translation>pil opad</translation>
+        <translation>flrtxa amunt</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="286"/>
         <source>empty set</source>
-        <translation>den tomme mængde</translation>
+        <translation>conjunt buit</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="287"/>
         <source>identical to</source>
-        <translation>identisk med</translation>
+        <translation>idèntic a</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="288"/>
         <source>there exists</source>
-        <translation>der findes</translation>
+        <translation>existeix</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="289"/>
         <source>Latin small letter f with hook</source>
-        <translation>latinsk lille bogstav f med krog</translation>
+        <translation>lletra llatina f minúscula amb ganxo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="290"/>
         <source>for all</source>
-        <translation>alkvantor (for alle)</translation>
+        <translation>per a tot</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="291"/>
         <source>fraction slash</source>
-        <translation>fraktionsstreg</translation>
+        <translation>ratlla de fracció</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="292"/>
         <source>left right double arrow</source>
-        <translation>venstre-højredobbeltpil</translation>
+        <translation>doble fletxa esquerra dreta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="293"/>
         <source>left right single arrow</source>
-        <translation>enkeltpil mod højre og venstre</translation>
+        <translation>fletxa simple esquerra-dreta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="294"/>
         <source>black-letter capital I</source>
-        <translation>gotisk stort I</translation>
+        <translation>lletra gòtica I majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="295"/>
         <source>integral</source>
-        <translation>integraltegn</translation>
+        <translation>integral</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="296"/>
         <source>element of</source>
-        <translation>tilhører (er element i)</translation>
+        <translation>pertany a</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="297"/>
         <source>leftwards double arrow</source>
-        <translation>dobbeltpil mod venstre</translation>
+        <translation>doble fletxa esquerra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="298"/>
         <source>double right arrow</source>
-        <translation>dobbeltpil mod højre</translation>
+        <translation>fletxa doble cap a la dreta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="299"/>
         <source>left-pointing angle bracket</source>
-        <translation>peger mod venstre vinkelparentes</translation>
+        <translation>parèntesi angular inicial</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="300"/>
         <source>right-pointing angle bracket</source>
-        <translation>peger mod højre vinkelparentes</translation>
+        <translation>parèntesi angular final</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="301"/>
         <source>left ceiling</source>
-        <translation>venstre loft</translation>
+        <translation>sostre esquerra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="302"/>
         <source>right ceiling</source>
-        <translation>højre loft</translation>
+        <translation>sostre dreta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="303"/>
         <source>less-than or equal to</source>
-        <translation>mindre end eller lig med</translation>
+        <translation>igual o menor que</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="304"/>
         <source>greater-than or equal to</source>
-        <translation>større end eller lig med</translation>
+        <translation>igual o més gran que</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="305"/>
         <source>left floor</source>
-        <translation>venstre gulv</translation>
+        <translation>terra esquerra</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="306"/>
         <source>right floor</source>
-        <translation>højre gulv</translation>
+        <translation>terra dreta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="307"/>
         <source>asterisk operator</source>
-        <translation>stjerneoperator</translation>
+        <translation>operador asterisc</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="308"/>
@@ -3117,7 +3117,7 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="309"/>
         <source>macron</source>
-        <translation>makron</translation>
+        <translation>màcron</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="310"/>
@@ -3127,162 +3127,162 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="311"/>
         <source>not equal to</source>
-        <translation>ikke lig med</translation>
+        <translation>diferent</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="312"/>
         <source>contains as member</source>
-        <translation>indholder som medlem</translation>
+        <translation>conté</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="313"/>
         <source>not sign</source>
-        <translation>ikketegn</translation>
+        <translation>signe de negació</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="314"/>
         <source>not an element of</source>
-        <translation>tilhører ikke (er ikke element i)</translation>
+        <translation>no pertany a</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="315"/>
         <source>not a subset of</source>
-        <translation>ikke delmængde af</translation>
+        <translation>no és subconjunt de</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="316"/>
         <source>overline</source>
-        <translation>streg over</translation>
+        <translation>línia superior</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="317"/>
         <source>circled plus</source>
-        <translation>cirkel med plus</translation>
+        <translation>suma directa</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="318"/>
         <source>circled times</source>
-        <translation>cirkel med gangetegn</translation>
+        <translation>producte tensorial</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="319"/>
         <source>partial differential</source>
-        <translation>partielt afledet</translation>
+        <translation>derivada parcial</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="320"/>
         <source>per mille sign</source>
-        <translation>promilletegn</translation>
+        <translation>signe per mil</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="321"/>
         <source>up tack</source>
-        <translation>vinkelret på</translation>
+        <translation>perpendicular</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="322"/>
         <source>Greek pi symbol</source>
-        <translation>græsk pisymbol</translation>
+        <translation>símbol grec pi</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="323"/>
         <source>n-ary product</source>
-        <translation>sumværdi</translation>
+        <translation>producte n-ari</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="324"/>
         <source>proportional to</source>
-        <translation>proportional med</translation>
+        <translation>proporcional a</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="325"/>
         <source>square root</source>
-        <translation>kvadratrod</translation>
+        <translation>arrel quadrada</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="326"/>
         <source>black-letter capital R</source>
-        <translation>gotisk stort R</translation>
+        <translation>lletra gòtica R majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="327"/>
         <source>dot operator</source>
-        <translation>prikoperator</translation>
+        <translation>operador punt</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="328"/>
         <source>Greek small letter final sigma</source>
-        <translation>græsk lille bogstav sidste sigma</translation>
+        <translation>lletra grega sigma final minúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="329"/>
         <source>tilde operator</source>
-        <translation>tildeoperator</translation>
+        <translation>operador titlla</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="330"/>
         <source>subset of</source>
-        <translation>delmængde af</translation>
+        <translation>subconjunt de</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="331"/>
         <source>superset of</source>
-        <translation>supersæt af</translation>
+        <translation>superconjunt de</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="332"/>
         <source>subset of or equal to</source>
-        <translation>delmængde af eller lig med</translation>
+        <translation>subconjunt o igual a</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="333"/>
         <source>superset of or equal to</source>
-        <translation>supersæt af eller lig med</translation>
+        <translation>superconjunt o igual a</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="334"/>
         <source>n-ary summation</source>
-        <translation>produkt</translation>
+        <translation>suma n-aria</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="335"/>
         <source>superscript one</source>
-        <translation>hævet skrift et</translation>
+        <translation>u volat</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="336"/>
         <source>superscript two</source>
-        <translation>hævet skrift to</translation>
+        <translation>dos volat</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="337"/>
         <source>superscript three</source>
-        <translation>hævet skrift tre</translation>
+        <translation>tres volat</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="338"/>
         <source>therefore sign</source>
-        <translation>forklaringstegn</translation>
+        <translation>implica</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="339"/>
         <source>Greek theta symbol</source>
-        <translation>græsk thetasymbol</translation>
+        <translation>símbol grec theta</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="340"/>
         <source>Greek Upsilon with hook symbol</source>
-        <translation>græsk ypsilon med krog-symbol</translation>
+        <translation>símbol grec ípsilon amb ganxo</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="341"/>
         <source>script capital P</source>
-        <translation>Weierstrass-p</translation>
+        <translation>lletra cal·ligràfica P majúscula</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="342"/>
         <source>yen sign</source>
-        <translation>yentegn</translation>
+        <translation>símbol del ien</translation>
     </message>
 </context>
 <context>
@@ -3290,72 +3290,72 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectFiles.ui" line="14"/>
         <source>Insert File</source>
-        <translation>Indsæt fil</translation>
+        <translation>Insereix un fitxer</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="46"/>
         <source>List only the file names which contain the text you enter.</source>
-        <translation>Anfør kun de filnavne, som indeholder den tekst, du indtaster.</translation>
+        <translation>Mostra només els noms de fitxer que continguin el text introduït.</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="49"/>
         <source>Filter:</source>
-        <translation>Filter:</translation>
+        <translation>Filtre:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.ui" line="118"/>
         <source>Thumbnail size:</source>
-        <translation>Miniaturestørrelse:</translation>
+        <translation>Mida de la miniatura:</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="128"/>
         <source>All</source>
-        <translation>Alle</translation>
+        <translation>Tot</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="129"/>
         <source>Images</source>
-        <translation>Billeder</translation>
+        <translation>Imatges</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="130"/>
         <source>Video</source>
-        <translation>Video</translation>
+        <translation>Vídeo</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="131"/>
         <source>Audio</source>
-        <translation>Lyd</translation>
+        <translation>Àudio</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="176"/>
         <source>Media Files In the Book</source>
-        <translation>Mediefiler i bogen</translation>
+        <translation>Fitxers multimèdia del llibre</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="179"/>
         <source>Thumbnails</source>
-        <translation>Miniaturer</translation>
+        <translation>Miniatures</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="349"/>
         <source>shades</source>
-        <translation>nuancer</translation>
+        <translation>nivells</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="349"/>
         <source>colors</source>
-        <translation>farver</translation>
+        <translation>colors</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="350"/>
         <source>Grayscale</source>
-        <translation>Gråskala</translation>
+        <translation>Escala de grisos</translation>
     </message>
     <message>
         <location filename="../SelectFiles.cpp" line="350"/>
         <source>Color</source>
-        <translation>Farve</translation>
+        <translation>Color</translation>
     </message>
 </context>
 <context>
@@ -3363,39 +3363,39 @@ Linje: %1 Kolonne %2 - %3</translation>
     <message>
         <location filename="../SelectHyperlink.ui" line="14"/>
         <source>Select Target</source>
-        <translation>Vælg mål</translation>
+        <translation>Seleccioneu l&apos;objectiu</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="22"/>
         <source>List only the entries that match the text you enter.</source>
-        <translation>Vis kun angivelserne, der matcher den tekst, du indtaster.</translation>
+        <translation>Mostra només les entrades que continguin el text introduït.</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="25"/>
         <source>Filter:</source>
-        <translation>Filter:</translation>
+        <translation>Filtre:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="58"/>
         <source>Enter the target URL for this hyperlink.  You can select or 
 double click on existing destinations in your book from the list above.</source>
-        <translation>Indtast mål-URL&apos;et for dette hyperlink.  Du kan vælge eller
-dobbeltklikke på eksisterende destinationer i din bog fra listen ovenfor.</translation>
+        <translation>Introduïu l&apos;URL objectiu de l&apos;enllaç. Podeu seleccionar  
+o fer doble clic sobre objectius presents al llibre a la llista del damunt.</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.ui" line="62"/>
         <source>Target:</source>
-        <translation>Mål:</translation>
+        <translation>Objectiu:</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="96"/>
         <source>Targets in the Book</source>
-        <translation>Mål i bogen</translation>
+        <translation>Objectius del llibre</translation>
     </message>
     <message>
         <location filename="../SelectHyperlink.cpp" line="97"/>
         <source>Text</source>
-        <translation>Tekst</translation>
+        <translation>Text</translation>
     </message>
 </context>
 <context>
@@ -3403,7 +3403,7 @@ dobbeltklikke på eksisterende destinationer i din bog fra listen ovenfor.</tran
     <message>
         <location filename="../SelectId.ui" line="14"/>
         <source>Insert ID </source>
-        <translation>Indsæt ID </translation>
+        <translation>Insereix un identificador</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="22"/>
@@ -3412,16 +3412,16 @@ dobbeltklikke på eksisterende destinationer i din bog fra listen ovenfor.</tran
 The dropdown box shows existing ID names in the current file.
 
 ID names must be unique and start with a letter.</source>
-        <translation>Indtast et ID-navn til at bruge som en destination for hyperlinks, noter og indholdsfortegnelsesindtastninger.
+        <translation>Introduïu un nom d&apos;identificador per als enllaços, notes i entrades de la taula de continguts.
 
-Rullemenuboksen viser eksisterende ID-navne i den aktuelle fil.
+El menú emergent mostra els noms d&apos;identificador disponibles al fixer actual.
 
-ID skal være unikke og starte med et bogstav.</translation>
+Els noms d&apos;identificador han de únics i començar amb una lletra.</translation>
     </message>
     <message>
         <location filename="../SelectId.ui" line="29"/>
         <source>ID:</source>
-        <translation>ID:</translation>
+        <translation>Identificador:</translation>
     </message>
 </context>
 <context>
@@ -3436,9 +3436,9 @@ ID skal være unikke og starte med et bogstav.</translation>
         <source>The requested file name contains non-ASCII characters. You should only use ASCII characters in filenames. Using non-ASCII characters can prevent the EPUB from working with some readers.
 
 Continue using the requested filename?</source>
-        <translation>Det ønskede filnavn indeholder ikke-ASCII-tegn. Du bør kun bruge ASCII-tegn i filnavne. Brug af ikke-ASCII-tegn kan forhindre EPUB i at fungere på nogle læsere.
+        <translation>El nom de fitxer que heu indicat conté caràcters no ASCII. Es recomana que els noms de fitxer només tinguin caràcters ASCII ja que, altrament, l&apos;EPUB podria donar problemes en alguns dispositius de lectura.
 
-Fortsæt med at bruge det ønskede filnavn?</translation>
+Encara voleu fer servir aquest nom de fitxer?</translation>
     </message>
 </context>
 <context>
@@ -3446,17 +3446,17 @@ Fortsæt med at bruge det ønskede filnavn?</translation>
     <message>
         <location filename="../WebViewEdit.cpp" line="158"/>
         <source>No suggestions</source>
-        <translation>Ingen forslag</translation>
+        <translation>Cap suggeriment</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="170"/>
         <source>Check Spelling</source>
-        <translation>Kontroller stavning</translation>
+        <translation>Comprova l&apos;ortografia</translation>
     </message>
     <message>
         <location filename="../WebViewEdit.cpp" line="179"/>
         <source>Select Language</source>
-        <translation>Vælg sprog</translation>
+        <translation>Selecciona la llengua</translation>
     </message>
 </context>
 </TS>
