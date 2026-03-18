@@ -2337,7 +2337,7 @@ Línia %1 - Columna %2 - %3</translation>
     <message>
         <location filename="../SelectCharacter.cpp" line="147"/>
         <source>small tilde</source>
-        <translation type="unfinished"/>
+        <translation>titlla petita</translation>
     </message>
     <message>
         <location filename="../SelectCharacter.cpp" line="148"/>

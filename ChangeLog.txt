@@ -1,5 +1,14 @@
 Change Log
 ==========
+
+PageEdit-2.7.6
+    Bug Fixes
+      - Update broken or missing translations from the previous release
+
+    New Features
+      - add ability to unset environment variables to the env_vars.txt file
+ 
+
 PageEdit-2.7.5
     Bug Fixes
       - make heading tool properly handle bare text inside the body tag without errors
