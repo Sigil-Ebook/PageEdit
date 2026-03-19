@@ -6,7 +6,7 @@ PageEdit-2.7.6
       - Update broken or missing translations from the previous release
 
     New Features
-      - add ability to unset environment variables to the env_vars.txt file
+      - add ability to unset environment variables using the env-vars.txt file
  
 
 PageEdit-2.7.5
