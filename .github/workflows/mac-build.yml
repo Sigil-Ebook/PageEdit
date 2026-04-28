@@ -43,10 +43,10 @@ jobs:
     runs-on: macos-15-intel
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Cache Custom Qt
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: ${{runner.workspace}}/${{env.QT}}
         key: ${{ runner.os }}-qtdeps-${{hashFiles('**/reset-mac-caches.txt')}}
@@ -103,10 +103,11 @@ jobs:
         tar -cJf PageEdit.tar.xz PageEdit.app
 
 
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       if: contains(github.event.head_commit.message, '[deploy]') || github.event_name == 'workflow_dispatch'
       with:
         name: pageedit-installer
         path: ${{runner.workspace}}/build/bin/PageEdit.tar.xz
+        archive: false
         retention-days: 5
          
