@@ -44,15 +44,15 @@ jobs:
     runs-on: windows-2025-vs2026
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: 3.11.3
 
     - name: Cache Custom Qt
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: ${{runner.workspace}}\${{env.QT}}
         key: ${{ runner.os }}-qtdeps-${{hashFiles('**/reset-win-caches.txt')}}
@@ -99,9 +99,10 @@ jobs:
         call "C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
         ninja -j2 deployinstaller
 
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       if: contains(github.event.head_commit.message, '[deploy]') || github.event_name == 'workflow_dispatch'
       with:
         name: pageedit-installer
         path: ${{runner.workspace}}\build\deploy\*.exe
+        archive: false
         retention-days: 5
