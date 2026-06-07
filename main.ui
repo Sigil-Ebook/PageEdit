@@ -85,9 +85,32 @@
 
    <widget class="QMenu" name="menuFind">
     <property name="title">
-     <string>&amp;Find</string>
+     <string>&amp;Search</string>
     </property>
+    <widget class="QMenu" name="menuSearchCurrentFile">
+     <property name="title">
+      <string>Current Fil&amp;e</string>
+     </property>
+     <addaction name="actionFindNextInFile"/>
+     <addaction name="separator"/>
+     <addaction name="actionReplaceNextInFile"/>
+     <addaction name="actionReplaceAllInFile"/>
+     <addaction name="separator"/>
+     <addaction name="actionCountInFile"/>
+    </widget>
     <addaction name="actionFind"/>
+    <addaction name="separator"/>
+    <addaction name="actionFindNext"/>
+    <addaction name="actionFindPrevious"/>
+    <addaction name="separator"/>
+    <addaction name="actionReplaceCurrent"/>
+    <addaction name="actionReplaceNext"/>
+    <addaction name="actionReplacePrevious"/>
+    <addaction name="actionReplaceAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionCount"/>
+    <addaction name="separator"/>
+    <addaction name="menuSearchCurrentFile"/>
    </widget>
    
    <widget class="QMenu" name="menuInsert">
@@ -1184,13 +1207,100 @@
      <normaloff>:/icons/edit-find.svg</normaloff>:/icons/edit-find.svg</iconset>
    </property>
    <property name="text">
-    <string>Find</string>
+    <string>Find &amp; Replace...</string>
    </property>
    <property name="toolTip">
-    <string>Find text in the page</string>
+    <string>Find and replace text</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+F</string>
+   </property>
+  </action>
+
+  <action name="actionFindNext">
+   <property name="text">
+    <string>Find &amp;Next</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+
+  <action name="actionFindPrevious">
+   <property name="text">
+    <string>Find &amp;Previous</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+G</string>
+   </property>
+  </action>
+
+  <action name="actionReplaceCurrent">
+   <property name="text">
+    <string>Replace</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+
+  <action name="actionReplaceNext">
+   <property name="text">
+    <string>&amp;Replace/Find Next</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+]</string>
+   </property>
+  </action>
+
+  <action name="actionReplacePrevious">
+   <property name="text">
+    <string>R&amp;eplace/Find Previous</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+[</string>
+   </property>
+  </action>
+
+  <action name="actionReplaceAll">
+   <property name="text">
+    <string>Replace &amp;All</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+
+  <action name="actionCount">
+   <property name="text">
+    <string>&amp;Count All</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+
+  <action name="actionFindNextInFile">
+   <property name="text">
+    <string>Find &amp;Next In File</string>
+   </property>
+  </action>
+
+  <action name="actionReplaceNextInFile">
+   <property name="text">
+    <string>&amp;Replace Next In File</string>
+   </property>
+  </action>
+
+  <action name="actionReplaceAllInFile">
+   <property name="text">
+    <string>Replace &amp;All In File</string>
+   </property>
+  </action>
+
+  <action name="actionCountInFile">
+   <property name="text">
+    <string>&amp;Count All In File</string>
    </property>
   </action>
 

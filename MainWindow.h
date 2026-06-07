@@ -52,7 +52,7 @@ class QHBoxLayout;
 class QSlider;
 class QLabel;
 class SelectCharacter;
-class SearchToolbar;
+class FindReplace;
 
 const int STATUSBAR_MSG_DISPLAY_TIME = 7000;
 
@@ -125,6 +125,14 @@ public slots:
     QString GetCurrentFilePath();
     QStringList GetAllFilePaths(int skip = -1);
 
+    QString GetSearchableFileText(const QString &relative_path = QString());
+    bool SetSearchableFileText(const QString &relative_path, const QString &text);
+    QStringList GetSearchableFilePaths(bool current_file_only = false) const;
+    QString GetCurrentSpineRelativePath() const;
+    int GetCurrentSpineIndex() const;
+    void GoToSpineFile(int index);
+    void ScrollSourceToOffset(int offset, const QString &source);
+
     // Mode slots
     void ToggleMode(bool on);
 
@@ -150,6 +158,18 @@ public slots:
     void PasteText(const QString& text);
     void PreferencesDialog();
     void SearchOnPage();
+    void FindNextAction();
+    void FindPreviousAction();
+    void ReplaceCurrentAction();
+    void ReplaceNextAction();
+    void ReplacePreviousAction();
+    void ReplaceAllAction();
+    void CountAllAction();
+    void FindNextInFileAction();
+    void ReplaceNextInFileAction();
+    void ReplaceAllInFileAction();
+    void CountAllInFileAction();
+    FindReplace *GetFindReplace();
     void InsertSpecialCharacter();
     void InsertSGFSectionMarker();
     void InsertBulletedList();
@@ -231,7 +251,7 @@ private:
     QByteArray m_LastWindowSize;
     QString m_LastFolderOpen;
     bool m_using_wsprewrap;
-    SearchToolbar * m_search;
+    FindReplace * m_FindReplace;
     QVBoxLayout * m_layout;
     QString m_source;
 
