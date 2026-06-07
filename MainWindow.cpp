@@ -62,7 +62,7 @@
 #include "Preferences.h"
 #include "GumboInterface.h"
 #include "HTMLEncodingResolver.h"
-#include "SearchToolbar.h"
+#include "FindReplace.h"
 #include "OPFReader.h"
 #include "TagLister.h"
 #include "MainApplication.h"
@@ -113,7 +113,7 @@ MainWindow::MainWindow(QString filepath, QString spineno, QString curpos, QWidge
     m_LastWindowSize(QByteArray()),
     m_LastFolderOpen(QString()),
     m_using_wsprewrap(false),
-    m_search(NULL),
+    m_FindReplace(NULL),
     m_layout(NULL),
     m_SpineList(QStringList()),
     m_Base(QString()),
@@ -345,6 +345,131 @@ QStringList MainWindow::GetAllFilePaths(int skip)
     return res;
 }
 
+QString MainWindow::GetCurrentSpineRelativePath() const
+{
+    if (m_ListPtr >= 0 && m_ListPtr < m_SpineList.count()) {
+        return m_SpineList.at(m_ListPtr);
+    }
+    return QString();
+}
+
+int MainWindow::GetCurrentSpineIndex() const
+{
+    return m_ListPtr;
+}
+
+QStringList MainWindow::GetSearchableFilePaths(bool current_file_only) const
+{
+    if (m_ListPtr < 0 || m_SpineList.isEmpty()) {
+        return QStringList();
+    }
+
+    if (current_file_only) {
+        return QStringList() << m_SpineList.at(m_ListPtr);
+    }
+
+    return m_SpineList;
+}
+
+QString MainWindow::GetSearchableFileText(const QString &relative_path)
+{
+    QString rel = relative_path;
+
+    if (rel.isEmpty()) {
+        rel = GetCurrentSpineRelativePath();
+    }
+
+    if (rel.isEmpty()) {
+        return QString();
+    }
+
+    const bool is_current = (rel == GetCurrentSpineRelativePath());
+
+    if (is_current && !m_CurrentFilePath.isEmpty()) {
+        return GetCleanHtml();
+    }
+
+    const QString fullpath = m_Base + rel;
+
+    try {
+        QString text = HTMLEncodingResolver::ReadHTMLFile(fullpath);
+        GumboInterface gi(text, "any_version");
+        return gi.getxhtml();
+    } catch (std::exception &) {
+        return QString();
+    }
+}
+
+bool MainWindow::SetSearchableFileText(const QString &relative_path, const QString &text)
+{
+    QString rel = relative_path;
+
+    if (rel.isEmpty()) {
+        rel = GetCurrentSpineRelativePath();
+    }
+
+    if (rel.isEmpty()) {
+        return false;
+    }
+
+    const bool is_current = (rel == GetCurrentSpineRelativePath());
+    const QString fullpath = is_current ? m_CurrentFilePath : (m_Base + rel);
+
+    if (is_current) {
+        UpdatePage(fullpath, text);
+        m_source = GetSource();
+        return true;
+    }
+
+    try {
+        Utility::WriteUnicodeTextFile(text, fullpath);
+        return true;
+    } catch (std::exception &) {
+        return false;
+    }
+}
+
+void MainWindow::GoToSpineFile(int index)
+{
+    if (index < 0 || index >= m_SpineList.count()) {
+        return;
+    }
+
+    if (m_UpdatePageInProgress) {
+        return;
+    }
+
+    m_ListPtr = index;
+    m_CurrentFilePath = m_Base + m_SpineList.at(m_ListPtr);
+    ui.cbNavigate->setCurrentIndex(m_ListPtr);
+    UpdatePage(m_CurrentFilePath);
+}
+
+void MainWindow::ScrollSourceToOffset(int offset, const QString &source)
+{
+    TagLister tl(source);
+    const QString webpath = tl.GeneratePathToTag(offset);
+    const QList<ElementIndex> hierarchy = m_WebView->ConvertQWebPathToHierarchy(webpath);
+
+    if (!hierarchy.isEmpty()) {
+        m_WebView->StoreCaretLocationUpdate(hierarchy);
+        m_WebView->ExecuteCaretUpdate();
+    }
+}
+
+FindReplace *MainWindow::GetFindReplace()
+{
+    if (!m_FindReplace) {
+        m_FindReplace = new FindReplace(this, m_WebView, this);
+        m_FindReplace->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        m_layout->insertWidget(m_layout->count() - 1, m_FindReplace);
+        m_layout->setStretchFactor(m_WebView, 1);
+        m_FindReplace->hide();
+    }
+
+    return m_FindReplace;
+}
+
 // Mode setting
 void MainWindow::ToggleMode(bool edit_mode)
 {
@@ -539,7 +664,7 @@ void MainWindow::SetupView()
     QFrame *frame = new QFrame(this);
     m_layout = new QVBoxLayout(frame);
     frame->setLayout(m_layout);
-    m_layout->addWidget(m_WebView);
+    m_layout->addWidget(m_WebView, 1);
     m_layout->setContentsMargins(0, 0, 0, 0);
     frame->setObjectName("PrimaryFrame");
     setCentralWidget(frame);
@@ -1799,13 +1924,64 @@ void MainWindow::PreferencesDialog()
 
 void MainWindow::SearchOnPage()
 {
-    if (!m_search) {
-        m_search = new SearchToolbar(m_WebView, this);
-        // m_search.data()->showMinimalInPopupWindow();
-        m_layout->insertWidget(m_layout->count() - 1, m_search);
-    }
-    m_search->show();
-    m_search->focusSearchLine();
+    FindReplace *find_replace = GetFindReplace();
+    find_replace->SetUpFindText();
+    find_replace->show();
+}
+
+void MainWindow::FindNextAction()
+{
+    GetFindReplace()->FindNext();
+}
+
+void MainWindow::FindPreviousAction()
+{
+    GetFindReplace()->FindPrevious();
+}
+
+void MainWindow::ReplaceCurrentAction()
+{
+    GetFindReplace()->ReplaceCurrent();
+}
+
+void MainWindow::ReplaceNextAction()
+{
+    GetFindReplace()->Replace();
+}
+
+void MainWindow::ReplacePreviousAction()
+{
+    GetFindReplace()->ReplacePrevious();
+}
+
+void MainWindow::ReplaceAllAction()
+{
+    GetFindReplace()->ReplaceAll();
+}
+
+void MainWindow::CountAllAction()
+{
+    GetFindReplace()->Count();
+}
+
+void MainWindow::FindNextInFileAction()
+{
+    GetFindReplace()->FindNextInFile();
+}
+
+void MainWindow::ReplaceNextInFileAction()
+{
+    GetFindReplace()->ReplaceNextInFile();
+}
+
+void MainWindow::ReplaceAllInFileAction()
+{
+    GetFindReplace()->ReplaceAllInFile();
+}
+
+void MainWindow::CountAllInFileAction()
+{
+    GetFindReplace()->CountInFile();
 }
 
 void MainWindow::InsertSpecialCharacter()
@@ -2173,8 +2349,19 @@ void MainWindow::ConnectSignalsToSlots()
     connect(ui.actionSelectAll, SIGNAL(triggered()),  this,   SLOT(SelectAll()));
     connect(ui.actionMode,      SIGNAL(toggled(bool)),this,   SLOT(ToggleMode(bool))); 
 
-    //Find Related
-    connect(ui.actionFind,      SIGNAL(triggered()),  this,   SLOT(SearchOnPage()));
+    // Search Related (lazy-create FindReplace — only on first use)
+    connect(ui.actionFind, SIGNAL(triggered()), this, SLOT(SearchOnPage()));
+    connect(ui.actionFindNext, SIGNAL(triggered()), this, SLOT(FindNextAction()));
+    connect(ui.actionFindPrevious, SIGNAL(triggered()), this, SLOT(FindPreviousAction()));
+    connect(ui.actionReplaceCurrent, SIGNAL(triggered()), this, SLOT(ReplaceCurrentAction()));
+    connect(ui.actionReplaceNext, SIGNAL(triggered()), this, SLOT(ReplaceNextAction()));
+    connect(ui.actionReplacePrevious, SIGNAL(triggered()), this, SLOT(ReplacePreviousAction()));
+    connect(ui.actionReplaceAll, SIGNAL(triggered()), this, SLOT(ReplaceAllAction()));
+    connect(ui.actionCount, SIGNAL(triggered()), this, SLOT(CountAllAction()));
+    connect(ui.actionFindNextInFile, SIGNAL(triggered()), this, SLOT(FindNextInFileAction()));
+    connect(ui.actionReplaceNextInFile, SIGNAL(triggered()), this, SLOT(ReplaceNextInFileAction()));
+    connect(ui.actionReplaceAllInFile, SIGNAL(triggered()), this, SLOT(ReplaceAllInFileAction()));
+    connect(ui.actionCountInFile, SIGNAL(triggered()), this, SLOT(CountAllInFileAction()));
 
     // Insert Related
     connect(ui.actionInsertSGFSectionMarker, SIGNAL(triggered()), this, SLOT(InsertSGFSectionMarker()));

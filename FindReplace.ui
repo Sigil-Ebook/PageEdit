@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindReplace</class>
+ <widget class="QWidget" name="FindReplace">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>90</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="topMargin">
+    <number>4</number>
+   </property>
+   <property name="bottomMargin">
+    <number>4</number>
+   </property>
+   <item>
+    <widget class="QToolButton" name="closeButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Hide Find and Replace</string>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="findLabel">
+       <property name="text">
+        <string>Find:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="cbFind">
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="maxCount">
+        <number>25</number>
+       </property>
+       <property name="duplicatesEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="findNext">
+       <property name="text">
+        <string>Find</string>
+       </property>
+       <property name="toolTip">
+        <string>Find next match.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="replaceFind">
+       <property name="text">
+        <string>Replace/Find</string>
+       </property>
+       <property name="toolTip">
+        <string>Replace selected match and find next.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="replaceLabel">
+       <property name="text">
+        <string>Replace:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="cbReplace">
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="maxCount">
+        <number>25</number>
+       </property>
+       <property name="duplicatesEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="replaceCurrent">
+       <property name="text">
+        <string>Replace</string>
+       </property>
+       <property name="toolTip">
+        <string>Replace current match only.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="replaceAll">
+       <property name="text">
+        <string>Replace All</string>
+       </property>
+       <property name="toolTip">
+        <string>Replace all matches.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="optionsLabel">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <layout class="QHBoxLayout" name="optionsLayout">
+       <item>
+        <widget class="QComboBox" name="cbSearchMode"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cbLookWhere"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cbSearchDirection"/>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="chkWrap">
+         <property name="text">
+          <string>Wrap</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="countAll">
+       <property name="text">
+        <string>Count All</string>
+       </property>
+       <property name="toolTip">
+        <string>Count all matches.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="message">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>0</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
