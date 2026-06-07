@@ -18,6 +18,9 @@
 
 #include "SearchOperations.h"
 
+// Skip XHTML tags so literal search/replace targets text content only (from Sigil).
+static const QString REGEX_OPTION_TEXT_ONLY = QStringLiteral("<[^<>]*>(*SKIP)(*F)|");
+
 QRegularExpression SearchOperations::BuildSearchRegex(const QString &find_text,
                                                       SearchMode search_mode,
                                                       bool dot_all)
@@ -31,6 +34,7 @@ QRegularExpression SearchOperations::BuildSearchRegex(const QString &find_text,
     }
 
     pattern = QRegularExpression::escape(pattern);
+    pattern = REGEX_OPTION_TEXT_ONLY + pattern;
 
     if (dot_all) {
         opts |= QRegularExpression::DotMatchesEverythingOption;
