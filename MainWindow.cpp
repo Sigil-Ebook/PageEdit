@@ -1315,6 +1315,21 @@ void MainWindow::closeEvent(QCloseEvent *event)
     if (AllowSaveIfModified()) {
         SaveSettings();
         event->accept();
+
+#ifdef Q_OS_MAC
+        // macOS keeps a hidden basemw window alive (menubar workaround), so the app
+        // would otherwise stay running after the user clicks the red close button.
+        int other_editor_windows = 0;
+        foreach (QWidget *widget, QApplication::topLevelWidgets()) {
+            MainWindow *other = qobject_cast<MainWindow *>(widget);
+            if (other && other != this && other->isVisible()) {
+                other_editor_windows++;
+            }
+        }
+        if (other_editor_windows == 0) {
+            qApp->quit();
+        }
+#endif
         return;
     }
     event->ignore();
