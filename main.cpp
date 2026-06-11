@@ -43,8 +43,10 @@
 # include <QFileDialog>
 # include <QKeySequence>
 # include <QAction>
+# include <QMainWindow>
 extern void disableWindowTabbing();
 extern void removeMacosSpecificMenuItems();
+QMainWindow *g_mac_menubar_window = nullptr;
 #endif
 
 #include "MainApplication.h"
@@ -432,6 +434,7 @@ int main(int argc, char *argv[])
 
     basemw->setMenuBar(mac_menu);
     basemw->show();
+    g_mac_menubar_window = basemw;
 #endif
 
     // Set ui font from preferences

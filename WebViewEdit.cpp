@@ -372,14 +372,28 @@ void WebViewEdit::UpdateFinishedState(bool okay)
     emit DocumentLoaded();
 }
 
-QString WebViewEdit::GetHtml() const 
+QString WebViewEdit::GetHtml(int timeout_ms) const
 {
-    HTMLResult * pres = new HTMLResult();
+    HTMLResult *pres = new HTMLResult();
     page()->toHtml(SetToHTMLResultFunctor(pres));
-    while(!pres->isFinished()) {
-        qApp->processEvents(QEventLoop::ExcludeUserInputEvents | QEventLoop::ExcludeSocketNotifiers, 100);
+
+    if (timeout_ms <= 0) {
+        while (!pres->isFinished()) {
+            qApp->processEvents(QEventLoop::ExcludeUserInputEvents | QEventLoop::ExcludeSocketNotifiers, 100);
+        }
+    } else {
+        int waited_ms = 0;
+        while (!pres->isFinished() && waited_ms < timeout_ms) {
+            qApp->processEvents(QEventLoop::ExcludeUserInputEvents | QEventLoop::ExcludeSocketNotifiers, 50);
+            waited_ms += 50;
+        }
+        if (!pres->isFinished()) {
+            delete pres;
+            return QString();
+        }
     }
-    QString res = pres->res;
+
+    const QString res = pres->res;
     delete pres;
     return res;
 }

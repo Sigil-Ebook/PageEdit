@@ -124,10 +124,11 @@ public:
 
     bool SetAncestorTagAttributeValue(const QString &attribute_name, const QString &attribute_value, const QStringList &tag_list);
 
+    // timeout_ms <= 0 waits indefinitely; on timeout returns a null QString
+    QString GetHtml(int timeout_ms = 0) const;
 
 public slots:
      void PasteText(const QString &text);
-     QString GetHtml() const;
      QString GetSelectedText();
      void ApplyCaseChangeToSelection(const Utility::Casing &casing);
      bool InsertHtml(const QString &html);

@@ -68,6 +68,10 @@
 #include "MainApplication.h"
 #include "MainWindow.h"
 
+#ifdef Q_OS_MAC
+extern QMainWindow *g_mac_menubar_window;
+#endif
+
 #define DBG if(0)
 
 static const QString SETTINGS_GROUP = "mainwindow";
@@ -1273,11 +1277,16 @@ void MainWindow::ReloadPreview()
 }
 
 // returns false if the user wants to cancel the exit
-bool MainWindow::AllowSaveIfModified() 
+bool MainWindow::AllowSaveIfModified(bool on_close)
 {
     // if the page source has been modified since it was loaded or saved
     // allow opportunity to save it
-    QString source = GetSource();
+    const int timeout_ms = on_close ? 3000 : 0;
+    const QString source = GetSource(timeout_ms);
+    if (on_close && source.isNull()) {
+        // WebEngine toHtml can stall while the window is closing on macOS
+        return true;
+    }
     // qDebug() << "new  source: " << source;
     // qDebug() << "orig source: " << m_source;
     bool modified = false;
@@ -1312,7 +1321,7 @@ bool MainWindow::AllowSaveIfModified()
 void MainWindow::closeEvent(QCloseEvent *event)
 {
     ShowMessageOnStatusBar(tr("PageEdit is closing..."));
-    if (AllowSaveIfModified()) {
+    if (AllowSaveIfModified(true)) {
         SaveSettings();
         event->accept();
 
@@ -1327,9 +1336,10 @@ void MainWindow::closeEvent(QCloseEvent *event)
             }
         }
         if (other_editor_windows == 0) {
-            // Defer quit so the close event can finish; calling quit() synchronously
-            // here can prevent the window from actually closing on macOS.
             QTimer::singleShot(0, qApp, []() {
+                if (g_mac_menubar_window) {
+                    g_mac_menubar_window->close();
+                }
                 qApp->quit();
             });
         }
@@ -1470,9 +1480,12 @@ void MainWindow::SetPreserveHeadingAttributes(bool new_state)
     ui.actionHeadingPreserveAttributes->setChecked(m_preserveHeadingAttributes);
 }
 
-QString MainWindow::GetSource() 
+QString MainWindow::GetSource(int timeout_ms)
 {
-    QString text = m_WebView->GetHtml();
+    QString text = m_WebView->GetHtml(timeout_ms);
+    if (text.isNull()) {
+        return QString();
+    }
     GumboInterface gi = GumboInterface(text, "any_version");
     QList<GumboNode*> nodes;
     // remove any added contenteditable attributes 

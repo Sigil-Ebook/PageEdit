@@ -218,7 +218,7 @@ protected:
     void closeEvent(QCloseEvent * event);
     bool MaybeSaveDialogSaysProceed(bool modified);
     QString GetCleanHtml();
-    QString GetSource();
+    QString GetSource(int timeout_ms = 0);
     QString GetHTMLToPaste(const QString & hmtl_snippet);
 
 private:
@@ -227,7 +227,7 @@ private:
     void SetupNavigationComboBox();
     void LoadSettings();
     void SaveSettings();
-    bool AllowSaveIfModified();
+    bool AllowSaveIfModified(bool on_close = false);
     void UpdateClipButton(QAction *ui_action);
     void ConnectSignalsToSlots();
 
