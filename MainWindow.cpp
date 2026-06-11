@@ -1327,7 +1327,11 @@ void MainWindow::closeEvent(QCloseEvent *event)
             }
         }
         if (other_editor_windows == 0) {
-            qApp->quit();
+            // Defer quit so the close event can finish; calling quit() synchronously
+            // here can prevent the window from actually closing on macOS.
+            QTimer::singleShot(0, qApp, []() {
+                qApp->quit();
+            });
         }
 #endif
         return;
