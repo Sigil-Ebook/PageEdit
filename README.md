@@ -68,7 +68,7 @@ __Ubuntu__
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
+`cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
 `make`<br>
 
 __Arch Linux__
@@ -77,7 +77,7 @@ sudo pacman -S cmake qt6-webengine qt6-tools qt6-svg<br>
 
 `mkdir build`<br>
 `cd build`<br>
-`cmake "Unix Makefiles" -DINSTALL_BUNDLED_DICTS=0 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
+`cmake -G "Unix Makefiles" -DINSTALL_BUNDLED_DICTS=0 -DCMAKE_BUILD_TYPE=Release ../<path/to/PageEdit/source>`<br>
 `make`<br>
 
 __All Flavors__:
